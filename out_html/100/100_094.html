@@ -1,0 +1,89 @@
+
+        <!DOCTYPE html>
+    <html lang="ja">
+    <style>
+    body
+    {
+        color: black;
+        background-color: white;
+    }
+    div{
+        font-size: 14px;
+    }
+    span
+    {
+        font-size: 18px;
+    }
+    #grad1{
+        background: linear-gradient(transparent 60%,#99e4f1 30%);
+        font-size: 18px;
+        font-weight: bold;
+    }
+    #grad2{
+        background: linear-gradient(transparent 60%,#fda1a1 30%);
+        font-size: 18px;
+        font-weight: bold;
+    }
+
+    </style>
+
+    <head>
+        <meta charset="UTF-8">
+        <title>100-94</title>
+    </head>
+
+    <body>
+        <h1>
+        <a href="./100_093.html" rel="external" title="prev">≪</a>
+        100-94
+        <a href="./100_095.html" rel="external" title="next">≫</a>
+        </h1>
+        <div class='problem'>
+            <p>
+                <span id="grad1">　問題文　</span>
+            </p>
+            <p>
+                <p>タンパク質の構造に関する記述のうち、正しいのはどれか。2つ選べ。</p>
+<ol><li>円二色性スペクトル法により、タンパク質の一次構造を決定することができる。</li><li>αヘリックスやβシートは、タンパク質中に見られる二次構造である。</li><li>基質が酵素分子に結合する際に生じる誘導適合(induced fit)とは、酵素分子を堅固な剛体として仮定したときに生じる変化をいう。</li><li>酵素の等電点とは、その酵素の至適pHのことである。</li><li>ヘモグロビンと酸素との結合は、協同性を示し、この協同現象は、ヘモグロビンの四次構造変化により説明される。</li></ol>    
+            </p>
+        </div>
+        <hr>
+
+        <input type="button" value="check ans" onclick="toggle_switch()"/>
+        
+        <div id='toggle'>
+        <div class='answer'>
+            <p>
+                <span id="grad2">　解答　　</span>
+            </p>
+            <p>
+            2, 5
+            </p>
+        </div>
+        <div class='description'>
+            <p>
+                <span id="grad2">　解説　　</span>
+            </p>
+            <p>選択肢 1 ですが<br/>円二色性スペクトル法でわかるのは、タンパク質の二次構造です。一次構造が決定できるわけでは、ありません。よって、選択肢 1 は誤りです。</p>
+<p>選択肢 2 は、その通りの記述です。</p>
+<p>選択肢 3 ですが<br/>誘導適合とは、基質に合わせて酵素分子が形を変えることです。一方、堅固な剛体と仮定するとは形が変わらないと仮定する、ということです。よって、選択肢 3 は誤りです。</p>
+<p>選択肢 4 ですが<br/>等電点とは、正の荷電と負の荷電が等しくなる pH のことです。酵素の性質としては水などの溶媒に可溶化しにくくなる pH といえます。いいかえると、沈殿しやすくなります。沈殿しやすい pH かどうか、と　酵素の働きが至適となる pH であるかどうかは同一ではありません。従って等電点が 酵素の至適 pH であるということはできません。よって、選択肢 4 は誤りです。</p>
+<p>選択肢 5 は、その通りの記述です。</p>
+<p>以上より、正解は 2,5 です。</p>
+            </p>
+        </div>
+        </div>
+    </body>
+    <script>
+    document.getElementById("toggle").style.display="none";
+    function toggle_switch(){
+        var x = document.getElementById("toggle");
+        if (x.style.display=="block"){
+            x.style.display="none";
+        }
+        else{
+            x.style.display="block";
+        }
+    }
+    </script>
+    

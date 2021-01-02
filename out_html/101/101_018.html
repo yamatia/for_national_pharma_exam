@@ -1,0 +1,85 @@
+
+        <!DOCTYPE html>
+    <html lang="ja">
+    <style>
+    body
+    {
+        color: black;
+        background-color: white;
+    }
+    div{
+        font-size: 14px;
+    }
+    span
+    {
+        font-size: 18px;
+    }
+    #grad1{
+        background: linear-gradient(transparent 60%,#99e4f1 30%);
+        font-size: 18px;
+        font-weight: bold;
+    }
+    #grad2{
+        background: linear-gradient(transparent 60%,#fda1a1 30%);
+        font-size: 18px;
+        font-weight: bold;
+    }
+
+    </style>
+
+    <head>
+        <meta charset="UTF-8">
+        <title>101-18</title>
+    </head>
+
+    <body>
+        <h1>
+        <a href="./101_017.html" rel="external" title="prev">≪</a>
+        101-18
+        <a href="./101_019.html" rel="external" title="next">≫</a>
+        </h1>
+        <div class='problem'>
+            <p>
+                <span id="grad1">　問題文　</span>
+            </p>
+            <p>
+                <p>我が国で遺伝子組換え食品として販売・流通が認められていないのはどれか。1つ選べ。</p>
+<ol><li>大豆</li><li>米</li><li>トウモロコシ</li><li>パパイヤ</li><li>アルファルファ</li></ol>    
+            </p>
+        </div>
+        <hr>
+
+        <input type="button" value="check ans" onclick="toggle_switch()"/>
+        
+        <div id='toggle'>
+        <div class='answer'>
+            <p>
+                <span id="grad2">　解答　　</span>
+            </p>
+            <p>
+            2
+            </p>
+        </div>
+        <div class='description'>
+            <p>
+                <span id="grad2">　解説　　</span>
+            </p>
+            <p>遺伝子組み換え食品とは、遺伝子組み換え技術を用いて品種改良した農産物　及び　その加工食品のことです。現在、大豆、とうもろこし、ばれいしょ、なたね、綿実、アルファルファ、てん菜、パパイヤが「流通」を認められています。米は含まれていません。よって、正解は 2 です。</p>
+<p>ちなみにですが、本問出題時、日本において遺伝子組み換え農作物の「商業的な栽培」は行われていません。また、遺伝子組み換え食品の安全性評価は、内閣府食品安全委員会が行っています。</p>
+            </p>
+        </div>
+        </div>
+    </body>
+    <script>
+    document.getElementById("toggle").style.display="none";
+    function toggle_switch(){
+        var x = document.getElementById("toggle");
+        if (x.style.display=="block"){
+            x.style.display="none";
+        }
+        else{
+            x.style.display="block";
+        }
+    }
+    </script>
+    

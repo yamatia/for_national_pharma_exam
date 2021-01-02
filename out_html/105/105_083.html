@@ -1,0 +1,87 @@
+
+        <!DOCTYPE html>
+    <html lang="ja">
+    <style>
+    body
+    {
+        color: black;
+        background-color: white;
+    }
+    div{
+        font-size: 14px;
+    }
+    span
+    {
+        font-size: 18px;
+    }
+    #grad1{
+        background: linear-gradient(transparent 60%,#99e4f1 30%);
+        font-size: 18px;
+        font-weight: bold;
+    }
+    #grad2{
+        background: linear-gradient(transparent 60%,#fda1a1 30%);
+        font-size: 18px;
+        font-weight: bold;
+    }
+
+    </style>
+
+    <head>
+        <meta charset="UTF-8">
+        <title>105-83</title>
+    </head>
+
+    <body>
+        <h1>
+        <a href="./105_082.html" rel="external" title="prev">≪</a>
+        105-83
+        <a href="./105_084.html" rel="external" title="next">≫</a>
+        </h1>
+        <div class='problem'>
+            <p>
+                <span id="grad1">　問題文　</span>
+            </p>
+            <p>
+                <p>器官形成期に該当し、薬剤による催奇形性のリスクが最も高いと考えられる妊娠週はどれか。1つ選べ。</p>
+<ol><li>2週未満</li><li>2～3週</li><li>4～7週</li><li>8～12週</li><li>13週以降</li></ol>    
+            </p>
+        </div>
+        <hr>
+
+        <input type="button" value="check ans" onclick="toggle_switch()"/>
+        
+        <div id='toggle'>
+        <div class='answer'>
+            <p>
+                <span id="grad2">　解答　　</span>
+            </p>
+            <p>
+            3
+            </p>
+        </div>
+        <div class='description'>
+            <p>
+                <span id="grad2">　解説　　</span>
+            </p>
+            <p>一般的に、妊娠の経過に伴い催奇形性に対する感受性は低くなっていきます。これは、受精卵の分化が、妊娠の経過に伴い進んでいくためです。</p>
+<p>最終月経開始日を０週０日として数え、妊娠４週未満については、胎児の器官形成は開始されておらず，母体薬剤投与の影響を受けた受精卵は，着床しなかったり，流産したり，あるいは完全に修復されます。<strong>催奇形性に対して最も過敏な時期は、妊娠４～７週です。絶対過敏期と呼ばれます。</strong></p>
+<p>以上より、正解は 3 です。</p>
+<p>類題 </p>
+            </p>
+        </div>
+        </div>
+    </body>
+    <script>
+    document.getElementById("toggle").style.display="none";
+    function toggle_switch(){
+        var x = document.getElementById("toggle");
+        if (x.style.display=="block"){
+            x.style.display="none";
+        }
+        else{
+            x.style.display="block";
+        }
+    }
+    </script>
+    

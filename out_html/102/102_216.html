@@ -1,0 +1,96 @@
+
+        <!DOCTYPE html>
+    <html lang="ja">
+    <style>
+    body
+    {
+        color: black;
+        background-color: white;
+    }
+    div{
+        font-size: 14px;
+    }
+    span
+    {
+        font-size: 18px;
+    }
+    #grad1{
+        background: linear-gradient(transparent 60%,#99e4f1 30%);
+        font-size: 18px;
+        font-weight: bold;
+    }
+    #grad2{
+        background: linear-gradient(transparent 60%,#fda1a1 30%);
+        font-size: 18px;
+        font-weight: bold;
+    }
+
+    </style>
+
+    <head>
+        <meta charset="UTF-8">
+        <title>102-216</title>
+    </head>
+
+    <body>
+        <h1>
+        <a href="./102_215.html" rel="external" title="prev">≪</a>
+        102-216
+        <a href="./102_217.html" rel="external" title="next">≫</a>
+        </h1>
+        <div class='problem'>
+            <p>
+                <span id="grad1">　問題文　</span>
+            </p>
+            <p>
+                <p>肺血栓塞栓症において、下肢静脈で生じた血栓が肺へ到達する経路として、正しいのはどれか。1つ選べ。</p>
+<ol><li>大腿静脈 → 総腸骨静脈 → 下大静脈 → 右心房 → 右心室 → 肺静脈 → 肺</li><li>大腿静脈 → 総腸骨静脈 → 下大静脈 → 右心房 → 右心室 → 肺動脈 → 肺</li><li>総腸骨静脈 → 大腿静脈 → 門脈 → 下大静脈 → 右心房 → 右心室 → 肺動脈 → 肺</li><li>総腸骨静脈 → 大腿静脈 → 下大静脈 → 左心房 → 左心室 → 肺静脈 → 肺</li><li>大腿静脈 → 総腸骨静脈 → 下大静脈 → 左心房 → 左心室 → 肺動脈 → 肺</li></ol>    
+            </p>
+        </div>
+        <hr>
+
+        <input type="button" value="check ans" onclick="toggle_switch()"/>
+        
+        <div id='toggle'>
+        <div class='answer'>
+            <p>
+                <span id="grad2">　解答　　</span>
+            </p>
+            <p>
+            問216：4問217：2
+            </p>
+        </div>
+        <div class='description'>
+            <p>
+                <span id="grad2">　解説　　</span>
+            </p>
+            <h4>問216</h4>
+<p>エコノミークラス症候群とは、長時間狭い椅子に座ったままでいる事による深部静脈血栓症のことです。深部静脈血栓症はしばしば無症状です。しかし、歩行等をきっかけに血栓が血流に乗り肺に到達し、肺動脈を塞ぐ塞栓症がおきうる症状です。予防法としては、こまめな水分補給、足の運動、ゆったりとした服装などがあげられます。</p>
+<p>以上をふまえ、各選択肢を検討すると</p>
+<p>選択肢 1,2,5 は正しい記述です。</p>
+<p>選択肢 3 は、正しい記述です。<br/>大きな手術、すなわち、がんの手術などを受けて間もない場合は血管に傷が残っている可能性などがあり、エコノミークラス症候群の高リスク要因があるとして、より注意が必要となります</p>
+<p>選択肢 4 ですが<br/>水分はこまめに補給した方がよいです。よって、選択肢 4 は誤りです。</p>
+<p>以上より、正解は 4 です。</p>
+<h4>問217</h4>
+<p>下肢静脈　というのは全身循環の一部です。「全身→心臓→肺→心臓→全身」と血液は循環しています。</p>
+<p>また、全身→心臓　に戻る時の血管は大静脈です。心臓は大きく４つの部分、すなわち右心房、右心室、左心房、左心室　に区分されますが、全身→心臓に戻る時は「右心房」に血液が流れ込みます。</p>
+<p>右心房に入った血液は、右心室→肺動脈にのって、肺へ　と送られます。「右心房→右心室→肺動脈」に注目して選択肢を検討すれば、正解は 2,3 のどちらかにしぼれます。</p>
+<p>選択肢 3 ですが<br/>門脈　とは、消化管→肝臓のルートの血管です。本問では適切ではありません。よって、選択肢 3 は誤りです。</p>
+<p>以上より、正解は 2 です。</p>
+            </p>
+        </div>
+        </div>
+    </body>
+    <script>
+    document.getElementById("toggle").style.display="none";
+    function toggle_switch(){
+        var x = document.getElementById("toggle");
+        if (x.style.display=="block"){
+            x.style.display="none";
+        }
+        else{
+            x.style.display="block";
+        }
+    }
+    </script>
+    

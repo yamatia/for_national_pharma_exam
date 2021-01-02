@@ -1,0 +1,89 @@
+
+        <!DOCTYPE html>
+    <html lang="ja">
+    <style>
+    body
+    {
+        color: black;
+        background-color: white;
+    }
+    div{
+        font-size: 14px;
+    }
+    span
+    {
+        font-size: 18px;
+    }
+    #grad1{
+        background: linear-gradient(transparent 60%,#99e4f1 30%);
+        font-size: 18px;
+        font-weight: bold;
+    }
+    #grad2{
+        background: linear-gradient(transparent 60%,#fda1a1 30%);
+        font-size: 18px;
+        font-weight: bold;
+    }
+
+    </style>
+
+    <head>
+        <meta charset="UTF-8">
+        <title>100-177</title>
+    </head>
+
+    <body>
+        <h1>
+        <a href="./100_176.html" rel="external" title="prev">≪</a>
+        100-177
+        <a href="./100_178.html" rel="external" title="next">≫</a>
+        </h1>
+        <div class='problem'>
+            <p>
+                <span id="grad1">　問題文　</span>
+            </p>
+            <p>
+                <p>注射剤の溶剤に関する記述のうち、正しいのはどれか。2つ選べ。</p>
+<ol><li>通例、生理食塩液及びリンゲル液は、注射用水の代用として用いることができる。</li><li>皮内、皮下及び筋肉内投与のみに用いる水性溶剤は、エンドトキシン試験法の適用を受ける。</li><li>エタノールやプロピレングリコールは、非水性注射剤の溶剤として用いることができる。</li><li>鉱油試験に適合する流動パラフィンは、非水性注射剤の溶剤として用いることができる。</li><li>溶剤に注射用水を用いた場合は、添付する文書、容器もしくは被包に、溶剤が注射用水であることを記載する必要がある。</li></ol>    
+            </p>
+        </div>
+        <hr>
+
+        <input type="button" value="check ans" onclick="toggle_switch()"/>
+        
+        <div id='toggle'>
+        <div class='answer'>
+            <p>
+                <span id="grad2">　解答　　</span>
+            </p>
+            <p>
+            1, 3
+            </p>
+        </div>
+        <div class='description'>
+            <p>
+                <span id="grad2">　解説　　</span>
+            </p>
+            <p>選択肢 1 は、正しい選択肢です。</p>
+<p>選択肢 2 ですが<br/>原則として、注射剤にはエンドトキシン試験法、もしくは発熱物質試験法が適用されます。しかし、皮内、皮下　および筋肉内投与に用いる注射剤はエンドトキシン試験法の適用を除かれています。よって、選択肢 2 は誤りです。</p>
+<p>選択肢 3 は、正しい選択肢です。</p>
+<p>選択肢 4 ですが<br/>非水性注射剤の溶剤には通例、植物油を用います。また、鉱油試験とは、鉱油の混在を確認する試験であり鉱油が含まれなければ試験の合格なのですがパラフィンとは、まさに鉱油のことです。そのため、記述がおかしいと考えてもよいのではないかと思います。よって、選択肢 4 は誤りです。</p>
+<p>選択肢 5 ですが<br/>溶剤の規定が本剤でない場合には、注射用水　若しくは 0.9 % 以下の塩化ナトリウム液、又は pH を調節するための酸若しくはアルカリを用いたときを除き、溶剤の名称を記載します。注射用水の場合は記載する必要はありません。よって、選択肢 5 は誤りです。</p>
+<p>以上より、正解は 1,3 です。</p>
+            </p>
+        </div>
+        </div>
+    </body>
+    <script>
+    document.getElementById("toggle").style.display="none";
+    function toggle_switch(){
+        var x = document.getElementById("toggle");
+        if (x.style.display=="block"){
+            x.style.display="none";
+        }
+        else{
+            x.style.display="block";
+        }
+    }
+    </script>
+    

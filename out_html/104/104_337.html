@@ -1,0 +1,86 @@
+
+        <!DOCTYPE html>
+    <html lang="ja">
+    <style>
+    body
+    {
+        color: black;
+        background-color: white;
+    }
+    div{
+        font-size: 14px;
+    }
+    span
+    {
+        font-size: 18px;
+    }
+    #grad1{
+        background: linear-gradient(transparent 60%,#99e4f1 30%);
+        font-size: 18px;
+        font-weight: bold;
+    }
+    #grad2{
+        background: linear-gradient(transparent 60%,#fda1a1 30%);
+        font-size: 18px;
+        font-weight: bold;
+    }
+
+    </style>
+
+    <head>
+        <meta charset="UTF-8">
+        <title>104-337</title>
+    </head>
+
+    <body>
+        <h1>
+        <a href="./104_336.html" rel="external" title="prev">≪</a>
+        104-337
+        <a href="./104_338.html" rel="external" title="next">≫</a>
+        </h1>
+        <div class='problem'>
+            <p>
+                <span id="grad1">　問題文　</span>
+            </p>
+            <p>
+                <p>本症例に対し、薬剤師が処方医に対して行う対応の中で適切なのはどれか。2つ選べ。</p>
+<ol><li>アセトアミノフェンの1回量が過剰であることを疑義照会する。</li><li>アセトアミノフェンの1回量が不足であることを疑義照会する。</li><li>アセトアミノフェン細粒20%1回量2g、5回分への変更提案をする。</li><li>アセトアミノフェン細粒20%1回量1g、5回分への変更提案をする。</li><li>アセトアミノフェン細粒20%1回量0.5g、5回分への変更提案をする。</li></ol>    
+            </p>
+        </div>
+        <hr>
+
+        <input type="button" value="check ans" onclick="toggle_switch()"/>
+        
+        <div id='toggle'>
+        <div class='answer'>
+            <p>
+                <span id="grad2">　解答　　</span>
+            </p>
+            <p>
+            2, 4
+            </p>
+        </div>
+        <div class='description'>
+            <p>
+                <span id="grad2">　解説　　</span>
+            </p>
+            <p><span style="font-weight: 400;">体重 1kg あたり 1回 10 ~ 15mg なので</span><b>20kg なら 1回 200 ~ 300mg</b><span style="font-weight: 400;"> です。</span><span style="font-weight: 400;">シロップ 8mL = 8g です。</span><span style="font-weight: 400;">2% なので、含有するアセトアミノフェンは 8 × 0.02 = 0.16g =</span><b>160mg</b><span style="font-weight: 400;">です。不足を指摘する必要があります。</span></p>
+<p><span style="font-weight: 400;">細粒にすると 1回量 2g であれば、20% なので 400mg となり多すぎます。</span><span style="font-weight: 400;">1 回量 1g であれば、20% なので 200mg で妥当です。1</span><span style="font-weight: 400;"> 回量 0.5g であれば、20% なので 100mg で少なすぎます。</span></p>
+<p><span style="font-weight: 400;">以上より、正解は 2,4 です。</span></p>
+            </p>
+        </div>
+        </div>
+    </body>
+    <script>
+    document.getElementById("toggle").style.display="none";
+    function toggle_switch(){
+        var x = document.getElementById("toggle");
+        if (x.style.display=="block"){
+            x.style.display="none";
+        }
+        else{
+            x.style.display="block";
+        }
+    }
+    </script>
+    

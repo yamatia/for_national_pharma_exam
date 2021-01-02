@@ -1,0 +1,89 @@
+
+        <!DOCTYPE html>
+    <html lang="ja">
+    <style>
+    body
+    {
+        color: black;
+        background-color: white;
+    }
+    div{
+        font-size: 14px;
+    }
+    span
+    {
+        font-size: 18px;
+    }
+    #grad1{
+        background: linear-gradient(transparent 60%,#99e4f1 30%);
+        font-size: 18px;
+        font-weight: bold;
+    }
+    #grad2{
+        background: linear-gradient(transparent 60%,#fda1a1 30%);
+        font-size: 18px;
+        font-weight: bold;
+    }
+
+    </style>
+
+    <head>
+        <meta charset="UTF-8">
+        <title>104-148</title>
+    </head>
+
+    <body>
+        <h1>
+        <a href="./104_147.html" rel="external" title="prev">≪</a>
+        104-148
+        <a href="./104_149.html" rel="external" title="next">≫</a>
+        </h1>
+        <div class='problem'>
+            <p>
+                <span id="grad1">　問題文　</span>
+            </p>
+            <p>
+                <p>治験に関する記述のうち、正しいのはどれか。2つ選べ。</p>
+<ol><li>医薬品の治験とは、非臨床試験及び臨床試験の試験成績に関する資料の収集を目的とする試験の実施のことである。</li><li>医薬品の臨床試験の実施の基準は、被験者の人権の保護や治験の科学的な質及び成績の信頼性を確保することを目的としている。</li><li>医師及び薬剤師には守秘義務があるが、治験の場合には適用されない。</li><li>治験の対象となる薬物について初めて治験の計画を届け出た者は、届出の日から直ちに治験を依頼することができる。</li><li>治験依頼者は、治験薬の副作用によるものと疑われる死亡につながるおそれのある症例で、治験薬概要書からは予測できないものを知ったときは、定められた期間内に医薬品医療機器総合機構宛てに報告しなければならない。</li></ol>    
+            </p>
+        </div>
+        <hr>
+
+        <input type="button" value="check ans" onclick="toggle_switch()"/>
+        
+        <div id='toggle'>
+        <div class='answer'>
+            <p>
+                <span id="grad2">　解答　　</span>
+            </p>
+            <p>
+            2, 5
+            </p>
+        </div>
+        <div class='description'>
+            <p>
+                <span id="grad2">　解説　　</span>
+            </p>
+            <p><span style="font-weight: 400;">選択肢 1 ですが<br/></span><span style="font-weight: 400;">「治験」は「臨床試験」のことです。ヒトが対象です。「非臨床試験」、つまりヒト以外を対象とした試験は含まれません。よって、選択肢 1 は誤りです。</span></p>
+<p><span style="font-weight: 400;">選択肢 2 は妥当な記述です。</span></p>
+<p><span style="font-weight: 400;">選択肢 3 ですが<br/></span><span style="font-weight: 400;">治験についても守秘義務があります。よって、選択肢 3 は誤りです。</span></p>
+<p><span style="font-weight: 400;">選択肢 4 ですが<br/></span><span style="font-weight: 400;">初めて届出をした治験依頼者は、届け出から 30 日経過した後でなければ、治験を医療機関に依頼もしくは治験を開始してはならないことされています。「届出の日から直ちに」ではありません。よって、選択肢 4 は誤りです。</span></p>
+<p><span style="font-weight: 400;">選択肢 5 は妥当な記述です。</span></p>
+<p><span style="font-weight: 400;">以上より、正解は 2,5 です。</span></p>
+            </p>
+        </div>
+        </div>
+    </body>
+    <script>
+    document.getElementById("toggle").style.display="none";
+    function toggle_switch(){
+        var x = document.getElementById("toggle");
+        if (x.style.display=="block"){
+            x.style.display="none";
+        }
+        else{
+            x.style.display="block";
+        }
+    }
+    </script>
+    

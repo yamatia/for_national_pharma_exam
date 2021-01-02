@@ -1,0 +1,86 @@
+
+        <!DOCTYPE html>
+    <html lang="ja">
+    <style>
+    body
+    {
+        color: black;
+        background-color: white;
+    }
+    div{
+        font-size: 14px;
+    }
+    span
+    {
+        font-size: 18px;
+    }
+    #grad1{
+        background: linear-gradient(transparent 60%,#99e4f1 30%);
+        font-size: 18px;
+        font-weight: bold;
+    }
+    #grad2{
+        background: linear-gradient(transparent 60%,#fda1a1 30%);
+        font-size: 18px;
+        font-weight: bold;
+    }
+
+    </style>
+
+    <head>
+        <meta charset="UTF-8">
+        <title>103-75</title>
+    </head>
+
+    <body>
+        <h1>
+        <a href="./103_074.html" rel="external" title="prev">≪</a>
+        103-75
+        <a href="./103_076.html" rel="external" title="next">≫</a>
+        </h1>
+        <div class='problem'>
+            <p>
+                <span id="grad1">　問題文　</span>
+            </p>
+            <p>
+                <p>薬害エイズの原因となった非加熱濃縮血液製剤を用いて治療されていた疾患はどれか。1つ選べ。</p>
+<ol><li>血友病</li><li>マラリア</li><li>C型肝炎</li><li>多発性骨髄腫</li><li>ハンセン病</li></ol>    
+            </p>
+        </div>
+        <hr>
+
+        <input type="button" value="check ans" onclick="toggle_switch()"/>
+        
+        <div id='toggle'>
+        <div class='answer'>
+            <p>
+                <span id="grad2">　解答　　</span>
+            </p>
+            <p>
+            1
+            </p>
+        </div>
+        <div class='description'>
+            <p>
+                <span id="grad2">　解説　　</span>
+            </p>
+            <p><span style="font-weight: 400;">薬害エイズの原因となった</span><span style="font-weight: 400;">非加熱製剤による治療対象は</span><span style="font-weight: 400;">血友病です。</span><span style="font-weight: 400;">従って、正解は 1 です。</span></p>
+<p><span style="font-weight: 400;">ちなみに、</span><span style="font-weight: 400;">マラリアと関連する薬害としては</span><span style="font-weight: 400;">抗マラリア薬として開発された</span><span style="font-weight: 400;">クロロキンによる網膜症が知られています。</span><span style="font-weight: 400;">C型肝炎は、</span><span style="font-weight: 400;">血液製剤による感染が知られています。</span></p>
+<p><span style="font-weight: 400;">多発性骨髄腫</span><span style="font-weight: 400;">及びハンセン病については、</span><span style="font-weight: 400;">かつてサリドマイドが</span><span style="font-weight: 400;">アザラシ肢症を引き起こしたのですが、</span><span style="font-weight: 400;">近年</span><span style="font-weight: 400;">多発性骨髄腫</span><span style="font-weight: 400;">及びハンセン病の治療薬として</span><span style="font-weight: 400;">再評価されているという話題があります。</span></p>
+            </p>
+        </div>
+        </div>
+    </body>
+    <script>
+    document.getElementById("toggle").style.display="none";
+    function toggle_switch(){
+        var x = document.getElementById("toggle");
+        if (x.style.display=="block"){
+            x.style.display="none";
+        }
+        else{
+            x.style.display="block";
+        }
+    }
+    </script>
+    

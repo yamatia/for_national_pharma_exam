@@ -1,0 +1,100 @@
+
+        <!DOCTYPE html>
+    <html lang="ja">
+    <style>
+    body
+    {
+        color: black;
+        background-color: white;
+    }
+    div{
+        font-size: 14px;
+    }
+    span
+    {
+        font-size: 18px;
+    }
+    #grad1{
+        background: linear-gradient(transparent 60%,#99e4f1 30%);
+        font-size: 18px;
+        font-weight: bold;
+    }
+    #grad2{
+        background: linear-gradient(transparent 60%,#fda1a1 30%);
+        font-size: 18px;
+        font-weight: bold;
+    }
+
+    </style>
+
+    <head>
+        <meta charset="UTF-8">
+        <title>100-228</title>
+    </head>
+
+    <body>
+        <h1>
+        <a href="./100_227.html" rel="external" title="prev">≪</a>
+        100-228
+        <a href="./100_229.html" rel="external" title="next">≫</a>
+        </h1>
+        <div class='problem'>
+            <p>
+                <span id="grad1">　問題文　</span>
+            </p>
+            <p>
+                <p>商品Aの許可表示として最もふさわしいのはどれか。1つ選べ。</p>
+<ol><li>コレステロールが気になる方の食生活の改善に役立ちます。</li><li>動脈硬化症の発症を抑えるのに役立ちます。</li><li>食後の急激な血糖値の上昇を抑えます。</li><li>血圧が高めの方、気になる方に適します。</li><li>食事中の脂肪の吸収を抑え、体脂肪が気になる方に適します。</li></ol>    
+            </p>
+        </div>
+        <hr>
+
+        <input type="button" value="check ans" onclick="toggle_switch()"/>
+        
+        <div id='toggle'>
+        <div class='answer'>
+            <p>
+                <span id="grad2">　解答　　</span>
+            </p>
+            <p>
+            問228：1, 4問229：1
+            </p>
+        </div>
+        <div class='description'>
+            <p>
+                <span id="grad2">　解説　　</span>
+            </p>
+            <h4>問228</h4>
+<p>選択肢 1 は、正しい選択肢です。<br/>青汁とは、生の緑葉野菜をしぼった汁です。</p>
+<p>保健機能食品とは、保健表示、すなわち、健康を保ちますよ　という表示をしてよい　とされた食品のことです。保健機能食品は、以下の３つに更に分類されます。すなわち、特定保健用食品（いわゆるトクホ）　と、栄養機能食品（ミネラル or ビタミンが基準値以上）　と、機能性表示食品（2015.04.01~）にです。</p>
+<p>青汁商品 A や B はそれぞれ「キトサン」、「ビタミン C」 が含まれているため、保健機能食品に分類されます。そして、それらのキトサン（動物性食物繊維）やビタミン C は青汁に含まれている成分とは別に配合されていると考えられます。（もしも、青汁に含まれている成分であればA,Bに共通する成分となるはずだからです。）従って、青汁に含まれている成分だけ　では保健機能食品にはならないといえます。</p>
+<p>選択肢 2 ですが<br/>青汁には、カリウムが豊富に含まれます。よって、むしろ高カリウム血症の人が摂取を避けるべきです。低カリウム血症の人に禁忌では、ありません。よって、選択肢 2 は誤りです。</p>
+<p>選択肢 3 ですが<br/>青汁の過剰摂取は、吐き気、下痢などの症状を引き起こす原因になりえます。過剰に摂取しても問題がないとは、いえません。よって、選択肢 3 は誤りです。</p>
+<p>選択肢 4 は、正しい選択肢です。</p>
+<p>選択肢 5 ですが<br/>妊娠３ヶ月以内や、妊娠を希望する人であるからといって、用量として多く摂取する理由はありません。過剰摂取を避けるべきであり用法・用量を守って使用すべきであると考えられます。よって、選択肢 5 は誤りです。</p>
+<p>以上より、正解は 1,4 です。</p>
+<h4>問229</h4>
+<p>キトサンの特定保健用食品としての許可表示は「コレステロールの体内への吸収をしにくくする食品」などというものです。</p>
+<p>選択肢 の中では<br/>1 が最も適切であると考えられます。</p>
+<p>ちなみに<br/>選択肢 2 の表示は、今のところ該当するものはありません。</p>
+<p>選択肢 3 の「食後の急激な血糖値の上昇を抑えます」は、小麦アルブミンを含むトクホ等に見られる許可表示です。</p>
+<p>選択肢 4 の「血圧が高めの方、気になる方に適します」は、ペプチドや、杜仲葉配糖体等を含むトクホに見られる許可表示です。</p>
+<p>選択肢 5 の「食事中の脂肪の吸収を抑え体脂肪が気になる方に適します」は、茶カテキン等を含むトクホに見られる許可表示です。</p>
+<p>以上より、正解は 1 です。</p>
+            </p>
+        </div>
+        </div>
+    </body>
+    <script>
+    document.getElementById("toggle").style.display="none";
+    function toggle_switch(){
+        var x = document.getElementById("toggle");
+        if (x.style.display=="block"){
+            x.style.display="none";
+        }
+        else{
+            x.style.display="block";
+        }
+    }
+    </script>
+    

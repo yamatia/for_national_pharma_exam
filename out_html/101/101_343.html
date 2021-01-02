@@ -1,0 +1,88 @@
+
+        <!DOCTYPE html>
+    <html lang="ja">
+    <style>
+    body
+    {
+        color: black;
+        background-color: white;
+    }
+    div{
+        font-size: 14px;
+    }
+    span
+    {
+        font-size: 18px;
+    }
+    #grad1{
+        background: linear-gradient(transparent 60%,#99e4f1 30%);
+        font-size: 18px;
+        font-weight: bold;
+    }
+    #grad2{
+        background: linear-gradient(transparent 60%,#fda1a1 30%);
+        font-size: 18px;
+        font-weight: bold;
+    }
+
+    </style>
+
+    <head>
+        <meta charset="UTF-8">
+        <title>101-343</title>
+    </head>
+
+    <body>
+        <h1>
+        <a href="./101_342.html" rel="external" title="prev">≪</a>
+        101-343
+        <a href="./101_344.html" rel="external" title="next">≫</a>
+        </h1>
+        <div class='problem'>
+            <p>
+                <span id="grad1">　問題文　</span>
+            </p>
+            <p>
+                <p>販売時に薬剤師が情報提供・指導する内容として適切でないのはどれか。2つ選べ。</p>
+<ol><li>低血糖を起こすことがありますので注意してください。</li><li>薬を飲む前後はお酒を飲まないでください。</li><li>眠くなる成分は入っていませんので、服用後の車の運転は大丈夫です。</li><li>便秘をすることがありますので注意してください。</li><li>のどが渇くことがあるので、適宜水分を補給してください。</li></ol>    
+            </p>
+        </div>
+        <hr>
+
+        <input type="button" value="check ans" onclick="toggle_switch()"/>
+        
+        <div id='toggle'>
+        <div class='answer'>
+            <p>
+                <span id="grad2">　解答　　</span>
+            </p>
+            <p>
+            1, 3
+            </p>
+        </div>
+        <div class='description'>
+            <p>
+                <span id="grad2">　解説　　</span>
+            </p>
+            <p>選択肢 1 は、適切ではないです。<br/>低血糖を心配する成分は見当たりません。</p>
+<p>選択肢 2 は、正しい選択肢です。<br/>眠気などが強くなるおそれがあります。</p>
+<p>選択肢 3 は、適切ではありません。<br/>クロルフェニラミンが入っているので、眠くなる成分は入っています。</p>
+<p>選択肢 4,5 は、正しい選択肢です。<br/>抗コリン薬の副作用に関する情報提供、指導となります。</p>
+<p>以上より、正解は 1,3 です。</p>
+            </p>
+        </div>
+        </div>
+    </body>
+    <script>
+    document.getElementById("toggle").style.display="none";
+    function toggle_switch(){
+        var x = document.getElementById("toggle");
+        if (x.style.display=="block"){
+            x.style.display="none";
+        }
+        else{
+            x.style.display="block";
+        }
+    }
+    </script>
+    

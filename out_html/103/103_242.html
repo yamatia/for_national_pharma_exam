@@ -1,0 +1,95 @@
+
+        <!DOCTYPE html>
+    <html lang="ja">
+    <style>
+    body
+    {
+        color: black;
+        background-color: white;
+    }
+    div{
+        font-size: 14px;
+    }
+    span
+    {
+        font-size: 18px;
+    }
+    #grad1{
+        background: linear-gradient(transparent 60%,#99e4f1 30%);
+        font-size: 18px;
+        font-weight: bold;
+    }
+    #grad2{
+        background: linear-gradient(transparent 60%,#fda1a1 30%);
+        font-size: 18px;
+        font-weight: bold;
+    }
+
+    </style>
+
+    <head>
+        <meta charset="UTF-8">
+        <title>103-242</title>
+    </head>
+
+    <body>
+        <h1>
+        <a href="./103_241.html" rel="external" title="prev">≪</a>
+        103-242
+        <a href="./103_243.html" rel="external" title="next">≫</a>
+        </h1>
+        <div class='problem'>
+            <p>
+                <span id="grad1">　問題文　</span>
+            </p>
+            <p>
+                <p>過マンガン酸カリウム消費量に加え、学校薬剤師が行うプール水における水質検査項目はどれか。2つ選べ。</p>
+<ol><li>生物化学的酸素要求量(BOD)</li><li>結合残留塩素</li><li>遊離残留塩素</li><li>pH値</li><li>アンモニア</li></ol>    
+            </p>
+        </div>
+        <hr>
+
+        <input type="button" value="check ans" onclick="toggle_switch()"/>
+        
+        <div id='toggle'>
+        <div class='answer'>
+            <p>
+                <span id="grad2">　解答　　</span>
+            </p>
+            <p>
+            問242：3問243：3, 4
+            </p>
+        </div>
+        <div class='description'>
+            <p>
+                <span id="grad2">　解説　　</span>
+            </p>
+            <h4>問242</h4>
+<p><span style="font-weight: 400;">過マンガン酸カリウム（KMｎO<sub>4</sub></span><span style="font-weight: 400;"><sup>–</sup></span><span style="font-weight: 400;">）と</span><span style="font-weight: 400;">シュウ酸ナトリウム(COO)<sub>2</sub></span><span style="font-weight: 400;">Na<sub>2</sub></span><span style="font-weight: 400;"> は、</span><span style="font-weight: 400;">２：５ で酸化還元反応します。</span><span style="font-weight: 400;">この比は、半反応式から計算するか、</span><span style="font-weight: 400;">有名な反応なので知識として持っている前提です。</span><span style="font-weight: 400;">半反応式は、それぞれ</span></p>
+<p><span style="font-weight: 400;">MnO<sub>4</sub><sup>–</sup></span><span style="font-weight: 400;">＋８H<sup>+</sup></span><span style="font-weight: 400;">＋５e<sup>–</sup></span><span style="font-weight: 400;"> →Mn<sub>2</sub></span><span style="font-weight: 400;">+</span><span style="font-weight: 400;">＋4H<sub>2</sub></span><span style="font-weight: 400;">O<br/></span><span style="font-weight: 400;">(COOH)<sub>2</sub></span><span style="font-weight: 400;"> →2CO<sub>2</sub></span><span style="font-weight: 400;">+2H<sup>+</sup></span><span style="font-weight: 400;">+ 2e<sup>–</sup></span><span style="font-weight: 400;">　です。</span></p>
+<p><span style="font-weight: 400;">モル比がちょうど２：５なので、</span><span style="font-weight: 400;">過マンガン酸カリウム 10 mL と</span><span style="font-weight: 400;">シュウ酸ナトリウム 10 mL で</span><span style="font-weight: 400;">ちょうどお互い反応してなくなります。</span></p>
+<p><span style="font-weight: 400;">ところが、本問ではまず、</span><span style="font-weight: 400;">プール水中の有機物を酸化させるために</span><span style="font-weight: 400;">過マンガン酸カリウムが消費されます。</span><span style="font-weight: 400;">従って、シュウ酸ナトリウムが少し残ります。</span><span style="font-weight: 400;">そこで、残ったシュウ酸ナトリウムを</span><span style="font-weight: 400;">改めて過マンガン酸カリウムで滴定することで</span><span style="font-weight: 400;">プール水中の有機物の量を知ることができます。</span></p>
+<p><span style="font-weight: 400;">0.002 mol/L × 3.2 mL <br/></span><span style="font-weight: 400;">= 2 × 10<sup>-3</sup></span><span style="font-weight: 400;"> mol/L × 3.2 × 10<sup>-3</sup></span><span style="font-weight: 400;"> L <br/></span><span style="font-weight: 400;">= 6.4 × 10<sup>-6</sup></span><span style="font-weight: 400;"> mol</span></p>
+<p><span style="font-weight: 400;">式量が 158 なので、この mol を g になおすと<br/></span><span style="font-weight: 400;">（6.4 × 10<sup>-6</sup></span><span style="font-weight: 400;">）× 158 <br/></span><span style="font-weight: 400;">≒ 1000 × 10<sup>-6</sup></span><span style="font-weight: 400;">  （※ 6.4 × 158 = 1011.2→1000 に近似。 ）<br/></span>= 1 × 10<sup>-3</sup> g。<br/><span style="font-weight: 400;">= 1 mg</span></p>
+<p><span style="font-weight: 400;">検水 100mL に対して 、</span><span style="font-weight: 400;">1mg KMnO<sub>4</sub>　を消費したので、</span><span style="font-weight: 400;">検水 1L に対しては、10mg となります。</span></p>
+<p><span style="font-weight: 400;">以上より、正解は 3 です。</span></p>
+<h4>問243</h4>
+<p><span style="font-weight: 400;">プール水における水質検査項目は<br/></span><span style="font-weight: 400;">・DPD（N,N-diethyl-p-phenylenediamine） 法による　遊離残留塩素（0.4mg/L 以上）<br/></span><span style="font-weight: 400;">・pH 値<br/></span><span style="font-weight: 400;">・大腸菌（検査されないこと）<br/></span><span style="font-weight: 400;">・総トリハロメタン　などがあります。</span></p>
+<p><span style="font-weight: 400;">BODやアンモニアは検査されません。</span><span style="font-weight: 400;">従って、正解は 3,4 です。</span></p>
+            </p>
+        </div>
+        </div>
+    </body>
+    <script>
+    document.getElementById("toggle").style.display="none";
+    function toggle_switch(){
+        var x = document.getElementById("toggle");
+        if (x.style.display=="block"){
+            x.style.display="none";
+        }
+        else{
+            x.style.display="block";
+        }
+    }
+    </script>
+    

@@ -1,0 +1,89 @@
+
+        <!DOCTYPE html>
+    <html lang="ja">
+    <style>
+    body
+    {
+        color: black;
+        background-color: white;
+    }
+    div{
+        font-size: 14px;
+    }
+    span
+    {
+        font-size: 18px;
+    }
+    #grad1{
+        background: linear-gradient(transparent 60%,#99e4f1 30%);
+        font-size: 18px;
+        font-weight: bold;
+    }
+    #grad2{
+        background: linear-gradient(transparent 60%,#fda1a1 30%);
+        font-size: 18px;
+        font-weight: bold;
+    }
+
+    </style>
+
+    <head>
+        <meta charset="UTF-8">
+        <title>102-171</title>
+    </head>
+
+    <body>
+        <h1>
+        <a href="./102_170.html" rel="external" title="prev">≪</a>
+        102-171
+        <a href="./102_172.html" rel="external" title="next">≫</a>
+        </h1>
+        <div class='problem'>
+            <p>
+                <span id="grad1">　問題文　</span>
+            </p>
+            <p>
+                <p>ただし、この薬物の体内動態は線形1-コンパートメントモデルに従い、全身クリアランスは120mL/min、この散剤における薬物のバイオアベイラビリティは80%とする。</p>
+<ol><li>0.18</li><li>0.36</li><li>0.92</li><li>1.2</li><li>1.4</li></ol>    
+            </p>
+        </div>
+        <hr>
+
+        <input type="button" value="check ans" onclick="toggle_switch()"/>
+        
+        <div id='toggle'>
+        <div class='answer'>
+            <p>
+                <span id="grad2">　解答　　</span>
+            </p>
+            <p>
+            5
+            </p>
+        </div>
+        <div class='description'>
+            <p>
+                <span id="grad2">　解説　　</span>
+            </p>
+            <p><strong>Css = (D/τ)/CL</strong> を使います。（最重要公式です！）</p>
+<p>問題文の情報をまとめると<br/>・全身クリアランスは 120 mL/min<br/>・散剤の投与量を x (g) とすれば薬物は 0.1x (g) 。バイオアベイラビリティが 80 % なので実際に体内で利用される薬物は0.08x (g)<br/>・投与時間は 8h。</p>
+<p>単位がバラバラなので揃えます。左辺 Css が 2.0 μg/mL です。これを、g になおします。2.0 × 10<strong><sup>-6</sup> g</strong>/mL です。</p>
+<p>右辺において、時間の単位が min と h でバラバラなので、全身クリアランスを 120mL/min → 7200mL/h となおします。以上で準備完了です。Css=(D/τ)/CL　に代入します。</p>
+<p><strong>2.0 × 10<sup>-6</sup> = (0.08x/8)/7200</strong> となります。右辺 を整理すると x/720000 となるので、両辺に 720000 をかけて、x = 1.4 です。</p>
+<p>以上より、正解は 5 です。</p>
+            </p>
+        </div>
+        </div>
+    </body>
+    <script>
+    document.getElementById("toggle").style.display="none";
+    function toggle_switch(){
+        var x = document.getElementById("toggle");
+        if (x.style.display=="block"){
+            x.style.display="none";
+        }
+        else{
+            x.style.display="block";
+        }
+    }
+    </script>
+    

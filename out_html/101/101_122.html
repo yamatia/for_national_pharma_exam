@@ -1,0 +1,88 @@
+
+        <!DOCTYPE html>
+    <html lang="ja">
+    <style>
+    body
+    {
+        color: black;
+        background-color: white;
+    }
+    div{
+        font-size: 14px;
+    }
+    span
+    {
+        font-size: 18px;
+    }
+    #grad1{
+        background: linear-gradient(transparent 60%,#99e4f1 30%);
+        font-size: 18px;
+        font-weight: bold;
+    }
+    #grad2{
+        background: linear-gradient(transparent 60%,#fda1a1 30%);
+        font-size: 18px;
+        font-weight: bold;
+    }
+
+    </style>
+
+    <head>
+        <meta charset="UTF-8">
+        <title>101-122</title>
+    </head>
+
+    <body>
+        <h1>
+        <a href="./101_121.html" rel="external" title="prev">≪</a>
+        101-122
+        <a href="./101_123.html" rel="external" title="next">≫</a>
+        </h1>
+        <div class='problem'>
+            <p>
+                <span id="grad1">　問題文　</span>
+            </p>
+            <p>
+                <p>この日の夕食は食塩相当量として何g未満にする必要があるか。最も近い値を1つ選べ。ただし、Na及びClの原子量を23及び35.5とし、3食以外は食塩の摂取はないものとする。</p>
+<ol><li>6.3</li><li>5.3</li><li>3.8</li><li>2.8</li><li>1.6</li><li>0.65</li></ol>    
+            </p>
+        </div>
+        <hr>
+
+        <input type="button" value="check ans" onclick="toggle_switch()"/>
+        
+        <div id='toggle'>
+        <div class='answer'>
+            <p>
+                <span id="grad2">　解答　　</span>
+            </p>
+            <p>
+            4
+            </p>
+        </div>
+        <div class='description'>
+            <p>
+                <span id="grad2">　解説　　</span>
+            </p>
+            <div>おにぎりの食塩量は 1.4 g です。すぐにわからないのが、弁当の「ナトリウム 1100 mg」 です。以下、ナトリウム 1100 mg が食塩量としてどうなるのかを考えます。</div>
+<div>食塩とは、 NaCl　のことです。NaCl の分子量は23 + 35.5 = 58.5 です。食塩中に、Na は、23/58.5 存在します。逆に言うと、Na が x(g) 存在すれば食塩で言うと、x × （58.5/23） g　分である、ということです。</div>
+<div>選択肢から、結構大雑把な計算でいいので、58.5/23 ≒ 2.5 と近似して考えます。すると、Na が 1100 mg = 1.1 g あると、食塩は、1.1 × 2.5 = 2.75 g です。おにぎりと合わせると、1.4 + 2.75 = 4.15 g です。</div>
+<div>よって、摂取できるのは残り大体 2.8 g です。（7.0 – 4.15 = 2.85　より。）</div>
+<div><span style="color: #000000;">以上より、</span><span style="color: #ff0000;">正解は 4 </span><span style="color: #000000;">です。</span></div>
+            </p>
+        </div>
+        </div>
+    </body>
+    <script>
+    document.getElementById("toggle").style.display="none";
+    function toggle_switch(){
+        var x = document.getElementById("toggle");
+        if (x.style.display=="block"){
+            x.style.display="none";
+        }
+        else{
+            x.style.display="block";
+        }
+    }
+    </script>
+    

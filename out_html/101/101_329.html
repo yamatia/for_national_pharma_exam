@@ -1,0 +1,89 @@
+
+        <!DOCTYPE html>
+    <html lang="ja">
+    <style>
+    body
+    {
+        color: black;
+        background-color: white;
+    }
+    div{
+        font-size: 14px;
+    }
+    span
+    {
+        font-size: 18px;
+    }
+    #grad1{
+        background: linear-gradient(transparent 60%,#99e4f1 30%);
+        font-size: 18px;
+        font-weight: bold;
+    }
+    #grad2{
+        background: linear-gradient(transparent 60%,#fda1a1 30%);
+        font-size: 18px;
+        font-weight: bold;
+    }
+
+    </style>
+
+    <head>
+        <meta charset="UTF-8">
+        <title>101-329</title>
+    </head>
+
+    <body>
+        <h1>
+        <a href="./101_328.html" rel="external" title="prev">≪</a>
+        101-329
+        <a href="./101_330.html" rel="external" title="next">≫</a>
+        </h1>
+        <div class='problem'>
+            <p>
+                <span id="grad1">　問題文　</span>
+            </p>
+            <p>
+                <p>薬剤師が処方医に疑義照会すべき医薬品はどれか。1つ選べ。</p>
+<ol><li>ランソプラゾール口腔内崩壊錠</li><li>スピロノラクトン錠</li><li>アムロジピン錠</li><li>ピタバスタチンCa錠</li><li>メトプロロール酒石酸塩錠</li></ol>    
+            </p>
+        </div>
+        <hr>
+
+        <input type="button" value="check ans" onclick="toggle_switch()"/>
+        
+        <div id='toggle'>
+        <div class='answer'>
+            <p>
+                <span id="grad2">　解答　　</span>
+            </p>
+            <p>
+            2
+            </p>
+        </div>
+        <div class='description'>
+            <p>
+                <span id="grad2">　解説　　</span>
+            </p>
+            <p>高 K で、K 保持性利尿薬であるスピロノラクトンは疑義照会です。高 K 血症を悪化させるおそれがあるためです。</p>
+<p>以上より、正解は 2 です。</p>
+<p>その他の薬について簡単に以下、補足します。</p>
+<p>選択肢 1 のランソプラゾールは PPI です。アムロジピンは、Ca 拮抗薬です。ピタバスタチンカルシウムは、スタチンです。メトプロロールはβ1 遮断薬です。</p>
+<p>以降は雑感。試験的には不要。<br/>本患者に関しては、かなり降圧薬多め。厳格な血圧コントロール中。72 歳という歳から CKD とか・・・？（だったら、腎保護期待して ARB、ACE i での降圧でもよかったのでは。。）</p>
+<p>心臓に負担をかけないように感がある。カリウム値が高い→腎機能が低下してきた？カリウムに関してはインスタントコーヒーや果物などの摂取を控えるといった生活習慣での工夫も重要。などを頭に浮かべつつ、少しでも適切な薬物治療へと貢献できるような服薬指導を目指して投薬へと向かうのかなと思います。以上、雑感。</p>
+            </p>
+        </div>
+        </div>
+    </body>
+    <script>
+    document.getElementById("toggle").style.display="none";
+    function toggle_switch(){
+        var x = document.getElementById("toggle");
+        if (x.style.display=="block"){
+            x.style.display="none";
+        }
+        else{
+            x.style.display="block";
+        }
+    }
+    </script>
+    

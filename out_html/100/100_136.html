@@ -1,0 +1,89 @@
+
+        <!DOCTYPE html>
+    <html lang="ja">
+    <style>
+    body
+    {
+        color: black;
+        background-color: white;
+    }
+    div{
+        font-size: 14px;
+    }
+    span
+    {
+        font-size: 18px;
+    }
+    #grad1{
+        background: linear-gradient(transparent 60%,#99e4f1 30%);
+        font-size: 18px;
+        font-weight: bold;
+    }
+    #grad2{
+        background: linear-gradient(transparent 60%,#fda1a1 30%);
+        font-size: 18px;
+        font-weight: bold;
+    }
+
+    </style>
+
+    <head>
+        <meta charset="UTF-8">
+        <title>100-136</title>
+    </head>
+
+    <body>
+        <h1>
+        <a href="./100_135.html" rel="external" title="prev">≪</a>
+        100-136
+        <a href="./100_137.html" rel="external" title="next">≫</a>
+        </h1>
+        <div class='problem'>
+            <p>
+                <span id="grad1">　問題文　</span>
+            </p>
+            <p>
+                <ul><li>ア　　　　イ</li></ul>
+<ol><li>a　　青色蛍光の増加</li><li>a　　黄色発色の増強</li><li>a　　赤色沈殿の生成</li><li>b　　青色蛍光の増加</li><li>b　　黄色発色の増強</li><li>b　　赤色沈殿の生成</li></ol>    
+            </p>
+        </div>
+        <hr>
+
+        <input type="button" value="check ans" onclick="toggle_switch()"/>
+        
+        <div id='toggle'>
+        <div class='answer'>
+            <p>
+                <span id="grad2">　解答　　</span>
+            </p>
+            <p>
+            1
+            </p>
+        </div>
+        <div class='description'>
+            <p>
+                <span id="grad2">　解説　　</span>
+            </p>
+            <p>試薬 a は「大腸菌」の検査で用いられる試薬です。水質検査では「大腸菌」が「検出されない」ことが必要です。試薬 b は「大腸菌群」の検査で用いられる試薬です。</p>
+<p>大腸菌　及び　大腸菌群の検査についてですが、大腸菌　や　大腸菌群の持つ特定酵素を利用して、検出します。原理は「配糖体が無色であるような、色が分かる物質や蛍光物質」を用意することで、大腸菌　や　大腸菌群が存在すると菌の持つ酵素によって糖が分解されて色の分かる物質や蛍光物質が生成され呈色されるというものです。以下では各試薬について解説します。</p>
+<p>試薬 a は、MUG （4-メチルウンベリフェリル- β – D – グルクロニド）と呼ばれる試薬です。「大腸菌」の存在下で、β – グルクロニダーゼによって分解され、4 – メチルウンベリフェロンが遊離し培地に紫外線を当てると青色の蛍光を発します。</p>
+<p>試薬 b は、ONPG（o – ニトロフェノール – β – D – ガラクトピラノシド）と呼ばれる試薬です。「大腸菌群」の存在下で、β – ガラクトシダーゼにより分解され、o – ニトロフェノール（黄色）が遊離します。</p>
+<p>水道水の検査では、「大腸菌」の検査を行うため用いる試薬は、 a です。そして、青色蛍光の増加を観察します。</p>
+<p>以上より、正解は 1 です。</p>
+            </p>
+        </div>
+        </div>
+    </body>
+    <script>
+    document.getElementById("toggle").style.display="none";
+    function toggle_switch(){
+        var x = document.getElementById("toggle");
+        if (x.style.display=="block"){
+            x.style.display="none";
+        }
+        else{
+            x.style.display="block";
+        }
+    }
+    </script>
+    

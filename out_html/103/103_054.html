@@ -1,0 +1,86 @@
+
+        <!DOCTYPE html>
+    <html lang="ja">
+    <style>
+    body
+    {
+        color: black;
+        background-color: white;
+    }
+    div{
+        font-size: 14px;
+    }
+    span
+    {
+        font-size: 18px;
+    }
+    #grad1{
+        background: linear-gradient(transparent 60%,#99e4f1 30%);
+        font-size: 18px;
+        font-weight: bold;
+    }
+    #grad2{
+        background: linear-gradient(transparent 60%,#fda1a1 30%);
+        font-size: 18px;
+        font-weight: bold;
+    }
+
+    </style>
+
+    <head>
+        <meta charset="UTF-8">
+        <title>103-54</title>
+    </head>
+
+    <body>
+        <h1>
+        <a href="./103_053.html" rel="external" title="prev">≪</a>
+        103-54
+        <a href="./103_055.html" rel="external" title="next">≫</a>
+        </h1>
+        <div class='problem'>
+            <p>
+                <span id="grad1">　問題文　</span>
+            </p>
+            <p>
+                <p>腹膜透析用剤に関する記述のうち、正しいのはどれか。1つ選べ。</p>
+<ol><li>pH調節剤を加えることはできない。</li><li>等張化剤を加えることはできない。</li><li>別に規定するもののほか、無菌試験法に適合する。</li><li>静脈内に投与される。</li><li>通例、密閉容器に保存する。</li></ol>    
+            </p>
+        </div>
+        <hr>
+
+        <input type="button" value="check ans" onclick="toggle_switch()"/>
+        
+        <div id='toggle'>
+        <div class='answer'>
+            <p>
+                <span id="grad2">　解答　　</span>
+            </p>
+            <p>
+            3
+            </p>
+        </div>
+        <div class='description'>
+            <p>
+                <span id="grad2">　解説　　</span>
+            </p>
+            <p><span style="font-weight: 400;">腹膜透析用剤とは、</span><span style="font-weight: 400;">腹膜透析に用いる無菌の透析用剤です。</span><span style="font-weight: 400;">透析用剤を腹腔内に注入し、</span><span style="font-weight: 400;">ためておくことで、</span><span style="font-weight: 400;">不要な老廃物や余分な水分が、</span><span style="font-weight: 400;">血液から腹膜を通じて透析液側に</span><span style="font-weight: 400;">移動します。</span></p>
+<p><span style="font-weight: 400;">以上から、正解は 3 です。<br/></span><span style="font-weight: 400;">使用法から無菌が必要という点から</span><span style="font-weight: 400;">判断すべき問と考えられます。</span></p>
+<p><span style="font-weight: 400;">ちなみに、</span><span style="font-weight: 400;">密閉容器とは、固体の侵入を防ぐ容器です。</span><span style="font-weight: 400;">透析用剤は</span><span style="font-weight: 400;">密封もしくは必要に応じて</span><span style="font-weight: 400;">微生物の混入を防げる</span><span style="font-weight: 400;">気密容器に保存します。</span></p>
+            </p>
+        </div>
+        </div>
+    </body>
+    <script>
+    document.getElementById("toggle").style.display="none";
+    function toggle_switch(){
+        var x = document.getElementById("toggle");
+        if (x.style.display=="block"){
+            x.style.display="none";
+        }
+        else{
+            x.style.display="block";
+        }
+    }
+    </script>
+    

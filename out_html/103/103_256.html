@@ -1,0 +1,93 @@
+
+        <!DOCTYPE html>
+    <html lang="ja">
+    <style>
+    body
+    {
+        color: black;
+        background-color: white;
+    }
+    div{
+        font-size: 14px;
+    }
+    span
+    {
+        font-size: 18px;
+    }
+    #grad1{
+        background: linear-gradient(transparent 60%,#99e4f1 30%);
+        font-size: 18px;
+        font-weight: bold;
+    }
+    #grad2{
+        background: linear-gradient(transparent 60%,#fda1a1 30%);
+        font-size: 18px;
+        font-weight: bold;
+    }
+
+    </style>
+
+    <head>
+        <meta charset="UTF-8">
+        <title>103-256</title>
+    </head>
+
+    <body>
+        <h1>
+        <a href="./103_255.html" rel="external" title="prev">≪</a>
+        103-256
+        <a href="./103_257.html" rel="external" title="next">≫</a>
+        </h1>
+        <div class='problem'>
+            <p>
+                <span id="grad1">　問題文　</span>
+            </p>
+            <p>
+                <p>薬剤師が薬物相互作用の原因と考えた薬剤はどれか。2つ選べ。</p>
+<ol><li>アルファカルシドールカプセル</li><li>ポラプレジンク口腔内崩壊錠</li><li>シンバスタチン錠</li><li>クラリスロマイシン錠</li><li>ロキソプロフェンナトリウム水和物錠</li></ol>    
+            </p>
+        </div>
+        <hr>
+
+        <input type="button" value="check ans" onclick="toggle_switch()"/>
+        
+        <div id='toggle'>
+        <div class='answer'>
+            <p>
+                <span id="grad2">　解答　　</span>
+            </p>
+            <p>
+            問256：1, 4問257：3, 4
+            </p>
+        </div>
+        <div class='description'>
+            <p>
+                <span id="grad2">　解説　　</span>
+            </p>
+            <h4>問256</h4>
+<p>問257 とまとめて解説します。</p>
+<h4>問257</h4>
+<p><span style="font-weight: 400;">クラリスロマイシンは</span><span style="font-weight: 400;">マクロライド系抗生物質です。</span><span style="font-weight: 400;">タンパク合成阻害系の抗菌薬です。</span></p>
+<p><span style="font-weight: 400;">ロキソプロフェンは</span><span style="font-weight: 400;">NSAIDs です。鎮痛薬です。</span></p>
+<p><span style="font-weight: 400;">アルファカルシドールは</span><span style="font-weight: 400;">活性型ビタミン D</span><span style="font-weight: 400;">3</span><span style="font-weight: 400;"> 製剤です。</span><span style="font-weight: 400;">骨粗しょう症薬です。 </span><span style="font-weight: 400;">ビタミンD受容体は</span><span style="font-weight: 400;">核内受容体の一種です。</span></p>
+<p><span style="font-weight: 400;">ポラプレジンク（プロマック）は</span><span style="font-weight: 400;">亜鉛含有胃潰瘍治療剤です。</span></p>
+<p><span style="font-weight: 400;">シンバスタチンは</span><span style="font-weight: 400;">HMG-CoA 還元酵素阻害薬です。</span></p>
+<p><span style="font-weight: 400;">女性の相談は、</span><span style="font-weight: 400;">横紋筋融解症の初期症状と考えられます。</span><span style="font-weight: 400;">クラリスロマイシンが、</span><span style="font-weight: 400;">CYP3A4 阻害するため</span><span style="font-weight: 400;">同酵素で代謝される</span><span style="font-weight: 400;">シンバスタチンの血中濃度を上昇させ</span><span style="font-weight: 400;">副作用リスクが上がることが知られています。</span></p>
+<p><span style="font-weight: 400;">以上より、</span><span style="font-weight: 400;">問256 の正解は 1,4 です。<br/></span><span style="font-weight: 400;">問257 の正解は 3,4 です。</span></p>
+            </p>
+        </div>
+        </div>
+    </body>
+    <script>
+    document.getElementById("toggle").style.display="none";
+    function toggle_switch(){
+        var x = document.getElementById("toggle");
+        if (x.style.display=="block"){
+            x.style.display="none";
+        }
+        else{
+            x.style.display="block";
+        }
+    }
+    </script>
+    

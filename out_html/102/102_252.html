@@ -1,0 +1,94 @@
+
+        <!DOCTYPE html>
+    <html lang="ja">
+    <style>
+    body
+    {
+        color: black;
+        background-color: white;
+    }
+    div{
+        font-size: 14px;
+    }
+    span
+    {
+        font-size: 18px;
+    }
+    #grad1{
+        background: linear-gradient(transparent 60%,#99e4f1 30%);
+        font-size: 18px;
+        font-weight: bold;
+    }
+    #grad2{
+        background: linear-gradient(transparent 60%,#fda1a1 30%);
+        font-size: 18px;
+        font-weight: bold;
+    }
+
+    </style>
+
+    <head>
+        <meta charset="UTF-8">
+        <title>102-252</title>
+    </head>
+
+    <body>
+        <h1>
+        <a href="./102_251.html" rel="external" title="prev">≪</a>
+        102-252
+        <a href="./102_253.html" rel="external" title="next">≫</a>
+        </h1>
+        <div class='problem'>
+            <p>
+                <span id="grad1">　問題文　</span>
+            </p>
+            <p>
+                <p>この処方が引き起こす可能性がある副作用について、その発現機序はどれか。2つ選べ。</p>
+<ol><li>アンギオテンシンⅡAT<sub>1</sub>受容体遮断により歯肉肥厚が起こる。</li><li>アセチルコリンM<sub>3</sub>受容体遮断により眼圧亢進が起こる。</li><li>ヒスタミンH<sub>1</sub>受容体遮断により眠気が起こる。</li><li>アドレナリンα<sub>1</sub>受容体遮断により錐体外路障害が起こる。</li><li>ドパミンD<sub>2</sub>受容体遮断により起立性低血圧が起こる。</li></ol>    
+            </p>
+        </div>
+        <hr>
+
+        <input type="button" value="check ans" onclick="toggle_switch()"/>
+        
+        <div id='toggle'>
+        <div class='answer'>
+            <p>
+                <span id="grad2">　解答　　</span>
+            </p>
+            <p>
+            問252：4問253：2, 3
+            </p>
+        </div>
+        <div class='description'>
+            <p>
+                <span id="grad2">　解説　　</span>
+            </p>
+            <h4>問252</h4>
+<p>クロルプロマジンは、受容体選択性の低い遮断薬です。色んな受容体を遮断します。</p>
+<p>選択肢 の記述において<br/>・強い眠気→抗コリン作用<br/>・起床時立ちくらみ＝起立性低血圧→α1 遮断<br/>・手の震え、こわばり＝パーキンソン様症状→D遮断　と考えられるためあらかじめ説明が必要です。</p>
+<p>ちなみに、視野の狭窄や物の見えにくさ＝色素沈着の初期症状　です。この説明も必要になります。</p>
+<p>選択肢 4 ですが<br/>歯ぐきの腫れ → 一部の抗てんかん薬、Ca 拮抗薬の副作用　として知られています。クロルプロマジンの副作用としては知られてはおらず、説明は不要です。</p>
+<p>以上より、問252 の正解は 4 です。</p>
+<h4>問253</h4>
+<p>選択肢 1 は、Ca 拮抗の記述です。</p>
+<p>選択肢 2,3 は、正しい記述です。</p>
+<p>選択肢 4,5 は、受容体が逆です。</p>
+<p>以上より、問２５３　の正解は 2,3 です。</p>
+            </p>
+        </div>
+        </div>
+    </body>
+    <script>
+    document.getElementById("toggle").style.display="none";
+    function toggle_switch(){
+        var x = document.getElementById("toggle");
+        if (x.style.display=="block"){
+            x.style.display="none";
+        }
+        else{
+            x.style.display="block";
+        }
+    }
+    </script>
+    

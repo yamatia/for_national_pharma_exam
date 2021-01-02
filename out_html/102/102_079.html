@@ -1,0 +1,90 @@
+
+        <!DOCTYPE html>
+    <html lang="ja">
+    <style>
+    body
+    {
+        color: black;
+        background-color: white;
+    }
+    div{
+        font-size: 14px;
+    }
+    span
+    {
+        font-size: 18px;
+    }
+    #grad1{
+        background: linear-gradient(transparent 60%,#99e4f1 30%);
+        font-size: 18px;
+        font-weight: bold;
+    }
+    #grad2{
+        background: linear-gradient(transparent 60%,#fda1a1 30%);
+        font-size: 18px;
+        font-weight: bold;
+    }
+
+    </style>
+
+    <head>
+        <meta charset="UTF-8">
+        <title>102-79</title>
+    </head>
+
+    <body>
+        <h1>
+        <a href="./102_078.html" rel="external" title="prev">≪</a>
+        102-79
+        <a href="./102_080.html" rel="external" title="next">≫</a>
+        </h1>
+        <div class='problem'>
+            <p>
+                <span id="grad1">　問題文　</span>
+            </p>
+            <p>
+                <p>リスボン宣言に関する記述のうち、正しいのはどれか。1つ選べ。</p>
+<ol><li>人を対象とする医学系研究の倫理的原則である。</li><li>日本では法的拘束力がある。</li><li>患者が他の医師の意見を求める権利が示されている。</li><li>研究倫理委員会の役割が示されている。</li><li>医療従事者の権利が示されている。</li></ol>    
+            </p>
+        </div>
+        <hr>
+
+        <input type="button" value="check ans" onclick="toggle_switch()"/>
+        
+        <div id='toggle'>
+        <div class='answer'>
+            <p>
+                <span id="grad2">　解答　　</span>
+            </p>
+            <p>
+            3
+            </p>
+        </div>
+        <div class='description'>
+            <p>
+                <span id="grad2">　解説　　</span>
+            </p>
+            <p>リスボン宣言は、世界医師会総会で採択されたものです。患者の自己決定権や、代理人について宣言されました。</p>
+<p>選択肢 1 ですが<br/>人を対象とする医学系研究とは、治験のことです。治験に関する倫理的原則を宣言したのは、ヘルシンキ宣言です。</p>
+<p>選択肢 2 ですが<br/>医師会の宣言　なので、法的拘束力はありません。</p>
+<p>選択肢 3 は、正しい記述です。<br/>患者が自分で決定するために必要な情報を得るためにいわゆるセカンドオピニオンが必要な場合もあるからです。</p>
+<p>選択肢 4 ですが<br/>研究倫理委員会（IRB）に関する記述はヘルシンキ宣言にあります。（当初はなかったが、改訂により盛り込まれました。）</p>
+<p>選択肢 5 ですが<br/>医療従事者の権利ではなく、医療を受ける者の権利についてです。</p>
+<p>以上より、正解は 3 です。</p>
+            </p>
+        </div>
+        </div>
+    </body>
+    <script>
+    document.getElementById("toggle").style.display="none";
+    function toggle_switch(){
+        var x = document.getElementById("toggle");
+        if (x.style.display=="block"){
+            x.style.display="none";
+        }
+        else{
+            x.style.display="block";
+        }
+    }
+    </script>
+    

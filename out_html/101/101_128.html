@@ -1,0 +1,91 @@
+
+        <!DOCTYPE html>
+    <html lang="ja">
+    <style>
+    body
+    {
+        color: black;
+        background-color: white;
+    }
+    div{
+        font-size: 14px;
+    }
+    span
+    {
+        font-size: 18px;
+    }
+    #grad1{
+        background: linear-gradient(transparent 60%,#99e4f1 30%);
+        font-size: 18px;
+        font-weight: bold;
+    }
+    #grad2{
+        background: linear-gradient(transparent 60%,#fda1a1 30%);
+        font-size: 18px;
+        font-weight: bold;
+    }
+
+    </style>
+
+    <head>
+        <meta charset="UTF-8">
+        <title>101-128</title>
+    </head>
+
+    <body>
+        <h1>
+        <a href="./101_127.html" rel="external" title="prev">≪</a>
+        101-128
+        <a href="./101_129.html" rel="external" title="next">≫</a>
+        </h1>
+        <div class='problem'>
+            <p>
+                <span id="grad1">　問題文　</span>
+            </p>
+            <p>
+                <p>この解析に関する記述のうち、正しいのはどれか。2つ選べ。</p>
+<ol><li>喫煙(1日5本以上)による肺がん発症の相対危険度は6.0と計算される。</li><li>喫煙1日5本未満の者では、コーヒー摂取(1日4杯以上)が肺がん発症の相対危険度を低下させることがわかる。</li><li>喫煙者(1日5本以上)の肺がん発症の相対危険度に、コーヒー摂取は影響を与えないことがわかる。</li><li>コーヒー摂取1日4杯未満かつ喫煙1日5本未満である群が、最も肺がんの罹患率が低いことがわかる。</li></ol>    
+            </p>
+        </div>
+        <hr>
+
+        <input type="button" value="check ans" onclick="toggle_switch()"/>
+        
+        <div id='toggle'>
+        <div class='answer'>
+            <p>
+                <span id="grad2">　解答　　</span>
+            </p>
+            <p>
+            2, 3
+            </p>
+        </div>
+        <div class='description'>
+            <p>
+                <span id="grad2">　解説　　</span>
+            </p>
+            <p>選択肢 1 ですが<br/>喫煙に注目して、改めて表を考えると</p>
+<p>肺がん発症<br/>喫煙あり 50/5000<br/>喫煙なし 20/5000　となります。</p>
+<p>相対危険度とは、別名相対リスクです。暴露群と、非暴露群の疾病頻度の比です。よって、喫煙による相対危険度は 2.5 です。6.0 では、ありません。よって、選択肢 1 は誤りです。</p>
+<p>選択肢 2,3 は、正しい選択肢です。</p>
+<p>表２に注目すれば<br/>喫煙無し　かつ　コーヒー有りだと 5/2000 に対し<br/>喫煙無し　かつ　コーヒー無しだと 15/3000 となっています。よって、コーヒー摂取が肺がん発症の相対危険度を低下させているとわかります。</p>
+<p>また、喫煙有りだと<br/>コーヒー摂取ありで、30/3000<br/>コーヒー摂取なしで、20/2000 となっており約分すれば同じです。よって、喫煙者の場合、コーヒー摂取は影響を与えないとわかります。</p>
+<p>選択肢 4 ですが<br/>罹患率が一番低いのは、コーヒー摂取あり　かつ喫煙なし　の群です。よって、選択肢 4 は誤りです。</p>
+<p>以上より、正解は 2,3 です。</p>
+            </p>
+        </div>
+        </div>
+    </body>
+    <script>
+    document.getElementById("toggle").style.display="none";
+    function toggle_switch(){
+        var x = document.getElementById("toggle");
+        if (x.style.display=="block"){
+            x.style.display="none";
+        }
+        else{
+            x.style.display="block";
+        }
+    }
+    </script>
+    

@@ -1,0 +1,85 @@
+
+        <!DOCTYPE html>
+    <html lang="ja">
+    <style>
+    body
+    {
+        color: black;
+        background-color: white;
+    }
+    div{
+        font-size: 14px;
+    }
+    span
+    {
+        font-size: 18px;
+    }
+    #grad1{
+        background: linear-gradient(transparent 60%,#99e4f1 30%);
+        font-size: 18px;
+        font-weight: bold;
+    }
+    #grad2{
+        background: linear-gradient(transparent 60%,#fda1a1 30%);
+        font-size: 18px;
+        font-weight: bold;
+    }
+
+    </style>
+
+    <head>
+        <meta charset="UTF-8">
+        <title>100-143</title>
+    </head>
+
+    <body>
+        <h1>
+        <a href="./100_142.html" rel="external" title="prev">≪</a>
+        100-143
+        <a href="./100_144.html" rel="external" title="next">≫</a>
+        </h1>
+        <div class='problem'>
+            <p>
+                <span id="grad1">　問題文　</span>
+            </p>
+            <p>
+                <p>希少疾病用医薬品として指定されたものに対して、国又は厚生労働大臣がとる施策として医薬品医療機器等法(旧称：薬事法)に規定されていないのはどれか。1つ選べ。</p>
+<ol><li>製造販売承認の申請にかかる審査について、他のものに優先して行うことができる。</li><li>試験研究を促進するために必要な資金の確保に努める。</li><li>試験研究を促進するために必要な税制上の措置を講ずる。</li><li>製造所における製造管理又は品質管理の方法が基準に適合しているかの調査について、他のものに優先して行うことができる。</li><li>再評価制度の対象から除外する。</li></ol>    
+            </p>
+        </div>
+        <hr>
+
+        <input type="button" value="check ans" onclick="toggle_switch()"/>
+        
+        <div id='toggle'>
+        <div class='answer'>
+            <p>
+                <span id="grad2">　解答　　</span>
+            </p>
+            <p>
+            5
+            </p>
+        </div>
+        <div class='description'>
+            <p>
+                <span id="grad2">　解説　　</span>
+            </p>
+            <p>選択肢 1 ～ 4 は、その通りの記述です。<br/>希少疾病用医薬品とは、対象患者数 5 万人以下、医療上特に必要性が高い　などの条件に合致するものとして、厚生労働大臣が指定する医薬品です。必要性の高さから、優先審査が行われたり患者数が少ないことから、利益がみこめず企業により十分に研究開発が行われない点を考慮し様々な優遇措置がとられます。再審査期間の延長措置もあるのですが、再評価の対象から除外される、というわけではありません。よって、選択肢 5 は誤りです。</p>
+<p>以上より、正解は 5 です。</p>
+            </p>
+        </div>
+        </div>
+    </body>
+    <script>
+    document.getElementById("toggle").style.display="none";
+    function toggle_switch(){
+        var x = document.getElementById("toggle");
+        if (x.style.display=="block"){
+            x.style.display="none";
+        }
+        else{
+            x.style.display="block";
+        }
+    }
+    </script>
+    

@@ -1,0 +1,89 @@
+
+        <!DOCTYPE html>
+    <html lang="ja">
+    <style>
+    body
+    {
+        color: black;
+        background-color: white;
+    }
+    div{
+        font-size: 14px;
+    }
+    span
+    {
+        font-size: 18px;
+    }
+    #grad1{
+        background: linear-gradient(transparent 60%,#99e4f1 30%);
+        font-size: 18px;
+        font-weight: bold;
+    }
+    #grad2{
+        background: linear-gradient(transparent 60%,#fda1a1 30%);
+        font-size: 18px;
+        font-weight: bold;
+    }
+
+    </style>
+
+    <head>
+        <meta charset="UTF-8">
+        <title>101-149</title>
+    </head>
+
+    <body>
+        <h1>
+        <a href="./101_148.html" rel="external" title="prev">≪</a>
+        101-149
+        <a href="./101_150.html" rel="external" title="next">≫</a>
+        </h1>
+        <div class='problem'>
+            <p>
+                <span id="grad1">　問題文　</span>
+            </p>
+            <p>
+                <p>治験に関する記述のうち、正しいのはどれか。2つ選べ。</p>
+<ol><li>新有効成分について、我が国で初めて治験計画の届け出をした者は、届け出の日から30日以内に治験を開始しなければならない。</li><li>希少疾病用医薬品の治験には、GCPは適用されない。</li><li>治験薬に添付する文書には、予定される販売名や予定される効能効果を記載してはならない。</li><li>健康成人を対象とした治験への参加の同意については、文書での同意を要しない。</li><li>治験審査委員会には、医学、薬学等の専門的知識を有する者以外の者の参加が必要である。</li></ol>    
+            </p>
+        </div>
+        <hr>
+
+        <input type="button" value="check ans" onclick="toggle_switch()"/>
+        
+        <div id='toggle'>
+        <div class='answer'>
+            <p>
+                <span id="grad2">　解答　　</span>
+            </p>
+            <p>
+            3, 5
+            </p>
+        </div>
+        <div class='description'>
+            <p>
+                <span id="grad2">　解説　　</span>
+            </p>
+            <p>選択肢 1 ですが<br/>新有効成分について初めて治験計画の届け出がされると、前例もなく、慎重にチェックする必要もあることなどから、30 日を「過ぎてから」でないと治験を開始してはいけないです。30 日以内に治験を開始しなければならないということは、ありません。よって、選択肢 1 は誤りです。</p>
+<p>選択肢 2 ですが<br/>GCP は、治験実施の際に守るべきルールです。希少疾病用医薬品の治験にも、当然適用されるものです。ちなみに、製造販売後調査の目的などでも適用されます。選択肢 2 は誤りです。</p>
+<p>選択肢 3 は、正しい選択肢です。<br/>治験薬に、効能効果を推定されるような販売名や効能効果を記載してしまうと、治験薬を用いる人に思い込みを抱かせてしまい適切な治験を妨げるおそれがあります。</p>
+<p>選択肢 4 ですが<br/>文書での同意が必要です。口頭での同意は、簡便ですが、誤解を生じる可能性が文書よりも高いです。治験患者が、自身のリスクを正確に理解し、誤解なく判断をするために、治験では文書での同意を要します。</p>
+<p>選択肢 5 は、正しい選択肢です。<br/>治験審査委員会は、IRB （Institutional review board）と略されます。IRB メンバー構成の特徴として治験の被依頼者（病院）と利害関係のない人や医薬専門外の人が加えられる点があげられます。</p>
+<p>以上より、正解は 3,5 です。</p>
+            </p>
+        </div>
+        </div>
+    </body>
+    <script>
+    document.getElementById("toggle").style.display="none";
+    function toggle_switch(){
+        var x = document.getElementById("toggle");
+        if (x.style.display=="block"){
+            x.style.display="none";
+        }
+        else{
+            x.style.display="block";
+        }
+    }
+    </script>
+    

@@ -1,0 +1,91 @@
+
+        <!DOCTYPE html>
+    <html lang="ja">
+    <style>
+    body
+    {
+        color: black;
+        background-color: white;
+    }
+    div{
+        font-size: 14px;
+    }
+    span
+    {
+        font-size: 18px;
+    }
+    #grad1{
+        background: linear-gradient(transparent 60%,#99e4f1 30%);
+        font-size: 18px;
+        font-weight: bold;
+    }
+    #grad2{
+        background: linear-gradient(transparent 60%,#fda1a1 30%);
+        font-size: 18px;
+        font-weight: bold;
+    }
+
+    </style>
+
+    <head>
+        <meta charset="UTF-8">
+        <title>102-304</title>
+    </head>
+
+    <body>
+        <h1>
+        <a href="./102_303.html" rel="external" title="prev">≪</a>
+        102-304
+        <a href="./102_305.html" rel="external" title="next">≫</a>
+        </h1>
+        <div class='problem'>
+            <p>
+                <span id="grad1">　問題文　</span>
+            </p>
+            <p>
+                <p>クロピドグレルの代替薬として、以下の薬剤のうち最も適切なのはどれか。1つ選べ。</p>
+<ol><li>トラネキサム酸</li><li>プロタミン</li><li>プラスグレル</li><li>ワルファリン</li><li>メナテトレノン</li></ol>    
+            </p>
+        </div>
+        <hr>
+
+        <input type="button" value="check ans" onclick="toggle_switch()"/>
+        
+        <div id='toggle'>
+        <div class='answer'>
+            <p>
+                <span id="grad2">　解答　　</span>
+            </p>
+            <p>
+            問304：4問305：3
+            </p>
+        </div>
+        <div class='description'>
+            <p>
+                <span id="grad2">　解説　　</span>
+            </p>
+            <h4>問304</h4>
+<p>問305 とまとめて解説します。</p>
+<h4>問305</h4>
+<p>クロピドグレル（プラビックス）は、抗血小板薬です。CYP 2C19 による代謝を受けて活性代謝物になり、血小板表面の P2Y12 受容体に作用します。CYP2C19 の多型により治療抵抗性が見られることがあります。</p>
+<p>代謝酵素の影響を受けにくいよう改良された薬として位置づけられるのがプラスグレル（エフィエント）です。複数の CYP で活性化を受けるため個人差が少なくなっています。代替薬としてはプラスグレルが適していると考えられます。</p>
+<p>以上より、問304 の正解は 4 です。<br/>問305 の正解は 3 です。</p>
+<p>ちなみに、チカグレロル（ブリリンタ）も新しい抗血小板薬で、こちらは代謝酵素による活性化が不要な薬です。また、可逆的に作用するため手術の際の休薬期間が最短で 5 日ですむ　という特徴を有します。</p>
+<p>cf 抗血小板薬の流れ<br/>パナルジン<br/>→クロピドグレル<br/>→プラスグレル（エフィエント）、チカグレロル（ブリリンタ）</p>
+            </p>
+        </div>
+        </div>
+    </body>
+    <script>
+    document.getElementById("toggle").style.display="none";
+    function toggle_switch(){
+        var x = document.getElementById("toggle");
+        if (x.style.display=="block"){
+            x.style.display="none";
+        }
+        else{
+            x.style.display="block";
+        }
+    }
+    </script>
+    

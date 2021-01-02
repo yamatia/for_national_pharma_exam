@@ -1,0 +1,87 @@
+
+        <!DOCTYPE html>
+    <html lang="ja">
+    <style>
+    body
+    {
+        color: black;
+        background-color: white;
+    }
+    div{
+        font-size: 14px;
+    }
+    span
+    {
+        font-size: 18px;
+    }
+    #grad1{
+        background: linear-gradient(transparent 60%,#99e4f1 30%);
+        font-size: 18px;
+        font-weight: bold;
+    }
+    #grad2{
+        background: linear-gradient(transparent 60%,#fda1a1 30%);
+        font-size: 18px;
+        font-weight: bold;
+    }
+
+    </style>
+
+    <head>
+        <meta charset="UTF-8">
+        <title>104-60</title>
+    </head>
+
+    <body>
+        <h1>
+        <a href="./104_059.html" rel="external" title="prev">≪</a>
+        104-60
+        <a href="./104_061.html" rel="external" title="next">≫</a>
+        </h1>
+        <div class='problem'>
+            <p>
+                <span id="grad1">　問題文　</span>
+            </p>
+            <p>
+                <p>右心不全を伴わない左心不全の主な症状に該当しないのはどれか。1つ選べ。</p>
+<ol><li>急性肺水腫</li><li>下肢浮腫</li><li>呼吸困難</li><li>血圧低下</li><li>尿量減少</li></ol>    
+            </p>
+        </div>
+        <hr>
+
+        <input type="button" value="check ans" onclick="toggle_switch()"/>
+        
+        <div id='toggle'>
+        <div class='answer'>
+            <p>
+                <span id="grad2">　解答　　</span>
+            </p>
+            <p>
+            2
+            </p>
+        </div>
+        <div class='description'>
+            <p>
+                <span id="grad2">　解説　　</span>
+            </p>
+            <p><span style="font-weight: 400;">左心室不全→</span><b>大動脈から全身への血流が不足</b><span style="font-weight: 400;">する→酸素不足、血圧低下、血流量不足に伴う尿量減少　という連想で、選択肢 3,4,5 は該当すると判断したい問題です。</span></p>
+<p><span style="font-weight: 400;">さらに、左心不全により、入ってくる血液がスムーズに出ないことで、肺の方が血液過剰な状態になるため、肺うっ血→急性肺水腫という流れで症状が引き起こされます。選択肢 1 も該当します。</span></p>
+<p><span style="font-weight: 400;">ちなみに、</span><span style="font-weight: 400;">下肢浮腫は、右心不全に伴う代表的な症状です。</span><b>全身から戻ってくる血液がスムーズに肺に送り出せない</b><span style="font-weight: 400;">ため、むくみとして症状が現れます。</span></p>
+<p><span style="font-weight: 400;">以上より、正解は 2 です。</span></p>
+            </p>
+        </div>
+        </div>
+    </body>
+    <script>
+    document.getElementById("toggle").style.display="none";
+    function toggle_switch(){
+        var x = document.getElementById("toggle");
+        if (x.style.display=="block"){
+            x.style.display="none";
+        }
+        else{
+            x.style.display="block";
+        }
+    }
+    </script>
+    

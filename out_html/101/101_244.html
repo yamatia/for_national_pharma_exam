@@ -1,0 +1,98 @@
+
+        <!DOCTYPE html>
+    <html lang="ja">
+    <style>
+    body
+    {
+        color: black;
+        background-color: white;
+    }
+    div{
+        font-size: 14px;
+    }
+    span
+    {
+        font-size: 18px;
+    }
+    #grad1{
+        background: linear-gradient(transparent 60%,#99e4f1 30%);
+        font-size: 18px;
+        font-weight: bold;
+    }
+    #grad2{
+        background: linear-gradient(transparent 60%,#fda1a1 30%);
+        font-size: 18px;
+        font-weight: bold;
+    }
+
+    </style>
+
+    <head>
+        <meta charset="UTF-8">
+        <title>101-244</title>
+    </head>
+
+    <body>
+        <h1>
+        <a href="./101_243.html" rel="external" title="prev">≪</a>
+        101-244
+        <a href="./101_245.html" rel="external" title="next">≫</a>
+        </h1>
+        <div class='problem'>
+            <p>
+                <span id="grad1">　問題文　</span>
+            </p>
+            <p>
+                <p>医療機関に返却された針の廃棄方法で正しいのはどれか。2つ選べ。</p>
+<ol><li>回収した使用済み針の処理責任は、市町村が負う。</li><li>使用済み針と未使用の針は、廃棄前に必ず分別しなければならない。</li><li>使用済み針は、特別管理一般廃棄物として扱う。</li><li>使用済み針は、回収後滅菌しても感染性廃棄物と同様の扱いをする。</li><li>未使用の針は、感染性廃棄物と同様の扱いをする。</li></ol>    
+            </p>
+        </div>
+        <hr>
+
+        <input type="button" value="check ans" onclick="toggle_switch()"/>
+        
+        <div id='toggle'>
+        <div class='answer'>
+            <p>
+                <span id="grad2">　解答　　</span>
+            </p>
+            <p>
+            問244：3問245：4, 5
+            </p>
+        </div>
+        <div class='description'>
+            <p>
+                <span id="grad2">　解説　　</span>
+            </p>
+            <h4>問244</h4>
+<p>選択肢 1,2 は、正しい選択肢です。</p>
+<p>選択肢 3 ですが<br/>スルホニル尿素系（SU）薬は、副作用として低血糖が知られていることからも推測できるように切れ味よい血糖降下剤です。それに、追加分泌を補うのに用いるような急激にインスリンの血中濃度を上昇させる速効型インスリン製剤を用いると、副作用である低血糖のリスクが更に高くなると考えられます。</p>
+<p>そのため、SU 製剤と併用するのは基礎分泌を補うのに用いるインスリン製剤です。速効型インスリンでは、ありません。よって、選択肢 3 は誤りです。</p>
+<p>選択肢 4,5 は、正しい選択肢です。</p>
+<p>選択肢 5 ですが<br/>まず、血糖コントロールが不十分だったりすることで高血糖状態が継続することにより、膵臓 β 細胞のインスリン分泌能が低下することが知られています。すると経口糖尿病薬により、細胞を刺激してもインスリンが分泌されにくくなると考えられます。</p>
+<p>そこで、インスリン製剤投与により血糖がコントロールされることで高血糖状態が解除され、膵臓 β 細胞のインスリン分泌能が回復します。その結果、経口糖尿病薬に対する反応性の回復が期待できます。</p>
+<p>以上より、正解は 3 です。</p>
+<h4>問245</h4>
+<p>選択肢 1 ですが<br/>使用済みの針に関しては、市町村は回収を行いません。そのため、感染性廃棄物に準じた方法により、返却された医療機関が処理を行います。※ 法的に、感染性廃棄物では、ありません。</p>
+<p>選択肢 2 ですが<br/>共に「鋭利なもの」として区分されるため、分別の必要はありません。また、もしもそれらを廃棄前に分別しようとすると、分別時に針刺し事故が生じるリスクが高まるおそれも考えられるため不適切であると思われます。よって、選択肢 2 は誤りです。</p>
+<p>選択肢 3 ですが<br/>「在宅医療廃棄物」として扱われます。特別管理一般廃棄物では、ありません。</p>
+<p>ちなみに、特別管理一般廃棄物とは、爆発性、毒性、感染性など健康や生活環境に係る被害を生じるおそれがあるようなもので　かつ政令で定められている廃棄物のことです。具体的には、血のついたガーゼや、ダイオキシンを含む燃え殻　などです。よって、選択肢 3 は誤りです。</p>
+<p>選択肢 4,5 は、正しい選択肢です。</p>
+<p>以上より、正解は 4,5 です。</p>
+            </p>
+        </div>
+        </div>
+    </body>
+    <script>
+    document.getElementById("toggle").style.display="none";
+    function toggle_switch(){
+        var x = document.getElementById("toggle");
+        if (x.style.display=="block"){
+            x.style.display="none";
+        }
+        else{
+            x.style.display="block";
+        }
+    }
+    </script>
+    

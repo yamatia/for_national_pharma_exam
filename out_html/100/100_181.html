@@ -1,0 +1,90 @@
+
+        <!DOCTYPE html>
+    <html lang="ja">
+    <style>
+    body
+    {
+        color: black;
+        background-color: white;
+    }
+    div{
+        font-size: 14px;
+    }
+    span
+    {
+        font-size: 18px;
+    }
+    #grad1{
+        background: linear-gradient(transparent 60%,#99e4f1 30%);
+        font-size: 18px;
+        font-weight: bold;
+    }
+    #grad2{
+        background: linear-gradient(transparent 60%,#fda1a1 30%);
+        font-size: 18px;
+        font-weight: bold;
+    }
+
+    </style>
+
+    <head>
+        <meta charset="UTF-8">
+        <title>100-181</title>
+    </head>
+
+    <body>
+        <h1>
+        <a href="./100_180.html" rel="external" title="prev">≪</a>
+        100-181
+        <a href="./100_182.html" rel="external" title="next">≫</a>
+        </h1>
+        <div class='problem'>
+            <p>
+                <span id="grad1">　問題文　</span>
+            </p>
+            <p>
+                <p>ぜん息患者が重積発作を起こし、チアノーゼの所見を認めた。本症例のチアノーゼに関する記述のうち、誤っているのはどれか。1つ選べ。</p>
+<ol><li>口唇粘膜が青紫色に変化している。</li><li>動脈血酸素分圧の低下を示している。</li><li>貧血がある場合に発現しやすい。</li><li>指の皮膚温の低下は見られない。</li><li>血中メトヘモグロビン量が増加している。</li></ol>    
+            </p>
+        </div>
+        <hr>
+
+        <input type="button" value="check ans" onclick="toggle_switch()"/>
+        
+        <div id='toggle'>
+        <div class='answer'>
+            <p>
+                <span id="grad2">　解答　　</span>
+            </p>
+            <p>
+            3
+            </p>
+        </div>
+        <div class='description'>
+            <p>
+                <span id="grad2">　解説　　</span>
+            </p>
+            <p>チアノーゼとは、血中還元ヘモグロビン（＝酸素と結合していないヘモグロビン）増加により身体表面が紫色になる状態です。血中酸素濃度が低下しています。心疾患などが原因です。以下、各選択肢を検討します。</p>
+<p>選択肢 1 は正しい選択肢です。<br/>チアノーゼは、大きく中心性と末梢性　に分類されます。末梢性チアノーゼの主な原因は心疾患を背景とした、末梢の血液循環不良や寒冷による、末梢の血液循環不良です。本問では、ぜん息発作に伴うものなので中心性チアノーゼと考えられます。中心性チアノーゼの特徴は、唇や皮膚や粘膜が紫色を示すこと　及び　皮膚温の低下は見られない　ということです。</p>
+<p>選択肢 2 は正しい選択肢です。</p>
+<p>選択肢 3 ですが<br/>貧血である場合、ヘモグロビンの絶対量が少ないと考えられます。一方、チアノーゼにおいて身体表面が紫色に見えるのは還元ヘモグロビンの量が多いからです。ヘモグロビンの絶対量が少ない状態（＝貧血）であれば、身体表面が紫色に見える程度に還元ヘモグロビンの量が多くなることはなかなかない、ということになります。よって、選択肢 3 は誤りです。</p>
+<p>選択肢 4 は、正しい選択肢です。</p>
+<p>選択肢 5 は、正しい選択肢です。<br/>ちなみにメトヘモグロビンとは、赤血球内のヘモグロビン中の鉄イオンが 3 価の鉄イオンになったものです。酸素結合・運搬ができないヘモグロビンです。</p>
+<p>以上より、正解は 3 です。</p>
+            </p>
+        </div>
+        </div>
+    </body>
+    <script>
+    document.getElementById("toggle").style.display="none";
+    function toggle_switch(){
+        var x = document.getElementById("toggle");
+        if (x.style.display=="block"){
+            x.style.display="none";
+        }
+        else{
+            x.style.display="block";
+        }
+    }
+    </script>
+    

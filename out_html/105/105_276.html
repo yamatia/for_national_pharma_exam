@@ -1,0 +1,92 @@
+
+        <!DOCTYPE html>
+    <html lang="ja">
+    <style>
+    body
+    {
+        color: black;
+        background-color: white;
+    }
+    div{
+        font-size: 14px;
+    }
+    span
+    {
+        font-size: 18px;
+    }
+    #grad1{
+        background: linear-gradient(transparent 60%,#99e4f1 30%);
+        font-size: 18px;
+        font-weight: bold;
+    }
+    #grad2{
+        background: linear-gradient(transparent 60%,#fda1a1 30%);
+        font-size: 18px;
+        font-weight: bold;
+    }
+
+    </style>
+
+    <head>
+        <meta charset="UTF-8">
+        <title>105-276</title>
+    </head>
+
+    <body>
+        <h1>
+        <a href="./105_275.html" rel="external" title="prev">≪</a>
+        105-276
+        <a href="./105_277.html" rel="external" title="next">≫</a>
+        </h1>
+        <div class='problem'>
+            <p>
+                <span id="grad1">　問題文　</span>
+            </p>
+            <p>
+                <ul><li>　　　　ア　　　　　　　　　　　イ</li></ul>
+<ol><li>消化管からの吸収速度　　　　　遅い</li><li>血漿中での加水分解速度　　　　遅い</li><li>標的細胞中での加水分解速度　　遅い</li><li>腎クリアランス　　　　　　　　大きい</li><li>バイオアベイラビリティ　　　　小さい</li></ol>    
+            </p>
+        </div>
+        <hr>
+
+        <input type="button" value="check ans" onclick="toggle_switch()"/>
+        
+        <div id='toggle'>
+        <div class='answer'>
+            <p>
+                <span id="grad2">　解答　　</span>
+            </p>
+            <p>
+            問276：3問277：2
+            </p>
+        </div>
+        <div class='description'>
+            <p>
+                <span id="grad2">　解説　　</span>
+            </p>
+            <h4>問276</h4>
+<p><strong>HBc 抗体(+)</strong> なので、B 型肝炎ウイルスに感染したことがあると考えられます。</p>
+<p>まず、HBc 「抗原」は、B 型肝炎ウイルス構成タンパク質の一つです。外殻内部のタンパク質なので、現在の所、検出方法は研究中です。この抗原に対する抗体が HBc 抗体 です。</p>
+<p>代表的な肝炎マーカーは HBs,HBe が知られています。そして、このHBs,HBe 抗体が陰性であっても、HBc 抗体が陽性の場合、B 型肝炎ウイルスに感染したことがあるとわかってきました。そのため、免疫抑制剤などを使用する際には、検査が推奨されています。</p>
+<p>従って、正解は 3 です。</p>
+<p>参考）</p>
+<h4>問277</h4>
+<p>テノホビル ジソプロキシルもテノホビルのプロドラッグです。テノホビルアラフェナミドは、<strong>血漿中においてより安定</strong>です。そのため、活性リン酸化代謝物であるテノホビル二リン酸を、標的細胞内により高い濃度で送達することが可能です。</p>
+<p>以上より、正解は 2 です。</p>
+            </p>
+        </div>
+        </div>
+    </body>
+    <script>
+    document.getElementById("toggle").style.display="none";
+    function toggle_switch(){
+        var x = document.getElementById("toggle");
+        if (x.style.display=="block"){
+            x.style.display="none";
+        }
+        else{
+            x.style.display="block";
+        }
+    }
+    </script>
+    

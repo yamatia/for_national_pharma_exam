@@ -1,0 +1,87 @@
+
+        <!DOCTYPE html>
+    <html lang="ja">
+    <style>
+    body
+    {
+        color: black;
+        background-color: white;
+    }
+    div{
+        font-size: 14px;
+    }
+    span
+    {
+        font-size: 18px;
+    }
+    #grad1{
+        background: linear-gradient(transparent 60%,#99e4f1 30%);
+        font-size: 18px;
+        font-weight: bold;
+    }
+    #grad2{
+        background: linear-gradient(transparent 60%,#fda1a1 30%);
+        font-size: 18px;
+        font-weight: bold;
+    }
+
+    </style>
+
+    <head>
+        <meta charset="UTF-8">
+        <title>101-61</title>
+    </head>
+
+    <body>
+        <h1>
+        <a href="./101_060.html" rel="external" title="prev">≪</a>
+        101-61
+        <a href="./101_062.html" rel="external" title="next">≫</a>
+        </h1>
+        <div class='problem'>
+            <p>
+                <span id="grad1">　問題文　</span>
+            </p>
+            <p>
+                <p>メニエール病の典型的な病態及び症状に該当しないのはどれか。1つ選べ。</p>
+<ol><li>難聴</li><li>耳鳴</li><li>浮動性めまい</li><li>眼振</li><li>耳閉感</li></ol>    
+            </p>
+        </div>
+        <hr>
+
+        <input type="button" value="check ans" onclick="toggle_switch()"/>
+        
+        <div id='toggle'>
+        <div class='answer'>
+            <p>
+                <span id="grad2">　解答　　</span>
+            </p>
+            <p>
+            3
+            </p>
+        </div>
+        <div class='description'>
+            <p>
+                <span id="grad2">　解説　　</span>
+            </p>
+            <p>メニエール病とは、内耳のリンパ水腫により引き起こされる、繰り返す回転性のめまい、難聴、耳鳴り、耳閉感　のことです。</p>
+<p>めまいは大きく 4 種に分類されます。回転性、浮動性、立ちくらみ、平衡障害　です。それぞれのイメージは、回転：「ぐるぐる　するめまい」、浮動性：「ふわふわ　するめまい」、立ちくらみ：「す～っと意識が遠くなっていく　めまい」、平衡障害：「ぐらぐら　するめまい」　です。</p>
+<p>メニエール病の典型的な症状は、回転性めまいなので浮動性めまいではないと考えられます。</p>
+<p>以上より、正解は 3 です。</p>
+            </p>
+        </div>
+        </div>
+    </body>
+    <script>
+    document.getElementById("toggle").style.display="none";
+    function toggle_switch(){
+        var x = document.getElementById("toggle");
+        if (x.style.display=="block"){
+            x.style.display="none";
+        }
+        else{
+            x.style.display="block";
+        }
+    }
+    </script>
+    

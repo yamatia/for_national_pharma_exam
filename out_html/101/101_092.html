@@ -1,0 +1,89 @@
+
+        <!DOCTYPE html>
+    <html lang="ja">
+    <style>
+    body
+    {
+        color: black;
+        background-color: white;
+    }
+    div{
+        font-size: 14px;
+    }
+    span
+    {
+        font-size: 18px;
+    }
+    #grad1{
+        background: linear-gradient(transparent 60%,#99e4f1 30%);
+        font-size: 18px;
+        font-weight: bold;
+    }
+    #grad2{
+        background: linear-gradient(transparent 60%,#fda1a1 30%);
+        font-size: 18px;
+        font-weight: bold;
+    }
+
+    </style>
+
+    <head>
+        <meta charset="UTF-8">
+        <title>101-92</title>
+    </head>
+
+    <body>
+        <h1>
+        <a href="./101_091.html" rel="external" title="prev">≪</a>
+        101-92
+        <a href="./101_093.html" rel="external" title="next">≫</a>
+        </h1>
+        <div class='problem'>
+            <p>
+                <span id="grad1">　問題文　</span>
+            </p>
+            <p>
+                <p>ただし、H－I間で電子1個分の電荷(+e、-e)がそれぞれの原子上に分離しているとき、HIは100%イオン性を示すものとする。</p>
+<ol><li>1</li><li>5</li><li>10</li><li>20</li><li>40</li></ol>    
+            </p>
+        </div>
+        <hr>
+
+        <input type="button" value="check ans" onclick="toggle_switch()"/>
+        
+        <div id='toggle'>
+        <div class='answer'>
+            <p>
+                <span id="grad2">　解答　　</span>
+            </p>
+            <p>
+            2
+            </p>
+        </div>
+        <div class='description'>
+            <p>
+                <span id="grad2">　解説　　</span>
+            </p>
+            <p>「nm （ナノメートル）」は、 10<span style="font-weight: 400;"><sup>-9</sup></span> m ですので、H－I 結合距離は、単位を m にすると 1.6 × 10<span style="font-weight: 400;"><sup>-10</sup></span> m と表すことができます。そして、ヨウ化水素 HI の双極子モーメントが 1.4 × 10<span style="font-weight: 400;"><sup>-30</sup></span> ですので、μ＝Q・r に代入することで、<strong>1.4 × 10<sup>-30</sup> = Q・1.6 × 10<sup>-10</sup></strong>　となります。Q を計算するのは少し複雑そうなので、選択肢を以下では活用します。（もちろん、Q を計算して求めてもかまいません。）</p>
+<p>選択肢 1 が正解とすると<br/>イオン性 が 1 % です。100 % イオン性を持った時であれば、電荷 +e, -e がそれぞれ H、I に分離している時であるため、電荷は 1.6 × 10<span style="font-weight: 400;"><sup>-19</sup></span> （C)　であると考えられます。</p>
+<p>100 % イオン性 → 電荷が 1.6 × 10<span style="font-weight: 400;"><sup>-19</sup></span> ならば、1 % イオン性 → 電荷は 1.6 × 10<span style="font-weight: 400;"><sup>-21</sup></span> であると考えられます。（1% = 0.01 より。1.6 × 10<span style="font-weight: 400;"><sup>-19</sup></span> × 0.01  = 1.6 × 10<span style="font-weight: 400;"><sup>-21</sup></span> であるため。）この数字を双極子モーメントの式に代入してみると</p>
+<p>右辺 Q・r  = (1.6 × 10<span style="font-weight: 400;"><sup>-21</sup></span>) ・(1.6 × 10<span style="font-weight: 400;"><sup>-10</sup></span>) = 2.56 × 10<span style="font-weight: 400;"><sup>-31</sup></span> となります。左辺と一致しないため、誤りです。</p>
+<p>次に、選択肢 2 が正解として <br/>イオン性を 5 % と仮定すると、電荷が、8.0 × 10<span style="font-weight: 400;"><sup>-21</sup></span> となり、この数字を代入して計算してみると大体 1.4 × 10<span style="font-weight: 400;"><sup>-30</sup></span> となります。</p>
+<p>以上より、正解は 2 です。</p>
+            </p>
+        </div>
+        </div>
+    </body>
+    <script>
+    document.getElementById("toggle").style.display="none";
+    function toggle_switch(){
+        var x = document.getElementById("toggle");
+        if (x.style.display=="block"){
+            x.style.display="none";
+        }
+        else{
+            x.style.display="block";
+        }
+    }
+    </script>
+    

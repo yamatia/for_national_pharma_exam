@@ -1,0 +1,92 @@
+
+        <!DOCTYPE html>
+    <html lang="ja">
+    <style>
+    body
+    {
+        color: black;
+        background-color: white;
+    }
+    div{
+        font-size: 14px;
+    }
+    span
+    {
+        font-size: 18px;
+    }
+    #grad1{
+        background: linear-gradient(transparent 60%,#99e4f1 30%);
+        font-size: 18px;
+        font-weight: bold;
+    }
+    #grad2{
+        background: linear-gradient(transparent 60%,#fda1a1 30%);
+        font-size: 18px;
+        font-weight: bold;
+    }
+
+    </style>
+
+    <head>
+        <meta charset="UTF-8">
+        <title>101-20</title>
+    </head>
+
+    <body>
+        <h1>
+        <a href="./101_019.html" rel="external" title="prev">≪</a>
+        101-20
+        <a href="./101_021.html" rel="external" title="next">≫</a>
+        </h1>
+        <div class='problem'>
+            <p>
+                <span id="grad1">　問題文　</span>
+            </p>
+            <p>
+                <p>食品衛生法に基づき、リンゴジュースについて基準値が定められているカビ毒はどれか。1つ選べ。</p>
+<ol><li>アフラトキシンB<sub>1</sub></li><li>ステリグマトシスチン</li><li>オクラトキシンA</li><li>パツリン</li><li>エルゴタミン</li></ol>    
+            </p>
+        </div>
+        <hr>
+
+        <input type="button" value="check ans" onclick="toggle_switch()"/>
+        
+        <div id='toggle'>
+        <div class='answer'>
+            <p>
+                <span id="grad2">　解答　　</span>
+            </p>
+            <p>
+            4
+            </p>
+        </div>
+        <div class='description'>
+            <p>
+                <span id="grad2">　解説　　</span>
+            </p>
+            <p>選択肢は、すべてカビ毒です。<strong>カビにより産生される毒の総称</strong>を<strong>マイコトキシン</strong>と呼びます。</p>
+<p>選択肢 1 ですが<br/>アフラトキシンは、ナッツ類に生じるカビによる毒として有名なマイコトキシンの一種です。高い発がん性を有します。りんごジュースについて基準値は定められていません。</p>
+<p>選択肢 2 ですが<br/>ステリグマトシスチンは、主にアスペルギルス属のカビが産生するマイコトキシンの一種です。りんごジュースについて基準値は定められていません。</p>
+<p>選択肢 3 ですが<br/>オクラトキシンは、アオカビ、コウジカビ属のかびが産生するマイコトキシンの一種です。りんごジュースについて基準値は定められていません。（ちなみに、野菜の「オクラ」とは関係ないようです。A.「ochra」ceus という、カビの種類からの名前　です。）</p>
+<p>選択肢 4 は、正しい選択肢です。<br/>パツリンは、リンゴ製品にはえるカビが産生する毒です。神経障害を引き起こします。りんごジュースについて基準値が定められています。</p>
+<p>選択肢 5 ですが<br/>エルゴタミンは、ライ麦パンにはえる麦角菌と呼ばれるカビが産生する毒です。知覚障害や子宮収縮を引き起こします。りんごジュースについて基準値は定められていません。</p>
+<p>以上より、正解は 4 です。</p>
+<p>※本問について「りんごジュースについての規制値」について知っていることは不要であると考えられます。代表的マイコトキシンとしてパツリンを抑えておいて、これが「リンゴ製品にはえる」ぐらいからきっとりんごジュースにも規制値があるだろうと考えればよいのではないでしょうか。</p>
+<p>参考）</p>
+            </p>
+        </div>
+        </div>
+    </body>
+    <script>
+    document.getElementById("toggle").style.display="none";
+    function toggle_switch(){
+        var x = document.getElementById("toggle");
+        if (x.style.display=="block"){
+            x.style.display="none";
+        }
+        else{
+            x.style.display="block";
+        }
+    }
+    </script>
+    

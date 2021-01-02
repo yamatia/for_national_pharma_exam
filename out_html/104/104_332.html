@@ -1,0 +1,86 @@
+
+        <!DOCTYPE html>
+    <html lang="ja">
+    <style>
+    body
+    {
+        color: black;
+        background-color: white;
+    }
+    div{
+        font-size: 14px;
+    }
+    span
+    {
+        font-size: 18px;
+    }
+    #grad1{
+        background: linear-gradient(transparent 60%,#99e4f1 30%);
+        font-size: 18px;
+        font-weight: bold;
+    }
+    #grad2{
+        background: linear-gradient(transparent 60%,#fda1a1 30%);
+        font-size: 18px;
+        font-weight: bold;
+    }
+
+    </style>
+
+    <head>
+        <meta charset="UTF-8">
+        <title>104-332</title>
+    </head>
+
+    <body>
+        <h1>
+        <a href="./104_331.html" rel="external" title="prev">≪</a>
+        104-332
+        <a href="./104_333.html" rel="external" title="next">≫</a>
+        </h1>
+        <div class='problem'>
+            <p>
+                <span id="grad1">　問題文　</span>
+            </p>
+            <p>
+                <ul><li>1回量(mL)　全量(mL)</li></ul>
+<ol><li>0.5　　　　　3.5</li><li>5　　　　　　35</li><li>5　　　　　　70</li><li>50　　　　　350</li><li>50　　　　　700</li></ol>    
+            </p>
+        </div>
+        <hr>
+
+        <input type="button" value="check ans" onclick="toggle_switch()"/>
+        
+        <div id='toggle'>
+        <div class='answer'>
+            <p>
+                <span id="grad2">　解答　　</span>
+            </p>
+            <p>
+            3
+            </p>
+        </div>
+        <div class='description'>
+            <p>
+                <span id="grad2">　解説　　</span>
+            </p>
+            <p><span style="font-weight: 400;">１回量が ケトチフェン 1mg です。</span><span style="font-weight: 400;">シロップ 1mL は 1g と考えます。 0.02% なので、</span><span style="font-weight: 400;">シロップ 1mL 中に、ケトチフェンは 0.2mg 含有です。</span><span style="font-weight: 400;">そのため、１回量は 5mL 必要です。</span></p>
+<p><span style="font-weight: 400;">１日２回で７日分なので、全量は 5 × 14 = 70mL になります。</span></p>
+<p><span style="font-weight: 400;">以上より、正解は 3 です。</span><span style="font-weight: 400;"><br/></span></p>
+            </p>
+        </div>
+        </div>
+    </body>
+    <script>
+    document.getElementById("toggle").style.display="none";
+    function toggle_switch(){
+        var x = document.getElementById("toggle");
+        if (x.style.display=="block"){
+            x.style.display="none";
+        }
+        else{
+            x.style.display="block";
+        }
+    }
+    </script>
+    

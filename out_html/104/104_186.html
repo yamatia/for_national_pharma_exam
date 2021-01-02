@@ -1,0 +1,89 @@
+
+        <!DOCTYPE html>
+    <html lang="ja">
+    <style>
+    body
+    {
+        color: black;
+        background-color: white;
+    }
+    div{
+        font-size: 14px;
+    }
+    span
+    {
+        font-size: 18px;
+    }
+    #grad1{
+        background: linear-gradient(transparent 60%,#99e4f1 30%);
+        font-size: 18px;
+        font-weight: bold;
+    }
+    #grad2{
+        background: linear-gradient(transparent 60%,#fda1a1 30%);
+        font-size: 18px;
+        font-weight: bold;
+    }
+
+    </style>
+
+    <head>
+        <meta charset="UTF-8">
+        <title>104-186</title>
+    </head>
+
+    <body>
+        <h1>
+        <a href="./104_185.html" rel="external" title="prev">≪</a>
+        104-186
+        <a href="./104_187.html" rel="external" title="next">≫</a>
+        </h1>
+        <div class='problem'>
+            <p>
+                <span id="grad1">　問題文　</span>
+            </p>
+            <p>
+                <p>55歳男性。急性骨髄性白血病と診断され、血縁者からの末梢血幹細胞移植を行うこととなった。この患者の治療に関する記述のうち、正しいのはどれか。1つ選べ。</p>
+<ol><li>自家移植よりも致死的合併症は少ない。</li><li>移植後にシクロホスファミドの大量化学療法と全身放射線照射を行う。</li><li>タクロリムスを移植手術の前から投与する。</li><li>移植後は免疫抑制剤を速やかに中止する。</li><li>移植片対宿主病の発症を予防するために、移植する造血幹細胞に対して放射線照射を行う。</li></ol>    
+            </p>
+        </div>
+        <hr>
+
+        <input type="button" value="check ans" onclick="toggle_switch()"/>
+        
+        <div id='toggle'>
+        <div class='answer'>
+            <p>
+                <span id="grad2">　解答　　</span>
+            </p>
+            <p>
+            3
+            </p>
+        </div>
+        <div class='description'>
+            <p>
+                <span id="grad2">　解説　　</span>
+            </p>
+            <p><span style="font-weight: 400;">選択肢 1 ですが<br/></span><span style="font-weight: 400;">血縁者とはいえ他人なので、自家移植の方が拒絶などの致死的合併症は少ないだろうと判断できるのではないでしょうか。選択肢 1 は誤りです。</span></p>
+<p><span style="font-weight: 400;">選択肢 2 ですが<br/></span><span style="font-weight: 400;">「シクロホスファミド大量＋全身放射線」は、いわゆる「地固め療法」です。これでいったんみんなやっつけた後に、骨髄機能回復のために移植　という流れです。つまり「地固め療法→移植」です。移植後に地固めすると、移植した細胞もみんな死んでしまい無意味です。よって、選択肢 2 は誤りです。</span></p>
+<p><span style="font-weight: 400;">選択肢 3 は妥当な記述です。<br/></span><span style="font-weight: 400;">タクロリムスは免疫抑制剤の一種です。拒絶抑制のため投与します。</span></p>
+<p><span style="font-weight: 400;">選択肢 4 ですが<br/></span><span style="font-weight: 400;">免疫抑制剤は、免疫寛容まで様子を見つつ個別に調節します。「移植後速やかに中止」ではありません。よって、選択肢 4 は誤りです。</span></p>
+<p><span style="font-weight: 400;">選択肢 5 ですが<br/></span><span style="font-weight: 400;">造血幹細胞に対して放射線照射をしては、骨髄機能回復のために移植しているのに、意味がなくなってしまいます。記述は「輸血後 移植片対宿主病（GVHD）の予防」として、「リンパ球の機能を抑制するために放射線照射を行う」というパターンとの混同を狙ったものと考えられます。選択肢 5 は誤りです。</span></p>
+<p><span style="font-weight: 400;">以上より、正解は 3 です。</span><span style="font-weight: 400;"><br/></span></p>
+            </p>
+        </div>
+        </div>
+    </body>
+    <script>
+    document.getElementById("toggle").style.display="none";
+    function toggle_switch(){
+        var x = document.getElementById("toggle");
+        if (x.style.display=="block"){
+            x.style.display="none";
+        }
+        else{
+            x.style.display="block";
+        }
+    }
+    </script>
+    

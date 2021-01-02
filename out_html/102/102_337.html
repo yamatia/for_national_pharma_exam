@@ -1,0 +1,85 @@
+
+        <!DOCTYPE html>
+    <html lang="ja">
+    <style>
+    body
+    {
+        color: black;
+        background-color: white;
+    }
+    div{
+        font-size: 14px;
+    }
+    span
+    {
+        font-size: 18px;
+    }
+    #grad1{
+        background: linear-gradient(transparent 60%,#99e4f1 30%);
+        font-size: 18px;
+        font-weight: bold;
+    }
+    #grad2{
+        background: linear-gradient(transparent 60%,#fda1a1 30%);
+        font-size: 18px;
+        font-weight: bold;
+    }
+
+    </style>
+
+    <head>
+        <meta charset="UTF-8">
+        <title>102-337</title>
+    </head>
+
+    <body>
+        <h1>
+        <a href="./102_336.html" rel="external" title="prev">≪</a>
+        102-337
+        <a href="./102_338.html" rel="external" title="next">≫</a>
+        </h1>
+        <div class='problem'>
+            <p>
+                <span id="grad1">　問題文　</span>
+            </p>
+            <p>
+                <p>健康には気をつけており、日頃から以下の飲み物を常用している。以下の飲み物の中で、同時に摂取したときにこの処方薬の副作用の発現を高める可能性があるのはどれか。1つ選べ。</p>
+<ol><li>ミネラルウォーター</li><li>グレープフルーツジュース</li><li>牛乳</li><li>トマトジュース</li><li>青汁</li></ol>    
+            </p>
+        </div>
+        <hr>
+
+        <input type="button" value="check ans" onclick="toggle_switch()"/>
+        
+        <div id='toggle'>
+        <div class='answer'>
+            <p>
+                <span id="grad2">　解答　　</span>
+            </p>
+            <p>
+            3
+            </p>
+        </div>
+        <div class='description'>
+            <p>
+                <span id="grad2">　解説　　</span>
+            </p>
+            <p>エトレチナートがビタミン A 誘導体であり、乾癬治療に用いられるのですが、高脂肪食や牛乳との併用により吸収増加し、副作用のリスクが高まることが知られています。</p>
+<p>以上より、正解は 3 です。</p>
+            </p>
+        </div>
+        </div>
+    </body>
+    <script>
+    document.getElementById("toggle").style.display="none";
+    function toggle_switch(){
+        var x = document.getElementById("toggle");
+        if (x.style.display=="block"){
+            x.style.display="none";
+        }
+        else{
+            x.style.display="block";
+        }
+    }
+    </script>
+    

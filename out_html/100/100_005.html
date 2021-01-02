@@ -1,0 +1,86 @@
+
+        <!DOCTYPE html>
+    <html lang="ja">
+    <style>
+    body
+    {
+        color: black;
+        background-color: white;
+    }
+    div{
+        font-size: 14px;
+    }
+    span
+    {
+        font-size: 18px;
+    }
+    #grad1{
+        background: linear-gradient(transparent 60%,#99e4f1 30%);
+        font-size: 18px;
+        font-weight: bold;
+    }
+    #grad2{
+        background: linear-gradient(transparent 60%,#fda1a1 30%);
+        font-size: 18px;
+        font-weight: bold;
+    }
+
+    </style>
+
+    <head>
+        <meta charset="UTF-8">
+        <title>100-5</title>
+    </head>
+
+    <body>
+        <h1>
+        <a href="./100_004.html" rel="external" title="prev">≪</a>
+        100-5
+        <a href="./100_006.html" rel="external" title="next">≫</a>
+        </h1>
+        <div class='problem'>
+            <p>
+                <span id="grad1">　問題文　</span>
+            </p>
+            <p>
+                <p>0.10mol/L塩酸水溶液のpHとして最も近い値はどれか。1つ選べ。ただし、塩酸は完全に解離するものとする。</p>
+<ol><li>－0.10</li><li>0.00</li><li>0.10</li><li>1.0</li><li>2.0</li></ol>    
+            </p>
+        </div>
+        <hr>
+
+        <input type="button" value="check ans" onclick="toggle_switch()"/>
+        
+        <div id='toggle'>
+        <div class='answer'>
+            <p>
+                <span id="grad2">　解答　　</span>
+            </p>
+            <p>
+            4
+            </p>
+        </div>
+        <div class='description'>
+            <p>
+                <span id="grad2">　解説　　</span>
+            </p>
+            <p><strong>pH = ー log<sub>10</sub>[H<sup>+</sup>]</strong> です。</p>
+<p>0.10 mol/L の塩酸 HCl が完全に解離すると、HCｌ　→　H<strong><sup>+</sup></strong>　＋　Cl<sup>ー</sup>　なので［H<strong><sup>+</sup></strong>］も 0.10 mol/L となります。すると代入して、pH = -log<sub>10</sub>(0.10) = -log<sub>10</sub>(10<sup>-1</sup>) = -(-1) = 1 です。</p>
+<p>以上より、正解は 4 です。</p>
+            </p>
+        </div>
+        </div>
+    </body>
+    <script>
+    document.getElementById("toggle").style.display="none";
+    function toggle_switch(){
+        var x = document.getElementById("toggle");
+        if (x.style.display=="block"){
+            x.style.display="none";
+        }
+        else{
+            x.style.display="block";
+        }
+    }
+    </script>
+    

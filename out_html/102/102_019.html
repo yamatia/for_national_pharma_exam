@@ -1,0 +1,86 @@
+
+        <!DOCTYPE html>
+    <html lang="ja">
+    <style>
+    body
+    {
+        color: black;
+        background-color: white;
+    }
+    div{
+        font-size: 14px;
+    }
+    span
+    {
+        font-size: 18px;
+    }
+    #grad1{
+        background: linear-gradient(transparent 60%,#99e4f1 30%);
+        font-size: 18px;
+        font-weight: bold;
+    }
+    #grad2{
+        background: linear-gradient(transparent 60%,#fda1a1 30%);
+        font-size: 18px;
+        font-weight: bold;
+    }
+
+    </style>
+
+    <head>
+        <meta charset="UTF-8">
+        <title>102-19</title>
+    </head>
+
+    <body>
+        <h1>
+        <a href="./102_018.html" rel="external" title="prev">≪</a>
+        102-19
+        <a href="./102_020.html" rel="external" title="next">≫</a>
+        </h1>
+        <div class='problem'>
+            <p>
+                <span id="grad1">　問題文　</span>
+            </p>
+            <p>
+                <p>母子感染する病原体のうち、新生児の心臓奇形と難聴のリスクを高めるのはどれか。1つ選べ。</p>
+<ol><li>ヒトT細胞白血病ウイルス-1型(HTLV-1)</li><li>サイトメガロウイルス</li><li>風しんウイルス</li><li>トキソプラズマ原虫</li><li>梅毒トレポネーマ</li></ol>    
+            </p>
+        </div>
+        <hr>
+
+        <input type="button" value="check ans" onclick="toggle_switch()"/>
+        
+        <div id='toggle'>
+        <div class='answer'>
+            <p>
+                <span id="grad2">　解答　　</span>
+            </p>
+            <p>
+            3
+            </p>
+        </div>
+        <div class='description'>
+            <p>
+                <span id="grad2">　解説　　</span>
+            </p>
+            <p>TORCH 症候群として知られる、経胎盤感染によって児に重篤な奇形や恒久的な臓器・神経・感覚器障害をきたすおそれのある疾患の総称についての問題です。Tがトキソプラズマ、Oは、others で、梅毒等を含みます。Rが風しん、Cがサイトメガロウイルス（CMV）、Hが単純ヘルペスです。</p>
+<p>これらに共通する症状は、小頭症、水頭症などの中枢症状や、流産、死産です。特徴的な症状としては、風しん、CMVに<strong>難聴</strong>、風しんに、<strong>心臓系の奇形</strong>　などが見られます。</p>
+<p>以上より、正解は 3 です。</p>
+            </p>
+        </div>
+        </div>
+    </body>
+    <script>
+    document.getElementById("toggle").style.display="none";
+    function toggle_switch(){
+        var x = document.getElementById("toggle");
+        if (x.style.display=="block"){
+            x.style.display="none";
+        }
+        else{
+            x.style.display="block";
+        }
+    }
+    </script>
+    

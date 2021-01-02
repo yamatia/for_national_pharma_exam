@@ -1,0 +1,95 @@
+
+        <!DOCTYPE html>
+    <html lang="ja">
+    <style>
+    body
+    {
+        color: black;
+        background-color: white;
+    }
+    div{
+        font-size: 14px;
+    }
+    span
+    {
+        font-size: 18px;
+    }
+    #grad1{
+        background: linear-gradient(transparent 60%,#99e4f1 30%);
+        font-size: 18px;
+        font-weight: bold;
+    }
+    #grad2{
+        background: linear-gradient(transparent 60%,#fda1a1 30%);
+        font-size: 18px;
+        font-weight: bold;
+    }
+
+    </style>
+
+    <head>
+        <meta charset="UTF-8">
+        <title>102-318</title>
+    </head>
+
+    <body>
+        <h1>
+        <a href="./102_317.html" rel="external" title="prev">≪</a>
+        102-318
+        <a href="./102_319.html" rel="external" title="next">≫</a>
+        </h1>
+        <div class='problem'>
+            <p>
+                <span id="grad1">　問題文　</span>
+            </p>
+            <p>
+                <p>その後、この患者の服薬アドヒアランスを向上させるため、処方医の指示により薬剤師が患者宅を訪問した。患者の居宅で行うことができない業務はどれか。2つ選べ。</p>
+<ol><li>処方箋を受け取ること</li><li>薬剤を粉砕すること</li><li>疑義照会をすること</li><li>薬剤を一包化すること</li><li>薬剤を交付すること</li></ol>    
+            </p>
+        </div>
+        <hr>
+
+        <input type="button" value="check ans" onclick="toggle_switch()"/>
+        
+        <div id='toggle'>
+        <div class='answer'>
+            <p>
+                <span id="grad2">　解答　　</span>
+            </p>
+            <p>
+            問318：2, 4問319：2, 4
+            </p>
+        </div>
+        <div class='description'>
+            <p>
+                <span id="grad2">　解説　　</span>
+            </p>
+            <h4>問318</h4>
+<p>処方せんの様式が H28 年に変更され「調剤時　残薬確認欄」ができたように、残薬確認は重要な業務の一つといえます。</p>
+<p>選択肢 1,3,5 は、適切な記述であると考えられます。</p>
+<p>選択肢 1 ですが<br/>品質が保たれている製品は利用を検討すると共に、今後の処方に残薬を考慮することで薬を有効に活用することができます。</p>
+<p>選択肢 3 ですが<br/>降圧剤についての家族の観察をふまえた相談も適切です。</p>
+<p>選択肢 5 ですが<br/>なぜ残薬があるか、という現状についての確認を行うことで原因をつかみ、今後どうするか考えるために適切であると思われます。</p>
+<p>選択肢 2 ですが<br/>返品後の再利用はできません。よって、選択肢 2 は誤りです。</p>
+<p>選択肢 4 ですが<br/>他人への譲渡を勧めてはいけません。よって、選択肢 4 は誤りです。</p>
+<p>以上より、正解は 2,4 です。</p>
+<h4>問319</h4>
+<p>患者宅では「調剤」を行うことはできません。従って、粉砕や一包化はできません。</p>
+<p>よって、正解は 2,4 です。</p>
+            </p>
+        </div>
+        </div>
+    </body>
+    <script>
+    document.getElementById("toggle").style.display="none";
+    function toggle_switch(){
+        var x = document.getElementById("toggle");
+        if (x.style.display=="block"){
+            x.style.display="none";
+        }
+        else{
+            x.style.display="block";
+        }
+    }
+    </script>
+    

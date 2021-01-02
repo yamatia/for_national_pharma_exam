@@ -1,0 +1,86 @@
+
+        <!DOCTYPE html>
+    <html lang="ja">
+    <style>
+    body
+    {
+        color: black;
+        background-color: white;
+    }
+    div{
+        font-size: 14px;
+    }
+    span
+    {
+        font-size: 18px;
+    }
+    #grad1{
+        background: linear-gradient(transparent 60%,#99e4f1 30%);
+        font-size: 18px;
+        font-weight: bold;
+    }
+    #grad2{
+        background: linear-gradient(transparent 60%,#fda1a1 30%);
+        font-size: 18px;
+        font-weight: bold;
+    }
+
+    </style>
+
+    <head>
+        <meta charset="UTF-8">
+        <title>101-25</title>
+    </head>
+
+    <body>
+        <h1>
+        <a href="./101_024.html" rel="external" title="prev">≪</a>
+        101-25
+        <a href="./101_026.html" rel="external" title="next">≫</a>
+        </h1>
+        <div class='problem'>
+            <p>
+                <span id="grad1">　問題文　</span>
+            </p>
+            <p>
+                <p>閉鎖性水域における富栄養化の制限因子はどれか。1つ選べ。</p>
+<ol><li>カリウム</li><li>亜鉛</li><li>鉄</li><li>硫黄</li><li>リン</li></ol>    
+            </p>
+        </div>
+        <hr>
+
+        <input type="button" value="check ans" onclick="toggle_switch()"/>
+        
+        <div id='toggle'>
+        <div class='answer'>
+            <p>
+                <span id="grad2">　解答　　</span>
+            </p>
+            <p>
+            5
+            </p>
+        </div>
+        <div class='description'>
+            <p>
+                <span id="grad2">　解説　　</span>
+            </p>
+            <p>閉鎖性水域とは、水の出入りが少ない水域のことです。富栄養化とは窒素やリンの増加のことです。</p>
+<p>以上より、正解は 5 です。</p>
+<p>ちなみに、富栄養化すると、藻類等が異常に繁茂 → 酸素使用量の増加に伴う水域の貧酸素化 ＋ 藻類が産生する有害物質の増加 → 水生生物の死滅進行、水質の悪化　などが引き起こされます。</p>
+            </p>
+        </div>
+        </div>
+    </body>
+    <script>
+    document.getElementById("toggle").style.display="none";
+    function toggle_switch(){
+        var x = document.getElementById("toggle");
+        if (x.style.display=="block"){
+            x.style.display="none";
+        }
+        else{
+            x.style.display="block";
+        }
+    }
+    </script>
+    

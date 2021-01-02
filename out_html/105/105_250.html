@@ -1,0 +1,91 @@
+
+        <!DOCTYPE html>
+    <html lang="ja">
+    <style>
+    body
+    {
+        color: black;
+        background-color: white;
+    }
+    div{
+        font-size: 14px;
+    }
+    span
+    {
+        font-size: 18px;
+    }
+    #grad1{
+        background: linear-gradient(transparent 60%,#99e4f1 30%);
+        font-size: 18px;
+        font-weight: bold;
+    }
+    #grad2{
+        background: linear-gradient(transparent 60%,#fda1a1 30%);
+        font-size: 18px;
+        font-weight: bold;
+    }
+
+    </style>
+
+    <head>
+        <meta charset="UTF-8">
+        <title>105-250</title>
+    </head>
+
+    <body>
+        <h1>
+        <a href="./105_249.html" rel="external" title="prev">≪</a>
+        105-250
+        <a href="./105_251.html" rel="external" title="next">≫</a>
+        </h1>
+        <div class='problem'>
+            <p>
+                <span id="grad1">　問題文　</span>
+            </p>
+            <p>
+                <p>副作用の改善を目的とした医師への処方提案として、最も適切なのはどれか。1つ選べ。</p>
+<ol><li>アセトアミノフェンを中止し、オキシコドンに切り替える。</li><li>アミトリプチリンを中止し、トラマドールを増量する。</li><li>アミトリプチリンを中止し、デュロキセチンに切り替える。</li><li>トラマドールを中止し、オキシコドンに切り替える。</li><li>トラマドールを中止し、メサドンに切り替える。</li></ol>    
+            </p>
+        </div>
+        <hr>
+
+        <input type="button" value="check ans" onclick="toggle_switch()"/>
+        
+        <div id='toggle'>
+        <div class='answer'>
+            <p>
+                <span id="grad2">　解答　　</span>
+            </p>
+            <p>
+            問250：1問251：4
+            </p>
+        </div>
+        <div class='description'>
+            <p>
+                <span id="grad2">　解説　　</span>
+            </p>
+            <h4>問250</h4>
+<p>トラマドール（トラムセット）は、μ 受容体刺激　及び　セロトニン・ノルアドレナリン　再取り込み阻害作用を併せ持つ、コデイン類似の化合物です。作用機序からセロトニンが過剰になることによるセロトニン症候群に注意が必要であるといえます。（</p>
+<p>セロトニン症候群とは、不安、発汗、発熱、下痢、ミオクローヌス（筋肉の、無意識の運動）などの症状が表れることです。イメージとしては感覚も筋肉も、過敏に興奮している感じです。（)</p>
+<p>以上より、正解は 1 と考えられます。</p>
+<h4>問251</h4>
+<p>副作用改善が目的なので、中止するのはトラマドールです。正解は 4 or 5 です。</p>
+<p>メサドンは、オピオイド（モルヒネ等）を使用してなお鎮痛が不十分である時に初めて使用できる薬です。（)</p>
+<p>以上より、正解は 4 です。</p>
+            </p>
+        </div>
+        </div>
+    </body>
+    <script>
+    document.getElementById("toggle").style.display="none";
+    function toggle_switch(){
+        var x = document.getElementById("toggle");
+        if (x.style.display=="block"){
+            x.style.display="none";
+        }
+        else{
+            x.style.display="block";
+        }
+    }
+    </script>
+    

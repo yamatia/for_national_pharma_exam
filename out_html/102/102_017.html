@@ -1,0 +1,89 @@
+
+        <!DOCTYPE html>
+    <html lang="ja">
+    <style>
+    body
+    {
+        color: black;
+        background-color: white;
+    }
+    div{
+        font-size: 14px;
+    }
+    span
+    {
+        font-size: 18px;
+    }
+    #grad1{
+        background: linear-gradient(transparent 60%,#99e4f1 30%);
+        font-size: 18px;
+        font-weight: bold;
+    }
+    #grad2{
+        background: linear-gradient(transparent 60%,#fda1a1 30%);
+        font-size: 18px;
+        font-weight: bold;
+    }
+
+    </style>
+
+    <head>
+        <meta charset="UTF-8">
+        <title>102-17</title>
+    </head>
+
+    <body>
+        <h1>
+        <a href="./102_016.html" rel="external" title="prev">≪</a>
+        102-17
+        <a href="./102_018.html" rel="external" title="next">≫</a>
+        </h1>
+        <div class='problem'>
+            <p>
+                <span id="grad1">　問題文　</span>
+            </p>
+            <p>
+                <p>フェニルケトン尿症患者が摂取しないように気をつける必要のある食品添加物はどれか。1つ選べ。</p>
+<ol><li>アスパルテーム</li><li>アセスルファムカリウム</li><li>キシリトール</li><li>サッカリン</li><li>スクラロース</li></ol>    
+            </p>
+        </div>
+        <hr>
+
+        <input type="button" value="check ans" onclick="toggle_switch()"/>
+        
+        <div id='toggle'>
+        <div class='answer'>
+            <p>
+                <span id="grad2">　解答　　</span>
+            </p>
+            <p>
+            1
+            </p>
+        </div>
+        <div class='description'>
+            <p>
+                <span id="grad2">　解説　　</span>
+            </p>
+            <p>フェニルケトン尿症とは、フェニルアラニン→チロシン　という代謝を担う酵素に関する先天的要因による疾患です。新生児のマススクリーニング対象です。二次予防にあたります。対応として、厳密な食事コントロールを行います。</p>
+<p>選択肢は全て甘味料です。</p>
+<p>アスパルテームが<br/>「フェニルアラニンのメチルエステル＋アスパラギン酸のジペプチド」です。代謝されてフェニルアラニンとなる危険性があるかもしれず、摂取しないよう、気をつける必要があります。※ただし、アスパルテームはほぼ『未代謝』で尿中排泄されます。とはいえ、構造から「危険性あるかも、摂取に気をつけるように」という表現が用いられます。</p>
+<p>以上より、正解は 1 です。</p>
+<p>以下は補足。国試関係なし。<br/>ちなみにアスパルテームは「プール中で尿をする人がどれくらいいるか」という調査で着目された化合物でもあったりします。分解されにくいため、プール中のアスパルテームの量を測定した上で別実験で測定しておいた約２０人の尿中のアスパルテーム量の平均値と比較することで人数の推定値を算出する方法をカナダのアルバータ大の研究チームが発表していました。補足終わり。</p>
+<p>参考）</p>
+            </p>
+        </div>
+        </div>
+    </body>
+    <script>
+    document.getElementById("toggle").style.display="none";
+    function toggle_switch(){
+        var x = document.getElementById("toggle");
+        if (x.style.display=="block"){
+            x.style.display="none";
+        }
+        else{
+            x.style.display="block";
+        }
+    }
+    </script>
+    

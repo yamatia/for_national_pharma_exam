@@ -1,0 +1,89 @@
+
+        <!DOCTYPE html>
+    <html lang="ja">
+    <style>
+    body
+    {
+        color: black;
+        background-color: white;
+    }
+    div{
+        font-size: 14px;
+    }
+    span
+    {
+        font-size: 18px;
+    }
+    #grad1{
+        background: linear-gradient(transparent 60%,#99e4f1 30%);
+        font-size: 18px;
+        font-weight: bold;
+    }
+    #grad2{
+        background: linear-gradient(transparent 60%,#fda1a1 30%);
+        font-size: 18px;
+        font-weight: bold;
+    }
+
+    </style>
+
+    <head>
+        <meta charset="UTF-8">
+        <title>100-123</title>
+    </head>
+
+    <body>
+        <h1>
+        <a href="./100_122.html" rel="external" title="prev">≪</a>
+        100-123
+        <a href="./100_124.html" rel="external" title="next">≫</a>
+        </h1>
+        <div class='problem'>
+            <p>
+                <span id="grad1">　問題文　</span>
+            </p>
+            <p>
+                <p>平成20年に、数種の有害化学物質で汚染された事故米を食用の米と偽って転売する事件が起こった。この事例に見られるように、米は化学物質による汚染が比較的多い食品である。米を汚染する可能性が高い有害化学物質はどれか。2つ選べ。</p>
+<ol><li>ベンゾ[a]ピレン</li><li>アフラトキシンB<sub>1</sub></li><li>パツリン</li><li>パラジクロロベンゼン</li><li>メタミドホス</li></ol>    
+            </p>
+        </div>
+        <hr>
+
+        <input type="button" value="check ans" onclick="toggle_switch()"/>
+        
+        <div id='toggle'>
+        <div class='answer'>
+            <p>
+                <span id="grad2">　解答　　</span>
+            </p>
+            <p>
+            2, 5
+            </p>
+        </div>
+        <div class='description'>
+            <p>
+                <span id="grad2">　解説　　</span>
+            </p>
+            <p>選択肢 1 ですが<br/>ベンゾ［α］ピレンは、不完全燃焼の過程で生じる発がん性物質です。米を汚染する可能性が高いとはいえません。よって、選択肢 1 は誤りです。</p>
+<p>選択肢 2 は、正しい選択肢です。<br/>アフラトキシンは、カビ毒の一種です。ナッツ類に生じるカビによる毒として有名です。問題文にあった事故米を汚染していた化学物質の一つです。</p>
+<p>選択肢 3 ですが<br/>パツリンは、カビ毒の一種です。りんご製品でリスクの高いカビ毒として知られています。米を汚染する可能性が高いとはいえません。よって、選択肢 3 は誤りです。</p>
+<p><br/>選択肢 4 ですが<br/>パラジクロロベンゼンは、防虫剤や消臭剤に用いられる化学物質です。米を汚染する可能性が高いとはいえません。よって、選択肢 4 は誤りです。</p>
+<p>選択肢 5 は、正しい選択肢です。<br/>問題文にあった事故米を汚染していた化学物質の一つです。</p>
+<p>以上より、正解は 2,5 です。</p>
+            </p>
+        </div>
+        </div>
+    </body>
+    <script>
+    document.getElementById("toggle").style.display="none";
+    function toggle_switch(){
+        var x = document.getElementById("toggle");
+        if (x.style.display=="block"){
+            x.style.display="none";
+        }
+        else{
+            x.style.display="block";
+        }
+    }
+    </script>
+    

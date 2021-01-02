@@ -1,0 +1,92 @@
+
+        <!DOCTYPE html>
+    <html lang="ja">
+    <style>
+    body
+    {
+        color: black;
+        background-color: white;
+    }
+    div{
+        font-size: 14px;
+    }
+    span
+    {
+        font-size: 18px;
+    }
+    #grad1{
+        background: linear-gradient(transparent 60%,#99e4f1 30%);
+        font-size: 18px;
+        font-weight: bold;
+    }
+    #grad2{
+        background: linear-gradient(transparent 60%,#fda1a1 30%);
+        font-size: 18px;
+        font-weight: bold;
+    }
+
+    </style>
+
+    <head>
+        <meta charset="UTF-8">
+        <title>102-141</title>
+    </head>
+
+    <body>
+        <h1>
+        <a href="./102_140.html" rel="external" title="prev">≪</a>
+        102-141
+        <a href="./102_142.html" rel="external" title="next">≫</a>
+        </h1>
+        <div class='problem'>
+            <p>
+                <span id="grad1">　問題文　</span>
+            </p>
+            <p>
+                <p>医薬品医療機器等法に規定される医療機器に関する記述のうち、正しいのはどれか。2つ選べ。</p>
+<ol><li>人の疾病の診断、治療又は予防に使用されることを目的としたプログラムも医療機器に該当することがある。</li><li>人体に対するリスクの大きさによって、「高度管理医療機器」、「管理医療機器」、「一般医療機器」に分類される。</li><li>添付文書の記載事項は法令で定められていない。</li><li>再生医療等製品も医療機器に含まれる。</li><li>高度管理医療機器の販売においては、薬剤師による対面での情報提供が義務づけられている。</li></ol>    
+            </p>
+        </div>
+        <hr>
+
+        <input type="button" value="check ans" onclick="toggle_switch()"/>
+        
+        <div id='toggle'>
+        <div class='answer'>
+            <p>
+                <span id="grad2">　解答　　</span>
+            </p>
+            <p>
+            1, 2
+            </p>
+        </div>
+        <div class='description'>
+            <p>
+                <span id="grad2">　解説　　</span>
+            </p>
+            <p>選択肢 1,2 は、正しい記述です。</p>
+<p>選択肢 1 に関してですが<br/>医療機器の定義にプログラムも含むとされました。（ソフトウェア単体で医療機器とみなされるようになりました。）</p>
+<p>選択肢 2 についてですが<br/>それぞれの区分の具体例としては、コンタクトレンズ、血圧計、絆創膏などがあげられます。</p>
+<p>選択肢 3 ですが<br/>輸液ポンプ（高度管理医療機器の一つ）の添付文書を、以下に例としてリンクを貼っておきます。http://www.info.pmda.go.jp/downfiles/md/PDF/530360/530360_22400BZX00414000_A_01_02.pdf</p>
+<p>一見して、医薬品添付文書との類似を見て取れると思います。つまり、記載事項として法令で定められたかっちりした文書と判断できるのではないかと思います。（ちなみに薬機法　第６３条２項　に医療機器の添付文書記載事項が列挙されています。）よって、選択肢 3 は誤りです。</p>
+<p>選択肢 4 ですが<br/>再生医療等製品とは、培養したり、加工を施した細胞や、細胞に導入される遺伝子が含まれるような製品のことです。（同法　第２条　９項）。医療機器ではありません。</p>
+<p>具体例として日本初の再生医療等製品として認められたジェイス　などがあります。ジェイスは、自家培養表皮です。やけどした部分に、シート状の皮膚として用います。</p>
+<p>選択肢 5 ですが<br/>薬剤師による対面での情報提供が義務付けられている　といえば「要指導医薬品」に関する記述です。高度管理医療機器の販売では、ありません。よって、選択肢 5 は誤りです。</p>
+<p>以上より、正解は 1,2 です。</p>
+            </p>
+        </div>
+        </div>
+    </body>
+    <script>
+    document.getElementById("toggle").style.display="none";
+    function toggle_switch(){
+        var x = document.getElementById("toggle");
+        if (x.style.display=="block"){
+            x.style.display="none";
+        }
+        else{
+            x.style.display="block";
+        }
+    }
+    </script>
+    

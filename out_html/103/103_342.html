@@ -1,0 +1,86 @@
+
+        <!DOCTYPE html>
+    <html lang="ja">
+    <style>
+    body
+    {
+        color: black;
+        background-color: white;
+    }
+    div{
+        font-size: 14px;
+    }
+    span
+    {
+        font-size: 18px;
+    }
+    #grad1{
+        background: linear-gradient(transparent 60%,#99e4f1 30%);
+        font-size: 18px;
+        font-weight: bold;
+    }
+    #grad2{
+        background: linear-gradient(transparent 60%,#fda1a1 30%);
+        font-size: 18px;
+        font-weight: bold;
+    }
+
+    </style>
+
+    <head>
+        <meta charset="UTF-8">
+        <title>103-342</title>
+    </head>
+
+    <body>
+        <h1>
+        <a href="./103_341.html" rel="external" title="prev">≪</a>
+        103-342
+        <a href="./103_343.html" rel="external" title="next">≫</a>
+        </h1>
+        <div class='problem'>
+            <p>
+                <span id="grad1">　問題文　</span>
+            </p>
+            <p>
+                <p>この注射処方箋で疑義照会すべき内容はどれか。1つ選べ。</p>
+<ol><li>生理食塩液の量が少ない。</li><li>点滴速度が速い。</li><li>L-アスパラギン酸カリウム濃度が低い。</li><li>L-アスパラギン酸カリウムの1日の投与量が過量である。</li><li>L-アスパラギン酸カリウムの1日の投与量が不足である。</li></ol>    
+            </p>
+        </div>
+        <hr>
+
+        <input type="button" value="check ans" onclick="toggle_switch()"/>
+        
+        <div id='toggle'>
+        <div class='answer'>
+            <p>
+                <span id="grad2">　解答　　</span>
+            </p>
+            <p>
+            1
+            </p>
+        </div>
+        <div class='description'>
+            <p>
+                <span id="grad2">　解説　　</span>
+            </p>
+            <p><span style="font-weight: 400;">Lーアスパラギン酸 K</span><span style="font-weight: 400;">10mEq/10mL と </span><span style="font-weight: 400;">生理食塩水 200mL を混ぜると、</span><span style="font-weight: 400;">全量 210mL 中に</span><span style="font-weight: 400;">10mEq のカリウムとなります。</span></p>
+<p><span style="font-weight: 400;">210mL 中に 10mEq ということは 、</span><span style="font-weight: 400;">1 L 中に 50mEq 弱のカリウムになり、</span><span style="font-weight: 400;">40mEq 以下とする、という注意に</span><span style="font-weight: 400;">矛盾しています。</span><span style="font-weight: 400;">つまり、生理食塩水の量が少ないといえます。</span></p>
+<p><span style="font-weight: 400;">以上より、正解は 1 です。</span></p>
+            </p>
+        </div>
+        </div>
+    </body>
+    <script>
+    document.getElementById("toggle").style.display="none";
+    function toggle_switch(){
+        var x = document.getElementById("toggle");
+        if (x.style.display=="block"){
+            x.style.display="none";
+        }
+        else{
+            x.style.display="block";
+        }
+    }
+    </script>
+    

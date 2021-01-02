@@ -1,0 +1,91 @@
+
+        <!DOCTYPE html>
+    <html lang="ja">
+    <style>
+    body
+    {
+        color: black;
+        background-color: white;
+    }
+    div{
+        font-size: 14px;
+    }
+    span
+    {
+        font-size: 18px;
+    }
+    #grad1{
+        background: linear-gradient(transparent 60%,#99e4f1 30%);
+        font-size: 18px;
+        font-weight: bold;
+    }
+    #grad2{
+        background: linear-gradient(transparent 60%,#fda1a1 30%);
+        font-size: 18px;
+        font-weight: bold;
+    }
+
+    </style>
+
+    <head>
+        <meta charset="UTF-8">
+        <title>101-248</title>
+    </head>
+
+    <body>
+        <h1>
+        <a href="./101_247.html" rel="external" title="prev">≪</a>
+        101-248
+        <a href="./101_249.html" rel="external" title="next">≫</a>
+        </h1>
+        <div class='problem'>
+            <p>
+                <span id="grad1">　問題文　</span>
+            </p>
+            <p>
+                <p>この患者において新たに追加された処方薬の作用機序はどれか。1つ選べ。</p>
+<ol><li>アドレナリンα<sub>1</sub>受容体遮断による尿道内圧の低下</li><li>アドレナリンβ<sub>2</sub>受容体刺激による外尿道括約筋の弛緩</li><li>アドレナリンβ<sub>3</sub>受容体刺激による膀胱排尿筋の収縮</li><li>アセチルコリンM<sub>2</sub>受容体刺激による内尿道括約筋の弛緩</li><li>アセチルコリンM<sub>3</sub>受容体遮断による膀胱排尿筋の弛緩</li></ol>    
+            </p>
+        </div>
+        <hr>
+
+        <input type="button" value="check ans" onclick="toggle_switch()"/>
+        
+        <div id='toggle'>
+        <div class='answer'>
+            <p>
+                <span id="grad2">　解答　　</span>
+            </p>
+            <p>
+            問248：4, 5問249：5
+            </p>
+        </div>
+        <div class='description'>
+            <p>
+                <span id="grad2">　解説　　</span>
+            </p>
+            <h4>問248</h4>
+<p>シロドシン（ユリーフ）は、α<span style="font-weight: 400;"><sub>1</sub></span> 遮断薬です。主な副作用として、めまいがあります。めまいや立ちくらみがないかを確認する重要度は高いと考えられます。ちなみに、選択肢にはありませんが、シロドシンには、ある程度高い頻度で射精障害の副作用が知られています。服用の中止で副作用は無くなる点も含め適切な服薬指導が必要です。</p>
+<p>プロピベリン（バップフォー）は、抗コリン薬です。頻尿改善薬です。前立腺肥大症の初期に過活動膀胱（つまり頻尿）が見られる事が多く、本問のような処方が過活動膀胱の改善にしばしば見られます。</p>
+<p>一方、プロピベリンは、排尿困難が見られる患者に対して投与すると、排尿困難や残尿が悪化することがあります。そのため、尿閉が見られる患者に対して慎重投与となっています。そして、前立腺肥大は進行すると、尿道の圧迫により排尿困難が生じることがあります。（初期には、過活動膀胱を伴って「頻尿」→進行すると、「排尿困難」となりうる、ということ。）そのため、排尿後の残尿感をモニタリングする重要性が高いといえます。</p>
+<p>以上より、正解は 4,5 です。</p>
+<h4>問249</h4>
+<p>新たに追加されたのは、プロピベリンと考えられ、作用機序は抗コリンであるため、M受容体の遮断です。</p>
+<p>以上より、正解は 5 です。</p>
+            </p>
+        </div>
+        </div>
+    </body>
+    <script>
+    document.getElementById("toggle").style.display="none";
+    function toggle_switch(){
+        var x = document.getElementById("toggle");
+        if (x.style.display=="block"){
+            x.style.display="none";
+        }
+        else{
+            x.style.display="block";
+        }
+    }
+    </script>
+    

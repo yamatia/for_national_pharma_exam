@@ -1,0 +1,87 @@
+
+        <!DOCTYPE html>
+    <html lang="ja">
+    <style>
+    body
+    {
+        color: black;
+        background-color: white;
+    }
+    div{
+        font-size: 14px;
+    }
+    span
+    {
+        font-size: 18px;
+    }
+    #grad1{
+        background: linear-gradient(transparent 60%,#99e4f1 30%);
+        font-size: 18px;
+        font-weight: bold;
+    }
+    #grad2{
+        background: linear-gradient(transparent 60%,#fda1a1 30%);
+        font-size: 18px;
+        font-weight: bold;
+    }
+
+    </style>
+
+    <head>
+        <meta charset="UTF-8">
+        <title>102-153</title>
+    </head>
+
+    <body>
+        <h1>
+        <a href="./102_152.html" rel="external" title="prev">≪</a>
+        102-153
+        <a href="./102_154.html" rel="external" title="next">≫</a>
+        </h1>
+        <div class='problem'>
+            <p>
+                <span id="grad1">　問題文　</span>
+            </p>
+            <p>
+                <p>副交感神経系に作用する薬物に関する記述のうち、正しいのはどれか。2つ選べ。</p>
+<ol><li>ピペリドレートは、アセチルコリンM<sub>2</sub>受容体を選択的に遮断して、胃酸分泌を抑制する。</li><li>オキシブチニンは、アセチルコリンM<sub>3</sub>受容体を遮断して、膀胱平滑筋収縮を抑制する。</li><li>ネオスチグミンは、コリンエステラーゼを可逆的に阻害して、手術後の腸管麻痺を改善する。</li><li>トロピカミドは、アセチルコリンM<sub>3</sub>受容体を刺激して、瞳孔括約筋を収縮させる。</li><li>シクロペントラートは、毛様体筋のアセチルコリンM<sub>1</sub>受容体を刺激して、シュレム管を開放する。</li></ol>    
+            </p>
+        </div>
+        <hr>
+
+        <input type="button" value="check ans" onclick="toggle_switch()"/>
+        
+        <div id='toggle'>
+        <div class='answer'>
+            <p>
+                <span id="grad2">　解答　　</span>
+            </p>
+            <p>
+            2, 3
+            </p>
+        </div>
+        <div class='description'>
+            <p>
+                <span id="grad2">　解説　　</span>
+            </p>
+            <p>選択肢 1 ですが<br/>ピペリドレートは、抗コリン薬です。流産・早産防止や、鎮痙剤として用いられます。ちなみに、胃酸分泌を抑制するのは、M<span style="font-weight: 400;"><sub>1</sub></span> 選択的受容体遮断薬です。代表例は、ピレンゼピンです。よって、選択肢 1 は誤りです。</p>
+<p>選択肢 2,3 は、正しい選択肢です。</p>
+<p>選択肢 4,5 ですが<br/>共に抗コリン薬で、散瞳薬です。瞳孔括約筋を弛緩させます。抗コリン薬だから、受容体を「遮断」します。よって、選択肢 4,5 は誤りです。</p>
+<p>以上より、正解は 2,3 です。<br/>参考）</p>
+            </p>
+        </div>
+        </div>
+    </body>
+    <script>
+    document.getElementById("toggle").style.display="none";
+    function toggle_switch(){
+        var x = document.getElementById("toggle");
+        if (x.style.display=="block"){
+            x.style.display="none";
+        }
+        else{
+            x.style.display="block";
+        }
+    }
+    </script>
+    

@@ -1,0 +1,88 @@
+
+        <!DOCTYPE html>
+    <html lang="ja">
+    <style>
+    body
+    {
+        color: black;
+        background-color: white;
+    }
+    div{
+        font-size: 14px;
+    }
+    span
+    {
+        font-size: 18px;
+    }
+    #grad1{
+        background: linear-gradient(transparent 60%,#99e4f1 30%);
+        font-size: 18px;
+        font-weight: bold;
+    }
+    #grad2{
+        background: linear-gradient(transparent 60%,#fda1a1 30%);
+        font-size: 18px;
+        font-weight: bold;
+    }
+
+    </style>
+
+    <head>
+        <meta charset="UTF-8">
+        <title>102-3</title>
+    </head>
+
+    <body>
+        <h1>
+        <a href="./102_002.html" rel="external" title="prev">≪</a>
+        102-3
+        <a href="./102_004.html" rel="external" title="next">≫</a>
+        </h1>
+        <div class='problem'>
+            <p>
+                <span id="grad1">　問題文　</span>
+            </p>
+            <p>
+                <p>α壊変により放出されるα粒子はどの元素の原子核に相当するか。1つ選べ。</p>
+<ol><li><sup>1</sup>H</li><li><sup>4</sup>He</li><li><sup>7</sup>Li</li><li><sup>11</sup>B</li><li><sup>12</sup>C</li></ol>    
+            </p>
+        </div>
+        <hr>
+
+        <input type="button" value="check ans" onclick="toggle_switch()"/>
+        
+        <div id='toggle'>
+        <div class='answer'>
+            <p>
+                <span id="grad2">　解答　　</span>
+            </p>
+            <p>
+            2
+            </p>
+        </div>
+        <div class='description'>
+            <p>
+                <span id="grad2">　解説　　</span>
+            </p>
+            <p><span style="font-weight: 400;">α 粒子とは、He の原子核です。</span><span style="font-weight: 400;">具体的には、陽子２個と中性子２個です。</span><span style="font-weight: 400;">これは、He の原子核に対応します。</span></p>
+<p>以上より、正解は 2 です。</p>
+<p><span style="font-weight: 400;">ちなみに、</span><span style="font-weight: 400;">β 粒子は、電子線のことです。</span><span style="font-weight: 400;">※ β<sup>+</sup></span><span style="font-weight: 400;"> 壊変では、e<sup>+</sup></span><span style="font-weight: 400;"> （陽電子）が、</span><span style="font-weight: 400;">β<sup>–</sup></span><span style="font-weight: 400;"> 壊変では、e<sup>–</sup></span><span style="font-weight: 400;">（電子）が放出されます。</span></p>
+<p><span style="font-weight: 400;">γ 崩壊では、</span><span style="font-weight: 400;">γ 線と呼ばれる</span><span style="font-weight: 400;">波長 10pm 以下の電磁波が放出されます。</span></p>
+<p><span style="font-weight: 400;">参考）</span></p>
+            </p>
+        </div>
+        </div>
+    </body>
+    <script>
+    document.getElementById("toggle").style.display="none";
+    function toggle_switch(){
+        var x = document.getElementById("toggle");
+        if (x.style.display=="block"){
+            x.style.display="none";
+        }
+        else{
+            x.style.display="block";
+        }
+    }
+    </script>
+    

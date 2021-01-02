@@ -1,0 +1,95 @@
+
+        <!DOCTYPE html>
+    <html lang="ja">
+    <style>
+    body
+    {
+        color: black;
+        background-color: white;
+    }
+    div{
+        font-size: 14px;
+    }
+    span
+    {
+        font-size: 18px;
+    }
+    #grad1{
+        background: linear-gradient(transparent 60%,#99e4f1 30%);
+        font-size: 18px;
+        font-weight: bold;
+    }
+    #grad2{
+        background: linear-gradient(transparent 60%,#fda1a1 30%);
+        font-size: 18px;
+        font-weight: bold;
+    }
+
+    </style>
+
+    <head>
+        <meta charset="UTF-8">
+        <title>103-115</title>
+    </head>
+
+    <body>
+        <h1>
+        <a href="./103_114.html" rel="external" title="prev">≪</a>
+        103-115
+        <a href="./103_116.html" rel="external" title="next">≫</a>
+        </h1>
+        <div class='problem'>
+            <p>
+                <span id="grad1">　問題文　</span>
+            </p>
+            <p>
+                <p>X線フィルム上で解読したDNA配列及び実験方法に関する記述のうち、正しいのはどれか。2つ選べ。</p>
+<ol><li>DNA伸長反応を停止させるddNTPには、3ʼの位置にヒドロキシ(OH)基が存在しない。</li><li>5ʼ末端から5番目の塩基はチミン(T)である。</li><li>3ʼ末端から4番目の塩基はグアニン(G)である。</li><li><em>Eco</em>R Iにより認識・切断される配列が存在する。</li><li><em>Kpn</em>Iにより認識・切断される配列が存在する。</li></ol>    
+            </p>
+        </div>
+        <hr>
+
+        <input type="button" value="check ans" onclick="toggle_switch()"/>
+        
+        <div id='toggle'>
+        <div class='answer'>
+            <p>
+                <span id="grad2">　解答　　</span>
+            </p>
+            <p>
+            1, 4
+            </p>
+        </div>
+        <div class='description'>
+            <p>
+                <span id="grad2">　解説　　</span>
+            </p>
+            <p><span style="font-weight: 400;">ジデオキシ法のイメージは以下のようになります。</span></p>
+<p><span style="font-weight: 400;">【用意するもの】<br/></span><span style="font-weight: 400;">５’ーー３’プライマ   <br/></span><span style="font-weight: 400;">３’ーーーーーー　　ATCGATCG　ーーーーーー５’　鋳型<br/></span><span style="font-weight: 400;">「dATP,dGTP,dCTP,dTTP」 （A,G,C,Tで表現）と<br/></span><span style="font-weight: 400;">「ddATP,ddGTP,ddCTP,ddTTP」（A’,G’,C’,T’と表現）。</span></p>
+<p><span style="font-weight: 400;">【実験の結果】<br/></span><span style="font-weight: 400;">５’ーー３’プライマ   </span><span style="font-weight: 400;">T’<br/></span><span style="font-weight: 400;">３’ーーーーーー　　ATCGATCG　ーーーーーー５’　鋳型</span></p>
+<p><span style="font-weight: 400;">５’ーー３’プライマ    T</span><span style="font-weight: 400;">A’<br/></span><span style="font-weight: 400;">３’ーーーーーー　　ATCGATCG　ーーーーーー５’　鋳型</span></p>
+<p><span style="font-weight: 400;">５’ーー３’プライマ    TA</span><span style="font-weight: 400;">G’<br/></span><span style="font-weight: 400;">３’ーーーーーー　　ATCGATCG　ーーーーーー５’　鋳型<br/></span><span style="font-weight: 400;">・・・</span></p>
+<p><span style="font-weight: 400;">といったように、</span><strong>A’,G’,C’,T’が挿入された部分で合成が停止した、様々な長さのDNA断片が合成されます。</strong><span style="font-weight: 400;">「短い」塩基ほど</span><span style="font-weight: 400;">電気泳動によって、「陽極側」に、より流されます。</span></p>
+<p><span style="font-weight: 400;">以上より、</span><span style="font-weight: 400;">鋳型にくっつく塩基の順番は</span><span style="font-weight: 400;">CGCGAATTCTGG　とわかります。</span><span style="font-weight: 400;">（実験結果の図を</span><span style="font-weight: 400;">陽極側からどのレーンにあるかを読んでいった　</span><span style="font-weight: 400;">ということです。）</span><span style="font-weight: 400;">そして、鋳型であったDNAの配列は、</span><span style="font-weight: 400;">3’ 側から　GCGCTTAAGACC とわかります。</span><span style="font-weight: 400;">これらをふまえ、各選択肢を検討します。</span></p>
+<p><span style="font-weight: 400;">選択肢 1 は、正しい記述です。</span></p>
+<p><span style="font-weight: 400;">選択肢 2,3 ですが<br/></span><span style="font-weight: 400;">5’ 末端から 5 番目の塩基は A です。Tではありません。</span><span style="font-weight: 400;">3’ 末端から 4 番目の塩基は C です。Gではありません。</span><span style="font-weight: 400;">よって、選択肢 2,3 は誤りです。</span></p>
+<p><span style="font-weight: 400;">選択肢 4 は、正しい記述です。<br/></span><span style="font-weight: 400;">AATT<br/></span><span style="font-weight: 400;">TTAA　という配列が存在します。</span></p>
+<p><span style="font-weight: 400;">選択肢 5 ですが<br/></span><span style="font-weight: 400;">GTAC<br/></span><span style="font-weight: 400;">CATG　という配列はありません。</span><span style="font-weight: 400;">よって、選択肢 5 は誤りです。</span></p>
+<p><span style="font-weight: 400;">以上より、正解は 1,4 です。</span></p>
+            </p>
+        </div>
+        </div>
+    </body>
+    <script>
+    document.getElementById("toggle").style.display="none";
+    function toggle_switch(){
+        var x = document.getElementById("toggle");
+        if (x.style.display=="block"){
+            x.style.display="none";
+        }
+        else{
+            x.style.display="block";
+        }
+    }
+    </script>
+    

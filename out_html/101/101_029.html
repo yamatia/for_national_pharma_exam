@@ -1,0 +1,94 @@
+
+        <!DOCTYPE html>
+    <html lang="ja">
+    <style>
+    body
+    {
+        color: black;
+        background-color: white;
+    }
+    div{
+        font-size: 14px;
+    }
+    span
+    {
+        font-size: 18px;
+    }
+    #grad1{
+        background: linear-gradient(transparent 60%,#99e4f1 30%);
+        font-size: 18px;
+        font-weight: bold;
+    }
+    #grad2{
+        background: linear-gradient(transparent 60%,#fda1a1 30%);
+        font-size: 18px;
+        font-weight: bold;
+    }
+
+    </style>
+
+    <head>
+        <meta charset="UTF-8">
+        <title>101-29</title>
+    </head>
+
+    <body>
+        <h1>
+        <a href="./101_028.html" rel="external" title="prev">≪</a>
+        101-29
+        <a href="./101_030.html" rel="external" title="next">≫</a>
+        </h1>
+        <div class='problem'>
+            <p>
+                <span id="grad1">　問題文　</span>
+            </p>
+            <p>
+                <p>脳塞の際に産生されるフリーラジカルを消去し、脳保護作用を示す薬物はどれか。1つ選べ。</p>
+<ol><li>ファスジル</li><li>オザグレル</li><li>アルガトロバン</li><li>ウロキナーゼ</li><li>エダラボン</li></ol>    
+            </p>
+        </div>
+        <hr>
+
+        <input type="button" value="check ans" onclick="toggle_switch()"/>
+        
+        <div id='toggle'>
+        <div class='answer'>
+            <p>
+                <span id="grad2">　解答　　</span>
+            </p>
+            <p>
+            5
+            </p>
+        </div>
+        <div class='description'>
+            <p>
+                <span id="grad2">　解説　　</span>
+            </p>
+            <p>本問の薬剤は、脳の血流循環に関する薬です。脳梗塞時におけるフリーラジカル消去による脳保護作用ときたら、エダラボンです。</p>
+<p>以上より、正解は 5 です。</p>
+<p>ちなみに、選択肢 1 ですが<br/>ファスジルは、Rhoキナーゼ阻害薬です。平滑筋収縮機構の最終段階であるミオシン軽鎖のリン酸化を阻害することで血管を拡張します。くも膜下出血後の、脳虚血症状の改善を目的に使用されます。</p>
+<p>選択肢 2 ですが<br/>オザグレルは、トロンボキサン合成酵素阻害薬です。脳虚血症状の改善に用いられることが<br/>あります。（喘息治療薬としても用いられます。）</p>
+<p>選択肢 3 ですが<br/>アルガトロバンは、AT（アンチトロンビン）非依存性　抗トロンビン薬です。脳血栓症の急性期に用いられます。</p>
+<p>トロンビンは、フィブリノーゲンをフィブリンという繊維状タンパク質に変えるタンパク質です。つまり、血液凝固を促進させる酵素です。</p>
+<p>ちなみに、AT 非依存性かどうかという分類について以下で補足します。例えば、DIC という、体中に微小血栓ができ凝固系の材料が消費するため全身において、出血傾向が生じるという病気があります。<strong>体中に血栓ができる時というのはどんどんトロンビンが作られている時</strong>です。（血液が、どんどん固まりやすくなり色んな所で微小血栓ができます。）</p>
+<p>一方で、血液の凝固をコントロールするために、血中には一定量のアンチトロンビンがあります。また、必要に応じて産生量がコントロールされます。DIC で、どんどんトロンビンが作られると、アンチトロンビンは何とかトロンビンの量を調節しようとして、どんどんトロンビンと結合していきます。これは、いいかえれば、<strong>アンチトロンビンが激しく消費される</strong>といえます。その結果、DIC 発症後血中のアンチトロンビンは少なくなります。しかし、DIC の勢いは止まらない、という状況です。</p>
+<p>この時に血液凝固を抑制したいと考え、抗凝固作用を持つ薬として AT 「非」依存性であるアルガトロバンや、低分子ヘパリンなどを投与します。もしもアルガトロバンの代わりに、AT 依存性である、ヘパリンなどを投与するとどうなるでしょうか。</p>
+<p>アンチトロンビンを活性化させることで抗凝固作用を期待するわけですが、<strong>そもそもアンチトロンビンが血中にほとんどないため意味がない</strong>ということになります。よって、抗凝固薬が AT 依存なのか、それとも非依存であるかという分類は、致命的に重要であるということになります。補足　終わり。</p>
+<p>選択肢 4 ですが<br/>ウロキナーゼは、プラスミノゲンを活性化する薬です。抗凝固薬です。プラスミノーゲンは、プラスミンの前駆体です。プラスミンは、血栓を分解するタンパク質です。脳梗塞の急性初期時における血栓溶解療法に用いられます。（目的は、血流の回復です。）</p>
+            </p>
+        </div>
+        </div>
+    </body>
+    <script>
+    document.getElementById("toggle").style.display="none";
+    function toggle_switch(){
+        var x = document.getElementById("toggle");
+        if (x.style.display=="block"){
+            x.style.display="none";
+        }
+        else{
+            x.style.display="block";
+        }
+    }
+    </script>
+    

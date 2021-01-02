@@ -1,0 +1,88 @@
+
+        <!DOCTYPE html>
+    <html lang="ja">
+    <style>
+    body
+    {
+        color: black;
+        background-color: white;
+    }
+    div{
+        font-size: 14px;
+    }
+    span
+    {
+        font-size: 18px;
+    }
+    #grad1{
+        background: linear-gradient(transparent 60%,#99e4f1 30%);
+        font-size: 18px;
+        font-weight: bold;
+    }
+    #grad2{
+        background: linear-gradient(transparent 60%,#fda1a1 30%);
+        font-size: 18px;
+        font-weight: bold;
+    }
+
+    </style>
+
+    <head>
+        <meta charset="UTF-8">
+        <title>101-344</title>
+    </head>
+
+    <body>
+        <h1>
+        <a href="./101_343.html" rel="external" title="prev">≪</a>
+        101-344
+        <a href="./101_345.html" rel="external" title="next">≫</a>
+        </h1>
+        <div class='problem'>
+            <p>
+                <span id="grad1">　問題文　</span>
+            </p>
+            <p>
+                <p>薬剤師が母親に服薬指導する内容として、適切でないのはどれか。1つ選べ。</p>
+<ol><li>タクロリムス軟膏は、傷やただれているところに使用して下さい。</li><li>ベタメタゾン吉草酸エステルクリームは、症状が改善されても自己判断で中止しないで下さい。</li><li>ヘパリン類似物質クリームは、皮膚の保湿効果があります。</li><li>ヘパリン類似物質クリームは、傷やただれがあるところに塗らないで下さい。</li><li>フェキソフェナジン塩酸塩は、眠気を起こしにくい薬です。</li></ol>    
+            </p>
+        </div>
+        <hr>
+
+        <input type="button" value="check ans" onclick="toggle_switch()"/>
+        
+        <div id='toggle'>
+        <div class='answer'>
+            <p>
+                <span id="grad2">　解答　　</span>
+            </p>
+            <p>
+            1
+            </p>
+        </div>
+        <div class='description'>
+            <p>
+                <span id="grad2">　解説　　</span>
+            </p>
+            <p>選択肢 1 ですが<br/>タクロリムス軟膏は外用の免疫抑制剤です。傷やただれがある部分は感染の危険が高まるため、タクロリムス軟膏を使用する部位としては不適切です。</p>
+<p>他の選択肢は、正しい選択肢です。</p>
+<p>選択肢 2 についての補足ですが<br/>ステロイドは、適切に使用し続けることが大切であり、中止の判断は医師が行います。</p>
+<p>選択肢 4 に関して<br/>ヘパリン類似クリームは、傷が治っている途中には使ってはいけません。血行促進作用により傷自体が治ることを阻害するおそれがあるためです。</p>
+<p>以上より、正解は 1 です。</p>
+            </p>
+        </div>
+        </div>
+    </body>
+    <script>
+    document.getElementById("toggle").style.display="none";
+    function toggle_switch(){
+        var x = document.getElementById("toggle");
+        if (x.style.display=="block"){
+            x.style.display="none";
+        }
+        else{
+            x.style.display="block";
+        }
+    }
+    </script>
+    

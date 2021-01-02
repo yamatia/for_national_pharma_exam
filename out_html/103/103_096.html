@@ -1,0 +1,88 @@
+
+        <!DOCTYPE html>
+    <html lang="ja">
+    <style>
+    body
+    {
+        color: black;
+        background-color: white;
+    }
+    div{
+        font-size: 14px;
+    }
+    span
+    {
+        font-size: 18px;
+    }
+    #grad1{
+        background: linear-gradient(transparent 60%,#99e4f1 30%);
+        font-size: 18px;
+        font-weight: bold;
+    }
+    #grad2{
+        background: linear-gradient(transparent 60%,#fda1a1 30%);
+        font-size: 18px;
+        font-weight: bold;
+    }
+
+    </style>
+
+    <head>
+        <meta charset="UTF-8">
+        <title>103-96</title>
+    </head>
+
+    <body>
+        <h1>
+        <a href="./103_095.html" rel="external" title="prev">≪</a>
+        103-96
+        <a href="./103_097.html" rel="external" title="next">≫</a>
+        </h1>
+        <div class='problem'>
+            <p>
+                <span id="grad1">　問題文　</span>
+            </p>
+            <p>
+                <p>0.01 mol/L 塩化アンモニウム水溶液の pH に最も近い値はどれか。1つ選べ。ただし、アンモニアの pK<sub>b</sub>を4.70、水のイオン積 K<sub>w</sub>を1.00×10<sup>-14</sup>(mol/L)<sup>2</sup>とする。</p>
+<ol><li>3.65</li><li>5.65</li><li>8.35</li><li>9.30</li><li>10.35</li></ol>    
+            </p>
+        </div>
+        <hr>
+
+        <input type="button" value="check ans" onclick="toggle_switch()"/>
+        
+        <div id='toggle'>
+        <div class='answer'>
+            <p>
+                <span id="grad2">　解答　　</span>
+            </p>
+            <p>
+            2
+            </p>
+        </div>
+        <div class='description'>
+            <p>
+                <span id="grad2">　解説　　</span>
+            </p>
+            <p><span style="font-weight: 400;">弱酸 HA の電離による pH、</span><span style="font-weight: 400;">弱塩基 B の電離による pH、</span><span style="font-weight: 400;">弱酸と強塩基から生じた塩のpH、</span><span style="font-weight: 400;">強酸と弱塩基から生じた塩の pH</span><span style="font-weight: 400;">の ４ パターンについては、</span><span style="font-weight: 400;">公式を覚えて対応するのがよいと思われます。</span></p>
+<p><span style="font-weight: 400;">・弱酸 HA の電離による pH</span><span style="font-weight: 400;">→［H<sup>+</sup>］＝√（Ka・C）<br/></span><span style="font-weight: 400;">・弱塩基 B の電離による pH</span><span style="font-weight: 400;">→［OH<sup>ー</sup>］＝√（Kb・C）なので、</span><span style="font-weight: 400;">［H<sup>+</sup>］＝Kw／√（Kb・C）<br/></span><span style="font-weight: 400;">・弱酸と強塩基から生じた塩のpH</span><span style="font-weight: 400;">→ 弱塩基による電離と同じ。<br/></span><span style="font-weight: 400;">・強酸と弱塩基から生じた塩のpH</span><span style="font-weight: 400;">→ 弱酸による電離と同じ。 　となります。<br/></span><span style="font-weight: 400;">※ 大前提となるのは</span><span style="font-weight: 400;"><strong>Ka・Kb = Kw</strong> です。</span><span style="font-weight: 400;">Kw とは、水のイオン積のことです。</span><span style="font-weight: 400;">また、pH のように小文字の p を付けるのは</span><span style="font-weight: 400;">「ーlog<sub>10</sub></span><span style="font-weight: 400;">」という意味です。</span></p>
+<p><span style="font-weight: 400;">本問では、</span><span style="font-weight: 400;">塩化アンモニウム、</span><span style="font-weight: 400;">すなわちアンモニアと塩酸の塩なので</span><span style="font-weight: 400;">「強酸と弱塩基から生じた塩」の pH です。</span><span style="font-weight: 400;">この場合の公式は</span><span style="font-weight: 400;">［H<sup>+</sup></span><span style="font-weight: 400;">］＝√（Ka・C）です。</span><span style="font-weight: 400;">pKb = 4.70 なので、Kb は、10<sup>ー4.70</sup></span><span style="font-weight: 400;">です。</span><span style="font-weight: 400;">従って、Kaは、10<sup>ー9.30</sup></span><span style="font-weight: 400;"> とわかります。</span><span style="font-weight: 400;">C は 0.01 = 10<sup>-2</sup></span><span style="font-weight: 400;"> です。</span></p>
+<p><span style="font-weight: 400;">従って、</span><span style="font-weight: 400;">Ka・C</span><span style="font-weight: 400;">= 10<sup>ー9.30</sup> </span><span style="font-weight: 400;">・10<sup>-2</sup> </span><span style="font-weight: 400;"> </span><span style="font-weight: 400;">= 10<sup>ー11.30</sup></span><span style="font-weight: 400;">です。</span><span style="font-weight: 400;">√　をとれば、10<sup>-5.65</sup> </span><span style="font-weight: 400;"> となります。</span><span style="font-weight: 400;">これが［H<sup>+</sup> </span><span style="font-weight: 400;">］なので、pH は 5.65 です。</span><span style="font-weight: 400;">従って、正解は 2 です。</span></p>
+<p><span style="font-weight: 400;">ちなみに、公式を忘れていても、</span><span style="font-weight: 400;">強酸と弱塩基の塩であることから</span><span style="font-weight: 400;">少なくとも酸性側とわかるので</span><span style="font-weight: 400;">選択肢 3 ~ 5 はありえません。</span></p>
+            </p>
+        </div>
+        </div>
+    </body>
+    <script>
+    document.getElementById("toggle").style.display="none";
+    function toggle_switch(){
+        var x = document.getElementById("toggle");
+        if (x.style.display=="block"){
+            x.style.display="none";
+        }
+        else{
+            x.style.display="block";
+        }
+    }
+    </script>
+    

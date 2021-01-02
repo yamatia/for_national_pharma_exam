@@ -1,0 +1,88 @@
+
+        <!DOCTYPE html>
+    <html lang="ja">
+    <style>
+    body
+    {
+        color: black;
+        background-color: white;
+    }
+    div{
+        font-size: 14px;
+    }
+    span
+    {
+        font-size: 18px;
+    }
+    #grad1{
+        background: linear-gradient(transparent 60%,#99e4f1 30%);
+        font-size: 18px;
+        font-weight: bold;
+    }
+    #grad2{
+        background: linear-gradient(transparent 60%,#fda1a1 30%);
+        font-size: 18px;
+        font-weight: bold;
+    }
+
+    </style>
+
+    <head>
+        <meta charset="UTF-8">
+        <title>101-60</title>
+    </head>
+
+    <body>
+        <h1>
+        <a href="./101_059.html" rel="external" title="prev">≪</a>
+        101-60
+        <a href="./101_061.html" rel="external" title="next">≫</a>
+        </h1>
+        <div class='problem'>
+            <p>
+                <span id="grad1">　問題文　</span>
+            </p>
+            <p>
+                <p>低血糖の典型的な症状及び状態に該当しないのはどれか。1つ選べ。</p>
+<ol><li>動悸</li><li>体温上昇</li><li>意識レベルの低下</li><li>発汗</li><li>頭痛</li></ol>    
+            </p>
+        </div>
+        <hr>
+
+        <input type="button" value="check ans" onclick="toggle_switch()"/>
+        
+        <div id='toggle'>
+        <div class='answer'>
+            <p>
+                <span id="grad2">　解答　　</span>
+            </p>
+            <p>
+            2
+            </p>
+        </div>
+        <div class='description'>
+            <p>
+                <span id="grad2">　解説　　</span>
+            </p>
+            <p>低血糖時には、血糖値を上昇させようとして交感神経系の作用が過剰になります。</p>
+<p>交感神経系は、全身を戦闘状態にする神経系です。→戦闘時は、動いてるからほっとくと体温上昇です。そこで、汗かいて、体温を下げようとします。（「発汗、低体温」）</p>
+<p>また、戦闘時に血流が必要なのは「筋肉」です。血流を送るために、脈拍は増加します。（「動悸」として感じます。）必要のない所は、血液節約が望ましいです。→皮膚や消化器の血流は、減少します。（顔面蒼白などが表れます。）</p>
+<p>交感神経系をフル活用しても血糖値が上昇しないと、低血糖が進行します。→脳のエネルギー源が枯渇して「意識レベルの低下」、「頭痛」などがおきます。</p>
+<p>以上より、体温上昇が誤りです。正解は 2 です。</p>
+            </p>
+        </div>
+        </div>
+    </body>
+    <script>
+    document.getElementById("toggle").style.display="none";
+    function toggle_switch(){
+        var x = document.getElementById("toggle");
+        if (x.style.display=="block"){
+            x.style.display="none";
+        }
+        else{
+            x.style.display="block";
+        }
+    }
+    </script>
+    

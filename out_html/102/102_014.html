@@ -1,0 +1,86 @@
+
+        <!DOCTYPE html>
+    <html lang="ja">
+    <style>
+    body
+    {
+        color: black;
+        background-color: white;
+    }
+    div{
+        font-size: 14px;
+    }
+    span
+    {
+        font-size: 18px;
+    }
+    #grad1{
+        background: linear-gradient(transparent 60%,#99e4f1 30%);
+        font-size: 18px;
+        font-weight: bold;
+    }
+    #grad2{
+        background: linear-gradient(transparent 60%,#fda1a1 30%);
+        font-size: 18px;
+        font-weight: bold;
+    }
+
+    </style>
+
+    <head>
+        <meta charset="UTF-8">
+        <title>102-14</title>
+    </head>
+
+    <body>
+        <h1>
+        <a href="./102_013.html" rel="external" title="prev">≪</a>
+        102-14
+        <a href="./102_015.html" rel="external" title="next">≫</a>
+        </h1>
+        <div class='problem'>
+            <p>
+                <span id="grad1">　問題文　</span>
+            </p>
+            <p>
+                <p>真菌に関する記述のうち、正しいのはどれか。1つ選べ。</p>
+<ol><li>ミトコンドリアをもたない。</li><li>エルゴステロールを含む細胞膜をもつ。</li><li>葉緑体をもつ。</li><li>細胞壁をもたない。</li><li>原核生物に分類される。</li></ol>    
+            </p>
+        </div>
+        <hr>
+
+        <input type="button" value="check ans" onclick="toggle_switch()"/>
+        
+        <div id='toggle'>
+        <div class='answer'>
+            <p>
+                <span id="grad2">　解答　　</span>
+            </p>
+            <p>
+            2
+            </p>
+        </div>
+        <div class='description'>
+            <p>
+                <span id="grad2">　解説　　</span>
+            </p>
+            <p>抗真菌薬の機序の一つに「エルゴステロールの生合成阻害」があり、また、その薬の作用点が細胞膜である点は、基礎知識です。以上から判断できる問になっています。</p>
+<p>正解は 2 です。</p>
+<p>「真菌」については、「真核細胞」で、「カビの仲間」のこと。「細胞壁がある」という３点をまず抑えておけばよいと思います。さらにこの問を演習したのであれば、真菌がミトコンドリアを持っていること及び、葉緑体を持っていない点を補足として覚えるとよいです。</p>
+            </p>
+        </div>
+        </div>
+    </body>
+    <script>
+    document.getElementById("toggle").style.display="none";
+    function toggle_switch(){
+        var x = document.getElementById("toggle");
+        if (x.style.display=="block"){
+            x.style.display="none";
+        }
+        else{
+            x.style.display="block";
+        }
+    }
+    </script>
+    

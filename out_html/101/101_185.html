@@ -1,0 +1,88 @@
+
+        <!DOCTYPE html>
+    <html lang="ja">
+    <style>
+    body
+    {
+        color: black;
+        background-color: white;
+    }
+    div{
+        font-size: 14px;
+    }
+    span
+    {
+        font-size: 18px;
+    }
+    #grad1{
+        background: linear-gradient(transparent 60%,#99e4f1 30%);
+        font-size: 18px;
+        font-weight: bold;
+    }
+    #grad2{
+        background: linear-gradient(transparent 60%,#fda1a1 30%);
+        font-size: 18px;
+        font-weight: bold;
+    }
+
+    </style>
+
+    <head>
+        <meta charset="UTF-8">
+        <title>101-185</title>
+    </head>
+
+    <body>
+        <h1>
+        <a href="./101_184.html" rel="external" title="prev">≪</a>
+        101-185
+        <a href="./101_186.html" rel="external" title="next">≫</a>
+        </h1>
+        <div class='problem'>
+            <p>
+                <span id="grad1">　問題文　</span>
+            </p>
+            <p>
+                <p>この患者の病側副腎摘出手術を行うまでの期間、高血圧症に対する治療薬について、医師より薬剤師に相談があった。提案すべき治療薬はどれか。1つ選べ。</p>
+<ol><li>トリクロルメチアジド</li><li>スピロノラクトン</li><li>アリスキレンフマル酸塩</li><li>バルサルタン</li><li>リシノプリル水和物</li></ol>    
+            </p>
+        </div>
+        <hr>
+
+        <input type="button" value="check ans" onclick="toggle_switch()"/>
+        
+        <div id='toggle'>
+        <div class='answer'>
+            <p>
+                <span id="grad2">　解答　　</span>
+            </p>
+            <p>
+            2
+            </p>
+        </div>
+        <div class='description'>
+            <p>
+                <span id="grad2">　解説　　</span>
+            </p>
+            <p>選択肢 1 ですが<br/>トリクロルメチアジドは、チアジド系利尿薬です。利尿薬の中に「K 保持性利尿薬」というカテゴリーがあることから推測できるように、利尿薬の多くは、使用により血中 K が低下します。そして、チアジド系利尿薬も使用により、血中 K が低下します。本症例では、血清カリウムの低下が見られるのだから、更なるカリウム低下を促すトリクロルメチアジドの使用は不適切です。よって、選択肢 1 は誤りです。</p>
+<p>選択肢 2 は、正しい選択肢です。<br/>スピロノラクトンは、K 保持性利尿薬です。また、アルドステロン拮抗薬です。本症例は原発性アルドステロン症であると考えられます。アルドステロンの過剰分泌に対し、拮抗薬を用いることで降圧が期待でき適切であると考えられます。</p>
+<p>選択肢 3～5 ですが<br/>アリスキレンは、直接的レニン阻害薬です。バルサルタンは、ATⅡ 受容体拮抗薬です。リシノプリルは、ACE 阻害薬です。それぞれ、レニン－アンギオテンシン－アルドステロン系の出発点や中間の阻害薬です。</p>
+<p>アルドステロン（最終産物）が過剰に分泌されると、フィードバックにより、レニン活性は低下します。つまり、レニンやアンギオテンシンが関与する部分の活性は既に低下しているということです。従って、レニンの活性阻害やアンギオテンシン拮抗では、降圧作用はそれほど期待できません。よって、選択肢 3 ～ 5 は誤りです。</p>
+<p>以上より、正解は 2 です。</p>
+            </p>
+        </div>
+        </div>
+    </body>
+    <script>
+    document.getElementById("toggle").style.display="none";
+    function toggle_switch(){
+        var x = document.getElementById("toggle");
+        if (x.style.display=="block"){
+            x.style.display="none";
+        }
+        else{
+            x.style.display="block";
+        }
+    }
+    </script>
+    

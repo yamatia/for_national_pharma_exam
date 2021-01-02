@@ -1,0 +1,87 @@
+
+        <!DOCTYPE html>
+    <html lang="ja">
+    <style>
+    body
+    {
+        color: black;
+        background-color: white;
+    }
+    div{
+        font-size: 14px;
+    }
+    span
+    {
+        font-size: 18px;
+    }
+    #grad1{
+        background: linear-gradient(transparent 60%,#99e4f1 30%);
+        font-size: 18px;
+        font-weight: bold;
+    }
+    #grad2{
+        background: linear-gradient(transparent 60%,#fda1a1 30%);
+        font-size: 18px;
+        font-weight: bold;
+    }
+
+    </style>
+
+    <head>
+        <meta charset="UTF-8">
+        <title>103-46</title>
+    </head>
+
+    <body>
+        <h1>
+        <a href="./103_045.html" rel="external" title="prev">≪</a>
+        103-46
+        <a href="./103_047.html" rel="external" title="next">≫</a>
+        </h1>
+        <div class='problem'>
+            <p>
+                <span id="grad1">　問題文　</span>
+            </p>
+            <p>
+                <p>糸球体ろ過速度に対する腎クリアランスの比がほぼ1に等しいのはどれか。1つ選べ。</p>
+<ol><li>アンピシリン</li><li>イヌリン</li><li>インドシアニングリーン</li><li>グルコース</li><li>パラアミノ馬尿酸</li></ol>    
+            </p>
+        </div>
+        <hr>
+
+        <input type="button" value="check ans" onclick="toggle_switch()"/>
+        
+        <div id='toggle'>
+        <div class='answer'>
+            <p>
+                <span id="grad2">　解答　　</span>
+            </p>
+            <p>
+            2
+            </p>
+        </div>
+        <div class='description'>
+            <p>
+                <span id="grad2">　解説　　</span>
+            </p>
+            <p><span style="font-weight: 400;">問題文から「</span><span style="font-weight: 400;">糸球体ろ過速度と</span><span style="font-weight: 400;">腎クリアランスが等しくなるような</span><span style="font-weight: 400;">物質がどれか」と考えるとよいです。</span></p>
+<p><span style="font-weight: 400;">糸球体ろ過速度（GFR）の</span><span style="font-weight: 400;">理想的測定法はイヌリン投与して</span><span style="font-weight: 400;">尿中への排泄量を測定する</span><span style="font-weight: 400;">ことです。</span><span style="font-weight: 400;">なぜなら、イヌリンは</span><span style="font-weight: 400;">再吸収も分泌も受けない</span><span style="font-weight: 400;">ため</span><span style="font-weight: 400;">イヌリンの腎排泄量がわかれば</span><span style="font-weight: 400;">糸球体ろ過された血液量がわかる</span><span style="font-weight: 400;">というわけです。</span></p>
+<p><span style="font-weight: 400;">このイヌリンの投与をCLという観点から</span><span style="font-weight: 400;">改めて考えてみると</span><span style="font-weight: 400;">まず、<strong>腎CL</strong></span><strong>=「糸球体ろ過 CL」 + 「分泌 CL」 </strong><span style="font-weight: 400;"><strong>－ 「再吸収 CL」</strong>です。</span><span style="font-weight: 400;">ここで</span><span style="font-weight: 400;">イヌリンの場合、分泌と再吸収がないので、</span><span style="font-weight: 400;"><strong>腎CL＝糸球体ろ過CL</strong>　といえます。</span></p>
+<p><span style="font-weight: 400;">以上より、正解は 2 です。</span></p>
+            </p>
+        </div>
+        </div>
+    </body>
+    <script>
+    document.getElementById("toggle").style.display="none";
+    function toggle_switch(){
+        var x = document.getElementById("toggle");
+        if (x.style.display=="block"){
+            x.style.display="none";
+        }
+        else{
+            x.style.display="block";
+        }
+    }
+    </script>
+    

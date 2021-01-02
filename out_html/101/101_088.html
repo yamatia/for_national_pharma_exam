@@ -1,0 +1,89 @@
+
+        <!DOCTYPE html>
+    <html lang="ja">
+    <style>
+    body
+    {
+        color: black;
+        background-color: white;
+    }
+    div{
+        font-size: 14px;
+    }
+    span
+    {
+        font-size: 18px;
+    }
+    #grad1{
+        background: linear-gradient(transparent 60%,#99e4f1 30%);
+        font-size: 18px;
+        font-weight: bold;
+    }
+    #grad2{
+        background: linear-gradient(transparent 60%,#fda1a1 30%);
+        font-size: 18px;
+        font-weight: bold;
+    }
+
+    </style>
+
+    <head>
+        <meta charset="UTF-8">
+        <title>101-88</title>
+    </head>
+
+    <body>
+        <h1>
+        <a href="./101_087.html" rel="external" title="prev">≪</a>
+        101-88
+        <a href="./101_089.html" rel="external" title="next">≫</a>
+        </h1>
+        <div class='problem'>
+            <p>
+                <span id="grad1">　問題文　</span>
+            </p>
+            <p>
+                <p>「1件の重大事故の背後には29件の小さな事故があり、その背景には300件の事故に至らない事例がある」という経験則はどれか。1つ選べ。</p>
+<ol><li>ドミノの法則</li><li>ハインリッヒの法則</li><li>マーフィーの法則</li><li>ムーアの法則</li><li>メラビアンの法則</li></ol>    
+            </p>
+        </div>
+        <hr>
+
+        <input type="button" value="check ans" onclick="toggle_switch()"/>
+        
+        <div id='toggle'>
+        <div class='answer'>
+            <p>
+                <span id="grad2">　解答　　</span>
+            </p>
+            <p>
+            2
+            </p>
+        </div>
+        <div class='description'>
+            <p>
+                <span id="grad2">　解説　　</span>
+            </p>
+            <p>選択肢 1 ですが<br/>ドミノの法則とは、行動心理学では「初めのいい印象が後々まで続く」という法則です。</p>
+<p>選択肢 2 が、正しい法則です。</p>
+<p>選択肢 3 ですが<br/>マーフィーの法則は、ユーモアあふれる本　及びその中で記述される経験則です。</p>
+<p>選択肢 4 ですが<br/>ムーアの法則は、半導体の集積密度に関する法則です。1.5 ～ 2 年で、集積度が 2 倍になる<br/>という経験則です。</p>
+<p>選択肢 5 ですが<br/>メラビアンの法則は、コミュニケーションに関する実験から得られたルールです。メッセージが　矛盾する２通りの解釈を可能な場合（例：「笑いつつ、叱る」）、受け手が重視するポイントが「７＝内容。３８＝聴覚情報。口調、早さなど。５５＝視覚情報。見た目。」　であったという法則です。</p>
+<p>以上より、正解は 2 です。</p>
+            </p>
+        </div>
+        </div>
+    </body>
+    <script>
+    document.getElementById("toggle").style.display="none";
+    function toggle_switch(){
+        var x = document.getElementById("toggle");
+        if (x.style.display=="block"){
+            x.style.display="none";
+        }
+        else{
+            x.style.display="block";
+        }
+    }
+    </script>
+    

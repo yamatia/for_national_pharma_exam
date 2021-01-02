@@ -1,0 +1,88 @@
+
+        <!DOCTYPE html>
+    <html lang="ja">
+    <style>
+    body
+    {
+        color: black;
+        background-color: white;
+    }
+    div{
+        font-size: 14px;
+    }
+    span
+    {
+        font-size: 18px;
+    }
+    #grad1{
+        background: linear-gradient(transparent 60%,#99e4f1 30%);
+        font-size: 18px;
+        font-weight: bold;
+    }
+    #grad2{
+        background: linear-gradient(transparent 60%,#fda1a1 30%);
+        font-size: 18px;
+        font-weight: bold;
+    }
+
+    </style>
+
+    <head>
+        <meta charset="UTF-8">
+        <title>104-156</title>
+    </head>
+
+    <body>
+        <h1>
+        <a href="./104_155.html" rel="external" title="prev">≪</a>
+        104-156
+        <a href="./104_157.html" rel="external" title="next">≫</a>
+        </h1>
+        <div class='problem'>
+            <p>
+                <span id="grad1">　問題文　</span>
+            </p>
+            <p>
+                <ul><li>　　薬物　　　　　　　主な作用機序　　　　　　　主な作用部位</li></ul>
+<ol><li>エプレレノン　　　バソプレシンV<sub>2</sub>受容体遮断　　集合管</li><li>ブメタニド　　　　Na<sup>+</sup>/K<sup>+</sup>交換系阻害　　　　　 ヘンレ係蹄上行脚</li><li>アセタゾラミド　　炭酸脱水酵素阻害　　　　　　集合管</li><li>トリアムテレン　　Na<sup>+</sup>チャネル遮断　　　　　　遠位尿細管、集合管</li><li>インダパミド　　　Na<sup>+</sup>/Cl<sup>–</sup>共輸送系阻害　　　　 遠位尿細管</li></ol>    
+            </p>
+        </div>
+        <hr>
+
+        <input type="button" value="check ans" onclick="toggle_switch()"/>
+        
+        <div id='toggle'>
+        <div class='answer'>
+            <p>
+                <span id="grad2">　解答　　</span>
+            </p>
+            <p>
+            4, 5
+            </p>
+        </div>
+        <div class='description'>
+            <p>
+                <span id="grad2">　解説　　</span>
+            </p>
+            <p><span style="font-weight: 400;">選択肢 1 ですが<br/></span><span style="font-weight: 400;">エプレレノン（セララ）は選択的アルドステロンブロッカーです。V<sub>2</sub> 受容体遮断薬ではありません。よって、選択肢 1 は誤りです。</span></p>
+<p><span style="font-weight: 400;">選択肢 2 ですが<br/></span><span style="font-weight: 400;">ブメタニドは、ループ利尿薬です。Na<sup>+</sup></span><span style="font-weight: 400;">-K<sup>+</sup></span><span style="font-weight: 400;">－2Cl <sup>–</sup></span><span style="font-weight: 400;"> </span><span style="font-weight: 400;">共輸送系を抑制します。「Na<sup>+</sup>/K<sup>+</sup> 交換系」ではありません。よって、選択肢 2 は誤りです。</span></p>
+<p><span style="font-weight: 400;">選択肢 3 ですが<br/></span><span style="font-weight: 400;">アセタゾラミドは、炭酸脱水酵素抑制剤です。</span><b>近位尿細管</b><span style="font-weight: 400;">の炭酸脱水酵素（CA：carbonic anhydrase）を阻害します。これにより、Na<sup>+</sup></span><span style="font-weight: 400;">– H<sup>+</sup></span><span style="font-weight: 400;"> </span><span style="font-weight: 400;">交換系が抑制され Na<sup>+</sup></span><span style="font-weight: 400;"> </span><span style="font-weight: 400;">の再吸収が抑制されることにより利尿作用を示します。「集合管」ではありません。よって、選択肢 3 は誤りです。</span></p>
+<p><span style="font-weight: 400;">選択肢 4,5 は妥当な記述です。</span></p>
+<p><span style="font-weight: 400;">以上より、正解は 4,5 です。<br/></span><span style="font-weight: 400;">類題 </span></p>
+            </p>
+        </div>
+        </div>
+    </body>
+    <script>
+    document.getElementById("toggle").style.display="none";
+    function toggle_switch(){
+        var x = document.getElementById("toggle");
+        if (x.style.display=="block"){
+            x.style.display="none";
+        }
+        else{
+            x.style.display="block";
+        }
+    }
+    </script>
+    

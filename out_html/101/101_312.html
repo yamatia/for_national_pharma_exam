@@ -1,0 +1,90 @@
+
+        <!DOCTYPE html>
+    <html lang="ja">
+    <style>
+    body
+    {
+        color: black;
+        background-color: white;
+    }
+    div{
+        font-size: 14px;
+    }
+    span
+    {
+        font-size: 18px;
+    }
+    #grad1{
+        background: linear-gradient(transparent 60%,#99e4f1 30%);
+        font-size: 18px;
+        font-weight: bold;
+    }
+    #grad2{
+        background: linear-gradient(transparent 60%,#fda1a1 30%);
+        font-size: 18px;
+        font-weight: bold;
+    }
+
+    </style>
+
+    <head>
+        <meta charset="UTF-8">
+        <title>101-312</title>
+    </head>
+
+    <body>
+        <h1>
+        <a href="./101_311.html" rel="external" title="prev">≪</a>
+        101-312
+        <a href="./101_313.html" rel="external" title="next">≫</a>
+        </h1>
+        <div class='problem'>
+            <p>
+                <span id="grad1">　問題文　</span>
+            </p>
+            <p>
+                <p>薬剤師の対応として、最も適切なのはどれか。1つ選べ。</p>
+<ol><li>このまま服用して、しばらく様子をみてください。</li><li>1日3回まで服用できるので、昼食後も服用してください。</li><li>安全性の高い医薬品なので、1回2錠に増量して服用してください。</li><li>半月後といわず、すぐに受診してください。</li><li>軽度の痛みなので、イブプロフェンを主成分とした一般用医薬品に変更してください。</li></ol>    
+            </p>
+        </div>
+        <hr>
+
+        <input type="button" value="check ans" onclick="toggle_switch()"/>
+        
+        <div id='toggle'>
+        <div class='answer'>
+            <p>
+                <span id="grad2">　解答　　</span>
+            </p>
+            <p>
+            問312：1, 4問313：4
+            </p>
+        </div>
+        <div class='description'>
+            <p>
+                <span id="grad2">　解説　　</span>
+            </p>
+            <h4>問312</h4>
+<p>これは、実際にドラッグストアで、医薬品を買うときを想像するとよいと思います。注意事項については箱の「中」の添付文書にいろいろと書いてあります。また、価格については、値札として、容器ではなく陳列棚に POP などの形で表示されます。従って、選択肢 2,3,5 は、誤りです。</p>
+<p>以上より、正解は 1,4 です。</p>
+<h4>問313</h4>
+<p>OTC の効果が期待されるのは、軽度偏頭痛、反復性緊張型頭痛です。まず、生命の危機がある二次性頭痛は除外します。（「かつてない頭痛ではないか」「どんどん痛く・辛くなっていないか」）その上で注意すべきは薬物乱用頭痛　の防止です。これは、薬物の利用によりむしろ頭痛の頻度や程度が悪化する症状です。頭痛薬使用の目安とは月 10 日以内です。</p>
+<p>効果なく漫然と使用している患者に対しては、医師の指導のもとの治療を推奨すべきです。本症例は、正に漫然とした使用であり医師への受診勧告が適切な事例です。その際、頭痛を今のうちに適切に対処することが将来に大きく影響することをぜひ親身に伝え、行動変容につなげたい所です。（とはいえ緊急を要する、というわけではなく、たとえばこれで救急車を呼ぶ、などはやりすぎだと考えられます。）</p>
+<p>以上より、正解は 4 です。</p>
+            </p>
+        </div>
+        </div>
+    </body>
+    <script>
+    document.getElementById("toggle").style.display="none";
+    function toggle_switch(){
+        var x = document.getElementById("toggle");
+        if (x.style.display=="block"){
+            x.style.display="none";
+        }
+        else{
+            x.style.display="block";
+        }
+    }
+    </script>
+    

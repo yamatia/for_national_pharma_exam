@@ -1,0 +1,86 @@
+
+        <!DOCTYPE html>
+    <html lang="ja">
+    <style>
+    body
+    {
+        color: black;
+        background-color: white;
+    }
+    div{
+        font-size: 14px;
+    }
+    span
+    {
+        font-size: 18px;
+    }
+    #grad1{
+        background: linear-gradient(transparent 60%,#99e4f1 30%);
+        font-size: 18px;
+        font-weight: bold;
+    }
+    #grad2{
+        background: linear-gradient(transparent 60%,#fda1a1 30%);
+        font-size: 18px;
+        font-weight: bold;
+    }
+
+    </style>
+
+    <head>
+        <meta charset="UTF-8">
+        <title>101-336</title>
+    </head>
+
+    <body>
+        <h1>
+        <a href="./101_335.html" rel="external" title="prev">≪</a>
+        101-336
+        <a href="./101_337.html" rel="external" title="next">≫</a>
+        </h1>
+        <div class='problem'>
+            <p>
+                <span id="grad1">　問題文　</span>
+            </p>
+            <p>
+                <ul><li>　　　　　　A　　　　　　　　　　　　　　　　B</li></ul>
+<ol><li>トリアゾラム錠0.25mg　　　　　　　 フェブキソスタット錠20mg</li><li>トリクロルメチアジド錠1mg　　　　  フェブキソスタット錠20mg</li><li>トラマドール塩酸塩カプセル50mg　　フェンタニル舌下錠100μg</li><li>トリクロルメチアジド錠1mg　　　　  フェンタニル舌下錠100μg</li><li>トラマドール塩酸塩カプセル50mg　　フェノバルビタール錠30mg</li><li>トリアゾラム錠0.25mg　　　　　　　 フェノバルビタール錠30mg</li></ol>    
+            </p>
+        </div>
+        <hr>
+
+        <input type="button" value="check ans" onclick="toggle_switch()"/>
+        
+        <div id='toggle'>
+        <div class='answer'>
+            <p>
+                <span id="grad2">　解答　　</span>
+            </p>
+            <p>
+            2
+            </p>
+        </div>
+        <div class='description'>
+            <p>
+                <span id="grad2">　解説　　</span>
+            </p>
+            <p>五十音順には、問題ありません。規制を判別できるか、という問題です。トリアゾラムは、第 3 種向精神薬です。トラマドールは、劇薬です。そのためテルミサルタン、ドキサゾシン、トリヘキシフェニジルなどを保管してる錠剤棚とは区別して保管すると考えられます。トリクロルメチアジドであれば、A に配置して問題ないと思われます。従って、正解は 2,4 のどちらかです。</p>
+<p>そして、選択肢 4 に注目すると<br/>フェンタニルは、麻薬です。（ちなみに、劇薬でもあります。）区別して保管します。</p>
+<p>以上より、正解は 2 です。</p>
+            </p>
+        </div>
+        </div>
+    </body>
+    <script>
+    document.getElementById("toggle").style.display="none";
+    function toggle_switch(){
+        var x = document.getElementById("toggle");
+        if (x.style.display=="block"){
+            x.style.display="none";
+        }
+        else{
+            x.style.display="block";
+        }
+    }
+    </script>
+    

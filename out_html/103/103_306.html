@@ -1,0 +1,94 @@
+
+        <!DOCTYPE html>
+    <html lang="ja">
+    <style>
+    body
+    {
+        color: black;
+        background-color: white;
+    }
+    div{
+        font-size: 14px;
+    }
+    span
+    {
+        font-size: 18px;
+    }
+    #grad1{
+        background: linear-gradient(transparent 60%,#99e4f1 30%);
+        font-size: 18px;
+        font-weight: bold;
+    }
+    #grad2{
+        background: linear-gradient(transparent 60%,#fda1a1 30%);
+        font-size: 18px;
+        font-weight: bold;
+    }
+
+    </style>
+
+    <head>
+        <meta charset="UTF-8">
+        <title>103-306</title>
+    </head>
+
+    <body>
+        <h1>
+        <a href="./103_305.html" rel="external" title="prev">≪</a>
+        103-306
+        <a href="./103_307.html" rel="external" title="next">≫</a>
+        </h1>
+        <div class='problem'>
+            <p>
+                <span id="grad1">　問題文　</span>
+            </p>
+            <p>
+                <p>これらの処方の疑義照会において、変更を提案すべき処方はどれか。1つ選べ。</p>
+<ol><li>処方1</li><li>処方2</li><li>処方3</li><li>処方1と処方2</li><li>処方1と処方3</li><li>処方2と処方3</li></ol>    
+            </p>
+        </div>
+        <hr>
+
+        <input type="button" value="check ans" onclick="toggle_switch()"/>
+        
+        <div id='toggle'>
+        <div class='answer'>
+            <p>
+                <span id="grad2">　解答　　</span>
+            </p>
+            <p>
+            問306：3, 5問307：1
+            </p>
+        </div>
+        <div class='description'>
+            <p>
+                <span id="grad2">　解説　　</span>
+            </p>
+            <h4>問306</h4>
+<p><span style="font-weight: 400;">ラタノプロスト点眼中なので、</span><span style="font-weight: 400;">緑内障、高眼圧と考えられます。</span></p>
+<p><span style="font-weight: 400;">選択肢 1 ですが<br/></span><span style="font-weight: 400;">疑義照会をせず、健康被害が発生した場合、</span><span style="font-weight: 400;">薬剤師にも損害賠償責任が生じます。</span><span style="font-weight: 400;">よって、選択肢 1 は誤りです。</span></p>
+<p><span style="font-weight: 400;">選択肢 2 ですが<br/></span><span style="font-weight: 400;">処方医でなければ処方意図がわかりません。</span><span style="font-weight: 400;">よって、選択肢 2 は誤りです。</span></p>
+<p><span style="font-weight: 400;">選択肢 3 は、正しい記述です。</span></p>
+<p><span style="font-weight: 400;">選択肢 4 ですが<br/></span><span style="font-weight: 400;">併用薬がないものとするのではなく、</span><span style="font-weight: 400;">併用薬がないかを聞き取りにより確認し</span><span style="font-weight: 400;">疑義の有無を判断します。</span><span style="font-weight: 400;">よって、選択肢 4 は誤りです。</span></p>
+<p><span style="font-weight: 400;">選択肢 5 は、正しい記述です。</span></p>
+<p><span style="font-weight: 400;">以上より、正解は 3,5 です。</span></p>
+<h4>問307</h4>
+<p><span style="font-weight: 400;">緑内障患者で、</span><span style="font-weight: 400;">処方１が抗コリン作用があるため、</span><span style="font-weight: 400;">疑義照会を行い</span><span style="font-weight: 400;">エピナスチンなどへの</span><span style="font-weight: 400;">処方変更を提案すべきです。</span></p>
+<p><span style="font-weight: 400;">以上より、正解は 1 です。</span></p>
+            </p>
+        </div>
+        </div>
+    </body>
+    <script>
+    document.getElementById("toggle").style.display="none";
+    function toggle_switch(){
+        var x = document.getElementById("toggle");
+        if (x.style.display=="block"){
+            x.style.display="none";
+        }
+        else{
+            x.style.display="block";
+        }
+    }
+    </script>
+    

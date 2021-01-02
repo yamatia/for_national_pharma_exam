@@ -1,0 +1,94 @@
+
+        <!DOCTYPE html>
+    <html lang="ja">
+    <style>
+    body
+    {
+        color: black;
+        background-color: white;
+    }
+    div{
+        font-size: 14px;
+    }
+    span
+    {
+        font-size: 18px;
+    }
+    #grad1{
+        background: linear-gradient(transparent 60%,#99e4f1 30%);
+        font-size: 18px;
+        font-weight: bold;
+    }
+    #grad2{
+        background: linear-gradient(transparent 60%,#fda1a1 30%);
+        font-size: 18px;
+        font-weight: bold;
+    }
+
+    </style>
+
+    <head>
+        <meta charset="UTF-8">
+        <title>101-250</title>
+    </head>
+
+    <body>
+        <h1>
+        <a href="./101_249.html" rel="external" title="prev">≪</a>
+        101-250
+        <a href="./101_251.html" rel="external" title="next">≫</a>
+        </h1>
+        <div class='problem'>
+            <p>
+                <span id="grad1">　問題文　</span>
+            </p>
+            <p>
+                <p>処方された薬物の作用機序として、正しいのはどれか。2つ選べ。</p>
+<ol><li>アンギオテンシンⅡ受容体を遮断する。</li><li>セロトニン受容体を遮断する。</li><li>アセチルコリン受容体を遮断する。</li><li>グルタミン酸受容体を遮断する。</li><li>アドレナリン受容体を遮断する。</li></ol>    
+            </p>
+        </div>
+        <hr>
+
+        <input type="button" value="check ans" onclick="toggle_switch()"/>
+        
+        <div id='toggle'>
+        <div class='answer'>
+            <p>
+                <span id="grad2">　解答　　</span>
+            </p>
+            <p>
+            問250：5問251：1, 2
+            </p>
+        </div>
+        <div class='description'>
+            <p>
+                <span id="grad2">　解説　　</span>
+            </p>
+            <h4>問250</h4>
+<p>選択肢 1 ～ 4 は、正しい選択肢です。<br/>在宅訪問を行うことでこれらの点に関与することが可能になり、より適切な薬物治療への貢献が期待されます。</p>
+<p>選択肢 5 ですが<br/>患者の一部負担金の減免を行うことは、在宅訪問において薬剤師に求められている行為としては不適切であると考えられます。</p>
+<p>一部負担金の減免は、国民健康保険法 44 条 1 項に基づき保険者、つまり市町村が行うことができる措置です。そして、この減免の申請は被保険者が行います。従って薬剤師が行うことでは、ありません。このような制度が存在することを伝えることで活用を促す、ぐらいが可能な範囲であると思われます。</p>
+<p>以上より、正解は 5 です。</p>
+<h4>問251</h4>
+<p>ドネペジルは、アセチルコリンエステラーゼ（AchE）阻害薬です。認知症の進行を抑制する薬です。</p>
+<p>バルサルタンは、ATⅡ 受容体拮抗の降圧薬です。</p>
+<p>アスピリンは、COX 阻害薬です。腸溶錠は、血栓形成抑制のために用いられます。</p>
+<p>サルポグレラートは、セロトニン受容体拮抗薬です。虚血性の諸症状の改善に用いられます。</p>
+<p>以上より、正解は 1,2 です。</p>
+            </p>
+        </div>
+        </div>
+    </body>
+    <script>
+    document.getElementById("toggle").style.display="none";
+    function toggle_switch(){
+        var x = document.getElementById("toggle");
+        if (x.style.display=="block"){
+            x.style.display="none";
+        }
+        else{
+            x.style.display="block";
+        }
+    }
+    </script>
+    

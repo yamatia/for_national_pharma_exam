@@ -1,0 +1,89 @@
+
+        <!DOCTYPE html>
+    <html lang="ja">
+    <style>
+    body
+    {
+        color: black;
+        background-color: white;
+    }
+    div{
+        font-size: 14px;
+    }
+    span
+    {
+        font-size: 18px;
+    }
+    #grad1{
+        background: linear-gradient(transparent 60%,#99e4f1 30%);
+        font-size: 18px;
+        font-weight: bold;
+    }
+    #grad2{
+        background: linear-gradient(transparent 60%,#fda1a1 30%);
+        font-size: 18px;
+        font-weight: bold;
+    }
+
+    </style>
+
+    <head>
+        <meta charset="UTF-8">
+        <title>102-185</title>
+    </head>
+
+    <body>
+        <h1>
+        <a href="./102_184.html" rel="external" title="prev">≪</a>
+        102-185
+        <a href="./102_186.html" rel="external" title="next">≫</a>
+        </h1>
+        <div class='problem'>
+            <p>
+                <span id="grad1">　問題文　</span>
+            </p>
+            <p>
+                <p>85歳男性。介護老人保健施設に入所中であったが、COPD(慢性閉塞性肺疾患)の悪化と嚥下障害のため入院となった。入院時に仙骨部の皮疹が指摘された。このような患者の長期療養に関する記述のうち、正しいのはどれか。2つ選べ。</p>
+<ol><li>体動による摩擦は、褥瘡の主な発症要因である。</li><li>低栄養は、褥瘡のリスクファクターになる。</li><li>食事からの摂取カロリーの不足を補うためには、成分栄養剤を経口投与する。</li><li>栄養管理では、換気障害が著しい場合は糖質を増やして脂質を減らすことが推奨される。</li><li>2ヶ月以上経口摂取が困難な場合には、経鼻胃管栄養より胃瘻の方が適している。</li></ol>    
+            </p>
+        </div>
+        <hr>
+
+        <input type="button" value="check ans" onclick="toggle_switch()"/>
+        
+        <div id='toggle'>
+        <div class='answer'>
+            <p>
+                <span id="grad2">　解答　　</span>
+            </p>
+            <p>
+            2, 5
+            </p>
+        </div>
+        <div class='description'>
+            <p>
+                <span id="grad2">　解説　　</span>
+            </p>
+            <p>選択肢 1 ですが<br/>褥瘡の主な発症要因は持続的圧迫です。ずっと動かないことで圧を受け続けることが主な原因です。体動による摩擦　では、ありません。よって、選択肢 1 は誤りです。</p>
+<p>選択肢 2 は、正しい記述です。<br/>低栄養状態が続くと、筋肉や脂肪組織が減少します。その結果、褥瘡がおきやすくなります。</p>
+<p>選択肢 3 ですが<br/>成分栄養剤とは、エレンタールのような消化をほぼ要しない成分からなる栄養剤のことです。主に経管投与で用いられます。嚥下障害も本症例では見られるため記述は適切ではないと考えられます。</p>
+<p>選択肢 4 ですが<br/>換気障害なので、酸素供給量が減ります。呼吸商、すなわち分解のために用いる酸素の割合が大きい糖質を「減らす」ことで酸素需要量を抑制できると期待できます。つまり、糖質を減らすことが推奨されると考えられます。よって、選択肢 4 は誤りです。</p>
+<p>選択肢 5 は<br/>判断しかねる選択肢と思いますが、明らかに１，３，４が不適切なので相対的に正しいものとして選ぶとすればこの選択肢と考えられます。</p>
+<p>以上より、正解は 2,5 です。</p>
+            </p>
+        </div>
+        </div>
+    </body>
+    <script>
+    document.getElementById("toggle").style.display="none";
+    function toggle_switch(){
+        var x = document.getElementById("toggle");
+        if (x.style.display=="block"){
+            x.style.display="none";
+        }
+        else{
+            x.style.display="block";
+        }
+    }
+    </script>
+    

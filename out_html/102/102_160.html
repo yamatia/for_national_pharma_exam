@@ -1,0 +1,88 @@
+
+        <!DOCTYPE html>
+    <html lang="ja">
+    <style>
+    body
+    {
+        color: black;
+        background-color: white;
+    }
+    div{
+        font-size: 14px;
+    }
+    span
+    {
+        font-size: 18px;
+    }
+    #grad1{
+        background: linear-gradient(transparent 60%,#99e4f1 30%);
+        font-size: 18px;
+        font-weight: bold;
+    }
+    #grad2{
+        background: linear-gradient(transparent 60%,#fda1a1 30%);
+        font-size: 18px;
+        font-weight: bold;
+    }
+
+    </style>
+
+    <head>
+        <meta charset="UTF-8">
+        <title>102-160</title>
+    </head>
+
+    <body>
+        <h1>
+        <a href="./102_159.html" rel="external" title="prev">≪</a>
+        102-160
+        <a href="./102_161.html" rel="external" title="next">≫</a>
+        </h1>
+        <div class='problem'>
+            <p>
+                <span id="grad1">　問題文　</span>
+            </p>
+            <p>
+                <p>脂質異常症治療薬に関する記述のうち、正しいのはどれか。2つ選べ。</p>
+<ol><li>クリノフィブラートは、リポタンパク質リパーゼ(LPL)の発現を増加させるほか、アポリポタンパク質C-Ⅲの発現抑制を介してLPLの活性を亢進させる。</li><li>プロブコールは、肝臓においてコレステロールの異化排泄を促進するほか、抗酸化作用を示す。</li><li>イコサペント酸エチルは、コレステロールの腸肝循環を抑制して血中の低密度リポタンパク質コレステロール(LDL-C)値を低下させる。</li><li>フルバスタチンは、アセチルCoAからのヒドロキシメチルグルタリルCoA産生を選択的に阻害することで、コレステロール合成を抑制する。</li><li>エゼチミブは、小腸からのコレステロール吸収を抑制するほか、肝臓におけるコレステロール産生を減少させる。</li></ol>    
+            </p>
+        </div>
+        <hr>
+
+        <input type="button" value="check ans" onclick="toggle_switch()"/>
+        
+        <div id='toggle'>
+        <div class='answer'>
+            <p>
+                <span id="grad2">　解答　　</span>
+            </p>
+            <p>
+            1, 2
+            </p>
+        </div>
+        <div class='description'>
+            <p>
+                <span id="grad2">　解説　　</span>
+            </p>
+            <p>選択肢 1 ,2 は、正しい選択肢です。</p>
+<p>選択肢 3 ですが<br/>イコサペント酸エチル（EPA）は、中性脂肪の合成抑制や代謝促進など様々な作用を示します。しかし、腸肝循環を抑制するという作用は知られていません。（これは、陰イオン交換樹脂の作用機序と考えられます。）よって、選択肢 3 は誤りです。</p>
+<p>選択肢 4 ですが<br/>スタチンは、HMG-CoA 還元酵素阻害薬です。つまり、HMG-CoA を「還元」する酵素　を阻害します。「HMG – CoA の産生」　を阻害するわけではありません。正しくは HMG – CoA を原料として還元されて生じるメバロン酸の合成を選択的に阻害することによりコレステロール合成を抑制する、となります。よって、選択肢 4 は誤りです。</p>
+<p>選択肢 5 ですが<br/>エゼチミブ（ゼチーア）は、小腸コレステロールトランスポーター阻害薬です。小腸壁細胞に存在するタンパク質（NPC1L1=Niemann-Pick C1 like 1）を阻害することでコレステロールの吸収を選択的に阻害します。従って、記述前半だけなら正しいのですが、肝臓におけるコレステロール産生を減少させるということはありません。よって、選択肢 5 は誤りです。</p>
+<p>以上より、正解は 1,2 です。<br/>類題　</p>
+            </p>
+        </div>
+        </div>
+    </body>
+    <script>
+    document.getElementById("toggle").style.display="none";
+    function toggle_switch(){
+        var x = document.getElementById("toggle");
+        if (x.style.display=="block"){
+            x.style.display="none";
+        }
+        else{
+            x.style.display="block";
+        }
+    }
+    </script>
+    

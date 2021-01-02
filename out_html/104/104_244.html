@@ -1,0 +1,95 @@
+
+        <!DOCTYPE html>
+    <html lang="ja">
+    <style>
+    body
+    {
+        color: black;
+        background-color: white;
+    }
+    div{
+        font-size: 14px;
+    }
+    span
+    {
+        font-size: 18px;
+    }
+    #grad1{
+        background: linear-gradient(transparent 60%,#99e4f1 30%);
+        font-size: 18px;
+        font-weight: bold;
+    }
+    #grad2{
+        background: linear-gradient(transparent 60%,#fda1a1 30%);
+        font-size: 18px;
+        font-weight: bold;
+    }
+
+    </style>
+
+    <head>
+        <meta charset="UTF-8">
+        <title>104-244</title>
+    </head>
+
+    <body>
+        <h1>
+        <a href="./104_243.html" rel="external" title="prev">≪</a>
+        104-244
+        <a href="./104_245.html" rel="external" title="next">≫</a>
+        </h1>
+        <div class='problem'>
+            <p>
+                <span id="grad1">　問題文　</span>
+            </p>
+            <p>
+                <p>前問で選択した原因物質を測定するための学校環境衛生基準に基づいた測定法はどれか。2つ選べ。</p>
+<ol><li>検知管法</li><li>ザルツマン法</li><li>ジニトロフェニルヒドラジン誘導体化法を用いた高速液体クロマトグラフ法</li><li>ガスクロマトグラフ－質量分析法</li><li>酵素免疫測定法</li></ol>    
+            </p>
+        </div>
+        <hr>
+
+        <input type="button" value="check ans" onclick="toggle_switch()"/>
+        
+        <div id='toggle'>
+        <div class='answer'>
+            <p>
+                <span id="grad2">　解答　　</span>
+            </p>
+            <p>
+            問244：3, 4問245：3, 4
+            </p>
+        </div>
+        <div class='description'>
+            <p>
+                <span id="grad2">　解説　　</span>
+            </p>
+            <h4>問244</h4>
+<p><span style="font-weight: 400;">選択肢 1,2 ですが<br/></span><span style="font-weight: 400;">CO 過剰なら、息苦しい、気持ち悪い、アセトン過剰は吐き気や頭痛に加え、異臭もするだろうと推測されます。もっと内部から来る違和感です。目、鼻、のどの刺激といった、表面におきる症状ではないと考えられます。よって、選択肢 1,2 は誤りです。</span></p>
+<p><span style="font-weight: 400;">選択肢 3,4 は妥当な記述です。</span></p>
+<p><span style="font-weight: 400;">選択肢 5 ですが<br/></span><span style="font-weight: 400;">アスベストによる健康被害は、吸入後すぐに出ることは知られていません。よって、選択肢 5 は誤りです。</span></p>
+<p><span style="font-weight: 400;">以上より、問244 の正解は 3,4 です。</span></p>
+<h4>問245</h4>
+<p><span style="font-weight: 400;">選択肢 1,2,5 を確実に誤りと判断したい問と考えられます。</span></p>
+<p><span style="font-weight: 400;">選択肢 1 ですが<br/></span><span style="font-weight: 400;">検知管法は CO,CO<sub>2</sub></span><span style="font-weight: 400;"> などの測定に用いられます。（103-140）よって、選択肢 1 は誤りです。</span></p>
+<p><span style="font-weight: 400;">選択肢 2 ですが<br/></span><span style="font-weight: 400;">ザルツマン法は NO<sub>2</sub></span><span style="font-weight: 400;"> 測定法です。（98-137）よって、選択肢 2 は誤りです。</span></p>
+<p><span style="font-weight: 400;">選択肢 3,4 は妥当な記述です。</span></p>
+<p><span style="font-weight: 400;">選択肢 5 は<br/></span><span style="font-weight: 400;">ダニまたはダニアレルゲンの測定法です。よって、選択肢 5 は誤りです。</span></p>
+<p><span style="font-weight: 400;">以上より、問245 の正解は 3,4 です。</span></p>
+            </p>
+        </div>
+        </div>
+    </body>
+    <script>
+    document.getElementById("toggle").style.display="none";
+    function toggle_switch(){
+        var x = document.getElementById("toggle");
+        if (x.style.display=="block"){
+            x.style.display="none";
+        }
+        else{
+            x.style.display="block";
+        }
+    }
+    </script>
+    

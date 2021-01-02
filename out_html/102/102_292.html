@@ -1,0 +1,93 @@
+
+        <!DOCTYPE html>
+    <html lang="ja">
+    <style>
+    body
+    {
+        color: black;
+        background-color: white;
+    }
+    div{
+        font-size: 14px;
+    }
+    span
+    {
+        font-size: 18px;
+    }
+    #grad1{
+        background: linear-gradient(transparent 60%,#99e4f1 30%);
+        font-size: 18px;
+        font-weight: bold;
+    }
+    #grad2{
+        background: linear-gradient(transparent 60%,#fda1a1 30%);
+        font-size: 18px;
+        font-weight: bold;
+    }
+
+    </style>
+
+    <head>
+        <meta charset="UTF-8">
+        <title>102-292</title>
+    </head>
+
+    <body>
+        <h1>
+        <a href="./102_291.html" rel="external" title="prev">≪</a>
+        102-292
+        <a href="./102_293.html" rel="external" title="next">≫</a>
+        </h1>
+        <div class='problem'>
+            <p>
+                <span id="grad1">　問題文　</span>
+            </p>
+            <p>
+                <p>本症例に用いる薬物に関する記述のうち、正しいのはどれか。2つ選べ。</p>
+<ol><li>アルブミン製剤は血漿膠質浸透圧を低下させる。</li><li>ループ利尿薬は血中Na<sup>+</sup>を上昇させる。</li><li>分岐鎖アミノ酸製剤はフィッシャー比を低下させる。</li><li>ラクツロースは消化管内のpHを低下させる。</li><li>カナマイシン一硫酸塩は消化管内のアンモニアの発生を抑制する。</li></ol>    
+            </p>
+        </div>
+        <hr>
+
+        <input type="button" value="check ans" onclick="toggle_switch()"/>
+        
+        <div id='toggle'>
+        <div class='answer'>
+            <p>
+                <span id="grad2">　解答　　</span>
+            </p>
+            <p>
+            問292：4, 5問293：4, 5
+            </p>
+        </div>
+        <div class='description'>
+            <p>
+                <span id="grad2">　解説　　</span>
+            </p>
+            <h4>問292</h4>
+<p>肝性脳症とは『肝臓の機能不全 → 肝臓が担っている、N（窒素）分解不全。いつもはアンモニアを尿素にしてるけど、その機能が不十分 → 血中の NH<span style="font-weight: 400;"><sub>3</sub></span> （アンモニア）濃度が上昇 → 中枢症状、意識障害』という流れによる症状です。従って、静脈瘤や浮腫は関連が深いとはいえません。</p>
+<p>また、黄疸は肝機能低下と関連が深いのですが、中枢症状ではないため残り２つの選択肢の方がより関連が深いと考えられます。</p>
+<p>ちなみに、羽ばたき振戦とは腕、手、指を伸ばして広げた状態を保とうとすると振戦が起きるという姿勢保持困難の一種です。※羽ばたき振戦は肝性脳症だけでなく、他の疾患でも見られることがあります。</p>
+<p>以上より、正解は 4,5 です。</p>
+<h4>問293</h4>
+<p>選択肢 1 ですが<br/>アルブミンは、血中タンパク質の一種です。水分や薬物を保持する機能があります。血中膠質浸透圧の維持の中心的役割を担います。アルブミンが増えるとより水を引き寄せることになるので浸透圧は上昇します。よって、選択肢 1 は誤りです。</p>
+<p>選択肢 2 ですが<br/>ループ利尿薬は、利尿薬です。尿が出る ＝ Na<span style="font-weight: 400;"><sup>+</sup></span> が排出される　ということなので、血中 Na<span style="font-weight: 400;"><sup>+</sup></span> は低下すると考えられます。よって、選択肢 2 は誤りです。</p>
+<p>選択肢 3 ですが<br/>フィッシャー比とは、分岐鎖アミノ酸（BCAA）と芳香族アミノ酸（AA）のモル比です。BCAA/AA です。分岐鎖アミノ酸＝ロイシン、イソロイシン、バリン　です。芳香族アミノ酸＝チロシン、フェニルアラニン、トリプトファンです。従って、分岐鎖アミノ酸製剤の投与により分子の BCAA が増えるので、フィッシャー比は上昇します。よって、選択肢 3 は誤りです。</p>
+<p>以上より、正解は 4,5 です。</p>
+            </p>
+        </div>
+        </div>
+    </body>
+    <script>
+    document.getElementById("toggle").style.display="none";
+    function toggle_switch(){
+        var x = document.getElementById("toggle");
+        if (x.style.display=="block"){
+            x.style.display="none";
+        }
+        else{
+            x.style.display="block";
+        }
+    }
+    </script>
+    

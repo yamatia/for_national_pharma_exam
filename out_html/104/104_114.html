@@ -1,0 +1,87 @@
+
+        <!DOCTYPE html>
+    <html lang="ja">
+    <style>
+    body
+    {
+        color: black;
+        background-color: white;
+    }
+    div{
+        font-size: 14px;
+    }
+    span
+    {
+        font-size: 18px;
+    }
+    #grad1{
+        background: linear-gradient(transparent 60%,#99e4f1 30%);
+        font-size: 18px;
+        font-weight: bold;
+    }
+    #grad2{
+        background: linear-gradient(transparent 60%,#fda1a1 30%);
+        font-size: 18px;
+        font-weight: bold;
+    }
+
+    </style>
+
+    <head>
+        <meta charset="UTF-8">
+        <title>104-114</title>
+    </head>
+
+    <body>
+        <h1>
+        <a href="./104_113.html" rel="external" title="prev">≪</a>
+        104-114
+        <a href="./104_115.html" rel="external" title="next">≫</a>
+        </h1>
+        <div class='problem'>
+            <p>
+                <span id="grad1">　問題文　</span>
+            </p>
+            <p>
+                <ul><li>　　　(ア)　　　　　　　　(イ)　　　　　　　　　(ウ)　　　　　　　　(エ)</li></ul>
+<ol><li>エキソヌクレアーゼ　DNAリガーゼ　　　　DNAヘリカーゼ　　　DNAポリメラーゼⅠ</li><li>エンドヌクレアーゼ　エキソヌクレアーゼ　DNAヘリカーゼ　　　DNAリガーゼ</li><li>エキソヌクレアーゼ　DNAヘリカーゼ　　　DNAポリメラーゼⅠ　DNAリガーゼ</li><li>エンドヌクレアーゼ　DNAリガーゼ　　　　DNAポリメラーゼⅠ　DNAヘリカーゼ</li><li>エキソヌクレアーゼ　エンドヌクレアーゼ　DNAヘリカーゼ　　　DNAポリメラーゼⅠ</li><li>エンドヌクレアーゼ　DNAヘリカーゼ　　　DNAポリメラーゼⅠ　DNAリガーゼ</li></ol>    
+            </p>
+        </div>
+        <hr>
+
+        <input type="button" value="check ans" onclick="toggle_switch()"/>
+        
+        <div id='toggle'>
+        <div class='answer'>
+            <p>
+                <span id="grad2">　解答　　</span>
+            </p>
+            <p>
+            6
+            </p>
+        </div>
+        <div class='description'>
+            <p>
+                <span id="grad2">　解説　　</span>
+            </p>
+            <p><span style="font-weight: 400;">（ア）ですが、</span><span style="font-weight: 400;"><strong>DNA の端から加水分解</strong>するのが<strong>「エキソヌクレアーゼ」</strong>です。端ではなく<strong>内部の加水分解をするのが「エンドヌクレアーゼ」</strong>です。DNA の途中部分に対して作用しているため、（ア）は「エンド」ヌクレアーゼです。正解は 2,4,6 です。</span></p>
+<p><span style="font-weight: 400;">（イ）ですが、</span><span style="font-weight: 400;"><strong>DNA を「ほどく」酵素は「ヘリカーゼ」</strong>です。正解は 4,6 のどちらかです。これにより、（ウ）は DNA ポリメラーゼ Ⅰ と確定します。</span></p>
+<p><span style="font-weight: 400;">（エ）ですが、<strong>切れ目を連結するのは「リガーゼ」</strong>です。</span></p>
+<p><span style="font-weight: 400;">以上より、正解は 6 です。</span></p>
+            </p>
+        </div>
+        </div>
+    </body>
+    <script>
+    document.getElementById("toggle").style.display="none";
+    function toggle_switch(){
+        var x = document.getElementById("toggle");
+        if (x.style.display=="block"){
+            x.style.display="none";
+        }
+        else{
+            x.style.display="block";
+        }
+    }
+    </script>
+    

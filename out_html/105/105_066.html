@@ -1,0 +1,86 @@
+
+        <!DOCTYPE html>
+    <html lang="ja">
+    <style>
+    body
+    {
+        color: black;
+        background-color: white;
+    }
+    div{
+        font-size: 14px;
+    }
+    span
+    {
+        font-size: 18px;
+    }
+    #grad1{
+        background: linear-gradient(transparent 60%,#99e4f1 30%);
+        font-size: 18px;
+        font-weight: bold;
+    }
+    #grad2{
+        background: linear-gradient(transparent 60%,#fda1a1 30%);
+        font-size: 18px;
+        font-weight: bold;
+    }
+
+    </style>
+
+    <head>
+        <meta charset="UTF-8">
+        <title>105-66</title>
+    </head>
+
+    <body>
+        <h1>
+        <a href="./105_065.html" rel="external" title="prev">≪</a>
+        105-66
+        <a href="./105_067.html" rel="external" title="next">≫</a>
+        </h1>
+        <div class='problem'>
+            <p>
+                <span id="grad1">　問題文　</span>
+            </p>
+            <p>
+                <p>モルヒネ換算比が最も小さい医療用麻薬製剤はどれか。1つ選べ。</p>
+<ol><li>オキシコドン塩酸塩水和物徐放錠</li><li>トラマドール塩酸塩錠</li><li>メサドン塩酸塩錠</li><li>フェンタニルクエン酸塩注射液</li><li>フェンタニル貼付剤</li></ol>    
+            </p>
+        </div>
+        <hr>
+
+        <input type="button" value="check ans" onclick="toggle_switch()"/>
+        
+        <div id='toggle'>
+        <div class='answer'>
+            <p>
+                <span id="grad2">　解答　　</span>
+            </p>
+            <p>
+            4
+            </p>
+        </div>
+        <div class='description'>
+            <p>
+                <span id="grad2">　解説　　</span>
+            </p>
+            <p>ん？疼痛ラダー的にはなかなか上の方ばっかりだよ。メサドンにいたっては他の強オピオイド使用を前提として取り除けない痛みに使うやつだし、そもそもモルヒネ換算比って覚えてない・・・などと色んなことを試験本番で考えた問題ではないかと思います。</p>
+<p>本問はおそらく剤形に注目し、注射液が 100% 血中に入るのだから換算比が小さくなるだろうと推測させることを期待している問題ではないかと思われます。</p>
+<p>正解は 4 です。</p>
+            </p>
+        </div>
+        </div>
+    </body>
+    <script>
+    document.getElementById("toggle").style.display="none";
+    function toggle_switch(){
+        var x = document.getElementById("toggle");
+        if (x.style.display=="block"){
+            x.style.display="none";
+        }
+        else{
+            x.style.display="block";
+        }
+    }
+    </script>
+    

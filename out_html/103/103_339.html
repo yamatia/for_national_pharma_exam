@@ -1,0 +1,85 @@
+
+        <!DOCTYPE html>
+    <html lang="ja">
+    <style>
+    body
+    {
+        color: black;
+        background-color: white;
+    }
+    div{
+        font-size: 14px;
+    }
+    span
+    {
+        font-size: 18px;
+    }
+    #grad1{
+        background: linear-gradient(transparent 60%,#99e4f1 30%);
+        font-size: 18px;
+        font-weight: bold;
+    }
+    #grad2{
+        background: linear-gradient(transparent 60%,#fda1a1 30%);
+        font-size: 18px;
+        font-weight: bold;
+    }
+
+    </style>
+
+    <head>
+        <meta charset="UTF-8">
+        <title>103-339</title>
+    </head>
+
+    <body>
+        <h1>
+        <a href="./103_338.html" rel="external" title="prev">≪</a>
+        103-339
+        <a href="./103_340.html" rel="external" title="next">≫</a>
+        </h1>
+        <div class='problem'>
+            <p>
+                <span id="grad1">　問題文　</span>
+            </p>
+            <p>
+                <p>バルプロ酸ナトリウム徐放錠とラモトリギン錠の併用に関する情報提供の内容について適切なのはどれか。1つ選べ。</p>
+<ol><li>ラモトリギン錠はバルプロ酸ナトリウム徐放錠と併用禁忌である。</li><li>両剤の併用で血糖値上昇が考えられるので、定期的な検査を実施する。</li><li>併用開始後2週間までは、ラモトリギン錠を隔日投与する。</li><li>両剤の併用で血中アンモニア濃度の上昇が考えられるので、定期的な検査を実施する。</li><li>両剤の併用でラモトリギンの半減期が短くなるため、投与量を漸増する。</li></ol>    
+            </p>
+        </div>
+        <hr>
+
+        <input type="button" value="check ans" onclick="toggle_switch()"/>
+        
+        <div id='toggle'>
+        <div class='answer'>
+            <p>
+                <span id="grad2">　解答　　</span>
+            </p>
+            <p>
+            3
+            </p>
+        </div>
+        <div class='description'>
+            <p>
+                <span id="grad2">　解説　　</span>
+            </p>
+            <p><span style="font-weight: 400;">ラモトリギンの投与により、</span><span style="font-weight: 400;">中毒性表皮壊死融解症</span><span style="font-weight: 400;">（Toxic Epidermal Necrolysis：TEN）、</span><span style="font-weight: 400;">皮膚粘膜眼症候群</span><span style="font-weight: 400;">（Stevens-Johnson症候群）等の</span><span style="font-weight: 400;">重篤な皮膚障害があらわれることがあります。</span><span style="font-weight: 400;">用法・用量を超えて投与した場合に</span><span style="font-weight: 400;">皮膚障害の発現率が高いため</span><span style="font-weight: 400;">特に注意が必要な薬剤です。</span><span style="font-weight: 400;">バルプロ酸ナトリウム併用時は、</span><span style="font-weight: 400;">投与開始 2 週間まで、隔日投与にします。（成人のみ）</span></p>
+<p><span style="font-weight: 400;">以上より、正解は 3 です。</span></p>
+            </p>
+        </div>
+        </div>
+    </body>
+    <script>
+    document.getElementById("toggle").style.display="none";
+    function toggle_switch(){
+        var x = document.getElementById("toggle");
+        if (x.style.display=="block"){
+            x.style.display="none";
+        }
+        else{
+            x.style.display="block";
+        }
+    }
+    </script>
+    

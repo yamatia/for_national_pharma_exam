@@ -1,0 +1,86 @@
+
+        <!DOCTYPE html>
+    <html lang="ja">
+    <style>
+    body
+    {
+        color: black;
+        background-color: white;
+    }
+    div{
+        font-size: 14px;
+    }
+    span
+    {
+        font-size: 18px;
+    }
+    #grad1{
+        background: linear-gradient(transparent 60%,#99e4f1 30%);
+        font-size: 18px;
+        font-weight: bold;
+    }
+    #grad2{
+        background: linear-gradient(transparent 60%,#fda1a1 30%);
+        font-size: 18px;
+        font-weight: bold;
+    }
+
+    </style>
+
+    <head>
+        <meta charset="UTF-8">
+        <title>100-56</title>
+    </head>
+
+    <body>
+        <h1>
+        <a href="./100_055.html" rel="external" title="prev">≪</a>
+        100-56
+        <a href="./100_057.html" rel="external" title="next">≫</a>
+        </h1>
+        <div class='problem'>
+            <p>
+                <span id="grad1">　問題文　</span>
+            </p>
+            <p>
+                <p>肝障害により血清AST値が上昇する機構として、正しいのはどれか。1つ選べ。</p>
+<ol><li>ASTの胆汁排泄が低下する。</li><li>肝臓におけるASTの代謝が低下する。</li><li>ASTの肝細胞への取り込みが低下する。</li><li>肝細胞内のASTが血中に放出される。</li><li>肝臓におけるASTの生合成が亢進する。</li></ol>    
+            </p>
+        </div>
+        <hr>
+
+        <input type="button" value="check ans" onclick="toggle_switch()"/>
+        
+        <div id='toggle'>
+        <div class='answer'>
+            <p>
+                <span id="grad2">　解答　　</span>
+            </p>
+            <p>
+            4
+            </p>
+        </div>
+        <div class='description'>
+            <p>
+                <span id="grad2">　解説　　</span>
+            </p>
+            <p>AST は、肝細胞などに多く存在しています。肝障害により血清 AST 値が上昇するのは、肝障害により、肝細胞が破壊され細胞内に存在していた AST が血中に漏れ出すためです。</p>
+<p>以上より、正解は 4 です。</p>
+<p>ちなみに、本来細胞内に存在する酵素が血中に流出したものを、<strong>逸脱酵素</strong>と呼びます。</p>
+            </p>
+        </div>
+        </div>
+    </body>
+    <script>
+    document.getElementById("toggle").style.display="none";
+    function toggle_switch(){
+        var x = document.getElementById("toggle");
+        if (x.style.display=="block"){
+            x.style.display="none";
+        }
+        else{
+            x.style.display="block";
+        }
+    }
+    </script>
+    

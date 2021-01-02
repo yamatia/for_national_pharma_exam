@@ -1,0 +1,96 @@
+
+        <!DOCTYPE html>
+    <html lang="ja">
+    <style>
+    body
+    {
+        color: black;
+        background-color: white;
+    }
+    div{
+        font-size: 14px;
+    }
+    span
+    {
+        font-size: 18px;
+    }
+    #grad1{
+        background: linear-gradient(transparent 60%,#99e4f1 30%);
+        font-size: 18px;
+        font-weight: bold;
+    }
+    #grad2{
+        background: linear-gradient(transparent 60%,#fda1a1 30%);
+        font-size: 18px;
+        font-weight: bold;
+    }
+
+    </style>
+
+    <head>
+        <meta charset="UTF-8">
+        <title>103-119</title>
+    </head>
+
+    <body>
+        <h1>
+        <a href="./103_118.html" rel="external" title="prev">≪</a>
+        103-119
+        <a href="./103_120.html" rel="external" title="next">≫</a>
+        </h1>
+        <div class='problem'>
+            <p>
+                <span id="grad1">　問題文　</span>
+            </p>
+            <p>
+                <ol><li>試料イにおけるタンパク質Xの酵素活性は、試料アよりも高い。</li><li>タンパク質Xの比活性*は、試料アよりも試料ウにおいて高い。</li><li>anti-Xを産生するハイブリドーマの作製には、マウス骨髄腫細胞が用いられる。</li><li>anti-Xは、タンパク質X中の複数の異なるエピトープ(抗原決定基)を認識する。</li><li>anti-Xと試料イを用いたウエスタンブロット法により、タンパク質Xの細胞内局在を同定することができる。</li></ol>
+<p>*比活性：試料中のタンパク質の単位重量当たりの酵素活性</p>    
+            </p>
+        </div>
+        <hr>
+
+        <input type="button" value="check ans" onclick="toggle_switch()"/>
+        
+        <div id='toggle'>
+        <div class='answer'>
+            <p>
+                <span id="grad2">　解答　　</span>
+            </p>
+            <p>
+            問119：2, 3問120：2, 3
+            </p>
+        </div>
+        <div class='description'>
+            <p>
+                <span id="grad2">　解説　　</span>
+            </p>
+            <h4>問119</h4>
+<p><span style="font-weight: 400;">選択肢 1 ですが<br/></span><span style="font-weight: 400;">２ーメルカプトエタノールは、「還元」剤です。</span><span style="font-weight: 400;">酸化的ではなく、還元的前処理です。</span><span style="font-weight: 400;">この前処理で分子量に基づいた分離が可能になる</span><span style="font-weight: 400;">という部分は適切です。</span></p>
+<p><span style="font-weight: 400;">選択肢 2,3 は、正しい記述です。<br/></span><span style="font-weight: 400;">SDS-PAGEでの泳動方向と極については頻出ですが、</span><span style="font-weight: 400;">前処理で負電荷をタンパク質に付加する　という点を</span><span style="font-weight: 400;">イメージできると思い出しやすいです。</span></p>
+<p><span style="font-weight: 400;">選択肢 4 ですが<br/></span><span style="font-weight: 400;">プロテインA固定化ゲルは</span><span style="font-weight: 400;">免疫沈降法で用います。</span><span style="font-weight: 400;">SECでの固定相ではありません。</span><span style="font-weight: 400;">よって、選択肢 4 は誤りです。</span></p>
+<p><span style="font-weight: 400;">選択肢 5 ですが<br/></span><span style="font-weight: 400;">SECでは、分子量が小さい方が遅く出てきます。</span><span style="font-weight: 400;">つまり、保持時間が長いということです。</span><span style="font-weight: 400;">従って、順に</span><span style="font-weight: 400;">１が55k、２がX、３が40k、</span><span style="font-weight: 400;">４が35k、５が25k のピークと考えられます。</span><span style="font-weight: 400;">よって、選択肢 5 は誤りです。</span></p>
+<p><span style="font-weight: 400;">以上より、正解は 2,3 です。</span></p>
+<h4>問120</h4>
+<p><span style="font-weight: 400;">選択肢 1 ですが<br/></span><span style="font-weight: 400;">試料イは、前処理済なので</span><span style="font-weight: 400;">SDS で変性しています。</span><span style="font-weight: 400;">精製の過程で失活はしていないとありますが</span><span style="font-weight: 400;">一般的に、活性は低下すると考えられます。</span><span style="font-weight: 400;">少なくとも</span><span style="font-weight: 400;">この処理により酵素活性が高くなるとは</span><span style="font-weight: 400;">いえません。</span><span style="font-weight: 400;">よって、選択肢 1 は誤りです。</span></p>
+<p><span style="font-weight: 400;">選択肢 2,3 は、正しい記述です。</span></p>
+<p><span style="font-weight: 400;">選択肢 4 ですが<br/></span><span style="font-weight: 400;">anti-X はモノクローナルです。</span><span style="font-weight: 400;">モノクローナルとは、</span><span style="font-weight: 400;">認識するエピトープが単一　ということです。</span><span style="font-weight: 400;">記述はポリクローナルに関するものです。</span><span style="font-weight: 400;">よって、選択肢 4 は誤りです。</span></p>
+<p><span style="font-weight: 400;">選択肢 5 ですが<br/></span><span style="font-weight: 400;">細胞内局在の同定には、例えば</span><span style="font-weight: 400;">目的タンパク質をコードする部分の遺伝子に</span><span style="font-weight: 400;">蛍光タンパク質（GFP等）のコードを挿入した上で</span><span style="font-weight: 400;">遺伝子を細胞内に導入し</span><span style="font-weight: 400;">細胞培養した上で、蛍光を測定する</span><span style="font-weight: 400;">といった手法を取ります。</span></p>
+<p><span style="font-weight: 400;">ウエスタンブロットは、</span><span style="font-weight: 400;">試料からタンパク質 X のみを検出する方法です。</span><span style="font-weight: 400;">これでわかるのは</span><span style="font-weight: 400;">「確かに試料には、タンパク質 X があるよ」</span><span style="font-weight: 400;">ということです。</span><span style="font-weight: 400;">細胞内のどこにあったか　はわかりません。</span><span style="font-weight: 400;">よって、選択肢 5 は誤りです。</span></p>
+<p><span style="font-weight: 400;">以上より、正解は 2,3 です。</span></p>
+            </p>
+        </div>
+        </div>
+    </body>
+    <script>
+    document.getElementById("toggle").style.display="none";
+    function toggle_switch(){
+        var x = document.getElementById("toggle");
+        if (x.style.display=="block"){
+            x.style.display="none";
+        }
+        else{
+            x.style.display="block";
+        }
+    }
+    </script>
+    

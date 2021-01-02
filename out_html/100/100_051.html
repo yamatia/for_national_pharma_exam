@@ -1,0 +1,91 @@
+
+        <!DOCTYPE html>
+    <html lang="ja">
+    <style>
+    body
+    {
+        color: black;
+        background-color: white;
+    }
+    div{
+        font-size: 14px;
+    }
+    span
+    {
+        font-size: 18px;
+    }
+    #grad1{
+        background: linear-gradient(transparent 60%,#99e4f1 30%);
+        font-size: 18px;
+        font-weight: bold;
+    }
+    #grad2{
+        background: linear-gradient(transparent 60%,#fda1a1 30%);
+        font-size: 18px;
+        font-weight: bold;
+    }
+
+    </style>
+
+    <head>
+        <meta charset="UTF-8">
+        <title>100-51</title>
+    </head>
+
+    <body>
+        <h1>
+        <a href="./100_050.html" rel="external" title="prev">≪</a>
+        100-51
+        <a href="./100_052.html" rel="external" title="next">≫</a>
+        </h1>
+        <div class='problem'>
+            <p>
+                <span id="grad1">　問題文　</span>
+            </p>
+            <p>
+                <p>粉体の流動性を表す指標として最も適切なのはどれか。1つ選べ。</p>
+<ol><li>真密度</li><li>安息角</li><li>比表面積</li><li>形状係数</li><li>接触角</li></ol>    
+            </p>
+        </div>
+        <hr>
+
+        <input type="button" value="check ans" onclick="toggle_switch()"/>
+        
+        <div id='toggle'>
+        <div class='answer'>
+            <p>
+                <span id="grad2">　解答　　</span>
+            </p>
+            <p>
+            2
+            </p>
+        </div>
+        <div class='description'>
+            <p>
+                <span id="grad2">　解説　　</span>
+            </p>
+            <p>選択肢 1 ですが<br/>真密度とは、密度を求める際の体積として『まさにその固体自身が占める体積のみ』を用いて計算する密度です。粉体を、容器に入れると隙間ができるのですがこの隙間を体積として認めない　ということです。流動性を表す指標としては適切では、ありません。</p>
+<p>選択肢 2 は、正しい記述です。<br/>ちなみに安息角とは、粉体を静かに落下させた時に円すい形に堆積した時の、円すいの母線と水平面のなす角です。流動性、つまりさらさらしている度合いで、こんもり積もるかぺしゃっと積もるかが変わるので、安息角もそれに伴い変化します。</p>
+<p>選択肢 3 ですが<br/>比表面積とは、単位質量あたりの表面積、又は　単位体積あたりの表面積です。流動性を表す指標としては適切では、ありません。</p>
+<p>選択肢 4 ですが<br/>形状係数とは、粒子の形を円や球などと比べた時、どれくらい複雑かを表す指標のことです。流動性を表す指標としては適切では、ありません。</p>
+<p>選択肢 5 ですが<br/>接触角とは、下図のθのことです。地面のように表されているのが、粉末のイメージです。ぺしゃっと乗っているのは、液体のイメージです。粉末の上に、液体を垂らした時に液体がどのくらい広がるか（ぬれ具合）を表す指標です。</p>
+<p><img alt="" class="alignnone size-full wp-image-7786" height="151.89999999999998" loading="lazy" sizes="(max-width: 584px) 100vw, 584px" src="data:;base64,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" width="408.79999999999995"/></p>
+<p>流動性を表す指標としては適切では、ありません。</p>
+<p>以上より、正解は 2 です。</p>
+            </p>
+        </div>
+        </div>
+    </body>
+    <script>
+    document.getElementById("toggle").style.display="none";
+    function toggle_switch(){
+        var x = document.getElementById("toggle");
+        if (x.style.display=="block"){
+            x.style.display="none";
+        }
+        else{
+            x.style.display="block";
+        }
+    }
+    </script>
+    

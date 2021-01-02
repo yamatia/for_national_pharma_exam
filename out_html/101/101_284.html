@@ -1,0 +1,95 @@
+
+        <!DOCTYPE html>
+    <html lang="ja">
+    <style>
+    body
+    {
+        color: black;
+        background-color: white;
+    }
+    div{
+        font-size: 14px;
+    }
+    span
+    {
+        font-size: 18px;
+    }
+    #grad1{
+        background: linear-gradient(transparent 60%,#99e4f1 30%);
+        font-size: 18px;
+        font-weight: bold;
+    }
+    #grad2{
+        background: linear-gradient(transparent 60%,#fda1a1 30%);
+        font-size: 18px;
+        font-weight: bold;
+    }
+
+    </style>
+
+    <head>
+        <meta charset="UTF-8">
+        <title>101-284</title>
+    </head>
+
+    <body>
+        <h1>
+        <a href="./101_283.html" rel="external" title="prev">≪</a>
+        101-284
+        <a href="./101_285.html" rel="external" title="next">≫</a>
+        </h1>
+        <div class='problem'>
+            <p>
+                <span id="grad1">　問題文　</span>
+            </p>
+            <p>
+                <p>糖・電解質水溶液からなる室とアミノ酸水溶液からなる室が、隔壁によって、2室に分けられた構造の高カロリー輸液剤(ダブルバッグ製剤)に関する記述のうち、正しいのはどれか。2つ選べ。</p>
+<ol><li>通例、保存剤が添加されている。</li><li>バッグを両手で強く押すことにより、隔壁部を開通させる。</li><li>2室に分かれているため、混合するまでメイラード反応を回避できる。</li><li>脂肪乳剤を同時に投与する場合は、糖・電解質水溶液からなる室に混合する。</li><li>混合した製剤は、2時間以内に全量を投与する。</li></ol>    
+            </p>
+        </div>
+        <hr>
+
+        <input type="button" value="check ans" onclick="toggle_switch()"/>
+        
+        <div id='toggle'>
+        <div class='answer'>
+            <p>
+                <span id="grad2">　解答　　</span>
+            </p>
+            <p>
+            問284：1, 4問285：2, 3
+            </p>
+        </div>
+        <div class='description'>
+            <p>
+                <span id="grad2">　解説　　</span>
+            </p>
+            <h4>問284</h4>
+<p>選択肢 1 は、正しい選択肢です。<br/>調製時に微生物が混入しないようにするためです。</p>
+<p>選択肢 2 ですが<br/>コアリングとは、注射器のヒール部分によりゴム栓が削り取られる現象です。削り取られたゴム片を含む薬液が患者に投与されるリスクがあるため避けるべき事象です。コアリング防止のためには、ヒール部分がひっかからないように注射針をゴム栓に対し「垂直」に「ゆっくり」さします。斜めにでは、ありません。よって、選択肢 2 は誤りです。</p>
+<p>選択肢 3 ですが<br/>アシドーシス防止のために添加するのはビタミン B<span style="font-weight: 400;"><sub>1</sub></span> です。C ではありません。よって、選択肢 3 は誤りです。</p>
+<p>選択肢 4 は、正しい選択肢です。<br/>ビタミンの分解といった変化を避けるためです。</p>
+<p>以上より、正解は 1,4 です。</p>
+<h4>問285</h4>
+<p>選択肢 1 ですが<br/>輸液のように大量に用いる製剤には保存剤は添加しません。よって、選択肢 1 は誤りです。</p>
+<p>選択肢 2,3 は、正しい選択肢です。<br/>ちなみに、メイラード反応とは食品が褐変する原因の一つである反応です。糖とアミノ酸が反応することでシッフ塩基を形成した後、最終的にメラノイジンが生成することで褐変します。</p>
+<p>選択肢 4 ですが<br/>脂肪乳剤は、単独投与します。室に混合するわけでは、ありません。配合変化を避けるためです。</p>
+<p>選択肢 5 ですが<br/>24 時間かけて持続点滴静注を行うものもあります。（例）アミノトリパ　1号、2号）２時間以内に全量を投与するというのは、適切な記述ではないと考えられます。</p>
+<p>以上より、正解は 2,3 です。</p>
+            </p>
+        </div>
+        </div>
+    </body>
+    <script>
+    document.getElementById("toggle").style.display="none";
+    function toggle_switch(){
+        var x = document.getElementById("toggle");
+        if (x.style.display=="block"){
+            x.style.display="none";
+        }
+        else{
+            x.style.display="block";
+        }
+    }
+    </script>
+    

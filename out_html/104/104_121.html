@@ -1,0 +1,87 @@
+
+        <!DOCTYPE html>
+    <html lang="ja">
+    <style>
+    body
+    {
+        color: black;
+        background-color: white;
+    }
+    div{
+        font-size: 14px;
+    }
+    span
+    {
+        font-size: 18px;
+    }
+    #grad1{
+        background: linear-gradient(transparent 60%,#99e4f1 30%);
+        font-size: 18px;
+        font-weight: bold;
+    }
+    #grad2{
+        background: linear-gradient(transparent 60%,#fda1a1 30%);
+        font-size: 18px;
+        font-weight: bold;
+    }
+
+    </style>
+
+    <head>
+        <meta charset="UTF-8">
+        <title>104-121</title>
+    </head>
+
+    <body>
+        <h1>
+        <a href="./104_120.html" rel="external" title="prev">≪</a>
+        104-121
+        <a href="./104_122.html" rel="external" title="next">≫</a>
+        </h1>
+        <div class='problem'>
+            <p>
+                <span id="grad1">　問題文　</span>
+            </p>
+            <p>
+                <p>マイコトキシンに関する記述のうち、誤っているのはどれか。1つ選べ。</p>
+<ol><li>ステリグマトシスチンは、肝毒性を示す。</li><li>シトリニンは、腎毒性を示す。</li><li>ニバレノールは、造血機能障害を示す。</li><li>パツリンは、食品中の最大基準値が設定されている。</li><li>アフラトキシンのうち、アフラトキシンB<sub>1</sub>のみ食品中の最大基準値が設定されている。</li></ol>    
+            </p>
+        </div>
+        <hr>
+
+        <input type="button" value="check ans" onclick="toggle_switch()"/>
+        
+        <div id='toggle'>
+        <div class='answer'>
+            <p>
+                <span id="grad2">　解答　　</span>
+            </p>
+            <p>
+            5
+            </p>
+        </div>
+        <div class='description'>
+            <p>
+                <span id="grad2">　解説　　</span>
+            </p>
+            <p><b>マイコトキシン</b><span style="font-weight: 400;"> とは、カビの二次代謝産物として産生される、毒の総称です。</span></p>
+<p><span style="font-weight: 400;">選択肢 1 ~ 4 は妥当な記述です。</span></p>
+<p><span style="font-weight: 400;">アフラトキシン類については</span><b>「総アフラトキシン類」</b><span style="font-weight: 400;">として、食品中の最大基準値が設定されています。「B<sub>1</sub></span><span style="font-weight: 400;"> のみ」という記述が誤りと考えられます。</span></p>
+<p><span style="font-weight: 400;">以上より、正解は 5 です。</span></p>
+            </p>
+        </div>
+        </div>
+    </body>
+    <script>
+    document.getElementById("toggle").style.display="none";
+    function toggle_switch(){
+        var x = document.getElementById("toggle");
+        if (x.style.display=="block"){
+            x.style.display="none";
+        }
+        else{
+            x.style.display="block";
+        }
+    }
+    </script>
+    

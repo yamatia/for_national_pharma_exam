@@ -1,0 +1,95 @@
+
+        <!DOCTYPE html>
+    <html lang="ja">
+    <style>
+    body
+    {
+        color: black;
+        background-color: white;
+    }
+    div{
+        font-size: 14px;
+    }
+    span
+    {
+        font-size: 18px;
+    }
+    #grad1{
+        background: linear-gradient(transparent 60%,#99e4f1 30%);
+        font-size: 18px;
+        font-weight: bold;
+    }
+    #grad2{
+        background: linear-gradient(transparent 60%,#fda1a1 30%);
+        font-size: 18px;
+        font-weight: bold;
+    }
+
+    </style>
+
+    <head>
+        <meta charset="UTF-8">
+        <title>101-320</title>
+    </head>
+
+    <body>
+        <h1>
+        <a href="./101_319.html" rel="external" title="prev">≪</a>
+        101-320
+        <a href="./101_321.html" rel="external" title="next">≫</a>
+        </h1>
+        <div class='problem'>
+            <p>
+                <span id="grad1">　問題文　</span>
+            </p>
+            <p>
+                <p>医薬品による危害の発生又は拡大の防止のために定められている施策に関する記述のうち、正しいのはどれか。2つ選べ。</p>
+<ol><li>患者が、直接、PMDAに副作用を報告する制度はない。</li><li>医薬品の製造販売業者は、その製造販売をしている医薬品について、副作用等を知ったときは、内容にかかわらず30日以内に厚生労働大臣に報告しなければならない。</li><li>国は、医薬品の使用による保健衛生上の危害の発生及び拡大の防止のための施策を策定しなければならない。</li><li>薬剤師は、医薬品の製造販売業者が行う適正な使用のために必要な情報の収集に協力するよう努めなければならない。</li><li>都道府県知事は、医薬品による保健衛生上の危害の発生又は拡大を防止するため必要があると認めるときは、製造販売業者に対して、当該医薬品の販売の一時停止を命ずることができる。</li></ol>    
+            </p>
+        </div>
+        <hr>
+
+        <input type="button" value="check ans" onclick="toggle_switch()"/>
+        
+        <div id='toggle'>
+        <div class='answer'>
+            <p>
+                <span id="grad2">　解答　　</span>
+            </p>
+            <p>
+            問320：1問321：3, 4
+            </p>
+        </div>
+        <div class='description'>
+            <p>
+                <span id="grad2">　解説　　</span>
+            </p>
+            <h4>問320</h4>
+<p>一番副作用が多い ア は、一番使われている印象から「総合感冒薬」と選べるのではないでしょうか。これにより、正解は 1,2 のどちらかになります。</p>
+<p>漢方製剤と、胃腸薬の使用頻度については、なんとも判断しづらいと思います。（知っていれば、それでOKです。）</p>
+<p>そこで、副作用を考えてみると、偽グリチルリチン症や肝障害がある漢方製剤　がそれほど目立った副作用がうかびづらい胃腸薬　よりは多いのではないかと考えられるのではないでしょうか。</p>
+<p>以上より、正解は 1 です。</p>
+<h4>問321</h4>
+<p>選択肢 1 ですが<br/>現在 PMDA は、試行的にWEBシステムで患者から副作用情報を直接収集しています。参考）　よって、選択肢 1 は誤りです。</p>
+<p>選択肢 2 ですが<br/>医薬品医療機器等法 第68条の10 1項に基づき、施行規則２２８条の２０が定めるところによれば、副作用等の内容や医薬品の種類に基づき、15日以内、30日以内など異なった期間が存在します。よって、選択肢 2 は誤りです。</p>
+<p>ちなみにですが、実際に製薬会社に勤めていて報告事例と出会った時「厚生労働大臣にはどう報告すればいいんだ？」と考えるかもしれません。同法第 68 条の13 によって、PMDA に情報の整理はまかせており、PMDA サイトに書式は公開されています。報告の宛先も PMDA となっています。</p>
+<p>選択肢 3,4 は、正しい選択肢です。<br/>内容があまり具体的でなくそりゃそうだ、という内容だから何となく誤りにはできない、程度での判断でよいと思います。選択肢 3 は、同法第１条、選択肢 4 は、同法第68条の2 に規定されている内容です。</p>
+<p>選択肢 5 ですが<br/>「県知事」だと、何県の？という疑問が出てきます。国全体での対応が必要となることをふまえると「厚生労働大臣」であると考えられます。同法第69条の3 「緊急命令」に関する記述です。よって、選択肢 5 は誤りです。</p>
+<p>以上より、正解は 3,4 です。</p>
+            </p>
+        </div>
+        </div>
+    </body>
+    <script>
+    document.getElementById("toggle").style.display="none";
+    function toggle_switch(){
+        var x = document.getElementById("toggle");
+        if (x.style.display=="block"){
+            x.style.display="none";
+        }
+        else{
+            x.style.display="block";
+        }
+    }
+    </script>
+    

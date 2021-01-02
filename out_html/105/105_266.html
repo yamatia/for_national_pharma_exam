@@ -1,0 +1,88 @@
+
+        <!DOCTYPE html>
+    <html lang="ja">
+    <style>
+    body
+    {
+        color: black;
+        background-color: white;
+    }
+    div{
+        font-size: 14px;
+    }
+    span
+    {
+        font-size: 18px;
+    }
+    #grad1{
+        background: linear-gradient(transparent 60%,#99e4f1 30%);
+        font-size: 18px;
+        font-weight: bold;
+    }
+    #grad2{
+        background: linear-gradient(transparent 60%,#fda1a1 30%);
+        font-size: 18px;
+        font-weight: bold;
+    }
+
+    </style>
+
+    <head>
+        <meta charset="UTF-8">
+        <title>105-266</title>
+    </head>
+
+    <body>
+        <h1>
+        <a href="./105_265.html" rel="external" title="prev">≪</a>
+        105-266
+        <a href="./105_267.html" rel="external" title="next">≫</a>
+        </h1>
+        <div class='problem'>
+            <p>
+                <span id="grad1">　問題文　</span>
+            </p>
+            <p>
+                <p>処方変更をしない場合に問題となる、エルロチニブの体内動態の変化として適切なのはどれか。1つ選べ。</p>
+<ol><li>吸収の低下</li><li>肝代謝の阻害</li><li>肝代謝の亢進</li><li>尿中排泄の阻害</li><li>胆汁排泄の阻害</li></ol>    
+            </p>
+        </div>
+        <hr>
+
+        <input type="button" value="check ans" onclick="toggle_switch()"/>
+        
+        <div id='toggle'>
+        <div class='answer'>
+            <p>
+                <span id="grad2">　解答　　</span>
+            </p>
+            <p>
+            問266：2問267：1
+            </p>
+        </div>
+        <div class='description'>
+            <p>
+                <span id="grad2">　解説　　</span>
+            </p>
+            <h4>問266</h4>
+<p>問 267 と合わせて解説します。</p>
+<h4>問267</h4>
+<p>エルロチニブ（®タルセバ）は、EGFR チロシンキナーゼ阻害薬の一種です。PPI や H<span style="font-weight: 400;"><sub>2</sub></span> 受容体拮抗薬との併用により、胃酸 pH が持続的上昇 → AUC 低下 が知られています。</p>
+<p>以上より<br/>問 266 の正解は 2 です。<br/>問 267 の正解は 1 です。</p>
+            </p>
+        </div>
+        </div>
+    </body>
+    <script>
+    document.getElementById("toggle").style.display="none";
+    function toggle_switch(){
+        var x = document.getElementById("toggle");
+        if (x.style.display=="block"){
+            x.style.display="none";
+        }
+        else{
+            x.style.display="block";
+        }
+    }
+    </script>
+    

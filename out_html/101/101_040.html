@@ -1,0 +1,90 @@
+
+        <!DOCTYPE html>
+    <html lang="ja">
+    <style>
+    body
+    {
+        color: black;
+        background-color: white;
+    }
+    div{
+        font-size: 14px;
+    }
+    span
+    {
+        font-size: 18px;
+    }
+    #grad1{
+        background: linear-gradient(transparent 60%,#99e4f1 30%);
+        font-size: 18px;
+        font-weight: bold;
+    }
+    #grad2{
+        background: linear-gradient(transparent 60%,#fda1a1 30%);
+        font-size: 18px;
+        font-weight: bold;
+    }
+
+    </style>
+
+    <head>
+        <meta charset="UTF-8">
+        <title>101-40</title>
+    </head>
+
+    <body>
+        <h1>
+        <a href="./101_039.html" rel="external" title="prev">≪</a>
+        101-40
+        <a href="./101_041.html" rel="external" title="next">≫</a>
+        </h1>
+        <div class='problem'>
+            <p>
+                <span id="grad1">　問題文　</span>
+            </p>
+            <p>
+                <p>抗ウイルス薬ラミブジンが阻害する酵素はどれか。1つ選べ。</p>
+<ol><li>ノイラミニダーゼ</li><li>インテグラーゼ</li><li>逆転写酵素</li><li>HIVプロテアーゼ</li><li>チミジンキナーゼ</li></ol>    
+            </p>
+        </div>
+        <hr>
+
+        <input type="button" value="check ans" onclick="toggle_switch()"/>
+        
+        <div id='toggle'>
+        <div class='answer'>
+            <p>
+                <span id="grad2">　解答　　</span>
+            </p>
+            <p>
+            3
+            </p>
+        </div>
+        <div class='description'>
+            <p>
+                <span id="grad2">　解説　　</span>
+            </p>
+            <p>ラミブジンは、逆転写酵素阻害薬です。</p>
+<p>以上より、正解は 3 です。</p>
+<p>ちなみに、選択肢 1 ですが<br/>ノイラミニダーゼとは、インフルエンザウイルスが産生する酵素です。代表的ノイラミニダーゼ阻害薬はオセルタミビル（タミフル）です。</p>
+<p>選択肢 2 ですが<br/>インテグラーゼは、ウイルスの核酸を宿主細胞の核酸に組みこむ酵素です。代表的なインテグラーゼ阻害薬は　ラルテグラビルです。</p>
+<p>選択肢 4 ですが<br/>HIV プロテアーゼは、HIV が増殖するのに必要なタンパク質です。代表的なプロテアーゼ阻害薬はリトナビルです。</p>
+<p>選択肢 5 ですが<br/>チミジンキナーゼは、リン酸化酵素の一種です。チミジンキナーゼが関与する薬としてはアシクロビルがあります。</p>
+<p>アシクロビルは、ウイルス由来のチミジンキナーゼによりリン酸化された後ヒトのキナーゼにより、更にリン酸化を受けます。その結果できたアシクロ 三リン酸が DNA ポリメラーゼを阻害することで抗ウイルス作用を示します。</p>
+            </p>
+        </div>
+        </div>
+    </body>
+    <script>
+    document.getElementById("toggle").style.display="none";
+    function toggle_switch(){
+        var x = document.getElementById("toggle");
+        if (x.style.display=="block"){
+            x.style.display="none";
+        }
+        else{
+            x.style.display="block";
+        }
+    }
+    </script>
+    

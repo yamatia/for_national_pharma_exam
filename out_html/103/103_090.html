@@ -1,0 +1,88 @@
+
+        <!DOCTYPE html>
+    <html lang="ja">
+    <style>
+    body
+    {
+        color: black;
+        background-color: white;
+    }
+    div{
+        font-size: 14px;
+    }
+    span
+    {
+        font-size: 18px;
+    }
+    #grad1{
+        background: linear-gradient(transparent 60%,#99e4f1 30%);
+        font-size: 18px;
+        font-weight: bold;
+    }
+    #grad2{
+        background: linear-gradient(transparent 60%,#fda1a1 30%);
+        font-size: 18px;
+        font-weight: bold;
+    }
+
+    </style>
+
+    <head>
+        <meta charset="UTF-8">
+        <title>103-90</title>
+    </head>
+
+    <body>
+        <h1>
+        <a href="./103_089.html" rel="external" title="prev">≪</a>
+        103-90
+        <a href="./103_091.html" rel="external" title="next">≫</a>
+        </h1>
+        <div class='problem'>
+            <p>
+                <span id="grad1">　問題文　</span>
+            </p>
+            <p>
+                <p>次の抗がん薬のうち、調製者の曝露防止のため、閉鎖式の薬物混合器具を使用して調製する必要性が最も低いのはどれか。1つ選べ。</p>
+<ol><li>シスプラチン</li><li>シクロホスファミド</li><li>ベンダムスチン</li><li>イホスファミド</li><li>リツキシマブ</li></ol>    
+            </p>
+        </div>
+        <hr>
+
+        <input type="button" value="check ans" onclick="toggle_switch()"/>
+        
+        <div id='toggle'>
+        <div class='answer'>
+            <p>
+                <span id="grad2">　解答　　</span>
+            </p>
+            <p>
+            5
+            </p>
+        </div>
+        <div class='description'>
+            <p>
+                <span id="grad2">　解説　　</span>
+            </p>
+            <p><span style="font-weight: 400;">抗がん剤には</span><span style="font-weight: 400;">発がん性を有するものも多くあり、</span><span style="font-weight: 400;">医療従事者を守るために</span><span style="font-weight: 400;">曝露防止が求められます。</span></p>
+<p><span style="font-weight: 400;">選択肢 1 ですが<br/></span><span style="font-weight: 400;">シスプラチンは</span><span style="font-weight: 400;">発がん性を有する抗がん剤です。</span><span style="font-weight: 400;">閉鎖式の混合器具を使用する必要性が</span><span style="font-weight: 400;">低いとはいえません。</span></p>
+<p><span style="font-weight: 400;">選択肢 2 ~ 4 の<br/></span><span style="font-weight: 400;">３薬剤は、発がん性を有し</span><span style="font-weight: 400;">かつ、揮発性が高いことが知られています。</span><span style="font-weight: 400;">よって、閉鎖式の混合器具を</span><span style="font-weight: 400;">使用する必要性が高いといえます。</span></p>
+<p><span style="font-weight: 400;">選択肢 5 は、正しい記述です。<br/></span><span style="font-weight: 400;">リツキシマブは、</span><span style="font-weight: 400;">CD20 を標的とした分子標的薬です。</span><span style="font-weight: 400;">可変部が、マウス由来のキメラ抗体です。</span><span style="font-weight: 400;">モノクローナル抗体です。</span><span style="font-weight: 400;">CD 20 陽性の</span><span style="font-weight: 400;">非ホジキンリンパ腫　などに用いられます。</span><span style="font-weight: 400;">実体はタンパク質であり、</span><span style="font-weight: 400;">発がん性は予測されず</span><span style="font-weight: 400;">閉鎖式の混合器具を使用する必要性が</span><span style="font-weight: 400;">低いと考えられます。</span></p>
+<p><span style="font-weight: 400;">以上より、正解は 5 です。</span></p>
+            </p>
+        </div>
+        </div>
+    </body>
+    <script>
+    document.getElementById("toggle").style.display="none";
+    function toggle_switch(){
+        var x = document.getElementById("toggle");
+        if (x.style.display=="block"){
+            x.style.display="none";
+        }
+        else{
+            x.style.display="block";
+        }
+    }
+    </script>
+    

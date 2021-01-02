@@ -1,0 +1,91 @@
+
+        <!DOCTYPE html>
+    <html lang="ja">
+    <style>
+    body
+    {
+        color: black;
+        background-color: white;
+    }
+    div{
+        font-size: 14px;
+    }
+    span
+    {
+        font-size: 18px;
+    }
+    #grad1{
+        background: linear-gradient(transparent 60%,#99e4f1 30%);
+        font-size: 18px;
+        font-weight: bold;
+    }
+    #grad2{
+        background: linear-gradient(transparent 60%,#fda1a1 30%);
+        font-size: 18px;
+        font-weight: bold;
+    }
+
+    </style>
+
+    <head>
+        <meta charset="UTF-8">
+        <title>102-256</title>
+    </head>
+
+    <body>
+        <h1>
+        <a href="./102_255.html" rel="external" title="prev">≪</a>
+        102-256
+        <a href="./102_257.html" rel="external" title="next">≫</a>
+        </h1>
+        <div class='problem'>
+            <p>
+                <span id="grad1">　問題文　</span>
+            </p>
+            <p>
+                <p>前問の「注意すべき副作用」の発現機序として誤っているのはどれか。2つ選べ。</p>
+<ol><li>心臓におけるアドレナリンβ<sub>1</sub>受容体の刺激</li><li>傍糸球体細胞におけるアドレナリンβ<sub>2</sub>受容体の刺激</li><li>心臓におけるアセチルコリンM<sub>2</sub>受容体の遮断</li><li>唾液腺におけるアセチルコリンM<sub>3</sub>受容体の遮断</li><li>T細胞でのサイトカイン産生抑制による免疫抑制</li></ol>    
+            </p>
+        </div>
+        <hr>
+
+        <input type="button" value="check ans" onclick="toggle_switch()"/>
+        
+        <div id='toggle'>
+        <div class='answer'>
+            <p>
+                <span id="grad2">　解答　　</span>
+            </p>
+            <p>
+            問256：1, 4問257：2, 5
+            </p>
+        </div>
+        <div class='description'>
+            <p>
+                <span id="grad2">　解説　　</span>
+            </p>
+            <h4>問256</h4>
+<p>問257 とまとめて解説します。</p>
+<h4>問257</h4>
+<p>処方１，２は共に吸入薬です。</p>
+<p>インデカテロール（オンブレス）は、いわゆる LABA です。（LABA：長時間 作用型 β 刺激薬）使用は１日１回でOKです。β<span style="font-weight: 400;"><sub>2</sub></span> により選択的に作用するのですがβ<span style="font-weight: 400;"><sub>1</sub></span>作用がないわけではありません。</p>
+<p>チオトロピウム（スピリーバ）はいわゆる LAMA です。（LAMA：長時間作用型　吸入抗コリン薬）吸入だけあって、局所の口渇注意です。また、全身性の副作用である動悸も、まれにおこりえます。</p>
+<p>以上より、問２５６の正解は 1,4<br/>問２５７の正解は 2,5 と考えられます。</p>
+<p>※問２５７の選択肢 2 は、β<span style="font-weight: 400;"><sub>2</sub></span> 刺激という作用機序は処方薬と一致しますが、糸球体なので腎臓の話をしており、問２５６で選んだ副作用と対応しておらず誤りと考えられます。</p>
+            </p>
+        </div>
+        </div>
+    </body>
+    <script>
+    document.getElementById("toggle").style.display="none";
+    function toggle_switch(){
+        var x = document.getElementById("toggle");
+        if (x.style.display=="block"){
+            x.style.display="none";
+        }
+        else{
+            x.style.display="block";
+        }
+    }
+    </script>
+    

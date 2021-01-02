@@ -1,0 +1,93 @@
+
+        <!DOCTYPE html>
+    <html lang="ja">
+    <style>
+    body
+    {
+        color: black;
+        background-color: white;
+    }
+    div{
+        font-size: 14px;
+    }
+    span
+    {
+        font-size: 18px;
+    }
+    #grad1{
+        background: linear-gradient(transparent 60%,#99e4f1 30%);
+        font-size: 18px;
+        font-weight: bold;
+    }
+    #grad2{
+        background: linear-gradient(transparent 60%,#fda1a1 30%);
+        font-size: 18px;
+        font-weight: bold;
+    }
+
+    </style>
+
+    <head>
+        <meta charset="UTF-8">
+        <title>100-67</title>
+    </head>
+
+    <body>
+        <h1>
+        <a href="./100_066.html" rel="external" title="prev">≪</a>
+        100-67
+        <a href="./100_068.html" rel="external" title="next">≫</a>
+        </h1>
+        <div class='problem'>
+            <p>
+                <span id="grad1">　問題文　</span>
+            </p>
+            <p>
+                <p>仮説検定における第一種の過誤はどれか。1つ選べ。</p>
+<ol><li>誤った統計手法で対立仮説を棄却する過誤</li><li>棄却すべきでない対立仮説を誤って棄却する過誤</li><li>棄却すべきでない帰無仮説を誤って棄却する過誤</li><li>棄却すべき対立仮説を棄却し損なう過誤</li><li>棄却すべき帰無仮説を棄却し損なう過誤</li></ol>    
+            </p>
+        </div>
+        <hr>
+
+        <input type="button" value="check ans" onclick="toggle_switch()"/>
+        
+        <div id='toggle'>
+        <div class='answer'>
+            <p>
+                <span id="grad2">　解答　　</span>
+            </p>
+            <p>
+            3
+            </p>
+        </div>
+        <div class='description'>
+            <p>
+                <span id="grad2">　解説　　</span>
+            </p>
+            <p>仮説検定とは、帰無仮説（H<span style="font-weight: 400;"><sub>0</sub></span>）と呼ばれる「否定されるといいなぁ」　という仮説を立てておいて、うまいこと否定（棄却　と呼びます。）できるか考えるという　統計的手法です。</p>
+<p>例）サイコロ投げたら ６ ばっかりでる。「イカサマがある」と証明したい時「H<span style="font-weight: 400;"><sub>0</sub></span>：サイコロにイカサマがない」という仮定が帰無仮説となる。この仮定が否定されればサイコロにイカサマがあることになる。</p>
+<p>このような考え方をする以上避けられない、二種類の誤り（過誤）があります。二種類とは<br/>間違ってるといいなぁと設定した帰無仮説　H<span style="font-weight: 400;"><sub>0</sub></span>　が　「本当は正しい」　場合の誤り　なのか「嬉しいことに、本当は違う」　場合の誤り　なのかです。</p>
+<p>それぞれの場合の、正しい考え方は<br/>「H<span style="font-weight: 400;"><sub>0</sub></span> が本当は正しい」 → H<span style="font-weight: 400;"><sub>0</sub></span>を棄却しない（棄却すべきでない）・・・（１）</p>
+<p>「H0 が嬉しい事に、本当は違う」 → H<span style="font-weight: 400;"><sub>0</sub></span> を棄却する（棄却すべき）・・・（２）です。</p>
+<p>（１）の誤りは<br/>『否定されるといいなぁと思った H<span style="font-weight: 400;"><sub>0</sub></span> 仮説が、本当は正しいのに棄却しちゃった』　という誤りです。これを、第一種の過誤　と呼びます。例で言うと「本当はサイコロにイカサマがないのにイカサマがないという仮説を棄却し、イカサマありと判断しちゃった」という過誤です。</p>
+<p>（２）の誤りは<br/>『否定されるといいなぁと思った H<span style="font-weight: 400;"><sub>0</sub></span> 仮説が、嬉しいことに違ってたのに棄却しなかった』という誤りです。これを、第二種の過誤　と呼びます。</p>
+<p>例で言うと<br/>「本当はサイコロにイカサマがあるのに、イカサマがない　という仮説を棄却しなかったためイカサマありとは　判断できなかった」という過誤です。</p>
+<p>この２つの過誤を比べると<br/>第一種の過誤の方が、<strong>間違った結論であることを断定しちゃうミス</strong>なので、よりまずい思い込みです。そこで、<strong>第一種の過誤の発生を抑えることが仮説検定では優先</strong>されます。</p>
+<p>以上より、正解は 3 です。</p>
+            </p>
+        </div>
+        </div>
+    </body>
+    <script>
+    document.getElementById("toggle").style.display="none";
+    function toggle_switch(){
+        var x = document.getElementById("toggle");
+        if (x.style.display=="block"){
+            x.style.display="none";
+        }
+        else{
+            x.style.display="block";
+        }
+    }
+    </script>
+    

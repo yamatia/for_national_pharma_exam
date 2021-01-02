@@ -1,0 +1,99 @@
+
+        <!DOCTYPE html>
+    <html lang="ja">
+    <style>
+    body
+    {
+        color: black;
+        background-color: white;
+    }
+    div{
+        font-size: 14px;
+    }
+    span
+    {
+        font-size: 18px;
+    }
+    #grad1{
+        background: linear-gradient(transparent 60%,#99e4f1 30%);
+        font-size: 18px;
+        font-weight: bold;
+    }
+    #grad2{
+        background: linear-gradient(transparent 60%,#fda1a1 30%);
+        font-size: 18px;
+        font-weight: bold;
+    }
+
+    </style>
+
+    <head>
+        <meta charset="UTF-8">
+        <title>100-314</title>
+    </head>
+
+    <body>
+        <h1>
+        <a href="./100_313.html" rel="external" title="prev">≪</a>
+        100-314
+        <a href="./100_315.html" rel="external" title="next">≫</a>
+        </h1>
+        <div class='problem'>
+            <p>
+                <span id="grad1">　問題文　</span>
+            </p>
+            <p>
+                <p>オキシコドンは麻薬として規制されている。麻薬に関する規制のうち、正しいのはどれか。2つ選べ。</p>
+<ol><li>薬局の開設者は、特段の申し出がない限り、麻薬小売業者の免許を受けた者とみなされる。</li><li>麻薬小売業者が麻薬処方せんを受け付ける場合は、麻薬施用者の医師免許番号が記載されていることを確認しなければならない。</li><li>麻薬小売業者は、麻薬の滅失等の事故が生じたときは、すみやかに都道府県知事に届け出なければならない。</li><li>麻薬小売業者は、特段の許可なく、別の麻薬小売業者に麻薬を譲渡することができる。</li><li>麻薬小売業者は、年に1回、1年間に譲渡、譲受した麻薬の品名及び数量を都道府県知事に届け出なければならない。</li></ol>    
+            </p>
+        </div>
+        <hr>
+
+        <input type="button" value="check ans" onclick="toggle_switch()"/>
+        
+        <div id='toggle'>
+        <div class='answer'>
+            <p>
+                <span id="grad2">　解答　　</span>
+            </p>
+            <p>
+            問314：4問315：3, 5
+            </p>
+        </div>
+        <div class='description'>
+            <p>
+                <span id="grad2">　解説　　</span>
+            </p>
+            <h4>問314</h4>
+<p>本症例は、疼痛管理におけるレスキュー薬の使用に関する事例です。レスキュー薬とは、痛みが増強した際に追加する臨時薬剤です。</p>
+<p>選択肢 1 は、正しい選択肢です。<br/>他の鎮痛剤に上乗せするのがレスキュー薬です。</p>
+<p>選択肢 2 は、正しい選択肢です。<br/>オキシコドンの血中濃度が上昇するため、副作用である便秘症状が強くなる可能性があります。痛みのコントロールが重要であるため、副作用の増強に驚いて使用に関して勝手な自己判断を下さぬよう服薬指導を行うことが重要です。</p>
+<p>選択肢 3 は、正しい選択肢です。<br/>痛みに対して、頓服で使用するため食事に関係なく使用してかまいません。</p>
+<p>選択肢 4 ですが<br/>服用間隔をあける必要はありません。痛みを感じた時に、頓服で使用します。よって、選択肢 4 は誤りです。</p>
+<p>選択肢 5 は、正しい選択肢です。<br/>オキシコドンの血中濃度が上昇するため副作用である眠気が強くなる可能性があります。</p>
+<p>以上より、正解は 4 です。</p>
+<h4>問315</h4>
+<p>選択肢 1 ですが<br/>麻薬小売業者免許を希望する人は、開設手続とは別個に、申請が必要です。（開設と同時に免許を受けることは、可能。）よって、選択肢 1 は誤りです。</p>
+<p>選択肢 2 ですが<br/>医師免許番号ではなく、麻薬施用者番号の記載を確認する必要があります。ちなみに 麻薬処方せんの記載事項は以下の７つです。</p>
+<p>①　患者の氏名、年齢（または生年月日）<br/>②　患者の住所<br/>③　麻薬の品名、分量、用法、用量（投薬日数を含む）<br/>④　処方せんの使用期間（有効期間）<br/>⑤　処方せん発行年月日<br/>⑥　麻薬施用者の記名押印または署名、免許番号<br/>⑦　麻薬診療施設の名称、所在地<br/>（院内処方せんの場合は、②、④、⑦の記載を省略できる。）</p>
+<p>選択肢 3 は、正しい選択肢です。</p>
+<p>選択肢 4 ですが<br/>麻薬小売業者間の麻薬の譲渡には、麻薬小売業者間譲渡許可が必要です。また、この譲渡許可は同一都道府県内の薬局と共同して譲渡許可を得る事が必要です。特段の許可なく、麻薬の譲渡はできません。よって、選択肢 4 は誤りです。</p>
+<p>選択肢 5 は、正しい選択肢です。</p>
+<p>以上より、正解は 3,5 です。</p>
+            </p>
+        </div>
+        </div>
+    </body>
+    <script>
+    document.getElementById("toggle").style.display="none";
+    function toggle_switch(){
+        var x = document.getElementById("toggle");
+        if (x.style.display=="block"){
+            x.style.display="none";
+        }
+        else{
+            x.style.display="block";
+        }
+    }
+    </script>
+    

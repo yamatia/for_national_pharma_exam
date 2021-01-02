@@ -1,0 +1,94 @@
+
+        <!DOCTYPE html>
+    <html lang="ja">
+    <style>
+    body
+    {
+        color: black;
+        background-color: white;
+    }
+    div{
+        font-size: 14px;
+    }
+    span
+    {
+        font-size: 18px;
+    }
+    #grad1{
+        background: linear-gradient(transparent 60%,#99e4f1 30%);
+        font-size: 18px;
+        font-weight: bold;
+    }
+    #grad2{
+        background: linear-gradient(transparent 60%,#fda1a1 30%);
+        font-size: 18px;
+        font-weight: bold;
+    }
+
+    </style>
+
+    <head>
+        <meta charset="UTF-8">
+        <title>102-226</title>
+    </head>
+
+    <body>
+        <h1>
+        <a href="./102_225.html" rel="external" title="prev">≪</a>
+        102-226
+        <a href="./102_227.html" rel="external" title="next">≫</a>
+        </h1>
+        <div class='problem'>
+            <p>
+                <span id="grad1">　問題文　</span>
+            </p>
+            <p>
+                <p>アルファカルシドールカプセルはビタミンD製剤である。ビタミンDの代謝反応のうち、慢性腎不全の患者において低下しているのはどれか。1つ選べ。</p>
+<ol><li>7-デヒドロコレステロールの開環反応</li><li>7-デヒドロコレステロールの1位の水酸化反応</li><li>25-(OH)ビタミンDの1位の水酸化反応</li><li>1α-(OH)ビタミンDの25位の水酸化反応</li><li>25-(OH)ビタミンDの開環反応</li></ol>    
+            </p>
+        </div>
+        <hr>
+
+        <input type="button" value="check ans" onclick="toggle_switch()"/>
+        
+        <div id='toggle'>
+        <div class='answer'>
+            <p>
+                <span id="grad2">　解答　　</span>
+            </p>
+            <p>
+            問226：2, 4問227：3
+            </p>
+        </div>
+        <div class='description'>
+            <p>
+                <span id="grad2">　解説　　</span>
+            </p>
+            <h4>問226</h4>
+<p>選択肢 1 ですが<br/>服用後 30 分は横になってはいけない　というのは、アレンドロン酸などのビスホスホネート系薬剤に関する記述です。本問では、適切ではありません。よって、選択肢 1 は誤りです。</p>
+<p>選択肢 2 は、正しい記述です。<br/>ジクロフェナクによる胃腸障害の副作用を避けるためです。</p>
+<p>選択肢 3 ですが<br/>お茶やコーヒーなどのカフェイン含有飲料が効果増強するということはありません。よって、選択肢 3 は誤りです。※カフェインで効果増強がないからといってお茶やコーヒーでの服用が推奨されることは全くありません。薬の服用は水で行います。</p>
+<p>選択肢 4 は、正しい記述です。<br/>カルシウムを含むサプリメントの摂取で高カルシウム血症のおそれがあり注意が必要です。</p>
+<p>※参考）１８歳以上の場合、１日耐用上限量として 2500mg/日　と厚生労働省から示されています。</p>
+<p>選択肢 5 ですが<br/>骨粗しょう症治療の目的は骨折予防です。痛みがなくなったからという理由で薬の服用をやめてしまうと、骨密度の低下を招き骨折リスクが高くなると考えられます。治療の継続や休薬などは医師が判断します。自分勝手な判断での休薬をしてよいわけではありません。よって、選択肢 5 は誤りです。</p>
+<p>以上より、正解は 2,4 です。</p>
+<h4>問227</h4>
+<p>ビタミン D は「肝臓で２５位」が水酸化を受けた後、「腎臓で１位」が水酸化を受ける　という二段階の水酸化により活性化されることが知られています。従って腎不全であれば、低下しているのは（肝臓で代謝を受けた後の）２５－OH ビタミン D の１位の水酸化反応　です。</p>
+<p>以上より、正解は 3 です。</p>
+            </p>
+        </div>
+        </div>
+    </body>
+    <script>
+    document.getElementById("toggle").style.display="none";
+    function toggle_switch(){
+        var x = document.getElementById("toggle");
+        if (x.style.display=="block"){
+            x.style.display="none";
+        }
+        else{
+            x.style.display="block";
+        }
+    }
+    </script>
+    

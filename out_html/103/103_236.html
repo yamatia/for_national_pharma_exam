@@ -1,0 +1,94 @@
+
+        <!DOCTYPE html>
+    <html lang="ja">
+    <style>
+    body
+    {
+        color: black;
+        background-color: white;
+    }
+    div{
+        font-size: 14px;
+    }
+    span
+    {
+        font-size: 18px;
+    }
+    #grad1{
+        background: linear-gradient(transparent 60%,#99e4f1 30%);
+        font-size: 18px;
+        font-weight: bold;
+    }
+    #grad2{
+        background: linear-gradient(transparent 60%,#fda1a1 30%);
+        font-size: 18px;
+        font-weight: bold;
+    }
+
+    </style>
+
+    <head>
+        <meta charset="UTF-8">
+        <title>103-236</title>
+    </head>
+
+    <body>
+        <h1>
+        <a href="./103_235.html" rel="external" title="prev">≪</a>
+        103-236
+        <a href="./103_237.html" rel="external" title="next">≫</a>
+        </h1>
+        <div class='problem'>
+            <p>
+                <span id="grad1">　問題文　</span>
+            </p>
+            <p>
+                <p>生活習慣病に関する記述のうち、正しいのはどれか。2つ選べ。</p>
+<ol><li>腹囲が基準値を超え、高血圧、高血糖、脂質代謝異常の3つすべてが当てはまったときにのみ、メタボリックシンドロームと判定される。</li><li>LDL-C(低密度リポタンパク質コレステロール)、HDL-C(高密度リポタンパク質コレステロール)、中性脂肪の血中濃度が、いずれも基準値より高いと、脂質異常症と判定される。</li><li>現在、我が国の糖尿病患者のうち、90%以上は2型糖尿病である。</li><li>糖尿病は、虚血性心疾患や脳梗塞のリスクファクターとなる。</li><li>血糖値をコントロールすることにより、腎症、網膜症、神経障害などの合併症を予防することは、糖尿病の二次予防にあたる。</li></ol>    
+            </p>
+        </div>
+        <hr>
+
+        <input type="button" value="check ans" onclick="toggle_switch()"/>
+        
+        <div id='toggle'>
+        <div class='answer'>
+            <p>
+                <span id="grad2">　解答　　</span>
+            </p>
+            <p>
+            問236：1, 5問237：3, 4
+            </p>
+        </div>
+        <div class='description'>
+            <p>
+                <span id="grad2">　解説　　</span>
+            </p>
+            <h4>問236</h4>
+<p><span style="font-weight: 400;">選択肢 1 ですが<br/></span><span style="font-weight: 400;">HbA1c は、</span><span style="font-weight: 400;">過去 1~2 ヶ月の平均血糖値を反映します。</span><span style="font-weight: 400;">「3~4 ヶ月」は長すぎです。</span><span style="font-weight: 400;">よって、選択肢 1 は誤りです。</span></p>
+<p><span style="font-weight: 400;">選択肢 2~4 は、正しい記述です。</span></p>
+<p><span style="font-weight: 400;">選択肢 5 ですが<br/></span><span style="font-weight: 400;">他の栄養素について</span><span style="font-weight: 400;">バランスのよい摂取が推奨されます。</span><span style="font-weight: 400;">特に注意する必要がないとはいえません。</span><span style="font-weight: 400;">よって、選択肢 5 は誤りです。</span></p>
+<p><span style="font-weight: 400;">以上より、正解は 1,5 です。</span></p>
+<h4>問237</h4>
+<p><span style="font-weight: 400;">選択肢 1 ですが<br/>本試験時において、</span><span style="font-weight: 400;">腹囲が基準値を超えて　かつ</span><span style="font-weight: 400;">高血圧、高血糖、脂質代謝異常の、</span><span style="font-weight: 400;">3 つのうち 2 つが当てはまると</span><span style="font-weight: 400;">メタボリックシンドロームと判定されます。</span><span style="font-weight: 400;">「3 つ全て」ではありません。</span><span style="font-weight: 400;">よって、選択肢 1 は誤りです。</span></p>
+<p><span style="font-weight: 400;">選択肢 2 ですが<br/></span><span style="font-weight: 400;">HDL コレステロール値は</span><span style="font-weight: 400;">基準値より低いと</span><span style="font-weight: 400;">「低 HDL コレステロール血症」と</span><span style="font-weight: 400;">判定されます。</span><span style="font-weight: 400;">「いずれも基準値より高いと」</span><span style="font-weight: 400;">ではありません。</span><span style="font-weight: 400;">よって、選択肢 2 は誤りです。</span></p>
+<p><span style="font-weight: 400;">選択肢 3,4 は、正しい記述です。</span></p>
+<p><span style="font-weight: 400;">選択肢 5 ですが<br/></span><span style="font-weight: 400;">これは一次予防にあたります。</span><span style="font-weight: 400;">よって、選択肢 5 は誤りです。</span></p>
+<p><span style="font-weight: 400;">以上より、正解は 3,4 です。</span></p>
+            </p>
+        </div>
+        </div>
+    </body>
+    <script>
+    document.getElementById("toggle").style.display="none";
+    function toggle_switch(){
+        var x = document.getElementById("toggle");
+        if (x.style.display=="block"){
+            x.style.display="none";
+        }
+        else{
+            x.style.display="block";
+        }
+    }
+    </script>
+    

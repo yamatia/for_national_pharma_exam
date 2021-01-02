@@ -1,0 +1,89 @@
+
+        <!DOCTYPE html>
+    <html lang="ja">
+    <style>
+    body
+    {
+        color: black;
+        background-color: white;
+    }
+    div{
+        font-size: 14px;
+    }
+    span
+    {
+        font-size: 18px;
+    }
+    #grad1{
+        background: linear-gradient(transparent 60%,#99e4f1 30%);
+        font-size: 18px;
+        font-weight: bold;
+    }
+    #grad2{
+        background: linear-gradient(transparent 60%,#fda1a1 30%);
+        font-size: 18px;
+        font-weight: bold;
+    }
+
+    </style>
+
+    <head>
+        <meta charset="UTF-8">
+        <title>105-268</title>
+    </head>
+
+    <body>
+        <h1>
+        <a href="./105_267.html" rel="external" title="prev">≪</a>
+        105-268
+        <a href="./105_269.html" rel="external" title="next">≫</a>
+        </h1>
+        <div class='problem'>
+            <p>
+                <span id="grad1">　問題文　</span>
+            </p>
+            <p>
+                <p>その薬剤の処方を避けることが望ましい理由として、適切なのはどれか。1つ選べ。</p>
+<ol><li>テルミサルタンの血漿タンパク結合を阻害するため。</li><li>テルミサルタンの代謝を阻害するため。</li><li>沈降炭酸カルシウムへの吸着により、その薬物の薬効が減弱するため。</li><li>肝機能障害患者では、その薬物の活性代謝物への代謝が抑制されるため。</li><li>腎機能障害患者では、その薬物の高い血中濃度が持続するため。</li></ol>    
+            </p>
+        </div>
+        <hr>
+
+        <input type="button" value="check ans" onclick="toggle_switch()"/>
+        
+        <div id='toggle'>
+        <div class='answer'>
+            <p>
+                <span id="grad2">　解答　　</span>
+            </p>
+            <p>
+            問268：5問269：5
+            </p>
+        </div>
+        <div class='description'>
+            <p>
+                <span id="grad2">　解説　　</span>
+            </p>
+            <h4>問268</h4>
+<p>問 269 と合わせて解説します。</p>
+<h4>問269</h4>
+<p>処方に沈降炭酸カルシウム錠があるため、腎不全がかなり進行しています。</p>
+<p>問 268 の選択肢の中で<br/>レボセチリジン（ザイザル）は、クレアチニンクリアランスに応じて投与量の調節が必要です。そして、重度の腎障害患者への投与は禁忌です。代替薬もあることをふまえると、レボセチリジンを避けることが望ましいと考えられます。</p>
+<p>以上より<br/>問 268 の正解は 5 です。<br/>問 269 の正解は 5 です。</p>
+            </p>
+        </div>
+        </div>
+    </body>
+    <script>
+    document.getElementById("toggle").style.display="none";
+    function toggle_switch(){
+        var x = document.getElementById("toggle");
+        if (x.style.display=="block"){
+            x.style.display="none";
+        }
+        else{
+            x.style.display="block";
+        }
+    }
+    </script>
+    

@@ -1,0 +1,92 @@
+
+        <!DOCTYPE html>
+    <html lang="ja">
+    <style>
+    body
+    {
+        color: black;
+        background-color: white;
+    }
+    div{
+        font-size: 14px;
+    }
+    span
+    {
+        font-size: 18px;
+    }
+    #grad1{
+        background: linear-gradient(transparent 60%,#99e4f1 30%);
+        font-size: 18px;
+        font-weight: bold;
+    }
+    #grad2{
+        background: linear-gradient(transparent 60%,#fda1a1 30%);
+        font-size: 18px;
+        font-weight: bold;
+    }
+
+    </style>
+
+    <head>
+        <meta charset="UTF-8">
+        <title>102-52</title>
+    </head>
+
+    <body>
+        <h1>
+        <a href="./102_051.html" rel="external" title="prev">≪</a>
+        102-52
+        <a href="./102_053.html" rel="external" title="next">≫</a>
+        </h1>
+        <div class='problem'>
+            <p>
+                <span id="grad1">　問題文　</span>
+            </p>
+            <p>
+                <p>医薬品を造粒する目的として誤っているのはどれか。1つ選べ。</p>
+<ol><li>流動性の向上</li><li>含量均一性の改善</li><li>真密度の増大</li><li>充てん性の向上</li><li>発塵の防止</li></ol>    
+            </p>
+        </div>
+        <hr>
+
+        <input type="button" value="check ans" onclick="toggle_switch()"/>
+        
+        <div id='toggle'>
+        <div class='answer'>
+            <p>
+                <span id="grad2">　解答　　</span>
+            </p>
+            <p>
+            3
+            </p>
+        </div>
+        <div class='description'>
+            <p>
+                <span id="grad2">　解説　　</span>
+            </p>
+            <p>本問は、知識ではなくいわゆる現場思考が求められる問題であると思います。造粒とは、粉を粒にすることだから、そうなるとどうなるのかを、各選択肢検討していきます。</p>
+<p>選択肢 1 ですが<br/>粒になって、丸くコロコロしたものになった方が流動性は大きくなると考えられます。</p>
+<p>選択肢 2 ですが<br/>粒にする段階で粉をよく混ぜるため、均一性は改善されると考えられます。</p>
+<p>選択肢 3 ですが<br/>真密度とは、密度を求める際の体積として『まさにその固体自身が占める体積のみ』を用いて計算する密度です。粉体を、容器に入れると隙間ができるのですがこの隙間を体積として認めない　ということです。</p>
+<p>従って、粉を粒にしても<strong>構成物質が同じであれば真密度は同じであると考えられます</strong>。真密度の増大を目的として造粒は行われていません。従って、選択肢 3 が誤りです。</p>
+<p>選択肢 4 ですが<br/>これはイメージしづらく、以下の文章を知識として覚えておいた方がよいです。「粒子径が小さくなるほど凝集性が大きくなるため空隙率が大きくなります」。つまり、充填性は低くなります。</p>
+<p><strong>造粒</strong>することにより、<strong>粉が粒</strong>になるので、<strong>粒子径は大きくなります</strong>。そのため凝集性が小さくなり、イメージとしてはさらさら流れて整然と並んできれいに詰まってくれるので、充填性が向上します。</p>
+<p>選択肢 5 ですが<br/>粉とドライシロップの違いを思い出すとイメージしやすいと思います。造粒されているドライシロップは、塵として空気中に舞う度合いが粉と比べてはるかに小さかったと思います。</p>
+<p>以上より、正解は 3 です。<br/>類題　</p>
+            </p>
+        </div>
+        </div>
+    </body>
+    <script>
+    document.getElementById("toggle").style.display="none";
+    function toggle_switch(){
+        var x = document.getElementById("toggle");
+        if (x.style.display=="block"){
+            x.style.display="none";
+        }
+        else{
+            x.style.display="block";
+        }
+    }
+    </script>
+    

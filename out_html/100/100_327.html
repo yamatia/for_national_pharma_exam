@@ -1,0 +1,87 @@
+
+        <!DOCTYPE html>
+    <html lang="ja">
+    <style>
+    body
+    {
+        color: black;
+        background-color: white;
+    }
+    div{
+        font-size: 14px;
+    }
+    span
+    {
+        font-size: 18px;
+    }
+    #grad1{
+        background: linear-gradient(transparent 60%,#99e4f1 30%);
+        font-size: 18px;
+        font-weight: bold;
+    }
+    #grad2{
+        background: linear-gradient(transparent 60%,#fda1a1 30%);
+        font-size: 18px;
+        font-weight: bold;
+    }
+
+    </style>
+
+    <head>
+        <meta charset="UTF-8">
+        <title>100-327</title>
+    </head>
+
+    <body>
+        <h1>
+        <a href="./100_326.html" rel="external" title="prev">≪</a>
+        100-327
+        <a href="./100_328.html" rel="external" title="next">≫</a>
+        </h1>
+        <div class='problem'>
+            <p>
+                <span id="grad1">　問題文　</span>
+            </p>
+            <p>
+                <p>病院内において薬剤師が行う医薬品の管理に関する記述のうち、正しいのはどれか。2つ選べ。</p>
+<ol><li>医薬品管理の主な目的は、品質の保証された医薬品を安定供給することである。</li><li>ロット番号の管理は、健康被害拡大防止を目的とした医薬品の回収時に役立つ。</li><li>一定数量を病棟に配置し、使用分を補充する方法を発注点方式という。</li><li>経過措置品目に指定された医薬品は、告示された翌日から保険医療で使うことができない。</li></ol>    
+            </p>
+        </div>
+        <hr>
+
+        <input type="button" value="check ans" onclick="toggle_switch()"/>
+        
+        <div id='toggle'>
+        <div class='answer'>
+            <p>
+                <span id="grad2">　解答　　</span>
+            </p>
+            <p>
+            1, 2
+            </p>
+        </div>
+        <div class='description'>
+            <p>
+                <span id="grad2">　解説　　</span>
+            </p>
+            <p>選択肢 1,2 は、正しい選択肢です。</p>
+<p>選択肢 3 ですが<br/>記述は、定数配置方式です。発注点方式とは、在庫が発注点と呼ばれる一定量に達した時発注をかける方式です。よって、選択肢 3 は誤りです。</p>
+<p>選択肢 4 ですが<br/>経過措置品目とは、需要がなく供給が停止されたり、医療事故防止などを目的として表示変更された場合の、元の医薬品　などです。医療機関の在庫や周知期間を考慮して経過措置期間が設けられます。この期間は、保険適用されます。告示された翌日から保険医療で使うことができないわけでは、ありません。よって、選択肢 4 は誤りです。</p>
+<p>以上より、正解は 1,2 です。</p>
+            </p>
+        </div>
+        </div>
+    </body>
+    <script>
+    document.getElementById("toggle").style.display="none";
+    function toggle_switch(){
+        var x = document.getElementById("toggle");
+        if (x.style.display=="block"){
+            x.style.display="none";
+        }
+        else{
+            x.style.display="block";
+        }
+    }
+    </script>
+    

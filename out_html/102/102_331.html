@@ -1,0 +1,87 @@
+
+        <!DOCTYPE html>
+    <html lang="ja">
+    <style>
+    body
+    {
+        color: black;
+        background-color: white;
+    }
+    div{
+        font-size: 14px;
+    }
+    span
+    {
+        font-size: 18px;
+    }
+    #grad1{
+        background: linear-gradient(transparent 60%,#99e4f1 30%);
+        font-size: 18px;
+        font-weight: bold;
+    }
+    #grad2{
+        background: linear-gradient(transparent 60%,#fda1a1 30%);
+        font-size: 18px;
+        font-weight: bold;
+    }
+
+    </style>
+
+    <head>
+        <meta charset="UTF-8">
+        <title>102-331</title>
+    </head>
+
+    <body>
+        <h1>
+        <a href="./102_330.html" rel="external" title="prev">≪</a>
+        102-331
+        <a href="./102_332.html" rel="external" title="next">≫</a>
+        </h1>
+        <div class='problem'>
+            <p>
+                <span id="grad1">　問題文　</span>
+            </p>
+            <p>
+                <p>この化学療法において用量規制因子でないのはどれか。1つ選べ。</p>
+<ol><li>腎障害</li><li>嘔吐</li><li>骨髄抑制</li><li>下痢</li><li>脱毛</li></ol>    
+            </p>
+        </div>
+        <hr>
+
+        <input type="button" value="check ans" onclick="toggle_switch()"/>
+        
+        <div id='toggle'>
+        <div class='answer'>
+            <p>
+                <span id="grad2">　解答　　</span>
+            </p>
+            <p>
+            5
+            </p>
+        </div>
+        <div class='description'>
+            <p>
+                <span id="grad2">　解説　　</span>
+            </p>
+            <p>用量規制因子とは「これ以上増量できない理由となる毒性」のことです。用量規制毒性とも呼ばれます。ある副作用があった場合に、それが用量規制因子でない　とは「いくら◯◯がひどくなっても致死的ではない」といえる、ということです。</p>
+<p>腎障害→腎不全は致死的<br/>嘔吐、下痢→重篤だと致死的<br/>骨髄抑制→重篤だと感染症により致死的　です。</p>
+<p>いっぽう、いくら脱毛がひどくなっても致死的ではありません。</p>
+<p>以上より、正解は 5 です。</p>
+            </p>
+        </div>
+        </div>
+    </body>
+    <script>
+    document.getElementById("toggle").style.display="none";
+    function toggle_switch(){
+        var x = document.getElementById("toggle");
+        if (x.style.display=="block"){
+            x.style.display="none";
+        }
+        else{
+            x.style.display="block";
+        }
+    }
+    </script>
+    

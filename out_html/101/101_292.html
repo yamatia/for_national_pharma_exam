@@ -1,0 +1,99 @@
+
+        <!DOCTYPE html>
+    <html lang="ja">
+    <style>
+    body
+    {
+        color: black;
+        background-color: white;
+    }
+    div{
+        font-size: 14px;
+    }
+    span
+    {
+        font-size: 18px;
+    }
+    #grad1{
+        background: linear-gradient(transparent 60%,#99e4f1 30%);
+        font-size: 18px;
+        font-weight: bold;
+    }
+    #grad2{
+        background: linear-gradient(transparent 60%,#fda1a1 30%);
+        font-size: 18px;
+        font-weight: bold;
+    }
+
+    </style>
+
+    <head>
+        <meta charset="UTF-8">
+        <title>101-292</title>
+    </head>
+
+    <body>
+        <h1>
+        <a href="./101_291.html" rel="external" title="prev">≪</a>
+        101-292
+        <a href="./101_293.html" rel="external" title="next">≫</a>
+        </h1>
+        <div class='problem'>
+            <p>
+                <span id="grad1">　問題文　</span>
+            </p>
+            <p>
+                <p>前問で推奨される追加薬物に関して適切なのはどれか。1つ選べ。</p>
+<ol><li>導入直後から心筋の収縮力が改善する。</li><li>治療薬物モニタリング(TDM)の対象薬物である。</li><li>導入時に高用量の負荷投与を行い、続けて維持量を投与する。</li><li>導入時に心不全が悪化することがある。</li><li>レニンの分泌を促進する。</li></ol>    
+            </p>
+        </div>
+        <hr>
+
+        <input type="button" value="check ans" onclick="toggle_switch()"/>
+        
+        <div id='toggle'>
+        <div class='answer'>
+            <p>
+                <span id="grad2">　解答　　</span>
+            </p>
+            <p>
+            問292：4問293：4
+            </p>
+        </div>
+        <div class='description'>
+            <p>
+                <span id="grad2">　解説　　</span>
+            </p>
+            <h4>問292</h4>
+<p>ガイドラインによれば、慢性心不全患者へは ACE 阻害薬がまず第一に推奨されます。ACE 阻害薬への忍容性に乏しい場合は ARB を使用します。さらに、予後の改善を目的としてβ 遮断薬を用いることが推奨されます。他に、症状に合わせて抗アルドステロン薬、利尿薬、ジギタリス経口強心薬、静注強心薬などを用います。</p>
+<p>本症例では、ARB 使用中であり、追加としてはβ 遮断薬の導入が適切と考えられます。選択肢の薬剤は、それぞれ、1 ： 強心配糖体、2 ： ループ利尿薬、3 ： ACE 阻害薬、4 ： α,β 遮断薬、5 ： β刺激薬です。　よって、推奨されるのはカルベジロールです。</p>
+<p>以上より、正解は 4 です。</p>
+<h4>問293</h4>
+<p>カルベジロール（アーチスト）は、β 遮断薬です。心臓の機能を抑制して無理をさせなくする薬です。</p>
+<p>これは心臓をマラソンランナーに例えると、頑張りすぎたのでペースが落ちてきた。→ もう体がぼろぼろだから、休ませるために β遮断薬を投与。というイメージです。うまくペースをおとし適切なペースに移行できると「楽に走り続けることができる」状態になります。そうすると、体（心臓のこと）も保護できるし、結果的にそこそこ走ることができるという状態になっていく　という流れです。</p>
+<p>とはいえ、心臓の機能が落ちつつあるのが心不全なので、更に機能を抑制すると、息切れや呼吸困難などの、種々の症状がむしろ悪化することがあります。ペースががくっとおちると、余計に疲れるしかも、全然進まない。みたいな感じです。そのため、特に導入時には症状の変化に注意が必要な薬です。</p>
+<p>また、用法も特殊で「少量からの漸増投与」　という用法になっています。</p>
+<p>以上をふまえて、各選択肢を検討します。</p>
+<p>選択肢 1 ですが<br/>心機能を抑制する方向に働くので、心筋の収縮力が改善するわけでは、ありません。よって、選択肢 1 は誤りです。</p>
+<p>選択肢 2 ですが<br/>TDM 対象薬では、ありません。（問 292 の選択肢の中では、ジゴキシンが TDM 対象です。 ）よって、選択肢 2 は誤りです。</p>
+<p>選択肢 3 ですが<br/>これは、禁忌肢になっていいかと思います。非常に危険です。全く不適切です。</p>
+<p>選択肢 4 は、正しい選択肢です。</p>
+<p>選択肢 5 ですが<br/>β 遮断により、レニン分泌は抑制されます。よって、選択肢 5 は誤りです。</p>
+<p>以上より、正解は 4 です。</p>
+            </p>
+        </div>
+        </div>
+    </body>
+    <script>
+    document.getElementById("toggle").style.display="none";
+    function toggle_switch(){
+        var x = document.getElementById("toggle");
+        if (x.style.display=="block"){
+            x.style.display="none";
+        }
+        else{
+            x.style.display="block";
+        }
+    }
+    </script>
+    

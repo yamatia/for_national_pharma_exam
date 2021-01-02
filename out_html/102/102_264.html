@@ -1,0 +1,102 @@
+
+        <!DOCTYPE html>
+    <html lang="ja">
+    <style>
+    body
+    {
+        color: black;
+        background-color: white;
+    }
+    div{
+        font-size: 14px;
+    }
+    span
+    {
+        font-size: 18px;
+    }
+    #grad1{
+        background: linear-gradient(transparent 60%,#99e4f1 30%);
+        font-size: 18px;
+        font-weight: bold;
+    }
+    #grad2{
+        background: linear-gradient(transparent 60%,#fda1a1 30%);
+        font-size: 18px;
+        font-weight: bold;
+    }
+
+    </style>
+
+    <head>
+        <meta charset="UTF-8">
+        <title>102-264</title>
+    </head>
+
+    <body>
+        <h1>
+        <a href="./102_263.html" rel="external" title="prev">≪</a>
+        102-264
+        <a href="./102_265.html" rel="external" title="next">≫</a>
+        </h1>
+        <div class='problem'>
+            <p>
+                <span id="grad1">　問題文　</span>
+            </p>
+            <p>
+                <p>前問の遺伝子診断の結果、酵素活性の低下を伴う遺伝子型であることが判明した。この患者の治療上、注意すべき内容として最も適切なのはどれか。1つ選べ。</p>
+<ol><li>ベバシズマブの薬効減弱</li><li>ベバシズマブの副作用発現</li><li>イリノテカンの薬効減弱</li><li>イリノテカンの副作用発現</li><li>フルオロウラシルの薬効減弱</li><li>フルオロウラシルの副作用発現</li></ol>    
+            </p>
+        </div>
+        <hr>
+
+        <input type="button" value="check ans" onclick="toggle_switch()"/>
+        
+        <div id='toggle'>
+        <div class='answer'>
+            <p>
+                <span id="grad2">　解答　　</span>
+            </p>
+            <p>
+            問264：2, 4問265：1, 3問266：5問267：4
+            </p>
+        </div>
+        <div class='description'>
+            <p>
+                <span id="grad2">　解説　　</span>
+            </p>
+            <h4>問264</h4>
+<p>大腸がんの標準的レジメンの１つである FOLFIRI＋BV　です。</p>
+<p>フルオロウラシルは、フッ化ピリミジン系代謝拮抗薬です。DNA 複製時に取り込まれ、分裂を抑制します。</p>
+<p>イリノテカンは、トポイソメラーゼ阻害薬です。</p>
+<p>レボホリナートはフルオロウラシルの効果を増強させます。</p>
+<p>ベバシズマブ（アバスチン）は、血管新生阻害薬です。VEGF に対するモノクローナル抗体です。VEGF が、受容体に結合するのを阻害します。</p>
+<p>選択肢 1 ですが<br/>ベバシズマブが結合するのは「VEGF」 です。VEGF「受容体」に結合するわけではありません。よって、選択肢 1 は誤りです。</p>
+<p>選択肢 2 は、正しい記述です。<br/>イリノテカンの作用機序として適切です。</p>
+<p>選択肢 3 ですが<br/>アルキル化剤は、本問のレジメンには含まれていません。よって、選択肢 3 は誤りです。</p>
+<p>選択肢 4 は、正しい記述です。<br/>レボホリナートの記述として適切です。</p>
+<p>以上より、問264 の正解は 2,4 です。</p>
+<h4>問265</h4>
+<p>問265~267 をまとめて解説します。</p>
+<h4>問266</h4>
+<p>問265~267 をまとめて解説します。</p>
+<h4>問267</h4>
+<p dir="ltr">イリノテカンの副作用として「重篤な下痢」があります。代謝酵素が 「UGT」 です。UGT１A1の検査をすることで「副作用回避」を図ります。</p>
+<p dir="ltr">また、ベバシズマブで「高血圧」が注意すべき副作用です。※細かい知識で、国試には不要だがNO 合成経路が関係する。</p>
+<p>以上より、問265 の正解は 1,3 です。<br/>問266 の正解は 5 です。<br/>問267 の正解は 4 です。</p>
+            </p>
+        </div>
+        </div>
+    </body>
+    <script>
+    document.getElementById("toggle").style.display="none";
+    function toggle_switch(){
+        var x = document.getElementById("toggle");
+        if (x.style.display=="block"){
+            x.style.display="none";
+        }
+        else{
+            x.style.display="block";
+        }
+    }
+    </script>
+    

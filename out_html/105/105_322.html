@@ -1,0 +1,98 @@
+
+        <!DOCTYPE html>
+    <html lang="ja">
+    <style>
+    body
+    {
+        color: black;
+        background-color: white;
+    }
+    div{
+        font-size: 14px;
+    }
+    span
+    {
+        font-size: 18px;
+    }
+    #grad1{
+        background: linear-gradient(transparent 60%,#99e4f1 30%);
+        font-size: 18px;
+        font-weight: bold;
+    }
+    #grad2{
+        background: linear-gradient(transparent 60%,#fda1a1 30%);
+        font-size: 18px;
+        font-weight: bold;
+    }
+
+    </style>
+
+    <head>
+        <meta charset="UTF-8">
+        <title>105-322</title>
+    </head>
+
+    <body>
+        <h1>
+        <a href="./105_321.html" rel="external" title="prev">≪</a>
+        105-322
+        <a href="./105_323.html" rel="external" title="next">≫</a>
+        </h1>
+        <div class='problem'>
+            <p>
+                <span id="grad1">　問題文　</span>
+            </p>
+            <p>
+                <p>介護保険制度に照らしたこの患者に関する記述のうち、適切なのはどれか。2つ選べ。</p>
+<ol><li>この患者は第2号被保険者である。</li><li>薬局において居宅療養管理指導料を算定する。</li><li>薬局において在宅患者訪問薬剤管理指導料を算定する。</li><li>この患者は介護給付を受けることができる。</li><li>この患者の介護保険料は、医療保険料に上乗せして保険者が一括徴収する。</li></ol>    
+            </p>
+        </div>
+        <hr>
+
+        <input type="button" value="check ans" onclick="toggle_switch()"/>
+        
+        <div id='toggle'>
+        <div class='answer'>
+            <p>
+                <span id="grad2">　解答　　</span>
+            </p>
+            <p>
+            問322：1, 2問323：1, 5
+            </p>
+        </div>
+        <div class='description'>
+            <p>
+                <span id="grad2">　解説　　</span>
+            </p>
+            <h4>問322</h4>
+<p>選択肢 1 は妥当な記述です。<br/>制吐剤として抗コリン薬が用いられることから考えて、ドネペジルによりアセチルコリンエステラーゼ阻害→コリン作用増強で吐き気というのは覚えていなくても推測できるのではないでしょうか。</p>
+<p>選択肢 2 は妥当な記述です。</p>
+<p>選択肢 3 ですが<br/>アセトアミノフェンとドネペジルは、併用禁忌ではありません。よって、選択肢 3 は誤りです。</p>
+<p>選択肢 4 ですが<br/>プロメタジンが抗ヒスタミン薬で、抗コリン作用も有します。そのため、ドネペジル塩酸塩の作用「減弱」のおそれと考えられます。よって、選択肢 4 は誤りです。</p>
+<p>選択肢 5 ですが<br/>無水カフェインは「利尿」作用を有します。「排尿障害」の疑いはないと考えられます。よって、選択肢 5 は誤りです。</p>
+<p>以上より、正解は 1,2 です。</p>
+<h4>問323</h4>
+<p>選択肢 1 は妥当な記述です。<br/>第２号被保険者とは、４０～６４歳の医療保険加入者のことです。（)</p>
+<p>選択肢 2 ですが<br/>居宅療養管理指導を受けられるのは、要介護 1～5 に認定されている 65 歳以上の高齢者です。要支援1～2を受けている人は、介護予防居宅療養管理指導が適用されます。</p>
+<p>65歳未満でサービスの利用対象に含まれるのは、介護保険に加入している 40歳 ～ 64歳で、パーキンソン病、関節リウマチ、末期がんなど 16 種類の特定疾病のいずれかにより、<strong>要介護認定</strong>を受けた人のみです。特定疾病に「認知症」は含まれません。また、この患者は「要支援」なので、誤りです。</p>
+<p>選択肢 3 ですが<br/>在宅患者訪問薬剤管理指導料は、医療保険制度のサービスです。要介護や要支援判定を受けると、原則介護保険が優先されます。よって、「在宅患者訪問薬剤管理指導料」ではありません。選択肢 3 は誤りです。</p>
+<p>選択肢 4 ですが<br/>第２号被保険者は、加齢に伴う疾病（特定疾病）が原因で、要介護（要支援）認定を受けたときに介護サービスを受けることができます。認知症は特定疾病ではないため、選択肢 4 は誤りです。</p>
+<p>選択肢 5 は妥当な記述です。</p>
+<p>以上より、正解は 1,5 です。</p>
+            </p>
+        </div>
+        </div>
+    </body>
+    <script>
+    document.getElementById("toggle").style.display="none";
+    function toggle_switch(){
+        var x = document.getElementById("toggle");
+        if (x.style.display=="block"){
+            x.style.display="none";
+        }
+        else{
+            x.style.display="block";
+        }
+    }
+    </script>
+    

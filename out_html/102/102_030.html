@@ -1,0 +1,88 @@
+
+        <!DOCTYPE html>
+    <html lang="ja">
+    <style>
+    body
+    {
+        color: black;
+        background-color: white;
+    }
+    div{
+        font-size: 14px;
+    }
+    span
+    {
+        font-size: 18px;
+    }
+    #grad1{
+        background: linear-gradient(transparent 60%,#99e4f1 30%);
+        font-size: 18px;
+        font-weight: bold;
+    }
+    #grad2{
+        background: linear-gradient(transparent 60%,#fda1a1 30%);
+        font-size: 18px;
+        font-weight: bold;
+    }
+
+    </style>
+
+    <head>
+        <meta charset="UTF-8">
+        <title>102-30</title>
+    </head>
+
+    <body>
+        <h1>
+        <a href="./102_029.html" rel="external" title="prev">≪</a>
+        102-30
+        <a href="./102_031.html" rel="external" title="next">≫</a>
+        </h1>
+        <div class='problem'>
+            <p>
+                <span id="grad1">　問題文　</span>
+            </p>
+            <p>
+                <p>GABAトランスアミナーゼを阻害し、抗てんかん作用を示すのはどれか。1つ選べ。</p>
+<ol><li>ガバペンチン</li><li>エトスクシミド</li><li>ジアゼパム</li><li>ゾニサミド</li><li>バルプロ酸</li></ol>    
+            </p>
+        </div>
+        <hr>
+
+        <input type="button" value="check ans" onclick="toggle_switch()"/>
+        
+        <div id='toggle'>
+        <div class='answer'>
+            <p>
+                <span id="grad2">　解答　　</span>
+            </p>
+            <p>
+            5
+            </p>
+        </div>
+        <div class='description'>
+            <p>
+                <span id="grad2">　解説　　</span>
+            </p>
+            <p dir="ltr">抗てんかん薬はその作用機序により大きく4つに分類されます。ⅰ．GABA 受容体タイプ、ⅱ．Na<span style="font-weight: 400;"><sup>+</sup></span>チャネル遮断タイプ、ⅲ．T 型 Ca<span style="font-weight: 400;"><sup>2+</sup></span>チャネル遮断タイプ、ⅳ．GABA トランスアミナーゼ阻害タイプ　です。GABA トランスアミナーゼ阻害タイプの代表的な薬は、バルプロ酸です。よって、正解は　5　です。</p>
+<p dir="ltr">ちなみに、ガバペンチンは、２つの作用機序により効果を発現します。Ca チャネル α2σ リガンドとしての作用と GABA トランスポータ活性化です。</p>
+<p dir="ltr">エトスクシミドは、T 型 Ca<span style="font-weight: 400;"><sup>2+</sup></span>チャネル遮断タイプです。</p>
+<p dir="ltr">ジアゼパムは、ベンゾジアゼピン（Bz）系の薬です。GABA 受容体タイプの薬です。</p>
+<p dir="ltr">ゾニサミドは様々な機序により作用を示す薬です。（抗てんかんだけでなく、パーキンソン病にも適応あり。）</p>
+            </p>
+        </div>
+        </div>
+    </body>
+    <script>
+    document.getElementById("toggle").style.display="none";
+    function toggle_switch(){
+        var x = document.getElementById("toggle");
+        if (x.style.display=="block"){
+            x.style.display="none";
+        }
+        else{
+            x.style.display="block";
+        }
+    }
+    </script>
+    

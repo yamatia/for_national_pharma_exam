@@ -1,0 +1,99 @@
+
+        <!DOCTYPE html>
+    <html lang="ja">
+    <style>
+    body
+    {
+        color: black;
+        background-color: white;
+    }
+    div{
+        font-size: 14px;
+    }
+    span
+    {
+        font-size: 18px;
+    }
+    #grad1{
+        background: linear-gradient(transparent 60%,#99e4f1 30%);
+        font-size: 18px;
+        font-weight: bold;
+    }
+    #grad2{
+        background: linear-gradient(transparent 60%,#fda1a1 30%);
+        font-size: 18px;
+        font-weight: bold;
+    }
+
+    </style>
+
+    <head>
+        <meta charset="UTF-8">
+        <title>105-270</title>
+    </head>
+
+    <body>
+        <h1>
+        <a href="./105_269.html" rel="external" title="prev">≪</a>
+        105-270
+        <a href="./105_271.html" rel="external" title="next">≫</a>
+        </h1>
+        <div class='problem'>
+            <p>
+                <span id="grad1">　問題文　</span>
+            </p>
+            <p>
+                <p>ただし、この患者におけるタクロリムスの全身クリアランス及びバイオアベイラビリティは腎移植前後で変化しないものとする。</p>
+<ol><li>1.0</li><li>2.0</li><li>4.0</li><li>6.0</li><li>8.0</li></ol>    
+            </p>
+        </div>
+        <hr>
+
+        <input type="button" value="check ans" onclick="toggle_switch()"/>
+        
+        <div id='toggle'>
+        <div class='answer'>
+            <p>
+                <span id="grad2">　解答　　</span>
+            </p>
+            <p>
+            問270：2問271：3
+            </p>
+        </div>
+        <div class='description'>
+            <p>
+                <span id="grad2">　解説　　</span>
+            </p>
+            <h4>問270</h4>
+<p>選択肢 1 ですが<br/>CYP 2C19 変異と血中濃度の関係として知られているのは「オメプラゾール」です。よって、選択肢 1 は誤りと考えられます。</p>
+<p>選択肢 2 は妥当な記述です。</p>
+<p>選択肢 3 ですが<br/>ラベプラゾールはタクロリムスの添付文書によれば併用に問題ありません。CYP 2C19、及びCYP 3A4 の関与は知られているのですが、非酵素的代謝を受けるため、CYP の変異による影響が少ない PPI です。よって、可能性はありますが、高いかというと妥当ではないと考えられます。</p>
+<p>選択肢 4 ですが<br/>スタチンとの併用は問題ありません。よって、選択肢 4 は誤りです。</p>
+<p>選択肢 5 ですが<br/>カルバマゼピンは、CYP 3A4 を誘導します。よって、血中濃度をむしろ低くする方向です。よって、選択肢 5 は誤りです。</p>
+<p>以上より、正解は 2 と考えられます。</p>
+<h4>問271</h4>
+<p>「定常状態における平均血中濃度 Css」ときたので、まずは <strong>Css = D/CL</strong> を思い出します。</p>
+<p>問題文から D として 12 mg の時の AUC が与えられているので、<strong>CL = D/AUC</strong> を思い出します。</p>
+<p>まず、CL を出すと<br/>CL = 12 (mg)/720(ng・h/mL) です。<br/>「m」g → 10<span style="font-weight: 400;"><sup>-3</sup></span>g、「n」g → 10<span style="font-weight: 400;"><sup>-9</sup></span>g とすれば</p>
+<p>CL = 12 × 10<span style="font-weight: 400;"><sup>-3</sup></span>/720 × 10<span style="font-weight: 400;"><sup>-9 <br/></sup></span>= 10<span style="font-weight: 400;"><sup>-3</sup></span>/60 × 10<span style="font-weight: 400;"><sup>-9</sup></span> <br/>= 10<span style="font-weight: 400;"><sup>-3</sup></span>/6 × 10<span style="font-weight: 400;"><sup>-8</sup></span><br/>= 1/6 × 10<span style="font-weight: 400;"><sup>5</sup></span> (mL/h) です。</p>
+<p>１日あたりになおすために、24 かければ<br/><strong>CL = 4 × 10<sup>5</sup> (mL/day)</strong>です。</p>
+<p>Css = D/CL なので<br/>10 × 10<span style="font-weight: 400;"><sup>-9</sup></span> = D/(4 × 10<span style="font-weight: 400;"><sup>5</sup></span>)となります。</p>
+<p>満たす D は、選択肢を参考にすれば<br/><strong>4.0 × 10<sup>-3</sup> g</strong> とわかります。つまり 4.0 mg/day です。</p>
+<p>以上より、正解は 3 です。</p>
+            </p>
+        </div>
+        </div>
+    </body>
+    <script>
+    document.getElementById("toggle").style.display="none";
+    function toggle_switch(){
+        var x = document.getElementById("toggle");
+        if (x.style.display=="block"){
+            x.style.display="none";
+        }
+        else{
+            x.style.display="block";
+        }
+    }
+    </script>
+    

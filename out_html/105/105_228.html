@@ -1,0 +1,92 @@
+
+        <!DOCTYPE html>
+    <html lang="ja">
+    <style>
+    body
+    {
+        color: black;
+        background-color: white;
+    }
+    div{
+        font-size: 14px;
+    }
+    span
+    {
+        font-size: 18px;
+    }
+    #grad1{
+        background: linear-gradient(transparent 60%,#99e4f1 30%);
+        font-size: 18px;
+        font-weight: bold;
+    }
+    #grad2{
+        background: linear-gradient(transparent 60%,#fda1a1 30%);
+        font-size: 18px;
+        font-weight: bold;
+    }
+
+    </style>
+
+    <head>
+        <meta charset="UTF-8">
+        <title>105-228</title>
+    </head>
+
+    <body>
+        <h1>
+        <a href="./105_227.html" rel="external" title="prev">≪</a>
+        105-228
+        <a href="./105_229.html" rel="external" title="next">≫</a>
+        </h1>
+        <div class='problem'>
+            <p>
+                <span id="grad1">　問題文　</span>
+            </p>
+            <p>
+                <p>この男児への使用を避けることが適切な製品及び関連する食物アレルギーに関する記述のうち、正しいのはどれか。2つ選べ。</p>
+<ol><li>この製品の主成分と、栗やバナナに含まれる成分には、共通の構造をもつエピトープが存在する。</li><li>この製品の主成分から脱炭酸反応によって生じるヒスタミンが、アレルギーの原因である。</li><li>この製品をこの男児が使うと、Ⅰ型アレルギーが誘発される可能性がある。</li><li>栗やバナナは、重篤なアレルギー症状を引き起こす可能性があるため、これらを含む食品には特定原材料(7品目)として表示する義務がある。</li><li>食物アレルギーは、消化管機能が未熟な幼児期にのみ起こる。</li></ol>    
+            </p>
+        </div>
+        <hr>
+
+        <input type="button" value="check ans" onclick="toggle_switch()"/>
+        
+        <div id='toggle'>
+        <div class='answer'>
+            <p>
+                <span id="grad2">　解答　　</span>
+            </p>
+            <p>
+            問228：2問229：1, 3
+            </p>
+        </div>
+        <div class='description'>
+            <p>
+                <span id="grad2">　解説　　</span>
+            </p>
+            <h4>問228</h4>
+<p>ラテックスアレルギーと交差反応性がある食べ物として、バナナ、アボガド、栗などが知られています。従って、天然ゴムが原材料である医療用指サックの販売は避けるべきであると考えられます。</p>
+<p>以上より、正解は 2 です。</p>
+<h4>問229</h4>
+<p>選択肢 1 は妥当な記述です。</p>
+<p>選択肢 2,3 ですが<br/>ラテックスアレルギーは、即時型（Ⅰ型）アレルギーの一種です。主成分から生じるヒスタミンが原因ではありません。アレルゲンに反応して生成される IgE が関与します。よって、選択肢 2 は誤りです。選択肢 3 は妥当な記述です。</p>
+<p>選択肢 4 ですが<br/>特定原材料は、えび、かに、卵、乳、小麦、そば、落花生です。栗、バナナは含まれません。よって、選択肢 4 は誤りです。</p>
+<p>選択肢 5 ですが<br/>幼児期のみとは限りません。よって、選択肢 5 は誤りです。</p>
+<p>以上より、正解は 1,3 です。　</p>
+            </p>
+        </div>
+        </div>
+    </body>
+    <script>
+    document.getElementById("toggle").style.display="none";
+    function toggle_switch(){
+        var x = document.getElementById("toggle");
+        if (x.style.display=="block"){
+            x.style.display="none";
+        }
+        else{
+            x.style.display="block";
+        }
+    }
+    </script>
+    

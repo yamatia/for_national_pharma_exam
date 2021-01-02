@@ -1,0 +1,89 @@
+
+        <!DOCTYPE html>
+    <html lang="ja">
+    <style>
+    body
+    {
+        color: black;
+        background-color: white;
+    }
+    div{
+        font-size: 14px;
+    }
+    span
+    {
+        font-size: 18px;
+    }
+    #grad1{
+        background: linear-gradient(transparent 60%,#99e4f1 30%);
+        font-size: 18px;
+        font-weight: bold;
+    }
+    #grad2{
+        background: linear-gradient(transparent 60%,#fda1a1 30%);
+        font-size: 18px;
+        font-weight: bold;
+    }
+
+    </style>
+
+    <head>
+        <meta charset="UTF-8">
+        <title>104-187</title>
+    </head>
+
+    <body>
+        <h1>
+        <a href="./104_186.html" rel="external" title="prev">≪</a>
+        104-187
+        <a href="./104_188.html" rel="external" title="next">≫</a>
+        </h1>
+        <div class='problem'>
+            <p>
+                <span id="grad1">　問題文　</span>
+            </p>
+            <p>
+                <p>メタアナリシスに関する記述のうち、正しいのはどれか。2つ選べ。</p>
+<ol><li>データベースで検索された全ての文献を解析に用いる。</li><li>複数の研究で示された効果量を統計学的に統合する際は、相乗平均を用いる。</li><li>結果を図示する際に、フォレストプロットを用いる。</li><li>統計学的に有意な結果を得た研究は掲載されやすいということから生じるバイアスを、出版バイアスという。</li><li>エビデンスレベルは、無作為化比較試験より低い。</li></ol>    
+            </p>
+        </div>
+        <hr>
+
+        <input type="button" value="check ans" onclick="toggle_switch()"/>
+        
+        <div id='toggle'>
+        <div class='answer'>
+            <p>
+                <span id="grad2">　解答　　</span>
+            </p>
+            <p>
+            3, 4
+            </p>
+        </div>
+        <div class='description'>
+            <p>
+                <span id="grad2">　解説　　</span>
+            </p>
+            <p><span style="font-weight: 400;">メタアナリシスとは、独立に行われた複数の臨床研究のデータを収集・統合し、分析を行うことです。</span></p>
+<p><span style="font-weight: 400;">選択肢 1 ですが<br/></span><span style="font-weight: 400;">解析に用いる文献は、質の低い論文を削除するなど、バイアスの影響を極力排除するように慎重に選択されます。データベースにより検索されたすべての文献を解析に用いるわけではありません。よって、選択肢 1 は誤りです。</span></p>
+<p><span style="font-weight: 400;">選択肢 2 ですが<br/></span><span style="font-weight: 400;">結果の統合には、一般的に「重み付け平均」が用いられます。「相乗平均」ではありません。よって、選択肢 2 は誤りです。</span></p>
+<p><span style="font-weight: 400;">選択肢 3,4 は妥当な記述です。</span></p>
+<p><span style="font-weight: 400;">選択肢 5 ですが<br/></span><span style="font-weight: 400;">メタアナリシスのエビデンスレベルは高いと評価されます。無作為化比較試験よりも高いです。よって、選択肢 5 は誤りです。</span></p>
+<p><span style="font-weight: 400;">以上より、正解は 3,4 です。<br/></span><span style="font-weight: 400;">類題 </span></p>
+            </p>
+        </div>
+        </div>
+    </body>
+    <script>
+    document.getElementById("toggle").style.display="none";
+    function toggle_switch(){
+        var x = document.getElementById("toggle");
+        if (x.style.display=="block"){
+            x.style.display="none";
+        }
+        else{
+            x.style.display="block";
+        }
+    }
+    </script>
+    

@@ -1,0 +1,85 @@
+
+        <!DOCTYPE html>
+    <html lang="ja">
+    <style>
+    body
+    {
+        color: black;
+        background-color: white;
+    }
+    div{
+        font-size: 14px;
+    }
+    span
+    {
+        font-size: 18px;
+    }
+    #grad1{
+        background: linear-gradient(transparent 60%,#99e4f1 30%);
+        font-size: 18px;
+        font-weight: bold;
+    }
+    #grad2{
+        background: linear-gradient(transparent 60%,#fda1a1 30%);
+        font-size: 18px;
+        font-weight: bold;
+    }
+
+    </style>
+
+    <head>
+        <meta charset="UTF-8">
+        <title>104-18</title>
+    </head>
+
+    <body>
+        <h1>
+        <a href="./104_017.html" rel="external" title="prev">≪</a>
+        104-18
+        <a href="./104_019.html" rel="external" title="next">≫</a>
+        </h1>
+        <div class='problem'>
+            <p>
+                <span id="grad1">　問題文　</span>
+            </p>
+            <p>
+                <p>原虫を病原体とする再興感染症はどれか。1つ選べ。</p>
+<ol><li>クリプトスポリジウム症</li><li>マラリア</li><li>重症急性呼吸器症候群(SARS)</li><li>中東呼吸器症候群(MERS)</li><li>コレラ</li></ol>    
+            </p>
+        </div>
+        <hr>
+
+        <input type="button" value="check ans" onclick="toggle_switch()"/>
+        
+        <div id='toggle'>
+        <div class='answer'>
+            <p>
+                <span id="grad2">　解答　　</span>
+            </p>
+            <p>
+            2
+            </p>
+        </div>
+        <div class='description'>
+            <p>
+                <span id="grad2">　解説　　</span>
+            </p>
+            <p><span style="font-weight: 400;">WHO によれば、<strong>再興感染症</strong>とは「</span><span style="font-weight: 400;">既知の感染症で、すでに公衆衛生上の問題とならない程度まで患者が減少していた感染症のうちこの20年間に再び流行しはじめ患者数が増加したもの」のことです。</span><span style="font-weight: 400;"><strong>代表例</strong>は、<strong>結核、デング熱、マラリア</strong>などです。マラリアはマラリア原虫により引き起こされます。</span></p>
+<p><span style="font-weight: 400;">以上より、正解は 2 です。</span><span style="font-weight: 400;"><br/></span></p>
+            </p>
+        </div>
+        </div>
+    </body>
+    <script>
+    document.getElementById("toggle").style.display="none";
+    function toggle_switch(){
+        var x = document.getElementById("toggle");
+        if (x.style.display=="block"){
+            x.style.display="none";
+        }
+        else{
+            x.style.display="block";
+        }
+    }
+    </script>
+    

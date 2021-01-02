@@ -1,0 +1,93 @@
+
+        <!DOCTYPE html>
+    <html lang="ja">
+    <style>
+    body
+    {
+        color: black;
+        background-color: white;
+    }
+    div{
+        font-size: 14px;
+    }
+    span
+    {
+        font-size: 18px;
+    }
+    #grad1{
+        background: linear-gradient(transparent 60%,#99e4f1 30%);
+        font-size: 18px;
+        font-weight: bold;
+    }
+    #grad2{
+        background: linear-gradient(transparent 60%,#fda1a1 30%);
+        font-size: 18px;
+        font-weight: bold;
+    }
+
+    </style>
+
+    <head>
+        <meta charset="UTF-8">
+        <title>102-242</title>
+    </head>
+
+    <body>
+        <h1>
+        <a href="./102_241.html" rel="external" title="prev">≪</a>
+        102-242
+        <a href="./102_243.html" rel="external" title="next">≫</a>
+        </h1>
+        <div class='problem'>
+            <p>
+                <span id="grad1">　問題文　</span>
+            </p>
+            <p>
+                <p>この水道水の水質検査に関する次の記述のうち、正しいのはどれか。2つ選べ。</p>
+<ol><li>大腸菌は検出されていないが、一般細菌が検出されているので、水質基準を満たしていない。</li><li>塩化物イオン濃度は、し尿等の混入があると値が増加する。</li><li>全有機炭素(TOC)の測定値は、水道水中の還元性無機イオンの影響を受けにくい。</li><li>トリハロメタンの濃度が高いと色度、濁度のいずれも高くなる。</li><li>遊離残留塩素が水質基準を超えているため、このままでは飲料に適さない。</li></ol>    
+            </p>
+        </div>
+        <hr>
+
+        <input type="button" value="check ans" onclick="toggle_switch()"/>
+        
+        <div id='toggle'>
+        <div class='answer'>
+            <p>
+                <span id="grad2">　解答　　</span>
+            </p>
+            <p>
+            問242：4, 5問243：2, 3
+            </p>
+        </div>
+        <div class='description'>
+            <p>
+                <span id="grad2">　解説　　</span>
+            </p>
+            <h4>問242</h4>
+<p>現場で測定するのは残留塩素です。分析原理は、DPD 吸光光度法です。現場で測定する理由としては、塩素が揮発してしまうため時間をおくと値が小さくなってしまう点があげられます。</p>
+<p>選択肢の中で、他に現場で測定することが適切であるのは臭気であると考えられます。測定も簡便である点も判断材料になると思います。</p>
+<p>以上より、正解は 4,5 です。</p>
+<h4>問243</h4>
+<p>選択肢 1 ですが<br/>一般細菌は 100集落/ml 以下であればOKです。よって、選択肢 1 は誤りです。</p>
+<p>選択肢 2,3 は、正しい記述です。</p>
+<p>選択肢 4 ですが<br/>トリハロメタンは無色無味無臭です。従って、濃度が高くなっても色度や濁度は変わりません。よって、選択肢 4 は誤りです。</p>
+<p>選択肢 5 ですが<br/>遊離残留塩素の基準は、0.1mg/L 以上です。ある程度以上の濃度の塩素が存在することにより消毒作用を十分に持ちます。よって、選択肢 5 は誤りです。</p>
+<p>以上より、正解は 2,3 です。</p>
+            </p>
+        </div>
+        </div>
+    </body>
+    <script>
+    document.getElementById("toggle").style.display="none";
+    function toggle_switch(){
+        var x = document.getElementById("toggle");
+        if (x.style.display=="block"){
+            x.style.display="none";
+        }
+        else{
+            x.style.display="block";
+        }
+    }
+    </script>
+    

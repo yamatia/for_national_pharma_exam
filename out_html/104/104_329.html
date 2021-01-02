@@ -1,0 +1,86 @@
+
+        <!DOCTYPE html>
+    <html lang="ja">
+    <style>
+    body
+    {
+        color: black;
+        background-color: white;
+    }
+    div{
+        font-size: 14px;
+    }
+    span
+    {
+        font-size: 18px;
+    }
+    #grad1{
+        background: linear-gradient(transparent 60%,#99e4f1 30%);
+        font-size: 18px;
+        font-weight: bold;
+    }
+    #grad2{
+        background: linear-gradient(transparent 60%,#fda1a1 30%);
+        font-size: 18px;
+        font-weight: bold;
+    }
+
+    </style>
+
+    <head>
+        <meta charset="UTF-8">
+        <title>104-329</title>
+    </head>
+
+    <body>
+        <h1>
+        <a href="./104_328.html" rel="external" title="prev">≪</a>
+        104-329
+        <a href="./104_330.html" rel="external" title="next">≫</a>
+        </h1>
+        <div class='problem'>
+            <p>
+                <span id="grad1">　問題文　</span>
+            </p>
+            <p>
+                <p>ポンプ内の残液を取り出したところ、残液量は120mLであった。麻薬帳簿に記載するべき残液中のフェンタニル注射液0.1mg/2mLの量(mL)として正しい値はどれか。1つ選べ。</p>
+<ol><li>2.4</li><li>3.0</li><li>4.2</li><li>4.8</li><li>7.2</li></ol>    
+            </p>
+        </div>
+        <hr>
+
+        <input type="button" value="check ans" onclick="toggle_switch()"/>
+        
+        <div id='toggle'>
+        <div class='answer'>
+            <p>
+                <span id="grad2">　解答　　</span>
+            </p>
+            <p>
+            4
+            </p>
+        </div>
+        <div class='description'>
+            <p>
+                <span id="grad2">　解説　　</span>
+            </p>
+            <p><span style="font-weight: 400;">フェンタニルは 6A (2mL/A）とあるので、6 × 2 = 12mL です。</span><span style="font-weight: 400;">ドロペリドールが 2mL、ロピバカインが 286 mL あったので、全体で 300mL 入っているポンプということです。</span></p>
+<p><span style="font-weight: 400;">残液は 120mL なので、120/300 = 2/5 残っている　ということです。フェンタニルに注目すれば 12 × 2/5 = 4.8 mL 残っているとわかります。</span></p>
+<p><span style="font-weight: 400;">以上より、正解は 4 です。</span></p>
+            </p>
+        </div>
+        </div>
+    </body>
+    <script>
+    document.getElementById("toggle").style.display="none";
+    function toggle_switch(){
+        var x = document.getElementById("toggle");
+        if (x.style.display=="block"){
+            x.style.display="none";
+        }
+        else{
+            x.style.display="block";
+        }
+    }
+    </script>
+    

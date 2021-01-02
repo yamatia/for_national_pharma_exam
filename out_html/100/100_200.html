@@ -1,0 +1,95 @@
+
+        <!DOCTYPE html>
+    <html lang="ja">
+    <style>
+    body
+    {
+        color: black;
+        background-color: white;
+    }
+    div{
+        font-size: 14px;
+    }
+    span
+    {
+        font-size: 18px;
+    }
+    #grad1{
+        background: linear-gradient(transparent 60%,#99e4f1 30%);
+        font-size: 18px;
+        font-weight: bold;
+    }
+    #grad2{
+        background: linear-gradient(transparent 60%,#fda1a1 30%);
+        font-size: 18px;
+        font-weight: bold;
+    }
+
+    </style>
+
+    <head>
+        <meta charset="UTF-8">
+        <title>100-200</title>
+    </head>
+
+    <body>
+        <h1>
+        <a href="./100_199.html" rel="external" title="prev">≪</a>
+        100-200
+        <a href="./100_201.html" rel="external" title="next">≫</a>
+        </h1>
+        <div class='problem'>
+            <p>
+                <span id="grad1">　問題文　</span>
+            </p>
+            <p>
+                <ul><li> ①　　　　　　②</li></ul>
+<ol><li>昇華　　x軸：1/T<sup>2</sup>、y軸：1/p</li><li>蒸発　　x軸：1/T<sup>2</sup>、y軸：1/p</li><li>昇華　　x軸：T<sup>2</sup>、y軸：p</li><li>蒸発　　x軸：T<sup>2</sup>、y軸：p</li><li>昇華　　x軸：1/T、y軸：ln p</li><li>蒸発　　x軸：1/T、y軸：ln p</li></ol>    
+            </p>
+        </div>
+        <hr>
+
+        <input type="button" value="check ans" onclick="toggle_switch()"/>
+        
+        <div id='toggle'>
+        <div class='answer'>
+            <p>
+                <span id="grad2">　解答　　</span>
+            </p>
+            <p>
+            問200：2, 4問201：5
+            </p>
+        </div>
+        <div class='description'>
+            <p>
+                <span id="grad2">　解説　　</span>
+            </p>
+            <h4>問200</h4>
+<p>選択肢 1 ですが<br/>キメラ型の抗体医薬品は、ヒト由来の定常領域　とマウス由来の可変領域　を有します。ヒトとマウス、もしくは可変と定常が逆です。よって、選択肢 1 は誤りです。</p>
+<p>選択肢 2 は、正しい選択肢です。<br/>生ワクチンには、絶対的なリスクの大きさはとても低いものではありますが、他の種類のワクチンと比べると高い感染リスクがあります。</p>
+<p>選択肢 3 ですが<br/>組み換え医薬品とは、組み換え DNA 技術により生理活性タンパク質を人工的に製造し製造した医薬品のことです。ステロイドホルモンは、低分子化合物でありタンパク質では、ありません。従って、組み換え医薬品にステロイドホルモンは含まれません。よって、選択肢 3 は誤りです。</p>
+<p>選択肢 4 は、正しい選択肢です。<br/>細胞表面抗原としては、CD 20 が代表例です。増殖因子としては EGFR が、血管新生に関わる分子としては VEGF が代表例です。</p>
+<p>以上より、正解は 2,4 です。</p>
+<h4>問201</h4>
+<p>選択肢 を見ると、１ に入るのは「昇華」 か「蒸発」とわかります。昇華とは、固体－気体間の状態変化です。蒸発とは、液体→気体　の状態変化です。凍結乾燥している物体なのだから、固体からの変化なので、１は昇華です。</p>
+<p>次に、与えられた式の両辺を積分した形は、以下のようになります。<br/>参考） </p>
+<p><img alt="" class="alignnone size-full wp-image-8243" height="69.3" loading="lazy" src="data:;base64,/9j/4AAQSkZJRgABAgAAAQABAAD/2wBDAAgGBgcGBQgHBwcJCQgKDBQNDAsLDBkSEw8UHRofHh0aHBwgJC4nICIsIxwcKDcpLDAxNDQ0Hyc5PTgyPC4zNDL/2wBDAQkJCQwLDBgNDRgyIRwhMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjL/wAARCABjAOQDASIAAhEBAxEB/8QAGwABAAIDAQEAAAAAAAAAAAAAAAUGAgMEBwH/xAA3EAACAgEDAwEFBQUJAAAAAAAAAQIDBAUGERITITEHQVFxgRQVIpGhQlJhYpMjMjNDVnOisdH/xAAUAQEAAAAAAAAAAAAAAAAAAAAA/8QAFBEBAAAAAAAAAAAAAAAAAAAAAP/aAAwDAQACEQMRAD8A9/AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAHLqGX9iwbb1w5JcQT98n4S/Nor+ydzZOu4+ZjalVGnU8G5131R8eH5i/wAv+gLUDTmWunDutjKMXCDalL0RWdpa5q2tbYer56opVkJTrUY+FFejf0AtgKxsrWdU1/SfvHPjTCuyTVSrXqk/Us4AAAAAAAAAAAAAAAAAAxsajXKT9Em2BkCnbMzHHS9S1PMy5fZrMyfZdj56YLwuPryT61/SpRrks6lxsfEJc+G+eOOQJIFZ9oGoy0vZOpZNdsq71U40Si/PcfiP68ERrUL9B2Z9rhqlz1SuqPR0y6nbY+PHHv55AvoOTS7ci7ScS3Lh0ZE6oysj8JceTZLMxYycZZNKa8NOa8AbwaY5eNOSjHIplJ+iU02zcAAAENdfXm67CmVkVTh/jlzL1sa4S+ib/Qqm5rK9rb00/cuPZFYmbxh56i/HPrCb/wCSJ/L2Ht/NzLsu/Fm7rpuc2rZLlv5M57PZpte6PTbgTnHnniV0mufzAz9oOovE2PmzpfNmTBUVtP3z8Lgg9waVLbPs2nVjajm9UcaOPVV3fDc+IpcfUtmftXSNToxqcvGdleOoqqPW+Fx6GWpbY0rV6aac3HdtdLThFzfhrygNm29PjpW3cHDhHp7dMU1/HjyShhVVGmqNcE1GK4XL5MwAOCnUe7rGTgdHHajGXV8eUd4AFV1fW8nM3DXtzSZ9F/R3cq9f5MPcvmzLVtCyMXRrrNKyLlqSj+GyUm+p/IC0A5tOhbXpuNC+Tlcqo9xv1cuPP6nSAAAAAAAAAInc+Tbh7Y1LIpi5Wwx5OKivPPBLHyUVKLjJJp+qYFKpdGB7OGlCUvstLUeF/esa+HzZEZmnLD2vtnRnBpZFsb8ixL0/akvnzLg9K7NXb7fbj0fu8eBKqufT1Vxl0+nK9APPd951Gq5+3dFk+K8jNquyq2n+GEWp8P8ALgutejYELIWdhTlDzBz89PyOyWPTOfXKmtzX7TiuTYAKlk6dfPKuktu02JzbU3cl1efUtoAquBp91edTOW36qUpJuxXJuP8AHgtLTcWk+G16n0AQc9F1SU5SjuDJim+UlVHwdOBp2biXueRq12VDjjonXFL9CTAFalt7WXJtbqy4rnnjsQ8GH3Dq7fC3dk/0YFgzrq8bT8m+3/DrqlOXySbZ5ztV4VmzLNQz9QteRkTssqXd/FFctRigLQ9vayly92ZaX+xAx+4NX/1dlf0YHDtzB1jWduactauvqcJTnLpl0znHqfQpfTg4dv4K1beWv85OUsLDmsauvuvhyS/E/wAwLVpek6jh5feyddvzqulrtTqjFc/HlHdqGJkZcIRx86zEcXy5QipdX5mjQtPs03TlRZbZZLqb5sl1NfUkwKTi6RqL3XnxWuXqSrhzLtR8+C3YWPdjY6rvyZZE/wB+UUn+hnHGphkzyIwStmkpS+PBtAoulQjpHtH1u7O/s1nVwePbL0kl6rktf29ZORCnDasSfNk/dFf+nVdjU5EeLqoTX8yMq6q6Y9NcIxj8EgMwAAAAAAAAAAAAAAAAAAAAAAAAABUvaNqMsTaGZi0Kx5WXGNMFCDl4lJKT8fytkHu7Ajh7C0dadjLu05NEVOEOHBcPqZ6SfJRjOLjKKlF+qa5TAib9cxsTS3lW9zoSaTjBtyaXu4K/7MEntuV1qmszJunkXqcHFqUnzx5LtGKjFRikkvRL3H0AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAD/9k=" width="159.6"/></p>
+<p>よって、横軸を 1/T 、縦軸を ln P とした時、傾きが「－ΔH/R」 となり、R は定数なので<br/>Δ H を計算することができる、ということがわかります。</p>
+<p>以上より、正解は 5 です。</p>
+            </p>
+        </div>
+        </div>
+    </body>
+    <script>
+    document.getElementById("toggle").style.display="none";
+    function toggle_switch(){
+        var x = document.getElementById("toggle");
+        if (x.style.display=="block"){
+            x.style.display="none";
+        }
+        else{
+            x.style.display="block";
+        }
+    }
+    </script>
+    

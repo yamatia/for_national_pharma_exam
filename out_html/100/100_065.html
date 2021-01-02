@@ -1,0 +1,90 @@
+
+        <!DOCTYPE html>
+    <html lang="ja">
+    <style>
+    body
+    {
+        color: black;
+        background-color: white;
+    }
+    div{
+        font-size: 14px;
+    }
+    span
+    {
+        font-size: 18px;
+    }
+    #grad1{
+        background: linear-gradient(transparent 60%,#99e4f1 30%);
+        font-size: 18px;
+        font-weight: bold;
+    }
+    #grad2{
+        background: linear-gradient(transparent 60%,#fda1a1 30%);
+        font-size: 18px;
+        font-weight: bold;
+    }
+
+    </style>
+
+    <head>
+        <meta charset="UTF-8">
+        <title>100-65</title>
+    </head>
+
+    <body>
+        <h1>
+        <a href="./100_064.html" rel="external" title="prev">≪</a>
+        100-65
+        <a href="./100_066.html" rel="external" title="next">≫</a>
+        </h1>
+        <div class='problem'>
+            <p>
+                <span id="grad1">　問題文　</span>
+            </p>
+            <p>
+                <p>がん化学療法による好中球減少症に対して用いられるのはどれか。1つ選べ。</p>
+<ol><li>メスナ</li><li>レノグラスチム</li><li>ラスブリカーゼ</li><li>ホリナートカルシウム</li><li>パロノセトロン塩酸塩</li></ol>    
+            </p>
+        </div>
+        <hr>
+
+        <input type="button" value="check ans" onclick="toggle_switch()"/>
+        
+        <div id='toggle'>
+        <div class='answer'>
+            <p>
+                <span id="grad2">　解答　　</span>
+            </p>
+            <p>
+            2
+            </p>
+        </div>
+        <div class='description'>
+            <p>
+                <span id="grad2">　解説　　</span>
+            </p>
+            <p>好中球減少症に対して用いるのは G－CSF 製剤などです。</p>
+<p>選択肢 1 ですが<br/>メスナは、シクロホスファミドなどの抗がん薬治療時の副作用である出血性膀胱炎を抑制するために併用する薬です。好中球減少症に対しては、用いられません。よって、選択肢 1 は誤りです。</p>
+<p>選択肢 2 は、正しい選択肢です。</p>
+<p>選択肢 3 ですが<br/>ラスプリカーゼは、遺伝子組換え尿酸オキシダーゼです。点滴静注薬です。がん化学療法に伴う、高尿酸血症の治療に用います。好中球減少症に対しては、用いられません。よって、選択肢 3 は誤りです。</p>
+<p>選択肢 4 ですが<br/>ホリナートカルシウム（ロイコボリン）は、フルオロウラシルの作用増強に用いられます。他にも、副作用軽減の目的でメトトレキサートとの服用の場合に用いられます。好中球減少症に対しては、用いられません。よって、選択肢 4 は誤りです。</p>
+<p>選択肢 5 ですが<br/>パロノセトロンは、5-HT<span style="font-weight: 400;"><sub>3</sub></span> 受容体拮抗剤です。がん化学療法時の、悪心・嘔吐に対して制吐剤として用いられます。好中球減少症に対しては、用いられません。よって、選択肢 5 は誤りです。</p>
+<p>以上より、正解は 2 です。</p>
+            </p>
+        </div>
+        </div>
+    </body>
+    <script>
+    document.getElementById("toggle").style.display="none";
+    function toggle_switch(){
+        var x = document.getElementById("toggle");
+        if (x.style.display=="block"){
+            x.style.display="none";
+        }
+        else{
+            x.style.display="block";
+        }
+    }
+    </script>
+    

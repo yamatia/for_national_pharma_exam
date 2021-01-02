@@ -1,0 +1,86 @@
+
+        <!DOCTYPE html>
+    <html lang="ja">
+    <style>
+    body
+    {
+        color: black;
+        background-color: white;
+    }
+    div{
+        font-size: 14px;
+    }
+    span
+    {
+        font-size: 18px;
+    }
+    #grad1{
+        background: linear-gradient(transparent 60%,#99e4f1 30%);
+        font-size: 18px;
+        font-weight: bold;
+    }
+    #grad2{
+        background: linear-gradient(transparent 60%,#fda1a1 30%);
+        font-size: 18px;
+        font-weight: bold;
+    }
+
+    </style>
+
+    <head>
+        <meta charset="UTF-8">
+        <title>104-326</title>
+    </head>
+
+    <body>
+        <h1>
+        <a href="./104_325.html" rel="external" title="prev">≪</a>
+        104-326
+        <a href="./104_327.html" rel="external" title="next">≫</a>
+        </h1>
+        <div class='problem'>
+            <p>
+                <span id="grad1">　問題文　</span>
+            </p>
+            <p>
+                <p>薬剤師はこの処方に疑義を抱いた。薬剤師が行う処方提案として、適切なのはどれか。2つ選べ。</p>
+<ol><li>セフカペンピボキシル塩酸塩錠100mgを1回1錠、1日2回朝夕食後にする。</li><li>セフカペンピボキシル塩酸塩錠100mgを1回1錠、1日1回朝食後にする。</li><li>レボフロキサシン錠250mgを1回1錠、1日1回朝食後にする。</li><li>レボフロキサシン錠500mgを1回1錠、1日1回朝食後にする。</li><li>シプロフロキサシン塩酸塩錠100mgを1回2錠、1日2回朝夕食後にする。</li></ol>    
+            </p>
+        </div>
+        <hr>
+
+        <input type="button" value="check ans" onclick="toggle_switch()"/>
+        
+        <div id='toggle'>
+        <div class='answer'>
+            <p>
+                <span id="grad2">　解答　　</span>
+            </p>
+            <p>
+            4, 5
+            </p>
+        </div>
+        <div class='description'>
+            <p>
+                <span id="grad2">　解説　　</span>
+            </p>
+            <p><span style="font-weight: 400;">化学療法中の、好中球減少、発熱ときたら発熱性好中球減少症です。これは内科的緊急疾患とされます。早急な、幅広いスペクトラムを有する抗菌薬での治療が求められるため、ニューキノロン系が提案としてよいと考えられます。</span></p>
+<p><span style="font-weight: 400;">腎機能に問題ないため、レボフロキサシンを使用するなら、500mg 1回1錠で使用します。耐性菌が出現しづらいため、この用法・用量が推奨されています。</span></p>
+<p><span style="font-weight: 400;">以上より、正解は 4,5 です。</span></p>
+            </p>
+        </div>
+        </div>
+    </body>
+    <script>
+    document.getElementById("toggle").style.display="none";
+    function toggle_switch(){
+        var x = document.getElementById("toggle");
+        if (x.style.display=="block"){
+            x.style.display="none";
+        }
+        else{
+            x.style.display="block";
+        }
+    }
+    </script>
+    

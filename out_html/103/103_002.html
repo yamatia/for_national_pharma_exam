@@ -1,0 +1,88 @@
+
+        <!DOCTYPE html>
+    <html lang="ja">
+    <style>
+    body
+    {
+        color: black;
+        background-color: white;
+    }
+    div{
+        font-size: 14px;
+    }
+    span
+    {
+        font-size: 18px;
+    }
+    #grad1{
+        background: linear-gradient(transparent 60%,#99e4f1 30%);
+        font-size: 18px;
+        font-weight: bold;
+    }
+    #grad2{
+        background: linear-gradient(transparent 60%,#fda1a1 30%);
+        font-size: 18px;
+        font-weight: bold;
+    }
+
+    </style>
+
+    <head>
+        <meta charset="UTF-8">
+        <title>103-2</title>
+    </head>
+
+    <body>
+        <h1>
+        <a href="./103_001.html" rel="external" title="prev">≪</a>
+        103-2
+        <a href="./103_003.html" rel="external" title="next">≫</a>
+        </h1>
+        <div class='problem'>
+            <p>
+                <span id="grad1">　問題文　</span>
+            </p>
+            <p>
+                <p>化合物の親水性や疎水性を表す指標となる分配係数の測定において、水と組み合わせて用いられる有機溶媒はどれか。1つ選べ。</p>
+<ol><li>アセトニトリル</li><li>アセトン</li><li>1-オクタノール</li><li>グリセロール</li><li>メタノール</li></ol>    
+            </p>
+        </div>
+        <hr>
+
+        <input type="button" value="check ans" onclick="toggle_switch()"/>
+        
+        <div id='toggle'>
+        <div class='answer'>
+            <p>
+                <span id="grad2">　解答　　</span>
+            </p>
+            <p>
+            3
+            </p>
+        </div>
+        <div class='description'>
+            <p>
+                <span id="grad2">　解説　　</span>
+            </p>
+            <p><span style="font-weight: 400;">互いに混ざらない水と有機溶媒に</span><span style="font-weight: 400;">化学物質を加えて振り混ぜると、</span><span style="font-weight: 400;">水層と有機層に、ある割合ずつ存在して平衡に達します。</span><span style="font-weight: 400;">この比率を<strong>分配係数</strong>と呼びます。</span><span style="font-weight: 400;">値が高い方が、より脂溶性が高いと考えればよいです。</span></p>
+<p><span style="font-weight: 400;">水と組み合わせて用いるのは、</span><span style="font-weight: 400;"><strong>１－オクタノール</strong>です。</span><span style="font-weight: 400;">知識として知っていればそれでいいのですが</span><span style="font-weight: 400;">もし忘れてしまっていても、</span><span style="font-weight: 400;">アセトニトリル、メタノール、グリセリン、アセトンは</span><span style="font-weight: 400;">水に溶けてしまう点から</span><span style="font-weight: 400;">消去法で選ぶとよい問題と考えられます。</span></p>
+<p><span style="font-weight: 400;">これらが水に溶けるか　は</span><span style="font-weight: 400;">実際に扱ったことがあればよいのですが、</span><span style="font-weight: 400;">経験がない場合は</span><span style="font-weight: 400;">以下のように考えるとよいと思います。</span><span style="font-weight: 400;">まず、本問の５つの物質の</span><span style="font-weight: 400;">構造式は書ける必要があります。</span><span style="font-weight: 400;">官能基はそれぞれ</span><span style="font-weight: 400;">C≡N、C=O、OH、OH×3、OH　と</span><span style="font-weight: 400;">どれも極性を持ち</span><span style="font-weight: 400;">これといった決め手にはなりません。</span></p>
+<p><span style="font-weight: 400;">その上で、１－オクタノール　と、</span><span style="font-weight: 400;">他の４つの構造を比較すると　</span><span style="font-weight: 400;">炭素鎖が１つだけ長い　という点が目立ちます。</span><span style="font-weight: 400;">そこで、１－オクタノールが一番正解らしいと</span><span style="font-weight: 400;">（むしろ仲間はずれっぽい　</span><span style="font-weight: 400;">と言った印象かもしれません。）</span><span style="font-weight: 400;">判断できるのではないかと思います。</span></p>
+<p><span style="font-weight: 400;">以上より、正解は 3 です。<br/>類題 ，<br/>参考 <br/></span></p>
+            </p>
+        </div>
+        </div>
+    </body>
+    <script>
+    document.getElementById("toggle").style.display="none";
+    function toggle_switch(){
+        var x = document.getElementById("toggle");
+        if (x.style.display=="block"){
+            x.style.display="none";
+        }
+        else{
+            x.style.display="block";
+        }
+    }
+    </script>
+    

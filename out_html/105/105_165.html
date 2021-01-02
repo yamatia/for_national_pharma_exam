@@ -1,0 +1,94 @@
+
+        <!DOCTYPE html>
+    <html lang="ja">
+    <style>
+    body
+    {
+        color: black;
+        background-color: white;
+    }
+    div{
+        font-size: 14px;
+    }
+    span
+    {
+        font-size: 18px;
+    }
+    #grad1{
+        background: linear-gradient(transparent 60%,#99e4f1 30%);
+        font-size: 18px;
+        font-weight: bold;
+    }
+    #grad2{
+        background: linear-gradient(transparent 60%,#fda1a1 30%);
+        font-size: 18px;
+        font-weight: bold;
+    }
+
+    </style>
+
+    <head>
+        <meta charset="UTF-8">
+        <title>105-165</title>
+    </head>
+
+    <body>
+        <h1>
+        <a href="./105_164.html" rel="external" title="prev">≪</a>
+        105-165
+        <a href="./105_166.html" rel="external" title="next">≫</a>
+        </h1>
+        <div class='problem'>
+            <p>
+                <span id="grad1">　問題文　</span>
+            </p>
+            <p>
+                <p>この患者に関する記述のうち、適切なのはどれか。2つ選べ。</p>
+<ol><li>食道下部括約筋の収縮により、胃酸が逆流することにより発症した。</li><li>内視鏡検査で食道に炎症やびらんが認められた。</li><li>Ca<sup>2</sup><sup>＋</sup>チャネル遮断薬を併用するとより症状が改善する。</li><li>再発防止のため、この処方2を継続する必要がある。</li><li>薬物療法に加えて禁煙や体重の減量などの生活指導が奏功する。</li></ol>    
+            </p>
+        </div>
+        <hr>
+
+        <input type="button" value="check ans" onclick="toggle_switch()"/>
+        
+        <div id='toggle'>
+        <div class='answer'>
+            <p>
+                <span id="grad2">　解答　　</span>
+            </p>
+            <p>
+            問165：3, 4問166：2, 5
+            </p>
+        </div>
+        <div class='description'>
+            <p>
+                <span id="grad2">　解説　　</span>
+            </p>
+            <h4>問165</h4>
+<p>ランソプラゾールは、プロトンポンプインヒビター（PPI）です。PPI は、酸性条件下で不可逆的に Ｈ<sup>+</sup>,Ｋ<sup>+</sup>-ATPase を阻害します。</p>
+<p>モサプリドは、5－HT<span style="font-weight: 400;"><sub>4</sub></span> 刺激薬です。胃腸運動を促進させる働きがあります。慢性胃炎に伴う消化器症状に用いられます。</p>
+<p>以上より、問 165 の正解は 3,4 です。</p>
+<h4>問166</h4>
+<p>選択肢 1 ですが<br/>食道と胃の境界である「噴門」が緩むことにより胃酸逆流が起こりやすくなります。「下部括約筋の収縮により」ではありません。よって、選択肢 1 は誤りです。</p>
+<p>選択肢 2 は妥当な記述です。<br/>胃酸が逆流し、食道の粘膜に炎症などが見られると逆流性食道炎です。</p>
+<p>選択肢 3 ですが<br/>Ca 拮抗薬は、降圧、狭心症などに用いられる薬です。本問の患者に、現処方に併用してもより症状が改善するとは考えられません。よって、選択肢 3 は誤りです。</p>
+<p>選択肢 4 ですが<br/>症状がおさまれば、薬物療法の継続は必要ありません。よって、選択肢 4 は誤りです。</p>
+<p>選択肢 5 は妥当な記述です。</p>
+<p>以上より、問 166 の正解は 2,5 です。</p>
+            </p>
+        </div>
+        </div>
+    </body>
+    <script>
+    document.getElementById("toggle").style.display="none";
+    function toggle_switch(){
+        var x = document.getElementById("toggle");
+        if (x.style.display=="block"){
+            x.style.display="none";
+        }
+        else{
+            x.style.display="block";
+        }
+    }
+    </script>
+    

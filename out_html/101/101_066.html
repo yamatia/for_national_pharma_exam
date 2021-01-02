@@ -1,0 +1,88 @@
+
+        <!DOCTYPE html>
+    <html lang="ja">
+    <style>
+    body
+    {
+        color: black;
+        background-color: white;
+    }
+    div{
+        font-size: 14px;
+    }
+    span
+    {
+        font-size: 18px;
+    }
+    #grad1{
+        background: linear-gradient(transparent 60%,#99e4f1 30%);
+        font-size: 18px;
+        font-weight: bold;
+    }
+    #grad2{
+        background: linear-gradient(transparent 60%,#fda1a1 30%);
+        font-size: 18px;
+        font-weight: bold;
+    }
+
+    </style>
+
+    <head>
+        <meta charset="UTF-8">
+        <title>101-66</title>
+    </head>
+
+    <body>
+        <h1>
+        <a href="./101_065.html" rel="external" title="prev">≪</a>
+        101-66
+        <a href="./101_067.html" rel="external" title="next">≫</a>
+        </h1>
+        <div class='problem'>
+            <p>
+                <span id="grad1">　問題文　</span>
+            </p>
+            <p>
+                <p>一般用医薬品の添付文書に記載する必要のない項目はどれか。1つ選べ。</p>
+<ol><li>改訂年月</li><li>添付文書の必読及び保管に関する事項</li><li>製品の特徴</li><li>薬効薬理</li><li>消費者相談窓口</li></ol>    
+            </p>
+        </div>
+        <hr>
+
+        <input type="button" value="check ans" onclick="toggle_switch()"/>
+        
+        <div id='toggle'>
+        <div class='answer'>
+            <p>
+                <span id="grad2">　解答　　</span>
+            </p>
+            <p>
+            4
+            </p>
+        </div>
+        <div class='description'>
+            <p>
+                <span id="grad2">　解説　　</span>
+            </p>
+            <p>一般用医薬品の添付文書には、薬物動態、臨床成績、薬効薬理　などは記載する必要がありません。よって、正解は 4 です。</p>
+<p>以下、雑感<br/>本問は、正確な知識　ではなく、実習中にOTC の添付文書を見ていたり、日頃から関心を持って、OTCの添付文書を見ているか　を問われている　と感じました。</p>
+<p>OTC　の添付文書は<br/>１：「これはしちゃだめ！」<br/>２：「これは相談してね。」<br/>３：「使い方、効果、成分」<br/>４：「その他の注意、連絡先」という感じでまとまっています。</p>
+<p>医療用医薬品の添付文書と比べると、その薬自体に関する情報　や、創薬過程で得られる情報　ががっつり抜けている　という印象です。一例として（大正製薬、パブロンエースAX錠）を貼っておくのでよければ一度目を通してみてください。以上、雑感　終わり。</p>
+<p></p>
+            </p>
+        </div>
+        </div>
+    </body>
+    <script>
+    document.getElementById("toggle").style.display="none";
+    function toggle_switch(){
+        var x = document.getElementById("toggle");
+        if (x.style.display=="block"){
+            x.style.display="none";
+        }
+        else{
+            x.style.display="block";
+        }
+    }
+    </script>
+    

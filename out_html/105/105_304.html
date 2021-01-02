@@ -1,0 +1,97 @@
+
+        <!DOCTYPE html>
+    <html lang="ja">
+    <style>
+    body
+    {
+        color: black;
+        background-color: white;
+    }
+    div{
+        font-size: 14px;
+    }
+    span
+    {
+        font-size: 18px;
+    }
+    #grad1{
+        background: linear-gradient(transparent 60%,#99e4f1 30%);
+        font-size: 18px;
+        font-weight: bold;
+    }
+    #grad2{
+        background: linear-gradient(transparent 60%,#fda1a1 30%);
+        font-size: 18px;
+        font-weight: bold;
+    }
+
+    </style>
+
+    <head>
+        <meta charset="UTF-8">
+        <title>105-304</title>
+    </head>
+
+    <body>
+        <h1>
+        <a href="./105_303.html" rel="external" title="prev">≪</a>
+        105-304
+        <a href="./105_305.html" rel="external" title="next">≫</a>
+        </h1>
+        <div class='problem'>
+            <p>
+                <span id="grad1">　問題文　</span>
+            </p>
+            <p>
+                <ul><li>　　　目的　　　　　　　　　　　薬物治療</li></ul>
+<ol><li>高血糖改善　　　　　　　速効型インスリンを持続投与</li><li>脱水補正　　　　　　　　生理食塩液を点滴投与</li><li>アシドーシス補正　　　　ガベキサートメシル酸塩を点滴投与</li><li>高ナトリウム血症改善　　5%ブドウ糖を点滴投与</li><li>電解質バランス改善　　　炭酸水素ナトリウムを点滴投与</li></ol>    
+            </p>
+        </div>
+        <hr>
+
+        <input type="button" value="check ans" onclick="toggle_switch()"/>
+        
+        <div id='toggle'>
+        <div class='answer'>
+            <p>
+                <span id="grad2">　解答　　</span>
+            </p>
+            <p>
+            問304：2, 3問305：1, 2
+            </p>
+        </div>
+        <div class='description'>
+            <p>
+                <span id="grad2">　解説　　</span>
+            </p>
+            <h4>問304</h4>
+<p>ニボルマブ（オプシーボ）は、ヒト PD-1 に対するヒト型 IgG4 モノクローナル抗体です。オプジーボは、T 細胞表面の PD-1 と がん細胞の PD-1 リガンド（PD-L1 および PD-L2）との結合を阻害します。これにより、がん細胞により不応答となっていた抗原特異的 <strong>T 細胞を回復・活性化</strong>させ、抗腫瘍効果を示します。免疫活性化による代表的な副作用として、大腸炎や <strong>1 型糖尿病</strong>、免疫性血小板減少性紫斑病（ITP）などが知られています。（)</p>
+<p>選択肢 1 ですが<br/>T リンパ球の機能は活性化されています。低下ではありません。よって、選択肢 1 は誤りです。</p>
+<p>選択肢 2 は妥当な記述です。<br/>Ⅰ型糖尿病において、低値を示します。インスリンを作る時に出てくるペプチドなので、インスリン合成が低下すると低値になります。</p>
+<p>選択肢 3 は妥当な記述です。<br/>Ⅰ型糖尿病が疑われた場合には投与を中止し、インスリン製剤の投与等の適切な処置を行います。</p>
+<p>選択肢 4 ですが<br/>インフュージョンリアクションとは、薬剤投与中～投与開始後 24 時間以内に現れる症状の総称です。アレルギー様症状、発熱・炎症などです。よって、選択肢 4 は誤りです。</p>
+<p>選択肢 5 ですが<br/>Ⅰ型です。よって、選択肢 5 は誤りです。</p>
+<p>以上より、正解は 2,3 です。</p>
+<h4>問305</h4>
+<p>選択肢 1,2 は妥当な記述です。<br/>脱水補正は高血糖改善にもつながります。</p>
+<p>選択肢 3 ですが<br/>ガベキサートはタンパク質分解酵素阻害薬です。膵炎治療薬です。この患者に実施されるべきではないと考えられます。</p>
+<p>選択肢 4 ですが<br/>Na の値は高値ではありません。よって、選択肢 4 は誤りです。</p>
+<p>選択肢 5 ですが<br/>検査値における電解質、Na,Cl,K についてはわずかにどれも基準値から外れていますが、特にバランスが悪いわけではありません。優先すべきは高血糖改善です。選択肢 5 は誤りです。</p>
+<p>以上より、正解は 1,2 です。</p>
+            </p>
+        </div>
+        </div>
+    </body>
+    <script>
+    document.getElementById("toggle").style.display="none";
+    function toggle_switch(){
+        var x = document.getElementById("toggle");
+        if (x.style.display=="block"){
+            x.style.display="none";
+        }
+        else{
+            x.style.display="block";
+        }
+    }
+    </script>
+    

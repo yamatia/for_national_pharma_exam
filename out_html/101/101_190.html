@@ -1,0 +1,87 @@
+
+        <!DOCTYPE html>
+    <html lang="ja">
+    <style>
+    body
+    {
+        color: black;
+        background-color: white;
+    }
+    div{
+        font-size: 14px;
+    }
+    span
+    {
+        font-size: 18px;
+    }
+    #grad1{
+        background: linear-gradient(transparent 60%,#99e4f1 30%);
+        font-size: 18px;
+        font-weight: bold;
+    }
+    #grad2{
+        background: linear-gradient(transparent 60%,#fda1a1 30%);
+        font-size: 18px;
+        font-weight: bold;
+    }
+
+    </style>
+
+    <head>
+        <meta charset="UTF-8">
+        <title>101-190</title>
+    </head>
+
+    <body>
+        <h1>
+        <a href="./101_189.html" rel="external" title="prev">≪</a>
+        101-190
+        <a href="./101_191.html" rel="external" title="next">≫</a>
+        </h1>
+        <div class='problem'>
+            <p>
+                <span id="grad1">　問題文　</span>
+            </p>
+            <p>
+                <p>このがん化学療法施行前に行う遺伝子検査はどれか。2つ選べ。</p>
+<ol><li><em>EGFR</em></li><li><em>KRAS</em></li><li><em>UGT1A1</em></li><li><em>B-Raf</em></li><li><em>Bcr-Abl</em></li></ol>    
+            </p>
+        </div>
+        <hr>
+
+        <input type="button" value="check ans" onclick="toggle_switch()"/>
+        
+        <div id='toggle'>
+        <div class='answer'>
+            <p>
+                <span id="grad2">　解答　　</span>
+            </p>
+            <p>
+            2, 3
+            </p>
+        </div>
+        <div class='description'>
+            <p>
+                <span id="grad2">　解説　　</span>
+            </p>
+            <p>FOLFIRI　療法とは、FOLFOX　で用いられる OX＝オキサリプラチン　を IRI ＝ イリノテカン　に変えたレジメンです。</p>
+<p>イリノテカンはプロドラッグです。Ⅰ型DNAトポイソメラーゼ阻害薬です。カルボキシルエステラーゼによる代謝を受けて、活性代謝物である SN – 38 に変換されます。SN -38 は、グルクロン酸抱合により代謝されるのですが、UGT1A1 遺伝子 の多型によって副作用発現割合が高くなることが知られています。よって、UGT 1A1 の遺伝子検査を行います。</p>
+<p>また、ベバシズマブ（アバスチン）は、VEGF （血管内皮細胞増殖因子） を標的とする、モノクローナル抗体です。そして、今回変更となるパニツムマブ（ベクティビックス）は、EGFR （上皮細胞増殖因子）を標的とする、モノクローナル抗体です。パニツムマブは、KRAS 遺伝子野生型　の結腸・直腸がんに用いられます。よって、KRAS 遺伝子検査を行います。</p>
+<p>以上より、正解は 2,3 です。</p>
+            </p>
+        </div>
+        </div>
+    </body>
+    <script>
+    document.getElementById("toggle").style.display="none";
+    function toggle_switch(){
+        var x = document.getElementById("toggle");
+        if (x.style.display=="block"){
+            x.style.display="none";
+        }
+        else{
+            x.style.display="block";
+        }
+    }
+    </script>
+    

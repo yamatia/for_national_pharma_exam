@@ -1,0 +1,95 @@
+
+        <!DOCTYPE html>
+    <html lang="ja">
+    <style>
+    body
+    {
+        color: black;
+        background-color: white;
+    }
+    div{
+        font-size: 14px;
+    }
+    span
+    {
+        font-size: 18px;
+    }
+    #grad1{
+        background: linear-gradient(transparent 60%,#99e4f1 30%);
+        font-size: 18px;
+        font-weight: bold;
+    }
+    #grad2{
+        background: linear-gradient(transparent 60%,#fda1a1 30%);
+        font-size: 18px;
+        font-weight: bold;
+    }
+
+    </style>
+
+    <head>
+        <meta charset="UTF-8">
+        <title>101-314</title>
+    </head>
+
+    <body>
+        <h1>
+        <a href="./101_313.html" rel="external" title="prev">≪</a>
+        101-314
+        <a href="./101_315.html" rel="external" title="next">≫</a>
+        </h1>
+        <div class='problem'>
+            <p>
+                <span id="grad1">　問題文　</span>
+            </p>
+            <p>
+                <p>肺炎球菌ワクチンは、生物由来製品として指定されている。生物由来製品に関する記述のうち、正しいのはどれか。2つ選べ。</p>
+<ol><li>製造販売業者が、その製品等の感染症に関する知見に基づいた評価を定期的に報告する制度がある。</li><li>遺伝子組換え技術を応用して製造される生物由来製品の添付文書には、その旨を記載しなければならない。</li><li>製造業者が自らその製造を実地に管理しようとするときは、都道府県知事に届け出なければならない。</li><li>生物由来製品を廃棄する場合は、あらかじめ都道府県知事に届け出なければならない。</li></ol>    
+            </p>
+        </div>
+        <hr>
+
+        <input type="button" value="check ans" onclick="toggle_switch()"/>
+        
+        <div id='toggle'>
+        <div class='answer'>
+            <p>
+                <span id="grad2">　解答　　</span>
+            </p>
+            <p>
+            問314：2, 4問315：1, 2
+            </p>
+        </div>
+        <div class='description'>
+            <p>
+                <span id="grad2">　解説　　</span>
+            </p>
+            <h4>問314</h4>
+<p>選択肢 1 ですが<br/>肺炎球菌ワクチンは、６５歳以上の方や COPD など慢性の持病を持つ人の接種が推奨されています。高齢者にのみ接種できるということはありません。よって、選択肢 1 は誤りです。</p>
+<p>選択肢 2 は、正しい選択肢です。<br/>他には、ポリオ、インフルエンザ、B型肝炎、百日ぜき　などのワクチンが不活化ワクチンです。</p>
+<p>選択肢 3 ですが<br/>肺炎の原因ウイルスは、肺炎球菌だけではありません。従って、すべての肺炎予防効果はありません。よって、選択肢 3 は誤りです。</p>
+<p>選択肢 4 は、正しい選択肢です。<br/>以下　補足：不活化ワクチンの多くはタンパク質だから凍結を避ける　と考えてもいいと思います。ただし、日本脳炎、狂犬病、A型肝炎は不活化ワクチンだけど、凍結可能　なので注意が必要です。選択肢 1,3,5 が消しやすい問題なのであくまでも補足としての考え方です。補足　以上</p>
+<p>選択肢 5 ですが<br/>記述は「特定生物由来製品」についてです。つまり、血液製剤などについての記述です。ちなみにワクチンは「生物由来製品」です。よって、選択肢 5 は誤りです。</p>
+<p>以上より、正解は 2,4 です。</p>
+<h4>問315</h4>
+<p>選択肢 1,2 は、正しい選択肢です。</p>
+<p>選択肢 3 ですが<br/>製造業者が、自ら製造を管理しようとする場合には、製造所ごとに厚生労働大臣の承認を受けて医師や細菌学的知識を有する技術者を置かなければなりません。都道府県知事に届け出なければならないわけでは、ありません。よって、選択肢 3 は誤りです。</p>
+<p>選択肢 4 ですが<br/>生物由来製品の廃棄には、感染性廃棄物となるかに留意して適切に廃棄する必要があります。とはいえ、あらかじめの届け出は不要です。よって、選択肢 4 は誤りです。</p>
+<p>以上より、正解は 1,2 です。</p>
+            </p>
+        </div>
+        </div>
+    </body>
+    <script>
+    document.getElementById("toggle").style.display="none";
+    function toggle_switch(){
+        var x = document.getElementById("toggle");
+        if (x.style.display=="block"){
+            x.style.display="none";
+        }
+        else{
+            x.style.display="block";
+        }
+    }
+    </script>
+    

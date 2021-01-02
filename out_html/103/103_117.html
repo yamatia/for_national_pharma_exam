@@ -1,0 +1,88 @@
+
+        <!DOCTYPE html>
+    <html lang="ja">
+    <style>
+    body
+    {
+        color: black;
+        background-color: white;
+    }
+    div{
+        font-size: 14px;
+    }
+    span
+    {
+        font-size: 18px;
+    }
+    #grad1{
+        background: linear-gradient(transparent 60%,#99e4f1 30%);
+        font-size: 18px;
+        font-weight: bold;
+    }
+    #grad2{
+        background: linear-gradient(transparent 60%,#fda1a1 30%);
+        font-size: 18px;
+        font-weight: bold;
+    }
+
+    </style>
+
+    <head>
+        <meta charset="UTF-8">
+        <title>103-117</title>
+    </head>
+
+    <body>
+        <h1>
+        <a href="./103_116.html" rel="external" title="prev">≪</a>
+        103-117
+        <a href="./103_118.html" rel="external" title="next">≫</a>
+        </h1>
+        <div class='problem'>
+            <p>
+                <span id="grad1">　問題文　</span>
+            </p>
+            <p>
+                <p>結核菌に関する記述のうち、正しいのはどれか。2つ選べ。</p>
+<ol><li>結核菌は、外毒素を菌体外へ分泌する。</li><li>結核菌の細胞壁には、ペプチドグリカンやミコール酸が存在する。</li><li>気道から侵入した結核菌は、肺で肺胞マクロファージに貪食され、そのマクロファージ内で増殖する。</li><li>結核菌感染の既往の有無を調べるためのツベルクリン反応は、典型的なⅡ型アレルギーである。</li><li>結核予防に用いられている生ワクチンBCG株は、ヒト型結核菌の弱毒株である。</li></ol>    
+            </p>
+        </div>
+        <hr>
+
+        <input type="button" value="check ans" onclick="toggle_switch()"/>
+        
+        <div id='toggle'>
+        <div class='answer'>
+            <p>
+                <span id="grad2">　解答　　</span>
+            </p>
+            <p>
+            2, 3
+            </p>
+        </div>
+        <div class='description'>
+            <p>
+                <span id="grad2">　解説　　</span>
+            </p>
+            <p><span style="font-weight: 400;">選択肢 1 ですが<br/></span><span style="font-weight: 400;">結核菌は、外毒素を分泌しません。</span><span style="font-weight: 400;">※ただし、結核菌はグラム陽性菌の一種である</span><span style="font-weight: 400;">抗酸菌に属します。意識して覚えておくとよいです。</span></p>
+<p><span style="font-weight: 400;">選択肢 2,3 は、正しい記述です。<br/></span><span style="font-weight: 400;">ミコール酸の存在については、</span><span style="font-weight: 400;">抗結核菌薬であるイソニアジドのメカニズムが</span><span style="font-weight: 400;">ミコール酸の生合成阻害である点からも</span><span style="font-weight: 400;">判断できるのではないでしょうか。</span><span style="font-weight: 400;">また、結核菌はマクロファージ内で増殖　</span><span style="font-weight: 400;">というのはぜひ覚えておくとよいです。</span></p>
+<p><span style="font-weight: 400;">選択肢 4 ですが<br/></span><span style="font-weight: 400;">ツベルクリン反応は、Ⅳ型アレルギー反応です。</span><span style="font-weight: 400;">Ⅱ型ではありません。</span><span style="font-weight: 400;">よって、選択肢 4 は誤りです。</span><span style="font-weight: 400;">ちなみに、</span><span style="font-weight: 400;">Ⅱ型は細胞傷害型、細胞融解型です。</span><span style="font-weight: 400;">代表例は、溶血性貧血などです。</span></p>
+<p><span style="font-weight: 400;">選択肢 5 ですが<br/></span><span style="font-weight: 400;">BCGは、ウシ型結核菌の弱毒株です。</span><span style="font-weight: 400;">ヒト型ではありません。</span><span style="font-weight: 400;">よって、選択肢 5 は誤りです。</span></p>
+<p><span style="font-weight: 400;">以上より、正解は 2,3 です。</span></p>
+            </p>
+        </div>
+        </div>
+    </body>
+    <script>
+    document.getElementById("toggle").style.display="none";
+    function toggle_switch(){
+        var x = document.getElementById("toggle");
+        if (x.style.display=="block"){
+            x.style.display="none";
+        }
+        else{
+            x.style.display="block";
+        }
+    }
+    </script>
+    

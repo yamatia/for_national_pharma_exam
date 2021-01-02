@@ -1,0 +1,97 @@
+
+        <!DOCTYPE html>
+    <html lang="ja">
+    <style>
+    body
+    {
+        color: black;
+        background-color: white;
+    }
+    div{
+        font-size: 14px;
+    }
+    span
+    {
+        font-size: 18px;
+    }
+    #grad1{
+        background: linear-gradient(transparent 60%,#99e4f1 30%);
+        font-size: 18px;
+        font-weight: bold;
+    }
+    #grad2{
+        background: linear-gradient(transparent 60%,#fda1a1 30%);
+        font-size: 18px;
+        font-weight: bold;
+    }
+
+    </style>
+
+    <head>
+        <meta charset="UTF-8">
+        <title>102-280</title>
+    </head>
+
+    <body>
+        <h1>
+        <a href="./102_279.html" rel="external" title="prev">≪</a>
+        102-280
+        <a href="./102_281.html" rel="external" title="next">≫</a>
+        </h1>
+        <div class='problem'>
+            <p>
+                <span id="grad1">　問題文　</span>
+            </p>
+            <p>
+                <p>本剤を使用するにあたり、薬剤師が看護師に行うべき情報提供として適切なのはどれか。2つ選べ。</p>
+<ol><li>すぐに使用しない場合は、凍結させて保存する。</li><li>ライン内での凝集を防ぐため、必ず単独ラインで投与する。</li><li>凝集を防ぐため、電解質を含む輸液で希釈しない。</li><li>輸液フィルターを使用して投与する。</li><li>ポリ塩化ビニル製の輸液セットの使用を避けることが望ましい。</li></ol>    
+            </p>
+        </div>
+        <hr>
+
+        <input type="button" value="check ans" onclick="toggle_switch()"/>
+        
+        <div id='toggle'>
+        <div class='answer'>
+            <p>
+                <span id="grad2">　解答　　</span>
+            </p>
+            <p>
+            問280：2, 5問281：2, 5
+            </p>
+        </div>
+        <div class='description'>
+            <p>
+                <span id="grad2">　解説　　</span>
+            </p>
+            <h4>問280</h4>
+<p>選択肢 1 ですが<br/>これはリポソームについての記述です。よって、選択肢 1 は誤りです。</p>
+<p>選択肢 2 は、正しい記述です。</p>
+<p>選択肢 3 ですが<br/>これは PEG 製剤についての記述です。よって、選択肢 3 は誤りです。</p>
+<p>選択肢 4 ですが<br/>リピッドマイクロスフェアとは、選択肢 2 にあったように油をレシチンで乳化したエマルジョンです。表面が抗体で修飾されているわけでは、ありません。よって、選択肢 4 は誤りです。</p>
+<p>選択肢 5 は、正しい記述です。<br/>ちなみに、受動的に対応して、能動的ターゲティングというものもあります。これは、抗体などを用いたターゲティングのことです。</p>
+<p>以上より、正解は 2,5 です。</p>
+<h4>問281</h4>
+<p>選択肢 1 ですが<br/>一般的に、注射剤は凍結を避けます。よって、選択肢 1 は誤りです。</p>
+<p>選択肢 2 は、正しい記述です。</p>
+<p>選択肢 3 ですが<br/>電解質溶液で凝集といえばコロイド製剤です。代表例は、注射用アムホテリシン B です。本剤においては適切な情報提供ではないと考えられます。よって、選択肢 3 は誤りです。</p>
+<p>選択肢 4 ですが<br/>粒子がフィルター孔径よりも大きいため、用いません。よって、選択肢 4 は誤りです。</p>
+<p>選択肢 5 は、正しい記述です。<br/>可塑剤溶出のおそれがあるためです。</p>
+<p>以上より、正解は 2,5 です。</p>
+            </p>
+        </div>
+        </div>
+    </body>
+    <script>
+    document.getElementById("toggle").style.display="none";
+    function toggle_switch(){
+        var x = document.getElementById("toggle");
+        if (x.style.display=="block"){
+            x.style.display="none";
+        }
+        else{
+            x.style.display="block";
+        }
+    }
+    </script>
+    

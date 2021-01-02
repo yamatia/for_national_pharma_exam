@@ -1,0 +1,85 @@
+
+        <!DOCTYPE html>
+    <html lang="ja">
+    <style>
+    body
+    {
+        color: black;
+        background-color: white;
+    }
+    div{
+        font-size: 14px;
+    }
+    span
+    {
+        font-size: 18px;
+    }
+    #grad1{
+        background: linear-gradient(transparent 60%,#99e4f1 30%);
+        font-size: 18px;
+        font-weight: bold;
+    }
+    #grad2{
+        background: linear-gradient(transparent 60%,#fda1a1 30%);
+        font-size: 18px;
+        font-weight: bold;
+    }
+
+    </style>
+
+    <head>
+        <meta charset="UTF-8">
+        <title>102-332</title>
+    </head>
+
+    <body>
+        <h1>
+        <a href="./102_331.html" rel="external" title="prev">≪</a>
+        102-332
+        <a href="./102_333.html" rel="external" title="next">≫</a>
+        </h1>
+        <div class='problem'>
+            <p>
+                <span id="grad1">　問題文　</span>
+            </p>
+            <p>
+                <p>女性が、だるくてむくみがあるといって、かかりつけ薬局を訪れた。薬剤師は、処方医に対して以下のような提案をした。提案として最も優先順位が高いのはどれか。1つ選べ。</p>
+<ol><li>グリチルリチン酸一アンモニウム・グリシン・DL-メチオニン配合錠の服用中止を提案する。</li><li>塩化カリウム徐放錠の服用中止を提案する。</li><li>オルメサルタンメドキソミル錠の服用中止を提案する。</li><li>スピロノラクトンの追加を提案する。</li><li>フロセミドの追加を提案する。</li></ol>    
+            </p>
+        </div>
+        <hr>
+
+        <input type="button" value="check ans" onclick="toggle_switch()"/>
+        
+        <div id='toggle'>
+        <div class='answer'>
+            <p>
+                <span id="grad2">　解答　　</span>
+            </p>
+            <p>
+            1
+            </p>
+        </div>
+        <div class='description'>
+            <p>
+                <span id="grad2">　解説　　</span>
+            </p>
+            <p>高血圧、むくみ、低 K　から、偽アルドステロン症が疑われます。そのため、グリチルリチン酸を含む処方１の服用中止の提案が最も優先されると考えられます。</p>
+<p>従って、正解は 1 です。</p>
+            </p>
+        </div>
+        </div>
+    </body>
+    <script>
+    document.getElementById("toggle").style.display="none";
+    function toggle_switch(){
+        var x = document.getElementById("toggle");
+        if (x.style.display=="block"){
+            x.style.display="none";
+        }
+        else{
+            x.style.display="block";
+        }
+    }
+    </script>
+    

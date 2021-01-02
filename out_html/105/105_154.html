@@ -1,0 +1,90 @@
+
+        <!DOCTYPE html>
+    <html lang="ja">
+    <style>
+    body
+    {
+        color: black;
+        background-color: white;
+    }
+    div{
+        font-size: 14px;
+    }
+    span
+    {
+        font-size: 18px;
+    }
+    #grad1{
+        background: linear-gradient(transparent 60%,#99e4f1 30%);
+        font-size: 18px;
+        font-weight: bold;
+    }
+    #grad2{
+        background: linear-gradient(transparent 60%,#fda1a1 30%);
+        font-size: 18px;
+        font-weight: bold;
+    }
+
+    </style>
+
+    <head>
+        <meta charset="UTF-8">
+        <title>105-154</title>
+    </head>
+
+    <body>
+        <h1>
+        <a href="./105_153.html" rel="external" title="prev">≪</a>
+        105-154
+        <a href="./105_155.html" rel="external" title="next">≫</a>
+        </h1>
+        <div class='problem'>
+            <p>
+                <span id="grad1">　問題文　</span>
+            </p>
+            <p>
+                <p>催眠・鎮静作用をもつ薬物に関する記述のうち、正しいのはどれか。2つ選べ。</p>
+<ol><li>ミダゾラムは、γ-アミノ酪酸GABA<sub>A</sub>受容体のGABA結合部位に結合し、Cl<sup>－</sup>チャネルの開口を促進することで鎮静・催眠作用を示す。</li><li>ジフェンヒドラミンは、中枢神経系のヒスタミンH<sub>1</sub>受容体を遮断し、眠気を誘発する。</li><li>ラメルテオンは、メラトニン受容体を遮断し、睡眠覚醒リズムを調節する。</li><li>デクスメデトミジンは、アドレナリンα<sub>2</sub>受容体を刺激し、ノルアドレナリン放出を抑制することで鎮静作用を示す。</li><li>スボレキサントは、ドパミンD<sub>2</sub>受容体を遮断し、覚醒状態から睡眠状態へと移行させる。</li></ol>    
+            </p>
+        </div>
+        <hr>
+
+        <input type="button" value="check ans" onclick="toggle_switch()"/>
+        
+        <div id='toggle'>
+        <div class='answer'>
+            <p>
+                <span id="grad2">　解答　　</span>
+            </p>
+            <p>
+            2, 4
+            </p>
+        </div>
+        <div class='description'>
+            <p>
+                <span id="grad2">　解説　　</span>
+            </p>
+            <p>選択肢 1 ですが<br/>ミダゾラムは Bz（ベンゾジアゼピン） 系催眠鎮静剤の一種です。Bz 系は、GABA A 受容体に含まれる「Bz 受容体」と呼ばれる部分に結合し、GABA<sub>A</sub> 受容体機能を亢進し、GABA 作用を増強することで効果を示します。「GABA 結合部位」に結合するわけではありません。よって、選択肢 1 は誤りです。</p>
+<p>選択肢 2 は妥当な記述です。<br/>商品名 レスタミン などです。</p>
+<p>選択肢 3 ですが<br/>ラメルテオンは、メラトニン受容体を「刺激」し、睡眠覚醒リズムを調節します。「遮断」ではありません。よって、選択肢 3 は誤りです。</p>
+<p>選択肢 4 は妥当な記述です。<br/>α2 作動性鎮静剤です。呼吸抑制が少ないという特徴を有します。</p>
+<p>選択肢 5 ですが<br/>スボレキサント（ベルソムラ）は、選択的デュアルオレキシン受容体拮抗薬です。覚醒を維持するオレキシンの受容体を遮断することで寝つきをよくし、眠りを維持します。ドパミン D2 遮断薬ではありません。よって、選択肢 5 は誤りです。</p>
+<p>以上より、正解は 2,4 です。</p>
+<p>類題 </p>
+            </p>
+        </div>
+        </div>
+    </body>
+    <script>
+    document.getElementById("toggle").style.display="none";
+    function toggle_switch(){
+        var x = document.getElementById("toggle");
+        if (x.style.display=="block"){
+            x.style.display="none";
+        }
+        else{
+            x.style.display="block";
+        }
+    }
+    </script>
+    

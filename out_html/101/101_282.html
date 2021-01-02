@@ -1,0 +1,95 @@
+
+        <!DOCTYPE html>
+    <html lang="ja">
+    <style>
+    body
+    {
+        color: black;
+        background-color: white;
+    }
+    div{
+        font-size: 14px;
+    }
+    span
+    {
+        font-size: 18px;
+    }
+    #grad1{
+        background: linear-gradient(transparent 60%,#99e4f1 30%);
+        font-size: 18px;
+        font-weight: bold;
+    }
+    #grad2{
+        background: linear-gradient(transparent 60%,#fda1a1 30%);
+        font-size: 18px;
+        font-weight: bold;
+    }
+
+    </style>
+
+    <head>
+        <meta charset="UTF-8">
+        <title>101-282</title>
+    </head>
+
+    <body>
+        <h1>
+        <a href="./101_281.html" rel="external" title="prev">≪</a>
+        101-282
+        <a href="./101_283.html" rel="external" title="next">≫</a>
+        </h1>
+        <div class='problem'>
+            <p>
+                <span id="grad1">　問題文　</span>
+            </p>
+            <p>
+                <p>添加剤：ベンザルコニウム塩化物、塩化ナトリウム、リン酸二水素ナトリウム、無水リン酸一水素ナトリウム、水酸化ナトリウム、アルギン酸</p>
+<ol><li>ベンザルコニウム塩化物は、主薬の酸化防止剤として添加されている。</li><li>塩化ナトリウムは、等張化剤として添加されている。</li><li>リン酸二水素ナトリウムは、着色剤として添加されている。</li><li>水酸化ナトリウムは、保存剤として添加されている。</li><li>アルギン酸は、主薬の眼表面での滞留性向上の目的で添加されている。</li></ol>    
+            </p>
+        </div>
+        <hr>
+
+        <input type="button" value="check ans" onclick="toggle_switch()"/>
+        
+        <div id='toggle'>
+        <div class='answer'>
+            <p>
+                <span id="grad2">　解答　　</span>
+            </p>
+            <p>
+            問282：2, 4問283：2, 5
+            </p>
+        </div>
+        <div class='description'>
+            <p>
+                <span id="grad2">　解説　　</span>
+            </p>
+            <h4>問282</h4>
+<p>選択肢 1,2 ですが<br/>まばたきをすると、眼の表面に一定量の涙が送り込まれます。すると、薬が涙の流れにのってすぐに流れていってしまいます。そのため、点眼後は目を閉じ、目頭をおさえることが推奨されます。よって、選択肢 1 は誤りです。選択肢 2 は、正しい記述です。</p>
+<p>選択肢 3 ですが<br/>夕方は、2 種類の点眼を指す必要があります。先に点眼した目薬を、次に点眼する目薬が押し流してしまわぬよう、5 分程度間隔を空けて点眼することが望ましいです。よって、選択肢 3 は誤りです。</p>
+<p>選択肢 4 は、正しい選択肢です。<br/>カルテオロールは１日１回の点眼でよいように、粘性を高めて滞留性を向上させています。そのため、先に点眼してしまうと次の点眼の吸収に影響を与えます。影響を避けるためにカルテオロールは後に点眼します。つまりレボフロキサシンを先に点眼します。</p>
+<p>以上より、正解は 2,4 です。</p>
+<h4>問283</h4>
+<p>選択肢 1 ですが<br/>ベンザルコニウム塩化物は、保存剤として添加されています。酸化防止剤としてでは、ありません。</p>
+<p>選択肢 2 は、正しい選択肢です。</p>
+<p>選択肢 3 ですが<br/>リン酸二水素ナトリウムは、緩衝材として添加されています。着色剤としてでは、ありません。</p>
+<p>選択肢 4 ですが<br/>水酸化ナトリウムは、pH 調整剤として添加されています。保存剤としてでは、ありません。</p>
+<p>選択肢 5 は、正しい記述です。</p>
+<p>以上より、正解は 2,5 です。</p>
+            </p>
+        </div>
+        </div>
+    </body>
+    <script>
+    document.getElementById("toggle").style.display="none";
+    function toggle_switch(){
+        var x = document.getElementById("toggle");
+        if (x.style.display=="block"){
+            x.style.display="none";
+        }
+        else{
+            x.style.display="block";
+        }
+    }
+    </script>
+    

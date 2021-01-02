@@ -1,0 +1,91 @@
+
+        <!DOCTYPE html>
+    <html lang="ja">
+    <style>
+    body
+    {
+        color: black;
+        background-color: white;
+    }
+    div{
+        font-size: 14px;
+    }
+    span
+    {
+        font-size: 18px;
+    }
+    #grad1{
+        background: linear-gradient(transparent 60%,#99e4f1 30%);
+        font-size: 18px;
+        font-weight: bold;
+    }
+    #grad2{
+        background: linear-gradient(transparent 60%,#fda1a1 30%);
+        font-size: 18px;
+        font-weight: bold;
+    }
+
+    </style>
+
+    <head>
+        <meta charset="UTF-8">
+        <title>103-250</title>
+    </head>
+
+    <body>
+        <h1>
+        <a href="./103_249.html" rel="external" title="prev">≪</a>
+        103-250
+        <a href="./103_251.html" rel="external" title="next">≫</a>
+        </h1>
+        <div class='problem'>
+            <p>
+                <span id="grad1">　問題文　</span>
+            </p>
+            <p>
+                <p>この患者が服用している薬剤の中に追加薬剤と併用禁忌のものが2つあるため、処方を追加した医師に疑義照会を行った。併用によって生じる副作用に関する記述のうち、正しいのはどれか。2つ選べ。</p>
+<ol><li>アドレナリンα<sub>2</sub>受容体が過剰に刺激され、著しい血圧低下が現れる。</li><li>Ca<sup>2+</sup>チャネルが過剰に阻害され、著しい血圧上昇が現れる。</li><li>γ-アミノ酪酸GABA<sub>A</sub>受容体が過剰に活性化され、著しい筋弛緩作用が現れる。</li><li>メラトニン受容体が過剰に刺激され、催眠作用が著しく増強される。</li><li>HMG-CoA還元酵素が過剰に阻害され、横絞筋融解症の発症リスクが高まる。</li></ol>    
+            </p>
+        </div>
+        <hr>
+
+        <input type="button" value="check ans" onclick="toggle_switch()"/>
+        
+        <div id='toggle'>
+        <div class='answer'>
+            <p>
+                <span id="grad2">　解答　　</span>
+            </p>
+            <p>
+            問250：2, 4問251：1, 4
+            </p>
+        </div>
+        <div class='description'>
+            <p>
+                <span id="grad2">　解説　　</span>
+            </p>
+            <h4>問250</h4>
+<p><span style="font-weight: 400;">ロラゼパムは</span><span style="font-weight: 400;">Bz 系抗不安薬です。</span><span style="font-weight: 400;">チザニジンは</span><span style="font-weight: 400;">α</span><span style="font-weight: 400;">2</span><span style="font-weight: 400;"> 受容体作動薬です。</span><span style="font-weight: 400;">筋弛緩薬として用います。</span><span style="font-weight: 400;">ラメルテオン（ロゼレム）は</span><span style="font-weight: 400;">メラトニン受容体作動薬です。</span><span style="font-weight: 400;">ニフェジピンは</span><span style="font-weight: 400;">Ca拮抗薬で降圧薬です。</span><span style="font-weight: 400;">プラバスタチンは</span><span style="font-weight: 400;">HMG-CoA還元酵素阻害薬です。</span></p>
+<p><span style="font-weight: 400;">降圧薬を飲んでいるため、</span><span style="font-weight: 400;">今回の処方のチザニジンの作用により</span><span style="font-weight: 400;">血圧低下のおそれがあります。</span><span style="font-weight: 400;">起立性低血圧に注意してもらうために、</span><span style="font-weight: 400;">ゆっくり立ち上がり</span><span style="font-weight: 400;">めまいやふらつきに注意するよう指導します。</span></p>
+<p><span style="font-weight: 400;">また、</span><span style="font-weight: 400;">ロラゼパムを毎食後に飲む処方が</span><span style="font-weight: 400;">初めて出ているため、</span><span style="font-weight: 400;">眠気、注意力・集中力・反射運動能力等の</span><span style="font-weight: 400;">低下が起こることがあるので</span><span style="font-weight: 400;">危険を伴う機械の操作を避けるよう指導します。</span></p>
+<p><span style="font-weight: 400;">以上より、</span><span style="font-weight: 400;">問250 の正解は 2,4 です。</span></p>
+<h4>問251</h4>
+<p><span style="font-weight: 400;">チザニジン、及びラメルテオンが、</span><span style="font-weight: 400;">CYP1A2 により代謝されるので、</span><span style="font-weight: 400;">フルボキサミンと併用禁忌です。</span><span style="font-weight: 400;">フルボキサミンにより</span><span style="font-weight: 400;">CYP1A2 が阻害されるため</span><span style="font-weight: 400;">それぞれの薬効が過剰になることを避けます。</span></p>
+<p><span style="font-weight: 400;">従って、問 251 の正解は 1,4 です。</span></p>
+            </p>
+        </div>
+        </div>
+    </body>
+    <script>
+    document.getElementById("toggle").style.display="none";
+    function toggle_switch(){
+        var x = document.getElementById("toggle");
+        if (x.style.display=="block"){
+            x.style.display="none";
+        }
+        else{
+            x.style.display="block";
+        }
+    }
+    </script>
+    

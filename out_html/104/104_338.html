@@ -1,0 +1,90 @@
+
+        <!DOCTYPE html>
+    <html lang="ja">
+    <style>
+    body
+    {
+        color: black;
+        background-color: white;
+    }
+    div{
+        font-size: 14px;
+    }
+    span
+    {
+        font-size: 18px;
+    }
+    #grad1{
+        background: linear-gradient(transparent 60%,#99e4f1 30%);
+        font-size: 18px;
+        font-weight: bold;
+    }
+    #grad2{
+        background: linear-gradient(transparent 60%,#fda1a1 30%);
+        font-size: 18px;
+        font-weight: bold;
+    }
+
+    </style>
+
+    <head>
+        <meta charset="UTF-8">
+        <title>104-338</title>
+    </head>
+
+    <body>
+        <h1>
+        <a href="./104_337.html" rel="external" title="prev">≪</a>
+        104-338
+        <a href="./104_339.html" rel="external" title="next">≫</a>
+        </h1>
+        <div class='problem'>
+            <p>
+                <span id="grad1">　問題文　</span>
+            </p>
+            <p>
+                <p>患者は両薬剤の違いについて気にしていた。八味丸と八味丸エキス顆粒の違いとして適切なのはどれか。2つ選べ。</p>
+<ol><li>八味丸の方が八味丸エキス顆粒より繊維質の含有量が多い。</li><li>八味丸の方が八味丸エキス顆粒より全体量に対する水溶性成分が多い。</li><li>八味丸の方が八味丸エキス顆粒より全体量に対する脂溶性成分が多い。</li><li>八味丸エキス顆粒は構成生薬を粉末にし、混合して製造する。</li><li>八味丸は八味丸エキス顆粒にハチミツを加えて丸くして製造する。</li></ol>    
+            </p>
+        </div>
+        <hr>
+
+        <input type="button" value="check ans" onclick="toggle_switch()"/>
+        
+        <div id='toggle'>
+        <div class='answer'>
+            <p>
+                <span id="grad2">　解答　　</span>
+            </p>
+            <p>
+            1, 3
+            </p>
+        </div>
+        <div class='description'>
+            <p>
+                <span id="grad2">　解説　　</span>
+            </p>
+            <p><span style="font-weight: 400;">丸剤は、構成生薬を粉にして、蜂蜜などで丸剤にしたものです。</span><span style="font-weight: 400;">エキス製剤は、構成生薬を煎じてその成分を抽出し、加工したものです。</span></p>
+<p><span style="font-weight: 400;">選択肢 1 は妥当な記述です。<br/>例え話としては、レタスを刻んで丸くしたものには繊維が入っていますが、レタスにお湯をかけて、そのお湯の方を濃縮して丸めたものには、せいぜい水溶性の繊維しか入っていないと考えられます。よって、「八味丸」の方が、繊維質が多いと判断することができるのではないでしょうか。</span></p>
+<p><span style="font-weight: 400;">選択肢 2 ですが<br/></span><span style="font-weight: 400;">エキスの方が、水溶性の成分メインでできているイメージになります。よって、選択肢 2 は誤りです。</span></p>
+<p><span style="font-weight: 400;">選択肢 3 は妥当な記述です。</span></p>
+<p><span style="font-weight: 400;">選択肢 4 ですが<br/></span><span style="font-weight: 400;">エキス顆粒は煎じて成分を抽出して、加工したものです。よって、選択肢 4 は誤りです。</span></p>
+<p><span style="font-weight: 400;">選択肢 5 ですが<br/></span><span style="font-weight: 400;">生薬を粉にして、ハチミツ等を加えて丸くします。「エキス顆粒に」ではありません。よって、選択肢 5 は誤りです。</span></p>
+<p><span style="font-weight: 400;">以上より、正解は 1,3 です。</span></p>
+            </p>
+        </div>
+        </div>
+    </body>
+    <script>
+    document.getElementById("toggle").style.display="none";
+    function toggle_switch(){
+        var x = document.getElementById("toggle");
+        if (x.style.display=="block"){
+            x.style.display="none";
+        }
+        else{
+            x.style.display="block";
+        }
+    }
+    </script>
+    

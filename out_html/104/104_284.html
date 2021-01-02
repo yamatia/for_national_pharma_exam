@@ -1,0 +1,89 @@
+
+        <!DOCTYPE html>
+    <html lang="ja">
+    <style>
+    body
+    {
+        color: black;
+        background-color: white;
+    }
+    div{
+        font-size: 14px;
+    }
+    span
+    {
+        font-size: 18px;
+    }
+    #grad1{
+        background: linear-gradient(transparent 60%,#99e4f1 30%);
+        font-size: 18px;
+        font-weight: bold;
+    }
+    #grad2{
+        background: linear-gradient(transparent 60%,#fda1a1 30%);
+        font-size: 18px;
+        font-weight: bold;
+    }
+
+    </style>
+
+    <head>
+        <meta charset="UTF-8">
+        <title>104-284</title>
+    </head>
+
+    <body>
+        <h1>
+        <a href="./104_283.html" rel="external" title="prev">≪</a>
+        104-284
+        <a href="./104_285.html" rel="external" title="next">≫</a>
+        </h1>
+        <div class='problem'>
+            <p>
+                <span id="grad1">　問題文　</span>
+            </p>
+            <p>
+                <p>前問での提案の理由として最も適切なのはどれか。1つ選べ。</p>
+<ol><li>初回通過効果の回避</li><li>有効血中濃度の持続</li><li>速やかな薬効の発現</li><li>バイオアベイラビリティの改善</li><li>副作用の回避</li></ol>    
+            </p>
+        </div>
+        <hr>
+
+        <input type="button" value="check ans" onclick="toggle_switch()"/>
+        
+        <div id='toggle'>
+        <div class='answer'>
+            <p>
+                <span id="grad2">　解答　　</span>
+            </p>
+            <p>
+            問284：2問285：3
+            </p>
+        </div>
+        <div class='description'>
+            <p>
+                <span id="grad2">　解説　　</span>
+            </p>
+            <h4>問284</h4>
+<p>問285 とまとめて解説します。</p>
+<h4>問285</h4>
+<p><span style="font-weight: 400;">がん性疼痛を強オピオイドでコントロールしているが、突出痛に対し、コントロール不能状態の患者です。突出痛は、</span><span style="font-weight: 400;">発生が急で、持続時間が短く、数十分のうちに自然に軽減することが特徴です。</span></p>
+<p><span style="font-weight: 400;">そのため、</span><span style="font-weight: 400;">オキシコドン散という「散剤」よりも、より速く血中濃度が有効濃度に達するような剤形を用いることで、<strong>速やかな薬効発揮を期待</strong>します。さらにモルヒネと比較すると、フェンタニルは活性代謝を受ける必要がない点も、速やかな薬効発現という点からより推奨できると考えられます。具体的には、アブストラル<strong>舌下錠</strong>が想定されます。</span></p>
+<p><span style="font-weight: 400;">以上より、問284 の正解は 2 です。<br/></span><span style="font-weight: 400;">問285 の正解は 3 です。</span></p>
+            </p>
+        </div>
+        </div>
+    </body>
+    <script>
+    document.getElementById("toggle").style.display="none";
+    function toggle_switch(){
+        var x = document.getElementById("toggle");
+        if (x.style.display=="block"){
+            x.style.display="none";
+        }
+        else{
+            x.style.display="block";
+        }
+    }
+    </script>
+    

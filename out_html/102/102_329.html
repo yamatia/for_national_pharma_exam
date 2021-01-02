@@ -1,0 +1,87 @@
+
+        <!DOCTYPE html>
+    <html lang="ja">
+    <style>
+    body
+    {
+        color: black;
+        background-color: white;
+    }
+    div{
+        font-size: 14px;
+    }
+    span
+    {
+        font-size: 18px;
+    }
+    #grad1{
+        background: linear-gradient(transparent 60%,#99e4f1 30%);
+        font-size: 18px;
+        font-weight: bold;
+    }
+    #grad2{
+        background: linear-gradient(transparent 60%,#fda1a1 30%);
+        font-size: 18px;
+        font-weight: bold;
+    }
+
+    </style>
+
+    <head>
+        <meta charset="UTF-8">
+        <title>102-329</title>
+    </head>
+
+    <body>
+        <h1>
+        <a href="./102_328.html" rel="external" title="prev">≪</a>
+        102-329
+        <a href="./102_330.html" rel="external" title="next">≫</a>
+        </h1>
+        <div class='problem'>
+            <p>
+                <span id="grad1">　問題文　</span>
+            </p>
+            <p>
+                <ul><li>　　　CHDF　　　　　　　　CKD　　　　　　　DIC</li></ul>
+<ol><li>持続的血液濾過透析法　　慢性腎臓病　　溶血性尿毒症症候群</li><li>持続的血液濾過透析法　　慢性腎臓病　　播種性血管内凝固症候群</li><li>持続的血液濾過透析法　　急性腎不全　　溶血性尿毒症症候群</li><li>持続的血液濾過透析法　　急性腎不全　　播種性血管内凝固症候群</li><li>腹膜透析法　　　　　　　慢性腎臓病　　溶血性尿毒症症候群</li><li>腹膜透析法　　　　　　　慢性腎臓病　　播種性血管内凝固症候群</li><li>腹膜透析法　　　　　　　急性腎不全　　溶血性尿毒症症候群</li><li>腹膜透析法　　　　　　　急性腎不全　　播種性血管内凝固症候群</li></ol>    
+            </p>
+        </div>
+        <hr>
+
+        <input type="button" value="check ans" onclick="toggle_switch()"/>
+        
+        <div id='toggle'>
+        <div class='answer'>
+            <p>
+                <span id="grad2">　解答　　</span>
+            </p>
+            <p>
+            2
+            </p>
+        </div>
+        <div class='description'>
+            <p>
+                <span id="grad2">　解説　　</span>
+            </p>
+            <p>CKD は、慢性腎臓病の略語です。<br/>CHFD は、持続的血液濾過透析法です。<br/>DIC は、播種性血管内凝固症候群　です。<br/>以上より、正解は 2 です。</p>
+<p>ちなみに、腹膜透析法は、PD　です。PD：Peritoneal Dialysis　</p>
+<p>急性、慢性がそれぞれ　acute、 chronic　です。</p>
+<p>溶血性尿毒症症候群は、HUS　です。HUS：hemolytic-uremic syndrom</p>
+            </p>
+        </div>
+        </div>
+    </body>
+    <script>
+    document.getElementById("toggle").style.display="none";
+    function toggle_switch(){
+        var x = document.getElementById("toggle");
+        if (x.style.display=="block"){
+            x.style.display="none";
+        }
+        else{
+            x.style.display="block";
+        }
+    }
+    </script>
+    

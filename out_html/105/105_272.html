@@ -1,0 +1,94 @@
+
+        <!DOCTYPE html>
+    <html lang="ja">
+    <style>
+    body
+    {
+        color: black;
+        background-color: white;
+    }
+    div{
+        font-size: 14px;
+    }
+    span
+    {
+        font-size: 18px;
+    }
+    #grad1{
+        background: linear-gradient(transparent 60%,#99e4f1 30%);
+        font-size: 18px;
+        font-weight: bold;
+    }
+    #grad2{
+        background: linear-gradient(transparent 60%,#fda1a1 30%);
+        font-size: 18px;
+        font-weight: bold;
+    }
+
+    </style>
+
+    <head>
+        <meta charset="UTF-8">
+        <title>105-272</title>
+    </head>
+
+    <body>
+        <h1>
+        <a href="./105_271.html" rel="external" title="prev">≪</a>
+        105-272
+        <a href="./105_273.html" rel="external" title="next">≫</a>
+        </h1>
+        <div class='problem'>
+            <p>
+                <span id="grad1">　問題文　</span>
+            </p>
+            <p>
+                <p>遺伝子多型検査の結果、ホモの変異を有することが判明し、医師は代替薬について薬剤師に相談した。医師に提案すべき抗血栓薬として最も適切なのはどれか。1つ選べ。</p>
+<ol><li>アピキサバン錠</li><li>シロスタゾール錠</li><li>ダビガトランエテキシラートメタンスルホン酸塩カプセル</li><li>チクロピジン塩酸塩錠</li><li>リバーロキサバン錠</li></ol>    
+            </p>
+        </div>
+        <hr>
+
+        <input type="button" value="check ans" onclick="toggle_switch()"/>
+        
+        <div id='toggle'>
+        <div class='answer'>
+            <p>
+                <span id="grad2">　解答　　</span>
+            </p>
+            <p>
+            問272：1問273：1
+            </p>
+        </div>
+        <div class='description'>
+            <p>
+                <span id="grad2">　解説　　</span>
+            </p>
+            <h4>問272</h4>
+<p>ワルファリンの薬効に遺伝子多型が影響する薬物代謝酵素は、CYP2C9 及び、VKORC1 です。</p>
+<p>以上より、正解は 1 です。</p>
+<p>類題 </p>
+<h4>問273</h4>
+<p>ワルファリンの代替薬なので、アピキサバン、ダビガトラン、リバーロキサバンなどが考えられます。シロスタゾール、チクロピジンは「抗血小板薬」なので、不適切と考えられます。</p>
+<p>ちなみに<br/>抗血小板薬と、抗凝固薬ですが、共に血をサラサラにする薬という点では共通しています。</p>
+<p>血栓症の発生に関して、「動脈」では血小板が、「静脈などで血液が滞るために起こる血栓症」では凝固因子の働きが重要です。そのため、深部静脈血栓塞栓症である本問の患者に対しては、抗凝固薬であるワルファリン等が用いられていると考えられます。</p>
+<p>ダビガトラン（プラザキサ）、リバーロキサバン（イグザレルト）ですが、共にイトラコナゾールとの併用が禁忌です。P-gp 阻害により、血中濃度上昇し、出血リスク上昇が知られています。また、プラザキサについては、深部静脈血栓塞栓症について、本試験時点において適用がありません。</p>
+<p>従って<br/>提案すべき抗血栓薬は、アピキサバン（エリキュース）と考えられます。</p>
+<p>以上より、正解は 1 です。</p>
+            </p>
+        </div>
+        </div>
+    </body>
+    <script>
+    document.getElementById("toggle").style.display="none";
+    function toggle_switch(){
+        var x = document.getElementById("toggle");
+        if (x.style.display=="block"){
+            x.style.display="none";
+        }
+        else{
+            x.style.display="block";
+        }
+    }
+    </script>
+    

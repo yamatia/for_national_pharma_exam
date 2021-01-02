@@ -1,0 +1,99 @@
+
+        <!DOCTYPE html>
+    <html lang="ja">
+    <style>
+    body
+    {
+        color: black;
+        background-color: white;
+    }
+    div{
+        font-size: 14px;
+    }
+    span
+    {
+        font-size: 18px;
+    }
+    #grad1{
+        background: linear-gradient(transparent 60%,#99e4f1 30%);
+        font-size: 18px;
+        font-weight: bold;
+    }
+    #grad2{
+        background: linear-gradient(transparent 60%,#fda1a1 30%);
+        font-size: 18px;
+        font-weight: bold;
+    }
+
+    </style>
+
+    <head>
+        <meta charset="UTF-8">
+        <title>102-302</title>
+    </head>
+
+    <body>
+        <h1>
+        <a href="./102_301.html" rel="external" title="prev">≪</a>
+        102-302
+        <a href="./102_303.html" rel="external" title="next">≫</a>
+        </h1>
+        <div class='problem'>
+            <p>
+                <span id="grad1">　問題文　</span>
+            </p>
+            <p>
+                <p>配合変化について検討するために、ブロムヘキシン塩酸塩注射剤の特徴について調査したい。医薬品インタビューフォームから入手できない情報はどれか。1つ選べ。</p>
+<ol><li>製剤の安定性に関するデータ</li><li>有効成分の安定性に関するデータ</li><li>アンプル開封後の使用期限</li><li>浸透圧比</li><li>注射液のpH</li></ol>    
+            </p>
+        </div>
+        <hr>
+
+        <input type="button" value="check ans" onclick="toggle_switch()"/>
+        
+        <div id='toggle'>
+        <div class='answer'>
+            <p>
+                <span id="grad2">　解答　　</span>
+            </p>
+            <p>
+            問302：1, 5問303：3
+            </p>
+        </div>
+        <div class='description'>
+            <p>
+                <span id="grad2">　解説　　</span>
+            </p>
+            <h4>問302</h4>
+<p>選択肢 1 は、正しい記述です。<br/><strong>フロセミド</strong>は、<strong>代表的塩基性注射剤</strong>です。塩基性注射剤であれば製品の pH が塩基性のはずです。A のスケールでは、製品の pH が 2.8、B のスケールでは、製品の pH が 9.4 と読み取ることができ、B がフロセミドとわかります。※フロセミド注射剤は、注射剤として溶かす液の影響で塩基性です。フロセミド自体は、酸性であることに注意が必要です。（）。</p>
+<p>選択肢 2 ですが<br/>緩衝性とは、酸や塩基を入れた時に pH 変動がどれくらいあるか　です。「緩衝性が強い」とは、酸や塩基を入れても pH があまり変動しないということです。</p>
+<p>A は、0.1 mol/L の HCl を 10mL 入れると pH が 2弱 変化しています。（酸性薬物に対して、酸を加えた変化。）・・・１</p>
+<p>0.1 mol/L の NaOH を 0.2mL 入れても、同様に pH が 2弱　変化しています。（酸性薬物に対して、塩基を加えた変化。）・・・２</p>
+<p>一方、B は、0.1 mol/L の HCL を 0.1 mL 入れただけで pH が約 3 変化しています。（塩基性薬物に、酸を加えた変化。※この結果は、「2」 と比較する。）</p>
+<p>0.1 mol/L の NaOH を 10mL 入れると pH が 3 強変化しています。（塩基性薬物に、塩基を加えた変化。※この結果は、「1」 と比較する。）</p>
+<p>以上より、明らかに B の方が緩衝性が弱いです。よって、選択肢 2 は誤りです。</p>
+<p>選択肢 3 ですが<br/>pH 2.8 の A と pH 9.4 の B を混ぜるので、2.8 ~ 9.4 の間 と考えられます。4.7 ~ 6.3 になるとはいえません。よって、選択肢 3 は誤りです。</p>
+<p>選択肢 4,5 ですが<br/>フラッシュしないと白濁すると考えられます。よって、選択肢 4 は誤りです。<br/>選択肢 5 は、正しい記述です。</p>
+<p>以上より、正解は 1,5 です。</p>
+<h4>問303</h4>
+<p>インタビューフォームから、添付文書の情報に加えて、臨床試験情報、体内動態情報、製剤情報等について更に詳しくわかります。</p>
+<p>選択肢 1,2 ですが<br/>製剤や有効成分の安定性については、例えば加速試験や過酷試験についての結果がインタビューフォーム（IF）から入手できます。</p>
+<p>選択肢 4,5 のような<br/>製剤の物理的情報については、IF から入手できます。アンプル開封後の使用期限については、アンプル開封したら即使用する前提なので、そのようなイレギュラーなことにまで検査は行われておらず、IF からであってもわからないと考えられます。</p>
+<p>以上より、正解は 3 です。<br/>参考）</p>
+            </p>
+        </div>
+        </div>
+    </body>
+    <script>
+    document.getElementById("toggle").style.display="none";
+    function toggle_switch(){
+        var x = document.getElementById("toggle");
+        if (x.style.display=="block"){
+            x.style.display="none";
+        }
+        else{
+            x.style.display="block";
+        }
+    }
+    </script>
+    

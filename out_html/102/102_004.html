@@ -1,0 +1,86 @@
+
+        <!DOCTYPE html>
+    <html lang="ja">
+    <style>
+    body
+    {
+        color: black;
+        background-color: white;
+    }
+    div{
+        font-size: 14px;
+    }
+    span
+    {
+        font-size: 18px;
+    }
+    #grad1{
+        background: linear-gradient(transparent 60%,#99e4f1 30%);
+        font-size: 18px;
+        font-weight: bold;
+    }
+    #grad2{
+        background: linear-gradient(transparent 60%,#fda1a1 30%);
+        font-size: 18px;
+        font-weight: bold;
+    }
+
+    </style>
+
+    <head>
+        <meta charset="UTF-8">
+        <title>102-4</title>
+    </head>
+
+    <body>
+        <h1>
+        <a href="./102_003.html" rel="external" title="prev">≪</a>
+        102-4
+        <a href="./102_005.html" rel="external" title="next">≫</a>
+        </h1>
+        <div class='problem'>
+            <p>
+                <span id="grad1">　問題文　</span>
+            </p>
+            <p>
+                <p>日本薬局方において、容量分析用標準液のファクターfは、通例どの範囲にあるように調製されるか。1つ選べ。</p>
+<ol><li>0.850～1.150</li><li>0.900～1.100</li><li>0.950～1.050</li><li>0.970～1.030</li><li>0.990～1.010</li></ol>    
+            </p>
+        </div>
+        <hr>
+
+        <input type="button" value="check ans" onclick="toggle_switch()"/>
+        
+        <div id='toggle'>
+        <div class='answer'>
+            <p>
+                <span id="grad2">　解答　　</span>
+            </p>
+            <p>
+            4
+            </p>
+        </div>
+        <div class='description'>
+            <p>
+                <span id="grad2">　解説　　</span>
+            </p>
+            <p><span style="font-weight: 400;">容量分析用標準液とは、</span><span style="font-weight: 400;">濃度が精密に知られた試薬溶液のことです。</span><span style="font-weight: 400;">具体的には、0.5 mol/L 塩酸や</span><span style="font-weight: 400;">0.1 mol/L 水酸化カリウム液などです。</span></p>
+<p><span style="font-weight: 400;"><strong>ファクター</strong>とは、</span><span style="font-weight: 400;"><strong>濃度の補正係数</strong>のことです。</span><span style="font-weight: 400;">通例の範囲は</span><span style="font-weight: 400;">知っていないとわからないのですが</span><span style="font-weight: 400;">0.970 ～ 1.030 の範囲になるように</span><span style="font-weight: 400;">調製するように定められています。</span></p>
+<p><span style="font-weight: 400;">以上より、正解は 4 です。<br/>参考）</span></p>
+            </p>
+        </div>
+        </div>
+    </body>
+    <script>
+    document.getElementById("toggle").style.display="none";
+    function toggle_switch(){
+        var x = document.getElementById("toggle");
+        if (x.style.display=="block"){
+            x.style.display="none";
+        }
+        else{
+            x.style.display="block";
+        }
+    }
+    </script>
+    

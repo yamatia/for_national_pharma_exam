@@ -1,0 +1,91 @@
+
+        <!DOCTYPE html>
+    <html lang="ja">
+    <style>
+    body
+    {
+        color: black;
+        background-color: white;
+    }
+    div{
+        font-size: 14px;
+    }
+    span
+    {
+        font-size: 18px;
+    }
+    #grad1{
+        background: linear-gradient(transparent 60%,#99e4f1 30%);
+        font-size: 18px;
+        font-weight: bold;
+    }
+    #grad2{
+        background: linear-gradient(transparent 60%,#fda1a1 30%);
+        font-size: 18px;
+        font-weight: bold;
+    }
+
+    </style>
+
+    <head>
+        <meta charset="UTF-8">
+        <title>101-228</title>
+    </head>
+
+    <body>
+        <h1>
+        <a href="./101_227.html" rel="external" title="prev">≪</a>
+        101-228
+        <a href="./101_229.html" rel="external" title="next">≫</a>
+        </h1>
+        <div class='problem'>
+            <p>
+                <span id="grad1">　問題文　</span>
+            </p>
+            <p>
+                <p>チーズ中の成分が問題となる理由として、最も適切なのはどれか。1つ選べ。</p>
+<ol><li>この食品成分が、胃に障害を与え胃炎を悪化させる。</li><li>この食品成分が、処方された薬物の代謝酵素を阻害する。</li><li>この食品成分が、処方された薬物の代謝酵素の発現を誘導する。</li><li>この食品成分が、処方された薬物の消化管からの吸収を阻害する。</li><li>処方された薬物が、この食品成分を代謝する酵素を阻害する。</li><li>処方された薬物が、この食品成分を代謝する酵素の発現を誘導する。</li></ol>    
+            </p>
+        </div>
+        <hr>
+
+        <input type="button" value="check ans" onclick="toggle_switch()"/>
+        
+        <div id='toggle'>
+        <div class='answer'>
+            <p>
+                <span id="grad2">　解答　　</span>
+            </p>
+            <p>
+            問228：3問229：5
+            </p>
+        </div>
+        <div class='description'>
+            <p>
+                <span id="grad2">　解説　　</span>
+            </p>
+            <h4>問228</h4>
+<p>問229 とまとめて解説します。</p>
+<h4>問229</h4>
+<p>パーキンソン病とは、ドパミン及びアセチルコリン作動神経のバランスの崩れによる様々な症状が引き起こされる進行性の疾患です。</p>
+<p>レボドパは、ドパミン補充薬です。末梢で分解されないようにカルビドパという、分解酵素阻害薬が合剤となっています。ファモチジンは、H<span style="font-weight: 400;"><sub>2</sub></span> ブロッカーです。胃酸を抑制します。胃炎に対しての処方です。追加されたセレギリンは、MAO-B 阻害薬ですドパミンの代謝酵素である MAO を阻害することによりドパミンの効果増強を期待します。</p>
+<p>そして、チーズに含まれる成分であるチラミンもモノアミンです。チラミンは、MAO により代謝されて不活化されます。追加処方されたセレギリンによりMAO が阻害されることでチラミン中毒が問題になることがあります。チラミン中毒の臨床症状は顔面紅潮、頭痛などです。</p>
+<p>この患者にとって問題となる成分はチラミンです。そして問題となる理由は追加処方されたセレギリンがチラミンの代謝酵素を阻害するからです。</p>
+<p>以上より、問228 の正解は 3 です。<br/>問229 の正解は 5 です。</p>
+            </p>
+        </div>
+        </div>
+    </body>
+    <script>
+    document.getElementById("toggle").style.display="none";
+    function toggle_switch(){
+        var x = document.getElementById("toggle");
+        if (x.style.display=="block"){
+            x.style.display="none";
+        }
+        else{
+            x.style.display="block";
+        }
+    }
+    </script>
+    

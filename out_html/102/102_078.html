@@ -1,0 +1,87 @@
+
+        <!DOCTYPE html>
+    <html lang="ja">
+    <style>
+    body
+    {
+        color: black;
+        background-color: white;
+    }
+    div{
+        font-size: 14px;
+    }
+    span
+    {
+        font-size: 18px;
+    }
+    #grad1{
+        background: linear-gradient(transparent 60%,#99e4f1 30%);
+        font-size: 18px;
+        font-weight: bold;
+    }
+    #grad2{
+        background: linear-gradient(transparent 60%,#fda1a1 30%);
+        font-size: 18px;
+        font-weight: bold;
+    }
+
+    </style>
+
+    <head>
+        <meta charset="UTF-8">
+        <title>102-78</title>
+    </head>
+
+    <body>
+        <h1>
+        <a href="./102_077.html" rel="external" title="prev">≪</a>
+        102-78
+        <a href="./102_079.html" rel="external" title="next">≫</a>
+        </h1>
+        <div class='problem'>
+            <p>
+                <span id="grad1">　問題文　</span>
+            </p>
+            <p>
+                <p>自営業などの人を対象とする医療保険はどれか。1つ選べ。</p>
+<ol><li>船員保険</li><li>国民健康保険</li><li>共済組合</li><li>組合管掌健康保険</li><li>全国健康保険協会管掌健康保険</li></ol>    
+            </p>
+        </div>
+        <hr>
+
+        <input type="button" value="check ans" onclick="toggle_switch()"/>
+        
+        <div id='toggle'>
+        <div class='answer'>
+            <p>
+                <span id="grad2">　解答　　</span>
+            </p>
+            <p>
+            2
+            </p>
+        </div>
+        <div class='description'>
+            <p>
+                <span id="grad2">　解説　　</span>
+            </p>
+            <p>医療保険は、大きく<strong>国民健康保険</strong>と<strong>社会保険</strong>に分類されます。</p>
+<p><strong>国民健康保険</strong>とは、自営業、無職などの非サラリーマンを対象にカバーする保険です。</p>
+<p><strong>社会保険</strong>は、更に所属により、健康保険、船員保険、共済組合　に分類されます。それぞれサラリーマン、船員、公務員　の人を対象にカバーする保険です。健康保険が更に、事業者の規模により、組合管掌健康保険、全国健康保険協会管掌健康保険　に分類されます。</p>
+<p>従って、正解は 2 です。</p>
+            </p>
+        </div>
+        </div>
+    </body>
+    <script>
+    document.getElementById("toggle").style.display="none";
+    function toggle_switch(){
+        var x = document.getElementById("toggle");
+        if (x.style.display=="block"){
+            x.style.display="none";
+        }
+        else{
+            x.style.display="block";
+        }
+    }
+    </script>
+    

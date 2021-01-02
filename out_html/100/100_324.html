@@ -1,0 +1,93 @@
+
+        <!DOCTYPE html>
+    <html lang="ja">
+    <style>
+    body
+    {
+        color: black;
+        background-color: white;
+    }
+    div{
+        font-size: 14px;
+    }
+    span
+    {
+        font-size: 18px;
+    }
+    #grad1{
+        background: linear-gradient(transparent 60%,#99e4f1 30%);
+        font-size: 18px;
+        font-weight: bold;
+    }
+    #grad2{
+        background: linear-gradient(transparent 60%,#fda1a1 30%);
+        font-size: 18px;
+        font-weight: bold;
+    }
+
+    </style>
+
+    <head>
+        <meta charset="UTF-8">
+        <title>100-324</title>
+    </head>
+
+    <body>
+        <h1>
+        <a href="./100_323.html" rel="external" title="prev">≪</a>
+        100-324
+        <a href="./100_325.html" rel="external" title="next">≫</a>
+        </h1>
+        <div class='problem'>
+            <p>
+                <span id="grad1">　問題文　</span>
+            </p>
+            <p>
+                <ul><li>　　ア　　　　　　イ　　　　　ウ　　　　エ　　　　オ</li></ul>
+<ol><li>薬剤　　　　　医療機器等　　医師　　　看護師　　薬剤師</li><li>薬剤　　　　　医療機器等　　看護師　　薬剤師　　医師</li><li>薬剤　　　　　医療機器等　　薬剤師　　医師　　　看護師</li><li>医療機器等　　薬剤　　　　　医師　　　看護師　　薬剤師</li><li>医療機器等　　薬剤　　　　　看護師　　薬剤師　　医師</li><li>医療機器等　　薬剤　　　　　薬剤師　　医師　　　看護師</li></ol>    
+            </p>
+        </div>
+        <hr>
+
+        <input type="button" value="check ans" onclick="toggle_switch()"/>
+        
+        <div id='toggle'>
+        <div class='answer'>
+            <p>
+                <span id="grad2">　解答　　</span>
+            </p>
+            <p>
+            問324：2問325：2
+            </p>
+        </div>
+        <div class='description'>
+            <p>
+                <span id="grad2">　解説　　</span>
+            </p>
+            <h4>問324</h4>
+<p>調剤事故の連絡を受けた薬剤師は、必要な情報を患者から聞き取った上で速やかに管理者や開設者へ報告し組織的な対応の準備を行う必要があります。（選択肢 1,3）</p>
+<p>調剤ミスにより、誤った薬剤を患者に交付してしまった場合、まず、患者の健康被害の有無を確認し健康被害が疑われる場合は必要に応じた緊急措置を講じることが重要です。そして、必要に応じて他患者への被害拡大の可能性を判断し速やかに対応します。（選択肢 5）</p>
+<p>また、連絡を受けてから全ての過程について客観的事実を詳細に記録することが非常に重要です。事故の原因や経過に不明な点があるうちに患者側に対して確定的な説明や回答は、避けるべきです。安易な金銭的解決を図るといったことも、不適切です。（選択肢 2 （選択肢の内容は、誤り））</p>
+<p>説明の報告においては、事実を省いたりせず、ごまかさずに伝えることが重要です。（選択肢 4）</p>
+<p>以上より、正解は 2 です。</p>
+<h4>問325</h4>
+<p>まず、図２に注目します。医療機関におけるヒヤリハットにおいて、患者への医療の実施前に発見する職種　及び　気付かずに実施した時の当事者　としてほぼ必ず関与しているであろう職種　は「看護師」であろうと推測できると思います。よって、ウが看護師です。そこから、正解は 2 か 5 です。</p>
+<p>そして報告項目としては、例えば薬の名前が違う、量が違う、投与する人が違うなど　のヒヤリハットを考えると「薬剤」が多いだろうと判断できるのではないでしょうか。</p>
+<p>以上より、正解は 2 です。</p>
+            </p>
+        </div>
+        </div>
+    </body>
+    <script>
+    document.getElementById("toggle").style.display="none";
+    function toggle_switch(){
+        var x = document.getElementById("toggle");
+        if (x.style.display=="block"){
+            x.style.display="none";
+        }
+        else{
+            x.style.display="block";
+        }
+    }
+    </script>
+    

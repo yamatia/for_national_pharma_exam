@@ -1,0 +1,86 @@
+
+        <!DOCTYPE html>
+    <html lang="ja">
+    <style>
+    body
+    {
+        color: black;
+        background-color: white;
+    }
+    div{
+        font-size: 14px;
+    }
+    span
+    {
+        font-size: 18px;
+    }
+    #grad1{
+        background: linear-gradient(transparent 60%,#99e4f1 30%);
+        font-size: 18px;
+        font-weight: bold;
+    }
+    #grad2{
+        background: linear-gradient(transparent 60%,#fda1a1 30%);
+        font-size: 18px;
+        font-weight: bold;
+    }
+
+    </style>
+
+    <head>
+        <meta charset="UTF-8">
+        <title>101-85</title>
+    </head>
+
+    <body>
+        <h1>
+        <a href="./101_084.html" rel="external" title="prev">≪</a>
+        101-85
+        <a href="./101_086.html" rel="external" title="next">≫</a>
+        </h1>
+        <div class='problem'>
+            <p>
+                <span id="grad1">　問題文　</span>
+            </p>
+            <p>
+                <p>血液凝固因子製剤を患者に使用した場合、血液製剤管理簿を作成する意義として最も適切なのはどれか。1つ選べ。</p>
+<ol><li>在庫切れの防止</li><li>使用頻度の把握</li><li>購入価格の把握</li><li>有効期限切れの防止</li><li>保健衛生上の危害の発生又は拡大の防止</li></ol>    
+            </p>
+        </div>
+        <hr>
+
+        <input type="button" value="check ans" onclick="toggle_switch()"/>
+        
+        <div id='toggle'>
+        <div class='answer'>
+            <p>
+                <span id="grad2">　解答　　</span>
+            </p>
+            <p>
+            5
+            </p>
+        </div>
+        <div class='description'>
+            <p>
+                <span id="grad2">　解説　　</span>
+            </p>
+            <p>血液製剤管理簿とは、製品名、製造番号、患者の方の氏名、住所、投与日を記録し管理するものです。少なくとも 20 年間の保管が義務付けられています。この目的は、万が一感染症が発生した場合の遡及調査を容易に行うためです。</p>
+<p>もちろん、血液製剤が医療機関に届くまで種々の安全対策は施されています。しかし、ウイルスの存在が検査でわかるようになるまでのウィンドウ・ピリオド　の存在などがありリスクはどうしてもわずかに存在します。そこで、使用に関する管理も、種々の安全対策と共に義務付けられています。</p>
+<p>以上より、正解は 5 です。</p>
+            </p>
+        </div>
+        </div>
+    </body>
+    <script>
+    document.getElementById("toggle").style.display="none";
+    function toggle_switch(){
+        var x = document.getElementById("toggle");
+        if (x.style.display=="block"){
+            x.style.display="none";
+        }
+        else{
+            x.style.display="block";
+        }
+    }
+    </script>
+    

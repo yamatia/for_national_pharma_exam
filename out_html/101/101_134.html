@@ -1,0 +1,89 @@
+
+        <!DOCTYPE html>
+    <html lang="ja">
+    <style>
+    body
+    {
+        color: black;
+        background-color: white;
+    }
+    div{
+        font-size: 14px;
+    }
+    span
+    {
+        font-size: 18px;
+    }
+    #grad1{
+        background: linear-gradient(transparent 60%,#99e4f1 30%);
+        font-size: 18px;
+        font-weight: bold;
+    }
+    #grad2{
+        background: linear-gradient(transparent 60%,#fda1a1 30%);
+        font-size: 18px;
+        font-weight: bold;
+    }
+
+    </style>
+
+    <head>
+        <meta charset="UTF-8">
+        <title>101-134</title>
+    </head>
+
+    <body>
+        <h1>
+        <a href="./101_133.html" rel="external" title="prev">≪</a>
+        101-134
+        <a href="./101_135.html" rel="external" title="next">≫</a>
+        </h1>
+        <div class='problem'>
+            <p>
+                <span id="grad1">　問題文　</span>
+            </p>
+            <p>
+                <p>「残留性有機汚染物質に関するストックホルム条約(POPs条約)」に関する記述のうち、正しいのはどれか。2つ選べ。</p>
+<ol><li>蓄積性がないものも対象物質に含まれている。</li><li>対象物質は、すべて長距離移動性を有する。</li><li>非意図的生成物である対象物質に対し、その排出を削減することが定められている。</li><li>ヒトに対する長期毒性が不明なものも対象物質に含まれている。</li><li>対象物質は、すべて化学物質の審査及び製造等の規制に関する法律(化審法)の規制対象物質である。</li></ol>    
+            </p>
+        </div>
+        <hr>
+
+        <input type="button" value="check ans" onclick="toggle_switch()"/>
+        
+        <div id='toggle'>
+        <div class='answer'>
+            <p>
+                <span id="grad2">　解答　　</span>
+            </p>
+            <p>
+            2, 3
+            </p>
+        </div>
+        <div class='description'>
+            <p>
+                <span id="grad2">　解説　　</span>
+            </p>
+            <p>POPｓ条約とは、残留性、蓄積性、毒性が高く長距離移動性が懸念される物質が対象の条約です。燃焼過程で非意図的に生成される物質に関しても対象となっています。</p>
+<p>選択肢 1 ですが<br/>蓄積性があるものが対象です。よって、選択肢 1 は誤りです。</p>
+<p>選択肢 2,3 は、正しい選択肢です。</p>
+<p>選択肢 4 ですが<br/>POPｓ条約での対象は長期毒性がある（健康を損なうおそれがある）とわかっているものです。よって、選択肢 4 は誤りです。</p>
+<p>選択肢 5 ですが<br/>ほぼすべて、POPs 条約の対象物質は、化審法の規制対象です。ですが、現時点で完全にすべてではありません。（塩素数 2 のポリ塩化ナフタレン　など）よって、選択肢 5 は誤りです。</p>
+<p>以上より、正解は 2,3 です。</p>
+            </p>
+        </div>
+        </div>
+    </body>
+    <script>
+    document.getElementById("toggle").style.display="none";
+    function toggle_switch(){
+        var x = document.getElementById("toggle");
+        if (x.style.display=="block"){
+            x.style.display="none";
+        }
+        else{
+            x.style.display="block";
+        }
+    }
+    </script>
+    

@@ -1,0 +1,89 @@
+
+        <!DOCTYPE html>
+    <html lang="ja">
+    <style>
+    body
+    {
+        color: black;
+        background-color: white;
+    }
+    div{
+        font-size: 14px;
+    }
+    span
+    {
+        font-size: 18px;
+    }
+    #grad1{
+        background: linear-gradient(transparent 60%,#99e4f1 30%);
+        font-size: 18px;
+        font-weight: bold;
+    }
+    #grad2{
+        background: linear-gradient(transparent 60%,#fda1a1 30%);
+        font-size: 18px;
+        font-weight: bold;
+    }
+
+    </style>
+
+    <head>
+        <meta charset="UTF-8">
+        <title>103-327</title>
+    </head>
+
+    <body>
+        <h1>
+        <a href="./103_326.html" rel="external" title="prev">≪</a>
+        103-327
+        <a href="./103_328.html" rel="external" title="next">≫</a>
+        </h1>
+        <div class='problem'>
+            <p>
+                <span id="grad1">　問題文　</span>
+            </p>
+            <p>
+                <p>この患者の病態と薬学的管理について適切でないのはどれか。2つ選べ。</p>
+<ol><li>服用困難な場合には、メサラジン錠を粉砕する。</li><li>感染症にかかりやすい。</li><li>メサラジンの副作用として、消化器症状に気をつける。</li><li>定期的に大腸癌の検査を受ける。</li><li>メサラジン錠服用により、潰瘍性大腸炎の完治が期待できる。</li></ol>    
+            </p>
+        </div>
+        <hr>
+
+        <input type="button" value="check ans" onclick="toggle_switch()"/>
+        
+        <div id='toggle'>
+        <div class='answer'>
+            <p>
+                <span id="grad2">　解答　　</span>
+            </p>
+            <p>
+            1, 5
+            </p>
+        </div>
+        <div class='description'>
+            <p>
+                <span id="grad2">　解説　　</span>
+            </p>
+            <p><span style="font-weight: 400;">潰瘍性大腸炎は、</span><span style="font-weight: 400;">慢性の炎症性疾患の一つです。</span><span style="font-weight: 400;">抗炎症薬などを用いて</span><span style="font-weight: 400;">寛解状態を維持し、再発を予防するという</span><span style="font-weight: 400;">治療戦略がとられます。</span></p>
+<p><span style="font-weight: 400;">メサラジンは、</span><span style="font-weight: 400;">５－アミノサリチル酸です。</span><span style="font-weight: 400;">サラゾスルファピリジンの副作用が</span><span style="font-weight: 400;">出ないように改良された薬です。</span><span style="font-weight: 400;">胃で溶けず、腸で有効成分が</span><span style="font-weight: 400;">放出されるような製剤となっています。</span><span style="font-weight: 400;">従って、粉砕は不可です。</span></p>
+<p><span style="font-weight: 400;">以上より、正解は、1,5 です。</span></p>
+<p><span style="font-weight: 400;">選択肢 2 ですが<br/></span><span style="font-weight: 400;">プレドニゾロン使用により</span><span style="font-weight: 400;">易感染性となります。</span><span style="font-weight: 400;">手洗い、うがいなどを励行します。</span></p>
+<p><span style="font-weight: 400;">選択肢 3 ですが<br/></span><span style="font-weight: 400;">胃もたれ、下痢等の症状が</span><span style="font-weight: 400;">副作用として出ることがあります。</span></p>
+<p><span style="font-weight: 400;">選択肢 4 ですが<br/></span><span style="font-weight: 400;">潰瘍性大腸炎は発症して長期間たつと、</span><span style="font-weight: 400;">大腸がんのリスクが高くなることが知られています。</span><span style="font-weight: 400;">早期発見のため、定期的に検査を受けることが</span><span style="font-weight: 400;">求められます。</span></p>
+            </p>
+        </div>
+        </div>
+    </body>
+    <script>
+    document.getElementById("toggle").style.display="none";
+    function toggle_switch(){
+        var x = document.getElementById("toggle");
+        if (x.style.display=="block"){
+            x.style.display="none";
+        }
+        else{
+            x.style.display="block";
+        }
+    }
+    </script>
+    

@@ -1,0 +1,94 @@
+
+        <!DOCTYPE html>
+    <html lang="ja">
+    <style>
+    body
+    {
+        color: black;
+        background-color: white;
+    }
+    div{
+        font-size: 14px;
+    }
+    span
+    {
+        font-size: 18px;
+    }
+    #grad1{
+        background: linear-gradient(transparent 60%,#99e4f1 30%);
+        font-size: 18px;
+        font-weight: bold;
+    }
+    #grad2{
+        background: linear-gradient(transparent 60%,#fda1a1 30%);
+        font-size: 18px;
+        font-weight: bold;
+    }
+
+    </style>
+
+    <head>
+        <meta charset="UTF-8">
+        <title>102-276</title>
+    </head>
+
+    <body>
+        <h1>
+        <a href="./102_275.html" rel="external" title="prev">≪</a>
+        102-276
+        <a href="./102_277.html" rel="external" title="next">≫</a>
+        </h1>
+        <div class='problem'>
+            <p>
+                <span id="grad1">　問題文　</span>
+            </p>
+            <p>
+                <p>薬剤師が患者の家族に説明する内容として適切でないのはどれか。2つ選べ。</p>
+<ol><li>処方1は、ステロイドの作用の強さの5段階分類の中で最も弱い薬です。</li><li>夕方(夜)は、入浴後に塗るようにしてください。</li><li>白色ワセリンには皮膚保護作用があります。</li><li>お薬のほかに、室内環境の整備や皮膚を清潔に保つことも重要です。</li><li>タクロリムス軟膏は、顔には使用しないでください。</li></ol>    
+            </p>
+        </div>
+        <hr>
+
+        <input type="button" value="check ans" onclick="toggle_switch()"/>
+        
+        <div id='toggle'>
+        <div class='answer'>
+            <p>
+                <span id="grad2">　解答　　</span>
+            </p>
+            <p>
+            問276：2問277：1, 5
+            </p>
+        </div>
+        <div class='description'>
+            <p>
+                <span id="grad2">　解説　　</span>
+            </p>
+            <h4>問276</h4>
+<p>ワセリンは、プロペトという商品名の方が思い出しやすいかもしれません。</p>
+<p>ベタメタゾン吉草酸エステルクリーム 0.12 % とは、リンデロン V クリームのことです。軟膏は、油脂性基材です。要は油と思えばOKです。</p>
+<p>クリームは、w/o か、o/w です。（覚える必要はないけど、リンデロン V クリームは、o/w）原則として、o/w や w/o といった乳剤となっているものは混合しない方がいいです。乳化が破壊されてしまうことがあるからです。「クリーム剤の分離」という記述が符号します。</p>
+<p>実習を思い出して、プロペトの、のぺっとした感じとリンデロンクリーム　を混ぜるってのは何か変だなぁ。うまく混ざりそうにないなぁ・・・といった感覚で選ぶのも１つの解き方だと思います。</p>
+<p>以上より、問276 の正解は 2 です。</p>
+<h4>問277</h4>
+<p>選択肢 1 は、適切ではありません。<br/>ステロイドの作用の強さの 5 段階分類の中で、リンデロン V クリームは strong です。これは、５段階の中で３番めの強さです。よって、選択肢 1 は誤りです。</p>
+<p>選択肢 2 ~ 4 は、正しい記述です。</p>
+<p>選択肢 5 ですが<br/>タクロリムスは、アトピー性皮膚炎に用いられます。代表的な使用部位は、顔や首です。ピリピリとした使用感が特徴です。よって、選択肢 5 は誤りです。</p>
+<p>以上より、正解は 1,5 です。</p>
+            </p>
+        </div>
+        </div>
+    </body>
+    <script>
+    document.getElementById("toggle").style.display="none";
+    function toggle_switch(){
+        var x = document.getElementById("toggle");
+        if (x.style.display=="block"){
+            x.style.display="none";
+        }
+        else{
+            x.style.display="block";
+        }
+    }
+    </script>
+    

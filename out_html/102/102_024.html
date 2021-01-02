@@ -1,0 +1,86 @@
+
+        <!DOCTYPE html>
+    <html lang="ja">
+    <style>
+    body
+    {
+        color: black;
+        background-color: white;
+    }
+    div{
+        font-size: 14px;
+    }
+    span
+    {
+        font-size: 18px;
+    }
+    #grad1{
+        background: linear-gradient(transparent 60%,#99e4f1 30%);
+        font-size: 18px;
+        font-weight: bold;
+    }
+    #grad2{
+        background: linear-gradient(transparent 60%,#fda1a1 30%);
+        font-size: 18px;
+        font-weight: bold;
+    }
+
+    </style>
+
+    <head>
+        <meta charset="UTF-8">
+        <title>102-24</title>
+    </head>
+
+    <body>
+        <h1>
+        <a href="./102_023.html" rel="external" title="prev">≪</a>
+        102-24
+        <a href="./102_025.html" rel="external" title="next">≫</a>
+        </h1>
+        <div class='problem'>
+            <p>
+                <span id="grad1">　問題文　</span>
+            </p>
+            <p>
+                <p>アスマン通風乾湿計と乾カタ温度計のみを用いて測定できる室内空気環境の指標はどれか。1つ選べ。</p>
+<ol><li>必要換気量</li><li>気動</li><li>熱輻射</li><li>湿カタ冷却力</li><li>補正感覚温度</li></ol>    
+            </p>
+        </div>
+        <hr>
+
+        <input type="button" value="check ans" onclick="toggle_switch()"/>
+        
+        <div id='toggle'>
+        <div class='answer'>
+            <p>
+                <span id="grad2">　解答　　</span>
+            </p>
+            <p>
+            2
+            </p>
+        </div>
+        <div class='description'>
+            <p>
+                <span id="grad2">　解説　　</span>
+            </p>
+            <p>アスマン通風乾湿計とは、乾球、湿球を有する温度計で、湿度がわかる温度計です。乾カタ温度計は 38℃以上にあたため、35℃に下がる時間を測定するものでカタ度がわかります。ちなみに、カタ度　というのは「環境が人体を冷やす度合い」と理解しておくとよいです。ここで「カタ＝Kατω＝下方」という意味です。（wiki では「Kατα」だが、翻訳によればおそらくこちら。）</p>
+<p>「風が吹いてる方が、冷えやすい」→周囲の温度＋カタ度で気動がわかる。とまとめておくと思い出しやすいのではないかと思います。</p>
+<p>以上より、正解は 2 です。<br/>類題　</p>
+            </p>
+        </div>
+        </div>
+    </body>
+    <script>
+    document.getElementById("toggle").style.display="none";
+    function toggle_switch(){
+        var x = document.getElementById("toggle");
+        if (x.style.display=="block"){
+            x.style.display="none";
+        }
+        else{
+            x.style.display="block";
+        }
+    }
+    </script>
+    

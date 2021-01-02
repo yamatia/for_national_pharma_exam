@@ -1,0 +1,97 @@
+
+        <!DOCTYPE html>
+    <html lang="ja">
+    <style>
+    body
+    {
+        color: black;
+        background-color: white;
+    }
+    div{
+        font-size: 14px;
+    }
+    span
+    {
+        font-size: 18px;
+    }
+    #grad1{
+        background: linear-gradient(transparent 60%,#99e4f1 30%);
+        font-size: 18px;
+        font-weight: bold;
+    }
+    #grad2{
+        background: linear-gradient(transparent 60%,#fda1a1 30%);
+        font-size: 18px;
+        font-weight: bold;
+    }
+
+    </style>
+
+    <head>
+        <meta charset="UTF-8">
+        <title>100-242</title>
+    </head>
+
+    <body>
+        <h1>
+        <a href="./100_241.html" rel="external" title="prev">≪</a>
+        100-242
+        <a href="./100_243.html" rel="external" title="next">≫</a>
+        </h1>
+        <div class='problem'>
+            <p>
+                <span id="grad1">　問題文　</span>
+            </p>
+            <p>
+                <p>この患者に投与すべき薬剤から放出され、疼痛緩和に寄与する放射線に関する記述のうち、正しいのはどれか。2つ選べ。</p>
+<ol><li>放射線荷重係数は、20である。</li><li>低LET(線エネルギー付与)放射線である。</li><li>粒子線である。</li><li>内部被曝による生体影響はない。</li><li>薄い紙一枚で遮蔽できる。</li></ol>    
+            </p>
+        </div>
+        <hr>
+
+        <input type="button" value="check ans" onclick="toggle_switch()"/>
+        
+        <div id='toggle'>
+        <div class='answer'>
+            <p>
+                <span id="grad2">　解答　　</span>
+            </p>
+            <p>
+            問242：5問243：2, 3
+            </p>
+        </div>
+        <div class='description'>
+            <p>
+                <span id="grad2">　解説　　</span>
+            </p>
+            <h4>問242</h4>
+<p>選択肢 1 ですが<br/><span style="font-weight: 400;"><sup>123</sup></span>I ヨウ化ナトリウムカプセルは、検査・診断薬です。疼痛管理が目的の薬では、ありません。よって、選択肢 1 は誤りです。</p>
+<p>選択肢 2 ですが<br/><span style="font-weight: 400;"><sup>90</sup></span>Y イットリウムイブリツモマブチウキセタンは、CD 20 を標的とした、再発又は難治性の<br/>非ホジキンリンパ腫、細胞リンパ腫　に用いる薬です。甲状腺がんは、対象ではありません。また、疼痛緩和が目的の薬でも、ありません。よって、選択肢 2 は誤りです。</p>
+<p>選択肢 3 ですが<br/><span style="font-weight: 400;"><sup>18</sup></span>F　フルデオキシグルコースは、さまざまな悪性腫瘍などの診断に用いられる薬です。疼痛緩和が目的の薬では、ありません。よって、選択肢 3 は誤りです。</p>
+<p>選択肢 4 ですが<br/><span style="font-weight: 400;"><sup>99m</sup></span>Tc ジメルカプトコハク酸テクネチウムは、腎疾患の診断に用いられる薬です。甲状腺がんは、対象ではありません。また、疼痛緩和が目的の薬では、ありません。よって、選択肢 4 は誤りです。</p>
+<p>選択肢 5 は、正しい選択肢です。</p>
+<p>以上より、正解は 5 です。</p>
+<h4>問243</h4>
+<p>選択肢 1 ですが<br/>放射線荷重係数とは「Sv（シーベルト） = Gy（グレイ） ×　放射線荷重係数」　という関係で用いられる定数です。人体への影響の程度を表す係数　といえます。β、γ、X線に対しては 1、α 線に対しては 20 と定められています。</p>
+<p><span style="font-weight: 400;"><sup>89</sup></span>Sr が放出するのは、β 線です。放射線荷重係数は、 1 です。よって、選択肢 1 は、誤りです。</p>
+<p>選択肢 2,3 は、正しい選択肢です。<br/>LET とは、放射線が媒質中を通過する際、媒質に与えるエネルギーの事です。低 LET 放射線の例は、β、γ、X線　などです。高 LET 放射線の例は、α線　です。また、β線の実体は、陽電子又は電子　であり、粒子としての性質を持つため、粒子線です。</p>
+<p>選択肢 4 ですが<br/>生体影響は、あります。よって、選択肢 4 は誤りです。</p>
+<p>選択肢 5 ですが<br/>紙一枚で遮へいできるのは、α 線です。よって、選択肢 5 は誤りです。</p>
+<p>以上より、正解は 2,3 です。</p>
+            </p>
+        </div>
+        </div>
+    </body>
+    <script>
+    document.getElementById("toggle").style.display="none";
+    function toggle_switch(){
+        var x = document.getElementById("toggle");
+        if (x.style.display=="block"){
+            x.style.display="none";
+        }
+        else{
+            x.style.display="block";
+        }
+    }
+    </script>
+    

@@ -1,0 +1,89 @@
+
+        <!DOCTYPE html>
+    <html lang="ja">
+    <style>
+    body
+    {
+        color: black;
+        background-color: white;
+    }
+    div{
+        font-size: 14px;
+    }
+    span
+    {
+        font-size: 18px;
+    }
+    #grad1{
+        background: linear-gradient(transparent 60%,#99e4f1 30%);
+        font-size: 18px;
+        font-weight: bold;
+    }
+    #grad2{
+        background: linear-gradient(transparent 60%,#fda1a1 30%);
+        font-size: 18px;
+        font-weight: bold;
+    }
+
+    </style>
+
+    <head>
+        <meta charset="UTF-8">
+        <title>103-167</title>
+    </head>
+
+    <body>
+        <h1>
+        <a href="./103_166.html" rel="external" title="prev">≪</a>
+        103-167
+        <a href="./103_168.html" rel="external" title="next">≫</a>
+        </h1>
+        <div class='problem'>
+            <p>
+                <span id="grad1">　問題文　</span>
+            </p>
+            <p>
+                <p>薬物の消化管吸収とバイオアベイラビリティに関する記述のうち、正しいのはどれか。2つ選べ。</p>
+<ol><li>カルバペネム系抗生物質であるメロペネムは、小腸粘膜での透過性が高いため、経口製剤として用いられる。</li><li>陰イオン交換樹脂であるコレスチラミンは、酸性物質であるプラバスタチンを吸着し、その吸収を阻害する。</li><li>経口製剤の絶対的バイオアベイラビリティは、その製剤を経口投与した際の血中濃度時間曲線下面積(AUC)を、等量の同一薬物を静脈内投与した際のAUCで除したものに等しい。</li><li>小腸において、親水性薬物のみかけの吸収速度は、非撹拌水層の拡散速度に依存する。</li><li>小腸下部から吸収された薬物は、門脈を経ずに下大静脈に入るために、肝初回通過効果を受けない。</li></ol>    
+            </p>
+        </div>
+        <hr>
+
+        <input type="button" value="check ans" onclick="toggle_switch()"/>
+        
+        <div id='toggle'>
+        <div class='answer'>
+            <p>
+                <span id="grad2">　解答　　</span>
+            </p>
+            <p>
+            2, 3
+            </p>
+        </div>
+        <div class='description'>
+            <p>
+                <span id="grad2">　解説　　</span>
+            </p>
+            <p><span style="font-weight: 400;">選択肢 1 ですが<br/></span><span style="font-weight: 400;">メロペネムは注射剤です。</span><span style="font-weight: 400;">経口製剤ではありません。</span><span style="font-weight: 400;">よって、選択肢 1 は誤りです。</span></p>
+<p><span style="font-weight: 400;">選択肢 2,3 は、正しい記述です。<br/></span><span style="font-weight: 400;">「陰イオン交換樹脂」は</span><span style="font-weight: 400;">「陰イオンを吸着」します。</span><span style="font-weight: 400;">そして</span><span style="font-weight: 400;">「酸性物質である」＝「H を離しやすい」</span><span style="font-weight: 400;">→ H<sup>+</sup></span><span style="font-weight: 400;"> ＋ プラバスタチン<sup>–</sup></span><span style="font-weight: 400;">　となって</span><span style="font-weight: 400;">陰イオンとなりやすい。と考えます。</span></p>
+<p><span style="font-weight: 400;">経口バイオアベイラビリティ＝AUC</span><span style="font-weight: 400;">po</span><span style="font-weight: 400;">/AUC</span><span style="font-weight: 400;">iv</span><span style="font-weight: 400;">です。</span></p>
+<p><span style="font-weight: 400;">選択肢 4 ですが<br/></span><span style="font-weight: 400;">非拡散水層の拡散速度に依存するのは、</span><span style="font-weight: 400;">脂溶性が高い薬物、つまり疎水性薬物です。</span><span style="font-weight: 400;">親水性薬物ではありません。</span><span style="font-weight: 400;">よって、選択肢 4 は誤りです。</span></p>
+<p><span style="font-weight: 400;">選択肢 5 ですが<br/></span><span style="font-weight: 400;">記述は「大腸」下部についてです。</span><span style="font-weight: 400;">小腸下部から吸収された薬物は</span><span style="font-weight: 400;">初回通過効果を受けます。</span><span style="font-weight: 400;">よって、選択肢 5 は誤りです。</span></p>
+<p><span style="font-weight: 400;">以上より、正解は 2,3 です。</span></p>
+            </p>
+        </div>
+        </div>
+    </body>
+    <script>
+    document.getElementById("toggle").style.display="none";
+    function toggle_switch(){
+        var x = document.getElementById("toggle");
+        if (x.style.display=="block"){
+            x.style.display="none";
+        }
+        else{
+            x.style.display="block";
+        }
+    }
+    </script>
+    

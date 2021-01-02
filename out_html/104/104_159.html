@@ -1,0 +1,89 @@
+
+        <!DOCTYPE html>
+    <html lang="ja">
+    <style>
+    body
+    {
+        color: black;
+        background-color: white;
+    }
+    div{
+        font-size: 14px;
+    }
+    span
+    {
+        font-size: 18px;
+    }
+    #grad1{
+        background: linear-gradient(transparent 60%,#99e4f1 30%);
+        font-size: 18px;
+        font-weight: bold;
+    }
+    #grad2{
+        background: linear-gradient(transparent 60%,#fda1a1 30%);
+        font-size: 18px;
+        font-weight: bold;
+    }
+
+    </style>
+
+    <head>
+        <meta charset="UTF-8">
+        <title>104-159</title>
+    </head>
+
+    <body>
+        <h1>
+        <a href="./104_158.html" rel="external" title="prev">≪</a>
+        104-159
+        <a href="./104_160.html" rel="external" title="next">≫</a>
+        </h1>
+        <div class='problem'>
+            <p>
+                <span id="grad1">　問題文　</span>
+            </p>
+            <p>
+                <p>成長ホルモン(GH)関連薬物に関する記述のうち、正しいのはどれか。2つ選べ。</p>
+<ol><li>ブロモクリプチンは、下垂体のGH産生細胞に作用し、GHの産生・分泌を促進する。</li><li>ペグビソマントは、GH受容体を選択的に遮断し、インスリン様成長因子-1(IGF-1)の産生を抑制する。</li><li>メカセルミンは、下垂体のソマトスタチン受容体を刺激し、GHや甲状腺刺激ホルモン(TSH)の産生・分泌を抑制する。</li><li>ソマトロピンは、IGF-1の産生を誘導し、軟骨内骨形成を促進する。</li><li>オクトレオチドは、下垂体のドパミンD<sub>2</sub>受容体を刺激し、GHやプロラクチンの産生・分泌を抑制する。</li></ol>    
+            </p>
+        </div>
+        <hr>
+
+        <input type="button" value="check ans" onclick="toggle_switch()"/>
+        
+        <div id='toggle'>
+        <div class='answer'>
+            <p>
+                <span id="grad2">　解答　　</span>
+            </p>
+            <p>
+            2, 4
+            </p>
+        </div>
+        <div class='description'>
+            <p>
+                <span id="grad2">　解説　　</span>
+            </p>
+            <p><span style="font-weight: 400;">選択肢 1 ですが<br/></span><span style="font-weight: 400;">ブロモクリプチンは</span><span style="font-weight: 400;">D<sub>2</sub></span><span style="font-weight: 400;"> 受容体刺激薬です。D<sub>2</sub></span><span style="font-weight: 400;"> 受容体刺激により、プロラクチンと呼ばれるホルモンの分泌が抑制されます。この薬の適応は、高プロラクチン血症です。記述は「ソマトレリン」についてと考えられます。よって、選択肢 1 は誤りです。</span></p>
+<p><span style="font-weight: 400;">選択肢 2 は妥当な記述です。<br/></span><span style="font-weight: 400;">ペグビソマント（ソマバート）は、GH 受容体拮抗薬です。先端巨大症における IGF-I（ソマトメジン-C）分泌過剰状態及び諸症状の改善に用いられます。</span></p>
+<p><span style="font-weight: 400;">選択肢 3 ですが<br/></span><span style="font-weight: 400;">メカセルミン（ソマゾン）は、ソマトメジン C 製剤です。</span><span style="font-weight: 400;">ソマトメジン C とは、インスリン様成長因子1（IGF -1）の別名です。インスリンと分子構造が類似したホルモンです。小児の成長に重要な役割を果たします。成人では同化作用があります。「ソマトスタチン受容体」を刺激し、成長ホルモンの産生・分泌を抑制するわけではありません。</span><span style="font-weight: 400;">ちなみに</span><span style="font-weight: 400;">「ソマトスタチン」は、成長ホルモンなどの分泌を「抑制」するペプチドホルモンの一種です。</span></p>
+<p><span style="font-weight: 400;">選択肢 4 は妥当な記述です。<br/></span><span style="font-weight: 400;">ソマトロピンは、遺伝子組み換え天然型ヒト成長ホルモン製剤です。</span></p>
+<p><span style="font-weight: 400;">選択肢 5 ですが<br/></span><span style="font-weight: 400;">オクトレオチドは、持続性ソマトスタチン誘導体です。D<sub>2</sub> 刺激ではありません。よって、選択肢 5 は誤りです。</span></p>
+<p><span style="font-weight: 400;">以上より、正解は 2,4 です。<br/></span><span style="font-weight: 400;">参考）</span></p>
+            </p>
+        </div>
+        </div>
+    </body>
+    <script>
+    document.getElementById("toggle").style.display="none";
+    function toggle_switch(){
+        var x = document.getElementById("toggle");
+        if (x.style.display=="block"){
+            x.style.display="none";
+        }
+        else{
+            x.style.display="block";
+        }
+    }
+    </script>
+    

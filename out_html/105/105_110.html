@@ -1,0 +1,88 @@
+
+        <!DOCTYPE html>
+    <html lang="ja">
+    <style>
+    body
+    {
+        color: black;
+        background-color: white;
+    }
+    div{
+        font-size: 14px;
+    }
+    span
+    {
+        font-size: 18px;
+    }
+    #grad1{
+        background: linear-gradient(transparent 60%,#99e4f1 30%);
+        font-size: 18px;
+        font-weight: bold;
+    }
+    #grad2{
+        background: linear-gradient(transparent 60%,#fda1a1 30%);
+        font-size: 18px;
+        font-weight: bold;
+    }
+
+    </style>
+
+    <head>
+        <meta charset="UTF-8">
+        <title>105-110</title>
+    </head>
+
+    <body>
+        <h1>
+        <a href="./105_109.html" rel="external" title="prev">≪</a>
+        105-110
+        <a href="./105_111.html" rel="external" title="next">≫</a>
+        </h1>
+        <div class='problem'>
+            <p>
+                <span id="grad1">　問題文　</span>
+            </p>
+            <p>
+                <p>骨の成長とリモデリングに関する記述のうち、正しいのはどれか。2つ選べ。</p>
+<ol><li>骨基質の生成に必要なコラーゲンは、主に骨細胞から分泌される。</li><li>骨芽細胞は、アルカリホスファターゼの作用により、石灰化に必要なリン酸の局所濃度を上昇させる。</li><li>破骨細胞は、骨基質を分解する働きをもつ。</li><li>エストロゲンは、思春期において骨芽細胞の働きを抑制する。</li><li>カルシトニンは、破骨細胞を活性化する。</li></ol>    
+            </p>
+        </div>
+        <hr>
+
+        <input type="button" value="check ans" onclick="toggle_switch()"/>
+        
+        <div id='toggle'>
+        <div class='answer'>
+            <p>
+                <span id="grad2">　解答　　</span>
+            </p>
+            <p>
+            2, 3
+            </p>
+        </div>
+        <div class='description'>
+            <p>
+                <span id="grad2">　解説　　</span>
+            </p>
+            <p>選択肢 1 ですが<br/>骨は常に「骨芽細胞」による骨形成と、「破骨細胞」による骨吸収でバランスが保たれています。骨基質の生成に必要なコラーゲンは「骨芽細胞」により分泌されます。「骨細胞」ではありません。よって、選択肢 1 は誤りです。</p>
+<p>選択肢 2,3 は妥当な記述です。</p>
+<p>選択肢 4 ですが<br/>エストロゲンは女性ホルモンの一種です。エストロゲンは「破骨細胞」の働きを抑制します。骨粗しょう症薬としてラロキシフェンが用いられ、骨には女性ホルモン様に作用することから、この選択肢は誤りと判断できると考えられます。</p>
+<p>選択肢 5 ですが<br/>カルシトニンは骨吸収を抑制し、血中の Ca<sup>2+</sup>濃度を低下させるホルモンです。骨吸収の抑制　なので、破骨細胞の「活性化」ではないと判断できます。よって、選択肢 5 は誤りです。</p>
+<p>以上より、正解は 2,3 です。</p>
+            </p>
+        </div>
+        </div>
+    </body>
+    <script>
+    document.getElementById("toggle").style.display="none";
+    function toggle_switch(){
+        var x = document.getElementById("toggle");
+        if (x.style.display=="block"){
+            x.style.display="none";
+        }
+        else{
+            x.style.display="block";
+        }
+    }
+    </script>
+    

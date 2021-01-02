@@ -1,0 +1,90 @@
+
+        <!DOCTYPE html>
+    <html lang="ja">
+    <style>
+    body
+    {
+        color: black;
+        background-color: white;
+    }
+    div{
+        font-size: 14px;
+    }
+    span
+    {
+        font-size: 18px;
+    }
+    #grad1{
+        background: linear-gradient(transparent 60%,#99e4f1 30%);
+        font-size: 18px;
+        font-weight: bold;
+    }
+    #grad2{
+        background: linear-gradient(transparent 60%,#fda1a1 30%);
+        font-size: 18px;
+        font-weight: bold;
+    }
+
+    </style>
+
+    <head>
+        <meta charset="UTF-8">
+        <title>102-113</title>
+    </head>
+
+    <body>
+        <h1>
+        <a href="./102_112.html" rel="external" title="prev">≪</a>
+        102-113
+        <a href="./102_114.html" rel="external" title="next">≫</a>
+        </h1>
+        <div class='problem'>
+            <p>
+                <span id="grad1">　問題文　</span>
+            </p>
+            <p>
+                <p>ヒトの体内で働くタンパク質分解酵素(プロテアーゼ)に関する記述のうち、正しいのはどれか。2つ選べ。</p>
+<ol><li>膵臓から分泌されるキモトリプシンは、タンパク質のC末端から順次アミノ酸を遊離する。</li><li>トリプシンの触媒作用には、その活性部位にあるセリン残基が関与する。</li><li>トリプシノーゲンは、十二指腸上皮細胞から分泌されるエンテロペプチダーゼ(エンテロキナーゼともよばれる)により小腸内でトリプシンに変換される。</li><li>アンチトロンビンⅢは、主として血管内皮細胞から分泌され、トロンビンの活性を阻害する。</li><li>組織プラスミノーゲンアクチベーターは、血液凝固反応で形成されたフィブリンの分解反応を触媒する。</li></ol>    
+            </p>
+        </div>
+        <hr>
+
+        <input type="button" value="check ans" onclick="toggle_switch()"/>
+        
+        <div id='toggle'>
+        <div class='answer'>
+            <p>
+                <span id="grad2">　解答　　</span>
+            </p>
+            <p>
+            2, 3
+            </p>
+        </div>
+        <div class='description'>
+            <p>
+                <span id="grad2">　解説　　</span>
+            </p>
+            <p>選択肢 1 ですが<br/>キモトリプシンは、エンドペプチダーゼです。すなわちタンパク質「内部」のペプチド結合を切断します。イメージとしては、ざく切りです。とりあえず小さくする感じです。</p>
+<p>一方、タンパク質「末端」から順次切断するのはエキソペプチダーゼです。イメージとしては、せん切りです。端っこから均等に切っていく感じです。よって、選択肢 1 は誤りです。</p>
+<p>選択肢 2,3 は正しい記述です。</p>
+<p>選択肢 4 ですが<br/>アンチトロンビンは、主として「肝臓」で作られます。トロンビンの活性を阻害するという記述は正しいです。よって、選択肢 4 は誤りです。</p>
+<p>選択肢 5 ですが<br/>組織プラスミノーゲンアクティベーター（tpa）はフィブリン分解の触媒ではなく、プラスミノーゲンを活性化させることにより、活性型プラスミンを生成する反応の触媒として働きます。この活性型プラスミンが、フィブリンを分解します。</p>
+<p>つまり、フィブリン分解反応における活性化エネルギーを低下させる（＝触媒として働く）わけではなく、フィブリンを分解させる物質の生成反応を促進させる物質である、ということです。従って、選択肢 5 は誤りです。</p>
+<p>以上より、正解は 2,3 です。</p>
+            </p>
+        </div>
+        </div>
+    </body>
+    <script>
+    document.getElementById("toggle").style.display="none";
+    function toggle_switch(){
+        var x = document.getElementById("toggle");
+        if (x.style.display=="block"){
+            x.style.display="none";
+        }
+        else{
+            x.style.display="block";
+        }
+    }
+    </script>
+    

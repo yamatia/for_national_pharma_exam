@@ -1,0 +1,93 @@
+
+        <!DOCTYPE html>
+    <html lang="ja">
+    <style>
+    body
+    {
+        color: black;
+        background-color: white;
+    }
+    div{
+        font-size: 14px;
+    }
+    span
+    {
+        font-size: 18px;
+    }
+    #grad1{
+        background: linear-gradient(transparent 60%,#99e4f1 30%);
+        font-size: 18px;
+        font-weight: bold;
+    }
+    #grad2{
+        background: linear-gradient(transparent 60%,#fda1a1 30%);
+        font-size: 18px;
+        font-weight: bold;
+    }
+
+    </style>
+
+    <head>
+        <meta charset="UTF-8">
+        <title>100-282</title>
+    </head>
+
+    <body>
+        <h1>
+        <a href="./100_281.html" rel="external" title="prev">≪</a>
+        100-282
+        <a href="./100_283.html" rel="external" title="next">≫</a>
+        </h1>
+        <div class='problem'>
+            <p>
+                <span id="grad1">　問題文　</span>
+            </p>
+            <p>
+                <p>アシクロビルのプロドラッグであるバラシクロビルに関する記述のうち、正しいのはどれか。2つ選べ。</p>
+<ol><li>アシクロビルにエチレングリコールを結合させた化合物で、体内吸収後の血中滞留性はアシクロビルより優れている。</li><li>主に肝臓のエステラーゼで加水分解されてアシクロビルに変換される。</li><li>経口投与後のアシクロビルとしてのバイオアベイラビリティは、消化管からの吸収率が高まるため、アシクロビル経口投与時のそれより高くなる。</li><li>経口投与後のアシクロビルとしてのバイオアベイラビリティは、肝臓での代謝を回避できるため、アシクロビル経口投与時のそれより高くなる。</li></ol>    
+            </p>
+        </div>
+        <hr>
+
+        <input type="button" value="check ans" onclick="toggle_switch()"/>
+        
+        <div id='toggle'>
+        <div class='answer'>
+            <p>
+                <span id="grad2">　解答　　</span>
+            </p>
+            <p>
+            問282：2問283：2, 3
+            </p>
+        </div>
+        <div class='description'>
+            <p>
+                <span id="grad2">　解説　　</span>
+            </p>
+            <h4>問282</h4>
+<p>バラシクロビルは、肝臓のエステラーゼで代謝されて薬効を示すプロドラックであり、かつ腎排泄型の薬です。そのため肝機能障害時においては、そもそも薬効を示さず、更に排泄能が落ちるわけでもないため、用量調節の優先順位は低いと考えられます。</p>
+<p>その他の選択肢（1,3,4,5）の内容は、どれも気をつける必要がある内容です。</p>
+<p>以上より、正解は 2 です。</p>
+<h4>問283</h4>
+<p>選択肢 1 ですが<br/>バラシクロビルは、アミノ酸の一種であるバリンのカルボキシル基にアシクロビルがエステル結合した構造を有します。アシクロビルにエチレングリコールを結合させた化合物では、ありません。よって、選択肢 1 は誤りです。</p>
+<p>選択肢 2 は、正しい選択肢です。</p>
+<p>選択肢 3 は、正しい選択肢です。<br/>アシクロビルの低いバイオアベイラビリティの改善を主な目的として開発されたプロドラックです。</p>
+<p>選択肢 4 ですが<br/>吸収の改善によりバイオアベイラビリティが向上しています。肝臓での代謝を回避できるためでは、ありません。また、肝臓ではエステラーゼによる代謝を受けて薬効を生じます。よって、選択肢 4 は誤りです。</p>
+<p>以上より、正解は 2,3 です。</p>
+            </p>
+        </div>
+        </div>
+    </body>
+    <script>
+    document.getElementById("toggle").style.display="none";
+    function toggle_switch(){
+        var x = document.getElementById("toggle");
+        if (x.style.display=="block"){
+            x.style.display="none";
+        }
+        else{
+            x.style.display="block";
+        }
+    }
+    </script>
+    

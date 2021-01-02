@@ -1,0 +1,85 @@
+
+        <!DOCTYPE html>
+    <html lang="ja">
+    <style>
+    body
+    {
+        color: black;
+        background-color: white;
+    }
+    div{
+        font-size: 14px;
+    }
+    span
+    {
+        font-size: 18px;
+    }
+    #grad1{
+        background: linear-gradient(transparent 60%,#99e4f1 30%);
+        font-size: 18px;
+        font-weight: bold;
+    }
+    #grad2{
+        background: linear-gradient(transparent 60%,#fda1a1 30%);
+        font-size: 18px;
+        font-weight: bold;
+    }
+
+    </style>
+
+    <head>
+        <meta charset="UTF-8">
+        <title>104-33</title>
+    </head>
+
+    <body>
+        <h1>
+        <a href="./104_032.html" rel="external" title="prev">≪</a>
+        104-33
+        <a href="./104_034.html" rel="external" title="next">≫</a>
+        </h1>
+        <div class='problem'>
+            <p>
+                <span id="grad1">　問題文　</span>
+            </p>
+            <p>
+                <p>モサプリドによる消化管運動亢進の作用機序はどれか。1つ選べ。</p>
+<ol><li>セロトニン5-HT<sub>3</sub>受容体遮断</li><li>セロトニン5-HT<sub>4</sub>受容体刺激</li><li>オピオイドμ受容体刺激</li><li>アセチルコリンエステラーゼ阻害</li><li>ムスカリン性アセチルコリンM<sub>3</sub>受容体刺激</li></ol>    
+            </p>
+        </div>
+        <hr>
+
+        <input type="button" value="check ans" onclick="toggle_switch()"/>
+        
+        <div id='toggle'>
+        <div class='answer'>
+            <p>
+                <span id="grad2">　解答　　</span>
+            </p>
+            <p>
+            2
+            </p>
+        </div>
+        <div class='description'>
+            <p>
+                <span id="grad2">　解説　　</span>
+            </p>
+            <p><b>モサプリド（ガスモチン）</b><span style="font-weight: 400;">は、</span><b>5－HT<sub>4</sub></b><b> 刺激薬</b><span style="font-weight: 400;">です。胃腸運動を促進させる働きがあります。慢性胃炎に伴う消化器症状に用いられます。</span></p>
+<p><span style="font-weight: 400;">以上より、正解は 2 です。<br/></span><span style="font-weight: 400;">参考）　</span></p>
+            </p>
+        </div>
+        </div>
+    </body>
+    <script>
+    document.getElementById("toggle").style.display="none";
+    function toggle_switch(){
+        var x = document.getElementById("toggle");
+        if (x.style.display=="block"){
+            x.style.display="none";
+        }
+        else{
+            x.style.display="block";
+        }
+    }
+    </script>
+    

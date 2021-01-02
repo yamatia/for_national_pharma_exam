@@ -1,0 +1,89 @@
+
+        <!DOCTYPE html>
+    <html lang="ja">
+    <style>
+    body
+    {
+        color: black;
+        background-color: white;
+    }
+    div{
+        font-size: 14px;
+    }
+    span
+    {
+        font-size: 18px;
+    }
+    #grad1{
+        background: linear-gradient(transparent 60%,#99e4f1 30%);
+        font-size: 18px;
+        font-weight: bold;
+    }
+    #grad2{
+        background: linear-gradient(transparent 60%,#fda1a1 30%);
+        font-size: 18px;
+        font-weight: bold;
+    }
+
+    </style>
+
+    <head>
+        <meta charset="UTF-8">
+        <title>104-5</title>
+    </head>
+
+    <body>
+        <h1>
+        <a href="./104_004.html" rel="external" title="prev">≪</a>
+        104-5
+        <a href="./104_006.html" rel="external" title="next">≫</a>
+        </h1>
+        <div class='problem'>
+            <p>
+                <span id="grad1">　問題文　</span>
+            </p>
+            <p>
+                <p>反射波を利用する画像診断法はどれか。1つ選べ。</p>
+<ol><li>X線CT</li><li>MRI</li><li>超音波診断法</li><li>陽電子放射断層撮影法(PET)</li><li>単一光子放射断層撮影法(SPECT)</li></ol>    
+            </p>
+        </div>
+        <hr>
+
+        <input type="button" value="check ans" onclick="toggle_switch()"/>
+        
+        <div id='toggle'>
+        <div class='answer'>
+            <p>
+                <span id="grad2">　解答　　</span>
+            </p>
+            <p>
+            3
+            </p>
+        </div>
+        <div class='description'>
+            <p>
+                <span id="grad2">　解説　　</span>
+            </p>
+            <p><span style="font-weight: 400;">選択肢 1 ですが</span><span style="font-weight: 400;"><br/></span><span style="font-weight: 400;"><strong>CT</strong> は<strong>Computed Tomography</strong>（コンピュータ断層撮影法） の略です。<strong>「X 線」</strong>を用いて、輪切り画像を撮影します。「反射波」ではありません。よって、選択肢 1 は誤りです。</span></p>
+<p><span style="font-weight: 400;">選択肢 2 ですが</span><span style="font-weight: 400;"><br/></span><span style="font-weight: 400;"><strong>MRI</strong> は <strong>magnetic resonance imaging</strong>（磁気共鳴映像法）の略です。 <strong>「特定の周波数のラジオ波」</strong>を照射することにより、核スピンの向きをいったん強制的に揃えた後、照射を止めた時に定常状態に戻るまでの過程（緩和現象）を測定することにより画像化するというものです。「反射波」ではありません。よって、選択肢 2 は誤りです。</span></p>
+<p><span style="font-weight: 400;">選択肢 3 は妥当な記述です。</span><span style="font-weight: 400;"><br/></span><span style="font-weight: 400;">超音波診断法は、エコー検査とも呼ばれます。エコー＝反射波　のことです。</span></p>
+<p><span style="font-weight: 400;">選択肢 4 ですが</span><span style="font-weight: 400;"><br/></span><span style="font-weight: 400;"><strong>PET</strong> は<strong>positron emission tomography</strong>（ポジトロン断層法）の略です。放射能を含む薬剤を用いる、核医学検査の一種です。放射性薬剤を体内に投与し、特殊なカメラでとらえて画像化します。「反射波」ではありません。よって、選択肢 4 は誤りです。</span></p>
+<p><span style="font-weight: 400;">選択肢 5 ですが</span><span style="font-weight: 400;"><br/></span><span style="font-weight: 400;"><strong>SPECT</strong> は <strong>Single Photon Emission Computed Tomography</strong>（単一光子放射断層撮影）の略です。体内に投与した放射性同位体から放出される<strong>「ガンマ線を検出」</strong>し、その分布を断層画像にします。「反射波」ではありません。よって、選択肢 5 は誤りです。</span></p>
+<p><span style="font-weight: 400;">以上より、正解は 3 です。</span><span style="font-weight: 400;"><br/></span></p>
+            </p>
+        </div>
+        </div>
+    </body>
+    <script>
+    document.getElementById("toggle").style.display="none";
+    function toggle_switch(){
+        var x = document.getElementById("toggle");
+        if (x.style.display=="block"){
+            x.style.display="none";
+        }
+        else{
+            x.style.display="block";
+        }
+    }
+    </script>
+    

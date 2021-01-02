@@ -1,0 +1,88 @@
+
+        <!DOCTYPE html>
+    <html lang="ja">
+    <style>
+    body
+    {
+        color: black;
+        background-color: white;
+    }
+    div{
+        font-size: 14px;
+    }
+    span
+    {
+        font-size: 18px;
+    }
+    #grad1{
+        background: linear-gradient(transparent 60%,#99e4f1 30%);
+        font-size: 18px;
+        font-weight: bold;
+    }
+    #grad2{
+        background: linear-gradient(transparent 60%,#fda1a1 30%);
+        font-size: 18px;
+        font-weight: bold;
+    }
+
+    </style>
+
+    <head>
+        <meta charset="UTF-8">
+        <title>100-63</title>
+    </head>
+
+    <body>
+        <h1>
+        <a href="./100_062.html" rel="external" title="prev">≪</a>
+        100-63
+        <a href="./100_064.html" rel="external" title="next">≫</a>
+        </h1>
+        <div class='problem'>
+            <p>
+                <span id="grad1">　問題文　</span>
+            </p>
+            <p>
+                <p>ヒトヘルペスウイルスおよびその感染症に関する記述のうち、誤っているのはどれか。1つ選べ。</p>
+<ol><li>感染症状が消失していれば、ウイルスも体内から消失している。</li><li>水痘と帯状疱疹の原因ウイルスは同じ型である。</li><li>DNAウイルスである。</li><li>突発性発疹を引き起こす。</li><li>口唇に水疱や潰瘍を引き起こす。</li></ol>    
+            </p>
+        </div>
+        <hr>
+
+        <input type="button" value="check ans" onclick="toggle_switch()"/>
+        
+        <div id='toggle'>
+        <div class='answer'>
+            <p>
+                <span id="grad2">　解答　　</span>
+            </p>
+            <p>
+            1
+            </p>
+        </div>
+        <div class='description'>
+            <p>
+                <span id="grad2">　解説　　</span>
+            </p>
+            <p>選択肢 1 ですが<br/>ヘルペスウイルスは、感染していても普段は症状が出ない人も多いウイルスです。つまり、感染症状が消失しているからといってウイルスも消失しているとは、いえません。よって、選択肢 1 は誤りです。</p>
+<p>選択肢 2 ～ 5 は、その通りの記述です。</p>
+<p>以上より、正解は 1 です。</p>
+<p>以下、補足<br/><strong>ヘルペスウイルスについて</strong>は<br/>・代表的な DNA ウイルスであること。<br/>・８個型があること。<br/>→１型、２型が「単純ヘルペスウイルス」であること<br/>→５型の別名が、サイトメガロウイルス　であること<br/>→８型がAIDS合併症として知られているカポジ肉腫に関連しているウイルスであること</p>
+<p>をまず意識して覚えておいて、後は問題ごとに関連知識を増やしていくと試験で思い出しやすいかもしれません。以上、補足。</p>
+            </p>
+        </div>
+        </div>
+    </body>
+    <script>
+    document.getElementById("toggle").style.display="none";
+    function toggle_switch(){
+        var x = document.getElementById("toggle");
+        if (x.style.display=="block"){
+            x.style.display="none";
+        }
+        else{
+            x.style.display="block";
+        }
+    }
+    </script>
+    

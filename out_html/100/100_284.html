@@ -1,0 +1,95 @@
+
+        <!DOCTYPE html>
+    <html lang="ja">
+    <style>
+    body
+    {
+        color: black;
+        background-color: white;
+    }
+    div{
+        font-size: 14px;
+    }
+    span
+    {
+        font-size: 18px;
+    }
+    #grad1{
+        background: linear-gradient(transparent 60%,#99e4f1 30%);
+        font-size: 18px;
+        font-weight: bold;
+    }
+    #grad2{
+        background: linear-gradient(transparent 60%,#fda1a1 30%);
+        font-size: 18px;
+        font-weight: bold;
+    }
+
+    </style>
+
+    <head>
+        <meta charset="UTF-8">
+        <title>100-284</title>
+    </head>
+
+    <body>
+        <h1>
+        <a href="./100_283.html" rel="external" title="prev">≪</a>
+        100-284
+        <a href="./100_285.html" rel="external" title="next">≫</a>
+        </h1>
+        <div class='problem'>
+            <p>
+                <span id="grad1">　問題文　</span>
+            </p>
+            <p>
+                <p>処方された口腔内崩壊錠に関する記述のうち、正しいのはどれか。2つ選べ。</p>
+<ol><li>錠剤表面が、水不溶性高分子でコーティングされている。</li><li>錠剤表面が、腸溶性高分子でコーティングされている。</li><li>口腔粘膜からの薬物吸収を期待した製剤である。</li><li>滑沢剤として、ステアリン酸塩が添加されている。</li><li>水に溶け易い糖類が、添加されている。</li></ol>    
+            </p>
+        </div>
+        <hr>
+
+        <input type="button" value="check ans" onclick="toggle_switch()"/>
+        
+        <div id='toggle'>
+        <div class='answer'>
+            <p>
+                <span id="grad2">　解答　　</span>
+            </p>
+            <p>
+            問284：3, 4問285：4, 5
+            </p>
+        </div>
+        <div class='description'>
+            <p>
+                <span id="grad2">　解説　　</span>
+            </p>
+            <h4>問284</h4>
+<p>選択肢 1 ですが<br/>タムスロシンは、α<span style="font-weight: 400;"><sub>1</sub></span> 受容体遮断薬です。前立腺や尿道の筋肉を弛緩させることで前立腺の肥大に伴う尿道圧迫を軽減します。しかし、肥大した前立腺を直接的に縮小させるわけでは、ありません。よって、選択肢 1 は誤りです。</p>
+<p>選択肢 2 ですが<br/>通常数ヶ月ということはありません。また、特に飲みはじめに目まいや立ちくらみが起きやすいため、注意が必要です。よって、選択肢 2 は誤りです。</p>
+<p>選択肢 3,4 は、正しい選択肢です。<br/>噛み砕いていけない理由は、徐放性顆粒が壊れてしまい薬物動態が乱れるおそれがあるためです。</p>
+<p>以上より、正解は 3,4 です。</p>
+<h4>問285</h4>
+<p>ハルナール D 錠は、前立腺肥大が適応であるため高齢者の服用が多いことから、製剤上の工夫を凝らし「１日１回」の服用でよい「経口錠剤」として開発されました。</p>
+<p>選択肢 1 ですが<br/>水不溶性でコーティングされていては唾液と錠剤が混ざらず、口腔内崩壊がおきないと考えられます。よって、選択肢 1 は誤りです。</p>
+<p>選択肢 2 ですが<br/>胃障害を避けて胃で溶けないようにという製剤ではありません。腸溶性高分子でコーティングはされていません。腸溶性コーティングされた製剤の例としてはアスピリン腸溶錠などがあります。よって、選択肢 2 は誤りです。</p>
+<p>選択肢 3 ですが<br/>水なしで口の中で崩壊することで 水の無い状況でも服用を可能にした製剤です。吸収は、経口製剤と同様に行われます。口腔粘膜からの吸収を期待しているわけでは ありませんよって、選択肢 3 は誤りです。</p>
+<p>選択肢 4,5 は、正しい選択肢です。（この２つの選択肢の内容を知識として求められているというよりは、選択肢 1 ～ 3 を間違っていると判断できることが重要であると思います。）</p>
+<p>以上より、正解は 4,5 です。</p>
+            </p>
+        </div>
+        </div>
+    </body>
+    <script>
+    document.getElementById("toggle").style.display="none";
+    function toggle_switch(){
+        var x = document.getElementById("toggle");
+        if (x.style.display=="block"){
+            x.style.display="none";
+        }
+        else{
+            x.style.display="block";
+        }
+    }
+    </script>
+    

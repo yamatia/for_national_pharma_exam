@@ -1,0 +1,85 @@
+
+        <!DOCTYPE html>
+    <html lang="ja">
+    <style>
+    body
+    {
+        color: black;
+        background-color: white;
+    }
+    div{
+        font-size: 14px;
+    }
+    span
+    {
+        font-size: 18px;
+    }
+    #grad1{
+        background: linear-gradient(transparent 60%,#99e4f1 30%);
+        font-size: 18px;
+        font-weight: bold;
+    }
+    #grad2{
+        background: linear-gradient(transparent 60%,#fda1a1 30%);
+        font-size: 18px;
+        font-weight: bold;
+    }
+
+    </style>
+
+    <head>
+        <meta charset="UTF-8">
+        <title>103-87</title>
+    </head>
+
+    <body>
+        <h1>
+        <a href="./103_086.html" rel="external" title="prev">≪</a>
+        103-87
+        <a href="./103_088.html" rel="external" title="next">≫</a>
+        </h1>
+        <div class='problem'>
+            <p>
+                <span id="grad1">　問題文　</span>
+            </p>
+            <p>
+                <p>団塊の世代が75歳以上となる2025年を目途に、重度な要介護状態となっても住み慣れた地域で自分らしい暮らしを人生の最後まで続けることができるよう、住まい・医療・介護・(　　)・生活支援が一体的に提供される地域包括ケアシステムの構築を実現していきます。</p>
+<ol><li>教育</li><li>出産</li><li>生業</li><li>予防</li><li>葬祭</li></ol>    
+            </p>
+        </div>
+        <hr>
+
+        <input type="button" value="check ans" onclick="toggle_switch()"/>
+        
+        <div id='toggle'>
+        <div class='answer'>
+            <p>
+                <span id="grad2">　解答　　</span>
+            </p>
+            <p>
+            4
+            </p>
+        </div>
+        <div class='description'>
+            <p>
+                <span id="grad2">　解説　　</span>
+            </p>
+            <p><span style="font-weight: 400;">地域における</span><span style="font-weight: 400;">「住まい」「医療」「介護」</span><span style="font-weight: 400;">「予防」「生活支援」の5つのサービスを、</span><span style="font-weight: 400;">一体的に提供できるケア体制を構築しようというのが</span><span style="font-weight: 400;">地域包括ケアシステムです。</span><span style="font-weight: 400;">ここでいう「地域」とは</span><span style="font-weight: 400;">日常生活圏域を指します。</span><span style="font-weight: 400;">おおむね 30 分以内に</span><span style="font-weight: 400;">駆けつけられる場所を想定しています。</span><span style="font-weight: 400;">「地域包括支援センター」が</span><span style="font-weight: 400;">地域住民の介護や医療に関する</span><span style="font-weight: 400;">相談窓口としての役割を担います。</span></p>
+<p><span style="font-weight: 400;">以上より、正解は 4 です。</span></p>
+            </p>
+        </div>
+        </div>
+    </body>
+    <script>
+    document.getElementById("toggle").style.display="none";
+    function toggle_switch(){
+        var x = document.getElementById("toggle");
+        if (x.style.display=="block"){
+            x.style.display="none";
+        }
+        else{
+            x.style.display="block";
+        }
+    }
+    </script>
+    

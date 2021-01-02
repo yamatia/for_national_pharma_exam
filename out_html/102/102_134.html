@@ -1,0 +1,87 @@
+
+        <!DOCTYPE html>
+    <html lang="ja">
+    <style>
+    body
+    {
+        color: black;
+        background-color: white;
+    }
+    div{
+        font-size: 14px;
+    }
+    span
+    {
+        font-size: 18px;
+    }
+    #grad1{
+        background: linear-gradient(transparent 60%,#99e4f1 30%);
+        font-size: 18px;
+        font-weight: bold;
+    }
+    #grad2{
+        background: linear-gradient(transparent 60%,#fda1a1 30%);
+        font-size: 18px;
+        font-weight: bold;
+    }
+
+    </style>
+
+    <head>
+        <meta charset="UTF-8">
+        <title>102-134</title>
+    </head>
+
+    <body>
+        <h1>
+        <a href="./102_133.html" rel="external" title="prev">≪</a>
+        102-134
+        <a href="./102_135.html" rel="external" title="next">≫</a>
+        </h1>
+        <div class='problem'>
+            <p>
+                <span id="grad1">　問題文　</span>
+            </p>
+            <p>
+                <ul><li>ラットの1日あたりの摂餌量：25g</li><li>ラットの平均体重：250g</li><li>ヒトの平均体重：50kg</li><li>安全係数：100</li></ul>
+<ol><li>0.01</li><li>0.2</li><li>5</li><li>20</li><li>125</li></ol>    
+            </p>
+        </div>
+        <hr>
+
+        <input type="button" value="check ans" onclick="toggle_switch()"/>
+        
+        <div id='toggle'>
+        <div class='answer'>
+            <p>
+                <span id="grad2">　解答　　</span>
+            </p>
+            <p>
+            2
+            </p>
+        </div>
+        <div class='description'>
+            <p>
+                <span id="grad2">　解説　　</span>
+            </p>
+            <p>問題文の条件より、250g のラットが、エサ 25g × 0.02 % = 25g × 0.0002 = 0.005g = 5mg の農薬を毎日摂取して大丈夫だった、ということです。※ 1 % = 0.01 であることに注意します。</p>
+<p>すると、もし体重が 1kg = 1000g のラットなら、体重が４倍なので 「5mg × 4 = 20mg」 の農薬を毎日摂取して大丈夫であると考えられます。</p>
+<p>種差を考慮する安全係数が 100 なので、20 ÷ 100 = 0.2 mg（/kg） であれば毎日とっても大丈夫ということになります。</p>
+<p>以上より、正解は 2 です。</p>
+            </p>
+        </div>
+        </div>
+    </body>
+    <script>
+    document.getElementById("toggle").style.display="none";
+    function toggle_switch(){
+        var x = document.getElementById("toggle");
+        if (x.style.display=="block"){
+            x.style.display="none";
+        }
+        else{
+            x.style.display="block";
+        }
+    }
+    </script>
+    

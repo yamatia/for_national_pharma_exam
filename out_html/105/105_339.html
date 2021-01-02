@@ -1,0 +1,86 @@
+
+        <!DOCTYPE html>
+    <html lang="ja">
+    <style>
+    body
+    {
+        color: black;
+        background-color: white;
+    }
+    div{
+        font-size: 14px;
+    }
+    span
+    {
+        font-size: 18px;
+    }
+    #grad1{
+        background: linear-gradient(transparent 60%,#99e4f1 30%);
+        font-size: 18px;
+        font-weight: bold;
+    }
+    #grad2{
+        background: linear-gradient(transparent 60%,#fda1a1 30%);
+        font-size: 18px;
+        font-weight: bold;
+    }
+
+    </style>
+
+    <head>
+        <meta charset="UTF-8">
+        <title>105-339</title>
+    </head>
+
+    <body>
+        <h1>
+        <a href="./105_338.html" rel="external" title="prev">≪</a>
+        105-339
+        <a href="./105_340.html" rel="external" title="next">≫</a>
+        </h1>
+        <div class='problem'>
+            <p>
+                <span id="grad1">　問題文　</span>
+            </p>
+            <p>
+                <p>この患者の副作用症状の原因となる薬剤として、最も疑われるのはどれか。1つ選べ。</p>
+<ol><li>フルスルチアミン錠</li><li>ロキソプロフェンナトリウム水和物錠</li><li>テプレノンカプセル</li><li>ゾピクロン錠</li><li>エドキサバントシル酸塩水和物錠</li></ol>    
+            </p>
+        </div>
+        <hr>
+
+        <input type="button" value="check ans" onclick="toggle_switch()"/>
+        
+        <div id='toggle'>
+        <div class='answer'>
+            <p>
+                <span id="grad2">　解答　　</span>
+            </p>
+            <p>
+            2
+            </p>
+        </div>
+        <div class='description'>
+            <p>
+                <span id="grad2">　解説　　</span>
+            </p>
+            <p>フルスルチアミンはビタミン B<span style="font-weight: 400;"><sub>1</sub></span> です。<br/>ロキソプロフェン＋テプレノンは NSAIDs + 胃保護です。<br/>ゾピクロンは 非 Bz 系睡眠薬です。<br/>エドキサバンは 直接 Xa 因子阻害薬です。</p>
+<p>足のむくみ、倦怠感、尿量減少といった症状は、腎障害を示唆します。薬剤性腎障害が知られている NSAIDs が最も疑われると考えられます。</p>
+<p>以上より、正解は 2 です。 </p>
+            </p>
+        </div>
+        </div>
+    </body>
+    <script>
+    document.getElementById("toggle").style.display="none";
+    function toggle_switch(){
+        var x = document.getElementById("toggle");
+        if (x.style.display=="block"){
+            x.style.display="none";
+        }
+        else{
+            x.style.display="block";
+        }
+    }
+    </script>
+    

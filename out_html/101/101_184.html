@@ -1,0 +1,87 @@
+
+        <!DOCTYPE html>
+    <html lang="ja">
+    <style>
+    body
+    {
+        color: black;
+        background-color: white;
+    }
+    div{
+        font-size: 14px;
+    }
+    span
+    {
+        font-size: 18px;
+    }
+    #grad1{
+        background: linear-gradient(transparent 60%,#99e4f1 30%);
+        font-size: 18px;
+        font-weight: bold;
+    }
+    #grad2{
+        background: linear-gradient(transparent 60%,#fda1a1 30%);
+        font-size: 18px;
+        font-weight: bold;
+    }
+
+    </style>
+
+    <head>
+        <meta charset="UTF-8">
+        <title>101-184</title>
+    </head>
+
+    <body>
+        <h1>
+        <a href="./101_183.html" rel="external" title="prev">≪</a>
+        101-184
+        <a href="./101_185.html" rel="external" title="next">≫</a>
+        </h1>
+        <div class='problem'>
+            <p>
+                <span id="grad1">　問題文　</span>
+            </p>
+            <p>
+                <p>播種性血管内凝固症候群(DIC)に関する記述のうち、誤っているのはどれか。1つ選べ。</p>
+<ol><li>悪性腫瘍や産科的疾患などの基礎疾患を有する。</li><li>多発性微小血栓による循環障害を生じる。</li><li>凝固系と線溶系が同時に亢進する。</li><li>血小板数が増加する。</li><li>基礎疾患の治療に並行して、ヘパリンや合成プロテアーゼ阻害薬による治療を行う。</li></ol>    
+            </p>
+        </div>
+        <hr>
+
+        <input type="button" value="check ans" onclick="toggle_switch()"/>
+        
+        <div id='toggle'>
+        <div class='answer'>
+            <p>
+                <span id="grad2">　解答　　</span>
+            </p>
+            <p>
+            4
+            </p>
+        </div>
+        <div class='description'>
+            <p>
+                <span id="grad2">　解説　　</span>
+            </p>
+            <p>DIC とは「凝固活性亢進」→ 微小血栓が全身にできる → 多臓器不全　がおきる一方で　微小血栓が全身にできることで、血小板や凝固因子が欠乏→「全身において出血傾向」　をきたすという病態のことです。　何らかの基礎疾患を有した上で発症します。</p>
+<p>DIC で致命的なのは、血栓による臓器不全です。治療は、ヘパリンなどを用いた抗凝固療法　です。プロテアーゼ阻害薬　も用いられます。プロテアーゼ阻害薬は抗トロンビン活性を示します。</p>
+<p>トロンビンとは、フィブリノーゲンをフィブリンにする酵素です。トロンビンを前駆体から切り出すプロテアーゼを阻害することで抗トロンビン活性（つまり抗凝固作用）を示します。</p>
+<p>以上より、正解は 4 です。<br/>血小板数は増加ではなく、減少します。</p>
+            </p>
+        </div>
+        </div>
+    </body>
+    <script>
+    document.getElementById("toggle").style.display="none";
+    function toggle_switch(){
+        var x = document.getElementById("toggle");
+        if (x.style.display=="block"){
+            x.style.display="none";
+        }
+        else{
+            x.style.display="block";
+        }
+    }
+    </script>
+    

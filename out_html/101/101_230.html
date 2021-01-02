@@ -1,0 +1,94 @@
+
+        <!DOCTYPE html>
+    <html lang="ja">
+    <style>
+    body
+    {
+        color: black;
+        background-color: white;
+    }
+    div{
+        font-size: 14px;
+    }
+    span
+    {
+        font-size: 18px;
+    }
+    #grad1{
+        background: linear-gradient(transparent 60%,#99e4f1 30%);
+        font-size: 18px;
+        font-weight: bold;
+    }
+    #grad2{
+        background: linear-gradient(transparent 60%,#fda1a1 30%);
+        font-size: 18px;
+        font-weight: bold;
+    }
+
+    </style>
+
+    <head>
+        <meta charset="UTF-8">
+        <title>101-230</title>
+    </head>
+
+    <body>
+        <h1>
+        <a href="./101_229.html" rel="external" title="prev">≪</a>
+        101-230
+        <a href="./101_231.html" rel="external" title="next">≫</a>
+        </h1>
+        <div class='problem'>
+            <p>
+                <span id="grad1">　問題文　</span>
+            </p>
+            <p>
+                <p>カンピロバクターによる食中毒に関する記述のうち、誤っているのはどれか。1つ選べ。</p>
+<ol><li>カンピロバクターは鳥類等の腸管に常在し、鶏肉を汚染しやすい。</li><li>野生生物により汚染された環境水を飲むことにより発症することがある。</li><li>牛レバーの生食により発症することがある。</li><li>カンピロバクターは乾燥に弱いため、殻の表面が乾燥している鶏卵の生食による発症のリスクは低い。</li><li>再興感染症の1つに位置づけられている。</li></ol>    
+            </p>
+        </div>
+        <hr>
+
+        <input type="button" value="check ans" onclick="toggle_switch()"/>
+        
+        <div id='toggle'>
+        <div class='answer'>
+            <p>
+                <span id="grad2">　解答　　</span>
+            </p>
+            <p>
+            問230：2, 4問231：5
+            </p>
+        </div>
+        <div class='description'>
+            <p>
+                <span id="grad2">　解説　　</span>
+            </p>
+            <h4>問230</h4>
+<p>選択肢 1 ですが<br/>下痢により失われた水分・電解質補給が重要です。スポーツ飲料などのこまめな摂取を推奨します。よって、選択肢 1 は誤りです。</p>
+<p>選択肢 2 は、正しい選択肢です。<br/>下痢によって、菌を排出しているので下痢止めは使用しません。整腸剤などを推奨します。</p>
+<p>選択肢 3 ですが<br/>汚染されています。食パンのカビてる部分をよけて食べるような発想ですがだめです。</p>
+<p>選択肢 4 は、正しい選択肢です。<br/>鶏肉に付着していた菌が、手指を介して他の食品に付着しそれを摂取する危険を避けるためです。手洗いは重要です。</p>
+<p>選択肢 5 ですが<br/>冷凍しても、カンピロバクターは死にません。よって、選択肢 5 は誤りです。</p>
+<p>以上より、正解は 2,4 です。</p>
+<h4>問231</h4>
+<p>選択肢 1 ～ 4 は、正しい選択肢です。<br/>牛レバーのように、鶏だけが感染源ではない点に注意が必要です。また、選択肢 4 にあるように乾燥に弱いことから、卵によるカンピロバクターの発症リスクは低いといえます。</p>
+<p>選択肢 5 ですが<br/>再興感染症とは、患者が減少していたのに最近患者数が増加したもの　です。代表例は、結核、マラリア、サルモネラ感染症　などです。カンピロバクター感染症は、再興感染症に位置づけられてはいません。</p>
+<p>以上より、正解は 5 です。</p>
+            </p>
+        </div>
+        </div>
+    </body>
+    <script>
+    document.getElementById("toggle").style.display="none";
+    function toggle_switch(){
+        var x = document.getElementById("toggle");
+        if (x.style.display=="block"){
+            x.style.display="none";
+        }
+        else{
+            x.style.display="block";
+        }
+    }
+    </script>
+    

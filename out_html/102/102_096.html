@@ -1,0 +1,95 @@
+
+        <!DOCTYPE html>
+    <html lang="ja">
+    <style>
+    body
+    {
+        color: black;
+        background-color: white;
+    }
+    div{
+        font-size: 14px;
+    }
+    span
+    {
+        font-size: 18px;
+    }
+    #grad1{
+        background: linear-gradient(transparent 60%,#99e4f1 30%);
+        font-size: 18px;
+        font-weight: bold;
+    }
+    #grad2{
+        background: linear-gradient(transparent 60%,#fda1a1 30%);
+        font-size: 18px;
+        font-weight: bold;
+    }
+
+    </style>
+
+    <head>
+        <meta charset="UTF-8">
+        <title>102-96</title>
+    </head>
+
+    <body>
+        <h1>
+        <a href="./102_095.html" rel="external" title="prev">≪</a>
+        102-96
+        <a href="./102_097.html" rel="external" title="next">≫</a>
+        </h1>
+        <div class='problem'>
+            <p>
+                <span id="grad1">　問題文　</span>
+            </p>
+            <p>
+                <p>・0.05mol/L臭素液1mL=(　B　)mgC<sub>6</sub>H<sub>6</sub>O</p>
+<ol><li>(　A　)に入る試液は、ヨウ化カリウム試液である。</li><li>(　B　)の対応量は、4.705である。</li><li>下線においてクロロホルムを加える理由は、沈殿した2,4,6-トリブロモフェノールを溶解させるためである。</li><li>臭素液のf=1.000の場合、空試験の0.1mol/Lチオ硫酸ナトリウム液の理論量は15.0mLである。</li><li>試料を約1.5g量るとは、1.30gから1.70gの範囲内で秤量することである。</li></ol>    
+            </p>
+        </div>
+        <hr>
+
+        <input type="button" value="check ans" onclick="toggle_switch()"/>
+        
+        <div id='toggle'>
+        <div class='answer'>
+            <p>
+                <span id="grad2">　解答　　</span>
+            </p>
+            <p>
+            1, 3
+            </p>
+        </div>
+        <div class='description'>
+            <p>
+                <span id="grad2">　解説　　</span>
+            </p>
+            <p>フェノールの定量ということで臭素（Br2）を加えていることから「フェノール＋3Br<span style="font-weight: 400;"><sub>2</sub></span>→ トリブロモフェノール＋3HBr」・・・（１）という反応式が連想されると思います。</p>
+<p>A を加えた後、激しく振るとヨウ素（Ⅰ）が遊離していることから、Aが KI で、 加えた Br<span style="font-weight: 400;"><sub>2</sub></span> の残りとの間でいわゆるハロゲン交換がおきたと考えられます。化学反応式は、以下になります。２KI + Br<span style="font-weight: 400;"><sub>2</sub></span> → 2KBr +I<span style="font-weight: 400;"><sub>2　</sub></span>※ここで、臭素はフェノールとの反応である程度減っている点に注意します。</p>
+<p>出てきたヨウ素を滴定することでヨウ素の量がわかります。→化学反応式から、臭素とヨウ素は１：１で反応するので臭素の量がわかります。→臭素の減っている分を計算します。これで間接的にフェノールの量がわかります。この流れをふまえて、各選択肢を検討します。</p>
+<p>選択肢 1 は、正しい選択肢です。</p>
+<p>選択肢 2 ですが<br/>式（１）より、臭素とフェノールは　3：1 で反応します。0.05 mol/L の臭素 1 mL というのは、 0.00005 mol です。従って、反応するフェノールは、0.00005/3 mol です。</p>
+<p>フェノールの分子量は、94.11 と与えられているので、(94.11 × 0.00005)/3 を計算すると0.0047055/3 g ≒ 4.705/3 mg です。4.705mg では、ありません。よって、選択肢 2 は誤りです。</p>
+<p>選択肢 3 は、正しい記述です。</p>
+<p>選択肢 4 ですが<br/>空試験では、加えた Br<span style="font-weight: 400;"><sub>2</sub></span> の量がそのまま I<span style="font-weight: 400;"><sub>2</sub></span> の量になります。0.05 mol/L の濃度で、30mL なので、0.0015 mol です。</p>
+<p>チオ硫酸ナトリウムとヨウ素は、2：1　で反応します。化学反応式は、以下の通りです。2S<span style="font-weight: 400;"><sub>2</sub></span>O<span style="font-weight: 400;"><sub>3<sup>2-</sup></sub></span> + I<span style="font-weight: 400;"><sub>2</sub></span> −→ S<span style="font-weight: 400;"><sub>4</sub></span>O<span style="font-weight: 400;"><sub>6<sup>2-</sup></sub></span> + 2I<span style="font-weight: 400;"><sup>-　</sup></span></p>
+<p>従って、必要なチオ硫酸ナトリウムは 0.003 mol です。0.1 mol/L であれば、30 mL 必要です。<br/>以上より、選択肢 4 は誤りです。</p>
+<p>選択肢 5 ですが<br/><strong>「約」とは、±10 % の範囲</strong>のことです。約 1.5 g であれば、1.35g～1.65g です。よって、選択肢 5 は誤りです。</p>
+<p>以上より、正解は 1,3 です。<br/>類題　</p>
+            </p>
+        </div>
+        </div>
+    </body>
+    <script>
+    document.getElementById("toggle").style.display="none";
+    function toggle_switch(){
+        var x = document.getElementById("toggle");
+        if (x.style.display=="block"){
+            x.style.display="none";
+        }
+        else{
+            x.style.display="block";
+        }
+    }
+    </script>
+    

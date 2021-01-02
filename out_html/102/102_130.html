@@ -1,0 +1,89 @@
+
+        <!DOCTYPE html>
+    <html lang="ja">
+    <style>
+    body
+    {
+        color: black;
+        background-color: white;
+    }
+    div{
+        font-size: 14px;
+    }
+    span
+    {
+        font-size: 18px;
+    }
+    #grad1{
+        background: linear-gradient(transparent 60%,#99e4f1 30%);
+        font-size: 18px;
+        font-weight: bold;
+    }
+    #grad2{
+        background: linear-gradient(transparent 60%,#fda1a1 30%);
+        font-size: 18px;
+        font-weight: bold;
+    }
+
+    </style>
+
+    <head>
+        <meta charset="UTF-8">
+        <title>102-130</title>
+    </head>
+
+    <body>
+        <h1>
+        <a href="./102_129.html" rel="external" title="prev">≪</a>
+        102-130
+        <a href="./102_131.html" rel="external" title="next">≫</a>
+        </h1>
+        <div class='problem'>
+            <p>
+                <span id="grad1">　問題文　</span>
+            </p>
+            <p>
+                <p>グルタチオン抱合に関する記述のうち、正しいのはどれか。2つ選べ。</p>
+<ol><li>基質の求核性部位にグルタチオンが結合する。</li><li>この反応を触媒する酵素は、グルタチオンペルオキシダーゼである。</li><li>この抱合反応の後に起こるメルカプツール酸の生成には、アセチル抱合が関与する。</li><li>アセトアミノフェンの代謝的活性化に関与する。</li><li>1,2-ジブロモエタンの代謝的活性化に関与する。</li></ol>    
+            </p>
+        </div>
+        <hr>
+
+        <input type="button" value="check ans" onclick="toggle_switch()"/>
+        
+        <div id='toggle'>
+        <div class='answer'>
+            <p>
+                <span id="grad2">　解答　　</span>
+            </p>
+            <p>
+            3, 5
+            </p>
+        </div>
+        <div class='description'>
+            <p>
+                <span id="grad2">　解説　　</span>
+            </p>
+            <p>選択肢 1 ですが<br/>グルタチオンのチオール基が求核性を持ち、アタックするメカニズムです。そのため、基質の「求電子性」の高い、電子密度の低い部分に結合します。よって、選択肢 1 は誤りです。</p>
+<p>選択肢 2 ですが<br/>グルタチオン抱合を触媒するのは、グルタチオン－S－トランスフェラーゼです。ペルオキシダーゼでは、ありません。よって、選択肢 2 は誤りです。</p>
+<p>選択肢 3 は、正しい記述です。</p>
+<p>選択肢 4 ですが<br/>アセトアミノフェンは、グルタチオン抱合を受けて代謝され無毒化されます。代謝的活性化に関与するわけではありません。よって、選択肢 4 は誤りです。</p>
+<p>選択肢 5 は、正しい選択肢です。<br/>これは、比較的新しい職業病として、印刷業者と胆管がんの関連から知られるようになった知見です。ジクロロメタンや 1,2 ジクロロプロパン曝露に関する調査結果の副次的知見です。</p>
+<p>以上より、正解は 3,5 です。</p>
+            </p>
+        </div>
+        </div>
+    </body>
+    <script>
+    document.getElementById("toggle").style.display="none";
+    function toggle_switch(){
+        var x = document.getElementById("toggle");
+        if (x.style.display=="block"){
+            x.style.display="none";
+        }
+        else{
+            x.style.display="block";
+        }
+    }
+    </script>
+    

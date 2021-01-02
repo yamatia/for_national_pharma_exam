@@ -1,0 +1,89 @@
+
+        <!DOCTYPE html>
+    <html lang="ja">
+    <style>
+    body
+    {
+        color: black;
+        background-color: white;
+    }
+    div{
+        font-size: 14px;
+    }
+    span
+    {
+        font-size: 18px;
+    }
+    #grad1{
+        background: linear-gradient(transparent 60%,#99e4f1 30%);
+        font-size: 18px;
+        font-weight: bold;
+    }
+    #grad2{
+        background: linear-gradient(transparent 60%,#fda1a1 30%);
+        font-size: 18px;
+        font-weight: bold;
+    }
+
+    </style>
+
+    <head>
+        <meta charset="UTF-8">
+        <title>105-340</title>
+    </head>
+
+    <body>
+        <h1>
+        <a href="./105_339.html" rel="external" title="prev">≪</a>
+        105-340
+        <a href="./105_341.html" rel="external" title="next">≫</a>
+        </h1>
+        <div class='problem'>
+            <p>
+                <span id="grad1">　問題文　</span>
+            </p>
+            <p>
+                <p>注射時に空打ちで2単位使用する。医師に提案する追加すべき注射針数(1袋7本入り)として最も適切なのはどれか。1つ選べ。</p>
+<ol><li>29袋</li><li>31袋</li><li>35袋</li><li>48袋</li><li>50袋</li></ol>    
+            </p>
+        </div>
+        <hr>
+
+        <input type="button" value="check ans" onclick="toggle_switch()"/>
+        
+        <div id='toggle'>
+        <div class='answer'>
+            <p>
+                <span id="grad2">　解答　　</span>
+            </p>
+            <p>
+            1
+            </p>
+        </div>
+        <div class='description'>
+            <p>
+                <span id="grad2">　解説　　</span>
+            </p>
+            <p>薬局実習で正にこういう計算をしたと思います。注射針、数えるのが大変だった記憶がある人もいるのではないでしょうか。</p>
+<p>まず、処方１に注目します。<br/>１日３回、１回３単位＋空打ち２単位　なので、１回５単位です。従って、１日１５単位使用します。インスリンアスパルト「３００単位」 が 「3 キット」なので、全部で 900 単位です。900 ÷ 15 = 60 日分とわかります。</p>
+<p>同様に処方２に注目すると<br/>全部で 600 単位で、１日１０単位なので、やはり 60 日分の処方です。</p>
+<p>インスリンキットを使用する際、１回で針を１本使います。<br/>１日３回の処方１と、１日１回の処方２を合わせれば、１日「４回」です。つまり、１日４本針を使います。60 日分なので 4 × 60 = 240 本必要です。</p>
+<p>自宅に 13 本あり、処方で 4 袋＝ 28 本出ているため、合わせて 41 本です。240 – 41 = 199 本不足しています。199 ÷ 7 = 28 あまり 3 なので、追加すべき注射針は 29 袋です。</p>
+<p>以上より、正解は 1 です。</p>
+            </p>
+        </div>
+        </div>
+    </body>
+    <script>
+    document.getElementById("toggle").style.display="none";
+    function toggle_switch(){
+        var x = document.getElementById("toggle");
+        if (x.style.display=="block"){
+            x.style.display="none";
+        }
+        else{
+            x.style.display="block";
+        }
+    }
+    </script>
+    

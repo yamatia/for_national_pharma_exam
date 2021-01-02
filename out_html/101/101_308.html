@@ -1,0 +1,94 @@
+
+        <!DOCTYPE html>
+    <html lang="ja">
+    <style>
+    body
+    {
+        color: black;
+        background-color: white;
+    }
+    div{
+        font-size: 14px;
+    }
+    span
+    {
+        font-size: 18px;
+    }
+    #grad1{
+        background: linear-gradient(transparent 60%,#99e4f1 30%);
+        font-size: 18px;
+        font-weight: bold;
+    }
+    #grad2{
+        background: linear-gradient(transparent 60%,#fda1a1 30%);
+        font-size: 18px;
+        font-weight: bold;
+    }
+
+    </style>
+
+    <head>
+        <meta charset="UTF-8">
+        <title>101-308</title>
+    </head>
+
+    <body>
+        <h1>
+        <a href="./101_307.html" rel="external" title="prev">≪</a>
+        101-308
+        <a href="./101_309.html" rel="external" title="next">≫</a>
+        </h1>
+        <div class='problem'>
+            <p>
+                <span id="grad1">　問題文　</span>
+            </p>
+            <p>
+                <p>カペシタビンは添付文書に休薬期間を設けるように記載されているが、休薬期間を設けない処方がなされた。薬剤師が疑義照会をせずに、そのまま調剤をしたため、患者に健康被害が生じた。薬剤師が問われる可能性のある法的責任として誤っているのはどれか。1つ選べ。</p>
+<ol><li>民法に基づく不法行為責任</li><li>刑法に基づく業務上過失傷害罪</li><li>薬剤師法に基づく薬剤師業務の停止</li><li>薬剤師法に基づく戒告</li><li>医療法に基づく罰金刑</li></ol>    
+            </p>
+        </div>
+        <hr>
+
+        <input type="button" value="check ans" onclick="toggle_switch()"/>
+        
+        <div id='toggle'>
+        <div class='answer'>
+            <p>
+                <span id="grad2">　解答　　</span>
+            </p>
+            <p>
+            問308：2問309：5
+            </p>
+        </div>
+        <div class='description'>
+            <p>
+                <span id="grad2">　解説　　</span>
+            </p>
+            <h4>問308</h4>
+<p>カペシタビン（ゼローダ）には、CYP 2C9 合成系に影響することによる、酵素活性低下にもとづくワルファリンカリウムの作用増強が知られています。従って、PT – INR 値　に特に注意する必要があります。</p>
+<p>メチルジゴキシンが使われているから、血清カリウム値にも注意は必要です。低 K の時、中毒を起こす恐れがあります。「化学療法の開始に伴う相互作用による、、、」とあるため、PT – INR が、より適切な選択肢です。</p>
+<p>以上より、正解は 2 です。</p>
+<h4>問309</h4>
+<p>調剤過誤に伴う法的責任は、大きく分けて 3 つあります。民事責任、刑事責任、行政責任です。</p>
+<p>民事責任とは、加害者が被害者に損害賠償する責任です。不法行為責任などがあります。</p>
+<p>刑事責任とは、加害者が刑に処される責任です。調剤過誤の場合、業務上過失致死傷罪に問われることがあります。</p>
+<p>行政責任とは、免許の取り消しなどの処分を受ける責任です。</p>
+<p>選択肢 5 の医療法は<br/>医療全体についての法律であり「調剤過誤を行った場合の刑」　といった規定はありません。つまり、調剤過誤によって生じた健康被害について「医療法に基づく罰金刑」としての形で法的責任を問われる可能性は、ありません。</p>
+<p>以上より、正解は 5 です。</p>
+            </p>
+        </div>
+        </div>
+    </body>
+    <script>
+    document.getElementById("toggle").style.display="none";
+    function toggle_switch(){
+        var x = document.getElementById("toggle");
+        if (x.style.display=="block"){
+            x.style.display="none";
+        }
+        else{
+            x.style.display="block";
+        }
+    }
+    </script>
+    

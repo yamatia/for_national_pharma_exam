@@ -1,0 +1,92 @@
+
+        <!DOCTYPE html>
+    <html lang="ja">
+    <style>
+    body
+    {
+        color: black;
+        background-color: white;
+    }
+    div{
+        font-size: 14px;
+    }
+    span
+    {
+        font-size: 18px;
+    }
+    #grad1{
+        background: linear-gradient(transparent 60%,#99e4f1 30%);
+        font-size: 18px;
+        font-weight: bold;
+    }
+    #grad2{
+        background: linear-gradient(transparent 60%,#fda1a1 30%);
+        font-size: 18px;
+        font-weight: bold;
+    }
+
+    </style>
+
+    <head>
+        <meta charset="UTF-8">
+        <title>101-246</title>
+    </head>
+
+    <body>
+        <h1>
+        <a href="./101_245.html" rel="external" title="prev">≪</a>
+        101-246
+        <a href="./101_247.html" rel="external" title="next">≫</a>
+        </h1>
+        <div class='problem'>
+            <p>
+                <span id="grad1">　問題文　</span>
+            </p>
+            <p>
+                <p>薬物相互作用を回避するため、[ 薬剤1 ]を中止したところ、幻覚症状が発現した。その機序として最も可能性の高いのはどれか。1つ選べ。</p>
+<ol><li>ドパミン受容体に対する刺激と遮断のバランスがくずれ、刺激優位となった。</li><li>ドパミン受容体に対する刺激と遮断のバランスがくずれ、遮断優位となった。</li><li>アセチルコリン受容体に対する刺激と遮断のバランスがくずれ、刺激優位となった。</li><li>アセチルコリン受容体に対する刺激と遮断のバランスがくずれ、遮断優位となった。</li><li>[ 薬剤1 ]を中止することで脳内ドパミン濃度が増加した。</li><li>[ 薬剤1 ]を中止することで脳内アセチルコリン濃度が増加した。</li></ol>    
+            </p>
+        </div>
+        <hr>
+
+        <input type="button" value="check ans" onclick="toggle_switch()"/>
+        
+        <div id='toggle'>
+        <div class='answer'>
+            <p>
+                <span id="grad2">　解答　　</span>
+            </p>
+            <p>
+            問246：4問247：1
+            </p>
+        </div>
+        <div class='description'>
+            <p>
+                <span id="grad2">　解説　　</span>
+            </p>
+            <h4>問246</h4>
+<p>レボドパは、D 受容体の刺激によりパーキンソン病の症状を劇的に改善させます。選択肢 の薬剤の中で、スルピリドは D<span style="font-weight: 400;"><sub>2</sub></span> 受容体遮断薬です。従って、レボドパの効果である D 受容体の刺激を減弱させた可能性があると考えられます。</p>
+<p>以上より、正解は 4 です。</p>
+<p>ちなみに、選択肢 1 のプロパンテリンは<br/>抗コリン薬で、鎮痙薬です。胃や腹痛の時に用いられる胃腸の過剰な活動を抑制する薬です。</p>
+<p>選択肢 2 のラベプラゾールナトリウムは<br/>PPI （プロトンポンプインヒビター）です。胃・十二指腸潰瘍治療薬です。</p>
+<p>選択肢 3,5 の スクラルファート 及び テプレノンは<br/>防御因子増強薬です。主に PG （プロスタグランジン）の増加を促し、防御因子増強により消化器症状の改善を図る薬です。スクラルファートは、アルミニウム塩なので、抗菌薬であるニューキノロンの吸収を阻害し効果を減弱させる相互作用が知られています。（服用時間を 2 時間ほどずらせば OK です。）</p>
+<h4>問247</h4>
+<p>薬剤 1 の作用点は、D 受容体であるため、中止によりドパミン受容体に対する刺激と遮断のバランスが崩れます。薬剤 1 は、D 遮断薬なので、中止により刺激優位になると考えられます。</p>
+<p>以上より、正解は 1 です。</p>
+            </p>
+        </div>
+        </div>
+    </body>
+    <script>
+    document.getElementById("toggle").style.display="none";
+    function toggle_switch(){
+        var x = document.getElementById("toggle");
+        if (x.style.display=="block"){
+            x.style.display="none";
+        }
+        else{
+            x.style.display="block";
+        }
+    }
+    </script>
+    

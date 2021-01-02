@@ -1,0 +1,88 @@
+
+        <!DOCTYPE html>
+    <html lang="ja">
+    <style>
+    body
+    {
+        color: black;
+        background-color: white;
+    }
+    div{
+        font-size: 14px;
+    }
+    span
+    {
+        font-size: 18px;
+    }
+    #grad1{
+        background: linear-gradient(transparent 60%,#99e4f1 30%);
+        font-size: 18px;
+        font-weight: bold;
+    }
+    #grad2{
+        background: linear-gradient(transparent 60%,#fda1a1 30%);
+        font-size: 18px;
+        font-weight: bold;
+    }
+
+    </style>
+
+    <head>
+        <meta charset="UTF-8">
+        <title>105-4</title>
+    </head>
+
+    <body>
+        <h1>
+        <a href="./105_003.html" rel="external" title="prev">≪</a>
+        105-4
+        <a href="./105_005.html" rel="external" title="next">≫</a>
+        </h1>
+        <div class='problem'>
+            <p>
+                <span id="grad1">　問題文　</span>
+            </p>
+            <p>
+                <p>元素の原子量をH＝1.0079、C＝12.0107、O＝15.9994、Pb＝207.2とするとき、酢酸鉛(Ⅱ)の式量の有効数字の桁数として正しいのはどれか。1つ選べ。</p>
+<ol><li>3</li><li>4</li><li>5</li><li>6</li><li>7</li></ol>    
+            </p>
+        </div>
+        <hr>
+
+        <input type="button" value="check ans" onclick="toggle_switch()"/>
+        
+        <div id='toggle'>
+        <div class='answer'>
+            <p>
+                <span id="grad2">　解答　　</span>
+            </p>
+            <p>
+            2
+            </p>
+        </div>
+        <div class='description'>
+            <p>
+                <span id="grad2">　解説　　</span>
+            </p>
+            <p>酢酸鉛（Ⅱ）は Pb(CH3COOH)<span style="font-weight: 400;"><sub>2</sub></span> です。</p>
+<p>元素の原子量について、有効数字の桁数は<br/>H が 5 桁、C が 6 桁、O が 6 桁、Pb が４桁です。</p>
+<p>式量は、各元素の原子量を足し合わせて出すので、「最も小さい桁数」が有効数字の桁数となります。つまり「４桁」です。</p>
+<p>以上より、正解は 2 です。</p>
+<p>類題 </p>
+            </p>
+        </div>
+        </div>
+    </body>
+    <script>
+    document.getElementById("toggle").style.display="none";
+    function toggle_switch(){
+        var x = document.getElementById("toggle");
+        if (x.style.display=="block"){
+            x.style.display="none";
+        }
+        else{
+            x.style.display="block";
+        }
+    }
+    </script>
+    

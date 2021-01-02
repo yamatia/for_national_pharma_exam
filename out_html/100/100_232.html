@@ -1,0 +1,95 @@
+
+        <!DOCTYPE html>
+    <html lang="ja">
+    <style>
+    body
+    {
+        color: black;
+        background-color: white;
+    }
+    div{
+        font-size: 14px;
+    }
+    span
+    {
+        font-size: 18px;
+    }
+    #grad1{
+        background: linear-gradient(transparent 60%,#99e4f1 30%);
+        font-size: 18px;
+        font-weight: bold;
+    }
+    #grad2{
+        background: linear-gradient(transparent 60%,#fda1a1 30%);
+        font-size: 18px;
+        font-weight: bold;
+    }
+
+    </style>
+
+    <head>
+        <meta charset="UTF-8">
+        <title>100-232</title>
+    </head>
+
+    <body>
+        <h1>
+        <a href="./100_231.html" rel="external" title="prev">≪</a>
+        100-232
+        <a href="./100_233.html" rel="external" title="next">≫</a>
+        </h1>
+        <div class='problem'>
+            <p>
+                <span id="grad1">　問題文　</span>
+            </p>
+            <p>
+                <ul><li>　　植物　　　　　　有毒成分</li></ul>
+<ol><li>ツキヨタケ　　　　　イルジンS</li><li>タマゴテングタケ　　α-アマニチン</li><li>ジギタリス　　　　　ジギトキシン</li><li>ワラビ　　　　　　　プタキロシド</li><li>トリカブト　　　　　アコニチン</li></ol>    
+            </p>
+        </div>
+        <hr>
+
+        <input type="button" value="check ans" onclick="toggle_switch()"/>
+        
+        <div id='toggle'>
+        <div class='answer'>
+            <p>
+                <span id="grad2">　解答　　</span>
+            </p>
+            <p>
+            問232：3, 4問233：5
+            </p>
+        </div>
+        <div class='description'>
+            <p>
+                <span id="grad2">　解説　　</span>
+            </p>
+            <h4>問232</h4>
+<p>選択肢 1 ですが<br/>アミオダロンの希釈を 0.9% 塩化ナトリウム溶液（生理食塩液）で行うと溶液中に沈殿が生じることから、生理食塩液に溶解して投与してはならないと規定されています。5% ブドウ糖注射液に溶解して用います。よって、選択肢 1 は誤りです。</p>
+<p>選択肢 2 ですが<br/>アミオダロンの投与方法は、容量型の持続注入ポンプを用いることとされています。これは、ブドウ糖で希釈した結果、溶液に粘性があるために 滴下型では、誤差が生じて過小投与になることを避けるためです。よって、選択肢 2 は誤りです。</p>
+<p>選択肢 3,4 は正しい選択肢です。</p>
+<p>以上より、正解は 3,4 です。</p>
+<h4>問233</h4>
+<p>選択肢 1 ですが<br/>イルジンS は、下痢や嘔吐が主要な中毒症状です。しびれや呼吸困難、不整脈が生じていることから誤りであると考えられます。</p>
+<p>選択肢 2 ですが<br/>アマニチンは、激しい嘔吐、水様性の下痢などのコレラ様の症状が特徴です。しびれや呼吸困難、不整脈が生じていることから誤りであると考えられます。</p>
+<p>選択肢 3 ですが<br/>ジギタリスにはジギトキシンが、特に葉に多く含まれています。おひたしにした、ということでありえる選択肢ですが、口唇のしびれは症状として知られておらず誤りではないかと考えられます。</p>
+<p>選択肢 4 ですが<br/>プタキロシドは、発がん物質として知られています。本問題のような、急性の症状は考えづらく誤りであると考えられます。</p>
+<p>選択肢 5 は、正しい選択肢です。<br/>イオンチャネル活性化による脱分極によって、しびれや心臓発作などの症状を引き起こします。</p>
+<p>以上より、正解は 5 です。</p>
+            </p>
+        </div>
+        </div>
+    </body>
+    <script>
+    document.getElementById("toggle").style.display="none";
+    function toggle_switch(){
+        var x = document.getElementById("toggle");
+        if (x.style.display=="block"){
+            x.style.display="none";
+        }
+        else{
+            x.style.display="block";
+        }
+    }
+    </script>
+    

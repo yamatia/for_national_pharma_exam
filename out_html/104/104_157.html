@@ -1,0 +1,88 @@
+
+        <!DOCTYPE html>
+    <html lang="ja">
+    <style>
+    body
+    {
+        color: black;
+        background-color: white;
+    }
+    div{
+        font-size: 14px;
+    }
+    span
+    {
+        font-size: 18px;
+    }
+    #grad1{
+        background: linear-gradient(transparent 60%,#99e4f1 30%);
+        font-size: 18px;
+        font-weight: bold;
+    }
+    #grad2{
+        background: linear-gradient(transparent 60%,#fda1a1 30%);
+        font-size: 18px;
+        font-weight: bold;
+    }
+
+    </style>
+
+    <head>
+        <meta charset="UTF-8">
+        <title>104-157</title>
+    </head>
+
+    <body>
+        <h1>
+        <a href="./104_156.html" rel="external" title="prev">≪</a>
+        104-157
+        <a href="./104_158.html" rel="external" title="next">≫</a>
+        </h1>
+        <div class='problem'>
+            <p>
+                <span id="grad1">　問題文　</span>
+            </p>
+            <p>
+                <p>制吐薬の作用機序に関する記述のうち、正しいのはどれか。2つ選べ。</p>
+<ol><li>アプレピタントは、嘔吐中枢及び迷走神経終末のタキキニンNK<sub>1</sub>受容体を遮断することで制吐作用を示す。</li><li>メトクロプラミドは、CTZ(化学受容器引き金帯)のドパミンD<sub>2</sub>受容体を遮断することで制吐作用を示す。</li><li>ジフェンヒドラミンは、嘔吐中枢のヒスタミンH<sub>1</sub>受容体を刺激することで制吐作用を示す。</li><li>プロメタジンは、迷走神経終末のドパミンD<sub>2</sub>受容体を遮断することで制吐作用を示す。</li><li>ラモセトロンは、消化管内在神経叢のセロトニン5-HT<sub>4</sub>受容体を遮断することで胃運動を抑制し、制吐作用を示す。</li></ol>    
+            </p>
+        </div>
+        <hr>
+
+        <input type="button" value="check ans" onclick="toggle_switch()"/>
+        
+        <div id='toggle'>
+        <div class='answer'>
+            <p>
+                <span id="grad2">　解答　　</span>
+            </p>
+            <p>
+            1, 2
+            </p>
+        </div>
+        <div class='description'>
+            <p>
+                <span id="grad2">　解説　　</span>
+            </p>
+            <p><span style="font-weight: 400;">選択肢 1,2 は妥当な記述です。</span></p>
+<p><span style="font-weight: 400;">選択肢 3 ですが<br/></span><span style="font-weight: 400;">ジフェンヒドラミンは、抗ヒスタミン薬です。ヒスタミン受容体を「遮断」します。「刺激」ではありません。よって、選択肢 3 は誤りです。</span></p>
+<p><span style="font-weight: 400;">選択肢 4 ですが<br/></span><span style="font-weight: 400;">プロメタジンは H<sub>1</sub></span><span style="font-weight: 400;"> 受容体遮断薬です。動揺病（乗り物酔い）に伴う悪心、嘔吐、めまいに使用されます。「D<sub>2</sub></span><span style="font-weight: 400;"> 受容体遮断」ではありません。よって、選択肢 4 は誤りです。</span></p>
+<p><span style="font-weight: 400;">選択肢 5 ですが<br/></span><span style="font-weight: 400;">ラモセトロン（イリボー）は 「5－HT<sub>3</sub></span><span style="font-weight: 400;"> 受容体遮断」作用を示します。「5 – HT<sub>4</sub></span><span style="font-weight: 400;">」ではありません。よって、選択肢 5 は誤りです。</span></p>
+<p><span style="font-weight: 400;">以上より、正解は 1,2 です。<br/></span><span style="font-weight: 400;">参考）</span><span style="font-weight: 400;"><br/></span></p>
+            </p>
+        </div>
+        </div>
+    </body>
+    <script>
+    document.getElementById("toggle").style.display="none";
+    function toggle_switch(){
+        var x = document.getElementById("toggle");
+        if (x.style.display=="block"){
+            x.style.display="none";
+        }
+        else{
+            x.style.display="block";
+        }
+    }
+    </script>
+    

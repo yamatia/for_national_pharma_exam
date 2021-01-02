@@ -1,0 +1,90 @@
+
+        <!DOCTYPE html>
+    <html lang="ja">
+    <style>
+    body
+    {
+        color: black;
+        background-color: white;
+    }
+    div{
+        font-size: 14px;
+    }
+    span
+    {
+        font-size: 18px;
+    }
+    #grad1{
+        background: linear-gradient(transparent 60%,#99e4f1 30%);
+        font-size: 18px;
+        font-weight: bold;
+    }
+    #grad2{
+        background: linear-gradient(transparent 60%,#fda1a1 30%);
+        font-size: 18px;
+        font-weight: bold;
+    }
+
+    </style>
+
+    <head>
+        <meta charset="UTF-8">
+        <title>100-274</title>
+    </head>
+
+    <body>
+        <h1>
+        <a href="./100_273.html" rel="external" title="prev">≪</a>
+        100-274
+        <a href="./100_275.html" rel="external" title="next">≫</a>
+        </h1>
+        <div class='problem'>
+            <p>
+                <span id="grad1">　問題文　</span>
+            </p>
+            <p>
+                <p>この薬物0.75mgを急速静脈内投与するとき、7日後の血中濃度に最も近い値はどれか。1つ選べ。ただし、この薬物の体内動態は線形1-コンパートメントモデルに従うものとし、分布容積は750Lとする。</p>
+<ol><li>0.25μg/mL</li><li>0.125μg/mL</li><li>0.0625μg/mL</li><li>0.25ng/mL</li><li>0.125ng/mL</li><li>0.0625ng/mL</li></ol>    
+            </p>
+        </div>
+        <hr>
+
+        <input type="button" value="check ans" onclick="toggle_switch()"/>
+        
+        <div id='toggle'>
+        <div class='answer'>
+            <p>
+                <span id="grad2">　解答　　</span>
+            </p>
+            <p>
+            問274：5問275：6
+            </p>
+        </div>
+        <div class='description'>
+            <p>
+                <span id="grad2">　解説　　</span>
+            </p>
+            <h4>問274</h4>
+<p>半減期が長い、いわゆる第二世代 5-HT<span style="font-weight: 400;"><sub>3</sub></span> 受容体拮抗薬の説明であるため、パロノセトロン（アロキシ®）であると考えられます。ちなみに、他の選択肢も全て 5-HT<span style="font-weight: 400;"><sub>3</sub></span> 受容体拮抗薬です。抗がん剤使用に伴う、特に急性の悪心・嘔吐に対して制吐剤として用いられています。</p>
+<p>以上より、正解は 5 です。</p>
+<h4>問275</h4>
+<p>Vd = D/C<span style="font-weight: 400;"><sub>0</sub></span> （この式は、必須知識です。）より、750 (L) = 0.75 (mg)/ C<span style="font-weight: 400;"><sub>0 </sub></span> (mg/L) 　です。よって、C<span style="font-weight: 400;"><sub>0</sub></span> = 0.001 (mg/L) です。選択肢の単位を参考に、単位変換をしておくと、0.001 (mg/L) = 0.001 (μg/mL) = 1 (ng/mL) です。</p>
+<p>７日＝168 時間後　なので、半減期は 42 時間ということから、半減期 4 周期分 の時間が経過しています。従って、1 → 0.5 → 0.25 → 0.125 → 0.0625 (ng/mL) です。</p>
+<p>以上より、正解は 6 です。</p>
+            </p>
+        </div>
+        </div>
+    </body>
+    <script>
+    document.getElementById("toggle").style.display="none";
+    function toggle_switch(){
+        var x = document.getElementById("toggle");
+        if (x.style.display=="block"){
+            x.style.display="none";
+        }
+        else{
+            x.style.display="block";
+        }
+    }
+    </script>
+    

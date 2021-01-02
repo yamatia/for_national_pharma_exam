@@ -1,0 +1,90 @@
+
+        <!DOCTYPE html>
+    <html lang="ja">
+    <style>
+    body
+    {
+        color: black;
+        background-color: white;
+    }
+    div{
+        font-size: 14px;
+    }
+    span
+    {
+        font-size: 18px;
+    }
+    #grad1{
+        background: linear-gradient(transparent 60%,#99e4f1 30%);
+        font-size: 18px;
+        font-weight: bold;
+    }
+    #grad2{
+        background: linear-gradient(transparent 60%,#fda1a1 30%);
+        font-size: 18px;
+        font-weight: bold;
+    }
+
+    </style>
+
+    <head>
+        <meta charset="UTF-8">
+        <title>105-80</title>
+    </head>
+
+    <body>
+        <h1>
+        <a href="./105_079.html" rel="external" title="prev">≪</a>
+        105-80
+        <a href="./105_081.html" rel="external" title="next">≫</a>
+        </h1>
+        <div class='problem'>
+            <p>
+                <span id="grad1">　問題文　</span>
+            </p>
+            <p>
+                <p>希少疾病用医薬品に関する記述のうち、適切なのはどれか。1つ選べ。</p>
+<ol><li>指定難病の患者に対する治療薬のことである。</li><li>国が主体となって製品化を行う。</li><li>指定された後に、取り消されることはない。</li><li>承認されるまで、指定されたことは公開されない。</li><li>他の医薬品に優先して承認審査を受けられる。</li></ol>    
+            </p>
+        </div>
+        <hr>
+
+        <input type="button" value="check ans" onclick="toggle_switch()"/>
+        
+        <div id='toggle'>
+        <div class='answer'>
+            <p>
+                <span id="grad2">　解答　　</span>
+            </p>
+            <p>
+            5
+            </p>
+        </div>
+        <div class='description'>
+            <p>
+                <span id="grad2">　解説　　</span>
+            </p>
+            <p>希少疾病用医薬品とは、対象患者数 5 万人以下、医療上特に必要性が高い　などの条件に合致するものとして、厚生労働大臣が指定する医薬品です。必要性の高さから、優先審査が行われたり患者数が少ないことから、利益がみこめず企業により十分に研究開発が行われない点を考慮し様々な優遇措置がとられます。</p>
+<p>選択肢 1 ですが<br/>指定難病とは、難病のうち、国が指定しているもののことです。ベーチェット病など、様々な病気が指定されています。指定難病治療薬が、希少疾病用医薬品であるわけではありません。よって、選択肢 1 は誤りです。</p>
+<p>選択肢 2 ですが<br/>製品化を行うのは製薬企業です。よって、選択肢 2 は誤りです。</p>
+<p>選択肢 3 ですが<br/>取消されることもあります。よって、選択肢 3 は誤りです。</p>
+<p>選択肢 4 ですが<br/>薬機法により、「厚生労働大臣は・・・指定をしたときは、その旨を公示するものとする」と規定されています。よって、選択肢 4 は誤りです。</p>
+<p>選択肢 5 は妥当な記述です。</p>
+<p>以上より、正解は 5 です。</p>
+            </p>
+        </div>
+        </div>
+    </body>
+    <script>
+    document.getElementById("toggle").style.display="none";
+    function toggle_switch(){
+        var x = document.getElementById("toggle");
+        if (x.style.display=="block"){
+            x.style.display="none";
+        }
+        else{
+            x.style.display="block";
+        }
+    }
+    </script>
+    

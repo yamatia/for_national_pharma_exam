@@ -1,0 +1,97 @@
+
+        <!DOCTYPE html>
+    <html lang="ja">
+    <style>
+    body
+    {
+        color: black;
+        background-color: white;
+    }
+    div{
+        font-size: 14px;
+    }
+    span
+    {
+        font-size: 18px;
+    }
+    #grad1{
+        background: linear-gradient(transparent 60%,#99e4f1 30%);
+        font-size: 18px;
+        font-weight: bold;
+    }
+    #grad2{
+        background: linear-gradient(transparent 60%,#fda1a1 30%);
+        font-size: 18px;
+        font-weight: bold;
+    }
+
+    </style>
+
+    <head>
+        <meta charset="UTF-8">
+        <title>101-262</title>
+    </head>
+
+    <body>
+        <h1>
+        <a href="./101_261.html" rel="external" title="prev">≪</a>
+        101-262
+        <a href="./101_263.html" rel="external" title="next">≫</a>
+        </h1>
+        <div class='problem'>
+            <p>
+                <span id="grad1">　問題文　</span>
+            </p>
+            <p>
+                <p>前問中の薬物の作用機序として正しいのはどれか。2つ選べ。</p>
+<ol><li>イミペネムは、UDP-N-アセチルムラミン酸の合成を阻害する。</li><li>アジスロマイシンは、細菌のリボソーム50Sサブユニットに結合し、タンパク質合成を阻害する。</li><li>セフィキシムは、細菌のリボソーム30Sサブユニットに結合し、タンパク質合成を阻害する。</li><li>アンピシリンは、ペプチドグリカン前駆体のペプチジル-D-アラニンに結合し、細胞壁合成を阻害する。</li><li>レボフロキサシンは、細菌のDNAジャイレースを阻害し、DNAの複製を阻害する。</li></ol>    
+            </p>
+        </div>
+        <hr>
+
+        <input type="button" value="check ans" onclick="toggle_switch()"/>
+        
+        <div id='toggle'>
+        <div class='answer'>
+            <p>
+                <span id="grad2">　解答　　</span>
+            </p>
+            <p>
+            問262：2問263：2, 5
+            </p>
+        </div>
+        <div class='description'>
+            <p>
+                <span id="grad2">　解説　　</span>
+            </p>
+            <h4>問262</h4>
+<p>検査所見から、ALT,AST,γ – GPT は基準値内ですが、血清クレアチニンが高値でクレアチニンクリアランスが低値です。腎機能低下が見られます。</p>
+<p>各薬は、イミペネム→カルバペネム系、アジスロマイシン→マクロライド系、セフィキシム→第 3 世代セフェム系、アンピシリン→ペニシリン系、レボフロキサシン→ニューキノロン　です。</p>
+<p>肝で主に代謝され、腎機能低下中の患者でも投与量を調節する必要性が低い代表的抗菌薬は、マクロライド系抗生物質です。マクロライド系抗生物質の代表例は、クラリスロマイシンやアジスロマイシンです。</p>
+<p>以上より、正解は 2 です。<br/>類題　</p>
+<h4>問263</h4>
+<p>選択肢 1 ですが<br/>イミペネムはカルバペネム系なので、β－ラクタム系の一種です。</p>
+<p>β－ラクタム系は、ペニシリン結合タンパク質を阻害することで細胞壁合成を特異的に阻害します。UDP-N -アセチルムラミン酸　は細胞壁の構成要素ではありますが、β－ラクタム系がUDP-N- アセチルムラミン酸の合成を阻害するわけではありません。</p>
+<p>いうなれば、UDP－N－アセチルムラミン酸は、細胞壁という最終作品を合成するための材料です。そして、β－ラクタム系は、材料を組み上げていくために必要な道具の一つである「ペニシリン結合タンパク質」　を阻害することで、材料（UDP－N－アセチルムラミン酸）はあるけれど最終作品である細胞壁を合成させなくする　という働きを示します。よって、選択肢 1 は誤りです。</p>
+<p>選択肢 2 は、正しい選択肢です。<br/>マクロライド系の作用機序です。「50S」,「タンパク質合成を阻害」がポイントです。</p>
+<p>選択肢 3 ですが<br/>セフェム系なので、β－ラクタム系の一種で細胞壁合成阻害薬です。タンパク質合成阻害では、ありません。よって、選択肢 3 は誤りです。</p>
+<p>選択肢 4 ですが<br/>アンピシリンは、ペニシリン系なのでβ－ラクタムの一種です。結合するのは、ペニシリン結合タンパク質です。ペプチドグリカン前駆体のペプチジル- D -アラニンに結合するわけではありません。ペプチジル－D－アラニンと結合し細胞壁合成を阻害するのは、グリコペプチド系抗菌薬などです。よって、選択肢 4 は誤りです。</p>
+<p>選択肢 5 は、正しい選択肢です。<br/>ニューキノロンときたら、DNA ジャイレース阻害です。</p>
+<p>以上より、正解は 2,5 です。</p>
+            </p>
+        </div>
+        </div>
+    </body>
+    <script>
+    document.getElementById("toggle").style.display="none";
+    function toggle_switch(){
+        var x = document.getElementById("toggle");
+        if (x.style.display=="block"){
+            x.style.display="none";
+        }
+        else{
+            x.style.display="block";
+        }
+    }
+    </script>
+    

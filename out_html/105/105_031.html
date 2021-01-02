@@ -1,0 +1,90 @@
+
+        <!DOCTYPE html>
+    <html lang="ja">
+    <style>
+    body
+    {
+        color: black;
+        background-color: white;
+    }
+    div{
+        font-size: 14px;
+    }
+    span
+    {
+        font-size: 18px;
+    }
+    #grad1{
+        background: linear-gradient(transparent 60%,#99e4f1 30%);
+        font-size: 18px;
+        font-weight: bold;
+    }
+    #grad2{
+        background: linear-gradient(transparent 60%,#fda1a1 30%);
+        font-size: 18px;
+        font-weight: bold;
+    }
+
+    </style>
+
+    <head>
+        <meta charset="UTF-8">
+        <title>105-31</title>
+    </head>
+
+    <body>
+        <h1>
+        <a href="./105_030.html" rel="external" title="prev">≪</a>
+        105-31
+        <a href="./105_032.html" rel="external" title="next">≫</a>
+        </h1>
+        <div class='problem'>
+            <p>
+                <span id="grad1">　問題文　</span>
+            </p>
+            <p>
+                <p>ベンゾジアゼピン骨格を有し、筋弛緩作用に基づく転倒などの副作用が少ない催眠薬はどれか。1つ選べ。</p>
+<ol><li>クアゼパム</li><li>ゾルピデム</li><li>ゾピクロン</li><li>リルマザホン</li><li>トリアゾラム</li></ol>    
+            </p>
+        </div>
+        <hr>
+
+        <input type="button" value="check ans" onclick="toggle_switch()"/>
+        
+        <div id='toggle'>
+        <div class='answer'>
+            <p>
+                <span id="grad2">　解答　　</span>
+            </p>
+            <p>
+            1
+            </p>
+        </div>
+        <div class='description'>
+            <p>
+                <span id="grad2">　解説　　</span>
+            </p>
+            <p>選択肢 1 は妥当な記述です。<br/>クアゼパムは ω1 受容体選択的です。筋弛緩作用に深く関与する ω2 受容体への親和性が小さいことから、転倒などの副作用が相対的に小さいことが期待されます。</p>
+<p>選択肢 2 ですが<br/>ゾルピデムは、非 ベンゾジアゼピン（Bz）系です。よって、選択肢 2 は誤りです。</p>
+<p>選択肢 3 ですが<br/>ゾピクロン（アモバン）は、非 Bz 系です。よって、選択肢 3 は誤りです。</p>
+<p>選択肢 4 ですが<br/>リルマザホン（リスミー）は、ベンゾジアゼピン系の、開環誘導体です。リルマザホン自体がBz骨格を有するわけではありません。よって、選択肢 4 は誤りです。（)</p>
+<p>選択肢 5 ですが<br/>トリアゾラム（ハルシオン）は、Bz 系催眠薬です。「筋弛緩作用に基づく転倒などの副作用が少ない」という記述に符号しないと考えられます。よって、選択肢 5 は誤りです。</p>
+<p>以上より、正解は 1 です。</p>
+<p>参考）</p>
+            </p>
+        </div>
+        </div>
+    </body>
+    <script>
+    document.getElementById("toggle").style.display="none";
+    function toggle_switch(){
+        var x = document.getElementById("toggle");
+        if (x.style.display=="block"){
+            x.style.display="none";
+        }
+        else{
+            x.style.display="block";
+        }
+    }
+    </script>
+    

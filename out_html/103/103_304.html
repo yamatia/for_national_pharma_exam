@@ -1,0 +1,97 @@
+
+        <!DOCTYPE html>
+    <html lang="ja">
+    <style>
+    body
+    {
+        color: black;
+        background-color: white;
+    }
+    div{
+        font-size: 14px;
+    }
+    span
+    {
+        font-size: 18px;
+    }
+    #grad1{
+        background: linear-gradient(transparent 60%,#99e4f1 30%);
+        font-size: 18px;
+        font-weight: bold;
+    }
+    #grad2{
+        background: linear-gradient(transparent 60%,#fda1a1 30%);
+        font-size: 18px;
+        font-weight: bold;
+    }
+
+    </style>
+
+    <head>
+        <meta charset="UTF-8">
+        <title>103-304</title>
+    </head>
+
+    <body>
+        <h1>
+        <a href="./103_303.html" rel="external" title="prev">≪</a>
+        103-304
+        <a href="./103_305.html" rel="external" title="next">≫</a>
+        </h1>
+        <div class='problem'>
+            <p>
+                <span id="grad1">　問題文　</span>
+            </p>
+            <p>
+                <p>この研究に関する記述のうち、正しいのはどれか。2つ選べ。</p>
+<ol><li>この研究は介入研究である。</li><li>Primary outcomeとは真のアウトカムのことである。</li><li>Randomized trialでは交絡因子の制御が困難である。</li><li>ITT解析により、当初の患者背景因子の同等性が保持されていると考えられる。</li><li>生存時間分析を行っている。</li></ol>    
+            </p>
+        </div>
+        <hr>
+
+        <input type="button" value="check ans" onclick="toggle_switch()"/>
+        
+        <div id='toggle'>
+        <div class='answer'>
+            <p>
+                <span id="grad2">　解答　　</span>
+            </p>
+            <p>
+            問304：2, 4問305：1, 4
+            </p>
+        </div>
+        <div class='description'>
+            <p>
+                <span id="grad2">　解説　　</span>
+            </p>
+            <h4>問304</h4>
+<p><span style="font-weight: 400;">選択肢 1 ですが<br/></span><span style="font-weight: 400;">「主要評価項目」とは</span><span style="font-weight: 400;">「Primary outcome」のことです。</span><span style="font-weight: 400;">ここには「Surgical-site infection」とあります。</span><span style="font-weight: 400;">これは手術部位感染　のことです。</span><span style="font-weight: 400;">平均入院期間は</span><span style="font-weight: 400;">主要評価項目ではありません。</span><span style="font-weight: 400;">よって、選択肢 1 は誤りです。</span></p>
+<p><span style="font-weight: 400;">選択肢 2 は、正しい記述です。<br/></span><span style="font-weight: 400;">Relative Risk つまり相対リスクが</span><span style="font-weight: 400;">0.55 と読み取れます。</span><span style="font-weight: 400;">これは、リスクが 0.45 つまり 45% </span><span style="font-weight: 400;">減少しているということです。</span></p>
+<p><span style="font-weight: 400;">選択肢 3 ですが<br/></span><span style="font-weight: 400;">深部の感染は</span><span style="font-weight: 400;">「Deep incisional」の行に注目します。</span><span style="font-weight: 400;">すると、95％CI（95％信頼区間）が</span><span style="font-weight: 400;">0.43(0.17-1.11)とあります。</span><span style="font-weight: 400;"><strong>１をまたいでいる</strong>ので、有意差はなしです。</span><span style="font-weight: 400;">よって、選択肢 3 は誤りです。</span></p>
+<p><span style="font-weight: 400;">選択肢 4 は、正しい記述です。<br/></span><span style="font-weight: 400;">「入院期間の中央値」とは</span><span style="font-weight: 400;">「Median length of hospital stay」です。</span></p>
+<p><span style="font-weight: 400;">選択肢 5 ですが<br/></span><span style="font-weight: 400;">「再入院」は</span><span style="font-weight: 400;">「Hospital readmission」です。</span><span style="font-weight: 400;">この項目は no.(%)とあります。</span><span style="font-weight: 400;">つまり、クロロヘキシジン群であれば</span><span style="font-weight: 400;">N=573 に対して 19 人が再入院し</span><span style="font-weight: 400;">その割合は 3.3 % ということです。</span><span style="font-weight: 400;">19日間ではありません。</span><span style="font-weight: 400;">よって、選択肢 5 は誤りです。</span></p>
+<p><span style="font-weight: 400;">以上より、正解は 2,4 です。</span></p>
+<h4>問305</h4>
+<p><span style="font-weight: 400;">選択肢 1 は、正しい記述です。<br/></span><span style="font-weight: 400;">介入研究とは、</span><span style="font-weight: 400;">疾病と因果関係があると考えられる要因に</span><span style="font-weight: 400;">積極的に介入する研究です。</span></p>
+<p><span style="font-weight: 400;">選択肢 2 ですが<br/></span><span style="font-weight: 400;">Primary Outcome とは、</span><span style="font-weight: 400;">主要評価項目のことです。</span><span style="font-weight: 400;">これは、臨床試験における</span><span style="font-weight: 400;">目的とする評価項目です。</span><span style="font-weight: 400;">一方、真のアウトカムとは、</span><span style="font-weight: 400;">患者の死亡数の減少といった</span><span style="font-weight: 400;">患者にとって直接的に重要な結果</span><span style="font-weight: 400;">のことです。</span><span style="font-weight: 400;">よって、選択肢 2 は誤りです。</span></p>
+<p><span style="font-weight: 400;">選択肢 3 ですが<br/></span><span style="font-weight: 400;">交絡因子が不明な場合の有効な手法が、</span><span style="font-weight: 400;">ランダム化試験です。</span><span style="font-weight: 400;">ランダム化により</span><span style="font-weight: 400;">臨床試験における違い以外が</span><span style="font-weight: 400;">均等であると期待できます。</span><span style="font-weight: 400;">よって、選択肢 3 は誤りです。</span></p>
+<p><span style="font-weight: 400;">選択肢 4 は、正しい記述です。<br/></span><span style="font-weight: 400;">ITT 解析とは、臨床試験中に副反応等で</span><span style="font-weight: 400;">当初の割当を変更することがあるのですが、</span><span style="font-weight: 400;">その影響を考慮し、より実用的価値を</span><span style="font-weight: 400;">評価する手法です。</span></p>
+<p><span style="font-weight: 400;">選択肢 5 ですが<br/></span><span style="font-weight: 400;">生存時間の分析は行われていません。</span><span style="font-weight: 400;">よって、選択肢 5 は誤りです。</span></p>
+<p><span style="font-weight: 400;">以上より、正解は 1,4 です。</span></p>
+            </p>
+        </div>
+        </div>
+    </body>
+    <script>
+    document.getElementById("toggle").style.display="none";
+    function toggle_switch(){
+        var x = document.getElementById("toggle");
+        if (x.style.display=="block"){
+            x.style.display="none";
+        }
+        else{
+            x.style.display="block";
+        }
+    }
+    </script>
+    
