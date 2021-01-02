@@ -1,0 +1,88 @@
+
+        <!DOCTYPE html>
+    <html lang="ja">
+    <style>
+    body
+    {
+        color: black;
+        background-color: white;
+    }
+    div{
+        font-size: 14px;
+    }
+    span
+    {
+        font-size: 18px;
+    }
+    #grad1{
+        background: linear-gradient(transparent 60%,#99e4f1 30%);
+        font-size: 18px;
+        font-weight: bold;
+    }
+    #grad2{
+        background: linear-gradient(transparent 60%,#fda1a1 30%);
+        font-size: 18px;
+        font-weight: bold;
+    }
+
+    </style>
+
+    <head>
+        <meta charset="UTF-8">
+        <title>101-54</title>
+    </head>
+
+    <body>
+        <h1>
+        <a href="./101_053.html" rel="external" title="prev">≪</a>
+        101-54
+        <a href="./101_055.html" rel="external" title="next">≫</a>
+        </h1>
+        <div class='problem'>
+            <p>
+                <span id="grad1">　問題文　</span>
+            </p>
+            <p>
+                <p>日本薬局方において、腸溶性製剤の崩壊試験に用いられる崩壊試験第1液と崩壊試験第2液のpHの組合せとして、正しいのはどれか。1つ選べ。</p>
+<ul><li>第1液のpH　第2液のpH</li></ul>
+<ol><li>約1.2　　　約6.8</li><li>約1.2　　　約9.5</li><li>約6.8　　　約1.2</li><li>約6.8　　　約9.5</li><li>約9.5　　　約1.2</li><li>約9.5　　　約6.8</li></ol>    
+            </p>
+        </div>
+        <hr>
+
+        <input type="button" value="check ans" onclick="toggle_switch()"/>
+        
+        <div id='toggle'>
+        <div class='answer'>
+            <p>
+                <span id="grad2">　解答　　</span>
+            </p>
+            <p>
+            1
+            </p>
+        </div>
+        <div class='description'>
+            <p>
+                <span id="grad2">　解説　　</span>
+            </p>
+            <p>腸溶性製剤の崩壊試験なので「胃で溶けず、腸では溶ける」ことを試験します。つまり、胃液を模した１液で溶けず、腸液を模した２液で溶けることを試験します。</p>
+<p>胃液は酸性　かつ　主成分が塩酸（強酸）であることは前提知識です。胃液を模すので第 1 液の pH は 1 付近のかなり強い酸性と考えられます。従って、正解は 1 or 2 です。</p>
+<p>腸液は弱アルカリ性と考えられます。pH 9.5 では少しアルカリ性が強く、それで崩壊したからといって腸液で溶けると判断することが難しいと考えられます。よって、第 2 液の pH としては6.8 が妥当であると判断します。</p>
+<p>以上より、正解は 1 です。</p>
+            </p>
+        </div>
+        </div>
+    </body>
+    <script>
+    document.getElementById("toggle").style.display="none";
+    function toggle_switch(){
+        var x = document.getElementById("toggle");
+        if (x.style.display=="block"){
+            x.style.display="none";
+        }
+        else{
+            x.style.display="block";
+        }
+    }
+    </script>
+    

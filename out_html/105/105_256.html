@@ -1,0 +1,99 @@
+
+        <!DOCTYPE html>
+    <html lang="ja">
+    <style>
+    body
+    {
+        color: black;
+        background-color: white;
+    }
+    div{
+        font-size: 14px;
+    }
+    span
+    {
+        font-size: 18px;
+    }
+    #grad1{
+        background: linear-gradient(transparent 60%,#99e4f1 30%);
+        font-size: 18px;
+        font-weight: bold;
+    }
+    #grad2{
+        background: linear-gradient(transparent 60%,#fda1a1 30%);
+        font-size: 18px;
+        font-weight: bold;
+    }
+
+    </style>
+
+    <head>
+        <meta charset="UTF-8">
+        <title>105-256</title>
+    </head>
+
+    <body>
+        <h1>
+        <a href="./105_255.html" rel="external" title="prev">≪</a>
+        105-256
+        <a href="./105_257.html" rel="external" title="next">≫</a>
+        </h1>
+        <div class='problem'>
+            <p>
+                <span id="grad1">　問題文　</span>
+            </p>
+            <p>
+                <p>52歳女性。全身倦怠感と微熱、手足の関節痛と朝のこわばりを訴えて受診したところ、関節リウマチと診断された。メトトレキサート過敏症の既往歴があるため、代替薬について、医師より薬剤師に相談があった。</p>
+<h4>問256</h4>
+<p>医師に推奨すべきメトトレキサートの代替薬として適切なのはどれか。2つ選べ。</p>
+<ol><li>レフルノミド</li><li>モルヒネ塩酸塩</li><li>サラゾスルファピリジン</li><li>インフリキシマブ</li><li>スリンダク</li></ol>
+<h4>問257</h4>
+<p>医師に推奨すべきそれぞれの薬物の作用機序はどれか。2つ選べ。</p>
+<ol><li>シクロオキシゲナーゼ(COX)の阻害</li><li>ピリミジンヌクレオチドの合成抑制</li><li>T細胞及びマクロファージでのサイトカイン産生抑制</li><li>腫瘍壊死因子(TNF)-αの捕捉</li><li>オピオイドμ受容体の刺激</li></ol>    
+            </p>
+        </div>
+        <hr>
+
+        <input type="button" value="check ans" onclick="toggle_switch()"/>
+        
+        <div id='toggle'>
+        <div class='answer'>
+            <p>
+                <span id="grad2">　解答　　</span>
+            </p>
+            <p>
+            問256：1, 3問257：2, 3
+            </p>
+        </div>
+        <div class='description'>
+            <p>
+                <span id="grad2">　解説　　</span>
+            </p>
+            <h4>問256</h4>
+<p>問 257 と合わせて解説します。</p>
+<h4>問257</h4>
+<p>レフルノミド は、ピリミジン合成系を阻害し、リンパ球の増殖を抑制することで作用するリウマチ治療薬です。（) 。メトトレキサートの代替薬として適切と考えられます。</p>
+<p>モルヒネは麻薬性鎮痛薬です。μ 受容体アゴニストです。神経伝達物質放出を抑制することで抹消からの痛みを伝える信号がブロックされます。リウマチ治療薬であるメトトレキサートの代替薬としては適切ではないと考えられます。</p>
+<p>サラゾスルファピリジン（アザルフィジン）は、腸の炎症をしずめる薬です。抗炎症作用は、大腸で分解されるサリチル酸による作用です。潰瘍性大腸炎などに用いられます。また、サラゾスルファピリジンは、体内に吸収され、T細胞やマクロファージに作用することでこれらの細胞からのサイトカイン産生を抑制することで、抗リウマチ薬としても機能します。（)　メトトレキサートの代替薬として適切と考えられます。</p>
+<p>インフリキシマブ（レミケード）は遺伝子組み換え抗ヒトTNF－αモノクローナル抗体です。TNF－α とは、炎症性サイトカインの一つです。（)。メトトレキサートとの併用を前提として投与する生物学的製剤です。（)。従って、代替薬としては不適切です。</p>
+<p>スリンダクはプロドラッグです。腎障害が少ない NSAIDs です。リウマチ治療薬であるメトトレキサートの代替薬としては適切ではないと考えられます。</p>
+<p>以上より<br/>問 256 の正解は 1,3 です。<br/>問 257 の正解は 2,3 です。</p>
+<p>レフルノミド→ピリミジンヌクレオチドの合成抑制<br/>モルヒネ塩酸塩→オピオイド μ 受容体の刺激<br/>サラゾスルファピリジン→ T 細胞及びマクロファージでのサイトカイン産生抑制<br/>インフリキシマブ→腫瘍壊死因子（TNF)ーα の捕捉<br/>スリンダク→シクロオキシゲナーゼ（COX)の阻害</p>
+<p>とそれぞれ対応しています。</p>
+            </p>
+        </div>
+        </div>
+    </body>
+    <script>
+    document.getElementById("toggle").style.display="none";
+    function toggle_switch(){
+        var x = document.getElementById("toggle");
+        if (x.style.display=="block"){
+            x.style.display="none";
+        }
+        else{
+            x.style.display="block";
+        }
+    }
+    </script>
+    

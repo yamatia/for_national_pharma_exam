@@ -1,0 +1,87 @@
+
+        <!DOCTYPE html>
+    <html lang="ja">
+    <style>
+    body
+    {
+        color: black;
+        background-color: white;
+    }
+    div{
+        font-size: 14px;
+    }
+    span
+    {
+        font-size: 18px;
+    }
+    #grad1{
+        background: linear-gradient(transparent 60%,#99e4f1 30%);
+        font-size: 18px;
+        font-weight: bold;
+    }
+    #grad2{
+        background: linear-gradient(transparent 60%,#fda1a1 30%);
+        font-size: 18px;
+        font-weight: bold;
+    }
+
+    </style>
+
+    <head>
+        <meta charset="UTF-8">
+        <title>99-34</title>
+    </head>
+
+    <body>
+        <h1>
+        <a href="./099_033.html" rel="external" title="prev">≪</a>
+        99-34
+        <a href="./099_035.html" rel="external" title="next">≫</a>
+        </h1>
+        <div class='problem'>
+            <p>
+                <span id="grad1">　問題文　</span>
+            </p>
+            <p>
+                <p>ミソプロストールの消化管粘膜保護作用に関わる受容体はどれか。1つ選べ。</p>
+<ol><li>セロトニン5-HT<sub>3</sub>受容体</li><li>ヒスタミンH<sub>2</sub>受容体</li><li>アセチルコリンM<sub>1</sub>受容体</li><li>ドパミンD<sub>2</sub>受容体</li><li>プロスタノイドEP受容体</li></ol>    
+            </p>
+        </div>
+        <hr>
+
+        <input type="button" value="check ans" onclick="toggle_switch()"/>
+        
+        <div id='toggle'>
+        <div class='answer'>
+            <p>
+                <span id="grad2">　解答　　</span>
+            </p>
+            <p>
+            5
+            </p>
+        </div>
+        <div class='description'>
+            <p>
+                <span id="grad2">　解説　　</span>
+            </p>
+            <p>ミソプロストールは、PG（prostaglandin）製剤です。PG の誘導体です。胃酸分泌抑制作用に加え、粘膜分泌を促進させることにより消化管粘膜保護作用を示します。PG の受容体は、プロスタノイド受容体です。</p>
+<p>以上より、正解は 5 です。</p>
+<p>プロスタノイド受容体について より詳しく以下で補足します。<br/>プロスタノイド　→　対応する受容体　という形式で列挙します。<br/>PGD<sub>2</sub>　　→ 　 DP<br/>PGE<sub>2</sub>　　→ 　 EP　<br/>PGF<sub>2α</sub>　→ 　 FP<br/>PGI<sub>2</sub>　　 → 　 IP<br/>TX<sub>A2</sub>　　　→　 TP　といったように、プロスタノイドそれぞれに対して特異的な受容体があることがわかっています。</p>
+<p>ちなみに、ミソプロストールは PGE<sub>1</sub> 誘導体です。PGE<sub>1</sub> と PGE<sub>2</sub> の違いは、分子内の<br/>二重結合の有無です。又、PG の受容体は EP のサブタイプである EP<sub>1</sub> を除いて PGE<sub>1</sub> と、PGE<sub>2</sub> を区別しません。補足　終わり</p>
+            </p>
+        </div>
+        </div>
+    </body>
+    <script>
+    document.getElementById("toggle").style.display="none";
+    function toggle_switch(){
+        var x = document.getElementById("toggle");
+        if (x.style.display=="block"){
+            x.style.display="none";
+        }
+        else{
+            x.style.display="block";
+        }
+    }
+    </script>
+    

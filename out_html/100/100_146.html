@@ -1,0 +1,89 @@
+
+        <!DOCTYPE html>
+    <html lang="ja">
+    <style>
+    body
+    {
+        color: black;
+        background-color: white;
+    }
+    div{
+        font-size: 14px;
+    }
+    span
+    {
+        font-size: 18px;
+    }
+    #grad1{
+        background: linear-gradient(transparent 60%,#99e4f1 30%);
+        font-size: 18px;
+        font-weight: bold;
+    }
+    #grad2{
+        background: linear-gradient(transparent 60%,#fda1a1 30%);
+        font-size: 18px;
+        font-weight: bold;
+    }
+
+    </style>
+
+    <head>
+        <meta charset="UTF-8">
+        <title>100-146</title>
+    </head>
+
+    <body>
+        <h1>
+        <a href="./100_145.html" rel="external" title="prev">≪</a>
+        100-146
+        <a href="./100_147.html" rel="external" title="next">≫</a>
+        </h1>
+        <div class='problem'>
+            <p>
+                <span id="grad1">　問題文　</span>
+            </p>
+            <p>
+                <p>医薬品の製造販売後安全対策に関する記述のうち、正しいのはどれか。2つ選べ。</p>
+<ol><li>医薬品の製造販売業者は、その製造販売した医薬品の副作用によるものと疑われる症例等で厚生労働省令で定めるものを知ったときは、その旨を厚生労働大臣(情報の整理を独立行政法人医薬品医療機器総合機構(PMDA)に行わせることとした場合は、PMDA)に報告しなければならない。</li><li>再審査制度とは、過去に承認された医薬品について、現時点での医学・薬学等の学問レベルで、有効性、安全性等を再確認するものである。</li><li>医薬品リスク管理計画(RMP)は、開発段階から安全対策を実施することで、製造販売後の医薬品の安全性の確保を図ることを目的とするものである。</li><li>再評価制度とは、新医薬品の承認後一定の期間を定めて、有効性、安全性等の確認を行うものである。</li><li>市販直後調査とは、医薬関係者への適正使用のための情報提供や医薬関係者からの副作用情報の収集について、PMDAが実施するものである。</li></ol>    
+            </p>
+        </div>
+        <hr>
+
+        <input type="button" value="check ans" onclick="toggle_switch()"/>
+        
+        <div id='toggle'>
+        <div class='answer'>
+            <p>
+                <span id="grad2">　解答　　</span>
+            </p>
+            <p>
+            1, 3
+            </p>
+        </div>
+        <div class='description'>
+            <p>
+                <span id="grad2">　解説　　</span>
+            </p>
+            <p>選択肢 1 は、正しい選択肢です。</p>
+<p>選択肢 2 ですが<br/>これは、再「評価」制度についての記述です。再審査制度とは、開発時のデータと市販後の収集したデータを比較することで、再度医薬品の有効性、安全性を確認することを目的とする制度です。新医薬品の承認にあたり、承認の条件として再審査を行うよう、指定がなされます。再審査の期間は、承認の際に指示され、オーファンドラッグであれば 10 年などです。よって、選択肢 2 は誤りです。</p>
+<p>選択肢 3 は、正しい選択肢です。<br/>を、リンクからどれでもいいのでちらっと見ておくとイメージしやすいと思います。</p>
+<p>選択肢 4 ですが<br/>これは再「審査」制度についての記述です。よって、選択肢 4 は誤りです。</p>
+<p>選択肢 5 ですが<br/>市販直後調査を行うのは、製造販売業者です。（具体的には、製造販売業者のMRが、医療機関や医師などを訪問し情報提供、情報収集にあたります。）PMDA では、ありません。よって、選択肢 5 は誤りです。</p>
+<p>以上より、正解は 1,3 です。</p>
+            </p>
+        </div>
+        </div>
+    </body>
+    <script>
+    document.getElementById("toggle").style.display="none";
+    function toggle_switch(){
+        var x = document.getElementById("toggle");
+        if (x.style.display=="block"){
+            x.style.display="none";
+        }
+        else{
+            x.style.display="block";
+        }
+    }
+    </script>
+    

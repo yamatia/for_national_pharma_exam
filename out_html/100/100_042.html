@@ -1,0 +1,89 @@
+
+        <!DOCTYPE html>
+    <html lang="ja">
+    <style>
+    body
+    {
+        color: black;
+        background-color: white;
+    }
+    div{
+        font-size: 14px;
+    }
+    span
+    {
+        font-size: 18px;
+    }
+    #grad1{
+        background: linear-gradient(transparent 60%,#99e4f1 30%);
+        font-size: 18px;
+        font-weight: bold;
+    }
+    #grad2{
+        background: linear-gradient(transparent 60%,#fda1a1 30%);
+        font-size: 18px;
+        font-weight: bold;
+    }
+
+    </style>
+
+    <head>
+        <meta charset="UTF-8">
+        <title>100-42</title>
+    </head>
+
+    <body>
+        <h1>
+        <a href="./100_041.html" rel="external" title="prev">≪</a>
+        100-42
+        <a href="./100_043.html" rel="external" title="next">≫</a>
+        </h1>
+        <div class='problem'>
+            <p>
+                <span id="grad1">　問題文　</span>
+            </p>
+            <p>
+                <p>血液脳脊髄液関門の実体を形成している細胞はどれか。1つ選べ。</p>
+<ol><li>神経細胞</li><li>毛細血管内皮細胞</li><li>脈絡叢上皮細胞</li><li>アストロサイト</li><li>周皮細胞</li></ol>    
+            </p>
+        </div>
+        <hr>
+
+        <input type="button" value="check ans" onclick="toggle_switch()"/>
+        
+        <div id='toggle'>
+        <div class='answer'>
+            <p>
+                <span id="grad2">　解答　　</span>
+            </p>
+            <p>
+            3
+            </p>
+        </div>
+        <div class='description'>
+            <p>
+                <span id="grad2">　解説　　</span>
+            </p>
+            <p>血液脳脊髄液関門の実体は、脈絡叢上皮細胞です。</p>
+<p>以上より、正解は 3 です。</p>
+<p>以下は補足です。<br/>そもそも、脳への薬物移行に関する重要な事項は『血液脳関門』です。すなわち、血中薬物のような異物が脳にだだ漏れだと、脳の機能が維持できません。そこで、そもそも漏れ出ることがないように脳の毛細血管は、内皮細胞がぎゅっと詰まっていて変なものがもれないような構造になっています。これが、『血液脳関門（BBB）』です。</p>
+<p>しかし脈絡叢という、脳脊髄液が産生される部分ではこの毛細血管が、すかすかなのです。すると、血中薬物→脳脊髄液→脳　という薬物の流れが成立してしまい、BBBがあっても意味がないのではないかという話になってしまいます。</p>
+<p>そこで、脈絡叢にも関門があります。その関門が、何と何を遮っているかといえば血液と、脳脊髄液なので『血液脳脊髄液関門（BCSFB）』　と呼ばれます。BCSFBの実体は、脈絡叢の外側、つまり脈絡叢上皮細胞となります。</p>
+<p>「血管の、内皮細胞　が　BBB」「脈絡叢の、上皮細胞が　BCSFB」　という所を間違いなく思い出せるようにするとよいと思います。</p>
+            </p>
+        </div>
+        </div>
+    </body>
+    <script>
+    document.getElementById("toggle").style.display="none";
+    function toggle_switch(){
+        var x = document.getElementById("toggle");
+        if (x.style.display=="block"){
+            x.style.display="none";
+        }
+        else{
+            x.style.display="block";
+        }
+    }
+    </script>
+    

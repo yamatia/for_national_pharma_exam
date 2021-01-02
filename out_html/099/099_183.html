@@ -1,0 +1,87 @@
+
+        <!DOCTYPE html>
+    <html lang="ja">
+    <style>
+    body
+    {
+        color: black;
+        background-color: white;
+    }
+    div{
+        font-size: 14px;
+    }
+    span
+    {
+        font-size: 18px;
+    }
+    #grad1{
+        background: linear-gradient(transparent 60%,#99e4f1 30%);
+        font-size: 18px;
+        font-weight: bold;
+    }
+    #grad2{
+        background: linear-gradient(transparent 60%,#fda1a1 30%);
+        font-size: 18px;
+        font-weight: bold;
+    }
+
+    </style>
+
+    <head>
+        <meta charset="UTF-8">
+        <title>99-183</title>
+    </head>
+
+    <body>
+        <h1>
+        <a href="./099_182.html" rel="external" title="prev">≪</a>
+        99-183
+        <a href="./099_184.html" rel="external" title="next">≫</a>
+        </h1>
+        <div class='problem'>
+            <p>
+                <span id="grad1">　問題文　</span>
+            </p>
+            <p>
+                <p>子宮内膜症に関する記述のうち、誤っているのはどれか。1つ選べ。</p>
+<ol><li>不妊症の原因の一つである。</li><li>主訴は生理痛が多い。</li><li>卵管や卵巣にも病変が発生する。</li><li>子宮内膜の増殖は、プロゲステロンにより促進される。</li><li>GnRH(gonadtropin-releasing hormone)アゴニストが治療に用いられる。</li></ol>    
+            </p>
+        </div>
+        <hr>
+
+        <input type="button" value="check ans" onclick="toggle_switch()"/>
+        
+        <div id='toggle'>
+        <div class='answer'>
+            <p>
+                <span id="grad2">　解答　　</span>
+            </p>
+            <p>
+            4
+            </p>
+        </div>
+        <div class='description'>
+            <p>
+                <span id="grad2">　解説　　</span>
+            </p>
+            <p>選択肢 1,2,3,5 は<br/>その通りの記述です。</p>
+<p>ちなみに、GnRH アゴニストの代表例は、点鼻剤→ブセレリン（スプレキュア）、注射剤→リュープロレリン酢酸塩（リュープリン）です。</p>
+<p>選択肢 4 ですが<br/>子宮内膜の増殖は、卵胞ホルモン（エストロゲン）により増殖が促進されます。プロゲステロンでは、ありません。よって、選択肢 4 は誤りです。</p>
+<p>以上より、正解は 4 です。</p>
+            </p>
+        </div>
+        </div>
+    </body>
+    <script>
+    document.getElementById("toggle").style.display="none";
+    function toggle_switch(){
+        var x = document.getElementById("toggle");
+        if (x.style.display=="block"){
+            x.style.display="none";
+        }
+        else{
+            x.style.display="block";
+        }
+    }
+    </script>
+    

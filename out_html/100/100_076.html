@@ -1,0 +1,89 @@
+
+        <!DOCTYPE html>
+    <html lang="ja">
+    <style>
+    body
+    {
+        color: black;
+        background-color: white;
+    }
+    div{
+        font-size: 14px;
+    }
+    span
+    {
+        font-size: 18px;
+    }
+    #grad1{
+        background: linear-gradient(transparent 60%,#99e4f1 30%);
+        font-size: 18px;
+        font-weight: bold;
+    }
+    #grad2{
+        background: linear-gradient(transparent 60%,#fda1a1 30%);
+        font-size: 18px;
+        font-weight: bold;
+    }
+
+    </style>
+
+    <head>
+        <meta charset="UTF-8">
+        <title>100-76</title>
+    </head>
+
+    <body>
+        <h1>
+        <a href="./100_075.html" rel="external" title="prev">≪</a>
+        100-76
+        <a href="./100_077.html" rel="external" title="next">≫</a>
+        </h1>
+        <div class='problem'>
+            <p>
+                <span id="grad1">　問題文　</span>
+            </p>
+            <p>
+                <p>次の薬物のうち、他の薬物との相互作用が原因となった薬害事象を引き起こしたのはどれか。1つ選べ。</p>
+<ol><li>サリドマイド</li><li>クロロキン</li><li>キノホルム</li><li>ソリブジン</li><li>アミノピリン</li></ol>    
+            </p>
+        </div>
+        <hr>
+
+        <input type="button" value="check ans" onclick="toggle_switch()"/>
+        
+        <div id='toggle'>
+        <div class='answer'>
+            <p>
+                <span id="grad2">　解答　　</span>
+            </p>
+            <p>
+            4
+            </p>
+        </div>
+        <div class='description'>
+            <p>
+                <span id="grad2">　解説　　</span>
+            </p>
+            <p>選択肢 1 ですが<br/>サリドマイドは、睡眠薬として用いられたが催奇形性があり、アザラシ肢症を引き起こした薬です。他の薬物との相互作用が原因では、ありませんでした。よって、選択肢 1 は誤りです。ちなみに、近年、多発性骨髄腫の治療薬として認可されるなど再評価されつつある薬でもあります。</p>
+<p>選択肢 2 ですが<br/>クロロキンは、抗マラリア薬の一つです。クロロキン網膜症という副作用が報告され使用中止になりました。他の薬物との相互作用が原因では、ありませんでした。よって、選択肢 2 は誤りです。ちなみに、全身性エリテマトーデスなどの治療に用いられることが、日本以外において見られます。</p>
+<p><br/>選択肢 3 ですが<br/>キノホルムは整腸剤として用いられました。スモンを引き起こした薬です。他の薬物との相互作用が原因では、ありませんでした。よって、選択肢 3 は誤りです。ちなみに、キノホルムはアルツハイマー病の有効薬としての可能性から再評価されつつある薬でもあります。さらに、キノホルムによるスモン薬害は医薬品副作用被害救済制度発足の直接の契機となった事案でもあります。</p>
+<p>選択肢 4 は、正しい選択肢です。<br/>５－FU との相互作用により重篤な副作用が生じた薬学事例です。</p>
+<p>選択肢 5 ですが<br/>アミノピリンは、鎮痛、解熱作用を有しかつてアンプル入りかぜ薬の成分として用いられました。アミノピリンを含むアンプル入りのかぜ薬が原因で薬害が発生したことがあります。他の薬物との相互作用が原因では、ありませんでした。よって、選択肢 5 は誤りです。</p>
+<p>以上より、正解は 4 です。</p>
+            </p>
+        </div>
+        </div>
+    </body>
+    <script>
+    document.getElementById("toggle").style.display="none";
+    function toggle_switch(){
+        var x = document.getElementById("toggle");
+        if (x.style.display=="block"){
+            x.style.display="none";
+        }
+        else{
+            x.style.display="block";
+        }
+    }
+    </script>
+    

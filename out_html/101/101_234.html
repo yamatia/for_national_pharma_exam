@@ -1,0 +1,97 @@
+
+        <!DOCTYPE html>
+    <html lang="ja">
+    <style>
+    body
+    {
+        color: black;
+        background-color: white;
+    }
+    div{
+        font-size: 14px;
+    }
+    span
+    {
+        font-size: 18px;
+    }
+    #grad1{
+        background: linear-gradient(transparent 60%,#99e4f1 30%);
+        font-size: 18px;
+        font-weight: bold;
+    }
+    #grad2{
+        background: linear-gradient(transparent 60%,#fda1a1 30%);
+        font-size: 18px;
+        font-weight: bold;
+    }
+
+    </style>
+
+    <head>
+        <meta charset="UTF-8">
+        <title>101-234</title>
+    </head>
+
+    <body>
+        <h1>
+        <a href="./101_233.html" rel="external" title="prev">≪</a>
+        101-234
+        <a href="./101_235.html" rel="external" title="next">≫</a>
+        </h1>
+        <div class='problem'>
+            <p>
+                <span id="grad1">　問題文　</span>
+            </p>
+            <p>
+                <p>34歳女性。検診で乳がんの疑いを指摘された。血縁者の多くが乳がんを発症していたため、乳がんの遺伝子検査及び組織診断を受けた。</p>
+<p>その結果、HER2陽性乳がんと診断された。骨転移があるため、ドセタキセル/カルボプラチン/トラスツズマブの併用療法のレジメンに従い、薬物治療が始まった。</p>
+<h4>問234</h4>
+<p>遺伝性乳がんの発症に関わる遺伝子はどれか。1つ選べ。</p>
+<ol><li><em>APC</em></li><li><em>BRCA1</em></li><li><em>NF1</em></li><li><em>p53</em></li><li><em>RB</em></li><li><em>VHL</em></li></ol>
+<h4>問235</h4>
+<p>ドセタキセル/カルボプラチン/トラスツズマブの併用療法について、誤っているのはどれか。1つ選べ。</p>
+<ol><li>トラスツズマブ投与前及び投与期間中に適宜心機能検査をする。</li><li>トラスツズマブはアナフィラキシー様症状に注意して投与する。</li><li>トラスツズマブの代表的な副作用に骨髄抑制がある。</li><li>カルボプラチンの投与期間中は血清電解質濃度及び腎機能検査を行う。</li><li>カルボプラチンはアナフィラキシー様症状に注意して投与する。</li><li>カルボプラチンの代表的な副作用に骨髄抑制がある。</li></ol>    
+            </p>
+        </div>
+        <hr>
+
+        <input type="button" value="check ans" onclick="toggle_switch()"/>
+        
+        <div id='toggle'>
+        <div class='answer'>
+            <p>
+                <span id="grad2">　解答　　</span>
+            </p>
+            <p>
+            問234：2問235：3
+            </p>
+        </div>
+        <div class='description'>
+            <p>
+                <span id="grad2">　解説　　</span>
+            </p>
+            <h4>問234</h4>
+<p>遺伝性乳がんの発症に関わる遺伝子は BRCA　です。</p>
+<p>その他の選択肢ですが、APC は大腸がん発症に関わる遺伝子です。NF1 は、神経線維腫瘍 1 型もしくは、レックリングハウゼン病　という病気に関わる遺伝子です。p53 は、代表的ながん抑制遺伝子です。多くのがん患者で、機能が喪失していることが知られています。RB は、網膜芽細胞腫に関連する遺伝子です。がん抑制遺伝子の一種です。VHLは、がん抑制遺伝子の一種です。腎癌に関連していると考えられています。</p>
+<p>以上より、正解は 2 です。</p>
+<h4>問235</h4>
+<p>トラスツズマブ（ハーセプチン）の特徴が、正常な細胞へのダメージの少なさです。吐き気や脱毛、<strong>骨髄抑制などの副作用がほとんどみられない</strong>ことが知られています。代表的な副作用は、インフュージョンリアクションです。また、心不全などの重篤な心障害も副作用として知られています。</p>
+<p>以上より、正解は 3 です。</p>
+<p>ちなみに、ドセタキセルは、タキサン系の微小管阻害による抗がん剤です。副作用としては、むくみが知られています。カルボプラチンは、白金製剤です。シスプラチンと比べると腎臓への負担が小さくなっています。とはいえ、使用中は腎障害に注意します。また、骨髄抑制にも気をつける必要があります。</p>
+            </p>
+        </div>
+        </div>
+    </body>
+    <script>
+    document.getElementById("toggle").style.display="none";
+    function toggle_switch(){
+        var x = document.getElementById("toggle");
+        if (x.style.display=="block"){
+            x.style.display="none";
+        }
+        else{
+            x.style.display="block";
+        }
+    }
+    </script>
+    

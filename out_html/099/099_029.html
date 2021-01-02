@@ -1,0 +1,88 @@
+
+        <!DOCTYPE html>
+    <html lang="ja">
+    <style>
+    body
+    {
+        color: black;
+        background-color: white;
+    }
+    div{
+        font-size: 14px;
+    }
+    span
+    {
+        font-size: 18px;
+    }
+    #grad1{
+        background: linear-gradient(transparent 60%,#99e4f1 30%);
+        font-size: 18px;
+        font-weight: bold;
+    }
+    #grad2{
+        background: linear-gradient(transparent 60%,#fda1a1 30%);
+        font-size: 18px;
+        font-weight: bold;
+    }
+
+    </style>
+
+    <head>
+        <meta charset="UTF-8">
+        <title>99-29</title>
+    </head>
+
+    <body>
+        <h1>
+        <a href="./099_028.html" rel="external" title="prev">≪</a>
+        99-29
+        <a href="./099_030.html" rel="external" title="next">≫</a>
+        </h1>
+        <div class='problem'>
+            <p>
+                <span id="grad1">　問題文　</span>
+            </p>
+            <p>
+                <p>麻酔下の動物に、アドレナリンを静脈注射すると急速な血圧上昇とそれに続く下降が認められた。しかし、ある薬物を前処置後に先と同量のアドレナリンを静脈注射すると血圧下降のみが認められた。前処置した薬物はどれか。1つ選べ。</p>
+<ol><li>スコポラミン</li><li>フェントラミン</li><li>イソプレナリン</li><li>プロプラノロール</li><li>クロニジン</li></ol>    
+            </p>
+        </div>
+        <hr>
+
+        <input type="button" value="check ans" onclick="toggle_switch()"/>
+        
+        <div id='toggle'>
+        <div class='answer'>
+            <p>
+                <span id="grad2">　解答　　</span>
+            </p>
+            <p>
+            2
+            </p>
+        </div>
+        <div class='description'>
+            <p>
+                <span id="grad2">　解説　　</span>
+            </p>
+            <p>本問の問題文はアドレナリン反転についての記述です。アドレナリン反転とは、α1 受容体遮断薬投与後に、アドレナリンを注射すると血圧下降作用が見られる現象です。</p>
+<p>アドレナリンは、α<span style="font-weight: 400;"><sub>1</sub></span> 受容体及び、β<span style="font-weight: 400;"><sub>2</sub></span> 受容体に作用します。α<span style="font-weight: 400;"><sub>1</sub></span> 受容体が刺激されると、血圧上昇が引き起こされ、β<span style="font-weight: 400;"><sub>2</sub></span> 受容体が刺激されると、血圧下降が引き起こされます。α<span style="font-weight: 400;"><sub>1</sub></span>受容体を介した作用の方が、より大きい作用のため従来は、アドレナリンにより、血圧は上昇します。</p>
+<p>しかし、α<span style="font-weight: 400;"><sub>1</sub></span> 受容体遮断薬を投与していると、β<span style="font-weight: 400;"><sub>2</sub></span> 作用のみが見られることで、<strong>アドレナリンを投与して血圧が降下する、という現象</strong>が見られます。</p>
+<p>選択肢の５つの薬物ですが<br/>スコポラミンは、M 受容体拮抗薬です。<br/>フェントラミンは、α受容体遮断薬です。<br/>イソプレナリンは、β受容体刺激薬です。<br/>プロプラノロールは、β受容体遮断薬です。<br/>クロニジンは、α<span style="font-weight: 400;"><sub>2</sub></span> 受容体作動薬です。<br/>前処置をした薬物は、α遮断薬であるフェントラミンであると考えられます。</p>
+<p>以上より、正解は 2 です。</p>
+            </p>
+        </div>
+        </div>
+    </body>
+    <script>
+    document.getElementById("toggle").style.display="none";
+    function toggle_switch(){
+        var x = document.getElementById("toggle");
+        if (x.style.display=="block"){
+            x.style.display="none";
+        }
+        else{
+            x.style.display="block";
+        }
+    }
+    </script>
+    

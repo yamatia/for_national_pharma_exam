@@ -1,0 +1,91 @@
+
+        <!DOCTYPE html>
+    <html lang="ja">
+    <style>
+    body
+    {
+        color: black;
+        background-color: white;
+    }
+    div{
+        font-size: 14px;
+    }
+    span
+    {
+        font-size: 18px;
+    }
+    #grad1{
+        background: linear-gradient(transparent 60%,#99e4f1 30%);
+        font-size: 18px;
+        font-weight: bold;
+    }
+    #grad2{
+        background: linear-gradient(transparent 60%,#fda1a1 30%);
+        font-size: 18px;
+        font-weight: bold;
+    }
+
+    </style>
+
+    <head>
+        <meta charset="UTF-8">
+        <title>99-67</title>
+    </head>
+
+    <body>
+        <h1>
+        <a href="./099_066.html" rel="external" title="prev">≪</a>
+        99-67
+        <a href="./099_068.html" rel="external" title="next">≫</a>
+        </h1>
+        <div class='problem'>
+            <p>
+                <span id="grad1">　問題文　</span>
+            </p>
+            <p>
+                <p>正規分布が仮定できる数値データについて、2群間の平均値の差の検定に用いる統計手法はどれか。1つ選べ。</p>
+<ol><li>符号検定</li><li>カイ二乗検定</li><li>Studentのt検定</li><li>Fisherの直接確率法</li><li>Wilcoxonの順位和検定</li></ol>    
+            </p>
+        </div>
+        <hr>
+
+        <input type="button" value="check ans" onclick="toggle_switch()"/>
+        
+        <div id='toggle'>
+        <div class='answer'>
+            <p>
+                <span id="grad2">　解答　　</span>
+            </p>
+            <p>
+            3
+            </p>
+        </div>
+        <div class='description'>
+            <p>
+                <span id="grad2">　解説　　</span>
+            </p>
+            <p>選択肢 1 ですが<br/>符号検定とは、２群のデータの差を＋か－かだけ（符号のみ）注目する検定です。例えば、試験１週間前と、試験後に同じ問題を解いた時の点数（１問１０点満点）が以下のようになったとします。</p>
+<p>問題番号　 １　　２　　３　・・・<br/>試験 1w 前 5　6　4　・・・<br/>試験後　　8　10　1 ・・・<br/>　　　　　(+) (+) (-)</p>
+<p>この時、試験後の方が点数が上がっていたら「＋」、試験後の方が点数が下がっていたら「-」とします。もしも、２群に差がないとすれば、＋と－は偶然で左右され、それぞれの確率は大体 1/2 ずつで出るはずです。異常に偏っていたら、２群に差があると考える検定です。平均値の差を考える時には用いられません。（そもそもこの検定を用いるのであれば平均値をデータから出しません。）よって、選択肢 1 は誤りです。</p>
+<p>選択肢 2 ですが<br/>カイ二乗検定は、データの分布が理論とほぼ同じかどうかを検定する時に用います。例えばですが、男子１０００人、女子１０００人から無作為に１００人選んだら男子　３５人、女子　６５人だった。これって、何か偏ってない？といった問題に用います。平均値の差の検定には用いられません。よって、選択肢 2 は誤りです。</p>
+<p>選択肢 3 は正しいです。<br/>スチューデントの t 検定は、統計量に対する検定に用いられます。２つの母集団に対して、平均が等しいかどうかを検定する時などに用いられます。</p>
+<p>選択肢 4 ですが<br/>Fisher の直接確率法とは、２つのカテゴリーに分類されたデータの分析に用いられる方法です。直接、確率を計算する方法です。平均値の差の検定には、用いられません。よって、選択肢 4 は誤りです。</p>
+<p>選択肢 5 ですが<br/>Wilcoxon の順位和検定とは、符号検定と同様に２群のデータに差があるかどうかを検定する時に用いる検定法です。符号検定との違いは、２群のデータに対して＋、－ で考えるのではなく、それぞれ順位をつけ、順位の和を考えるという点です。平均値の差を考える時には用いられません。（そもそもこの検定を用いるのであれば平均値をデータから出しません。）よって、選択肢 ５ は誤りです。</p>
+<p>以上より、正解は 3 です。</p>
+            </p>
+        </div>
+        </div>
+    </body>
+    <script>
+    document.getElementById("toggle").style.display="none";
+    function toggle_switch(){
+        var x = document.getElementById("toggle");
+        if (x.style.display=="block"){
+            x.style.display="none";
+        }
+        else{
+            x.style.display="block";
+        }
+    }
+    </script>
+    

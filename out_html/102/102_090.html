@@ -1,0 +1,90 @@
+
+        <!DOCTYPE html>
+    <html lang="ja">
+    <style>
+    body
+    {
+        color: black;
+        background-color: white;
+    }
+    div{
+        font-size: 14px;
+    }
+    span
+    {
+        font-size: 18px;
+    }
+    #grad1{
+        background: linear-gradient(transparent 60%,#99e4f1 30%);
+        font-size: 18px;
+        font-weight: bold;
+    }
+    #grad2{
+        background: linear-gradient(transparent 60%,#fda1a1 30%);
+        font-size: 18px;
+        font-weight: bold;
+    }
+
+    </style>
+
+    <head>
+        <meta charset="UTF-8">
+        <title>102-90</title>
+    </head>
+
+    <body>
+        <h1>
+        <a href="./102_089.html" rel="external" title="prev">≪</a>
+        102-90
+        <a href="./102_091.html" rel="external" title="next">≫</a>
+        </h1>
+        <div class='problem'>
+            <p>
+                <span id="grad1">　問題文　</span>
+            </p>
+            <p>
+                <p>100mmの水平な直線上の左端を「痛みなし」、右端を「最悪の痛み」として、患者自身に現在の痛みがどの程度かを指し示してもらい、左端からの長さをもって痛みの程度を数値化した。この方法はどれか。1つ選べ。</p>
+<ol><li>VAS (Visual Analogue Scale)</li><li>FPS (Faces Pain Scale)</li><li>NRS (Numerical Rating Scale)</li><li>VRS (Verbal Rating Scale)</li><li>MMSE (Mini-Mental State Examination)</li></ol>    
+            </p>
+        </div>
+        <hr>
+
+        <input type="button" value="check ans" onclick="toggle_switch()"/>
+        
+        <div id='toggle'>
+        <div class='answer'>
+            <p>
+                <span id="grad2">　解答　　</span>
+            </p>
+            <p>
+            1
+            </p>
+        </div>
+        <div class='description'>
+            <p>
+                <span id="grad2">　解説　　</span>
+            </p>
+            <p>選択肢 1 ですが<br/>VAS (Visual Analogue Scale)とは、100mm の線の上に、痛みは大体この辺に対応するなと線を引いてもらうという検査法です。</p>
+<p>選択肢 2 ですが<br/>FPS (Faces Pain Scale) とは、顔の表情が書かれた紙を見せてどの表情に対応する痛みかを選んでもらう　という検査法です。</p>
+<p>選択肢 3 ですが<br/>NRS(Numerical Rating Scale)とは、痛み１０点満点で何点ぐらいかを言ってもらう　という検査法です。</p>
+<p>選択肢 4 ですが<br/>VRS(Verbal Rating Scale)とは、０：痛みなし、１：少し痛い・・・といった０～４までの選択式の回答により、痛みを選んでもらうという検査法です。</p>
+<p>これら１～４の検査法において、患者が違えば、同じ値や選択肢だったとしても主観的な意味が異なるという点に注意が必要です。</p>
+<p>選択肢 5 ですが<br/>MMSE (Mini-Mental State Examination)とは、認知機能検査の一種です。痛みの程度の検査法ではありません。</p>
+<p>以上より、正解は 1 です。</p>
+            </p>
+        </div>
+        </div>
+    </body>
+    <script>
+    document.getElementById("toggle").style.display="none";
+    function toggle_switch(){
+        var x = document.getElementById("toggle");
+        if (x.style.display=="block"){
+            x.style.display="none";
+        }
+        else{
+            x.style.display="block";
+        }
+    }
+    </script>
+    

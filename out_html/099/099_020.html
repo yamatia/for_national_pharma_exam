@@ -1,0 +1,87 @@
+
+        <!DOCTYPE html>
+    <html lang="ja">
+    <style>
+    body
+    {
+        color: black;
+        background-color: white;
+    }
+    div{
+        font-size: 14px;
+    }
+    span
+    {
+        font-size: 18px;
+    }
+    #grad1{
+        background: linear-gradient(transparent 60%,#99e4f1 30%);
+        font-size: 18px;
+        font-weight: bold;
+    }
+    #grad2{
+        background: linear-gradient(transparent 60%,#fda1a1 30%);
+        font-size: 18px;
+        font-weight: bold;
+    }
+
+    </style>
+
+    <head>
+        <meta charset="UTF-8">
+        <title>99-20</title>
+    </head>
+
+    <body>
+        <h1>
+        <a href="./099_019.html" rel="external" title="prev">≪</a>
+        99-20
+        <a href="./099_021.html" rel="external" title="next">≫</a>
+        </h1>
+        <div class='problem'>
+            <p>
+                <span id="grad1">　問題文　</span>
+            </p>
+            <p>
+                <p>塩素消毒に強い抵抗性を示す病原体はどれか。1つ選べ。</p>
+<ol><li>インフルエンザウイルス</li><li>レジオネラ属菌</li><li>大腸菌</li><li>クリプトスポリジウム</li><li>赤痢菌</li></ol>    
+            </p>
+        </div>
+        <hr>
+
+        <input type="button" value="check ans" onclick="toggle_switch()"/>
+        
+        <div id='toggle'>
+        <div class='answer'>
+            <p>
+                <span id="grad2">　解答　　</span>
+            </p>
+            <p>
+            4
+            </p>
+        </div>
+        <div class='description'>
+            <p>
+                <span id="grad2">　解説　　</span>
+            </p>
+            <p>塩素消毒に強い抵抗性と来たら、オーシスト（＝原虫の成長段階の１つ）　です。</p>
+<p>＾＾＾＾＾＾＾＾＾＾＾＾＾＾＾＾<br/>補足：　強い抵抗性というフレーズからは芽胞も連想するかもしれません。ちなみに、芽胞は、塩素消毒には弱いです。<br/>＾＾＾＾＾＾＾＾＾＾＾＾＾＾＾＾</p>
+<p>糞便中に含まれるクリプトスポリジウムのオーシストなどが、感染症を引き起こすものとして有名です。</p>
+<p>以上より、正解は 4 です。</p>
+            </p>
+        </div>
+        </div>
+    </body>
+    <script>
+    document.getElementById("toggle").style.display="none";
+    function toggle_switch(){
+        var x = document.getElementById("toggle");
+        if (x.style.display=="block"){
+            x.style.display="none";
+        }
+        else{
+            x.style.display="block";
+        }
+    }
+    </script>
+    

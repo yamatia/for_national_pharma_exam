@@ -1,0 +1,89 @@
+
+        <!DOCTYPE html>
+    <html lang="ja">
+    <style>
+    body
+    {
+        color: black;
+        background-color: white;
+    }
+    div{
+        font-size: 14px;
+    }
+    span
+    {
+        font-size: 18px;
+    }
+    #grad1{
+        background: linear-gradient(transparent 60%,#99e4f1 30%);
+        font-size: 18px;
+        font-weight: bold;
+    }
+    #grad2{
+        background: linear-gradient(transparent 60%,#fda1a1 30%);
+        font-size: 18px;
+        font-weight: bold;
+    }
+
+    </style>
+
+    <head>
+        <meta charset="UTF-8">
+        <title>99-148</title>
+    </head>
+
+    <body>
+        <h1>
+        <a href="./099_147.html" rel="external" title="prev">≪</a>
+        99-148
+        <a href="./099_149.html" rel="external" title="next">≫</a>
+        </h1>
+        <div class='problem'>
+            <p>
+                <span id="grad1">　問題文　</span>
+            </p>
+            <p>
+                <p>わが国の医療保険制度の説明として、正しいのはどれか。2つ選べ。</p>
+<ol><li>基本的にすべての国民が何らかの医療保険制度に加入する国民皆保険である。</li><li>加入者は、全国のすべての医療機関で療養の給付を受けることができる。</li><li>加入者が納めた保険料に応じて、給付される療養の種類に違いがある。</li><li>保険で給付される療養と保険外で給付される療養を併用できる場合がある。</li><li>75歳以上の者は、保険料を負担しない制度に加入する。</li></ol>    
+            </p>
+        </div>
+        <hr>
+
+        <input type="button" value="check ans" onclick="toggle_switch()"/>
+        
+        <div id='toggle'>
+        <div class='answer'>
+            <p>
+                <span id="grad2">　解答　　</span>
+            </p>
+            <p>
+            1, 4
+            </p>
+        </div>
+        <div class='description'>
+            <p>
+                <span id="grad2">　解説　　</span>
+            </p>
+            <p>選択肢 1 は、正しい記述です。<br/>いわゆる、国民皆保険制度です。</p>
+<p>選択肢 2 ですが<br/>保険医療機関でなければ療養の給付は、受けることができません。保険医療機関でない医療機関については保険が適用されず、全額自費負担となります。つまり、すべての医療機関では、ありません。ちなみに、療養の給付とは、診療や治療のことです。よって、選択肢 2 は誤りです。</p>
+<p>選択肢 3 ですが<br/>収めた保険料による給付される療養の種類の違いは、日本の保険制度においてはありません。よって、選択肢 3 は誤りです。</p>
+<p>選択肢 4 は、正しい記述です。<br/>保険で給付される療養と、保険外で給付される療養の併用はいわゆる混合診療のことです。混合診療は、原則禁止です。現在のところ、差額ベッド料や、先進医療、高度医療について併用が、例外的に認められています。つまり、併用できる場合は、あります。<br/>参考）　（厚生労働省　政策についての　HP　へ）</p>
+<p>選択肢 5 ですが<br/>75 歳以上になると「後期高齢者医療制度　（H26.4月時点での名称）」へ加入します。保険料は、原則として年金から徴収されます。つまり、保険料を負担しない制度では、ありません。よって、選択肢 5 は誤りです。</p>
+<p>以上より、正解は 1,4 です。</p>
+            </p>
+        </div>
+        </div>
+    </body>
+    <script>
+    document.getElementById("toggle").style.display="none";
+    function toggle_switch(){
+        var x = document.getElementById("toggle");
+        if (x.style.display=="block"){
+            x.style.display="none";
+        }
+        else{
+            x.style.display="block";
+        }
+    }
+    </script>
+    

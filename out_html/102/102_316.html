@@ -1,0 +1,97 @@
+
+        <!DOCTYPE html>
+    <html lang="ja">
+    <style>
+    body
+    {
+        color: black;
+        background-color: white;
+    }
+    div{
+        font-size: 14px;
+    }
+    span
+    {
+        font-size: 18px;
+    }
+    #grad1{
+        background: linear-gradient(transparent 60%,#99e4f1 30%);
+        font-size: 18px;
+        font-weight: bold;
+    }
+    #grad2{
+        background: linear-gradient(transparent 60%,#fda1a1 30%);
+        font-size: 18px;
+        font-weight: bold;
+    }
+
+    </style>
+
+    <head>
+        <meta charset="UTF-8">
+        <title>102-316</title>
+    </head>
+
+    <body>
+        <h1>
+        <a href="./102_315.html" rel="external" title="prev">≪</a>
+        102-316
+        <a href="./102_317.html" rel="external" title="next">≫</a>
+        </h1>
+        <div class='problem'>
+            <p>
+                <span id="grad1">　問題文　</span>
+            </p>
+            <p>
+                <p>漬物製造工場の野菜洗浄室で清掃中、作業員が誤って塩酸タンクを倒し、隣接した次亜塩素酸ナトリウム溶液タンクのバルブを破損した。</p>
+<p>その際、漏出した塩酸と次亜塩素酸ナトリウムが反応してガスが発生し、吸引した作業者は、激しい目の痛みと呼吸困難を訴えた。その直後、作業員は近隣の総合病院に救急搬送された。</p>
+<h4>問316</h4>
+<p>救急搬送された患者に対し、病院で行う処置として適切でないのはどれか。2つ選べ。</p>
+<ol><li>水で目及び粘膜を洗浄する。</li><li>EDTA(エデト酸カルシウム二ナトリウム)を投与する。</li><li>酸素吸入する。</li><li>輸液を投与する。</li><li>チオ硫酸ナトリウムを投与する。</li></ol>
+<h4>問317</h4>
+<p>この漬物製造工場は、近くの薬局から劇物である塩酸と次亜塩素酸ナトリウムを購入していた。薬局及び漬物製造工場におけるこれらの劇物の取扱いに関する記述として、適切なのはどれか。2つ選べ。</p>
+<ol><li>薬局で販売するためには、毒物又は劇物の販売業(毒物劇物販売業)の登録を受けなければならない。</li><li>薬局で販売する場合、漬物製造工場の購入者の氏名及び住所を確認した後でなければ交付してはならない。</li><li>漬物製造工場の責任者は、薬局から購入した劇物の名称と数量を帳簿に記載しなければならない。</li><li>漬物製造工場では、貯蔵する場所に「医薬用外」及び「劇物」の文字を表示しなければならない。</li><li>漬物製造工場で廃棄する場合は、中和等により劇物に該当しないものにしなければならない。</li></ol>
+<div class="information-box common-icon-box">この問題は、設問・選択肢が不明確で正解が得られないという理由から「解なし」となった問題です。</div>    
+            </p>
+        </div>
+        <hr>
+
+        <input type="button" value="check ans" onclick="toggle_switch()"/>
+        
+        <div id='toggle'>
+        <div class='answer'>
+            <p>
+                <span id="grad2">　解答　　</span>
+            </p>
+            <p>
+            問316：2, 5問317：解なし
+            </p>
+        </div>
+        <div class='description'>
+            <p>
+                <span id="grad2">　解説　　</span>
+            </p>
+            <h4>問316</h4>
+<p>HCl＋NaClO → NaCl + HClO<br/>HClO + HCl → H20 + Cl2↑<br/>上記の反応により塩素ガスが発生したと考えられます。</p>
+<p>EDTA は、金属中毒に対する解毒剤です。チオ硫酸ナトリウムは、シアン化物やヒ素中毒に対する解毒剤です。</p>
+<p>痛みを感じる部位の水洗、輸液は、一般的に行われる処置であり適切であると考えられます。酸素吸入も一般的処置ですが、パラコート中毒の際には避けるべきである点に注意が必要です。</p>
+<p>以上より、正解は 2,5 です。</p>
+<h4>問317</h4>
+<p>解なしのため、解説もなし。</p>
+            </p>
+        </div>
+        </div>
+    </body>
+    <script>
+    document.getElementById("toggle").style.display="none";
+    function toggle_switch(){
+        var x = document.getElementById("toggle");
+        if (x.style.display=="block"){
+            x.style.display="none";
+        }
+        else{
+            x.style.display="block";
+        }
+    }
+    </script>
+    

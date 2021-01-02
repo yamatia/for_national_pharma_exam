@@ -1,0 +1,91 @@
+
+        <!DOCTYPE html>
+    <html lang="ja">
+    <style>
+    body
+    {
+        color: black;
+        background-color: white;
+    }
+    div{
+        font-size: 14px;
+    }
+    span
+    {
+        font-size: 18px;
+    }
+    #grad1{
+        background: linear-gradient(transparent 60%,#99e4f1 30%);
+        font-size: 18px;
+        font-weight: bold;
+    }
+    #grad2{
+        background: linear-gradient(transparent 60%,#fda1a1 30%);
+        font-size: 18px;
+        font-weight: bold;
+    }
+
+    </style>
+
+    <head>
+        <meta charset="UTF-8">
+        <title>99-99</title>
+    </head>
+
+    <body>
+        <h1>
+        <a href="./099_098.html" rel="external" title="prev">≪</a>
+        99-99
+        <a href="./099_100.html" rel="external" title="next">≫</a>
+        </h1>
+        <div class='problem'>
+            <p>
+                <span id="grad1">　問題文　</span>
+            </p>
+            <p>
+                <p>次の記述は、酸が混在する中性医薬品の純度試験に関するものである。以下の試験から求められる酸の残存量は、硫酸に換算して何%以下か。最も近い値を1つ選べ。ただし、硫酸の分子量を98.08とする。</p>
+<p>「本品5.0gを新たに煮沸して冷却した水50mLに溶かし、フェノールフタレイン試液3滴及び0.01mol/L水酸化ナトリウム液0.60mLを加えるとき、液の色は赤色である。」</p>
+<ol><li>0.006</li><li>0.012</li><li>0.12</li><li>0.3</li><li>0.6</li></ol>    
+            </p>
+        </div>
+        <hr>
+
+        <input type="button" value="check ans" onclick="toggle_switch()"/>
+        
+        <div id='toggle'>
+        <div class='answer'>
+            <p>
+                <span id="grad2">　解答　　</span>
+            </p>
+            <p>
+            1
+            </p>
+        </div>
+        <div class='description'>
+            <p>
+                <span id="grad2">　解説　　</span>
+            </p>
+            <p>0.01mol / Ｌ 水酸化ナトリウム液 0.60 ｍＬ を加えるとき液の色は赤色である　とあるため、この操作により、混在する酸は全て中和されたとわかります。</p>
+<p>0.60 mL = 0.0006 L です。0.01 mol/L で、0.0006 L なので、含まれる OH<span style="font-weight: 400;"><sup>ー</sup></span> は、0.000006 mol つまり、6 × 10<span style="font-weight: 400;"><sup>ー6</sup></span> mol です。</p>
+<p>本品 5.0 g 中に、硫酸が x (%) 含まれるとすると、その重さは 5.0 × x/100 (g) です。そして、その物質量は、5.0 × x/100 × 1/98.08 と表すことができます。選択肢から、それほど正確な値は必要ないようなので、98.08 ≒ 100 と近似します。すると、改めて、硫酸の物質量は 5.0 × x/10000 （mol）と表すことができます。</p>
+<p>硫酸の物質量に対して、H<span style="font-weight: 400;"><sup>+</sup></span>の物質量は２倍なので、2 ×（5.0 × x/10000）＝ 1 × 10<span style="font-weight: 400;"><sup>ー3</sup></span> × x (mol) となります。この H<span style="font-weight: 400;"><sup>+</sup></span>は、水酸化ナトリウムによって完全に中和されたのだから</p>
+<p><strong>1 × 10<sup>ー3</sup> × x　≦　6 × 10<sup>ー6</sup>  　・・・　①</strong>　が成り立つと考えられます。</p>
+<p>① の不等式を ｘ について解くと、x ≦ 6 × 10 <span style="font-weight: 400;"><sup>ー3</sup></span>　となります。つまり、ｘ は 0.006 以下です。</p>
+<p>以上より、正解は 1 です。</p>
+            </p>
+        </div>
+        </div>
+    </body>
+    <script>
+    document.getElementById("toggle").style.display="none";
+    function toggle_switch(){
+        var x = document.getElementById("toggle");
+        if (x.style.display=="block"){
+            x.style.display="none";
+        }
+        else{
+            x.style.display="block";
+        }
+    }
+    </script>
+    

@@ -1,0 +1,93 @@
+
+        <!DOCTYPE html>
+    <html lang="ja">
+    <style>
+    body
+    {
+        color: black;
+        background-color: white;
+    }
+    div{
+        font-size: 14px;
+    }
+    span
+    {
+        font-size: 18px;
+    }
+    #grad1{
+        background: linear-gradient(transparent 60%,#99e4f1 30%);
+        font-size: 18px;
+        font-weight: bold;
+    }
+    #grad2{
+        background: linear-gradient(transparent 60%,#fda1a1 30%);
+        font-size: 18px;
+        font-weight: bold;
+    }
+
+    </style>
+
+    <head>
+        <meta charset="UTF-8">
+        <title>99-124</title>
+    </head>
+
+    <body>
+        <h1>
+        <a href="./099_123.html" rel="external" title="prev">≪</a>
+        99-124
+        <a href="./099_125.html" rel="external" title="next">≫</a>
+        </h1>
+        <div class='problem'>
+            <p>
+                <span id="grad1">　問題文　</span>
+            </p>
+            <p>
+                <p>油脂の変質試験法に関する記述のうち、正しいのはどれか。2つ選べ。</p>
+<p>試験操作</p>
+<p>試料油脂約1gを共栓つき三角フラスコに精密に量りとり、酢酸・クロロホルム(3：2)混液25mLに溶かす。フラスコ内の空気を窒素ガスで置換し、飽和ヨウ化カリウム溶液1mLを加えてよく振り混ぜる。</p>
+<p>暗所で10分間放置後、水30mLを加えてよく振り混ぜ、デンプン試液を指示薬として、0.01mol/Lのチオ硫酸ナトリウム溶液で滴定する。</p>
+<ol><li>滴定の終点では溶液が淡黄色から青紫色に変化する。</li><li>主に油脂中のアルデヒド類が反応する。</li><li>指標の値は、油脂1kgあたりで表す。</li><li>指標の値は、変質の進行に伴い減少する。</li><li>指標の値は、変質の進行に伴い初めは増加するが、その後減少する。</li></ol>    
+            </p>
+        </div>
+        <hr>
+
+        <input type="button" value="check ans" onclick="toggle_switch()"/>
+        
+        <div id='toggle'>
+        <div class='answer'>
+            <p>
+                <span id="grad2">　解答　　</span>
+            </p>
+            <p>
+            3, 5
+            </p>
+        </div>
+        <div class='description'>
+            <p>
+                <span id="grad2">　解説　　</span>
+            </p>
+            <p>本問の試験操作は、過酸化物価の測定試験についてです。</p>
+<p>選択肢 1 ですが<br/>過酸化物により、ヨウ素が遊離されるため滴定の開始時は、青紫色です。つまり、ヨウ素の量が、脂質の酸化により生じた過酸化物の量を反映します。そして、ヨウ素がチオ硫酸ナトリウムで還元されることで色が淡黄色に変わった時点が、滴定終了です。よって、色の変化が逆なので、選択肢 1 は誤りです。</p>
+<p>選択肢 2 ですが<br/>反応するのは、過酸化物、化学式で一般的に表すとR－COOH　です。アルデヒド類（R－COH）では、ありません。よって、選択肢 2 は誤りです。</p>
+<p>選択肢 3 は正しい記述です。</p>
+<p>選択肢 4 ですが<br/>過酸化物価の特徴は、いったん上昇した後減少していくという点です。進行に伴い、単純に減少するわけでは、ありません。よって、選択肢 4 は誤りです。</p>
+<p>選択肢 5 は正しい記述です。</p>
+<p>以上より、正解は 3,5 です。</p>
+            </p>
+        </div>
+        </div>
+    </body>
+    <script>
+    document.getElementById("toggle").style.display="none";
+    function toggle_switch(){
+        var x = document.getElementById("toggle");
+        if (x.style.display=="block"){
+            x.style.display="none";
+        }
+        else{
+            x.style.display="block";
+        }
+    }
+    </script>
+    

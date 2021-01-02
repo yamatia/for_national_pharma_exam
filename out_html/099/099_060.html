@@ -1,0 +1,87 @@
+
+        <!DOCTYPE html>
+    <html lang="ja">
+    <style>
+    body
+    {
+        color: black;
+        background-color: white;
+    }
+    div{
+        font-size: 14px;
+    }
+    span
+    {
+        font-size: 18px;
+    }
+    #grad1{
+        background: linear-gradient(transparent 60%,#99e4f1 30%);
+        font-size: 18px;
+        font-weight: bold;
+    }
+    #grad2{
+        background: linear-gradient(transparent 60%,#fda1a1 30%);
+        font-size: 18px;
+        font-weight: bold;
+    }
+
+    </style>
+
+    <head>
+        <meta charset="UTF-8">
+        <title>99-60</title>
+    </head>
+
+    <body>
+        <h1>
+        <a href="./099_059.html" rel="external" title="prev">≪</a>
+        99-60
+        <a href="./099_061.html" rel="external" title="next">≫</a>
+        </h1>
+        <div class='problem'>
+            <p>
+                <span id="grad1">　問題文　</span>
+            </p>
+            <p>
+                <p>統合失調症の陰性症状として正しいのはどれか。1つ選べ。</p>
+<ol><li>妄想</li><li>幻覚</li><li>失見当識</li><li>食欲亢進</li><li>意欲欠如</li></ol>    
+            </p>
+        </div>
+        <hr>
+
+        <input type="button" value="check ans" onclick="toggle_switch()"/>
+        
+        <div id='toggle'>
+        <div class='answer'>
+            <p>
+                <span id="grad2">　解答　　</span>
+            </p>
+            <p>
+            5
+            </p>
+        </div>
+        <div class='description'>
+            <p>
+                <span id="grad2">　解説　　</span>
+            </p>
+            <p>統合失調症は、ドパミン及びセロトニンの過剰による種々の症状と考えられています。症状は大きく陽性症状と陰性症状に分類されます。</p>
+<p>陽性症状とは、幻覚や幻聴などです。主にドパミン関与と考えられています。陰性症状とは、自発性減退、感情の平坦化などです。主にセロトニン関与と考えられています。</p>
+<p>自発性減退というのは、意欲欠如ともいえるので、正解は 5 です。</p>
+<p>参考）　</p>
+            </p>
+        </div>
+        </div>
+    </body>
+    <script>
+    document.getElementById("toggle").style.display="none";
+    function toggle_switch(){
+        var x = document.getElementById("toggle");
+        if (x.style.display=="block"){
+            x.style.display="none";
+        }
+        else{
+            x.style.display="block";
+        }
+    }
+    </script>
+    

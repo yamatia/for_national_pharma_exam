@@ -1,0 +1,90 @@
+
+        <!DOCTYPE html>
+    <html lang="ja">
+    <style>
+    body
+    {
+        color: black;
+        background-color: white;
+    }
+    div{
+        font-size: 14px;
+    }
+    span
+    {
+        font-size: 18px;
+    }
+    #grad1{
+        background: linear-gradient(transparent 60%,#99e4f1 30%);
+        font-size: 18px;
+        font-weight: bold;
+    }
+    #grad2{
+        background: linear-gradient(transparent 60%,#fda1a1 30%);
+        font-size: 18px;
+        font-weight: bold;
+    }
+
+    </style>
+
+    <head>
+        <meta charset="UTF-8">
+        <title>101-44</title>
+    </head>
+
+    <body>
+        <h1>
+        <a href="./101_043.html" rel="external" title="prev">≪</a>
+        101-44
+        <a href="./101_045.html" rel="external" title="next">≫</a>
+        </h1>
+        <div class='problem'>
+            <p>
+                <span id="grad1">　問題文　</span>
+            </p>
+            <p>
+                <p>腎クリアランス(CLr)と糸球体ろ過速度(GFR)、分泌クリアランス(CLs)、再吸収率(FR)の関係を正しく表しているのはどれか。1つ選べ。ただし、fuは血漿中タンパク非結合形分率を示すものとする。</p>
+<ol><li>CLr=fu・GFR+CLs-FR</li><li>CLr=fu・GFR+CLs+FR</li><li>CLr=fu・GFR-CLs+FR</li><li>CLr=(fu・GFR+CLs)・(1-FR)</li><li>CLr=(fu・GFR+CLs)・FR</li></ol>    
+            </p>
+        </div>
+        <hr>
+
+        <input type="button" value="check ans" onclick="toggle_switch()"/>
+        
+        <div id='toggle'>
+        <div class='answer'>
+            <p>
+                <span id="grad2">　解答　　</span>
+            </p>
+            <p>
+            4
+            </p>
+        </div>
+        <div class='description'>
+            <p>
+                <span id="grad2">　解説　　</span>
+            </p>
+            <p>腎臓での薬物の流れをイメージすると<br/>１：糸球体によるろ過を受けて　ポタポタ。この時通過するのは「タンパク非結合」の薬物。→「fu・GFR」　と表される。</p>
+<p>２：分泌による、薬物量の増加。→「＋CLs」 と表される。</p>
+<p>３：再吸収されたら、血液に戻る。腎臓から排出はされない。腎臓から排出されるのは「再吸収されなかった薬物」→「×( 1-FR )」　とそれぞれ表されると考えられます。</p>
+<p>以上をふまえ、各選択肢を検討すると、選択肢 1,2,3 は FR を引いたり足したりしているので<br/>誤りです。選択肢 3 は、CLs を引いている点も誤りです。</p>
+<p>選択肢 4 は、正しい選択肢です。</p>
+<p>選択肢 5 は<br/>FR をそのままかけており、これは、血液に再吸収される量を表しています。腎クリアランスとしては誤りです。</p>
+<p>以上より、正解は 4 です。</p>
+            </p>
+        </div>
+        </div>
+    </body>
+    <script>
+    document.getElementById("toggle").style.display="none";
+    function toggle_switch(){
+        var x = document.getElementById("toggle");
+        if (x.style.display=="block"){
+            x.style.display="none";
+        }
+        else{
+            x.style.display="block";
+        }
+    }
+    </script>
+    

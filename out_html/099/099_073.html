@@ -1,0 +1,86 @@
+
+        <!DOCTYPE html>
+    <html lang="ja">
+    <style>
+    body
+    {
+        color: black;
+        background-color: white;
+    }
+    div{
+        font-size: 14px;
+    }
+    span
+    {
+        font-size: 18px;
+    }
+    #grad1{
+        background: linear-gradient(transparent 60%,#99e4f1 30%);
+        font-size: 18px;
+        font-weight: bold;
+    }
+    #grad2{
+        background: linear-gradient(transparent 60%,#fda1a1 30%);
+        font-size: 18px;
+        font-weight: bold;
+    }
+
+    </style>
+
+    <head>
+        <meta charset="UTF-8">
+        <title>99-73</title>
+    </head>
+
+    <body>
+        <h1>
+        <a href="./099_072.html" rel="external" title="prev">≪</a>
+        99-73
+        <a href="./099_074.html" rel="external" title="next">≫</a>
+        </h1>
+        <div class='problem'>
+            <p>
+                <span id="grad1">　問題文　</span>
+            </p>
+            <p>
+                <p>医療法において、地域医療支援病院の要件に該当しないのはどれか。1つ選べ。</p>
+<ol><li>救急医療を提供する能力</li><li>原則として200床以上の病床</li><li>他の医療機関から紹介された患者に対する医療の提供</li><li>医薬品情報管理室の設置</li><li>高度な医療技術の開発を行う能力</li></ol>    
+            </p>
+        </div>
+        <hr>
+
+        <input type="button" value="check ans" onclick="toggle_switch()"/>
+        
+        <div id='toggle'>
+        <div class='answer'>
+            <p>
+                <span id="grad2">　解答　　</span>
+            </p>
+            <p>
+            5
+            </p>
+        </div>
+        <div class='description'>
+            <p>
+                <span id="grad2">　解説　　</span>
+            </p>
+            <p>選択肢 1 ～ 4 は正しい記述です。<br/>地域医療支援病院の要件です。医療法第 ４ 条　及び　厚生労働省　省令 参照。省令が、法４条及び、法４条が参照する、法２２条についての具体的内容を定義しています。</p>
+<p>選択肢 5 は<br/>特定機能病院の要件の１つです。地域医療支援病院の要件には該当しません。よって、選択肢 5 は誤りです。</p>
+<p>以上より、正解は 5 です。</p>
+            </p>
+        </div>
+        </div>
+    </body>
+    <script>
+    document.getElementById("toggle").style.display="none";
+    function toggle_switch(){
+        var x = document.getElementById("toggle");
+        if (x.style.display=="block"){
+            x.style.display="none";
+        }
+        else{
+            x.style.display="block";
+        }
+    }
+    </script>
+    

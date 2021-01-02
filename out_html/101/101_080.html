@@ -1,0 +1,96 @@
+
+        <!DOCTYPE html>
+    <html lang="ja">
+    <style>
+    body
+    {
+        color: black;
+        background-color: white;
+    }
+    div{
+        font-size: 14px;
+    }
+    span
+    {
+        font-size: 18px;
+    }
+    #grad1{
+        background: linear-gradient(transparent 60%,#99e4f1 30%);
+        font-size: 18px;
+        font-weight: bold;
+    }
+    #grad2{
+        background: linear-gradient(transparent 60%,#fda1a1 30%);
+        font-size: 18px;
+        font-weight: bold;
+    }
+
+    </style>
+
+    <head>
+        <meta charset="UTF-8">
+        <title>101-80</title>
+    </head>
+
+    <body>
+        <h1>
+        <a href="./101_079.html" rel="external" title="prev">≪</a>
+        101-80
+        <a href="./101_081.html" rel="external" title="next">≫</a>
+        </h1>
+        <div class='problem'>
+            <p>
+                <span id="grad1">　問題文　</span>
+            </p>
+            <p>
+                <p>製造販売後臨床試験の実施において、臨床研究コーディネーターである薬剤師が被験者候補者である患者に行った説明(下線部)のうち、適切でないのはどれか。1つ選べ。</p>
+<p>患者「副作用が出たときはどうなるのですか。」</p>
+<p>薬剤師<u>「</u><u>健康被害が生じた場合は、適切な治療が行われます。」</u>①</p>
+<p>薬剤師<u>「</u><u>健康被害を補償する保険にも加入しています。」</u>②</p>
+<p>患者「この試験に参加しなければ、どうなりますか。」</p>
+<p>薬剤師<u>「</u><u>参加しなくても、不利益を受けることはありません。」</u>③</p>
+<p>患者「参加しない場合、主治医のA先生に申し訳ないように思うのですが。」</p>
+<p>薬剤師<u>「</u><u>A</u><u>先生に良く思われたければ、参加したほうがよいと思います。」</u>④</p>
+<p>患者「途中でやめられますか。」</p>
+<p>薬剤師<u>「</u><u>参加してからも、いつでもやめることができます。」</u>⑤</p>
+<ol><li> ①</li><li> ②</li><li> ③</li><li> ④</li><li> ⑤</li></ol>    
+            </p>
+        </div>
+        <hr>
+
+        <input type="button" value="check ans" onclick="toggle_switch()"/>
+        
+        <div id='toggle'>
+        <div class='answer'>
+            <p>
+                <span id="grad2">　解答　　</span>
+            </p>
+            <p>
+            4
+            </p>
+        </div>
+        <div class='description'>
+            <p>
+                <span id="grad2">　解説　　</span>
+            </p>
+            <p>臨床研究において、患者は、目的、方法、危険性などについて十分に説明を受け理解した上で参加するかどうかを自由に決める権利があります。いわゆる、インフォームド・コンセントです。これをふまえて、選択肢を検討すると、明らかに４は適切でありません。</p>
+<p>選択肢 4 の発言は<br/>患者が拒絶の意思を示す際に感じうる罪悪感や人によく思われたい　という感情を、悪用することで、臨床試験への参加を間接的に強要する意図があると考えられます。</p>
+<p>「主治医に対して申し訳ないと感じる必要は全くございません。あくまでも、この臨床研究に参加するかどうかは患者であるあなたが自由に決断してよい判断です。」といった内容の発言が適切であると考えられます。</p>
+<p>以上より、正解は 4 です。</p>
+            </p>
+        </div>
+        </div>
+    </body>
+    <script>
+    document.getElementById("toggle").style.display="none";
+    function toggle_switch(){
+        var x = document.getElementById("toggle");
+        if (x.style.display=="block"){
+            x.style.display="none";
+        }
+        else{
+            x.style.display="block";
+        }
+    }
+    </script>
+    

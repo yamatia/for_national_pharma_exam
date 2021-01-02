@@ -1,0 +1,88 @@
+
+        <!DOCTYPE html>
+    <html lang="ja">
+    <style>
+    body
+    {
+        color: black;
+        background-color: white;
+    }
+    div{
+        font-size: 14px;
+    }
+    span
+    {
+        font-size: 18px;
+    }
+    #grad1{
+        background: linear-gradient(transparent 60%,#99e4f1 30%);
+        font-size: 18px;
+        font-weight: bold;
+    }
+    #grad2{
+        background: linear-gradient(transparent 60%,#fda1a1 30%);
+        font-size: 18px;
+        font-weight: bold;
+    }
+
+    </style>
+
+    <head>
+        <meta charset="UTF-8">
+        <title>101-95</title>
+    </head>
+
+    <body>
+        <h1>
+        <a href="./101_094.html" rel="external" title="prev">≪</a>
+        101-95
+        <a href="./101_096.html" rel="external" title="next">≫</a>
+        </h1>
+        <div class='problem'>
+            <p>
+                <span id="grad1">　問題文　</span>
+            </p>
+            <p>
+                <p>光の性質に関する記述のうち正しいのはどれか。2つ選べ。</p>
+<ol><li>光の屈折率は、光が進む媒体の誘電率と光の波長に依存し、長波長の光は短波長の光よりも屈折率が大きい。</li><li>物質の粒子径が入射光の波長に比べて非常に小さい場合、入射光と同じ振動数の光を散乱する現象をレイリー散乱とよぶ。</li><li>入射光により物質が励起される場合、散乱光の振動数が入射光の振動数と異なる現象をラマン散乱とよぶ。</li><li>ラマン散乱が起こった場合、散乱光の振動数は必ず小さくなる。</li></ol>    
+            </p>
+        </div>
+        <hr>
+
+        <input type="button" value="check ans" onclick="toggle_switch()"/>
+        
+        <div id='toggle'>
+        <div class='answer'>
+            <p>
+                <span id="grad2">　解答　　</span>
+            </p>
+            <p>
+            2, 3
+            </p>
+        </div>
+        <div class='description'>
+            <p>
+                <span id="grad2">　解説　　</span>
+            </p>
+            <p>選択肢 1 ですが<br/>前半は正しい記述です。</p>
+<p>後半ですが、夕焼けがなぜ赤くなるか　の説明として、夕方になると太陽光の光路が長くなる →「長波長の赤い光が、屈折せずにまっすぐ進む　一方で短波長の光は、空気により散乱するから」　というのを聞いたことがあるのではないでしょうか。まっすぐ進む→屈折率が小さい　と考えられるので、長波長の光は屈折率がより「小さい」です。大きいでは、ありません。よって、選択肢 1 は誤りです。</p>
+<p>選択肢 2,3 は、正しい選択肢です。<br/>レイリー散乱　と　ラマン散乱の違いは、<strong>入射光の振動数と散乱光の振動数に違いがあるかどうか</strong>です。</p>
+<p>選択肢 4 ですが<br/>ラマン散乱は、入射光よりも振動数が小さい散乱をストークス散乱と呼びます。一方、入射光よりも振動数が大きい散乱も見られ、アンチストークス散乱と呼びます。イメージとしては、振動している分子と光が正面衝突して、振動の勢いが削がれるかうまく後ろから押されて、振動の勢いがより強くなるか　みたいな違いです。　よって、選択肢 4 は誤りです。</p>
+<p>以上より、正解は 2,3 です。</p>
+            </p>
+        </div>
+        </div>
+    </body>
+    <script>
+    document.getElementById("toggle").style.display="none";
+    function toggle_switch(){
+        var x = document.getElementById("toggle");
+        if (x.style.display=="block"){
+            x.style.display="none";
+        }
+        else{
+            x.style.display="block";
+        }
+    }
+    </script>
+    

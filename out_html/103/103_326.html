@@ -1,0 +1,90 @@
+
+        <!DOCTYPE html>
+    <html lang="ja">
+    <style>
+    body
+    {
+        color: black;
+        background-color: white;
+    }
+    div{
+        font-size: 14px;
+    }
+    span
+    {
+        font-size: 18px;
+    }
+    #grad1{
+        background: linear-gradient(transparent 60%,#99e4f1 30%);
+        font-size: 18px;
+        font-weight: bold;
+    }
+    #grad2{
+        background: linear-gradient(transparent 60%,#fda1a1 30%);
+        font-size: 18px;
+        font-weight: bold;
+    }
+
+    </style>
+
+    <head>
+        <meta charset="UTF-8">
+        <title>103-326</title>
+    </head>
+
+    <body>
+        <h1>
+        <a href="./103_325.html" rel="external" title="prev">≪</a>
+        103-326
+        <a href="./103_327.html" rel="external" title="next">≫</a>
+        </h1>
+        <div class='problem'>
+            <p>
+                <span id="grad1">　問題文　</span>
+            </p>
+            <p>
+                <p>50歳男性。28歳の時に胃の全摘出手術を受け、術後5年間は定期的に検査を受けていたが、それ以降は通院していなかった。数週間前より疲れやすくなり、食欲も減退したことから、クリニックを受診した。受診時には皮膚蒼白であった。血液検査の結果は以下の通りであった。</p>
+<p>白血球数 6,500/μL、Hb 7.9g/dL、血小板数 20×104/μL、MCV 140fL、MCH 45pg、血清鉄 165μg/dL、Na 140mEq/L、K 4.0mEq/L、Cl 102mEq/L</p>
+<p>この患者に欠乏していると考えられる栄養素として適切なのはどれか。1つ選べ。</p>
+<ol><li>ビタミンA</li><li>ビタミンB<sub>2</sub></li><li>ビタミンB<sub>6</sub></li><li>ビタミンB<sub>12</sub></li><li>ビタミンD</li></ol>    
+            </p>
+        </div>
+        <hr>
+
+        <input type="button" value="check ans" onclick="toggle_switch()"/>
+        
+        <div id='toggle'>
+        <div class='answer'>
+            <p>
+                <span id="grad2">　解答　　</span>
+            </p>
+            <p>
+            4
+            </p>
+        </div>
+        <div class='description'>
+            <p>
+                <span id="grad2">　解説　　</span>
+            </p>
+            <p><span style="font-weight: 400;">貧血の分類では、</span><span style="font-weight: 400;">赤血球のサイズとヘモグロビンの量が重要です。</span></p>
+<p><span style="font-weight: 400;">赤血球のサイズは、</span><span style="font-weight: 400;">MCV でわかります。</span><span style="font-weight: 400;">MCV とは、</span><span style="font-weight: 400;">平均赤血球容積</span><span style="font-weight: 400;">（mean corpuscular volume）の略です。</span><span style="font-weight: 400;">Ht をRBC で割った値です。</span><span style="font-weight: 400;">ちなみに、</span><span style="font-weight: 400;">Ht はヘマトクリットです。</span><span style="font-weight: 400;">血液中に占める赤血球の容積％です。</span><span style="font-weight: 400;">RBC は、赤血球数です。</span></p>
+<p><span style="font-weight: 400;">本問の患者では、</span><span style="font-weight: 400;">MCV が１００以上なので大きいです。</span><span style="font-weight: 400;">ヘモグロビンの量は、</span><span style="font-weight: 400;">１０以下なので低めです。</span><span style="font-weight: 400;">MCH が、Hb を RBC で割った値です。</span><span style="font-weight: 400;">平均赤血球ヘモグロビン量です。</span><span style="font-weight: 400;">これが高いということは、</span><span style="font-weight: 400;">悪性貧血などが疑われます。</span></p>
+<p><span style="font-weight: 400;">本問患者は胃切除歴があるため、</span><span style="font-weight: 400;">内因子不足による</span><span style="font-weight: 400;">ビタミン B<sub>12</sub></span><span style="font-weight: 400;"> </span><span style="font-weight: 400;">の吸収不足が</span><span style="font-weight: 400;">原因と考えられます。</span><span style="font-weight: 400;">欠乏している栄養素は、ビタミン B<sub>12</sub></span><span style="font-weight: 400;"> です。</span></p>
+<p><span style="font-weight: 400;">以上より正解は 4 です。</span></p>
+            </p>
+        </div>
+        </div>
+    </body>
+    <script>
+    document.getElementById("toggle").style.display="none";
+    function toggle_switch(){
+        var x = document.getElementById("toggle");
+        if (x.style.display=="block"){
+            x.style.display="none";
+        }
+        else{
+            x.style.display="block";
+        }
+    }
+    </script>
+    

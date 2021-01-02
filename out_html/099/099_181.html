@@ -1,0 +1,91 @@
+
+        <!DOCTYPE html>
+    <html lang="ja">
+    <style>
+    body
+    {
+        color: black;
+        background-color: white;
+    }
+    div{
+        font-size: 14px;
+    }
+    span
+    {
+        font-size: 18px;
+    }
+    #grad1{
+        background: linear-gradient(transparent 60%,#99e4f1 30%);
+        font-size: 18px;
+        font-weight: bold;
+    }
+    #grad2{
+        background: linear-gradient(transparent 60%,#fda1a1 30%);
+        font-size: 18px;
+        font-weight: bold;
+    }
+
+    </style>
+
+    <head>
+        <meta charset="UTF-8">
+        <title>99-181</title>
+    </head>
+
+    <body>
+        <h1>
+        <a href="./099_180.html" rel="external" title="prev">≪</a>
+        99-181
+        <a href="./099_182.html" rel="external" title="next">≫</a>
+        </h1>
+        <div class='problem'>
+            <p>
+                <span id="grad1">　問題文　</span>
+            </p>
+            <p>
+                <p>22歳男性。小児期より、インスリンの皮下注射を毎朝施行していたが、就職し、生活が不規則になっていた。その男性がある朝、倒れているのが発見された。</p>
+<p>意識不鮮明。呼びかけに答えない。血圧90/60mmHg、呼吸数20/分、脈拍100/分整。尿カテーテルを挿入し尿検査したところ、尿糖(＋＋＋)、タンパク(＋)、ケトン体(＋＋＋)だった。</p>
+<p>動脈血液ガス分析を施行した時のpHの値に最も近いと考えられるのはどれか。1つ選べ。</p>
+<ol><li>8.0</li><li>7.6</li><li>7.4</li><li>7.2</li><li>6.0</li></ol>    
+            </p>
+        </div>
+        <hr>
+
+        <input type="button" value="check ans" onclick="toggle_switch()"/>
+        
+        <div id='toggle'>
+        <div class='answer'>
+            <p>
+                <span id="grad2">　解答　　</span>
+            </p>
+            <p>
+            4
+            </p>
+        </div>
+        <div class='description'>
+            <p>
+                <span id="grad2">　解説　　</span>
+            </p>
+            <p>既往が糖尿病であり、ケトン体が（＋＋＋）であることから糖尿病性ケトアシドーシスであると考えられます。ケトアシドーシスであれば、体内の血液は酸性に傾いた状態です。</p>
+<p>通常の血液 pH は 7.35 ～ 7.45 に保たれています。（この範囲は、知っている前提です。）そして、血液は緩衝能があり、酸性に傾いたといっても pH が 1 以上変動するということは考えにくいと推測されます。</p>
+<p>よって、 7.35 よりも酸性、すなわち数値が低く、それほど 7.35 よりも離れていない数値は、選択肢 4 の 7.2 です。</p>
+<p>以上より、正解は 4 です。</p>
+<p>ちなみに、糖尿病によるケトアシドーシスの発生は以下のような流れでおこります。</p>
+<p>インスリンが欠乏しているためブドウ糖の利用ができない → エネルギー源として、脂肪酸で代用する → 過剰に脂肪酸を代謝すると、代謝産物であるアセチル CoA の一部が別経路で代謝されてケトン体（アセト酢酸など）がたくさん作られる → 血液が酸性に傾く　です。</p>
+            </p>
+        </div>
+        </div>
+    </body>
+    <script>
+    document.getElementById("toggle").style.display="none";
+    function toggle_switch(){
+        var x = document.getElementById("toggle");
+        if (x.style.display=="block"){
+            x.style.display="none";
+        }
+        else{
+            x.style.display="block";
+        }
+    }
+    </script>
+    

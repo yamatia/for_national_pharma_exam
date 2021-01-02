@@ -1,0 +1,87 @@
+
+        <!DOCTYPE html>
+    <html lang="ja">
+    <style>
+    body
+    {
+        color: black;
+        background-color: white;
+    }
+    div{
+        font-size: 14px;
+    }
+    span
+    {
+        font-size: 18px;
+    }
+    #grad1{
+        background: linear-gradient(transparent 60%,#99e4f1 30%);
+        font-size: 18px;
+        font-weight: bold;
+    }
+    #grad2{
+        background: linear-gradient(transparent 60%,#fda1a1 30%);
+        font-size: 18px;
+        font-weight: bold;
+    }
+
+    </style>
+
+    <head>
+        <meta charset="UTF-8">
+        <title>100-50</title>
+    </head>
+
+    <body>
+        <h1>
+        <a href="./100_049.html" rel="external" title="prev">≪</a>
+        100-50
+        <a href="./100_051.html" rel="external" title="next">≫</a>
+        </h1>
+        <div class='problem'>
+            <p>
+                <span id="grad1">　問題文　</span>
+            </p>
+            <p>
+                <p>20℃の条件下で、表面張力が最も大きいのはどれか。1つ選べ。</p>
+<ol><li>エタノール</li><li>クロロホルム</li><li>グリセリン</li><li>水</li><li>ベンゼン</li></ol>    
+            </p>
+        </div>
+        <hr>
+
+        <input type="button" value="check ans" onclick="toggle_switch()"/>
+        
+        <div id='toggle'>
+        <div class='answer'>
+            <p>
+                <span id="grad2">　解答　　</span>
+            </p>
+            <p>
+            4
+            </p>
+        </div>
+        <div class='description'>
+            <p>
+                <span id="grad2">　解説　　</span>
+            </p>
+            <p>身近なもので、表面張力が大きいものの代表例が水なので、正解は 4 であろうと考えればよいと思います。</p>
+<p>もう少し、確信を得るために「表面張力」　というキーワードから『分子間力が強いほど、表面張力が強い』　という知識を思い出し、各選択肢を検討すると自信を持って正解を選ぶことができるかもしれません。</p>
+<p>選択肢の分子構造を考えると、O が 2 つあってしかも双極子モーメントに着目した時に非対称な形である 水 が一番極性が高そう → 分子間力が高そう → 表面張力が最も高そうと考えられます。</p>
+<p>最後に補足ですが、身近なもので水よりも表面張力が（桁外れに）高いものとして水銀があります。関連づけて覚えておくとよいです。</p>
+            </p>
+        </div>
+        </div>
+    </body>
+    <script>
+    document.getElementById("toggle").style.display="none";
+    function toggle_switch(){
+        var x = document.getElementById("toggle");
+        if (x.style.display=="block"){
+            x.style.display="none";
+        }
+        else{
+            x.style.display="block";
+        }
+    }
+    </script>
+    

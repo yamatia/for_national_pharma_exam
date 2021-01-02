@@ -1,0 +1,90 @@
+
+        <!DOCTYPE html>
+    <html lang="ja">
+    <style>
+    body
+    {
+        color: black;
+        background-color: white;
+    }
+    div{
+        font-size: 14px;
+    }
+    span
+    {
+        font-size: 18px;
+    }
+    #grad1{
+        background: linear-gradient(transparent 60%,#99e4f1 30%);
+        font-size: 18px;
+        font-weight: bold;
+    }
+    #grad2{
+        background: linear-gradient(transparent 60%,#fda1a1 30%);
+        font-size: 18px;
+        font-weight: bold;
+    }
+
+    </style>
+
+    <head>
+        <meta charset="UTF-8">
+        <title>102-50</title>
+    </head>
+
+    <body>
+        <h1>
+        <a href="./102_049.html" rel="external" title="prev">≪</a>
+        102-50
+        <a href="./102_051.html" rel="external" title="next">≫</a>
+        </h1>
+        <div class='problem'>
+            <p>
+                <span id="grad1">　問題文　</span>
+            </p>
+            <p>
+                <p>エマルションの分散媒と分散相の密度差により、分散相が浮上する現象はどれか。1つ選べ。</p>
+<ol><li>凝集</li><li>塩析</li><li>合一</li><li>クリーミング</li><li>ケーキング</li></ol>    
+            </p>
+        </div>
+        <hr>
+
+        <input type="button" value="check ans" onclick="toggle_switch()"/>
+        
+        <div id='toggle'>
+        <div class='answer'>
+            <p>
+                <span id="grad2">　解答　　</span>
+            </p>
+            <p>
+            4
+            </p>
+        </div>
+        <div class='description'>
+            <p>
+                <span id="grad2">　解説　　</span>
+            </p>
+            <p dir="ltr">選択肢 1 ですが<br/>凝集は、分散相同士がくっつく現象です。密度差により浮上する現象では、ありません。</p>
+<p dir="ltr">選択肢 2 ですが<br/>塩析とは、親水コロイドに多量の電解質を加えて沈殿させることです。密度差により浮上する現象では、ありません。</p>
+<p dir="ltr">選択肢 3 ですが<br/>合一は、凝集が更に進んだ状態のことです。密度差により浮上する現象では、ありません。</p>
+<p dir="ltr">選択肢 4 は、正しい選択肢です。</p>
+<p dir="ltr">選択肢 5 ですが<br/>ケーキングとは、自由沈降により再分散が困難になる現象です。密度差により浮上する現象では、ありません。</p>
+<p dir="ltr">以上より、<span style="color: #ff0000;">正解は 4</span> です。</p>
+<p dir="ltr">ちなみに、細かい定義を憶えていなくても、選択肢 1,2,3,5 については「沈降する現象」や「沈降の過程における現象」の名前だったとイメージできれば、浮上はしてないなぁ　と考えて誤りと判断できたのではないかと思います。</p>
+            </p>
+        </div>
+        </div>
+    </body>
+    <script>
+    document.getElementById("toggle").style.display="none";
+    function toggle_switch(){
+        var x = document.getElementById("toggle");
+        if (x.style.display=="block"){
+            x.style.display="none";
+        }
+        else{
+            x.style.display="block";
+        }
+    }
+    </script>
+    

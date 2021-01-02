@@ -1,0 +1,86 @@
+
+        <!DOCTYPE html>
+    <html lang="ja">
+    <style>
+    body
+    {
+        color: black;
+        background-color: white;
+    }
+    div{
+        font-size: 14px;
+    }
+    span
+    {
+        font-size: 18px;
+    }
+    #grad1{
+        background: linear-gradient(transparent 60%,#99e4f1 30%);
+        font-size: 18px;
+        font-weight: bold;
+    }
+    #grad2{
+        background: linear-gradient(transparent 60%,#fda1a1 30%);
+        font-size: 18px;
+        font-weight: bold;
+    }
+
+    </style>
+
+    <head>
+        <meta charset="UTF-8">
+        <title>102-190</title>
+    </head>
+
+    <body>
+        <h1>
+        <a href="./102_189.html" rel="external" title="prev">≪</a>
+        102-190
+        <a href="./102_191.html" rel="external" title="next">≫</a>
+        </h1>
+        <div class='problem'>
+            <p>
+                <span id="grad1">　問題文　</span>
+            </p>
+            <p>
+                <p>EBMの実践において、臨床研究論文の批判的吟味を行う際の「外的妥当性」に該当するのはどれか。1つ選べ。</p>
+<ol><li>研究デザイン</li><li>被験者の割り付け方法</li><li>脱落者の取り扱い方法</li><li>統計解析方法</li><li>眼前の患者への適用の可否</li></ol>    
+            </p>
+        </div>
+        <hr>
+
+        <input type="button" value="check ans" onclick="toggle_switch()"/>
+        
+        <div id='toggle'>
+        <div class='answer'>
+            <p>
+                <span id="grad2">　解答　　</span>
+            </p>
+            <p>
+            5
+            </p>
+        </div>
+        <div class='description'>
+            <p>
+                <span id="grad2">　解説　　</span>
+            </p>
+            <p>同じことを同じ集団に対して行った時、結果が同様であることが「内的妥当性」がある　ということです。一方で、その研究の成果が目の前の患者さんに対してどれだけ適用できるのか　というのが「外的妥当性」です。</p>
+<p>内的妥当性の有無や程度は、よくデザインされた研究であることや、被験者の割り付け方法、脱落者の取り扱い方法、結果の解析方法などに依存します。一方、外的妥当性の有無や程度は、研究論文と目の前の患者の背景の違いなどに依存します。</p>
+<p>以上より、正解は 5 です。</p>
+            </p>
+        </div>
+        </div>
+    </body>
+    <script>
+    document.getElementById("toggle").style.display="none";
+    function toggle_switch(){
+        var x = document.getElementById("toggle");
+        if (x.style.display=="block"){
+            x.style.display="none";
+        }
+        else{
+            x.style.display="block";
+        }
+    }
+    </script>
+    

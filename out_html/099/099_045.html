@@ -1,0 +1,87 @@
+
+        <!DOCTYPE html>
+    <html lang="ja">
+    <style>
+    body
+    {
+        color: black;
+        background-color: white;
+    }
+    div{
+        font-size: 14px;
+    }
+    span
+    {
+        font-size: 18px;
+    }
+    #grad1{
+        background: linear-gradient(transparent 60%,#99e4f1 30%);
+        font-size: 18px;
+        font-weight: bold;
+    }
+    #grad2{
+        background: linear-gradient(transparent 60%,#fda1a1 30%);
+        font-size: 18px;
+        font-weight: bold;
+    }
+
+    </style>
+
+    <head>
+        <meta charset="UTF-8">
+        <title>99-45</title>
+    </head>
+
+    <body>
+        <h1>
+        <a href="./099_044.html" rel="external" title="prev">≪</a>
+        99-45
+        <a href="./099_046.html" rel="external" title="next">≫</a>
+        </h1>
+        <div class='problem'>
+            <p>
+                <span id="grad1">　問題文　</span>
+            </p>
+            <p>
+                <p>フェロジピン服用患者が避けるべき飲食物はどれか。1つ選べ。</p>
+<ol><li>グレープフルーツジュース</li><li>牛乳</li><li>コーヒー</li><li>ブロッコリー</li><li>納豆</li></ol>    
+            </p>
+        </div>
+        <hr>
+
+        <input type="button" value="check ans" onclick="toggle_switch()"/>
+        
+        <div id='toggle'>
+        <div class='answer'>
+            <p>
+                <span id="grad2">　解答　　</span>
+            </p>
+            <p>
+            1
+            </p>
+        </div>
+        <div class='description'>
+            <p>
+                <span id="grad2">　解説　　</span>
+            </p>
+            <p>フェロジピンは、ジヒドロピリジン系 Ca 拮抗薬です。降圧剤です。CYP 3A4 で代謝されるためグレープフルーツジュース（GFJ）摂取を避けるべきです。（GFJ は、CYP を阻害する働きがあります。）</p>
+<p>以上より、正解は 1 です。</p>
+<p>ちなみに<br/>牛乳　→　テトラサイクリン系、ニューキノロン系<br/>コーヒー　→　ジアゼパム、テオフィリン<br/>ブロッコリー　→　ワルファリン<br/>納豆　→　ワルファリン　が、相互作用として知られています。</p>
+<p>留意点として、相互作用があるから絶対に一緒にとってはいけないものもあれば、ある程度は許容できるものもあるということに、注意が必要です。</p>
+            </p>
+        </div>
+        </div>
+    </body>
+    <script>
+    document.getElementById("toggle").style.display="none";
+    function toggle_switch(){
+        var x = document.getElementById("toggle");
+        if (x.style.display=="block"){
+            x.style.display="none";
+        }
+        else{
+            x.style.display="block";
+        }
+    }
+    </script>
+    

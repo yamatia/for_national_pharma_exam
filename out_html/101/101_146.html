@@ -1,0 +1,90 @@
+
+        <!DOCTYPE html>
+    <html lang="ja">
+    <style>
+    body
+    {
+        color: black;
+        background-color: white;
+    }
+    div{
+        font-size: 14px;
+    }
+    span
+    {
+        font-size: 18px;
+    }
+    #grad1{
+        background: linear-gradient(transparent 60%,#99e4f1 30%);
+        font-size: 18px;
+        font-weight: bold;
+    }
+    #grad2{
+        background: linear-gradient(transparent 60%,#fda1a1 30%);
+        font-size: 18px;
+        font-weight: bold;
+    }
+
+    </style>
+
+    <head>
+        <meta charset="UTF-8">
+        <title>101-146</title>
+    </head>
+
+    <body>
+        <h1>
+        <a href="./101_145.html" rel="external" title="prev">≪</a>
+        101-146
+        <a href="./101_147.html" rel="external" title="next">≫</a>
+        </h1>
+        <div class='problem'>
+            <p>
+                <span id="grad1">　問題文　</span>
+            </p>
+            <p>
+                <p>医薬品副作用被害救済制度に関する記述のうち、正しいのはどれか。2つ選べ。</p>
+<ol><li>救済給付金は、国からの補助金で賄われている。</li><li>キノホルムによるスモン(SMON)が制度発足の契機となった。</li><li>治験薬による健康被害も救済対象になる。</li><li>予防接種法の規定による定期の予防接種で生じた健康被害は、救済対象とならない。</li><li>健康被害の程度によらず、救済される制度である。</li></ol>    
+            </p>
+        </div>
+        <hr>
+
+        <input type="button" value="check ans" onclick="toggle_switch()"/>
+        
+        <div id='toggle'>
+        <div class='answer'>
+            <p>
+                <span id="grad2">　解答　　</span>
+            </p>
+            <p>
+            2, 4
+            </p>
+        </div>
+        <div class='description'>
+            <p>
+                <span id="grad2">　解説　　</span>
+            </p>
+            <p>選択肢 1 ですが<br/>救済給付の必要な費用は、医薬品の製造販売業者が社会的責任に基づき給付する拠出金が、原資です。国からの補助金では、ありません。</p>
+<p>選択肢 2 は、正しい選択肢です。<br/>（類題　 （同内容）。）<br/>スモン（SMON）とは整腸剤キノホルムによって引き起こされた薬害です。亜急性脊髄視神経症とも呼ばれます。激しい腹痛の後、約２～３週間後に脱力、歩行困難などの症状が現れます。特徴的な症状として、舌に緑色の苔が生え、便が緑色になるといった症状があります。</p>
+<p>選択肢 3 ですが<br/>医薬品副作用被害救済制度の対象は、医薬品を適正使用した場合の、健康被害です。治験薬は、まだ医薬品として承認されておらず対象外です。</p>
+<p>※もちろん治験で健康被害が生じた場合にも救済の制度は確立しています。さらに、治験に参加する患者は生じうるリスク、拒否の自由などに加え予期せぬ副作用が生じた場合の保障の詳細を十分に理解した上で治験に参加することになります。</p>
+<p>選択肢 4 は、正しい選択肢です。<br/>「法定」の予防接種については、予防接種健康被害救済制度　という別の制度があるため副作用被害救済制度は対象外です。※「任意」の予防接種による健康被害は、副作用被害救済制度の対象となります。</p>
+<p>選択肢 5 ですが<br/>軽微なものについては対象ではありません。</p>
+<p>以上より、正解は 2,4 です。</p>
+            </p>
+        </div>
+        </div>
+    </body>
+    <script>
+    document.getElementById("toggle").style.display="none";
+    function toggle_switch(){
+        var x = document.getElementById("toggle");
+        if (x.style.display=="block"){
+            x.style.display="none";
+        }
+        else{
+            x.style.display="block";
+        }
+    }
+    </script>
+    

@@ -1,0 +1,86 @@
+
+        <!DOCTYPE html>
+    <html lang="ja">
+    <style>
+    body
+    {
+        color: black;
+        background-color: white;
+    }
+    div{
+        font-size: 14px;
+    }
+    span
+    {
+        font-size: 18px;
+    }
+    #grad1{
+        background: linear-gradient(transparent 60%,#99e4f1 30%);
+        font-size: 18px;
+        font-weight: bold;
+    }
+    #grad2{
+        background: linear-gradient(transparent 60%,#fda1a1 30%);
+        font-size: 18px;
+        font-weight: bold;
+    }
+
+    </style>
+
+    <head>
+        <meta charset="UTF-8">
+        <title>99-118</title>
+    </head>
+
+    <body>
+        <h1>
+        <a href="./099_117.html" rel="external" title="prev">≪</a>
+        99-118
+        <a href="./099_119.html" rel="external" title="next">≫</a>
+        </h1>
+        <div class='problem'>
+            <p>
+                <span id="grad1">　問題文　</span>
+            </p>
+            <p>
+                <p>1950年代後半、F.M.バーネットは、多様な抗原に対して特異的な免疫応答が起こるしくみを説明するためにクローン選択説を提唱した。クローン選択説の内容に合致する記述はどれか。2つ選べ。</p>
+<ol><li>リンパ球の抗原受容体の多様性は、受容体ポリペプチド鎖がさまざまな抗原を鋳型として、それぞれに特異的な折りたたまれ方をすることで生み出される。</li><li>個体発生の段階で多様なリンパ球クローンが生成し、その中から特定の抗原と結合する受容体をもつクローンが選択され増殖する。</li><li>ある抗原に反応するリンパ球は、その抗原とは異なる抗原に結合する抗体を分泌する細胞に分化する。</li><li>自己成分に強く反応するリンパ球クローンは、免疫系が未成熟な時期に周囲の自己成分と接触することにより除去される。</li></ol>    
+            </p>
+        </div>
+        <hr>
+
+        <input type="button" value="check ans" onclick="toggle_switch()"/>
+        
+        <div id='toggle'>
+        <div class='answer'>
+            <p>
+                <span id="grad2">　解答　　</span>
+            </p>
+            <p>
+            2, 4
+            </p>
+        </div>
+        <div class='description'>
+            <p>
+                <span id="grad2">　解説　　</span>
+            </p>
+            <p>”クローン選択説”とは、異物の侵入に対し特異性のある抗体が、どのように作られるかという理論です。この説によれば、３ステップで説明されます。</p>
+<p>step 1 個体発生の初期においてランダムに、種々の抗原特異的な反応性を持つ細胞が生じる。<br/>step 2 自己抗原に対応した細胞は、除去される。<br/>step 3 外来抗原が侵入した時、その抗原に特異的に反応する細胞が増殖する※ step 3 で増殖した細胞というのが、外来抗原に対して特異性のある抗体を産生する細胞と、説明されます。</p>
+<p>以上より、正解は 2,4 です。</p>
+            </p>
+        </div>
+        </div>
+    </body>
+    <script>
+    document.getElementById("toggle").style.display="none";
+    function toggle_switch(){
+        var x = document.getElementById("toggle");
+        if (x.style.display=="block"){
+            x.style.display="none";
+        }
+        else{
+            x.style.display="block";
+        }
+    }
+    </script>
+    

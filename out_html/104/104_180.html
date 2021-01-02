@@ -1,0 +1,92 @@
+
+        <!DOCTYPE html>
+    <html lang="ja">
+    <style>
+    body
+    {
+        color: black;
+        background-color: white;
+    }
+    div{
+        font-size: 14px;
+    }
+    span
+    {
+        font-size: 18px;
+    }
+    #grad1{
+        background: linear-gradient(transparent 60%,#99e4f1 30%);
+        font-size: 18px;
+        font-weight: bold;
+    }
+    #grad2{
+        background: linear-gradient(transparent 60%,#fda1a1 30%);
+        font-size: 18px;
+        font-weight: bold;
+    }
+
+    </style>
+
+    <head>
+        <meta charset="UTF-8">
+        <title>104-180</title>
+    </head>
+
+    <body>
+        <h1>
+        <a href="./104_179.html" rel="external" title="prev">≪</a>
+        104-180
+        <a href="./104_181.html" rel="external" title="next">≫</a>
+        </h1>
+        <div class='problem'>
+            <p>
+                <span id="grad1">　問題文　</span>
+            </p>
+            <p>
+                <p>45歳女性。健康診断で肥満、高血圧及び高血糖を指摘され、近医を受診した。高血圧症及び2型糖尿病と診断され、アンジオテンシンⅡ受容体遮断薬とジペプチジルペプチダーゼ-4(DPP-4)阻害薬の投与が開始された。</p>
+<p>しかし、3ヶ月間服薬しても期待した治療効果が得られなかったため、大学病院に紹介受診となった。診察の結果、丸顔と中心性肥満が認められ、二次性高血圧が疑われた。MRI検査により下垂体の腫瘍と、腹部CT検査により両側副腎の腫大を認めた。</p>
+<p>本症例の空腹時血液検査データで、高値を示す可能性が高いのはどれか。2つ選べ。</p>
+<ol><li>コルチゾール</li><li>カテコールアミン</li><li>アルドステロン</li><li>TSH</li><li>ACTH</li></ol>    
+            </p>
+        </div>
+        <hr>
+
+        <input type="button" value="check ans" onclick="toggle_switch()"/>
+        
+        <div id='toggle'>
+        <div class='answer'>
+            <p>
+                <span id="grad2">　解答　　</span>
+            </p>
+            <p>
+            1, 5
+            </p>
+        </div>
+        <div class='description'>
+            <p>
+                <span id="grad2">　解説　　</span>
+            </p>
+            <p><span style="font-weight: 400;">丸顔、中心性肥満あたりをキーワードに、「ステロイドの副作用」が連想されることが期待されます。下垂体の「腫瘍」から、下垂体の機能が亢進している、と読み替えます。さらに、副腎の腫大から、副腎の機能が亢進している、と読み替えます。すると、副腎皮質ホルモン関連が高値を示すのではないかと判断できるのではないでしょうか。</span><span style="font-weight: 400;"><br/></span><span style="font-weight: 400;"><br/></span><span style="font-weight: 400;">これらの症状から「クッシング症候群」と読み解き、原因がクッシング病であれば、副腎皮質刺激ホルモンの過剰産生、及びそれに伴う副腎皮質ホルモンの高値となるだろうと考えることができます。</span></p>
+<p><span style="font-weight: 400;">選択肢 1 は妥当です。<br/></span><span style="font-weight: 400;">コルチゾールは、医薬品のステロイドとしても用いられる副腎皮質ホルモンです。高値を示すと考えられます。</span></p>
+<p><span style="font-weight: 400;">選択肢 2 ですが<br/></span><span style="font-weight: 400;">カテコラミンは、アドレナリンなどの総称です。高値ではないと考えられます。</span></p>
+<p><span style="font-weight: 400;">選択肢 3 ですが<br/></span><span style="font-weight: 400;">アルドステロンは、鉱質コルチコイドです。丸顔や中心性肥満とは関係がなく、高値ではないと考えられます。</span></p>
+<p><span style="font-weight: 400;">選択肢 4 ですが<br/></span><span style="font-weight: 400;">TSH は、甲状腺刺激ホルモンです。高値ではないと考えられます。</span></p>
+<p><span style="font-weight: 400;">選択肢 5 は妥当です。<br/></span><span style="font-weight: 400;">ACTH は、副腎皮質刺激ホルモンです。高値を示すと考えられます。</span></p>
+<p><span style="font-weight: 400;">以上より、正解は 1,5 です。</span></p>
+            </p>
+        </div>
+        </div>
+    </body>
+    <script>
+    document.getElementById("toggle").style.display="none";
+    function toggle_switch(){
+        var x = document.getElementById("toggle");
+        if (x.style.display=="block"){
+            x.style.display="none";
+        }
+        else{
+            x.style.display="block";
+        }
+    }
+    </script>
+    

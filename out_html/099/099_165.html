@@ -1,0 +1,89 @@
+
+        <!DOCTYPE html>
+    <html lang="ja">
+    <style>
+    body
+    {
+        color: black;
+        background-color: white;
+    }
+    div{
+        font-size: 14px;
+    }
+    span
+    {
+        font-size: 18px;
+    }
+    #grad1{
+        background: linear-gradient(transparent 60%,#99e4f1 30%);
+        font-size: 18px;
+        font-weight: bold;
+    }
+    #grad2{
+        background: linear-gradient(transparent 60%,#fda1a1 30%);
+        font-size: 18px;
+        font-weight: bold;
+    }
+
+    </style>
+
+    <head>
+        <meta charset="UTF-8">
+        <title>99-165</title>
+    </head>
+
+    <body>
+        <h1>
+        <a href="./099_164.html" rel="external" title="prev">≪</a>
+        99-165
+        <a href="./099_166.html" rel="external" title="next">≫</a>
+        </h1>
+        <div class='problem'>
+            <p>
+                <span id="grad1">　問題文　</span>
+            </p>
+            <p>
+                <p>抗悪性腫瘍薬に関する記述のうち、正しいのはどれか。2つ選べ。</p>
+<ol><li>メルカプトプリンは、生体内でチオイノシン酸に変換され、アデニル酸及びグアニル酸の生合成を阻害する。</li><li>ビンクリスチンは、DNAをアルキル化し、がん細胞のS期移行を阻害する。</li><li>ゲムシタビンは、生体内でリン酸化され、DNAトポイソメラーゼⅡを阻害する。</li><li>タモキシフェンは、エストロゲン受容体を遮断し、乳がん細胞の増殖を阻害する。</li><li>トラスツズマブは、CD20抗原を有する細胞を補体依存的に傷害する。</li></ol>    
+            </p>
+        </div>
+        <hr>
+
+        <input type="button" value="check ans" onclick="toggle_switch()"/>
+        
+        <div id='toggle'>
+        <div class='answer'>
+            <p>
+                <span id="grad2">　解答　　</span>
+            </p>
+            <p>
+            1, 4
+            </p>
+        </div>
+        <div class='description'>
+            <p>
+                <span id="grad2">　解説　　</span>
+            </p>
+            <p>選択肢 1 は、正しい記述です。</p>
+<p>選択肢 2 ですが<br/>ビンクリスチン（オンコビン）は、微小管の機能を阻害する植物アルカロイド系の抗がん剤です。アルキル化剤では、ありません。よって、選択肢 2 は誤りです。</p>
+<p>選択肢 3 ですが<br/>ゲムシタビン（ジェムザール）は、DNA 鎖に取り込まれることで DNA 合成を阻害する抗がん薬です。トポイソメラーゼ阻害薬では、ありません。よって、選択肢 3 は誤りです。ちなみに、トポイソメラーゼ阻害薬の例はエトポシド です。</p>
+<p>選択肢 4 は、正しい記述です。</p>
+<p>選択肢 5 ですが<br/>トラスツズマブ（ハーセプチン）は、がん細胞表面タンパク質 HER 2 に対する分子標的薬です。CD 20 が標的では、ありません。CD 20 が標的であるのはリツキシマブ（リツキサン）です。よって、選択肢 5 は誤りです。</p>
+<p>以上より、正解は 1,4 です。</p>
+            </p>
+        </div>
+        </div>
+    </body>
+    <script>
+    document.getElementById("toggle").style.display="none";
+    function toggle_switch(){
+        var x = document.getElementById("toggle");
+        if (x.style.display=="block"){
+            x.style.display="none";
+        }
+        else{
+            x.style.display="block";
+        }
+    }
+    </script>
+    

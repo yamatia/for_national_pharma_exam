@@ -1,0 +1,87 @@
+
+        <!DOCTYPE html>
+    <html lang="ja">
+    <style>
+    body
+    {
+        color: black;
+        background-color: white;
+    }
+    div{
+        font-size: 14px;
+    }
+    span
+    {
+        font-size: 18px;
+    }
+    #grad1{
+        background: linear-gradient(transparent 60%,#99e4f1 30%);
+        font-size: 18px;
+        font-weight: bold;
+    }
+    #grad2{
+        background: linear-gradient(transparent 60%,#fda1a1 30%);
+        font-size: 18px;
+        font-weight: bold;
+    }
+
+    </style>
+
+    <head>
+        <meta charset="UTF-8">
+        <title>105-36</title>
+    </head>
+
+    <body>
+        <h1>
+        <a href="./105_035.html" rel="external" title="prev">≪</a>
+        105-36
+        <a href="./105_037.html" rel="external" title="next">≫</a>
+        </h1>
+        <div class='problem'>
+            <p>
+                <span id="grad1">　問題文　</span>
+            </p>
+            <p>
+                <p>メテノロンのタンパク質同化作用の機序はどれか。1つ選べ。</p>
+<ol><li>アロマターゼ阻害</li><li>エストロゲン受容体刺激</li><li>ペルオキシダーゼ阻害</li><li>バソプレシンV<sub>2</sub>受容体刺激</li><li>アンドロゲン受容体刺激</li></ol>    
+            </p>
+        </div>
+        <hr>
+
+        <input type="button" value="check ans" onclick="toggle_switch()"/>
+        
+        <div id='toggle'>
+        <div class='answer'>
+            <p>
+                <span id="grad2">　解答　　</span>
+            </p>
+            <p>
+            5
+            </p>
+        </div>
+        <div class='description'>
+            <p>
+                <span id="grad2">　解説　　</span>
+            </p>
+            <p>メテノロン（プリモボラン）はタンパク質同化ステロイドです。造血薬として、再生不良性貧血に用いられます。骨粗しょう症や、消耗状態にも用いられます。要するにステロイドです。</p>
+<p>ステロイドの受容体は、細胞質受容体です。細胞質受容体は、通常は細胞質に存在し、リガンドと結合すると、複合体となり核内へ移行します。核内で DNA と結合し、転写調節因子として作用します。選択肢から、ステロイド受容体を選ぶと、エストロゲン受容体か、アンドロゲン受容体とわかります。正解は 2 or 5 です。</p>
+<p>エストロゲンは女性ホルモン、アンドロゲンは男性ホルモンです。タンパク質を同化、つまり合成する作用は、「筋肉等を合成する方向の作用」と考えれば、アンドロゲン受容体刺激と判断できるのではないでしょうか。</p>
+<p>以上より、正解は 5 です。</p>
+            </p>
+        </div>
+        </div>
+    </body>
+    <script>
+    document.getElementById("toggle").style.display="none";
+    function toggle_switch(){
+        var x = document.getElementById("toggle");
+        if (x.style.display=="block"){
+            x.style.display="none";
+        }
+        else{
+            x.style.display="block";
+        }
+    }
+    </script>
+    

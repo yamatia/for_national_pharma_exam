@@ -1,0 +1,86 @@
+
+        <!DOCTYPE html>
+    <html lang="ja">
+    <style>
+    body
+    {
+        color: black;
+        background-color: white;
+    }
+    div{
+        font-size: 14px;
+    }
+    span
+    {
+        font-size: 18px;
+    }
+    #grad1{
+        background: linear-gradient(transparent 60%,#99e4f1 30%);
+        font-size: 18px;
+        font-weight: bold;
+    }
+    #grad2{
+        background: linear-gradient(transparent 60%,#fda1a1 30%);
+        font-size: 18px;
+        font-weight: bold;
+    }
+
+    </style>
+
+    <head>
+        <meta charset="UTF-8">
+        <title>102-175</title>
+    </head>
+
+    <body>
+        <h1>
+        <a href="./102_174.html" rel="external" title="prev">≪</a>
+        102-175
+        <a href="./102_176.html" rel="external" title="next">≫</a>
+        </h1>
+        <div class='problem'>
+            <p>
+                <span id="grad1">　問題文　</span>
+            </p>
+            <p>
+                <p>放出制御製剤に用いられる添加剤に関する記述のうち、誤っているのはどれか。1つ選べ。</p>
+<ol><li>エチルセルロースは、水に不溶であり、徐放性のコーティング剤として用いられる。</li><li>乳酸・グリコール酸共重合体は、生体内分解性であり、持続性注射剤用マイクロスフェアの基剤として用いられる。</li><li>ヒドロキシプロピルセルロースは、水和によりゲル化するため、徐放性のマトリックス基剤として用いられる。</li><li>ヒプロメロースは、pH5以下の水溶液には溶解しないため、腸溶性の被膜剤として用いられる。</li><li>エチレン・酢酸ビニル共重合体は、経皮治療システムの放出制御膜基剤として用いられる。</li></ol>    
+            </p>
+        </div>
+        <hr>
+
+        <input type="button" value="check ans" onclick="toggle_switch()"/>
+        
+        <div id='toggle'>
+        <div class='answer'>
+            <p>
+                <span id="grad2">　解答　　</span>
+            </p>
+            <p>
+            4
+            </p>
+        </div>
+        <div class='description'>
+            <p>
+                <span id="grad2">　解説　　</span>
+            </p>
+            <p><strong>ヒプロメロース</strong>は、フタル酸エステルになるとコーティング剤です。いいかえるとフタル酸エステルでなければコーティング剤ではありません。単なるヒプロメロースは増粘剤、結合剤などとして使用されます。よって、選択肢 4 は誤りです。</p>
+<p>選択肢 1,2,3,5 は正しい記述です。</p>
+<p>以上より、正解は 4 です。<br/>参考）</p>
+            </p>
+        </div>
+        </div>
+    </body>
+    <script>
+    document.getElementById("toggle").style.display="none";
+    function toggle_switch(){
+        var x = document.getElementById("toggle");
+        if (x.style.display=="block"){
+            x.style.display="none";
+        }
+        else{
+            x.style.display="block";
+        }
+    }
+    </script>
+    

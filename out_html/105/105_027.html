@@ -1,0 +1,88 @@
+
+        <!DOCTYPE html>
+    <html lang="ja">
+    <style>
+    body
+    {
+        color: black;
+        background-color: white;
+    }
+    div{
+        font-size: 14px;
+    }
+    span
+    {
+        font-size: 18px;
+    }
+    #grad1{
+        background: linear-gradient(transparent 60%,#99e4f1 30%);
+        font-size: 18px;
+        font-weight: bold;
+    }
+    #grad2{
+        background: linear-gradient(transparent 60%,#fda1a1 30%);
+        font-size: 18px;
+        font-weight: bold;
+    }
+
+    </style>
+
+    <head>
+        <meta charset="UTF-8">
+        <title>105-27</title>
+    </head>
+
+    <body>
+        <h1>
+        <a href="./105_026.html" rel="external" title="prev">≪</a>
+        105-27
+        <a href="./105_028.html" rel="external" title="next">≫</a>
+        </h1>
+        <div class='problem'>
+            <p>
+                <span id="grad1">　問題文　</span>
+            </p>
+            <p>
+                <p>強酸性下でも活性を示すため、胃炎や消化性潰瘍に用いられる局所麻酔薬はどれか。1つ選べ。</p>
+<ol><li>オキセサゼイン</li><li>プロカイン</li><li>メピバカイン</li><li>ブピバカイン</li><li>レボブピバカイン</li></ol>    
+            </p>
+        </div>
+        <hr>
+
+        <input type="button" value="check ans" onclick="toggle_switch()"/>
+        
+        <div id='toggle'>
+        <div class='answer'>
+            <p>
+                <span id="grad2">　解答　　</span>
+            </p>
+            <p>
+            1
+            </p>
+        </div>
+        <div class='description'>
+            <p>
+                <span id="grad2">　解説　　</span>
+            </p>
+            <p>「強酸性下でも活性を示す局所麻酔薬」と来れば、オキセサゼインです。</p>
+<p>以上より、正解は 1 です。</p>
+<p>ちなみにですが<br/>本試験時において、局所麻酔薬として、リドカイン（キシロカインほか）やメピバカイン（カルボカインほか）が多く使用されています。</p>
+<p>また、長時間作用型では、エステル型のテトラカイン（テトカインほか）や、アミド型のブピバカイン塩酸塩（マーカイン）が使用されています。そして、ブピバカインの S (-) 異性体がレボブピバカインです。同等の効果で、心毒性等の副作用がより低減されています。</p>
+<p>参考）<br/><br/></p>
+            </p>
+        </div>
+        </div>
+    </body>
+    <script>
+    document.getElementById("toggle").style.display="none";
+    function toggle_switch(){
+        var x = document.getElementById("toggle");
+        if (x.style.display=="block"){
+            x.style.display="none";
+        }
+        else{
+            x.style.display="block";
+        }
+    }
+    </script>
+    

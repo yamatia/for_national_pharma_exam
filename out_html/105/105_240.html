@@ -1,0 +1,103 @@
+
+        <!DOCTYPE html>
+    <html lang="ja">
+    <style>
+    body
+    {
+        color: black;
+        background-color: white;
+    }
+    div{
+        font-size: 14px;
+    }
+    span
+    {
+        font-size: 18px;
+    }
+    #grad1{
+        background: linear-gradient(transparent 60%,#99e4f1 30%);
+        font-size: 18px;
+        font-weight: bold;
+    }
+    #grad2{
+        background: linear-gradient(transparent 60%,#fda1a1 30%);
+        font-size: 18px;
+        font-weight: bold;
+    }
+
+    </style>
+
+    <head>
+        <meta charset="UTF-8">
+        <title>105-240</title>
+    </head>
+
+    <body>
+        <h1>
+        <a href="./105_239.html" rel="external" title="prev">≪</a>
+        105-240
+        <a href="./105_241.html" rel="external" title="next">≫</a>
+        </h1>
+        <div class='problem'>
+            <p>
+                <span id="grad1">　問題文　</span>
+            </p>
+            <p>
+                <p>有名芸能人がコカインを所持し、使用していた事件が報道された。地域の自治会より、健康サポート薬局の薬剤師にコカインの特徴や問題点について講演依頼があった。</p>
+<h4>問240</h4>
+<p>コカイン摂取により起こる影響について、薬剤師が地域住民に説明することになった。コカインに関する記述のうち、正しいのはどれか。2つ選べ。</p>
+<ol><li>一時的に集中力が上がったような錯覚が生じる。</li><li>中枢抑制作用により、不安と緊張がやわらぎ多幸感が生じる。</li><li>身体依存が生じやすく、中断により不快な身体症状が現れる。</li><li>耐性が生じやすく、使用量・使用回数が増えていくのが特徴である。</li><li>妊婦が摂取することで、早産、流産、胎児の死亡等のリスクが上昇する。</li></ol>
+<h4>問241</h4>
+<p>コカインの構造、代謝及び作用機序に関する記述のうち、正しいのはどれか。2つ選べ。</p>
+<ol><li>神経伝達物質ドパミンと同様の骨格を有している。</li><li>バルビツール酸誘導体と同様に、中枢抑制作用を示す。</li><li>耐性が生じるのは、代謝物としてΔ<sup>9</sup>-テトラヒドロカンナビノールが生成するためである。</li><li>妊婦が摂取すると、血管収縮作用により胎児への血流量が減少する。</li><li>体内で速やかに加水分解され、尿中に排泄される。</li></ol>    
+            </p>
+        </div>
+        <hr>
+
+        <input type="button" value="check ans" onclick="toggle_switch()"/>
+        
+        <div id='toggle'>
+        <div class='answer'>
+            <p>
+                <span id="grad2">　解答　　</span>
+            </p>
+            <p>
+            問240：1, 5問241：4, 5
+            </p>
+        </div>
+        <div class='description'>
+            <p>
+                <span id="grad2">　解説　　</span>
+            </p>
+            <h4>問240</h4>
+<p>コカインは局所麻酔薬として用いられます。また、中枢神経を刺激します。依存性は強い部類、主に精神依存です。</p>
+<p>選択肢 1 は妥当な記述です。</p>
+<p>選択肢 2 ですが<br/>中枢「刺激」作用です。「抑制」ではありません。よって、選択肢 2 は誤りです。</p>
+<p>選択肢 3 ですが<br/>生じやすいという記述については判断できず、妥当ではないと考えられます。よって、選択肢 3 は誤りです。</p>
+<p>選択肢 4 ですが<br/>耐性が生じる　が、「生じやすい」という記述については判断できません。妥当ではないと考えられます。よって、選択肢 4 は誤りです。</p>
+<p>選択肢 5 は妥当な記述です。</p>
+<p>以上より、正解は 1,5 です。</p>
+<h4>問241</h4>
+<p>コカインは、エステル型の局所麻酔薬です。構造は既出で、ベンゼン環を有するアルカロイドの一種です。（)</p>
+<p>選択肢 1 ですが<br/>ドパミンはカテコールアミンです。同様の骨格ではないと考えられます。よって、選択肢 1 は誤りです。</p>
+<p>選択肢 2 ですが<br/>中枢「興奮」作用です。抑制ではありません。よって、選択肢 2 は誤りです。</p>
+<p>選択肢 3 ですが<br/>テトラヒドロカンナビノールは、大麻の主成分です。コカインの耐性とは関係が大きくないと考えられます。よって、選択肢 3 は誤りです。</p>
+<p>選択肢 4,5 は妥当な記述です。</p>
+<p>以上より、正解は 4,5 です。</p>
+            </p>
+        </div>
+        </div>
+    </body>
+    <script>
+    document.getElementById("toggle").style.display="none";
+    function toggle_switch(){
+        var x = document.getElementById("toggle");
+        if (x.style.display=="block"){
+            x.style.display="none";
+        }
+        else{
+            x.style.display="block";
+        }
+    }
+    </script>
+    

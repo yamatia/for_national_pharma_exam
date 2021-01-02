@@ -1,0 +1,90 @@
+
+        <!DOCTYPE html>
+    <html lang="ja">
+    <style>
+    body
+    {
+        color: black;
+        background-color: white;
+    }
+    div{
+        font-size: 14px;
+    }
+    span
+    {
+        font-size: 18px;
+    }
+    #grad1{
+        background: linear-gradient(transparent 60%,#99e4f1 30%);
+        font-size: 18px;
+        font-weight: bold;
+    }
+    #grad2{
+        background: linear-gradient(transparent 60%,#fda1a1 30%);
+        font-size: 18px;
+        font-weight: bold;
+    }
+
+    </style>
+
+    <head>
+        <meta charset="UTF-8">
+        <title>99-112</title>
+    </head>
+
+    <body>
+        <h1>
+        <a href="./099_111.html" rel="external" title="prev">≪</a>
+        99-112
+        <a href="./099_113.html" rel="external" title="next">≫</a>
+        </h1>
+        <div class='problem'>
+            <p>
+                <span id="grad1">　問題文　</span>
+            </p>
+            <p>
+                <p>骨格筋、心筋及び平滑筋に関する記述のうち、正しいのはどれか。2つ選べ。</p>
+<ol><li>骨格筋の収縮には、ムスカリン性アセチルコリン受容体が関与する。</li><li>心筋細胞では、細胞外からのCa<sup>2</sup><sup>＋</sup>流入は、細胞質のCa<sup>2</sup><sup>＋</sup>濃度の上昇に関与しない。</li><li>平滑筋は、細胞内cAMP濃度が上昇すると弛緩する。</li><li>骨格筋、心筋及び平滑筋の収縮は、いずれも運動神経によって調節されている。</li><li>クレアチンリン酸は、骨格筋においてATPの供給源となる。</li></ol>    
+            </p>
+        </div>
+        <hr>
+
+        <input type="button" value="check ans" onclick="toggle_switch()"/>
+        
+        <div id='toggle'>
+        <div class='answer'>
+            <p>
+                <span id="grad2">　解答　　</span>
+            </p>
+            <p>
+            3, 5
+            </p>
+        </div>
+        <div class='description'>
+            <p>
+                <span id="grad2">　解説　　</span>
+            </p>
+            <p>選択肢 1 ですが<br/>骨格筋を支配するのは交感神経です。交感神経と骨格筋の間の神経伝達物質は、アドレナリン　及び　ノルアドレナリン　です。これらの受容体は、ムスカリン受容体ではありません。よって、選択肢 1 は誤りです。</p>
+<p>※ ちなみに、 例外として 汗腺を支配する交感神経末端では、アセチルコリンが伝達物質 → 受容体はムスカリン受容体です。</p>
+<p>選択肢 2 ですが<br/>心筋細胞では、細胞外からカルシウムイオンが流入すると、細胞の中の小胞体と呼ばれる場所から細胞質に向かって、カルシウムをドパッと放出します。（これを Ca 誘発性 Ca 放出：Calcium-induced calcium release = CICR　と言います。）つまり、細胞外からの Ｃａ<span style="font-weight: 400;"><sup>2+</sup></span> 流入は、細胞質の Ｃａ<span style="font-weight: 400;"><sup>2+</sup></span> 濃度の上昇に関与する、といえます。よって、選択肢 2 は誤りです。</p>
+<p>選択肢 3 はその通りの記述です。</p>
+<p>選択肢 4 ですが<br/>骨格筋は、運動神経により支配されます。平滑筋や心筋の収縮は、自律神経により支配されます。つまり、いずれも運動神経によって調節されているわけではありません。よって、選択肢 4 は誤りです。</p>
+<p>選択肢 5 はその通りの記述です。</p>
+<p>以上より、正解は 3,5 です。</p>
+            </p>
+        </div>
+        </div>
+    </body>
+    <script>
+    document.getElementById("toggle").style.display="none";
+    function toggle_switch(){
+        var x = document.getElementById("toggle");
+        if (x.style.display=="block"){
+            x.style.display="none";
+        }
+        else{
+            x.style.display="block";
+        }
+    }
+    </script>
+    

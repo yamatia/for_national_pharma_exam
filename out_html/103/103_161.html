@@ -1,0 +1,88 @@
+
+        <!DOCTYPE html>
+    <html lang="ja">
+    <style>
+    body
+    {
+        color: black;
+        background-color: white;
+    }
+    div{
+        font-size: 14px;
+    }
+    span
+    {
+        font-size: 18px;
+    }
+    #grad1{
+        background: linear-gradient(transparent 60%,#99e4f1 30%);
+        font-size: 18px;
+        font-weight: bold;
+    }
+    #grad2{
+        background: linear-gradient(transparent 60%,#fda1a1 30%);
+        font-size: 18px;
+        font-weight: bold;
+    }
+
+    </style>
+
+    <head>
+        <meta charset="UTF-8">
+        <title>103-161</title>
+    </head>
+
+    <body>
+        <h1>
+        <a href="./103_160.html" rel="external" title="prev">≪</a>
+        103-161
+        <a href="./103_162.html" rel="external" title="next">≫</a>
+        </h1>
+        <div class='problem'>
+            <p>
+                <span id="grad1">　問題文　</span>
+            </p>
+            <p>
+                <p>抗菌薬に関する記述のうち、正しいのはどれか。2つ選べ。</p>
+<ol><li>リンコマイシンは、DNA依存性RNAポリメラーゼを阻害することで細菌のDNA複製を阻害する。</li><li>スルファメトキサゾールは、パラアミノ安息香酸と競合的に拮抗することで葉酸の生合成を阻害する。</li><li>ノルフロキサシンは、DNAジャイレースを阻害することで細菌のDNA複製を抑制する。</li><li>セファゾリンは、ミコール酸の生合成を阻害することで結核菌に対して抗菌作用を示す。</li><li>リファンピシンは、リボソーム50Sサブユニットに結合し、ペプチジルトランスフェラーゼ活性を阻害することで細菌のタンパク質生合成を抑制する。</li></ol>    
+            </p>
+        </div>
+        <hr>
+
+        <input type="button" value="check ans" onclick="toggle_switch()"/>
+        
+        <div id='toggle'>
+        <div class='answer'>
+            <p>
+                <span id="grad2">　解答　　</span>
+            </p>
+            <p>
+            2, 3
+            </p>
+        </div>
+        <div class='description'>
+            <p>
+                <span id="grad2">　解説　　</span>
+            </p>
+            <p><span style="font-weight: 400;">選択肢 1 ですが<br/></span><span style="font-weight: 400;">リンコマイシンはリンコマイシン系構成物質です。</span><span style="font-weight: 400;">タンパク合成阻害薬です。</span><span style="font-weight: 400;">DNA複製阻害ではありません。</span><span style="font-weight: 400;">よって、選択肢 1 は誤りです。</span><span style="font-weight: 400;">（そもそも</span><span style="font-weight: 400;">リンコマイシンについてわからなくても</span><span style="font-weight: 400;">RNAポリメラーゼ阻害なら</span><span style="font-weight: 400;">「RNA合成」が阻害されるはずです。</span><span style="font-weight: 400;">「DNA複製阻害」という記述はおかしいとして</span><span style="font-weight: 400;">誤りと判断できます。）</span></p>
+<p><span style="font-weight: 400;">選択肢 2,3 は、正しい記述です。</span></p>
+<p><span style="font-weight: 400;">選択肢 4 ですが<br/></span><span style="font-weight: 400;">ミコール酸の生合成阻害は、</span><span style="font-weight: 400;">イソニアジドの作用機序です。</span><span style="font-weight: 400;">セファゾリンは、</span><span style="font-weight: 400;">第一世代セフェム系抗生物質です。</span><span style="font-weight: 400;">β－ラクタム系抗菌薬の一種です。 </span><span style="font-weight: 400;">細胞壁合成阻害薬です。 </span><span style="font-weight: 400;">よって、選択肢 4 は誤りです。</span></p>
+<p><span style="font-weight: 400;">選択肢 5 ですが<br/></span><span style="font-weight: 400;">リファンピシンは、</span><span style="font-weight: 400;">DNA依存性RNAポリメラーゼを阻害して</span><span style="font-weight: 400;">RNA合成を阻害することで</span><span style="font-weight: 400;">殺菌的に作用します。</span><span style="font-weight: 400;">タンパク合成阻害薬ではありません。</span><span style="font-weight: 400;">よって、選択肢 5 は誤りです。</span></p>
+<p><span style="font-weight: 400;">以上より、正解は 2,3 です。</span></p>
+            </p>
+        </div>
+        </div>
+    </body>
+    <script>
+    document.getElementById("toggle").style.display="none";
+    function toggle_switch(){
+        var x = document.getElementById("toggle");
+        if (x.style.display=="block"){
+            x.style.display="none";
+        }
+        else{
+            x.style.display="block";
+        }
+    }
+    </script>
+    

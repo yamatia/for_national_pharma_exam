@@ -1,0 +1,85 @@
+
+        <!DOCTYPE html>
+    <html lang="ja">
+    <style>
+    body
+    {
+        color: black;
+        background-color: white;
+    }
+    div{
+        font-size: 14px;
+    }
+    span
+    {
+        font-size: 18px;
+    }
+    #grad1{
+        background: linear-gradient(transparent 60%,#99e4f1 30%);
+        font-size: 18px;
+        font-weight: bold;
+    }
+    #grad2{
+        background: linear-gradient(transparent 60%,#fda1a1 30%);
+        font-size: 18px;
+        font-weight: bold;
+    }
+
+    </style>
+
+    <head>
+        <meta charset="UTF-8">
+        <title>99-327</title>
+    </head>
+
+    <body>
+        <h1>
+        <a href="./099_326.html" rel="external" title="prev">≪</a>
+        99-327
+        <a href="./099_328.html" rel="external" title="next">≫</a>
+        </h1>
+        <div class='problem'>
+            <p>
+                <span id="grad1">　問題文　</span>
+            </p>
+            <p>
+                <p>45歳男性。アトルバスタチンカルシウム錠10mgを1日1錠、就寝前に3週間服用していたところ、尿の色が赤褐色になったので、薬の副作用を疑った。留意すべき血液検査項目はどれか。2つ選べ。</p>
+<ol><li>直接ビリルビン</li><li>クレアチンキナーゼ</li><li>ミオグロビン</li><li>低比重リポタンパクコレステロール</li><li>プロラクチン</li></ol>    
+            </p>
+        </div>
+        <hr>
+
+        <input type="button" value="check ans" onclick="toggle_switch()"/>
+        
+        <div id='toggle'>
+        <div class='answer'>
+            <p>
+                <span id="grad2">　解答　　</span>
+            </p>
+            <p>
+            2, 3
+            </p>
+        </div>
+        <div class='description'>
+            <p>
+                <span id="grad2">　解説　　</span>
+            </p>
+            <p>スタチン系服用中に尿が赤褐色になったら、横紋筋融解症が疑われます。横紋筋融解症とは、筋肉細胞の融解・壊死が生じ、筋肉の成分が血中に流出する症状です。この結果、大量に流出したミオグロビン及び、筋肉細胞に多く含まれる酵素であるクレアチンキナーゼの値が上昇します。</p>
+<p>以上より、正解は 2,3 です。</p>
+            </p>
+        </div>
+        </div>
+    </body>
+    <script>
+    document.getElementById("toggle").style.display="none";
+    function toggle_switch(){
+        var x = document.getElementById("toggle");
+        if (x.style.display=="block"){
+            x.style.display="none";
+        }
+        else{
+            x.style.display="block";
+        }
+    }
+    </script>
+    

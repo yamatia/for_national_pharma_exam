@@ -1,0 +1,86 @@
+
+        <!DOCTYPE html>
+    <html lang="ja">
+    <style>
+    body
+    {
+        color: black;
+        background-color: white;
+    }
+    div{
+        font-size: 14px;
+    }
+    span
+    {
+        font-size: 18px;
+    }
+    #grad1{
+        background: linear-gradient(transparent 60%,#99e4f1 30%);
+        font-size: 18px;
+        font-weight: bold;
+    }
+    #grad2{
+        background: linear-gradient(transparent 60%,#fda1a1 30%);
+        font-size: 18px;
+        font-weight: bold;
+    }
+
+    </style>
+
+    <head>
+        <meta charset="UTF-8">
+        <title>99-326</title>
+    </head>
+
+    <body>
+        <h1>
+        <a href="./099_325.html" rel="external" title="prev">≪</a>
+        99-326
+        <a href="./099_327.html" rel="external" title="next">≫</a>
+        </h1>
+        <div class='problem'>
+            <p>
+                <span id="grad1">　問題文　</span>
+            </p>
+            <p>
+                <p>患者情報の取扱いに関する記述のうち、個人情報保護の観点から不適切なのはどれか。1つ選べ。</p>
+<ol><li>暗号化により特定の個人を識別できないデータだったので、個人情報に該当しないと考えた。</li><li>薬局において、処方せんの記載内容について疑義照会を行うために、発行元の医療機関に当該処方せんをFAX送信した。</li><li>当院に通院している患者が意識不明で他院に救急搬送された。本人の同意を得ずに搬送先の担当医に当該患者の処方歴を知らせた。</li><li>介護保険施設において、開催した行事で撮影した写真を、利用者の同意を得ずにホームページに掲載した。</li><li>現在、患者の看護にあたっている娘に対して、患者本人の同意を得ることなく、調剤している薬剤の情報提供を行った。</li></ol>    
+            </p>
+        </div>
+        <hr>
+
+        <input type="button" value="check ans" onclick="toggle_switch()"/>
+        
+        <div id='toggle'>
+        <div class='answer'>
+            <p>
+                <span id="grad2">　解答　　</span>
+            </p>
+            <p>
+            4
+            </p>
+        </div>
+        <div class='description'>
+            <p>
+                <span id="grad2">　解説　　</span>
+            </p>
+            <p>医療・介護関係事業者における個人情報の適切な取り扱いのためのガイドラインによれば、選択肢 １，２，３，５　は、個人情報保護の観点から不適切ではありません。</p>
+<p>又、選択肢 4 は、不適切です。利用者の同意が必要です。</p>
+<p>以上より、正解は 4 です。<br/>　厚生労働省 HP 内の文書（PDF）にとびます。個人情報に関して、判断に悩んだ場合はまず参考にするとよいと思われます。</p>
+            </p>
+        </div>
+        </div>
+    </body>
+    <script>
+    document.getElementById("toggle").style.display="none";
+    function toggle_switch(){
+        var x = document.getElementById("toggle");
+        if (x.style.display=="block"){
+            x.style.display="none";
+        }
+        else{
+            x.style.display="block";
+        }
+    }
+    </script>
+    

@@ -1,0 +1,87 @@
+
+        <!DOCTYPE html>
+    <html lang="ja">
+    <style>
+    body
+    {
+        color: black;
+        background-color: white;
+    }
+    div{
+        font-size: 14px;
+    }
+    span
+    {
+        font-size: 18px;
+    }
+    #grad1{
+        background: linear-gradient(transparent 60%,#99e4f1 30%);
+        font-size: 18px;
+        font-weight: bold;
+    }
+    #grad2{
+        background: linear-gradient(transparent 60%,#fda1a1 30%);
+        font-size: 18px;
+        font-weight: bold;
+    }
+
+    </style>
+
+    <head>
+        <meta charset="UTF-8">
+        <title>99-171</title>
+    </head>
+
+    <body>
+        <h1>
+        <a href="./099_170.html" rel="external" title="prev">≪</a>
+        99-171
+        <a href="./099_172.html" rel="external" title="next">≫</a>
+        </h1>
+        <div class='problem'>
+            <p>
+                <span id="grad1">　問題文　</span>
+            </p>
+            <p>
+                <p>薬物相互作用の回避方法に関する記述のうち、誤っているのはどれか。1つ選べ。</p>
+<ol><li>セフジニルは鉄イオンとキレートを形成して溶解性が低下するため、鉄剤の併用が必要な場合には、互いの服用時間を2～3時間ずらす。</li><li>セントジョーンズワートは、小腸上皮細胞のCYP3A4やP-糖タンパク質の発現を誘導するので、タクロリムス水和物との併用を避ける。</li><li>プロベネシドはアンピシリンの腎尿細管分泌を阻害するので、抗生物質を腎排泄型でないものに変更する。</li><li>シメチジンは肝CYP3A4を阻害し、トリアゾラムの作用時間の著しい延長を引き起こすので、睡眠導入薬を非代謝型であるブロチゾラムに変更する。</li><li>フルルビプロフェンとノルフロキサシンを併用すると痙れんを起こすことがあるので、フルルビプロフェンをアセトアミノフェンに変更する。</li></ol>    
+            </p>
+        </div>
+        <hr>
+
+        <input type="button" value="check ans" onclick="toggle_switch()"/>
+        
+        <div id='toggle'>
+        <div class='answer'>
+            <p>
+                <span id="grad2">　解答　　</span>
+            </p>
+            <p>
+            4
+            </p>
+        </div>
+        <div class='description'>
+            <p>
+                <span id="grad2">　解説　　</span>
+            </p>
+            <p>選択肢 4 ですが<br/>ブロチゾラムも、CYP 3A4 代謝です。非代謝型では、ありません。ちなみに、CYP 3A4 による代謝の影響を避ける事ができる睡眠導入薬としては、リルマザホン（リスミー）等が代用として考えられます。</p>
+<p>以上より、正解は 4 です。</p>
+<p>※ インタビューフォーム　によれば、リルマザホンは、体内で活性代謝物　M – 1 となり（リルマザホン → M－１ の過程では、CYP は不関与）その後　CYP 3A4 による代謝を受けたのち、最終代謝物　M – 4 になるとのことです。</p>
+<p>この記述を見ると、CYP の影響を受けるようですが、CYP　が障害されても、M － 1 が直接加水分解されて M－４　へと代謝され排出されることにより血中濃度の上昇等が見られないとのことです。（インタビューフォーム　は、「リスミー　インタビューフォーム」で検索すると、PDF がダウンロードできるリンクが見つかると思います。もしくは　PMDA　添付文書情報メニュー　より）</p>
+            </p>
+        </div>
+        </div>
+    </body>
+    <script>
+    document.getElementById("toggle").style.display="none";
+    function toggle_switch(){
+        var x = document.getElementById("toggle");
+        if (x.style.display=="block"){
+            x.style.display="none";
+        }
+        else{
+            x.style.display="block";
+        }
+    }
+    </script>
+    

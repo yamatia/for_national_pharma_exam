@@ -1,0 +1,85 @@
+
+        <!DOCTYPE html>
+    <html lang="ja">
+    <style>
+    body
+    {
+        color: black;
+        background-color: white;
+    }
+    div{
+        font-size: 14px;
+    }
+    span
+    {
+        font-size: 18px;
+    }
+    #grad1{
+        background: linear-gradient(transparent 60%,#99e4f1 30%);
+        font-size: 18px;
+        font-weight: bold;
+    }
+    #grad2{
+        background: linear-gradient(transparent 60%,#fda1a1 30%);
+        font-size: 18px;
+        font-weight: bold;
+    }
+
+    </style>
+
+    <head>
+        <meta charset="UTF-8">
+        <title>99-24</title>
+    </head>
+
+    <body>
+        <h1>
+        <a href="./099_023.html" rel="external" title="prev">≪</a>
+        99-24
+        <a href="./099_025.html" rel="external" title="next">≫</a>
+        </h1>
+        <div class='problem'>
+            <p>
+                <span id="grad1">　問題文　</span>
+            </p>
+            <p>
+                <p>自然大気に占める体積比(%)の大きさの順序を正しく表示しているのはどれか。1つ選べ。</p>
+<ol><li>二酸化炭素 ＞ メタン ＞ アルゴン</li><li>二酸化炭素 ＞ アルゴン ＞ メタン</li><li>メタン ＞ 二酸化炭素 ＞ アルゴン</li><li>アルゴン ＞ 二酸化炭素 ＞ メタン</li><li>アルゴン ＞ メタン ＞ 二酸化炭素</li></ol>    
+            </p>
+        </div>
+        <hr>
+
+        <input type="button" value="check ans" onclick="toggle_switch()"/>
+        
+        <div id='toggle'>
+        <div class='answer'>
+            <p>
+                <span id="grad2">　解答　　</span>
+            </p>
+            <p>
+            4
+            </p>
+        </div>
+        <div class='description'>
+            <p>
+                <span id="grad2">　解説　　</span>
+            </p>
+            <p>自然大気（いわゆる空気）の組成は窒素が約８割、酸素が約２割で、それに加えて微量に色々含まれています。微量なもので、一番多いのは Ar（アルゴン）です。次に多いのが CO<span style="font-weight: 400;"><sub>2</sub></span> です。</p>
+<p>以上より、正解は 4 です。</p>
+            </p>
+        </div>
+        </div>
+    </body>
+    <script>
+    document.getElementById("toggle").style.display="none";
+    function toggle_switch(){
+        var x = document.getElementById("toggle");
+        if (x.style.display=="block"){
+            x.style.display="none";
+        }
+        else{
+            x.style.display="block";
+        }
+    }
+    </script>
+    

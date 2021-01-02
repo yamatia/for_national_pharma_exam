@@ -1,0 +1,102 @@
+
+        <!DOCTYPE html>
+    <html lang="ja">
+    <style>
+    body
+    {
+        color: black;
+        background-color: white;
+    }
+    div{
+        font-size: 14px;
+    }
+    span
+    {
+        font-size: 18px;
+    }
+    #grad1{
+        background: linear-gradient(transparent 60%,#99e4f1 30%);
+        font-size: 18px;
+        font-weight: bold;
+    }
+    #grad2{
+        background: linear-gradient(transparent 60%,#fda1a1 30%);
+        font-size: 18px;
+        font-weight: bold;
+    }
+
+    </style>
+
+    <head>
+        <meta charset="UTF-8">
+        <title>102-202</title>
+    </head>
+
+    <body>
+        <h1>
+        <a href="./102_201.html" rel="external" title="prev">≪</a>
+        102-202
+        <a href="./102_203.html" rel="external" title="next">≫</a>
+        </h1>
+        <div class='problem'>
+            <p>
+                <span id="grad1">　問題文　</span>
+            </p>
+            <p>
+                <p>25歳女性。テニスで上腕部の筋肉痛を自覚し、これに効く消炎鎮痛薬の貼付剤を購入する目的で薬局を訪れた。応対した薬剤師はこの女性から以下の4つの情報を聴取した。</p>
+<ul><li>喘息の既往はない。</li><li>現在、妊娠はしていない。</li><li>貼付剤で皮膚がかぶれたことはない。</li><li>以前に日焼け止め剤を使用して過敏症を発症したことがある。</li></ul>
+<h4>問202</h4>
+<p>薬局で購入できる貼付剤の成分のうち、この女性に推奨すべきでないのはどれか。1つ選べ。</p>
+<ol><li>ケトプロフェン</li><li>ロキソプロフェンナトリウム水和物</li><li>インドメタシン</li><li>フルルビプロフェン</li><li>フェルビナク</li></ol>
+<h4>問203</h4>
+<p>日焼け止め剤には、紫外線吸収剤や紫外線散乱剤が配合されている。ある紫外線吸収剤は共役系を持ち、その遷移エネルギーは360kJ・mol<sup>-1</sup>であった。この遷移エネルギーに相当する紫外線の波長(nm)として最も近いのはどれか。1つ選べ。</p>
+<p>ただし、様々な物理定数は以下の値を用いることとする。</p>
+<ul><li>プランク定数　6.6×10<sup>-34</sup>J・s</li><li>光速度　3.0×10<sup>8</sup>m・s<sup>-1</sup></li><li>アボガドロ数　6.0×10<sup>23</sup>mol<sup>-1</sup></li></ul>
+<ol><li>240</li><li>270</li><li>300</li><li>330</li><li>360</li></ol>    
+            </p>
+        </div>
+        <hr>
+
+        <input type="button" value="check ans" onclick="toggle_switch()"/>
+        
+        <div id='toggle'>
+        <div class='answer'>
+            <p>
+                <span id="grad2">　解答　　</span>
+            </p>
+            <p>
+            問202：1問203：4
+            </p>
+        </div>
+        <div class='description'>
+            <p>
+                <span id="grad2">　解説　　</span>
+            </p>
+            <h4>問202</h4>
+<p>まず、薬局やドラッグストアで外用剤購入時に<br/>・喘息既往の確認→NSAIDｓ成分で喘息発作がおきうるから。<br/>・妊娠の有無→NSAIDｓ成分で胎児に影響がありうるから。を行うことが大事です。</p>
+<p>ーー<br/>以下雑感。国試関係なし。<br/>売らなきゃいけないのがフェイタス Z だったりすると「とにかく効きます」　みたいにおすすめしているお店も少なからずあるのではないかと思います。。薬剤師、登録販売者　みんなが<br/>NSAIDｓ外用剤の副作用をきちんと意識し日々の業務を通じて薬物の適正利用を実現するためにMRさんも含め、それぞれの人が事あるたびに意識すべき点だと個人的に思います。以上雑感。<br/>－－</p>
+<p>本問の聴取で、この女性は、貼付剤でかぶれたことはないが日焼け止めで過敏症を発症したことがあるとわかりました。ケトプロフェン（モーラステープ）が光線過敏症で聞き覚えがあるのではないでしょうか。「日焼け止め成分での過敏症既往歴がある人」にモーラステープは禁忌となっています。従って、正解は 1 です。</p>
+<p>ちなみに、他の選択肢の成分も NSAIDs であり、ケトプロフェン以外は日焼け止め成分での過敏症既往歴がある人に禁忌でないにせよ、日光曝露を避ける、皮膚症状が出たら使用をすぐやめるといった注意喚起は必要なケースであると思われます。</p>
+<h4>問203</h4>
+<p>まず、波の基本的なパラメータは波長（λ）と振動数（ν）です。振動数と波長の重要な関係はc = νλ・・・１　です。振動数とエネルギーの関係を示す重要な公式が　「E = ｈν」・・・２　です。ここまでが前提知識となります。</p>
+<p>λを求めたい問題で、E,h,c が与えられているので、式１を ν = c/λ　と変形し、式２に代入します。すると、 E = h（c/λ）となります。これを λ = ？ の形に直せば、λ = ch/E ・・・３です。</p>
+<p>後は数値を代入すればいいのですが、エネルギーの単位が「1 mol 当たり」であることに注意します。1mol とは、分子 6.0 × 10<span style="font-weight: 400;"><sup>23</sup></span> 個ということです。原子１個あたりになおすために、E の所に代入する数値は、6.0 × 10<span style="font-weight: 400;"><sup>23</sup></span> で割ります。</p>
+<p>式３の右辺の各文字に、数値を代入すると<br/>λ = (3 × 10<span style="font-weight: 400;"><sup>8</sup></span>) (6.6×10<span style="font-weight: 400;"><sup>-34</sup></span>) / {(360×10<span style="font-weight: 400;"><sup>3</sup></span>)÷(6.0×10<span style="font-weight: 400;"><sup>23</sup></span>)}<br/>= 3.3 × 10<span style="font-weight: 400;"><sup>-7</sup></span><br/>= <strong>330</strong> × 10<span style="font-weight: 400;"><sup>-9</sup></span>（波長の単位が nm なので、ｎ= 10<span style="font-weight: 400;"><sup>-9</sup></span> に数値を最後あわせています。）</p>
+<p>以上より、正解は 4 です。</p>
+            </p>
+        </div>
+        </div>
+    </body>
+    <script>
+    document.getElementById("toggle").style.display="none";
+    function toggle_switch(){
+        var x = document.getElementById("toggle");
+        if (x.style.display=="block"){
+            x.style.display="none";
+        }
+        else{
+            x.style.display="block";
+        }
+    }
+    </script>
+    

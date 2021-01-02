@@ -1,0 +1,87 @@
+
+        <!DOCTYPE html>
+    <html lang="ja">
+    <style>
+    body
+    {
+        color: black;
+        background-color: white;
+    }
+    div{
+        font-size: 14px;
+    }
+    span
+    {
+        font-size: 18px;
+    }
+    #grad1{
+        background: linear-gradient(transparent 60%,#99e4f1 30%);
+        font-size: 18px;
+        font-weight: bold;
+    }
+    #grad2{
+        background: linear-gradient(transparent 60%,#fda1a1 30%);
+        font-size: 18px;
+        font-weight: bold;
+    }
+
+    </style>
+
+    <head>
+        <meta charset="UTF-8">
+        <title>99-59</title>
+    </head>
+
+    <body>
+        <h1>
+        <a href="./099_058.html" rel="external" title="prev">≪</a>
+        99-59
+        <a href="./099_060.html" rel="external" title="next">≫</a>
+        </h1>
+        <div class='problem'>
+            <p>
+                <span id="grad1">　問題文　</span>
+            </p>
+            <p>
+                <p>心不全の患者に使用が禁忌である薬物はどれか。1つ選べ。</p>
+<ol><li>ボグリボース</li><li>グリベンクラミド</li><li>ナテグリニド</li><li>ピオグリタゾン塩酸塩</li><li>グリメピリド</li></ol>    
+            </p>
+        </div>
+        <hr>
+
+        <input type="button" value="check ans" onclick="toggle_switch()"/>
+        
+        <div id='toggle'>
+        <div class='answer'>
+            <p>
+                <span id="grad2">　解答　　</span>
+            </p>
+            <p>
+            4
+            </p>
+        </div>
+        <div class='description'>
+            <p>
+                <span id="grad2">　解説　　</span>
+            </p>
+            <p>心不全に禁忌は、ピオグリタゾンです。イエローレターが出ています。（H１２年１０月）</p>
+<p>以上より、正解は 4 です。</p>
+<p>ちなみに、ピオグリタゾンは、チアゾリジン誘導体と呼ばれるグループの薬です。これらの薬は、腎臓の近位尿細管におけるナトリウム再吸収（つまり尿の再吸収）を亢進させることにより浮腫などを引き起こします。浮腫＝体液量の増加 → 心臓が負担増加で心不全のリスクが高まることになります。</p>
+<p>又、この浮腫の副作用は、女性に多くおこることが知られています。さらに、インスリン併用時はリスクが向上します。</p>
+            </p>
+        </div>
+        </div>
+    </body>
+    <script>
+    document.getElementById("toggle").style.display="none";
+    function toggle_switch(){
+        var x = document.getElementById("toggle");
+        if (x.style.display=="block"){
+            x.style.display="none";
+        }
+        else{
+            x.style.display="block";
+        }
+    }
+    </script>
+    

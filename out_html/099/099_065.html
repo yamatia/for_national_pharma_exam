@@ -1,0 +1,86 @@
+
+        <!DOCTYPE html>
+    <html lang="ja">
+    <style>
+    body
+    {
+        color: black;
+        background-color: white;
+    }
+    div{
+        font-size: 14px;
+    }
+    span
+    {
+        font-size: 18px;
+    }
+    #grad1{
+        background: linear-gradient(transparent 60%,#99e4f1 30%);
+        font-size: 18px;
+        font-weight: bold;
+    }
+    #grad2{
+        background: linear-gradient(transparent 60%,#fda1a1 30%);
+        font-size: 18px;
+        font-weight: bold;
+    }
+
+    </style>
+
+    <head>
+        <meta charset="UTF-8">
+        <title>99-65</title>
+    </head>
+
+    <body>
+        <h1>
+        <a href="./099_064.html" rel="external" title="prev">≪</a>
+        99-65
+        <a href="./099_066.html" rel="external" title="next">≫</a>
+        </h1>
+        <div class='problem'>
+            <p>
+                <span id="grad1">　問題文　</span>
+            </p>
+            <p>
+                <p>風しんについて誤っているのはどれか。1つ選べ。</p>
+<ol><li>妊娠初期の罹患は胎児に奇形を発症させるリスクがある。</li><li>RNAウイルスによる感染である。</li><li>発しんは、治療しなくても数日で消退する。</li><li>特異的IgM抗体が急性期の血清中に出現する。</li><li>予防には、不活化ワクチンを接種する。</li></ol>    
+            </p>
+        </div>
+        <hr>
+
+        <input type="button" value="check ans" onclick="toggle_switch()"/>
+        
+        <div id='toggle'>
+        <div class='answer'>
+            <p>
+                <span id="grad2">　解答　　</span>
+            </p>
+            <p>
+            5
+            </p>
+        </div>
+        <div class='description'>
+            <p>
+                <span id="grad2">　解説　　</span>
+            </p>
+            <p>選択肢 1 ～ 4 は正しいです。</p>
+<p>選択肢 5 ですが<br/>麻疹、風疹のように、「～疹」の予防接種は弱毒生ワクチンです。不活化ワクチンではありません。よって、選択肢 5 は誤りです。</p>
+<p>以上より、正解は 5 です。<br/>参考）　</p>
+            </p>
+        </div>
+        </div>
+    </body>
+    <script>
+    document.getElementById("toggle").style.display="none";
+    function toggle_switch(){
+        var x = document.getElementById("toggle");
+        if (x.style.display=="block"){
+            x.style.display="none";
+        }
+        else{
+            x.style.display="block";
+        }
+    }
+    </script>
+    

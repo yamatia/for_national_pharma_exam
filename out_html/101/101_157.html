@@ -1,0 +1,89 @@
+
+        <!DOCTYPE html>
+    <html lang="ja">
+    <style>
+    body
+    {
+        color: black;
+        background-color: white;
+    }
+    div{
+        font-size: 14px;
+    }
+    span
+    {
+        font-size: 18px;
+    }
+    #grad1{
+        background: linear-gradient(transparent 60%,#99e4f1 30%);
+        font-size: 18px;
+        font-weight: bold;
+    }
+    #grad2{
+        background: linear-gradient(transparent 60%,#fda1a1 30%);
+        font-size: 18px;
+        font-weight: bold;
+    }
+
+    </style>
+
+    <head>
+        <meta charset="UTF-8">
+        <title>101-157</title>
+    </head>
+
+    <body>
+        <h1>
+        <a href="./101_156.html" rel="external" title="prev">≪</a>
+        101-157
+        <a href="./101_158.html" rel="external" title="next">≫</a>
+        </h1>
+        <div class='problem'>
+            <p>
+                <span id="grad1">　問題文　</span>
+            </p>
+            <p>
+                <p>Ca<sup>2+</sup>チャネル遮断薬に関する記述のうち、正しいのはどれか。2つ選べ。</p>
+<ol><li>アムロジピンは、心筋のL型Ca<sup>2+</sup>チャネルを遮断するが、血管平滑筋のL型Ca<sup>2+</sup>チャネルは遮断しない。</li><li>ベラパミルは、血管平滑筋のL型Ca<sup>2+</sup>チャネルを遮断するが、心筋のL型Ca<sup>2+</sup>チャネルは遮断しない。</li><li>シルニジピンは、血管平滑筋のL型Ca<sup>2+</sup>チャネル及び交感神経終末のN型Ca<sup>2+</sup>チャネルを遮断する。</li><li>ジルチアゼムは、房室結節のL型Ca<sup>2+</sup>チャネルを遮断する。</li><li>ベプリジルは、Ca<sup>2+</sup>チャネル遮断作用に加えて、K<sup>+</sup>チャネル活性化作用を有する。</li></ol>    
+            </p>
+        </div>
+        <hr>
+
+        <input type="button" value="check ans" onclick="toggle_switch()"/>
+        
+        <div id='toggle'>
+        <div class='answer'>
+            <p>
+                <span id="grad2">　解答　　</span>
+            </p>
+            <p>
+            3, 4
+            </p>
+        </div>
+        <div class='description'>
+            <p>
+                <span id="grad2">　解説　　</span>
+            </p>
+            <p>選択肢 1 ですが<br/>アムロジピンは、代表的ジヒドロピリジン系 Ca 拮抗薬です。この系統の Ca 拮抗薬の特徴は血管選択性の高さです。L 型 Ca チャネルは、心臓にも血管平滑筋にも広く存在します。しかし、結合部位の違いにより、アムロジピンは血管に選択的に作用します。心筋のチャネルを選択的に遮断するわけでは、ありません。よって、選択肢 1 は誤りです。</p>
+<p>※　L型の結合部位は、主に「N（ニフェジピン）部位、D（ジルチアゼム）部位、V（ベラパミル）部位」があるみたい。また、「L」は、long,large の略とのこと。</p>
+<p>選択肢 2 ですが<br/>ベラパミルは、フェニルアルキルアミン系の Ca 拮抗薬です。心筋及び、血管平滑筋の Ca チャネルを両方とも遮断するのが特徴です。（そのため、高血圧を有する不整脈などに適しています。）血管平滑筋のチャネルを選択的に遮断するわけでは、ありません。よって、選択肢 2 は誤りです。</p>
+<p>選択肢 3,4 は、正しい選択肢です。</p>
+<p>選択肢 5 ですが<br/>ベプリジルは、クラスⅣ抗不整脈薬の一つです。Ca チャネルだけでなく、非特異的に様々なチャネル遮断作用を示します。K<span style="font-weight: 400;"><sup>+</sup></span>チャネルを、活性化するわけではありません。よって、選択肢 5 は誤りです。</p>
+<p>以上より、正解は 3,4 です。</p>
+            </p>
+        </div>
+        </div>
+    </body>
+    <script>
+    document.getElementById("toggle").style.display="none";
+    function toggle_switch(){
+        var x = document.getElementById("toggle");
+        if (x.style.display=="block"){
+            x.style.display="none";
+        }
+        else{
+            x.style.display="block";
+        }
+    }
+    </script>
+    

@@ -1,0 +1,98 @@
+
+        <!DOCTYPE html>
+    <html lang="ja">
+    <style>
+    body
+    {
+        color: black;
+        background-color: white;
+    }
+    div{
+        font-size: 14px;
+    }
+    span
+    {
+        font-size: 18px;
+    }
+    #grad1{
+        background: linear-gradient(transparent 60%,#99e4f1 30%);
+        font-size: 18px;
+        font-weight: bold;
+    }
+    #grad2{
+        background: linear-gradient(transparent 60%,#fda1a1 30%);
+        font-size: 18px;
+        font-weight: bold;
+    }
+
+    </style>
+
+    <head>
+        <meta charset="UTF-8">
+        <title>99-234</title>
+    </head>
+
+    <body>
+        <h1>
+        <a href="./099_233.html" rel="external" title="prev">≪</a>
+        99-234
+        <a href="./099_235.html" rel="external" title="next">≫</a>
+        </h1>
+        <div class='problem'>
+            <p>
+                <span id="grad1">　問題文　</span>
+            </p>
+            <p>
+                <p>医療従事者の医薬品による被曝の問題として、抗がん剤調製時における薬剤の飛散及び揮発がある。</p>
+<h4>問234</h4>
+<p>次の抗がん剤のうち、常温で気化するため、閉鎖系の調製器具を使用しなければならないのはどれか。1つ選べ。</p>
+<ol><li>シタラビン</li><li>ゲムシタビン塩酸塩</li><li>ドキソルビシン塩酸塩</li><li>マイトマイシンC</li><li>シクロホスファミド水和物</li></ol>
+<h4>問235</h4>
+<p>医療従事者を含む労働者の健康を保持するために、作業環境管理、作業管理及び健康管理がある。この3管理を定めている法令はどれか。1つ選べ。</p>
+<ol><li>労働基準法</li><li>労働安全衛生法</li><li>環境基本法</li><li>環境影響評価法</li><li>健康増進法</li></ol>    
+            </p>
+        </div>
+        <hr>
+
+        <input type="button" value="check ans" onclick="toggle_switch()"/>
+        
+        <div id='toggle'>
+        <div class='answer'>
+            <p>
+                <span id="grad2">　解答　　</span>
+            </p>
+            <p>
+            問234：5問235：2
+            </p>
+        </div>
+        <div class='description'>
+            <p>
+                <span id="grad2">　解説　　</span>
+            </p>
+            <h4>問234</h4>
+<p>抗がん剤で、常温で気化することが知られているのは選択肢の中では、 5 のシクロホスファミドです。よって、正解は 5 です。</p>
+<p>この問題は「常温で気化する」→「ガス類似の物質」→「アルキル化剤の原型は、マスタードガス」→「類似体である、シクロホスファミドではないか？」と類推することが期待されていたのではないかと考えられます。知識として、これを知っているというのはちょっと厳しいような。。実習でも、あまり耳にしなかったような。。。と、個人的に感じました。</p>
+<h4>問235</h4>
+<p>選択肢 1 ですが<br/>労働基準法は、労働者の賃金や労働時間、休暇等について最低限の基準を定めたものです。健康保持のための環境管理などについては定めていません。よって、選択肢 1 は誤りです。</p>
+<p>選択肢 2 は、正しい記述です。</p>
+<p>選択肢 3 ですが<br/>環境基本法は、環境の保全に関する基本理念や、基本的施策の方向性を定めたものです。労働者の健康を保持するため、といった限定的な事項について定めてはいません。よって、選択肢 3 は誤りです。</p>
+<p>選択肢 4 ですが<br/>環境影響評価法は、日本における環境アセスメントの手続き等に関して定めた法律です。健康保持のための環境管理などについては定めていません。よって、選択肢 4 は誤りです。</p>
+<p>選択肢 5 ですが<br/>健康増進法は、国民の健康維持、生活習慣病予防などを目的とした法律です。労働者の健康を保持するため、といった限定的な事項について定めてはいません。よって、選択肢 5 は誤りです。</p>
+<p>以上より、正解は 2 です。</p>
+            </p>
+        </div>
+        </div>
+    </body>
+    <script>
+    document.getElementById("toggle").style.display="none";
+    function toggle_switch(){
+        var x = document.getElementById("toggle");
+        if (x.style.display=="block"){
+            x.style.display="none";
+        }
+        else{
+            x.style.display="block";
+        }
+    }
+    </script>
+    

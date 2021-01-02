@@ -1,0 +1,90 @@
+
+        <!DOCTYPE html>
+    <html lang="ja">
+    <style>
+    body
+    {
+        color: black;
+        background-color: white;
+    }
+    div{
+        font-size: 14px;
+    }
+    span
+    {
+        font-size: 18px;
+    }
+    #grad1{
+        background: linear-gradient(transparent 60%,#99e4f1 30%);
+        font-size: 18px;
+        font-weight: bold;
+    }
+    #grad2{
+        background: linear-gradient(transparent 60%,#fda1a1 30%);
+        font-size: 18px;
+        font-weight: bold;
+    }
+
+    </style>
+
+    <head>
+        <meta charset="UTF-8">
+        <title>99-125</title>
+    </head>
+
+    <body>
+        <h1>
+        <a href="./099_124.html" rel="external" title="prev">≪</a>
+        99-125
+        <a href="./099_126.html" rel="external" title="next">≫</a>
+        </h1>
+        <div class='problem'>
+            <p>
+                <span id="grad1">　問題文　</span>
+            </p>
+            <p>
+                <p>次の記述は、ある食中毒の事例に関するものである。[　　]の中に入るべき字句の正しい組合せはどれか。1つ選べ。</p>
+<p>73歳と70歳の姉妹。早朝、脱力感、複視、眼瞼下垂などの症状が現れ、さらに呼吸困難を訴えたため、救急搬送された。症状から[　A　]による食中毒が疑われ、自宅に残っていた食品を調べたところ、真空パック食品の食べ残しから[　A　]の毒素が検出されたため、診断が確定した。</p>
+<p>対症療法に加えて抗毒素血清による治療が行われた結果、容態は改善した。</p>
+<p>[　A　]による食中毒の予防には、冷蔵したり冷凍するなど[　A　]が増殖しにくい状態に食品を保つこと、[　B　]は易熱性であるので食品を食べる前に十分に加熱することなどが有効である。</p>
+<ul><li>　　A　　　　　　　B</li></ul>
+<ol><li>セレウス菌　　　　菌</li><li>セレウス菌　　　　毒素</li><li>黄色ブドウ球菌　　菌</li><li>黄色ブドウ球菌　　毒素</li><li>ボツリヌス菌　　　菌</li><li>ボツリヌス菌　　　毒素</li></ol>    
+            </p>
+        </div>
+        <hr>
+
+        <input type="button" value="check ans" onclick="toggle_switch()"/>
+        
+        <div id='toggle'>
+        <div class='answer'>
+            <p>
+                <span id="grad2">　解答　　</span>
+            </p>
+            <p>
+            6
+            </p>
+        </div>
+        <div class='description'>
+            <p>
+                <span id="grad2">　解説　　</span>
+            </p>
+            <p>症状の中で、眼瞼下垂があることからボツリヌス菌による食中毒であると判断できます。ボツリヌス菌の特徴は、嫌気性かつ、芽胞を形成することです。つまり、空気の無い所でも、増殖可能です。</p>
+<p>また、ボツリヌス毒素の特徴は易熱性です。つまり、熱を通せば、毒素は分解して無毒化できるという点です。Aには、ボツリヌス菌、Bには、毒素が入ります。</p>
+<p>以上より、正解は 6 です。</p>
+            </p>
+        </div>
+        </div>
+    </body>
+    <script>
+    document.getElementById("toggle").style.display="none";
+    function toggle_switch(){
+        var x = document.getElementById("toggle");
+        if (x.style.display=="block"){
+            x.style.display="none";
+        }
+        else{
+            x.style.display="block";
+        }
+    }
+    </script>
+    

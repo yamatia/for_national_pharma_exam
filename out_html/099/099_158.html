@@ -1,0 +1,89 @@
+
+        <!DOCTYPE html>
+    <html lang="ja">
+    <style>
+    body
+    {
+        color: black;
+        background-color: white;
+    }
+    div{
+        font-size: 14px;
+    }
+    span
+    {
+        font-size: 18px;
+    }
+    #grad1{
+        background: linear-gradient(transparent 60%,#99e4f1 30%);
+        font-size: 18px;
+        font-weight: bold;
+    }
+    #grad2{
+        background: linear-gradient(transparent 60%,#fda1a1 30%);
+        font-size: 18px;
+        font-weight: bold;
+    }
+
+    </style>
+
+    <head>
+        <meta charset="UTF-8">
+        <title>99-158</title>
+    </head>
+
+    <body>
+        <h1>
+        <a href="./099_157.html" rel="external" title="prev">≪</a>
+        99-158
+        <a href="./099_159.html" rel="external" title="next">≫</a>
+        </h1>
+        <div class='problem'>
+            <p>
+                <span id="grad1">　問題文　</span>
+            </p>
+            <p>
+                <p>利尿薬に関する記述のうち、正しいのはどれか。2つ選べ。</p>
+<ol><li>トルバプタンは、集合管のバソプレシンV<sub>2</sub>受容体を刺激する。</li><li>トラセミドは、抗アルドステロン作用を有するため、フロセミドと比較して低カリウム血症を起こしにくい。</li><li>イソソルビドは、遠位尿細管から集合管のアルドステロン受容体を遮断する。</li><li>インダパミドは、ヘンレ係蹄上行脚におけるNa<sup>＋</sup>-K<sup>＋</sup>-2Cl<sup>－</sup>共輸送系を阻害する。</li><li>アセタゾラミドは、近位尿細管でのHCO<sub>3</sub><sup>－</sup>の排泄を増加させる。</li></ol>    
+            </p>
+        </div>
+        <hr>
+
+        <input type="button" value="check ans" onclick="toggle_switch()"/>
+        
+        <div id='toggle'>
+        <div class='answer'>
+            <p>
+                <span id="grad2">　解答　　</span>
+            </p>
+            <p>
+            2, 5
+            </p>
+        </div>
+        <div class='description'>
+            <p>
+                <span id="grad2">　解説　　</span>
+            </p>
+            <p>選択肢 1 ですが<br/>トルバプタン（サムスカ）は、非ペプチド性バソプレシン受容体拮抗薬です。V<span style="font-weight: 400;"><sub>2</sub></span> 受容体刺激では、ありません。よって、選択肢 1 は誤りです。</p>
+<p>選択肢 2 は、正しい記述です。</p>
+<p>選択肢 3 ですが<br/>イソソルビドは、経口吸収後、血液の浸透圧を増大させます。この結果、血管外水分（浮腫）が除かれる → 血流増加 → 利尿作用　という流れで作用します。アルドステロン受容体を遮断するわけでは、ありません。よって、選択肢 3 は誤りです。</p>
+<p>選択肢 4 ですが<br/>インダパミド（ナトリックス）は、遠位尿細管に作用する薬です。ヘンレループに作用する薬ではありません。よって、選択肢 4 は誤りです。</p>
+<p>選択肢 5 は、正しい記述です。</p>
+<p>以上より、正解は 2,5 です。<br/>参考）　</p>
+            </p>
+        </div>
+        </div>
+    </body>
+    <script>
+    document.getElementById("toggle").style.display="none";
+    function toggle_switch(){
+        var x = document.getElementById("toggle");
+        if (x.style.display=="block"){
+            x.style.display="none";
+        }
+        else{
+            x.style.display="block";
+        }
+    }
+    </script>
+    

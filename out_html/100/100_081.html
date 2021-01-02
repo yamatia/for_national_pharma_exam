@@ -1,0 +1,86 @@
+
+        <!DOCTYPE html>
+    <html lang="ja">
+    <style>
+    body
+    {
+        color: black;
+        background-color: white;
+    }
+    div{
+        font-size: 14px;
+    }
+    span
+    {
+        font-size: 18px;
+    }
+    #grad1{
+        background: linear-gradient(transparent 60%,#99e4f1 30%);
+        font-size: 18px;
+        font-weight: bold;
+    }
+    #grad2{
+        background: linear-gradient(transparent 60%,#fda1a1 30%);
+        font-size: 18px;
+        font-weight: bold;
+    }
+
+    </style>
+
+    <head>
+        <meta charset="UTF-8">
+        <title>100-81</title>
+    </head>
+
+    <body>
+        <h1>
+        <a href="./100_080.html" rel="external" title="prev">≪</a>
+        100-81
+        <a href="./100_082.html" rel="external" title="next">≫</a>
+        </h1>
+        <div class='problem'>
+            <p>
+                <span id="grad1">　問題文　</span>
+            </p>
+            <p>
+                <p>EBMの実践手順で、[　　]に入る適当な語句はどれか。1つ選べ。</p>
+<p>患者の問題の定式化 → 情報の収集 → [　　] → 患者への適用</p>
+<ol><li>患者満足度の推察</li><li>情報の批判的吟味</li><li>治療アウトカムの設定</li><li>医療者の臨床経験</li><li>動物実験による確認</li></ol>    
+            </p>
+        </div>
+        <hr>
+
+        <input type="button" value="check ans" onclick="toggle_switch()"/>
+        
+        <div id='toggle'>
+        <div class='answer'>
+            <p>
+                <span id="grad2">　解答　　</span>
+            </p>
+            <p>
+            2
+            </p>
+        </div>
+        <div class='description'>
+            <p>
+                <span id="grad2">　解説　　</span>
+            </p>
+            <p>EBM とは evidence – based medicine の略です。「根拠に基づいた医療」と訳されます。実践手順としては、１：問題の定式化 → ２：情報の収集 → ３：情報の批判的吟味 → ４：患者への適用 → ５：１～４の step の評価　という流れをとります。</p>
+<p>以上より、正解は 2 です。</p>
+            </p>
+        </div>
+        </div>
+    </body>
+    <script>
+    document.getElementById("toggle").style.display="none";
+    function toggle_switch(){
+        var x = document.getElementById("toggle");
+        if (x.style.display=="block"){
+            x.style.display="none";
+        }
+        else{
+            x.style.display="block";
+        }
+    }
+    </script>
+    

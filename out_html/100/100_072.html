@@ -1,0 +1,89 @@
+
+        <!DOCTYPE html>
+    <html lang="ja">
+    <style>
+    body
+    {
+        color: black;
+        background-color: white;
+    }
+    div{
+        font-size: 14px;
+    }
+    span
+    {
+        font-size: 18px;
+    }
+    #grad1{
+        background: linear-gradient(transparent 60%,#99e4f1 30%);
+        font-size: 18px;
+        font-weight: bold;
+    }
+    #grad2{
+        background: linear-gradient(transparent 60%,#fda1a1 30%);
+        font-size: 18px;
+        font-weight: bold;
+    }
+
+    </style>
+
+    <head>
+        <meta charset="UTF-8">
+        <title>100-72</title>
+    </head>
+
+    <body>
+        <h1>
+        <a href="./100_071.html" rel="external" title="prev">≪</a>
+        100-72
+        <a href="./100_073.html" rel="external" title="next">≫</a>
+        </h1>
+        <div class='problem'>
+            <p>
+                <span id="grad1">　問題文　</span>
+            </p>
+            <p>
+                <p>薬剤師免許に関する記述のうち、正しいのはどれか。1つ選べ。</p>
+<ol><li>未成年者、成年被後見人又は被保佐人には、免許は与えられない。</li><li>免許の申請書は、卒業した大学を経由して厚生労働大臣に提出する。</li><li>免許の効力は、申請者が免許証を受け取った時から生じる。</li><li>免許を取り消されても、免許証を厚生労働大臣に返納する必要はない。</li><li>免許証が破れたという理由では、再交付を申請することはできない。</li></ol>    
+            </p>
+        </div>
+        <hr>
+
+        <input type="button" value="check ans" onclick="toggle_switch()"/>
+        
+        <div id='toggle'>
+        <div class='answer'>
+            <p>
+                <span id="grad2">　解答　　</span>
+            </p>
+            <p>
+            1
+            </p>
+        </div>
+        <div class='description'>
+            <p>
+                <span id="grad2">　解説　　</span>
+            </p>
+            <p>選択肢 1 は、正しい記述です。<br/>免許の絶対的欠格事由です。ちなみにかつては、視覚・聴覚・発話障害者も絶対的欠格事由でしたが現在は、絶対的欠格事由に含まれていません。また、相対的な欠格事由としては、麻薬・大麻・あへん中毒者　や、心身障害により判断能力が欠如している者　などがあります。<br/>※<strong>令和元年改正により、絶対的欠格事由は「未成年のみ」となりました。</strong></p>
+<p>選択肢 2 ですが<br/>免許の申請書は、都道府県知事経由で厚生労働大臣へ提出します。卒業した大学経由では、ありません。よって、選択肢 2 は誤りです。</p>
+<p>選択肢 3 ですが<br/>免許の効力は、試験合格後、免許申請を行い薬剤師名簿に登録されることにより生じます。いいかえると、名簿に登録されれば免許証をまだ受け取っていなくても免許の効力は生じます。よって、選択肢 3 は誤りです。</p>
+<p>選択肢 4 ですが<br/>免許を取り消された時は、都道府県知事を経由し、5 日以内に厚生労働大臣に返納する義務があります。よって、選択肢 4 は誤りです。</p>
+<p>選択肢 5 ですが<br/>免許は、き損したり、亡失した場合再交付できます。免許証が破れた、という理由はき損した場合に該当するため再交付できます。よって、選択肢 5 は誤りです。</p>
+<p>以上より、正解は 1 です。</p>
+            </p>
+        </div>
+        </div>
+    </body>
+    <script>
+    document.getElementById("toggle").style.display="none";
+    function toggle_switch(){
+        var x = document.getElementById("toggle");
+        if (x.style.display=="block"){
+            x.style.display="none";
+        }
+        else{
+            x.style.display="block";
+        }
+    }
+    </script>
+    

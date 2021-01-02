@@ -1,0 +1,89 @@
+
+        <!DOCTYPE html>
+    <html lang="ja">
+    <style>
+    body
+    {
+        color: black;
+        background-color: white;
+    }
+    div{
+        font-size: 14px;
+    }
+    span
+    {
+        font-size: 18px;
+    }
+    #grad1{
+        background: linear-gradient(transparent 60%,#99e4f1 30%);
+        font-size: 18px;
+        font-weight: bold;
+    }
+    #grad2{
+        background: linear-gradient(transparent 60%,#fda1a1 30%);
+        font-size: 18px;
+        font-weight: bold;
+    }
+
+    </style>
+
+    <head>
+        <meta charset="UTF-8">
+        <title>99-50</title>
+    </head>
+
+    <body>
+        <h1>
+        <a href="./099_049.html" rel="external" title="prev">≪</a>
+        99-50
+        <a href="./099_051.html" rel="external" title="next">≫</a>
+        </h1>
+        <div class='problem'>
+            <p>
+                <span id="grad1">　問題文　</span>
+            </p>
+            <p>
+                <p>製剤総則において、粒状に造粒した経口投与する製剤と規定されているのはどれか。1つ選べ。</p>
+<ol><li>発泡錠</li><li>散剤</li><li>顆粒剤</li><li>分散錠</li><li>懸濁剤</li></ol>    
+            </p>
+        </div>
+        <hr>
+
+        <input type="button" value="check ans" onclick="toggle_switch()"/>
+        
+        <div id='toggle'>
+        <div class='answer'>
+            <p>
+                <span id="grad2">　解答　　</span>
+            </p>
+            <p>
+            3
+            </p>
+        </div>
+        <div class='description'>
+            <p>
+                <span id="grad2">　解説　　</span>
+            </p>
+            <p>発泡錠は、水中で急速に発泡する錠剤のことです。</p>
+<p>散剤は、粉末状の製剤です。</p>
+<p>顆粒剤とは、粒状に造粒した製剤です。</p>
+<p>分散錠は、水に入れて、分散させて飲む錠剤のことです。</p>
+<p>懸濁剤は、有効成分を微細均質に製した、液状の製剤です。</p>
+<p>以上より、正解は 3 です。</p>
+            </p>
+        </div>
+        </div>
+    </body>
+    <script>
+    document.getElementById("toggle").style.display="none";
+    function toggle_switch(){
+        var x = document.getElementById("toggle");
+        if (x.style.display=="block"){
+            x.style.display="none";
+        }
+        else{
+            x.style.display="block";
+        }
+    }
+    </script>
+    

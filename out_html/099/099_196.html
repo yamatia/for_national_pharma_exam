@@ -1,0 +1,108 @@
+
+        <!DOCTYPE html>
+    <html lang="ja">
+    <style>
+    body
+    {
+        color: black;
+        background-color: white;
+    }
+    div{
+        font-size: 14px;
+    }
+    span
+    {
+        font-size: 18px;
+    }
+    #grad1{
+        background: linear-gradient(transparent 60%,#99e4f1 30%);
+        font-size: 18px;
+        font-weight: bold;
+    }
+    #grad2{
+        background: linear-gradient(transparent 60%,#fda1a1 30%);
+        font-size: 18px;
+        font-weight: bold;
+    }
+
+    </style>
+
+    <head>
+        <meta charset="UTF-8">
+        <title>99-196</title>
+    </head>
+
+    <body>
+        <h1>
+        <a href="./099_195.html" rel="external" title="prev">≪</a>
+        99-196
+        <a href="./099_197.html" rel="external" title="next">≫</a>
+        </h1>
+        <div class='problem'>
+            <p>
+                <span id="grad1">　問題文　</span>
+            </p>
+            <p>
+                <p>病棟の看護師から、点滴静注しているラインの側管からジアゼパム注射液を注入したところ、ラインに残存する他の注射液と混ざり、白濁してしまったとの問い合わせが薬剤部にあった。</p>
+<h4>問196</h4>
+<p>ジアゼパム注射液において、上記白濁が起こった理由として、正しいのはどれか。1つ選べ。</p>
+<ol><li>亜硫酸塩を含む注射剤との混合により、加水分解を受けた。</li><li>希釈により溶解度が低下した。</li><li>酸性注射液との混合に伴うpHの低下により、溶解度が低下した。</li><li>カルシウムやマグネシウム塩を含む注射剤との混合により、難溶性塩を生成した。</li><li>生理食塩液との混合により、塩析が起こった。</li></ol>
+<h4>問197</h4>
+<p>25℃におけるジアゼパム水溶液(20μg/mL)の注射筒基材への吸着はpH依存性を示す。pH3.2におけるジアゼパムの注射筒基材への吸着が2.3μg/mgであった。pH7.0における吸着に最も近い値(μg/mg)はどれか。1つ選べ。</p>
+<p>ただし、ジアゼパムのpK<sub>a</sub>=3.5、吸着によるジアゼパムの濃度変化は無視できるものとし、吸着は分子形薬物濃度に比例するものとする。また、log2=0.30、log3=0.48とする。</p>
+<ol><li>0.1</li><li>2.0</li><li>3.5</li><li>5.5</li><li>7.0</li></ol>    
+            </p>
+        </div>
+        <hr>
+
+        <input type="button" value="check ans" onclick="toggle_switch()"/>
+        
+        <div id='toggle'>
+        <div class='answer'>
+            <p>
+                <span id="grad2">　解答　　</span>
+            </p>
+            <p>
+            問196：2問197：5
+            </p>
+        </div>
+        <div class='description'>
+            <p>
+                <span id="grad2">　解説　　</span>
+            </p>
+            <h4>問196</h4>
+<p>ジアゼパムは、溶剤にプロピオングリコールなどの有機溶媒を用いた注射薬です。希釈されると、過飽和状態になり沈殿が生じるため、注意が必要です。本問での白濁は、希釈が原因と考えられます。</p>
+<p>以上より、正解は 2 です。</p>
+<p>以下は、少し細かい知識なのですが、各選択肢に関する補足を行っています。</p>
+<p>選択肢 1 ですが<br/>ガベキサートメシル酸塩　や　ナファモスタットメシル酸塩　などが、亜硫酸塩による加水分解を受ける代表的注射薬です。亜硫酸塩は、ネオパレン、ビーフリード　といった輸液に含まれます。</p>
+<p>選択肢 3 ですが<br/>代表的な酸性注射薬としては、チアミン塩化物塩酸塩、ドパミン塩酸塩注射液、ガベキサートメシル酸塩　などがあります。</p>
+<p>一方、塩基性注射薬としては、注射用カンレノ酸カリウム、フェニトインナトリウム注射液、フロセミド注射液　などがあります。</p>
+<p>選択肢 4 ですが<br/>カルシウムを含む輸液としては例えば、ラクテック　があります。マグネシウムを含む輸液としては例えば、アステマリン ３ 号 MG　輸液　があります。</p>
+<p>セフェム系抗生物質ロセフィンは、カルシウムを含有する注射剤との含有で結晶化するため、同時に投与しないよう重要な基本的注意として、注意喚起されています。</p>
+<p>選択肢 5 ですが<br/>例えば、ハンプ（注射用　カルペリチド）やナファモスタットメシル酸塩（フサン）は、生理食塩水との混合で塩析が生じます。そのため、注射用水や、５％ブドウ糖液で希釈されます。</p>
+<h4>問197</h4>
+<p>pH と pKa が出てきたので、ヘンダーソン・ハッセルバルヒの式を使います。※ ジアゼパムは、塩基性の化合物なので塩基性化合物の場合の式を使います。</p>
+<p><strong>pH　=　pKa+log ［分子形］/［イオン形］</strong> (塩基性化合物の場合)</p>
+<p>pH = 3.2 、pKa = 3.5 を代入すると、log の項が、-0.3 となります。ということは、［分子形］/［イオン形］ は、10<span style="font-weight: 400;"><sup>-0.3</sup></span>となります。ここで、ｌｏｇ２＝0.30 とあるので<br/>10<span style="font-weight: 400;"><sup>0.3</sup></span> というのは、10<span style="font-weight: 400;"><sup>log2</sup></span>　と書き直せます。すると、これは log の定義から、２　です。よって、10<span style="font-weight: 400;"><sup>-0.3</sup></span> とは、1/2 のことです。</p>
+<p>［分子形］/［イオン形］　＝　1/2　ということは、分子形　＝　1/2 [イオン形] 　と表すことができます。つまり比で表すなら、<strong>分子形：イオン形　が　１：２</strong>　ということです。もともとのジアゼパムの濃度が　20μｇ/ｍＬ　だったのだから、この pH において、分子形は 大体 6.6 μg/mL となります。</p>
+<p>一方、 pH = 7.0 、pKa = 3.5 を代入すると、log の項が、3.5 となります。ということは、［分子形］/［イオン形］ は、10<span style="font-weight: 400;"><sup>3.5</sup></span><br/>となります。</p>
+<p>ここで、10<span style="font-weight: 400;"><sup>3.5</sup></span> = 10<span style="font-weight: 400;"><sup>3</sup></span> × 10<span style="font-weight: 400;"><sup>0.5</sup></span>と表すことができ、10<span style="font-weight: 400;"><sup>0.5</sup></span> は、大体 10 log3 と近似することができます。 すると、これは log の定義から、３です。</p>
+<p>［分子形］/［イオン形］　＝　3000　ということは、ほぼ分子形といえます。つまり、ほぼ 20μｇ/ｍＬ です。</p>
+<p>となると、 pH 3.2 の時と比べて分子形の濃度が、ほぼ３倍になっているので、吸着もほぼ３倍のはずです。つまり、２．３ × ３ ≒ ７　なので、正解は 5 です。</p>
+            </p>
+        </div>
+        </div>
+    </body>
+    <script>
+    document.getElementById("toggle").style.display="none";
+    function toggle_switch(){
+        var x = document.getElementById("toggle");
+        if (x.style.display=="block"){
+            x.style.display="none";
+        }
+        else{
+            x.style.display="block";
+        }
+    }
+    </script>
+    

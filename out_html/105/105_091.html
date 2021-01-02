@@ -1,0 +1,98 @@
+
+        <!DOCTYPE html>
+    <html lang="ja">
+    <style>
+    body
+    {
+        color: black;
+        background-color: white;
+    }
+    div{
+        font-size: 14px;
+    }
+    span
+    {
+        font-size: 18px;
+    }
+    #grad1{
+        background: linear-gradient(transparent 60%,#99e4f1 30%);
+        font-size: 18px;
+        font-weight: bold;
+    }
+    #grad2{
+        background: linear-gradient(transparent 60%,#fda1a1 30%);
+        font-size: 18px;
+        font-weight: bold;
+    }
+
+    </style>
+
+    <head>
+        <meta charset="UTF-8">
+        <title>105-91</title>
+    </head>
+
+    <body>
+        <h1>
+        <a href="./105_090.html" rel="external" title="prev">≪</a>
+        105-91
+        <a href="./105_092.html" rel="external" title="next">≫</a>
+        </h1>
+        <div class='problem'>
+            <p>
+                <span id="grad1">　問題文　</span>
+            </p>
+            <p>
+                <p>日本薬局方において、L-エチルシステイン塩酸塩の純度試験は以下のように規定されている。この純度試験に関する記述のうち、正しいのはどれか。2つ選べ。</p>
+<p>純度試験</p>
+<p>⑴　硫酸塩本品0.6gをとり、試験を行う。比較液には0.005mol/L(　ア　)0.35mLを加える(0.028%以下)。</p>
+<p>⑵　重金属本品1.0gをとり、第1法により操作し、試験を行う。比較液には(　イ　)標準液1.0mLを加える((　ウ　)ppm以下)。</p>
+<p>ただし、重金属試験法第1法では、医薬品各条に規定する量の試料をネスラー管にとり、水適量に溶かし、40mLとする。これに希酢酸2mL及び水を加えて50mLとし、検液とする。比較液は、医薬品各条に規定する量の(　イ　)標準液をネスラー管にとり、希酢酸2mL及び水を加えて50mLとする。</p>
+<p>また、(　イ　)標準液1.0mL中には(　イ　)0.01mgが含まれる。</p>
+<ol><li>硫酸塩試験法においては、検液及び比較液に、2,2ʼ-ビピリジル試液2mLずつを加えて混和し、黒色の背景を用いて混濁を比較する。</li><li>重金属試験法においては、検液及び比較液に、硫化ナトリウム試液1滴ずつを加えて混和し、白色の背景を用いて液の色を比較する。</li><li>(　ア　)は塩化バリウムである。</li><li>(　イ　)は鉛である。</li><li>(　ウ　)に入る数値は100である。</li></ol>    
+            </p>
+        </div>
+        <hr>
+
+        <input type="button" value="check ans" onclick="toggle_switch()"/>
+        
+        <div id='toggle'>
+        <div class='answer'>
+            <p>
+                <span id="grad2">　解答　　</span>
+            </p>
+            <p>
+            2, 4
+            </p>
+        </div>
+        <div class='description'>
+            <p>
+                <span id="grad2">　解説　　</span>
+            </p>
+            <p>ア ですが<br/>L ー エチルシステイン<strong>「塩酸塩」</strong>の純度試験なので、<strong>「硫酸塩」が混在しているかの試験</strong>だと読み取ります。不純物として硫酸塩があれば「硫酸イオン SO<span style="font-weight: 400;"><sub>4</sub></span><span style="font-weight: 400;"><sup>2-</sup></span>」が含まれます。そのため、比較液としては、<strong>ある程度の濃度の硫酸が妥当</strong>であると考えられます。</p>
+<p>SO<span style="font-weight: 400;"><sub>4</sub></span><span style="font-weight: 400;"><sup>2-</sup></span>と沈殿反応を起こして、沈殿で確認します。硫酸イオンと沈殿を形成する陽イオンの代表例といえば Ba<span style="font-weight: 400;"><sup>2+</sup></span> などのアルカリ土類金属イオンです。ちなみに、沈殿の色は「白」です。背景としては黒色が適切です。</p>
+<p>イ ですが<br/>重金属純度試験なので、鉛と考えられます。<br/>参考）</p>
+<p>以上をふまえ、各選択肢について検討します。</p>
+<p>選択肢 1 ですが<br/>2,2′ – ビピリジル試液は、鉄やクロムと錯体を形成する試薬です。硫酸塩の純度試験に用いる試液ではないと考えられます。よって、選択肢 1 は誤りです。</p>
+<p>選択肢 2 は妥当な記述です。<br/>PbS の沈殿は黒色です。白色の背景が妥当と考えられます。</p>
+<p>選択肢 3 ですが<br/>比較液は硫酸と考えられます。よって、選択肢 3 は誤りです。</p>
+<p>選択肢 4 は妥当な記述です。</p>
+<p>選択肢 5 ですが<br/>ウに入る数値は 10 です。</p>
+<p>以上より、正解は 2,4 です。</p>
+            </p>
+        </div>
+        </div>
+    </body>
+    <script>
+    document.getElementById("toggle").style.display="none";
+    function toggle_switch(){
+        var x = document.getElementById("toggle");
+        if (x.style.display=="block"){
+            x.style.display="none";
+        }
+        else{
+            x.style.display="block";
+        }
+    }
+    </script>
+    

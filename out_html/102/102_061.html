@@ -1,0 +1,89 @@
+
+        <!DOCTYPE html>
+    <html lang="ja">
+    <style>
+    body
+    {
+        color: black;
+        background-color: white;
+    }
+    div{
+        font-size: 14px;
+    }
+    span
+    {
+        font-size: 18px;
+    }
+    #grad1{
+        background: linear-gradient(transparent 60%,#99e4f1 30%);
+        font-size: 18px;
+        font-weight: bold;
+    }
+    #grad2{
+        background: linear-gradient(transparent 60%,#fda1a1 30%);
+        font-size: 18px;
+        font-weight: bold;
+    }
+
+    </style>
+
+    <head>
+        <meta charset="UTF-8">
+        <title>102-61</title>
+    </head>
+
+    <body>
+        <h1>
+        <a href="./102_060.html" rel="external" title="prev">≪</a>
+        102-61
+        <a href="./102_062.html" rel="external" title="next">≫</a>
+        </h1>
+        <div class='problem'>
+            <p>
+                <span id="grad1">　問題文　</span>
+            </p>
+            <p>
+                <p>状況にかかわりなく漫然とした不安が持続する神経症はどれか。1つ選べ。</p>
+<ol><li>広場恐怖</li><li>強迫性障害</li><li>外傷後ストレス障害(PTSD)</li><li>全般性不安障害</li><li>社会不安障害</li></ol>    
+            </p>
+        </div>
+        <hr>
+
+        <input type="button" value="check ans" onclick="toggle_switch()"/>
+        
+        <div id='toggle'>
+        <div class='answer'>
+            <p>
+                <span id="grad2">　解答　　</span>
+            </p>
+            <p>
+            4
+            </p>
+        </div>
+        <div class='description'>
+            <p>
+                <span id="grad2">　解説　　</span>
+            </p>
+            <p>選択肢 1 ですが<br/>広場恐怖症とは、毎回恐怖や不安を誘発するから、ある場所を避けることが半年以上持続している症状のことです。※別に広場とは限りません。公共交通機関や、閉所なども当てはまります。状況にかかわりないわけではありません。</p>
+<p>選択肢 2 ですが<br/>強迫性障害とは、不合理な行為、思考を、意に反して反復してしまう症状です。漫然とした不安の持続ではありません。</p>
+<p>選択肢 3 ですが<br/>PTSD（Post Traumatic Stress Disorder）とは、強烈な体験の後に、再体験（当時の記憶、感情がありありと思い出されること）等の症状が継続することです。漫然とした不安の持続ではありません。</p>
+<p>選択肢 4 は、正しい選択肢です。</p>
+<p>選択肢 5 ですが<br/>社会不安障害とは、人前などの状況で相当な苦痛、生活への重大な支障がある程度に恐怖を感じるといった症状です。状況にかかわりないわけではありません。</p>
+<p>以上より、正解は 4 です。</p>
+            </p>
+        </div>
+        </div>
+    </body>
+    <script>
+    document.getElementById("toggle").style.display="none";
+    function toggle_switch(){
+        var x = document.getElementById("toggle");
+        if (x.style.display=="block"){
+            x.style.display="none";
+        }
+        else{
+            x.style.display="block";
+        }
+    }
+    </script>
+    

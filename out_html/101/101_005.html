@@ -1,0 +1,89 @@
+
+        <!DOCTYPE html>
+    <html lang="ja">
+    <style>
+    body
+    {
+        color: black;
+        background-color: white;
+    }
+    div{
+        font-size: 14px;
+    }
+    span
+    {
+        font-size: 18px;
+    }
+    #grad1{
+        background: linear-gradient(transparent 60%,#99e4f1 30%);
+        font-size: 18px;
+        font-weight: bold;
+    }
+    #grad2{
+        background: linear-gradient(transparent 60%,#fda1a1 30%);
+        font-size: 18px;
+        font-weight: bold;
+    }
+
+    </style>
+
+    <head>
+        <meta charset="UTF-8">
+        <title>101-5</title>
+    </head>
+
+    <body>
+        <h1>
+        <a href="./101_004.html" rel="external" title="prev">≪</a>
+        101-5
+        <a href="./101_006.html" rel="external" title="next">≫</a>
+        </h1>
+        <div class='problem'>
+            <p>
+                <span id="grad1">　問題文　</span>
+            </p>
+            <p>
+                <p>pHメーターを用いたpH測定に最も関係する物理定数はどれか。1つ選べ。</p>
+<ol><li>アボガドロ定数</li><li>ファラデー定数</li><li>プランク定数</li><li>ボルツマン定数</li><li>リュードベリ定数</li></ol>    
+            </p>
+        </div>
+        <hr>
+
+        <input type="button" value="check ans" onclick="toggle_switch()"/>
+        
+        <div id='toggle'>
+        <div class='answer'>
+            <p>
+                <span id="grad2">　解答　　</span>
+            </p>
+            <p>
+            2
+            </p>
+        </div>
+        <div class='description'>
+            <p>
+                <span id="grad2">　解説　　</span>
+            </p>
+            <p>pH メータを用いた pH 測定の原理は「ガラス電極を隔てた溶液間の電位差」による測定です。電位差、つまり電気的な概念と最も関係する物理定数はファラデー定数であると考えられます。よって、正解は 2 です。</p>
+<p>ちなみに、アボガドロ定数とは<br/>原子の個数　と　mol を対応させる数です。約 6.0 × 10<span style="font-weight: 400;"><sup>23</sup></span> のことです。「原子の個数を考える時に出てくる数！」です。（これを含む以下の文中 「 」 の中身は、それぞれの物理定数に関する大雑把な理解のための表現です。）</p>
+<p>ファラデー定数とは<br/>1 F = 96500 C のことです。電子の物質量あたりの電荷にあたる定数です。「電気化学のこと（＋とか－とか）を考える時に出てくる数！」 です。</p>
+<p>プランク定数とは<br/>約 6.6 × 10<span style="font-weight: 400;"><sup>-34</sup></span> のこと。光子の持つ、とびとびの（量子的）エネルギーの値を定義づける比例定数のことです。「すごく小さい、量子とかの話で出てくる数！」です。</p>
+<p>ボルツマン定数（k）とは<br/>約 1.38 × 10<span style="font-weight: 400;"><sup>-23</sup></span> ぐらいの数のことです。統計力学において状態数とエントロピーを関係づける数です。また、気体の分子運動を考えた時にエネルギーと温度の関係において比例定数として現れます。「乱雑な運動　を考える時に出てくる数！」です。</p>
+<p>リュードベリ定数（R）とは<br/>1.1 × 10<span style="font-weight: 400;"><sup>7</sup></span>7(/m) ぐらい。「吸収スペクトルの式に出てくる数！」です。</p>
+            </p>
+        </div>
+        </div>
+    </body>
+    <script>
+    document.getElementById("toggle").style.display="none";
+    function toggle_switch(){
+        var x = document.getElementById("toggle");
+        if (x.style.display=="block"){
+            x.style.display="none";
+        }
+        else{
+            x.style.display="block";
+        }
+    }
+    </script>
+    

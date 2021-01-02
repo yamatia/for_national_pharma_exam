@@ -1,0 +1,90 @@
+
+        <!DOCTYPE html>
+    <html lang="ja">
+    <style>
+    body
+    {
+        color: black;
+        background-color: white;
+    }
+    div{
+        font-size: 14px;
+    }
+    span
+    {
+        font-size: 18px;
+    }
+    #grad1{
+        background: linear-gradient(transparent 60%,#99e4f1 30%);
+        font-size: 18px;
+        font-weight: bold;
+    }
+    #grad2{
+        background: linear-gradient(transparent 60%,#fda1a1 30%);
+        font-size: 18px;
+        font-weight: bold;
+    }
+
+    </style>
+
+    <head>
+        <meta charset="UTF-8">
+        <title>100-36</title>
+    </head>
+
+    <body>
+        <h1>
+        <a href="./100_035.html" rel="external" title="prev">≪</a>
+        100-36
+        <a href="./100_037.html" rel="external" title="next">≫</a>
+        </h1>
+        <div class='problem'>
+            <p>
+                <span id="grad1">　問題文　</span>
+            </p>
+            <p>
+                <p>グルカゴン様ペプチド-1(GLP-1)受容体を刺激する糖尿病治療薬はどれか。1つ選べ。</p>
+<ol><li>アカルボース</li><li>グリベンクラミド</li><li>ピオグリタゾン</li><li>メトホルミン</li><li>リラグルチド</li></ol>    
+            </p>
+        </div>
+        <hr>
+
+        <input type="button" value="check ans" onclick="toggle_switch()"/>
+        
+        <div id='toggle'>
+        <div class='answer'>
+            <p>
+                <span id="grad2">　解答　　</span>
+            </p>
+            <p>
+            5
+            </p>
+        </div>
+        <div class='description'>
+            <p>
+                <span id="grad2">　解説　　</span>
+            </p>
+            <p>選択肢 1 ですが<br/>アカルボースは、α－GI です。GLP – 1 作動薬では、ありません。よって、選択肢 1 は誤りです。</p>
+<p>選択肢 2 ですが<br/>グリベンクラミドは、SU 剤です。GLP – 1 作動薬では、ありません。よって、選択肢 2 は誤りです。</p>
+<p>選択肢 3 ですが<br/>ピオグリタゾンは、インスリン抵抗性改善薬です。作用点は、PPAR – γ です。GLP – 1 作動薬では、ありません。よって、選択肢 3 は誤りです。</p>
+<p>選択肢 4 ですが<br/>メトホルミンは、ビグアナイド薬です。GLP – 1 作動薬では、ありません。よって、選択肢 4 は誤りです。</p>
+<p>選択肢 5 は、正しい選択肢です。</p>
+<p>以上より、正解は 5 です。</p>
+<p>参考）</p>
+            </p>
+        </div>
+        </div>
+    </body>
+    <script>
+    document.getElementById("toggle").style.display="none";
+    function toggle_switch(){
+        var x = document.getElementById("toggle");
+        if (x.style.display=="block"){
+            x.style.display="none";
+        }
+        else{
+            x.style.display="block";
+        }
+    }
+    </script>
+    

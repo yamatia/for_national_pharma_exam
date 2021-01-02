@@ -1,0 +1,107 @@
+
+        <!DOCTYPE html>
+    <html lang="ja">
+    <style>
+    body
+    {
+        color: black;
+        background-color: white;
+    }
+    div{
+        font-size: 14px;
+    }
+    span
+    {
+        font-size: 18px;
+    }
+    #grad1{
+        background: linear-gradient(transparent 60%,#99e4f1 30%);
+        font-size: 18px;
+        font-weight: bold;
+    }
+    #grad2{
+        background: linear-gradient(transparent 60%,#fda1a1 30%);
+        font-size: 18px;
+        font-weight: bold;
+    }
+
+    </style>
+
+    <head>
+        <meta charset="UTF-8">
+        <title>100-272</title>
+    </head>
+
+    <body>
+        <h1>
+        <a href="./100_271.html" rel="external" title="prev">≪</a>
+        100-272
+        <a href="./100_273.html" rel="external" title="next">≫</a>
+        </h1>
+        <div class='problem'>
+            <p>
+                <span id="grad1">　問題文　</span>
+            </p>
+            <p>
+                <p>メチシリン耐性黄色ブドウ球菌(MRSA)感染症の患者に対しバンコマイシンが投与されていたが、効果が得られなかったため、テイコプラニンの使用に関して医師と協議した。</p>
+<h4>問272</h4>
+<p>テイコプラニンの使用上の留意点として適切なのはどれか。2つ選べ。</p>
+<ol><li>投与終了1～2時間後の血中濃度を測定する必要がある。</li><li>レッドマン症候群を避けるため、30分以上かけて点滴静注する。</li><li>血中タンパク結合率が低いため、血中アルブミン濃度を考慮する必要はない。</li><li>バンコマイシンと比べて消失半減期が長いため、負荷投与が必要である。</li><li>初期投与量は、腎機能に応じて調節する。</li></ol>
+<h4>問273</h4>
+<p>テイコプラニンの静脈内投与終了後の血中濃度推移について、分布終了後の遅い時間(消失相)の血中濃度データを用いて線形1-コンパートメントモデルで解析した場合と、初期の分布相のデータも含めて線形2-コンパートメントモデルで解析した場合では、得られる薬物動態パラメータの値が異なる。</p>
+<p>薬物動態パラメータの関係について正しい記述はどれか。2つ選べ。</p>
+<ol><li>2-コンパートメントモデルから得られる全身クリアランスは、1-コンパートメントモデルから得られる値よりも小さい。</li><li>2-コンパートメントモデルにより推定される投与終了直後の血中濃度は、1-コンパートメントモデルから得られる値よりも小さい。</li><li>2-コンパートメントモデルから得られる中央コンパートメントの分布容積は、1-コンパートメントモデルから得られる分布容積よりも小さい。</li><li>2-コンパートメントモデルから得られる消失相の半減期は、1-コンパートメントモデルから得られる半減期よりも短い。</li><li>2-コンパートメントモデルから得られる血中濃度時間曲線下面積は、1-コンパートメントモデルから得られる値よりも小さい。</li></ol>    
+            </p>
+        </div>
+        <hr>
+
+        <input type="button" value="check ans" onclick="toggle_switch()"/>
+        
+        <div id='toggle'>
+        <div class='answer'>
+            <p>
+                <span id="grad2">　解答　　</span>
+            </p>
+            <p>
+            問272：2, 4問273：1, 3
+            </p>
+        </div>
+        <div class='description'>
+            <p>
+                <span id="grad2">　解説　　</span>
+            </p>
+            <h4>問272</h4>
+<p>選択肢 1 ですが<br/>テイコプラニンの TDM では、トラフ（定常状態における、最低血中濃度）の血中濃度を測定します。血中濃度は、注射の場合投与終了後すぐに最大となり、以降減少していきます。そして、テイコプラニンは半減期が長い(目安が 50 時間)薬物であるため、投与終了 1～2 時間後ではトラフ値を測定することができません。よって、選択肢 1 は誤りです。</p>
+<p>選択肢 2 は、正しい選択肢です。<br/>ちなみにレッドマン症候群とは、顔や頸部に、紅斑やかゆみを生じる症状です。ヒスタミン遊離作用に起因し（アレルギーでは、ない。）、時間をかけた点滴で避けることができる副作用の一種です。</p>
+<p>選択肢 3 ですが<br/>テイコプラニンは、血中タンパク質結合率が 90 % と高い薬物です。よって、選択肢 3 は誤りです。ちなみに、血中タンパク質結合率の高い薬物としては他に、フェニトイン、ワルファリンなどがあります。</p>
+<p>選択肢 4 は、正しい選択肢です。<br/>特に消失の遅い薬物において、維持量で投与すると治療濃度まで到達させるのに時間がかかりすぎます。そこで、治療初期の１日量や１回量を、維持量よりも増量することを負荷投与といいます。</p>
+<p>選択肢 5 ですが<br/>初期投与量（３日めまで）は調節しません。</p>
+<p>以上より、正解は 2,4 です。</p>
+<h4>問273</h4>
+<p>選択肢 1 は、正しい選択肢です。<br/>1 – コンパートメントとは、注射したら即座に全身に分布され、後は時間と共に薬物が排泄されるという仮定です。一方、2 – コンパートメントとは、分布する時間を仮定したものです。全身クリアランス　というのは、１分あたりの薬物排出量　と考えればよいです。</p>
+<p>2 – コンパートメントの方が、分布する時間があるため、だらだらと薬物が出ていきクリアランスは遅くなるため、この選択肢が正しいと判断することができます。</p>
+<p>選択肢 2 ですが<br/>投与終了直後、１－コンパートメントモデルでは、もう全身に分布が終わっているという仮定です。血中には、分布しきれなかった薬物だけが存在します。例として、薬物を５投与したんだけど全身に４分布したとします。すると、血中濃度は１です。</p>
+<p>それに対し、２－コンパートメントモデルでは分布がまだ終わっておらず「血中に未分布の薬物が　ある程度残っている」と考えられます。つまり、薬物を　５　投与したのであれば、全身にはまだ　２　しか分布されておらず、血中濃度は　３　のようになります。従って、血中濃度は<br/>２－コンパートメントモデルの方が大きい値であると考えられます。選択肢 2 は誤りです。</p>
+<p>選択肢 3 は、正しい選択肢です。<br/>Vd = CL/D という公式を使います。選択肢 1 から、CL は 2-コンパートメントモデルのほうが小さいので、CL が小さければ、Vd も小さいと考えられます。</p>
+<p>選択肢 4 ですが<br/>横軸を時間、縦軸を ln C （Cは血中濃度）とすると、１－コンパートメントモデル　及び ２－コンパートメントモデル　の血中濃度推移のイメージは、以下のようになります。</p>
+<p><img alt="" class="alignnone size-full wp-image-8632" height="155.39999999999998" loading="lazy" sizes="(max-width: 394px) 100vw, 394px" src="data:;base64,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" width="275.79999999999995"/></p>
+<p>2 – コンパートメントの消失相とは、分布相が終わり緩やかな直線で濃度が減少していく部分のことです。本問では、分布終了後の遅い時間（消失相）の血中濃度データを用いている　ということなので、この部分のデータに注目すれば １－コンパートメントでも ２ーコンパートメントでも半減期は変わらない　と考えられます。よって、選択肢 4 は誤りです。</p>
+<p>選択肢 5 ですが<br/>AUC = D/CL です。2 – コンパートメントの方が CL が小さいから、AUC は大きくなります。よって、選択肢 5 は誤りです。</p>
+<p>以上より、正解は 1,3 です。</p>
+            </p>
+        </div>
+        </div>
+    </body>
+    <script>
+    document.getElementById("toggle").style.display="none";
+    function toggle_switch(){
+        var x = document.getElementById("toggle");
+        if (x.style.display=="block"){
+            x.style.display="none";
+        }
+        else{
+            x.style.display="block";
+        }
+    }
+    </script>
+    

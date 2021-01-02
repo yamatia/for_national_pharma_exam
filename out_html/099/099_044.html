@@ -1,0 +1,88 @@
+
+        <!DOCTYPE html>
+    <html lang="ja">
+    <style>
+    body
+    {
+        color: black;
+        background-color: white;
+    }
+    div{
+        font-size: 14px;
+    }
+    span
+    {
+        font-size: 18px;
+    }
+    #grad1{
+        background: linear-gradient(transparent 60%,#99e4f1 30%);
+        font-size: 18px;
+        font-weight: bold;
+    }
+    #grad2{
+        background: linear-gradient(transparent 60%,#fda1a1 30%);
+        font-size: 18px;
+        font-weight: bold;
+    }
+
+    </style>
+
+    <head>
+        <meta charset="UTF-8">
+        <title>99-44</title>
+    </head>
+
+    <body>
+        <h1>
+        <a href="./099_043.html" rel="external" title="prev">≪</a>
+        99-44
+        <a href="./099_045.html" rel="external" title="next">≫</a>
+        </h1>
+        <div class='problem'>
+            <p>
+                <span id="grad1">　問題文　</span>
+            </p>
+            <p>
+                <p>腸肝循環を受けやすい薬物はどれか。1つ選べ。</p>
+<ol><li>リチウム</li><li>ゲンタマイシン</li><li>セファレキシン</li><li>プラバスタチン</li><li>アシクロビル</li></ol>    
+            </p>
+        </div>
+        <hr>
+
+        <input type="button" value="check ans" onclick="toggle_switch()"/>
+        
+        <div id='toggle'>
+        <div class='answer'>
+            <p>
+                <span id="grad2">　解答　　</span>
+            </p>
+            <p>
+            4
+            </p>
+        </div>
+        <div class='description'>
+            <p>
+                <span id="grad2">　解説　　</span>
+            </p>
+            <p>腸肝循環とは、肝臓で合成され十二指腸に分泌された胆汁中の、胆汁酸の大部分が小腸でもう一度吸収されて肝臓に戻ってくることです。</p>
+<p>腸肝循環を受けやすい薬物としては、クロラムフェニコール、インドメタシン、ジゴキシン、ジギトキシン、モルヒネ、ワルファリンなどが知られています。ゴロで「黒い字、盛るわ」　で覚えると思い出しやすいかもしれません。</p>
+<p>本問は、腸肝循環を受けやすい薬物に関する知識では答えることができません。腎臓で主に排泄される代表的な薬物が、リチウム、セファレキシン、アミノグリコシド系抗生物質（ゲンタマイシンなど）、アシクロビル　等であることから、消去法で選ぶことを期待されている問題ではないかと考えられます。</p>
+<p>以上より、正解は 4 です。</p>
+<p>ちなみに、プラバスタチンの特徴として以下の 2 点があげられます。<br/>１：スタチンの中で水溶性が高く、CYP による代謝を受けないそのまま排泄される薬（このため、肝障害時にも使用可能）。<br/>２：プラバスタチンの主な消失経路は２つあり、腎排泄（尿中排泄）と胆汁排泄（糞中排泄）。</p>
+            </p>
+        </div>
+        </div>
+    </body>
+    <script>
+    document.getElementById("toggle").style.display="none";
+    function toggle_switch(){
+        var x = document.getElementById("toggle");
+        if (x.style.display=="block"){
+            x.style.display="none";
+        }
+        else{
+            x.style.display="block";
+        }
+    }
+    </script>
+    

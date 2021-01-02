@@ -1,0 +1,88 @@
+
+        <!DOCTYPE html>
+    <html lang="ja">
+    <style>
+    body
+    {
+        color: black;
+        background-color: white;
+    }
+    div{
+        font-size: 14px;
+    }
+    span
+    {
+        font-size: 18px;
+    }
+    #grad1{
+        background: linear-gradient(transparent 60%,#99e4f1 30%);
+        font-size: 18px;
+        font-weight: bold;
+    }
+    #grad2{
+        background: linear-gradient(transparent 60%,#fda1a1 30%);
+        font-size: 18px;
+        font-weight: bold;
+    }
+
+    </style>
+
+    <head>
+        <meta charset="UTF-8">
+        <title>103-175</title>
+    </head>
+
+    <body>
+        <h1>
+        <a href="./103_174.html" rel="external" title="prev">≪</a>
+        103-175
+        <a href="./103_176.html" rel="external" title="next">≫</a>
+        </h1>
+        <div class='problem'>
+            <p>
+                <span id="grad1">　問題文　</span>
+            </p>
+            <p>
+                <p>医療用活性炭の品質管理を目的として、ガス吸着法による比表面積測定を行った。試料2.0gに対する窒素ガスの単分子吸着量が3.0×10<sup>-2</sup>molであったとき、この試料の比表面積(m<sup>2</sup>/g)に最も近い値はどれか。1つ選べ。</p>
+<p>ただし、アボガドロ定数を6.0×10<sup>23</sup>mol<sup>-1</sup>、窒素分子の分子占有断面積を1.6×10<sup>-19</sup>m<sup>2</sup>とする。</p>
+<ol><li>1.6×10<sup>2</sup></li><li>2.2×10<sup>2</sup></li><li>1.0×10<sup>3</sup></li><li>1.4×10<sup>3</sup></li><li>2.2×10<sup>3</sup></li></ol>    
+            </p>
+        </div>
+        <hr>
+
+        <input type="button" value="check ans" onclick="toggle_switch()"/>
+        
+        <div id='toggle'>
+        <div class='answer'>
+            <p>
+                <span id="grad2">　解答　　</span>
+            </p>
+            <p>
+            4
+            </p>
+        </div>
+        <div class='description'>
+            <p>
+                <span id="grad2">　解説　　</span>
+            </p>
+            <p><span style="font-weight: 400;">N<sub>2</sub></span><span style="font-weight: 400;"> 分子 1 個 が、</span><span style="font-weight: 400;">1.6×10<sup>-19</sup></span><span style="font-weight: 400;">m<sup>2</sup></span><span style="font-weight: 400;"> を占めているとのことです。</span><span style="font-weight: 400;">N<sub>2</sub></span><span style="font-weight: 400;"> 分子 3.0 × 10<sup>-2</sup></span><span style="font-weight: 400;"> mol というのは</span><span style="font-weight: 400;">（3.0 × 10<sup>-2</sup> </span><span style="font-weight: 400;">） × （6.0 × 10<sup>23</sup></span><span style="font-weight: 400;">） 個</span><span style="font-weight: 400;">の分子です。</span></p>
+<p><span style="font-weight: 400;">従って、</span><span style="font-weight: 400;">試料 2.0g 中の N<sub>2</sub></span><span style="font-weight: 400;"> ガスは<br/></span><span style="font-weight: 400;">(1.6 × 10<sup>-19</sup></span><span style="font-weight: 400;">) × （3.0 × 10<sup>-2</sup></span><span style="font-weight: 400;">） × （6.0 × 10<sup>23</sup></span><span style="font-weight: 400;">）ｍ<sup>2</sup></span><span style="font-weight: 400;"><br/></span><span style="font-weight: 400;">=2.88 × 10<sup>3</sup></span><span style="font-weight: 400;"> m<sup>2</sup></span><span style="font-weight: 400;"> 占めています。</span></p>
+<p><span style="font-weight: 400;">1g 当たりであれば、２で割って、</span><span style="font-weight: 400;">1.44 × 10<sup>3</sup></span><span style="font-weight: 400;"> です。</span></p>
+<p><span style="font-weight: 400;">以上より、正解は 4 です。</span></p>
+            </p>
+        </div>
+        </div>
+    </body>
+    <script>
+    document.getElementById("toggle").style.display="none";
+    function toggle_switch(){
+        var x = document.getElementById("toggle");
+        if (x.style.display=="block"){
+            x.style.display="none";
+        }
+        else{
+            x.style.display="block";
+        }
+    }
+    </script>
+    

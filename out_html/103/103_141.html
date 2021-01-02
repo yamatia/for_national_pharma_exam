@@ -1,0 +1,86 @@
+
+        <!DOCTYPE html>
+    <html lang="ja">
+    <style>
+    body
+    {
+        color: black;
+        background-color: white;
+    }
+    div{
+        font-size: 14px;
+    }
+    span
+    {
+        font-size: 18px;
+    }
+    #grad1{
+        background: linear-gradient(transparent 60%,#99e4f1 30%);
+        font-size: 18px;
+        font-weight: bold;
+    }
+    #grad2{
+        background: linear-gradient(transparent 60%,#fda1a1 30%);
+        font-size: 18px;
+        font-weight: bold;
+    }
+
+    </style>
+
+    <head>
+        <meta charset="UTF-8">
+        <title>103-141</title>
+    </head>
+
+    <body>
+        <h1>
+        <a href="./103_140.html" rel="external" title="prev">≪</a>
+        103-141
+        <a href="./103_142.html" rel="external" title="next">≫</a>
+        </h1>
+        <div class='problem'>
+            <p>
+                <span id="grad1">　問題文　</span>
+            </p>
+            <p>
+                <p>調剤された薬剤に関する情報提供及び指導についての薬局開設者の義務として、誤っているのはどれか。1つ選べ。</p>
+<ol><li>薬剤師に、対面により、情報提供及び指導を行わせなければならない。</li><li>薬剤師による情報提供及び指導は、書面等を用いて行わせなければならない。</li><li>薬剤師に、情報提供及び指導を行わせるにあたり、あらかじめ、患者の年齢、他の薬剤の使用状況等を確認させなければならない。</li><li>薬剤を交付した患者から相談があった場合には、薬剤師に、情報提供又は指導を行わせなければならない。</li><li>薬剤師による情報提供又は指導ができないときは、薬剤を交付した後、薬剤師にその旨を処方医に連絡させなければならない。</li></ol>    
+            </p>
+        </div>
+        <hr>
+
+        <input type="button" value="check ans" onclick="toggle_switch()"/>
+        
+        <div id='toggle'>
+        <div class='answer'>
+            <p>
+                <span id="grad2">　解答　　</span>
+            </p>
+            <p>
+            5
+            </p>
+        </div>
+        <div class='description'>
+            <p>
+                <span id="grad2">　解説　　</span>
+            </p>
+            <p><span style="font-weight: 400;">選択肢 1 ～ 4 は妥当な記述です。</span></p>
+<p><span style="font-weight: 400;">選択肢 5 ですが<br/>医薬品、医療機器等の品質</span><span style="font-weight: 400;">有効性及び安全性の確保等</span><span style="font-weight: 400;">に関する法律（以下　<strong>薬機法</strong>）</span><span style="font-weight: 400;">第九条の三 3項により、</span><span style="font-weight: 400;">薬剤師による</span><span style="font-weight: 400;">情報提供又は指導ができないときは</span><span style="font-weight: 400;">薬剤を販売、又は授与してはなりません。</span><span style="font-weight: 400;">よって、選択肢 5 は誤りです。</span></p>
+<p><span style="font-weight: 400;">以上より、正解は 5 です。</span></p>
+            </p>
+        </div>
+        </div>
+    </body>
+    <script>
+    document.getElementById("toggle").style.display="none";
+    function toggle_switch(){
+        var x = document.getElementById("toggle");
+        if (x.style.display=="block"){
+            x.style.display="none";
+        }
+        else{
+            x.style.display="block";
+        }
+    }
+    </script>
+    

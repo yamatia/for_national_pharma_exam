@@ -1,0 +1,90 @@
+
+        <!DOCTYPE html>
+    <html lang="ja">
+    <style>
+    body
+    {
+        color: black;
+        background-color: white;
+    }
+    div{
+        font-size: 14px;
+    }
+    span
+    {
+        font-size: 18px;
+    }
+    #grad1{
+        background: linear-gradient(transparent 60%,#99e4f1 30%);
+        font-size: 18px;
+        font-weight: bold;
+    }
+    #grad2{
+        background: linear-gradient(transparent 60%,#fda1a1 30%);
+        font-size: 18px;
+        font-weight: bold;
+    }
+
+    </style>
+
+    <head>
+        <meta charset="UTF-8">
+        <title>99-119</title>
+    </head>
+
+    <body>
+        <h1>
+        <a href="./099_118.html" rel="external" title="prev">≪</a>
+        99-119
+        <a href="./099_120.html" rel="external" title="next">≫</a>
+        </h1>
+        <div class='problem'>
+            <p>
+                <span id="grad1">　問題文　</span>
+            </p>
+            <p>
+                <p>抗体産生に関わる免疫細胞の役割に関する記述のうち、正しいのはどれか。2つ選べ。</p>
+<ol><li>抗体産生細胞(形質細胞)は、T細胞が抗原刺激を受け分化した細胞である。</li><li>抗体産生には、2型ヘルパーT(Th2)細胞が分泌するIL-4、IL-5、IL-6などのサイトカインが重要である。</li><li>マクロファージや樹状細胞は、抗原断片を主要組織適合遺伝子複合体(MHC)クラスⅠ分子に結合させ、ヘルパーT細胞に対して提示する。</li><li>活性化されたT細胞の分泌するIL-2は、キラーT細胞の増殖及び分化には関与するが、ヘルパーT細胞には作用しない。</li><li>抗原によるリンパ球活性化における共刺激シグナル(補助シグナル)は、抗原受容体とは異なる細胞膜成分を介する。</li></ol>    
+            </p>
+        </div>
+        <hr>
+
+        <input type="button" value="check ans" onclick="toggle_switch()"/>
+        
+        <div id='toggle'>
+        <div class='answer'>
+            <p>
+                <span id="grad2">　解答　　</span>
+            </p>
+            <p>
+            2, 5
+            </p>
+        </div>
+        <div class='description'>
+            <p>
+                <span id="grad2">　解説　　</span>
+            </p>
+            <p>選択肢 1 ですが<br/>形質細胞は、 B 細胞が分化した細胞です。T 細胞では、ありません。よって、選択肢 1 は誤りです。</p>
+<p>選択肢 2 は正しい記述です。</p>
+<p>選択肢 3 ですが<br/>抗原掲示では、抗原断片が MHC クラスⅡ分子により、細胞表面に掲示されます。クラス I　では、ありません。</p>
+<p>クラス I 分子は、ほぼ全ての自己の細胞において発現している分子です。大きな機能は２つあり自己であることを示す（この分子がある細胞は、自己！と示す）ことと、細胞内の抗原の掲示（何か変・・・こんなの入ってる　と示す）です。それに対し、外来抗原（外から入ってきた、非自己）を示す機能を持った分子が、MHC クラス Ⅱ 分子です。よって、選択肢 3 は誤りです。</p>
+<p>選択肢 4 ですが<br/>IL－2 は、ヘルパー T 細胞にも作用し増殖・活性化させます。よって、選択肢 4 は誤りです。</p>
+<p>選択肢 5　は正しい記述です。</p>
+<p>以上より、正解は 2,5 です。</p>
+            </p>
+        </div>
+        </div>
+    </body>
+    <script>
+    document.getElementById("toggle").style.display="none";
+    function toggle_switch(){
+        var x = document.getElementById("toggle");
+        if (x.style.display=="block"){
+            x.style.display="none";
+        }
+        else{
+            x.style.display="block";
+        }
+    }
+    </script>
+    

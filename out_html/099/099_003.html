@@ -1,0 +1,88 @@
+
+        <!DOCTYPE html>
+    <html lang="ja">
+    <style>
+    body
+    {
+        color: black;
+        background-color: white;
+    }
+    div{
+        font-size: 14px;
+    }
+    span
+    {
+        font-size: 18px;
+    }
+    #grad1{
+        background: linear-gradient(transparent 60%,#99e4f1 30%);
+        font-size: 18px;
+        font-weight: bold;
+    }
+    #grad2{
+        background: linear-gradient(transparent 60%,#fda1a1 30%);
+        font-size: 18px;
+        font-weight: bold;
+    }
+
+    </style>
+
+    <head>
+        <meta charset="UTF-8">
+        <title>99-3</title>
+    </head>
+
+    <body>
+        <h1>
+        <a href="./099_002.html" rel="external" title="prev">≪</a>
+        99-3
+        <a href="./099_004.html" rel="external" title="next">≫</a>
+        </h1>
+        <div class='problem'>
+            <p>
+                <span id="grad1">　問題文　</span>
+            </p>
+            <p>
+                <p>懸濁液における粒子の沈降速度と比例関係にあるものはどれか。1つ選べ。ただし、粒子は球状であり、ストークスの法則が成り立つものとする。</p>
+<ol><li>分散媒の密度</li><li>粒子の密度</li><li>分散媒の粘度</li><li>粒子の半径</li><li>粒子の半径の2乗</li></ol>    
+            </p>
+        </div>
+        <hr>
+
+        <input type="button" value="check ans" onclick="toggle_switch()"/>
+        
+        <div id='toggle'>
+        <div class='answer'>
+            <p>
+                <span id="grad2">　解答　　</span>
+            </p>
+            <p>
+            5
+            </p>
+        </div>
+        <div class='description'>
+            <p>
+                <span id="grad2">　解説　　</span>
+            </p>
+            <p>ストークスの法則とは、以下の式です。</p>
+<p><img alt="" class="alignnone size-full wp-image-8963" height="69.3" loading="lazy" src="data:;base64,/9j/4AAQSkZJRgABAgAAAQABAAD/2wBDAAgGBgcGBQgHBwcJCQgKDBQNDAsLDBkSEw8UHRofHh0aHBwgJC4nICIsIxwcKDcpLDAxNDQ0Hyc5PTgyPC4zNDL/2wBDAQkJCQwLDBgNDRgyIRwhMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjL/wAARCABjAM8DASIAAhEBAxEB/8QAGwABAAMAAwEAAAAAAAAAAAAAAAQFBgECAwf/xABAEAABBAIAAgUIBwQLAQAAAAABAAIDBAUREiEGEzFBYRQVFlFlgZThByIyU3GRoSNCsdEzNDZSVVZyc5Oy0vD/xAAUAQEAAAAAAAAAAAAAAAAAAAAA/8QAFBEBAAAAAAAAAAAAAAAAAAAAAP/aAAwDAQACEQMRAD8A+/oiICIiAiIgIiICIiAiIgIiICIiAiIgIiICIiAiIgIiICIiAiIgIiICIiAii5DIVsXSkt25BHEztPrPcB4qvPSOKLIUaVmrYhmu76kOAOwBsk6PL3oLK3diptZ1hJdI4MYxo2XHwCkLPVJjkOml3fOLHQsjYPU9+yT+Q171a5DJV8bEx0xJdI8MjjaNue49wCCYiraeYjs5KbHSQvgtxRiQxvIO2nvBBKskBE2PWiAi4e9sbHPe4Na0bJPcFSP6UVWQQ2zDL5DLKImWToNJJ0Dre9E9+kF4o81yKvYihlJb1p0xx7C71fipGwVV9IqvleAuNadSsjMsTv7r2/WafzCC0RQcNe85YWnc++ia/wDMKcgIiICIiAiIgIoeQydfGQOlscZDWueQxuzwtGyfwC8pc5RinxsRkcTkf6u5rSQ76vFzPdyQWKLhzmsaXPcGtA2SToBQ/PGL/wARqf8AO3+aCaihty2Ne8MZkKrnE6AEzST+qmIMt0yqyWZsE9wcacOQZJZ0NjhAOt+HFpRqtqPOfSQ6WLboMXTIDtci+Q93uBV/ar5Y5WOxVtQCqIi11eRp5u3ydsLphcN5skuWppetuXZesmeBochoNHgAghYbcHS/PQSDRk6mZni3RB/VV9+5DP8ASRWindqDH1TJs/ZEj+z362tBex7/ADnXydUDr42mORu9dZGe78Qeaj4fCy0snlr1p7JH3Zw5oA+ywDQCCDhac17pZkekErHMgdG2tVDhouaOZd7yr6/joMlG2Od0zQ07HVSuYf0UtEFJ6K4/7298XJ/NT8fjIMax7YHTODzs9bK5/wDEqYiDMdPrjq3RWaFhIktyMrN4e36x5/oCoWYqjNVcTgseN14pY5rEjR9VjGcwPxJV1mMNNlMviZ+sYK1KR0r2Htc7Wm/lzVyGho00ADwQYN92ez0f6QZXrZGWKU8og1IQGtjPIa7DsD9Vq7dsN6NT25SBqo6R2+z7O1Cn6MskhvVGTBlO9L1s0fDz2TtwB8VLyWPku14MewBtMkdcd8y1utNH465+CDz6KVn0+iuMryDTo67AeWu5W7nBrS5xAA5knuRrQ1oa0aAGgFT3ukWOgr3XP4poqzXCdzWcTGkDm0nsQJb1m5fdBQlYyuyHiNrg6xnHsgtPMaI0D71z0Yy8uc6P1r88Qjkk4g4DsOiRseB1tZHB0szD0SoQUsWyavca6za4Z2xEl7i7g592itvhWWY8VCy3WiqyN2BBEQWxt3yGx4aQT0REBERBlOn7CejkjGDgdakipyTfdxSSNDyT3DStDDWs5ChBXax0ND9oC3mGngLGtHucT7layRsljLJGNew9rXDYK4ihjgZwRMaxvqaNIEzeKB7RG2TbSOB3Y7wKz3m6X/LWL/Jn/laREGehoSsnY70exsenA8bQ3bfEcloURBW3sP5dY67zjkK/1QOCvPwN/HWu1RvRv21mPivkrtEFJ6N+2sx8V8k9G/bWY+K+Su0QUno37azHxXyT0b9tZj4r5Ks6fzXqWAkt1b8sIEkbeBgA7XDfPtVrnL89DoxNcha90jI2uJYNuA5bI8dbQdfRv21mPivkno37azHxXyVVDfo2Y8fcwN51iSaUB7Q8u42/vF47tLRyZahDZ8nlssZLonhO+eu3R7z4IIPo37azHxXyT0b9tZj4r5Kxq5KpclkigmDpIwC5haWkA9nIhSkFJ6N+2sx8V8k9G/bWY+K+Su0QVE1SfFYHIGrZtWrAhkfEbEnG7iDToD3hYuZ0db6KqePika+zkBFFK4HZDpHDjc71dp7V9LUfyGpwOZ5PFwv5uHCOaDzxkkT6EYhbwxR7jbrsIadbHgdKYurGNjYGMaGtA0AB2LsgIiICIiAiIgIiICIiAiIgIiIMl9JH9jpv96L/ALhWGcuy0cDA6IhvWvjhdIf3Gu5E/wD3rU3I4LFZYjzhQr2dfesDv4r1ixdCCm6nFUhbWd2xBo4T7kGKyvROHo7ZgzuAmfWsCVjJoQ7bLIc4A7Hr579ymy1Ib30h1oAzijoV3WJNnf7SQ8j+QWirYPH1ZWyRwbcz7HE4uDP9IPZ7l7mpBXms3YazTalYONwH1n8I5DaDPYEm700z98f0cRZUbrv4Rs/qVq1n+h2Ns47BDy2Pq7c8r55mntDnHeitAgIiICIiAiIgIiICIiAiIgIiICIiAiIgIiICIiAiIgIiICIiAiIgIiICIiAiIgIiICIiAiIgIiICIiAiIgIiICIiAiIgIiICIiAiIg//2Q==" width="144.89999999999998"/></p>
+<p>※ρは、固体の密度です。ρ<span style="font-weight: 400;"><sub>0</sub></span>は、液体の密度です。<br/>※ηは、溶液の粘度です。ネバネバした液体ほど、沈降は遅いイメージです。<br/>※ g は、重力加速度です。定数です。<br/>※ dは粒子の直径です。2乗に比例します。粒子が大きいほど速く沈むイメージです。</p>
+<p>式より、<strong>沈降速度は粒子の半径の２乗に比例</strong>します。直径ではないのか、と思うかもしれませんが、直径＝ 2 × 半径　なので、直径の２乗に比例するのであれば、半径の２乗にも比例するということになります。</p>
+<p>以上より、正解は 5 です。<br/>参考）</p>
+            </p>
+        </div>
+        </div>
+    </body>
+    <script>
+    document.getElementById("toggle").style.display="none";
+    function toggle_switch(){
+        var x = document.getElementById("toggle");
+        if (x.style.display=="block"){
+            x.style.display="none";
+        }
+        else{
+            x.style.display="block";
+        }
+    }
+    </script>
+    

@@ -1,0 +1,88 @@
+
+        <!DOCTYPE html>
+    <html lang="ja">
+    <style>
+    body
+    {
+        color: black;
+        background-color: white;
+    }
+    div{
+        font-size: 14px;
+    }
+    span
+    {
+        font-size: 18px;
+    }
+    #grad1{
+        background: linear-gradient(transparent 60%,#99e4f1 30%);
+        font-size: 18px;
+        font-weight: bold;
+    }
+    #grad2{
+        background: linear-gradient(transparent 60%,#fda1a1 30%);
+        font-size: 18px;
+        font-weight: bold;
+    }
+
+    </style>
+
+    <head>
+        <meta charset="UTF-8">
+        <title>99-187</title>
+    </head>
+
+    <body>
+        <h1>
+        <a href="./099_186.html" rel="external" title="prev">≪</a>
+        99-187
+        <a href="./099_188.html" rel="external" title="next">≫</a>
+        </h1>
+        <div class='problem'>
+            <p>
+                <span id="grad1">　問題文　</span>
+            </p>
+            <p>
+                <p>脳血管障害に関する記述のうち、正しいのはどれか。2つ選べ。</p>
+<ol><li>ラクナ塞では、軽度の運動障害や感覚障害を呈し、意識障害はほとんど見られない。</li><li>アテローム血栓性脳塞では、活動時に突然発症し、片麻痺、意識障害を高頻度に認める。</li><li>心原性脳塞では、一過性脳虚血発作が先行する例が多く、安静時に好発する。</li><li>クモ膜下出血では、意識障害を示すことは少ない。</li><li>脳出血では、意識障害を高頻度に認める。</li></ol>    
+            </p>
+        </div>
+        <hr>
+
+        <input type="button" value="check ans" onclick="toggle_switch()"/>
+        
+        <div id='toggle'>
+        <div class='answer'>
+            <p>
+                <span id="grad2">　解答　　</span>
+            </p>
+            <p>
+            1, 5
+            </p>
+        </div>
+        <div class='description'>
+            <p>
+                <span id="grad2">　解説　　</span>
+            </p>
+            <p>選択肢 1 は、正しい記述です。</p>
+<p>選択肢 2,3 ですが<br/>アテローム血栓性脳梗塞　と心原性脳梗塞　が逆です。よって、選択肢 2,3 は共に誤りです。</p>
+<p>選択肢 4 ですが<br/>クモ膜下出血が起こった時の典型的症状は、激しい頭痛、意識障害、嘔吐です。意識障害を示すことが少ないという事はありません。よって、選択肢 4 は誤りです。</p>
+<p>選択肢 5 は、正しい記述です。</p>
+<p>以上より、正解は 1,5 です。</p>
+            </p>
+        </div>
+        </div>
+    </body>
+    <script>
+    document.getElementById("toggle").style.display="none";
+    function toggle_switch(){
+        var x = document.getElementById("toggle");
+        if (x.style.display=="block"){
+            x.style.display="none";
+        }
+        else{
+            x.style.display="block";
+        }
+    }
+    </script>
+    

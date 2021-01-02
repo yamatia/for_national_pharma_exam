@@ -1,0 +1,88 @@
+
+        <!DOCTYPE html>
+    <html lang="ja">
+    <style>
+    body
+    {
+        color: black;
+        background-color: white;
+    }
+    div{
+        font-size: 14px;
+    }
+    span
+    {
+        font-size: 18px;
+    }
+    #grad1{
+        background: linear-gradient(transparent 60%,#99e4f1 30%);
+        font-size: 18px;
+        font-weight: bold;
+    }
+    #grad2{
+        background: linear-gradient(transparent 60%,#fda1a1 30%);
+        font-size: 18px;
+        font-weight: bold;
+    }
+
+    </style>
+
+    <head>
+        <meta charset="UTF-8">
+        <title>104-178</title>
+    </head>
+
+    <body>
+        <h1>
+        <a href="./104_177.html" rel="external" title="prev">≪</a>
+        104-178
+        <a href="./104_179.html" rel="external" title="next">≫</a>
+        </h1>
+        <div class='problem'>
+            <p>
+                <span id="grad1">　問題文　</span>
+            </p>
+            <p>
+                <p>腹痛に関する記述のうち、正しいのはどれか。2つ選べ。</p>
+<ol><li>腹痛は、神経痛と体性痛の2つに分類される。</li><li>腹膜刺激によって起こる痛みは、体性痛である。</li><li>腹部全体に痛みがある腸重積症は、急性腹症である。</li><li>右下腹部痛及び発熱があると、胃食道逆流症が疑われる。</li><li>左側腹部痛、発熱、黄疸があると、胆嚢炎が疑われる。</li></ol>    
+            </p>
+        </div>
+        <hr>
+
+        <input type="button" value="check ans" onclick="toggle_switch()"/>
+        
+        <div id='toggle'>
+        <div class='answer'>
+            <p>
+                <span id="grad2">　解答　　</span>
+            </p>
+            <p>
+            2, 3
+            </p>
+        </div>
+        <div class='description'>
+            <p>
+                <span id="grad2">　解説　　</span>
+            </p>
+            <p><span style="font-weight: 400;">選択肢 1 ですが<br/></span><span style="font-weight: 400;">腹痛は大きく「内臓痛」と「体性痛」に分類されます。神経痛ではありません。よって、選択肢 1 は誤りです。</span></p>
+<p><span style="font-weight: 400;">選択肢 2,3 は妥当な記述です。<br/></span><span style="font-weight: 400;">腸重積（ちょうじゅうせき）は、乳幼児に発症することが多い病気です。腸管の一部が隣接部位に嵌入した状態のことです。</span></p>
+<p><span style="font-weight: 400;">選択肢 4 ですが<br/></span><span style="font-weight: 400;">胃食道逆流症は、胃酸の逆流です。「発熱」からの疑いは誤っていると考えられます。よって、選択肢 4 は誤りです。</span></p>
+<p><span style="font-weight: 400;">選択肢 5 ですが<br/></span><span style="font-weight: 400;">発熱、黄疸は、胆管や胆嚢の炎症を疑う症状です。しかし臓器の位置を考えると「右」に痛みが出ると思われるため、「左側」が誤りと考えられます。</span></p>
+<p><span style="font-weight: 400;">以上より、正解は 2,3 です。</span></p>
+            </p>
+        </div>
+        </div>
+    </body>
+    <script>
+    document.getElementById("toggle").style.display="none";
+    function toggle_switch(){
+        var x = document.getElementById("toggle");
+        if (x.style.display=="block"){
+            x.style.display="none";
+        }
+        else{
+            x.style.display="block";
+        }
+    }
+    </script>
+    

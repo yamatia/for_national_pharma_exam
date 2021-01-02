@@ -1,0 +1,88 @@
+
+        <!DOCTYPE html>
+    <html lang="ja">
+    <style>
+    body
+    {
+        color: black;
+        background-color: white;
+    }
+    div{
+        font-size: 14px;
+    }
+    span
+    {
+        font-size: 18px;
+    }
+    #grad1{
+        background: linear-gradient(transparent 60%,#99e4f1 30%);
+        font-size: 18px;
+        font-weight: bold;
+    }
+    #grad2{
+        background: linear-gradient(transparent 60%,#fda1a1 30%);
+        font-size: 18px;
+        font-weight: bold;
+    }
+
+    </style>
+
+    <head>
+        <meta charset="UTF-8">
+        <title>104-189</title>
+    </head>
+
+    <body>
+        <h1>
+        <a href="./104_188.html" rel="external" title="prev">≪</a>
+        104-189
+        <a href="./104_190.html" rel="external" title="next">≫</a>
+        </h1>
+        <div class='problem'>
+            <p>
+                <span id="grad1">　問題文　</span>
+            </p>
+            <p>
+                <p>新生児及び小児の薬物治療に関する記述のうち、正しいのはどれか。2つ選べ。</p>
+<ol><li>新生児に対するクロラムフェニコールコハク酸エステルナトリウム注射液の投与は、禁忌である。</li><li>新生児に対するスルファメトキサゾール・トリメトプリム配合顆粒の投与は、禁忌である。</li><li>フェノバルビタールの消化管吸収率は、小児よりも新生児のほうが高い。</li><li>カルバマゼピンの血中からの消失半減期は、成人よりも小児のほうが長い。</li><li>小児の細菌性肺炎に対する第一選択薬として、ミノサイクリン塩酸塩顆粒が用いられる。</li></ol>    
+            </p>
+        </div>
+        <hr>
+
+        <input type="button" value="check ans" onclick="toggle_switch()"/>
+        
+        <div id='toggle'>
+        <div class='answer'>
+            <p>
+                <span id="grad2">　解答　　</span>
+            </p>
+            <p>
+            1, 2
+            </p>
+        </div>
+        <div class='description'>
+            <p>
+                <span id="grad2">　解説　　</span>
+            </p>
+            <p><span style="font-weight: 400;">選択肢 1,2, は妥当な記述です。<br/></span><span style="font-weight: 400;">クロラムフェニコールは主に肝代謝の薬です。新生児期は肝機能が未熟です。そのため血中濃度が高くなり、グレイ症候群と呼ばれる副作用（腹部膨張に始まる、嘔吐、下痢、呼吸停止等）があらわれるため禁忌です。<br/></span><span style="font-weight: 400;">スルファメトキサゾール・トリメトプリム配合顆粒は、新生児には高ビリルビン血症のおそれがあるため、禁忌です。</span></p>
+<p><span style="font-weight: 400;">選択肢 3 ですが<br/></span><span style="font-weight: 400;">生まれたての新生児は、胃内 pH が 6~8 です。フェノバルビタールやフェニトインといった「酸性薬剤」は、イオン形が多くなり、吸収が低下します。「小児の方が高い」です。よって、選択肢 3 は誤りです。</span></p>
+<p><span style="font-weight: 400;">選択肢 4 ですが<br/></span><span style="font-weight: 400;">カルバマゼピンは小児の方が代謝活性が高いことが知られています。よって、選択肢 4 は誤りです。小児の方が「代謝活性」が高い代表的な薬物として、フェノバルビタール、フェニトイン、カルバマゼピン、テオフィリンなどがあります。</span></p>
+<p><span style="font-weight: 400;">選択肢 5 ですが<br/></span><span style="font-weight: 400;">ミノサイクリンは、8 歳未満小児に用いると、歯の着色、一過性骨発育不全等が見られるため、他の薬剤が無効、使用不可といった状況で用いられます。「第一選択薬」としてではありません。マクロライド系抗生物質などが用いられます。よって、選択肢 5 は誤りです。</span></p>
+<p><span style="font-weight: 400;">以上より、正解は 1,2 です。<br/></span><span style="font-weight: 400;">類題 </span></p>
+            </p>
+        </div>
+        </div>
+    </body>
+    <script>
+    document.getElementById("toggle").style.display="none";
+    function toggle_switch(){
+        var x = document.getElementById("toggle");
+        if (x.style.display=="block"){
+            x.style.display="none";
+        }
+        else{
+            x.style.display="block";
+        }
+    }
+    </script>
+    

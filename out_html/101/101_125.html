@@ -1,0 +1,88 @@
+
+        <!DOCTYPE html>
+    <html lang="ja">
+    <style>
+    body
+    {
+        color: black;
+        background-color: white;
+    }
+    div{
+        font-size: 14px;
+    }
+    span
+    {
+        font-size: 18px;
+    }
+    #grad1{
+        background: linear-gradient(transparent 60%,#99e4f1 30%);
+        font-size: 18px;
+        font-weight: bold;
+    }
+    #grad2{
+        background: linear-gradient(transparent 60%,#fda1a1 30%);
+        font-size: 18px;
+        font-weight: bold;
+    }
+
+    </style>
+
+    <head>
+        <meta charset="UTF-8">
+        <title>101-125</title>
+    </head>
+
+    <body>
+        <h1>
+        <a href="./101_124.html" rel="external" title="prev">≪</a>
+        101-125
+        <a href="./101_126.html" rel="external" title="next">≫</a>
+        </h1>
+        <div class='problem'>
+            <p>
+                <span id="grad1">　問題文　</span>
+            </p>
+            <p>
+                <p>ウェルシュ菌及びウェルシュ菌による食中毒に関する記述のうち、正しいのはどれか。2つ選べ。</p>
+<ol><li>ウェルシュ菌は、Clostridium botulinumという学名の偏性嫌気性菌である。</li><li>最近(2011年以降)の1年あたりの発生件数は、腸炎ビブリオによる食中毒より少ない。</li><li>最近(2011年以降)の食中毒1件あたりの平均患者数は、カンピロバクターによる食中毒に比べて多い。</li><li>給食や学生食堂において、食肉を調理したカレーやシチューなどの食品が原因となることが多い。</li><li>潜伏期間は3日～1週間と長く、主要症状は腹痛と水様性下痢である。</li></ol>    
+            </p>
+        </div>
+        <hr>
+
+        <input type="button" value="check ans" onclick="toggle_switch()"/>
+        
+        <div id='toggle'>
+        <div class='answer'>
+            <p>
+                <span id="grad2">　解答　　</span>
+            </p>
+            <p>
+            3, 4
+            </p>
+        </div>
+        <div class='description'>
+            <p>
+                <span id="grad2">　解説　　</span>
+            </p>
+            <p>選択肢 1 ですが<br/>書いてある英語の名前が クロストリジウム　ボツリヌム　みたいな名前なので、これはボツリヌス菌の記述と分かります。よって、選択肢 1 は誤りです。ちなみにウェルシュ菌は Clostridium perfringens　らしいです。嫌気性桿菌です。</p>
+<p>選択肢 2 ですが<br/>腸炎ビブリオは、かつては細菌性食中毒として多かったのですが、近年著しく減少しており年間 10 件にも満たない発生状況です。一方、ウェルシュ菌は、年間 20 ～ 40 件　です。よって、選択肢 2 は誤りです。（正直、「両方少なめ」。ウェルシュ＝給食病。一件あたりが、患者数多い　ぐらいしか覚えていないので、この選択肢はパスでもいいかも。。）</p>
+<p>選択肢 3,4 は、正しい選択肢です。<br/>ウェルシュ菌は熱に強く、嫌気性で、芽胞を作る細菌です。ウェルシュ菌による食中毒は別名給食病と呼ばれ、一件当たりの患者数が多いのが特徴です。</p>
+<p>選択肢 5 ですが<br/>この潜伏期間は O157 に関する記述と思われます。ウェルシュ菌による食中毒は、給食食べてその日の晩に発症する感じなので３日～１週間では、ありません。よって、選択肢 5 は誤りです。</p>
+<p>以上より、正解は 3,4 です。</p>
+            </p>
+        </div>
+        </div>
+    </body>
+    <script>
+    document.getElementById("toggle").style.display="none";
+    function toggle_switch(){
+        var x = document.getElementById("toggle");
+        if (x.style.display=="block"){
+            x.style.display="none";
+        }
+        else{
+            x.style.display="block";
+        }
+    }
+    </script>
+    

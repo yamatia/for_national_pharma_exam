@@ -1,0 +1,88 @@
+
+        <!DOCTYPE html>
+    <html lang="ja">
+    <style>
+    body
+    {
+        color: black;
+        background-color: white;
+    }
+    div{
+        font-size: 14px;
+    }
+    span
+    {
+        font-size: 18px;
+    }
+    #grad1{
+        background: linear-gradient(transparent 60%,#99e4f1 30%);
+        font-size: 18px;
+        font-weight: bold;
+    }
+    #grad2{
+        background: linear-gradient(transparent 60%,#fda1a1 30%);
+        font-size: 18px;
+        font-weight: bold;
+    }
+
+    </style>
+
+    <head>
+        <meta charset="UTF-8">
+        <title>99-164</title>
+    </head>
+
+    <body>
+        <h1>
+        <a href="./099_163.html" rel="external" title="prev">≪</a>
+        99-164
+        <a href="./099_165.html" rel="external" title="next">≫</a>
+        </h1>
+        <div class='problem'>
+            <p>
+                <span id="grad1">　問題文　</span>
+            </p>
+            <p>
+                <p>感染症治療薬の作用機序に関する記述のうち、正しいのはどれか。2つ選べ。</p>
+<ol><li>テイコプラニンは、リボソームの50Sサブユニットに結合し、タンパク質の合成を阻害する。</li><li>ジダノシンは、ヒト免疫不全ウイルス(HIV)の逆転写酵素を阻害し、HIVの増殖を抑制する。</li><li>テルビナフィンは、スクアレン-2,3-エポキシダーゼを阻害し、真菌細胞膜成分のエルゴステロールの生合成を阻害する。</li><li>フルシトシンは、ラノステロールC-14脱メチル化酵素を阻害し、真菌細胞膜成分のエルゴステロールの生合成を阻害する。</li><li>リファンピシンは、ペプチドグリカン前駆体と結合し、細胞壁の合成を阻害する。</li></ol>    
+            </p>
+        </div>
+        <hr>
+
+        <input type="button" value="check ans" onclick="toggle_switch()"/>
+        
+        <div id='toggle'>
+        <div class='answer'>
+            <p>
+                <span id="grad2">　解答　　</span>
+            </p>
+            <p>
+            2, 3
+            </p>
+        </div>
+        <div class='description'>
+            <p>
+                <span id="grad2">　解説　　</span>
+            </p>
+            <p>選択肢 1 ですが<br/>テイコプラニンは、細胞壁合成阻害薬です。タンパク質の合成を阻害するわけではありません。よって、選択肢 1 は誤りです。ちなみに、代表的なリボソーム 50S サブユニットに結合してタンパク質合成を阻害する薬としては、マクロライド系抗生物質（クラリスロマイシン等）があります。</p>
+<p>選択肢 2,3 は、正しい記述です。</p>
+<p>選択肢 4 ですが<br/>フルシトシンは、真菌細胞内で代謝され、５－FU となり核酸合成を阻害する薬です。エルゴステロールの生合成阻害薬では、ありません。よって、選択肢 4 は誤りです。ちなみに、記述は、アゾール系（イトラコナゾールなど）に関するものと考えられます。</p>
+<p>選択肢 5 ですが<br/>リファンピシンは、DNA 依存性 RNA ポリメラーゼ阻害薬です。細胞壁合成阻害薬では、ありません。よって、選択肢 5 は誤りです。</p>
+<p>以上より、正解は 2,3 です。</p>
+            </p>
+        </div>
+        </div>
+    </body>
+    <script>
+    document.getElementById("toggle").style.display="none";
+    function toggle_switch(){
+        var x = document.getElementById("toggle");
+        if (x.style.display=="block"){
+            x.style.display="none";
+        }
+        else{
+            x.style.display="block";
+        }
+    }
+    </script>
+    

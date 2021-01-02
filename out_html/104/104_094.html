@@ -1,0 +1,93 @@
+
+        <!DOCTYPE html>
+    <html lang="ja">
+    <style>
+    body
+    {
+        color: black;
+        background-color: white;
+    }
+    div{
+        font-size: 14px;
+    }
+    span
+    {
+        font-size: 18px;
+    }
+    #grad1{
+        background: linear-gradient(transparent 60%,#99e4f1 30%);
+        font-size: 18px;
+        font-weight: bold;
+    }
+    #grad2{
+        background: linear-gradient(transparent 60%,#fda1a1 30%);
+        font-size: 18px;
+        font-weight: bold;
+    }
+
+    </style>
+
+    <head>
+        <meta charset="UTF-8">
+        <title>104-94</title>
+    </head>
+
+    <body>
+        <h1>
+        <a href="./104_093.html" rel="external" title="prev">≪</a>
+        104-94
+        <a href="./104_095.html" rel="external" title="next">≫</a>
+        </h1>
+        <div class='problem'>
+            <p>
+                <span id="grad1">　問題文　</span>
+            </p>
+            <p>
+                <p>液体クロマトグラフィーを用いて生体成分や薬物を定量分析する際には、高感度化や選択性の向上を目的として誘導体化する場合が多い。誘導体化に関する記述のうち、誤っているのはどれか。1つ選べ。</p>
+<ol><li>プレカラム誘導体化法では、長時間を要する誘導体化反応を利用できる。</li><li>ニンヒドリンを反応試薬として用いるプレカラム誘導体化法によって、アミノ酸を一斉分析することが可能である。</li><li>ポストカラム誘導体化法は、試料中の夾雑成分の影響を受けにくい。</li><li>ポストカラム誘導体化法では、1つの分析対象物から複数の誘導体が生成しても問題ない。</li><li>ジアステレオマー誘導体化法によって、鏡像異性体を光学不活性なカラムで分離することができる。</li></ol>    
+            </p>
+        </div>
+        <hr>
+
+        <input type="button" value="check ans" onclick="toggle_switch()"/>
+        
+        <div id='toggle'>
+        <div class='answer'>
+            <p>
+                <span id="grad2">　解答　　</span>
+            </p>
+            <p>
+            2
+            </p>
+        </div>
+        <div class='description'>
+            <p>
+                <span id="grad2">　解説　　</span>
+            </p>
+            <p><span style="font-weight: 400;">複数のアミノ酸の定量分析を例として考えます。例えばグリシン、バリン、フェニルアラニンが含まれる栄養補助ドリンクの分析を考えるとイメージしやすいかもしれません。</span></p>
+<p><span style="font-weight: 400;">分子ふるいや、イオン交換クロマトグラフィーで、これらのアミノ酸を</span><b>分離することは可能</b><span style="font-weight: 400;">です。ところがそのままだと光の吸収波長も対して変わらず「分離はできてるはずだけど、ピークとして現れない」とか、そもそも「分離度が悪く、微妙に混合物しかとれない」といった悩みがあるとします。</span></p>
+<p><span style="font-weight: 400;"><strong>プレカラム誘導体化法</strong>は、先に対象を誘導体化してしまう方法です。分離前に「じっくり下準備」する方法といえます。こうすることで、分離をすごいシャープにしたりできます。一方で、流す試薬の性質が変わってしまうため、想定外の反応がおきてないかなどに留意が必要です。</span></p>
+<p><span style="font-weight: 400;"><strong>ポストカラム誘導体化法</strong>は、分離してから誘導体化する方法です。しかも簡便に自動化するために、HPLCを流しっぱなしで、分離された所に誘導体化薬をちょろっと後から入れてうまいこと誘導体化させて測定結果をうまく調節するような方法です。そのため、誘導体化薬には「マイルドな条件下で、できるだけ速く反応する」などの性質が求められます。実際に用いられる<strong>代表的誘導体化試薬</strong>は、本試験時点で<strong>「オルトフタルアルデヒド」</strong>か<strong>「ニンヒドリン」</strong>です。</span></p>
+<p><span style="font-weight: 400;">以上をふまえると、</span><span style="font-weight: 400;">選択肢 1 は妥当です。</span><span style="font-weight: 400;">じっくり下準備なので、長時間有する誘導体化反応でも問題ありません。</span></p>
+<p><span style="font-weight: 400;">選択肢 2 は誤りです。<br/></span><span style="font-weight: 400;">ニンヒドリンなのでポストカラム誘導体化法と考えられます。</span></p>
+<p><span style="font-weight: 400;">選択肢 3 は妥当です。<br/></span><span style="font-weight: 400;">プレカラム誘導体化法だと、試料中の目的成分以外（つまり夾雑成分）と、誘導体化薬の反応を考慮しなければなりません。ポストカラム法なら、もう分離されているので影響を受けにくいといえます。</span></p>
+<p><span style="font-weight: 400;">選択肢 4 は妥当です。</span></p>
+<p><span style="font-weight: 400;">選択肢 5 は妥当です。<br/></span><span style="font-weight: 400;">ジアステレオマー誘導体化法によって、</span><span style="font-weight: 400;">もともと R のアミノ酸と,L のアミノ酸が、(R,R),(L,R) の誘導体にそれぞれなったとします。すると、これらの</span><b>ジアステレオマーは「物理学的性質（融点等）」が違います。</b><span style="font-weight: 400;">そのため、光学不活性なカラム（R と L や、（R,L）と（L,R）など　をわけることはできないカラムのこと）であっても、物理学的性質に基づいた分離が可能になります。</span></p>
+<p><span style="font-weight: 400;">以上より、正解は 2 です。</span><span style="font-weight: 400;"><br/></span></p>
+            </p>
+        </div>
+        </div>
+    </body>
+    <script>
+    document.getElementById("toggle").style.display="none";
+    function toggle_switch(){
+        var x = document.getElementById("toggle");
+        if (x.style.display=="block"){
+            x.style.display="none";
+        }
+        else{
+            x.style.display="block";
+        }
+    }
+    </script>
+    

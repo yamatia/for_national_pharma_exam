@@ -1,0 +1,89 @@
+
+        <!DOCTYPE html>
+    <html lang="ja">
+    <style>
+    body
+    {
+        color: black;
+        background-color: white;
+    }
+    div{
+        font-size: 14px;
+    }
+    span
+    {
+        font-size: 18px;
+    }
+    #grad1{
+        background: linear-gradient(transparent 60%,#99e4f1 30%);
+        font-size: 18px;
+        font-weight: bold;
+    }
+    #grad2{
+        background: linear-gradient(transparent 60%,#fda1a1 30%);
+        font-size: 18px;
+        font-weight: bold;
+    }
+
+    </style>
+
+    <head>
+        <meta charset="UTF-8">
+        <title>99-17</title>
+    </head>
+
+    <body>
+        <h1>
+        <a href="./099_016.html" rel="external" title="prev">≪</a>
+        99-17
+        <a href="./099_018.html" rel="external" title="next">≫</a>
+        </h1>
+        <div class='problem'>
+            <p>
+                <span id="grad1">　問題文　</span>
+            </p>
+            <p>
+                <p>保存料として使用されている食品添加物はどれか。1つ選べ。</p>
+<ol><li>過酸化水素</li><li>ジフェニル</li><li>高度サラシ粉</li><li>エリソルビン酸</li><li>安息香酸</li></ol>    
+            </p>
+        </div>
+        <hr>
+
+        <input type="button" value="check ans" onclick="toggle_switch()"/>
+        
+        <div id='toggle'>
+        <div class='answer'>
+            <p>
+                <span id="grad2">　解答　　</span>
+            </p>
+            <p>
+            5
+            </p>
+        </div>
+        <div class='description'>
+            <p>
+                <span id="grad2">　解説　　</span>
+            </p>
+            <p>選択肢 1 ですが<br/>過酸化水素は、漂白剤として使われる食品添加物です。よって、選択肢 1 は誤りです。</p>
+<p>選択肢 2 ですが<br/>ジフェニルは、防カビ剤として用いられます。防カビ剤は、保存料とは、別の区分です。よって、選択肢 2 は誤りです。</p>
+<p>選択肢 3 ですが<br/>高度サラシ粉は、殺菌料として用いられます。よって、選択肢 3 は誤りです。</p>
+<p>選択肢 4 ですが<br/>エリソルビン酸は、酸化防止剤です。ちなみに、エリソルビン酸は、アスコルビン酸（ビタミンC）の構造異性体です。よって、選択肢 4 は誤りです。ちなみに、ソルビン酸は、保存料として用いられます。</p>
+<p>選択肢 5 は、正しい選択肢です。</p>
+<p>以上より、正解は 5 です。</p>
+            </p>
+        </div>
+        </div>
+    </body>
+    <script>
+    document.getElementById("toggle").style.display="none";
+    function toggle_switch(){
+        var x = document.getElementById("toggle");
+        if (x.style.display=="block"){
+            x.style.display="none";
+        }
+        else{
+            x.style.display="block";
+        }
+    }
+    </script>
+    

@@ -1,0 +1,86 @@
+
+        <!DOCTYPE html>
+    <html lang="ja">
+    <style>
+    body
+    {
+        color: black;
+        background-color: white;
+    }
+    div{
+        font-size: 14px;
+    }
+    span
+    {
+        font-size: 18px;
+    }
+    #grad1{
+        background: linear-gradient(transparent 60%,#99e4f1 30%);
+        font-size: 18px;
+        font-weight: bold;
+    }
+    #grad2{
+        background: linear-gradient(transparent 60%,#fda1a1 30%);
+        font-size: 18px;
+        font-weight: bold;
+    }
+
+    </style>
+
+    <head>
+        <meta charset="UTF-8">
+        <title>99-193</title>
+    </head>
+
+    <body>
+        <h1>
+        <a href="./099_192.html" rel="external" title="prev">≪</a>
+        99-193
+        <a href="./099_194.html" rel="external" title="next">≫</a>
+        </h1>
+        <div class='problem'>
+            <p>
+                <span id="grad1">　問題文　</span>
+            </p>
+            <p>
+                <p>医薬品の承認申請時に作成されるCTD(Common Technical Document)に含まれないのはどれか。2つ選べ。</p>
+<ol><li>品質に関する文書</li><li>非臨床試験報告書</li><li>臨床試験報告書</li><li>薬価設定に関する文書</li><li>販売計画書</li></ol>    
+            </p>
+        </div>
+        <hr>
+
+        <input type="button" value="check ans" onclick="toggle_switch()"/>
+        
+        <div id='toggle'>
+        <div class='answer'>
+            <p>
+                <span id="grad2">　解答　　</span>
+            </p>
+            <p>
+            4, 5
+            </p>
+        </div>
+        <div class='description'>
+            <p>
+                <span id="grad2">　解説　　</span>
+            </p>
+            <p>CTD とは、医薬品の承認申請のための共通様式のことです。５つの部（モジュール）から構成され、第１部（モジュール１）は、各地域に特異的な部分です。第２部から第５部は、全ての地域において共通な部分です。</p>
+<p>第２部は、概要について、第３部は、品質について、第４部は、非臨床試験について、第５部は、臨床試験についてとなっています。薬価制定や、販売計画については入っていません。</p>
+<p>以上より、正解は 4,5 です。<br/>参考）（PMDA　のHPへ）</p>
+            </p>
+        </div>
+        </div>
+    </body>
+    <script>
+    document.getElementById("toggle").style.display="none";
+    function toggle_switch(){
+        var x = document.getElementById("toggle");
+        if (x.style.display=="block"){
+            x.style.display="none";
+        }
+        else{
+            x.style.display="block";
+        }
+    }
+    </script>
+    

@@ -1,0 +1,88 @@
+
+        <!DOCTYPE html>
+    <html lang="ja">
+    <style>
+    body
+    {
+        color: black;
+        background-color: white;
+    }
+    div{
+        font-size: 14px;
+    }
+    span
+    {
+        font-size: 18px;
+    }
+    #grad1{
+        background: linear-gradient(transparent 60%,#99e4f1 30%);
+        font-size: 18px;
+        font-weight: bold;
+    }
+    #grad2{
+        background: linear-gradient(transparent 60%,#fda1a1 30%);
+        font-size: 18px;
+        font-weight: bold;
+    }
+
+    </style>
+
+    <head>
+        <meta charset="UTF-8">
+        <title>102-84</title>
+    </head>
+
+    <body>
+        <h1>
+        <a href="./102_083.html" rel="external" title="prev">≪</a>
+        102-84
+        <a href="./102_085.html" rel="external" title="next">≫</a>
+        </h1>
+        <div class='problem'>
+            <p>
+                <span id="grad1">　問題文　</span>
+            </p>
+            <p>
+                <p>妊婦への投与が禁忌である医薬品はどれか。1つ選べ。</p>
+<ol><li>アセトアミノフェン</li><li>インスリン</li><li>炭酸リチウム</li><li>プレドニゾロン</li><li>ヘパリンナトリウム</li></ol>    
+            </p>
+        </div>
+        <hr>
+
+        <input type="button" value="check ans" onclick="toggle_switch()"/>
+        
+        <div id='toggle'>
+        <div class='answer'>
+            <p>
+                <span id="grad2">　解答　　</span>
+            </p>
+            <p>
+            3
+            </p>
+        </div>
+        <div class='description'>
+            <p>
+                <span id="grad2">　解説　　</span>
+            </p>
+            <p>本問はすぐにリチウムではないかと考えたいところです。後はインスリンで悩んだかもしれません。それぞれの薬の「キレのよさ」について大雑把なイメージを受験生各自は持っていると思います。キレのいい薬はリスクも高く妊婦には禁忌ではないか・・・。と考えた時に TDM 対象薬である点などからリチウムが一番正しそうに見えるのではないでしょうか。</p>
+<p>ちなみに、インスリンは妊婦に禁忌ではありませんが患者のインスリン需要量が変わりやすく注意が必要です。一般的には、妊娠初期に、需要量は減少します。つわりとか考えると想像しやすいかもしれません。（食べない→あんまりインスリンいらないのでは？ということです。）ただし、あまりつわりがない人もいるしあくまで一般的傾向であることに注意が必要です。そして、妊娠中期、後期にはインスリン需要量が増加する傾向にあります。</p>
+<p>その他妊婦で禁忌といえば、NSAIDs。ACE阻害薬などがあります。降圧薬も多くのCa拮抗薬などが禁忌になります。妊娠高血圧には、どうするのかと連想するかもしれません。ガイドラインが出ており、メチルドパなどが用いられます。スタチンも禁忌。色々制限のあるワーファリンも、妊娠中禁忌の代表例です。ちなみに、ヘパリンは禁忌ではありません。</p>
+<p>本問の演習を通じ、妊婦に使用してはいけない薬について自分なりにまとめるきっかけになるとよいのではないでしょうか。</p>
+<p>以上より、正解は 3 です。</p>
+            </p>
+        </div>
+        </div>
+    </body>
+    <script>
+    document.getElementById("toggle").style.display="none";
+    function toggle_switch(){
+        var x = document.getElementById("toggle");
+        if (x.style.display=="block"){
+            x.style.display="none";
+        }
+        else{
+            x.style.display="block";
+        }
+    }
+    </script>
+    

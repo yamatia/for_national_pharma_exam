@@ -1,0 +1,86 @@
+
+        <!DOCTYPE html>
+    <html lang="ja">
+    <style>
+    body
+    {
+        color: black;
+        background-color: white;
+    }
+    div{
+        font-size: 14px;
+    }
+    span
+    {
+        font-size: 18px;
+    }
+    #grad1{
+        background: linear-gradient(transparent 60%,#99e4f1 30%);
+        font-size: 18px;
+        font-weight: bold;
+    }
+    #grad2{
+        background: linear-gradient(transparent 60%,#fda1a1 30%);
+        font-size: 18px;
+        font-weight: bold;
+    }
+
+    </style>
+
+    <head>
+        <meta charset="UTF-8">
+        <title>101-24</title>
+    </head>
+
+    <body>
+        <h1>
+        <a href="./101_023.html" rel="external" title="prev">≪</a>
+        101-24
+        <a href="./101_025.html" rel="external" title="next">≫</a>
+        </h1>
+        <div class='problem'>
+            <p>
+                <span id="grad1">　問題文　</span>
+            </p>
+            <p>
+                <p>自然放射線被曝のもととなる放射性核種はどれか。1つ選べ。</p>
+<ol><li><sup>40</sup>K</li><li><sup>90</sup>Sr</li><li><sup>131</sup>I</li><li><sup>137</sup>Cs</li><li><sup>239</sup>Pu</li></ol>    
+            </p>
+        </div>
+        <hr>
+
+        <input type="button" value="check ans" onclick="toggle_switch()"/>
+        
+        <div id='toggle'>
+        <div class='answer'>
+            <p>
+                <span id="grad2">　解答　　</span>
+            </p>
+            <p>
+            1
+            </p>
+        </div>
+        <div class='description'>
+            <p>
+                <span id="grad2">　解説　　</span>
+            </p>
+            <p>天然放射性核種の代表例は、<span style="font-weight: 400;"><sup>40</sup></span>K です。他には宇宙線と大気中のNの反応で生じる<span style="font-weight: 400;"><sup>3</sup></span>H、<span style="font-weight: 400;"><sup>14</sup></span>C が知られています。最後に温泉などで聞いたことがあるかもしれないラジウム Ra や、ラドン Rn　などがあります。</p>
+<p>以上より、正解は 1 です。</p>
+<p>ちなみに、その他の選択肢の核種も存在します。これらは人工放射性核種です。</p>
+            </p>
+        </div>
+        </div>
+    </body>
+    <script>
+    document.getElementById("toggle").style.display="none";
+    function toggle_switch(){
+        var x = document.getElementById("toggle");
+        if (x.style.display=="block"){
+            x.style.display="none";
+        }
+        else{
+            x.style.display="block";
+        }
+    }
+    </script>
+    

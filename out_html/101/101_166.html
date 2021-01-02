@@ -1,0 +1,87 @@
+
+        <!DOCTYPE html>
+    <html lang="ja">
+    <style>
+    body
+    {
+        color: black;
+        background-color: white;
+    }
+    div{
+        font-size: 14px;
+    }
+    span
+    {
+        font-size: 18px;
+    }
+    #grad1{
+        background: linear-gradient(transparent 60%,#99e4f1 30%);
+        font-size: 18px;
+        font-weight: bold;
+    }
+    #grad2{
+        background: linear-gradient(transparent 60%,#fda1a1 30%);
+        font-size: 18px;
+        font-weight: bold;
+    }
+
+    </style>
+
+    <head>
+        <meta charset="UTF-8">
+        <title>101-166</title>
+    </head>
+
+    <body>
+        <h1>
+        <a href="./101_165.html" rel="external" title="prev">≪</a>
+        101-166
+        <a href="./101_167.html" rel="external" title="next">≫</a>
+        </h1>
+        <div class='problem'>
+            <p>
+                <span id="grad1">　問題文　</span>
+            </p>
+            <p>
+                <p>薬物の生体膜透過機構に関する記述のうち、正しいのはどれか。2つ選べ。</p>
+<ol><li>単純拡散では、薬物は濃度勾配に従って透過し、その透過速度はMichaelis-Menten式により表すことができる。</li><li>促進拡散はトランスポーターを介した輸送であるため、構造の類似した化合物の共存により透過速度が低下する場合がある。</li><li>一次性能動輸送は、ATPの加水分解により得られるエネルギーを直接利用する。</li><li>膜動輸送による高分子の細胞内取り込みでは、生体膜自体の形態的変化は起きない。</li></ol>    
+            </p>
+        </div>
+        <hr>
+
+        <input type="button" value="check ans" onclick="toggle_switch()"/>
+        
+        <div id='toggle'>
+        <div class='answer'>
+            <p>
+                <span id="grad2">　解答　　</span>
+            </p>
+            <p>
+            2, 3
+            </p>
+        </div>
+        <div class='description'>
+            <p>
+                <span id="grad2">　解説　　</span>
+            </p>
+            <p>選択肢 1 ですが<br/>前半部分は正しい記述です。後半部分ですが、透過速度は「Fick の式」で表すことができます。Michaelis-Menten式は、酵素反応の速度式における反応速度を表す式です。よって、選択肢 1 は誤りです。</p>
+<p>選択肢 2,3 は、正しい記述です。<br/>ちなみに、二次性能動輸送は、ATP を利用して得たエネルギーでまず、イオン濃度勾配を作ります。その後、イオン濃度の差を用いて物質輸送を行います。</p>
+<p>選択肢 4 ですが<br/>膜動輸送とは、細胞膜が変形することによる輸送です。細胞膜とは、生体膜なので形態変化が起きています。よって、選択肢 4 は誤りです。</p>
+<p>以上より、正解は 2,3 です。</p>
+            </p>
+        </div>
+        </div>
+    </body>
+    <script>
+    document.getElementById("toggle").style.display="none";
+    function toggle_switch(){
+        var x = document.getElementById("toggle");
+        if (x.style.display=="block"){
+            x.style.display="none";
+        }
+        else{
+            x.style.display="block";
+        }
+    }
+    </script>
+    

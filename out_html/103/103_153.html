@@ -1,0 +1,89 @@
+
+        <!DOCTYPE html>
+    <html lang="ja">
+    <style>
+    body
+    {
+        color: black;
+        background-color: white;
+    }
+    div{
+        font-size: 14px;
+    }
+    span
+    {
+        font-size: 18px;
+    }
+    #grad1{
+        background: linear-gradient(transparent 60%,#99e4f1 30%);
+        font-size: 18px;
+        font-weight: bold;
+    }
+    #grad2{
+        background: linear-gradient(transparent 60%,#fda1a1 30%);
+        font-size: 18px;
+        font-weight: bold;
+    }
+
+    </style>
+
+    <head>
+        <meta charset="UTF-8">
+        <title>103-153</title>
+    </head>
+
+    <body>
+        <h1>
+        <a href="./103_152.html" rel="external" title="prev">≪</a>
+        103-153
+        <a href="./103_154.html" rel="external" title="next">≫</a>
+        </h1>
+        <div class='problem'>
+            <p>
+                <span id="grad1">　問題文　</span>
+            </p>
+            <p>
+                <p>糖尿病治療薬に関する記述のうち、正しいのはどれか。2つ選べ。</p>
+<ol><li>ダパグリフロジンは、尿細管のNa<sup>+</sup>/グルコース共輸送体2(SGLT2)を阻害することで尿中へのグルコースの排泄を促進する。</li><li>ブホルミンは、AMP依存性キナーゼ(AMPK)を抑制することで肝臓における糖新生を抑制する。</li><li>ミグリトールは、小腸粘膜に存在するα-グルコシダーゼを阻害することで糖の消化と吸収を遅延させ、食後高血糖を抑制する。</li><li>ナテグリニドは、アルドース還元酵素を阻害することで細胞内ソルビトールの蓄積を抑制し、末梢神経障害を改善する。</li><li>リナグリプチンは、膵β細胞上のグルカゴン様ペプチド-1(GLP-1)受容体を直接刺激することでインスリン分泌を促進する。</li></ol>    
+            </p>
+        </div>
+        <hr>
+
+        <input type="button" value="check ans" onclick="toggle_switch()"/>
+        
+        <div id='toggle'>
+        <div class='answer'>
+            <p>
+                <span id="grad2">　解答　　</span>
+            </p>
+            <p>
+            1, 3
+            </p>
+        </div>
+        <div class='description'>
+            <p>
+                <span id="grad2">　解説　　</span>
+            </p>
+            <p><span style="font-weight: 400;">選択肢 1 は、正しい記述です。<br/></span><span style="font-weight: 400;">◯◯グリフロジンと来たら SGLT2 （sodium glucose transporter 2）阻害薬です。</span></p>
+<p><span style="font-weight: 400;">選択肢 2 ですが<br/></span><span style="font-weight: 400;">ブホルミンはビグアナイド系薬です。</span><span style="font-weight: 400;">AMPK（AMP-activated protein kinase）の<strong>活性化</strong>が作用機序の一つです。</span><span style="font-weight: 400;">抑制ではありません。</span><span style="font-weight: 400;">よって、選択肢 2 は誤りです。</span></p>
+<p><span style="font-weight: 400;">選択肢 3 は、正しい記述です。</span></p>
+<p><span style="font-weight: 400;">選択肢 4 ですが<br/></span><span style="font-weight: 400;">記述はエパルレスタットについてです。</span><span style="font-weight: 400;">ナテグリニドは</span><span style="font-weight: 400;">速効性インスリン分泌促進薬です。</span><span style="font-weight: 400;">SU 構造は持たないのですが</span><span style="font-weight: 400;">SU 受容体に結合して</span><span style="font-weight: 400;">SU 薬と同様のメカニズムで作用します。</span><span style="font-weight: 400;">よって、選択肢 4 は誤りです。</span></p>
+<p><span style="font-weight: 400;">選択肢 5 ですが<br/></span><span style="font-weight: 400;">リラグルチドなどについての記述です。</span><span style="font-weight: 400;">リナグリプチンは、◯◯グリプチンなので、</span><span style="font-weight: 400;">DPP－4（Dipeptidyl Peptidase-4<b>）</b>選択的阻害薬です。</span><span style="font-weight: 400;">よって、選択肢 5 は誤りです。</span></p>
+<p><span style="font-weight: 400;">以上より、正解は 3 です。<br/></span></p>
+            </p>
+        </div>
+        </div>
+    </body>
+    <script>
+    document.getElementById("toggle").style.display="none";
+    function toggle_switch(){
+        var x = document.getElementById("toggle");
+        if (x.style.display=="block"){
+            x.style.display="none";
+        }
+        else{
+            x.style.display="block";
+        }
+    }
+    </script>
+    

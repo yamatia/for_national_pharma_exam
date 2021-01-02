@@ -1,0 +1,96 @@
+
+        <!DOCTYPE html>
+    <html lang="ja">
+    <style>
+    body
+    {
+        color: black;
+        background-color: white;
+    }
+    div{
+        font-size: 14px;
+    }
+    span
+    {
+        font-size: 18px;
+    }
+    #grad1{
+        background: linear-gradient(transparent 60%,#99e4f1 30%);
+        font-size: 18px;
+        font-weight: bold;
+    }
+    #grad2{
+        background: linear-gradient(transparent 60%,#fda1a1 30%);
+        font-size: 18px;
+        font-weight: bold;
+    }
+
+    </style>
+
+    <head>
+        <meta charset="UTF-8">
+        <title>105-218</title>
+    </head>
+
+    <body>
+        <h1>
+        <a href="./105_217.html" rel="external" title="prev">≪</a>
+        105-218
+        <a href="./105_219.html" rel="external" title="next">≫</a>
+        </h1>
+        <div class='problem'>
+            <p>
+                <span id="grad1">　問題文　</span>
+            </p>
+            <p>
+                <p>65歳男性。非小細胞肺がん(非扁平上皮がん)と診断され、切除術を受けた。2年後に再発が確認されたため、治療方針を検討することになった。患者の状態は、ステージⅣ、ECOG PS 3<sup>(</sup><sup>注)</sup>である。</p>
+<p>(注) ECOG PS (Eastern Cooperative Oncology Group performance status) 3：身の回りのことはある程度できるが、しばしば介助が必要で、日中の50%以上は就床している状態。</p>
+<h4>問218</h4>
+<p>患者の状態を考慮し、ゲフィチニブ単剤投与を検討している。投与の決定にあたり、考慮すべき患者情報として優先度が最も低いのはどれか。1つ選べ。</p>
+<ol><li>年齢</li><li>EGFR遺伝子変異</li><li>間質性肺炎の既往</li><li>再発非小細胞肺がん</li><li>ECOG PS 3</li></ol>
+<h4>問219</h4>
+<p>前問で検討している薬物に関する記述のうち、正しいのはどれか。2つ選べ。</p>
+<ol><li>EGFRのチロシンキナーゼを特異的に阻害し、細胞内シグナル伝達を抑制する。</li><li>高分子型分子標的薬である。</li><li>がん細胞が分泌する増殖因子に結合して、その分解を促進する。</li><li>標的タンパク質のアミノ酸配列の違いにより有効性が異なる場合がある。</li><li>がん細胞中の変異した遺伝子に結合して、その遺伝子を切断する制限酵素としての働きをもつ。</li></ol>    
+            </p>
+        </div>
+        <hr>
+
+        <input type="button" value="check ans" onclick="toggle_switch()"/>
+        
+        <div id='toggle'>
+        <div class='answer'>
+            <p>
+                <span id="grad2">　解答　　</span>
+            </p>
+            <p>
+            問218：1問219：1, 4
+            </p>
+        </div>
+        <div class='description'>
+            <p>
+                <span id="grad2">　解説　　</span>
+            </p>
+            <h4>問218</h4>
+<p>問 219 と合わせて解説します。</p>
+<h4>問219</h4>
+<p>ゲフィチニブ（商品名イレッサ）は、上皮成長因子受容体（EGFR）のチロシンキナーゼを選択的に阻害する低分子抗がん剤です。非小細胞肺がんに対する治療薬として使用されます。EGFR 遺伝子変異陽性であることを確認した上で用いる薬です。代表的副作用は間質性肺炎などです。</p>
+<p>以上より、問 218 の選択肢 2,3,4 は優先度が高いと考えられます。<br/>また、問 219 の正解は 1,4 です。</p>
+<p>残るは年齢と、ECOG ですが、ゲフィチニブについて、患者の全身状態が悪いほど副作用の発現率等が大きいことが知られています。従って、ECOG も優先度が高い患者情報と考えられます。</p>
+<p>以上より<br/>問 218 の正解は 1 です。<br/>問 219 の正解は 1,4 です。</p>
+            </p>
+        </div>
+        </div>
+    </body>
+    <script>
+    document.getElementById("toggle").style.display="none";
+    function toggle_switch(){
+        var x = document.getElementById("toggle");
+        if (x.style.display=="block"){
+            x.style.display="none";
+        }
+        else{
+            x.style.display="block";
+        }
+    }
+    </script>
+    

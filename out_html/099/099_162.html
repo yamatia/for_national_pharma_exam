@@ -1,0 +1,88 @@
+
+        <!DOCTYPE html>
+    <html lang="ja">
+    <style>
+    body
+    {
+        color: black;
+        background-color: white;
+    }
+    div{
+        font-size: 14px;
+    }
+    span
+    {
+        font-size: 18px;
+    }
+    #grad1{
+        background: linear-gradient(transparent 60%,#99e4f1 30%);
+        font-size: 18px;
+        font-weight: bold;
+    }
+    #grad2{
+        background: linear-gradient(transparent 60%,#fda1a1 30%);
+        font-size: 18px;
+        font-weight: bold;
+    }
+
+    </style>
+
+    <head>
+        <meta charset="UTF-8">
+        <title>99-162</title>
+    </head>
+
+    <body>
+        <h1>
+        <a href="./099_161.html" rel="external" title="prev">≪</a>
+        99-162
+        <a href="./099_163.html" rel="external" title="next">≫</a>
+        </h1>
+        <div class='problem'>
+            <p>
+                <span id="grad1">　問題文　</span>
+            </p>
+            <p>
+                <p>血小板に作用する薬物に関する記述のうち、正しいのはどれか。2つ選べ。</p>
+<ol><li>チクロピジンは、ADPのP2Y<sub>12</sub>受容体を遮断することでアデニル酸シクラーゼ活性を増強し、サイクリックAMP(cAMP)を増加させる。</li><li>シロスタゾールは、ホスホジエステラーゼⅢを選択的に阻害し、cAMPを増加させる。</li><li>サルポグレラートは、セロトニン5-HT<sub>1</sub>受容体を遮断し、細胞内カルシウムイオン濃度の上昇を抑制する。</li><li>オザグレルは、プロスタノイドTP受容体を遮断し、細胞内カルシウムイオン濃度の上昇を抑制する。</li><li>ベラプロストは、プロスタノイドIP受容体を刺激し、サイクリックGMP(cGMP)を増加させる。</li></ol>    
+            </p>
+        </div>
+        <hr>
+
+        <input type="button" value="check ans" onclick="toggle_switch()"/>
+        
+        <div id='toggle'>
+        <div class='answer'>
+            <p>
+                <span id="grad2">　解答　　</span>
+            </p>
+            <p>
+            1, 2
+            </p>
+        </div>
+        <div class='description'>
+            <p>
+                <span id="grad2">　解説　　</span>
+            </p>
+            <p>選択肢 1,2 は正しい記述です。</p>
+<p>選択肢 3 ですが<br/>サルポグレラート（アンプラーグ）は、5 – HT<span style="font-weight: 400;"><sub>2</sub></span> 遮断薬です。５－HT<span style="font-weight: 400;"><sub>1</sub></span> 遮断薬では、ありません。よって、選択肢 3 は誤りです。</p>
+<p>選択肢 4 ですが<br/>オザグレルは、トロンボキサン（TX）合成酵素阻害薬です。プロスタノイド TP 受容体遮断薬ではありません。よって、選択肢 4 は誤りです。</p>
+<p>選択肢 5 ですが<br/>ベラプロスト（プロサイリン）は、PGI<span style="font-weight: 400;"><sub>2</sub></span> 製剤です。IP 受容体に作用し、cAMP 濃度を上昇させます。cGMP では、ありません。よって、選択肢 5 は誤りです。</p>
+<p>以上より、正解は 1,2 です。</p>
+            </p>
+        </div>
+        </div>
+    </body>
+    <script>
+    document.getElementById("toggle").style.display="none";
+    function toggle_switch(){
+        var x = document.getElementById("toggle");
+        if (x.style.display=="block"){
+            x.style.display="none";
+        }
+        else{
+            x.style.display="block";
+        }
+    }
+    </script>
+    

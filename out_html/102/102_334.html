@@ -1,0 +1,89 @@
+
+        <!DOCTYPE html>
+    <html lang="ja">
+    <style>
+    body
+    {
+        color: black;
+        background-color: white;
+    }
+    div{
+        font-size: 14px;
+    }
+    span
+    {
+        font-size: 18px;
+    }
+    #grad1{
+        background: linear-gradient(transparent 60%,#99e4f1 30%);
+        font-size: 18px;
+        font-weight: bold;
+    }
+    #grad2{
+        background: linear-gradient(transparent 60%,#fda1a1 30%);
+        font-size: 18px;
+        font-weight: bold;
+    }
+
+    </style>
+
+    <head>
+        <meta charset="UTF-8">
+        <title>102-334</title>
+    </head>
+
+    <body>
+        <h1>
+        <a href="./102_333.html" rel="external" title="prev">≪</a>
+        102-334
+        <a href="./102_335.html" rel="external" title="next">≫</a>
+        </h1>
+        <div class='problem'>
+            <p>
+                <span id="grad1">　問題文　</span>
+            </p>
+            <p>
+                <p>患者情報の取扱いに関する記述のうち、薬剤師の対応として適切でないのはどれか。2つ選べ。</p>
+<ol><li>会社の上司を名乗る人物から処方内容について電話で問い合わせがあったため、患者本人の同意を得た後回答した。</li><li>当院に入院中の患者の薬物療法の相談をするため、他院に勤務する友人の薬剤師に診療録の写しを見せた。</li><li>患者が高齢の重度認知症のため、その患者家族に処方薬の説明及び指導を行った。</li><li>患者の氏名と使用医薬品名を記載したノートを製薬企業の学術担当者に見せて相談した。</li><li>事故で意識を失った患者が病院に運ばれてきたので、患者が所持していたお薬手帳の情報を担当医師に報告した。</li></ol>    
+            </p>
+        </div>
+        <hr>
+
+        <input type="button" value="check ans" onclick="toggle_switch()"/>
+        
+        <div id='toggle'>
+        <div class='answer'>
+            <p>
+                <span id="grad2">　解答　　</span>
+            </p>
+            <p>
+            2, 4
+            </p>
+        </div>
+        <div class='description'>
+            <p>
+                <span id="grad2">　解説　　</span>
+            </p>
+            <p>選択肢 1 ですが<br/>患者本人の同意が得られているため適切であると考えられます。</p>
+<p>選択肢 2 ですが<br/>このような場合、個人が特定できないように情報を加工した上で相談すべきであると考えられます。診療録には住所等も記載があり「どこの誰が、どのような病気か」といった情報は本人の同意なく伝えるべき内容ではありません。よって、選択肢 2 は誤りです。</p>
+<p>選択肢 3 は、正しい記述です。<br/>個人情報保護法　第二十三条　における第三者提供にあたりますが、処方薬の説明　及び　指導は　本人の身体、生命　の保護のために必要がある場合といえると考えられます。しかも、重度の認知症であるため本人の同意を得ることは困難です。従って家族への情報提供が適切であると考えられます。</p>
+<p>選択肢 4 ですが<br/>「誰が、どのような病気であるか」という情報は、本人の同意なく伝えるべき内容ではありません。よって、選択肢 4 は誤りです。</p>
+<p>選択肢 5 は、正しい記述です。<br/>必要があり、かつ、本人の同意を得るのが困難なケースに該当すると考えられます。</p>
+<p>以上より、正解は 2,4 です。</p>
+            </p>
+        </div>
+        </div>
+    </body>
+    <script>
+    document.getElementById("toggle").style.display="none";
+    function toggle_switch(){
+        var x = document.getElementById("toggle");
+        if (x.style.display=="block"){
+            x.style.display="none";
+        }
+        else{
+            x.style.display="block";
+        }
+    }
+    </script>
+    

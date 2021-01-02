@@ -1,0 +1,89 @@
+
+        <!DOCTYPE html>
+    <html lang="ja">
+    <style>
+    body
+    {
+        color: black;
+        background-color: white;
+    }
+    div{
+        font-size: 14px;
+    }
+    span
+    {
+        font-size: 18px;
+    }
+    #grad1{
+        background: linear-gradient(transparent 60%,#99e4f1 30%);
+        font-size: 18px;
+        font-weight: bold;
+    }
+    #grad2{
+        background: linear-gradient(transparent 60%,#fda1a1 30%);
+        font-size: 18px;
+        font-weight: bold;
+    }
+
+    </style>
+
+    <head>
+        <meta charset="UTF-8">
+        <title>99-179</title>
+    </head>
+
+    <body>
+        <h1>
+        <a href="./099_178.html" rel="external" title="prev">≪</a>
+        99-179
+        <a href="./099_180.html" rel="external" title="next">≫</a>
+        </h1>
+        <div class='problem'>
+            <p>
+                <span id="grad1">　問題文　</span>
+            </p>
+            <p>
+                <p>局所作用を目的とした製剤はどれか。2つ選べ。</p>
+<ol><li>ブプレノルフィン塩酸塩坐剤</li><li>バンコマイシン塩酸塩散</li><li>デスモプレシン酢酸塩水和物点鼻液</li><li>ブデソニド吸入液</li><li>ツロブテロール貼付剤</li></ol>    
+            </p>
+        </div>
+        <hr>
+
+        <input type="button" value="check ans" onclick="toggle_switch()"/>
+        
+        <div id='toggle'>
+        <div class='answer'>
+            <p>
+                <span id="grad2">　解答　　</span>
+            </p>
+            <p>
+            2, 4
+            </p>
+        </div>
+        <div class='description'>
+            <p>
+                <span id="grad2">　解説　　</span>
+            </p>
+            <p>バンコマイシン塩酸塩散は内服しても、ほとんど吸収されません。そのため、腸などの消化管内における局所的な、静菌・殺菌を目的として使用されます。</p>
+<p>ブデゾニドは、ステロイド吸入剤です。喘息の治療に用いられます。全身性の副作用がでにくい局所作用薬です。</p>
+<p>以上より、正解は 2,4 です。</p>
+<p>ちなみに<br/>ブプレノルフィン坐剤は、オピオイド鎮痛薬です。手術後や、吐き気などで内服が困難な時に坐剤を用いることで役に立ちます。</p>
+<p>デスモプレシンは、バソプレシン誘導体です。そのまま飲むと効果がなくなるため鼻から吸収することで、全身効果を期待する薬です。中枢性尿崩症や、夜尿症の治療薬です。</p>
+<p>ツロブテロール（ホクナリンテープ）は、β<span style="font-weight: 400;"><sub>2</sub></span> 刺激薬です。気管支拡張薬です。予防的に１日１回用います。皮膚の刺激を避けるため、毎回貼る場所を胸、背中、上腕部などで変えるよう指導する必要があります。</p>
+            </p>
+        </div>
+        </div>
+    </body>
+    <script>
+    document.getElementById("toggle").style.display="none";
+    function toggle_switch(){
+        var x = document.getElementById("toggle");
+        if (x.style.display=="block"){
+            x.style.display="none";
+        }
+        else{
+            x.style.display="block";
+        }
+    }
+    </script>
+    

@@ -1,0 +1,86 @@
+
+        <!DOCTYPE html>
+    <html lang="ja">
+    <style>
+    body
+    {
+        color: black;
+        background-color: white;
+    }
+    div{
+        font-size: 14px;
+    }
+    span
+    {
+        font-size: 18px;
+    }
+    #grad1{
+        background: linear-gradient(transparent 60%,#99e4f1 30%);
+        font-size: 18px;
+        font-weight: bold;
+    }
+    #grad2{
+        background: linear-gradient(transparent 60%,#fda1a1 30%);
+        font-size: 18px;
+        font-weight: bold;
+    }
+
+    </style>
+
+    <head>
+        <meta charset="UTF-8">
+        <title>101-176</title>
+    </head>
+
+    <body>
+        <h1>
+        <a href="./101_175.html" rel="external" title="prev">≪</a>
+        101-176
+        <a href="./101_177.html" rel="external" title="next">≫</a>
+        </h1>
+        <div class='problem'>
+            <p>
+                <span id="grad1">　問題文　</span>
+            </p>
+            <p>
+                <p>1価の弱酸性化合物(pK<sub>a</sub>=6.1)の水に対する溶解度は、pH1のとき0.1μg/mLであった。この化合物の溶解度が1mg/mLとなるpHはいくらか。最も近い値を1つ選べ。ただし、イオン形は完全に水に溶解するものとする。</p>
+<ol><li>2</li><li>5</li><li>7</li><li>10</li><li>12</li></ol>    
+            </p>
+        </div>
+        <hr>
+
+        <input type="button" value="check ans" onclick="toggle_switch()"/>
+        
+        <div id='toggle'>
+        <div class='answer'>
+            <p>
+                <span id="grad2">　解答　　</span>
+            </p>
+            <p>
+            4
+            </p>
+        </div>
+        <div class='description'>
+            <p>
+                <span id="grad2">　解説　　</span>
+            </p>
+            <p>類題  解説にもあるように「総溶解度は、溶解度を s とおくと、<strong>s ×（１＋１０<sup>pH-pKa</sup>）</strong>」と表すことができます。pH = 1 では、ほぼ s 溶けます。s ≒ 0.1 μg/mL ということです。</p>
+<p>これが、1mg/mL になるということは、1mg = 1000 μg なので、総溶解度が、10000倍になるということです。10000 = 10<span style="font-weight: 400;"><sup>4</sup></span> なので、pH – pKa = 4 であれば、ほぼ10000 倍です。pKa = 6.1 なので、条件を満たす pH は 10.1 です。</p>
+<p>以上より、正解は 4 です。</p>
+            </p>
+        </div>
+        </div>
+    </body>
+    <script>
+    document.getElementById("toggle").style.display="none";
+    function toggle_switch(){
+        var x = document.getElementById("toggle");
+        if (x.style.display=="block"){
+            x.style.display="none";
+        }
+        else{
+            x.style.display="block";
+        }
+    }
+    </script>
+    

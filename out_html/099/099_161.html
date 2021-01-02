@@ -1,0 +1,90 @@
+
+        <!DOCTYPE html>
+    <html lang="ja">
+    <style>
+    body
+    {
+        color: black;
+        background-color: white;
+    }
+    div{
+        font-size: 14px;
+    }
+    span
+    {
+        font-size: 18px;
+    }
+    #grad1{
+        background: linear-gradient(transparent 60%,#99e4f1 30%);
+        font-size: 18px;
+        font-weight: bold;
+    }
+    #grad2{
+        background: linear-gradient(transparent 60%,#fda1a1 30%);
+        font-size: 18px;
+        font-weight: bold;
+    }
+
+    </style>
+
+    <head>
+        <meta charset="UTF-8">
+        <title>99-161</title>
+    </head>
+
+    <body>
+        <h1>
+        <a href="./099_160.html" rel="external" title="prev">≪</a>
+        99-161
+        <a href="./099_162.html" rel="external" title="next">≫</a>
+        </h1>
+        <div class='problem'>
+            <p>
+                <span id="grad1">　問題文　</span>
+            </p>
+            <p>
+                <p>糖尿病治療薬に関する記述のうち、正しいのはどれか。2つ選べ。</p>
+<ol><li>ミグリトールは、α-グルコシダーゼ阻害作用とα-アミラーゼ阻害作用により食後高血糖を抑制する。</li><li>グリベンクラミドは、血糖依存的にインスリン分泌を促進する。</li><li>ピオグリタゾンは、アディポネクチンの産生を高め、インスリン抵抗性を改善する。</li><li>メトホルミンは、AMP依存性プロテインキナーゼを抑制することにより、肝臓での糖新生を抑制する。</li><li>ミチグリニドは、スルホニル尿素(SU)構造を持たないが、膵β細胞のSU受容体に結合する。</li></ol>    
+            </p>
+        </div>
+        <hr>
+
+        <input type="button" value="check ans" onclick="toggle_switch()"/>
+        
+        <div id='toggle'>
+        <div class='answer'>
+            <p>
+                <span id="grad2">　解答　　</span>
+            </p>
+            <p>
+            3, 5
+            </p>
+        </div>
+        <div class='description'>
+            <p>
+                <span id="grad2">　解説　　</span>
+            </p>
+            <p>選択肢 1 ですが<br/>ミグリトール（セイブル）は、α－グルコシダーゼ阻害薬（α－GI）です。特徴として、α－アミラーゼ阻害作用はありません。よって、選択肢 1 は誤りです。</p>
+<p>ちなみに、α－アミラーゼ阻害作用がある α－GI は、アカルボース（グルコバイ）です。α－アミラーゼが阻害されると、でんぷんが未分解のまま大腸に到達し、放屁などの消化器症状の原因となります。</p>
+<p>選択肢 2 ですが<br/>グリベンクラミドは、SU 薬です。血糖非依存的 血糖降下薬です。よって、選択肢 2 は誤りです。ちなみに、血糖依存的な糖尿病治療薬としては、インクレチン関連薬（シダクリプチン（ジャヌビア）など）があります。</p>
+<p>選択肢 3 は、正しい記述です。</p>
+<p>選択肢 4 ですが<br/>メトホルミンは、AMP 依存性プロテインキナーゼ系をを活性化させます。抑制では、ありません。よって、選択肢 4 は誤りです。</p>
+<p>選択肢 5 は、正しい記述です。</p>
+<p>以上より、正解は 3,5 です。</p>
+            </p>
+        </div>
+        </div>
+    </body>
+    <script>
+    document.getElementById("toggle").style.display="none";
+    function toggle_switch(){
+        var x = document.getElementById("toggle");
+        if (x.style.display=="block"){
+            x.style.display="none";
+        }
+        else{
+            x.style.display="block";
+        }
+    }
+    </script>
+    

@@ -1,0 +1,87 @@
+
+        <!DOCTYPE html>
+    <html lang="ja">
+    <style>
+    body
+    {
+        color: black;
+        background-color: white;
+    }
+    div{
+        font-size: 14px;
+    }
+    span
+    {
+        font-size: 18px;
+    }
+    #grad1{
+        background: linear-gradient(transparent 60%,#99e4f1 30%);
+        font-size: 18px;
+        font-weight: bold;
+    }
+    #grad2{
+        background: linear-gradient(transparent 60%,#fda1a1 30%);
+        font-size: 18px;
+        font-weight: bold;
+    }
+
+    </style>
+
+    <head>
+        <meta charset="UTF-8">
+        <title>105-48</title>
+    </head>
+
+    <body>
+        <h1>
+        <a href="./105_047.html" rel="external" title="prev">≪</a>
+        105-48
+        <a href="./105_049.html" rel="external" title="next">≫</a>
+        </h1>
+        <div class='problem'>
+            <p>
+                <span id="grad1">　問題文　</span>
+            </p>
+            <p>
+                <p>濃度0.01mol/kgの水溶液にしたとき、凝固点降下度が最も大きいのはどれか。1つ選べ。</p>
+<ol><li>D-グルコース</li><li>L-アスコルビン酸ナトリウム</li><li>L-ロイシン</li><li>塩化カルシウム</li><li>塩化ナトリウム</li></ol>    
+            </p>
+        </div>
+        <hr>
+
+        <input type="button" value="check ans" onclick="toggle_switch()"/>
+        
+        <div id='toggle'>
+        <div class='answer'>
+            <p>
+                <span id="grad2">　解答　　</span>
+            </p>
+            <p>
+            4
+            </p>
+        </div>
+        <div class='description'>
+            <p>
+                <span id="grad2">　解説　　</span>
+            </p>
+            <p>凝固点降下度は、束一的性質です。存在する溶質粒子の数のみに依存します。</p>
+<p>0.01 mol/kg とモル濃度が決まっているので、溶液中で解離して粒子数が増えるかどうかに注目します。すると CaCl<span style="font-weight: 400;"><sub>2</sub></span> が、１分子 → 3 粒子（Ca<span style="font-weight: 400;"><sup>2+</sup></span> １つと、Cl<span style="font-weight: 400;"><sup>–</sup></span> ２つ）に電離するので、一番凝固点降下度が大きいと考えられます。</p>
+<p>以上より、正解は 4 です。</p>
+<p>参考）</p>
+            </p>
+        </div>
+        </div>
+    </body>
+    <script>
+    document.getElementById("toggle").style.display="none";
+    function toggle_switch(){
+        var x = document.getElementById("toggle");
+        if (x.style.display=="block"){
+            x.style.display="none";
+        }
+        else{
+            x.style.display="block";
+        }
+    }
+    </script>
+    

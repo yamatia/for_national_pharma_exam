@@ -1,0 +1,90 @@
+
+        <!DOCTYPE html>
+    <html lang="ja">
+    <style>
+    body
+    {
+        color: black;
+        background-color: white;
+    }
+    div{
+        font-size: 14px;
+    }
+    span
+    {
+        font-size: 18px;
+    }
+    #grad1{
+        background: linear-gradient(transparent 60%,#99e4f1 30%);
+        font-size: 18px;
+        font-weight: bold;
+    }
+    #grad2{
+        background: linear-gradient(transparent 60%,#fda1a1 30%);
+        font-size: 18px;
+        font-weight: bold;
+    }
+
+    </style>
+
+    <head>
+        <meta charset="UTF-8">
+        <title>105-18</title>
+    </head>
+
+    <body>
+        <h1>
+        <a href="./105_017.html" rel="external" title="prev">≪</a>
+        105-18
+        <a href="./105_019.html" rel="external" title="next">≫</a>
+        </h1>
+        <div class='problem'>
+            <p>
+                <span id="grad1">　問題文　</span>
+            </p>
+            <p>
+                <p>食中毒を引き起こす自然毒のうち、植物に由来するのはどれか。1つ選べ。</p>
+<ol><li>サキシトキシン</li><li>シガトキシン</li><li>チャコニン</li><li>ジノフィシストキシン</li><li>テトロドトキシン</li></ol>    
+            </p>
+        </div>
+        <hr>
+
+        <input type="button" value="check ans" onclick="toggle_switch()"/>
+        
+        <div id='toggle'>
+        <div class='answer'>
+            <p>
+                <span id="grad2">　解答　　</span>
+            </p>
+            <p>
+            3
+            </p>
+        </div>
+        <div class='description'>
+            <p>
+                <span id="grad2">　解説　　</span>
+            </p>
+            <p>選択肢 1 ですが<br/>サキシトキシンは、有毒渦鞭毛藻を摂食した貝類が蓄積する麻痺性貝毒です。植物由来ではありません。よって、選択肢 1 は誤りです。（)</p>
+<p>選択肢 2 ですが<br/>シガトキシンは、。熱帯の魚を食べておきる食中毒の原因です。植物由来ではありません。よって、選択肢 2 は誤りです。</p>
+<p>選択肢 3 は妥当な記述です。<br/>チャコニンは、ジャガイモの芽などに含まれる天然毒素です。（)</p>
+<p>選択肢 4 ですが<br/>ジノフィシストキシンは、オカダ酸の類似化合物です。二枚貝に含まれる下痢性貝毒の一種です。植物由来ではありません。よって、選択肢 4 は誤りです。</p>
+<p>選択肢 5 ですが<br/>テトロドトキシンは、フグ毒です。植物由来ではありません。よって、選択肢 5 は誤りです。</p>
+<p>以上より、正解は 3 です。</p>
+<p>参考）</p>
+            </p>
+        </div>
+        </div>
+    </body>
+    <script>
+    document.getElementById("toggle").style.display="none";
+    function toggle_switch(){
+        var x = document.getElementById("toggle");
+        if (x.style.display=="block"){
+            x.style.display="none";
+        }
+        else{
+            x.style.display="block";
+        }
+    }
+    </script>
+    

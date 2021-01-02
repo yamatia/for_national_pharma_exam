@@ -1,0 +1,91 @@
+
+        <!DOCTYPE html>
+    <html lang="ja">
+    <style>
+    body
+    {
+        color: black;
+        background-color: white;
+    }
+    div{
+        font-size: 14px;
+    }
+    span
+    {
+        font-size: 18px;
+    }
+    #grad1{
+        background: linear-gradient(transparent 60%,#99e4f1 30%);
+        font-size: 18px;
+        font-weight: bold;
+    }
+    #grad2{
+        background: linear-gradient(transparent 60%,#fda1a1 30%);
+        font-size: 18px;
+        font-weight: bold;
+    }
+
+    </style>
+
+    <head>
+        <meta charset="UTF-8">
+        <title>105-187</title>
+    </head>
+
+    <body>
+        <h1>
+        <a href="./105_186.html" rel="external" title="prev">≪</a>
+        105-187
+        <a href="./105_188.html" rel="external" title="next">≫</a>
+        </h1>
+        <div class='problem'>
+            <p>
+                <span id="grad1">　問題文　</span>
+            </p>
+            <p>
+                <p>25歳女性。身長158cm、体重53kg。最近、姿勢の変動に伴い、頭痛、動悸及び発汗を認めたため心配になり病院を受診した。来院時の所見は以下のとおりであった。</p>
+<p>血圧 188/106mmHg、脈拍 110回/分</p>
+<p>血液検査：空腹時血糖値 104mg/dL、HbA1c 5.9%(NGSP値)、Na 137mEq/L、K 4.2mEq/L</p>
+<p>腹部CT検査：右副腎に5cm大の腫瘤</p>
+<p>検査の結果、右副腎腫瘍の摘出術を行うこととなった。術前の血圧管理のために最初に用いる薬物として最も適切なのはどれか。1つ選べ。</p>
+<ol><li>トリクロルメチアジド</li><li>プロプラノロール塩酸塩</li><li>カンデサルタンシレキセチル</li><li>ニフェジピン</li><li>ドキサゾシンメシル酸塩</li></ol>    
+            </p>
+        </div>
+        <hr>
+
+        <input type="button" value="check ans" onclick="toggle_switch()"/>
+        
+        <div id='toggle'>
+        <div class='answer'>
+            <p>
+                <span id="grad2">　解答　　</span>
+            </p>
+            <p>
+            5
+            </p>
+        </div>
+        <div class='description'>
+            <p>
+                <span id="grad2">　解説　　</span>
+            </p>
+            <p>副腎腫瘍により、副腎機能亢進で、アドレナリンなどが過剰に出ていてすごく高い血圧、速い脈拍になっているということと考えられます。交感神経に作用する遮断薬が妥当と考えられるため、選択肢 2 or 5 となります。</p>
+<p>低 K 血症がない点から、褐色細胞腫と考えられます。（ちなみに、もし低 K 血症が見られた場合はアルドステロン症が考えられます。）</p>
+<p>血圧コントロールのために、α 遮断薬、β 遮断薬共に用いられるのですが、まずα 遮断薬を用います。先に β 遮断薬を使うと、むしろ血圧が上昇してしまうからです。（参考 )</p>
+<p>以上より、正解は 5 です。</p>
+            </p>
+        </div>
+        </div>
+    </body>
+    <script>
+    document.getElementById("toggle").style.display="none";
+    function toggle_switch(){
+        var x = document.getElementById("toggle");
+        if (x.style.display=="block"){
+            x.style.display="none";
+        }
+        else{
+            x.style.display="block";
+        }
+    }
+    </script>
+    

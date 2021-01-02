@@ -1,0 +1,99 @@
+
+        <!DOCTYPE html>
+    <html lang="ja">
+    <style>
+    body
+    {
+        color: black;
+        background-color: white;
+    }
+    div{
+        font-size: 14px;
+    }
+    span
+    {
+        font-size: 18px;
+    }
+    #grad1{
+        background: linear-gradient(transparent 60%,#99e4f1 30%);
+        font-size: 18px;
+        font-weight: bold;
+    }
+    #grad2{
+        background: linear-gradient(transparent 60%,#fda1a1 30%);
+        font-size: 18px;
+        font-weight: bold;
+    }
+
+    </style>
+
+    <head>
+        <meta charset="UTF-8">
+        <title>105-282</title>
+    </head>
+
+    <body>
+        <h1>
+        <a href="./105_281.html" rel="external" title="prev">≪</a>
+        105-282
+        <a href="./105_283.html" rel="external" title="next">≫</a>
+        </h1>
+        <div class='problem'>
+            <p>
+                <span id="grad1">　問題文　</span>
+            </p>
+            <p>
+                <p>73歳女性。卵巣がんStageⅢcに対してTC(パクリタキセル＋カルボプラチン)療法を施行していたが6ヶ月後に再発した。そこで2次療法として、ドキソルビシン塩酸塩をMPEG-DSPE<sup>(</sup><sup>注)</sup>修飾リポソームに封入した注射剤(ドキシル<sup>®</sup>注)を導入することになった。</p>
+<p>注：N-(Carbonyl-methoxypolyethylene glycol 2000)-1,2-distearoyl-<em>sn</em>-glycero-3-phosphoethanolamine sodium salt</p>
+<h4>問282</h4>
+<p>ドキシル<sup>®</sup>注に関する記述のうち、正しいのはどれか。2つ選べ。</p>
+<ol><li>添加物に卵由来の成分が含まれているので、卵アレルギーの患者には慎重に投与する。</li><li>ステルス機能を有する能動的ターゲティング製剤である。</li><li>希釈には生理食塩液を使用する。</li><li>従来のドキソルビシン塩酸塩製剤に比べて、インフュージョンリアクションが現れやすい。</li><li>リポソームへのMPEG-DSPE修飾により、細網内皮系に異物として認識されにくい。</li></ol>
+<h4>問283</h4>
+<p>5コース目の投与中に、患者から、刺入部に耐え難い焼かれるような痛みを感じ、赤く腫れているとの訴えがあり、ドキシル<sup>®</sup>注の血管外漏出が疑われた。本剤の血管外漏出の対処法として、適切なのはどれか。2つ選べ。</p>
+<ol><li>患部を温める。</li><li>すぐに留置針を抜く。</li><li>患部を生理食塩液でフラッシュする。</li><li>デクスラゾキサンを静脈内投与する。</li><li>漏出部周囲から薬液や血液を吸引・除去する。</li></ol>    
+            </p>
+        </div>
+        <hr>
+
+        <input type="button" value="check ans" onclick="toggle_switch()"/>
+        
+        <div id='toggle'>
+        <div class='answer'>
+            <p>
+                <span id="grad2">　解答　　</span>
+            </p>
+            <p>
+            問282：4, 5問283：4, 5
+            </p>
+        </div>
+        <div class='description'>
+            <p>
+                <span id="grad2">　解説　　</span>
+            </p>
+            <h4>問282</h4>
+<p>選択肢 1 ですが<br/>卵由来の成分は含まれていません。ドキシルで注意しなければいけないのは「大豆」アレルギーです。大豆由来の成分が含まれています。よって、選択肢 1 は誤りです。</p>
+<p>選択肢 2 ですが<br/>能動的ターゲッティングとは、抗体などを用いることで積極的に標的部位に薬物を送達させるような技術の総称です。リポソーム修飾によるターゲッティングは「受動的」です。よって、選択肢 2 は誤りです。ちなみに、ステルス機能、すなわち、細網内皮系による捕捉を効率よく免れる　という記述は妥当です。</p>
+<p>選択肢 3 ですが<br/>リポソーム製剤なので、食塩水による希釈は白濁、沈殿の恐れがあると考えられます。５％ ブドウ糖注射液で希釈します。よって、選択肢 3 は誤りです。</p>
+<p>選択肢 4,5 は妥当な記述です。</p>
+<p>以上より、正解は 4,5 です。</p>
+<h4>問283</h4>
+<p>血管外漏出が疑われた際は、慌てず薬剤の滴下中止 <br/>→ 血液吸引、残存薬剤除去の後抜針<br/>→壊死性抗癌剤や炎症性抗癌剤が漏出した場合、ステロイド及びリドカインを注射<br/>→外用処置としては患部にステロイド軟膏を塗布し冷湿布</p>
+<p>といった処置を行います。</p>
+<p>以上より、正解は 4,5 です。</p>
+            </p>
+        </div>
+        </div>
+    </body>
+    <script>
+    document.getElementById("toggle").style.display="none";
+    function toggle_switch(){
+        var x = document.getElementById("toggle");
+        if (x.style.display=="block"){
+            x.style.display="none";
+        }
+        else{
+            x.style.display="block";
+        }
+    }
+    </script>
+    

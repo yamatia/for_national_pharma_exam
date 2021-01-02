@@ -1,0 +1,87 @@
+
+        <!DOCTYPE html>
+    <html lang="ja">
+    <style>
+    body
+    {
+        color: black;
+        background-color: white;
+    }
+    div{
+        font-size: 14px;
+    }
+    span
+    {
+        font-size: 18px;
+    }
+    #grad1{
+        background: linear-gradient(transparent 60%,#99e4f1 30%);
+        font-size: 18px;
+        font-weight: bold;
+    }
+    #grad2{
+        background: linear-gradient(transparent 60%,#fda1a1 30%);
+        font-size: 18px;
+        font-weight: bold;
+    }
+
+    </style>
+
+    <head>
+        <meta charset="UTF-8">
+        <title>104-19</title>
+    </head>
+
+    <body>
+        <h1>
+        <a href="./104_018.html" rel="external" title="prev">≪</a>
+        104-19
+        <a href="./104_020.html" rel="external" title="next">≫</a>
+        </h1>
+        <div class='problem'>
+            <p>
+                <span id="grad1">　問題文　</span>
+            </p>
+            <p>
+                <p>ロコモティブシンドローム(運動器症候群)の主な要因となる疾患として、最も適切なのはどれか。1つ選べ。</p>
+<ol><li>脂質異常症</li><li>COPD</li><li>高血圧症</li><li>骨粗しょう症</li><li>逆流性食道炎</li></ol>    
+            </p>
+        </div>
+        <hr>
+
+        <input type="button" value="check ans" onclick="toggle_switch()"/>
+        
+        <div id='toggle'>
+        <div class='answer'>
+            <p>
+                <span id="grad2">　解答　　</span>
+            </p>
+            <p>
+            4
+            </p>
+        </div>
+        <div class='description'>
+            <p>
+                <span id="grad2">　解説　　</span>
+            </p>
+            <p><b>ロコモティブシンドローム</b><span style="font-weight: 400;">とは、</span><span style="font-weight: 400;">骨や関節といった運動器の障害や衰えにより、歩行困難など、要介護になるリスクが高まる状態のことです。</span><b>運動器機能不全</b><span style="font-weight: 400;">のことです。日本整形外科学会が提唱し、健康寿命延伸の観点、QOLの維持の観点から注目されています。</span></p>
+<p><span style="font-weight: 400;">選択肢の中で「主な要因」となるのは、骨粗しょう症と考えられます。骨粗しょう症は、ロコモティブシンドロームの三大原因疾患の一つといわれます。ちなみに残り２つは 「変形性膝関節症」、「脊柱管狭窄症」 です。</span></p>
+<p><span style="font-weight: 400;">以上より、正解は 4 です。</span></p>
+<p><span style="font-weight: 400;">ちなみに、</span><span style="font-weight: 400;">メタボリックシンドロームが、主に「内蔵器」に関する生活習慣病です。これと対応する形で運動器に関する機能不全がロコモです。内臓器、運動器の両面からケアすることが、健康寿命の増進に重要であるといえます。（個人的には、これに精神面を含めた３面からのケアが重要であると感じます。）</span></p>
+            </p>
+        </div>
+        </div>
+    </body>
+    <script>
+    document.getElementById("toggle").style.display="none";
+    function toggle_switch(){
+        var x = document.getElementById("toggle");
+        if (x.style.display=="block"){
+            x.style.display="none";
+        }
+        else{
+            x.style.display="block";
+        }
+    }
+    </script>
+    

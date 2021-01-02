@@ -1,0 +1,98 @@
+
+        <!DOCTYPE html>
+    <html lang="ja">
+    <style>
+    body
+    {
+        color: black;
+        background-color: white;
+    }
+    div{
+        font-size: 14px;
+    }
+    span
+    {
+        font-size: 18px;
+    }
+    #grad1{
+        background: linear-gradient(transparent 60%,#99e4f1 30%);
+        font-size: 18px;
+        font-weight: bold;
+    }
+    #grad2{
+        background: linear-gradient(transparent 60%,#fda1a1 30%);
+        font-size: 18px;
+        font-weight: bold;
+    }
+
+    </style>
+
+    <head>
+        <meta charset="UTF-8">
+        <title>104-250</title>
+    </head>
+
+    <body>
+        <h1>
+        <a href="./104_249.html" rel="external" title="prev">≪</a>
+        104-250
+        <a href="./104_251.html" rel="external" title="next">≫</a>
+        </h1>
+        <div class='problem'>
+            <p>
+                <span id="grad1">　問題文　</span>
+            </p>
+            <p>
+                <p>75歳男性。7年前にパーキンソン病と診断され、レボドパ・ベンセラジド塩酸塩配合錠の投与によって日常生活は問題のないレベルを維持してきた。胃がんの手術のため外科病棟に入院したところ、この配合錠を正しく服用しているにもかかわらず、症状の日内変動(wearing−off現象)が認められるようになった。</p>
+<h4>問250</h4>
+<p>外科の主治医から病棟担当薬剤師に、wearing−offの治療に関する相談があり、一剤追加することになった。提案すべき併用薬物として適切なのはどれか。2つ選べ。</p>
+<ol><li>トリヘキシフェニジル塩酸塩</li><li>イストラデフィリン</li><li>ドロキシドパ</li><li>ビペリデン塩酸塩</li><li>エンタカポン</li></ol>
+<h4>問251</h4>
+<p>前問で提案すべき併用薬物の作用機序として正しいのはどれか。2つ選べ。</p>
+<ol><li>線条体において、アデノシンA<sub>2A</sub>受容体を遮断する。</li><li>線条体において、ドパミンD<sub>2</sub>受容体を遮断する。</li><li>芳香族L−アミノ酸脱炭酸酵素によりノルアドレナリンに変換され、脳内のノルアドレナリンを補充する。</li><li>主に末梢において、カテコール−<em>O</em>−メチルトランスフェラーゼ(COMT)を阻害し、レボドパの代謝を抑制する。</li><li>線条体において、ムスカリン性アセチルコリン受容体を遮断する。</li></ol>    
+            </p>
+        </div>
+        <hr>
+
+        <input type="button" value="check ans" onclick="toggle_switch()"/>
+        
+        <div id='toggle'>
+        <div class='answer'>
+            <p>
+                <span id="grad2">　解答　　</span>
+            </p>
+            <p>
+            問250：2, 5問251：1, 4
+            </p>
+        </div>
+        <div class='description'>
+            <p>
+                <span id="grad2">　解説　　</span>
+            </p>
+            <h4>問250</h4>
+<p>問251 とまとめて解説します。</p>
+<h4>問251</h4>
+<p><span style="font-weight: 400;">朝、昼、夜と1日3回服薬しても L ドパの効果が切れる時間が出てきた場合を、<strong>ウエアリング・オフ現象</strong>といいます。レボドパのより多い回数での投与、ドパミン作動薬、COMT阻害薬、アデノシン受容体拮抗薬などが用いられます。</span></p>
+<p><span style="font-weight: 400;">選択肢 1 ですが<br/></span><span style="font-weight: 400;">トリヘキシフェニジルは抗コリン薬です。wearing ー off に対して用いる薬物としては適切ではないと考えられます。よって、選択肢 1 は誤りです。</span></p>
+<p><span style="font-weight: 400;">選択肢 2 は妥当な記述です。<br/></span><span style="font-weight: 400;">イストラデフィリンは、アデノシン受容体拮抗薬です。（103-165）</span></p>
+<p><span style="font-weight: 400;">選択肢 3 ですが<br/></span><span style="font-weight: 400;">ドロキシドパはノルアドレナリン製剤です。すくみ足改善などに用いられます。wearing ー off に対して用いる薬物としては適切ではないと考えられます。よって、選択肢 3 は誤りです。</span></p>
+<p><span style="font-weight: 400;">選択肢 4 ですが<br/></span><span style="font-weight: 400;">ビペリデンは抗コリン薬です。wearing ー off に対して用いる薬物としては適切ではないと考えられます。よって、選択肢 4 は誤りです。</span></p>
+<p><span style="font-weight: 400;">選択肢 5 は妥当な記述です。<br/></span><span style="font-weight: 400;">エンタカポンは COMT 阻害薬です。COMT は、ドパミン等の代謝酵素です。代謝酵素を阻害することで、ドパミンの効果を増強します。レボドパ製剤と併用します。</span></p>
+<p><span style="font-weight: 400;">以上より、問250 の正解は 2,5 です。<br/></span><span style="font-weight: 400;">問251 の正解は 1,4 です。</span></p>
+            </p>
+        </div>
+        </div>
+    </body>
+    <script>
+    document.getElementById("toggle").style.display="none";
+    function toggle_switch(){
+        var x = document.getElementById("toggle");
+        if (x.style.display=="block"){
+            x.style.display="none";
+        }
+        else{
+            x.style.display="block";
+        }
+    }
+    </script>
+    

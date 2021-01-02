@@ -1,0 +1,88 @@
+
+        <!DOCTYPE html>
+    <html lang="ja">
+    <style>
+    body
+    {
+        color: black;
+        background-color: white;
+    }
+    div{
+        font-size: 14px;
+    }
+    span
+    {
+        font-size: 18px;
+    }
+    #grad1{
+        background: linear-gradient(transparent 60%,#99e4f1 30%);
+        font-size: 18px;
+        font-weight: bold;
+    }
+    #grad2{
+        background: linear-gradient(transparent 60%,#fda1a1 30%);
+        font-size: 18px;
+        font-weight: bold;
+    }
+
+    </style>
+
+    <head>
+        <meta charset="UTF-8">
+        <title>102-95</title>
+    </head>
+
+    <body>
+        <h1>
+        <a href="./102_094.html" rel="external" title="prev">≪</a>
+        102-95
+        <a href="./102_096.html" rel="external" title="next">≫</a>
+        </h1>
+        <div class='problem'>
+            <p>
+                <span id="grad1">　問題文　</span>
+            </p>
+            <p>
+                <p>ある受容体(R)に結合するリガンド(L)があり、LはRと1：1で結合する。この平衡反応の解離定数(K<sub>d</sub>)を1μMとする。1μMのRが存在しているところにLの濃度が(　ア　)μMとなるように添加したとき、平衡状態において全受容体のうちLが結合した受容体の割合は20%となった。</p>
+<p>(　ア　)にあてはまる数値に最も近いのはどれか。1つ選べ。ただし、系の体積変化は無視できるものとする。</p>
+<ol><li>0.25</li><li>0.45</li><li>0.50</li><li>0.75</li><li>0.80</li></ol>    
+            </p>
+        </div>
+        <hr>
+
+        <input type="button" value="check ans" onclick="toggle_switch()"/>
+        
+        <div id='toggle'>
+        <div class='answer'>
+            <p>
+                <span id="grad2">　解答　　</span>
+            </p>
+            <p>
+            2
+            </p>
+        </div>
+        <div class='description'>
+            <p>
+                <span id="grad2">　解説　　</span>
+            </p>
+            <p>R＋L ⇄ RL　、Kd＝［RL］／［R］［L］と表すことができます。</p>
+<p>問題文より、初めに1 μM の R が存在しており、平衡状態では、RL が 0.2 、R が 0.8 です。添加したうち、0.2 が受容体と結合してるから、L を x μM　添加したとすれば、<strong>平衡状態では x – 0.2</strong> です。また、Kd は、やはり問題文から 1 とわかっています。以上より、<strong>1 = [0.2]/[0.8][x – 0.2]　を満たすような x がわかればよい</strong>ということです。</p>
+<p>この x を求めればよいのですが、正解は選択肢の 5 つのうちどれかです。そこで代入して確認すると、x = 0.45　が正解とわかります。（右辺＝0.2/（0.8 × 0.25） = 1 ＝左辺となります。）</p>
+<p>以上より、正解は 2 です。</p>
+            </p>
+        </div>
+        </div>
+    </body>
+    <script>
+    document.getElementById("toggle").style.display="none";
+    function toggle_switch(){
+        var x = document.getElementById("toggle");
+        if (x.style.display=="block"){
+            x.style.display="none";
+        }
+        else{
+            x.style.display="block";
+        }
+    }
+    </script>
+    

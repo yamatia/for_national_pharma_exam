@@ -1,0 +1,98 @@
+
+        <!DOCTYPE html>
+    <html lang="ja">
+    <style>
+    body
+    {
+        color: black;
+        background-color: white;
+    }
+    div{
+        font-size: 14px;
+    }
+    span
+    {
+        font-size: 18px;
+    }
+    #grad1{
+        background: linear-gradient(transparent 60%,#99e4f1 30%);
+        font-size: 18px;
+        font-weight: bold;
+    }
+    #grad2{
+        background: linear-gradient(transparent 60%,#fda1a1 30%);
+        font-size: 18px;
+        font-weight: bold;
+    }
+
+    </style>
+
+    <head>
+        <meta charset="UTF-8">
+        <title>101-286</title>
+    </head>
+
+    <body>
+        <h1>
+        <a href="./101_285.html" rel="external" title="prev">≪</a>
+        101-286
+        <a href="./101_287.html" rel="external" title="next">≫</a>
+        </h1>
+        <div class='problem'>
+            <p>
+                <span id="grad1">　問題文　</span>
+            </p>
+            <p>
+                <p>40歳男性。活動期のクローン病と診断された。主治医より患者の栄養状態把握及び改善のため、院内栄養サポートチームに介入の依頼があった。</p>
+<h4>問286</h4>
+<p>この患者に対する栄養療法に関して、薬剤師が院内栄養サポートチームでとるべき対応について、適切なのはどれか。2つ選べ。</p>
+<ol><li>消化及び吸収障害が重篤な場合は、半消化態栄養剤を第一選択として提案する。</li><li>成分栄養剤を用いる場合は、脂溶性ビタミンや不足する微量元素の投与を提案する。</li><li>重度な下痢症状が認められたり、広範な小腸病変が認められる場合は、TPN(Total Parenteral Nutrition)の実施を提案する。</li><li>栄養療法と薬物療法の併用は推奨されないことを提案する。</li><li>経腸栄養療法と併用する食事としては高脂肪食を提案する。</li></ol>
+<h4>問287</h4>
+<p>クローン病に関する記述のうち、正しいのはどれか。2つ選べ。</p>
+<ol><li>緩解と増悪を繰り返す。</li><li>小腸及び大腸に病変が限局する。</li><li>薬物治療により根治できる。</li><li>好発年齢は10歳代後半から20歳代である。</li><li>ほとんどの症例に粘血便が見られる。</li></ol>    
+            </p>
+        </div>
+        <hr>
+
+        <input type="button" value="check ans" onclick="toggle_switch()"/>
+        
+        <div id='toggle'>
+        <div class='answer'>
+            <p>
+                <span id="grad2">　解答　　</span>
+            </p>
+            <p>
+            問286：2, 3問287：1, 4
+            </p>
+        </div>
+        <div class='description'>
+            <p>
+                <span id="grad2">　解説　　</span>
+            </p>
+            <h4>問286</h4>
+<p>半消化態栄養剤とは、主要な栄養素がそのまま含まれており体内での消化が必要な栄養剤です。消化吸収障害が重篤な患者には適切では、ありません。よって、選択肢 1 は誤りです。</p>
+<p>選択肢 2,3 は、正しい選択肢です。</p>
+<p>選択肢 4 ですが<br/>栄養療法と薬物療法は併用を避けるべきものではありません。むしろ、うまく併用することでそれぞれ単独を超える効果を期待することができます。選択肢 4 は誤りです。</p>
+<p>選択肢 5 ですが<br/>クローン病の患者の食事は、腸管の炎症や病変の悪化を防ぐため脂肪摂取量を制限します。高脂肪食を提案することは、誤りです。よって、選択肢 5 は誤りです。</p>
+<p>以上より、正解は 2,3 です。</p>
+<h4>問287</h4>
+<p>クローン病とは、１０～３０代好発の消化管のいたるところに炎症や潰瘍が生じる病気です。慢性に寛解と再燃を繰り返し継続的治療が必要です。現在のところ、根治療法は確立されていません。</p>
+<p>ちなみに粘血便は、潰瘍性大腸炎に特徴的な症状です。クローン病でも、見られることはありますがほとんどの症状に見られるということはありません。</p>
+<p>以上より、正解は 1,4 です。</p>
+            </p>
+        </div>
+        </div>
+    </body>
+    <script>
+    document.getElementById("toggle").style.display="none";
+    function toggle_switch(){
+        var x = document.getElementById("toggle");
+        if (x.style.display=="block"){
+            x.style.display="none";
+        }
+        else{
+            x.style.display="block";
+        }
+    }
+    </script>
+    

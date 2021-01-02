@@ -1,0 +1,100 @@
+
+        <!DOCTYPE html>
+    <html lang="ja">
+    <style>
+    body
+    {
+        color: black;
+        background-color: white;
+    }
+    div{
+        font-size: 14px;
+    }
+    span
+    {
+        font-size: 18px;
+    }
+    #grad1{
+        background: linear-gradient(transparent 60%,#99e4f1 30%);
+        font-size: 18px;
+        font-weight: bold;
+    }
+    #grad2{
+        background: linear-gradient(transparent 60%,#fda1a1 30%);
+        font-size: 18px;
+        font-weight: bold;
+    }
+
+    </style>
+
+    <head>
+        <meta charset="UTF-8">
+        <title>100-318</title>
+    </head>
+
+    <body>
+        <h1>
+        <a href="./100_317.html" rel="external" title="prev">≪</a>
+        100-318
+        <a href="./100_319.html" rel="external" title="next">≫</a>
+        </h1>
+        <div class='problem'>
+            <p>
+                <span id="grad1">　問題文　</span>
+            </p>
+            <p>
+                <p>30歳女性。薬局に便秘薬を求めて来局した。会話の中からこの女性は授乳中であることがわかった。</p>
+<h4>問318</h4>
+<p>一般用医薬品に含有される成分のうち、この女性が、授乳している期間は使用しないか、使用中は授乳を避けるべきものはどれか。1つ選べ。</p>
+<ol><li>日本薬局方センナ末</li><li>ピコスルファートナトリウム水和物</li><li>ビサコジル</li><li>水酸化マグネシウム</li><li>日本薬局方グリセリン</li></ol>
+<h4>問319</h4>
+<p>この女性から、購入した一般用医薬品の外箱に表示された「医薬品副作用被害救済制度」について質問された。この制度の説明として正しいのはどれか。2つ選べ。</p>
+<ol><li>救済の内容としては、医療費、医療手当、障害年金などの給付があります。</li><li>医療用医薬品も対象となりますが、一部、この制度の対象とならないものもあります。</li><li>副作用被害が生じた場合、担当医師が独立行政法人医薬品医療機器総合機構(PMDA)に対して、医療費等の給付の請求を行うことになります。</li><li>製造販売業者の賠償責任が明らかな健康被害が生じた場合でも、この制度による救済が行われることがあります。</li><li>海外で買ってきた、外国でのみ製造販売承認を受けた医薬品もこの制度の対象になります。</li></ol>    
+            </p>
+        </div>
+        <hr>
+
+        <input type="button" value="check ans" onclick="toggle_switch()"/>
+        
+        <div id='toggle'>
+        <div class='answer'>
+            <p>
+                <span id="grad2">　解答　　</span>
+            </p>
+            <p>
+            問318：1問319：1, 2
+            </p>
+        </div>
+        <div class='description'>
+            <p>
+                <span id="grad2">　解説　　</span>
+            </p>
+            <h4>問318</h4>
+<p>授乳中に避けるべき便秘薬に含まれる成分といえば、センノシドです。乳汁に移行し、乳児が下痢をおこす可能性があることが知られています。</p>
+<p>以上より、正解は 1 です。</p>
+<p>ちなみに、その他の選択肢は授乳中でも使用可能です。また、センノシドは妊婦に使用しても、いけません。大量服用による子宮収縮誘発から流産や早産の危険性があるためです。</p>
+<h4>問319</h4>
+<p>選択肢 1 ,2 は、正しい選択肢です。</p>
+<p>選択肢 2 において<br/>制度の対象にならない場合としては、法定予防接種の場合不適正な使用によるものの場合　などです。</p>
+<p>選択肢 3 ですが<br/>副作用救済給付の請求は本人が、機構に直接行います。担当医師では、ありません。よって、選択肢 3 は誤りです。</p>
+<p>選択肢 4 ですが<br/>製造販売業者等の損害賠償責任が明らかな場合は、救済対象にはあてはまりません。</p>
+<p>この制度は、医薬品が適正に使用されてもなおリスクが存在するという特性に基づき、避けることのできない被害者を救済するという趣旨のもと作られた制度です。そのため、製造販売業者に明らかに責任がある場合、例えば、不適切な製造過程が原因で医薬品の使用者に適切な効果が表れなかったといった場合は、趣旨から外れるものでありこの制度による給付の対象とはなりません。よって、選択肢 4 は誤りです。</p>
+<p>選択肢 5 ですが<br/>国内で正規に流通していない医薬品については、健康被害について救済対象とはなりません。選択肢のような場合に加えて、個人輸入で入手した医薬品などについても同様です。よって、選択肢 5 は誤りです。</p>
+<p>以上より、正解は 1,2 です。</p>
+            </p>
+        </div>
+        </div>
+    </body>
+    <script>
+    document.getElementById("toggle").style.display="none";
+    function toggle_switch(){
+        var x = document.getElementById("toggle");
+        if (x.style.display=="block"){
+            x.style.display="none";
+        }
+        else{
+            x.style.display="block";
+        }
+    }
+    </script>
+    

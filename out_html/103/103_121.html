@@ -1,0 +1,88 @@
+
+        <!DOCTYPE html>
+    <html lang="ja">
+    <style>
+    body
+    {
+        color: black;
+        background-color: white;
+    }
+    div{
+        font-size: 14px;
+    }
+    span
+    {
+        font-size: 18px;
+    }
+    #grad1{
+        background: linear-gradient(transparent 60%,#99e4f1 30%);
+        font-size: 18px;
+        font-weight: bold;
+    }
+    #grad2{
+        background: linear-gradient(transparent 60%,#fda1a1 30%);
+        font-size: 18px;
+        font-weight: bold;
+    }
+
+    </style>
+
+    <head>
+        <meta charset="UTF-8">
+        <title>103-121</title>
+    </head>
+
+    <body>
+        <h1>
+        <a href="./103_120.html" rel="external" title="prev">≪</a>
+        103-121
+        <a href="./103_122.html" rel="external" title="next">≫</a>
+        </h1>
+        <div class='problem'>
+            <p>
+                <span id="grad1">　問題文　</span>
+            </p>
+            <p>
+                <p>交通事故により顔面を損傷し食事を経口摂取できない入院患者(20歳男性、60kg、基礎疾患なし)に、高カロリー輸液を行うことになった。身動きできないので身体活動レベルは1.2と評価された。</p>
+<p>グルコースのみでエネルギー補給する場合、1日に必要と推定されるグルコース量(g)はどれか。1つ選べ。ただし、20歳の男性の基礎代謝基準値を25.0kcal/kg体重とする。</p>
+<ol><li>200</li><li>375</li><li>450</li><li>1,800</li><li>7,200</li></ol>    
+            </p>
+        </div>
+        <hr>
+
+        <input type="button" value="check ans" onclick="toggle_switch()"/>
+        
+        <div id='toggle'>
+        <div class='answer'>
+            <p>
+                <span id="grad2">　解答　　</span>
+            </p>
+            <p>
+            3
+            </p>
+        </div>
+        <div class='description'>
+            <p>
+                <span id="grad2">　解説　　</span>
+            </p>
+            <p><span style="font-weight: 400;">基礎代謝基準値が25kcal/kg とあります。</span><span style="font-weight: 400;">患者は 60 kg なので</span><span style="font-weight: 400;">25 × 60 = 1500kcal です。</span><span style="font-weight: 400;">身体活動レベルをこれに掛けると</span><span style="font-weight: 400;">1500 × 1.2 = 1800 です。</span><span style="font-weight: 400;">グルコースは、1g あたり4kcal です。</span><span style="font-weight: 400;">以上より、1800 ÷ 4 = 450 となります。</span><span style="font-weight: 400;">正解は 3 です。</span></p>
+<p><span style="font-weight: 400;">ーー以下、完全に補足。国試には不要ーー</span></p>
+<p><span style="font-weight: 400;">ちなみにですが、</span><span style="font-weight: 400;">茶碗１杯 150g弱のごはんとして</span><span style="font-weight: 400;">ご飯の粒は水分たっぷりだから</span><span style="font-weight: 400;">その中の糖質というのは、大体50g ぐらいです。</span><span style="font-weight: 400;">つまり、本問のエネルギー補給を</span><span style="font-weight: 400;">現実的に行うと、茶碗 9 杯分ぐらいのご飯が必要です。</span><span style="font-weight: 400;">なかなか厳しい。。。ということで</span><span style="font-weight: 400;">輸液でエネルギー補給が必要だろうといった具合に</span><span style="font-weight: 400;">イメージがわくと</span><span style="font-weight: 400;">少しだけ計算に興味が面白くなってくるかもしれません。</span></p>
+<p><span style="font-weight: 400;">ーー以上、補足終了。ーー</span></p>
+            </p>
+        </div>
+        </div>
+    </body>
+    <script>
+    document.getElementById("toggle").style.display="none";
+    function toggle_switch(){
+        var x = document.getElementById("toggle");
+        if (x.style.display=="block"){
+            x.style.display="none";
+        }
+        else{
+            x.style.display="block";
+        }
+    }
+    </script>
+    

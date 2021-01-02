@@ -1,0 +1,90 @@
+
+        <!DOCTYPE html>
+    <html lang="ja">
+    <style>
+    body
+    {
+        color: black;
+        background-color: white;
+    }
+    div{
+        font-size: 14px;
+    }
+    span
+    {
+        font-size: 18px;
+    }
+    #grad1{
+        background: linear-gradient(transparent 60%,#99e4f1 30%);
+        font-size: 18px;
+        font-weight: bold;
+    }
+    #grad2{
+        background: linear-gradient(transparent 60%,#fda1a1 30%);
+        font-size: 18px;
+        font-weight: bold;
+    }
+
+    </style>
+
+    <head>
+        <meta charset="UTF-8">
+        <title>99-190</title>
+    </head>
+
+    <body>
+        <h1>
+        <a href="./099_189.html" rel="external" title="prev">≪</a>
+        99-190
+        <a href="./099_191.html" rel="external" title="next">≫</a>
+        </h1>
+        <div class='problem'>
+            <p>
+                <span id="grad1">　問題文　</span>
+            </p>
+            <p>
+                <p>緑内障の病態と薬物療法に関する記述のうち、誤っているのはどれか。1つ選べ。</p>
+<ol><li>レボドパは、原発性閉塞隅角緑内障の患者には禁忌である。</li><li>ラタノプロストは、ぶどう膜強膜流出路からの房水の流出を促進させる。</li><li>ドルゾラミド塩酸塩は、毛様体上皮細胞の炭酸脱水酵素を阻害して房水産生を抑制する。</li><li>チモロールマレイン酸塩の点眼薬は、気管支ぜん息のある患者には投与禁忌である。</li><li>ジピベフリン塩酸塩は、原発性閉塞隅角緑内障の患者に用いられる。</li></ol>    
+            </p>
+        </div>
+        <hr>
+
+        <input type="button" value="check ans" onclick="toggle_switch()"/>
+        
+        <div id='toggle'>
+        <div class='answer'>
+            <p>
+                <span id="grad2">　解答　　</span>
+            </p>
+            <p>
+            5
+            </p>
+        </div>
+        <div class='description'>
+            <p>
+                <span id="grad2">　解説　　</span>
+            </p>
+            <p>選択肢 1 ～ 4 は、その通りの記述です。</p>
+<p>選択肢 5 ですが<br/>ジピベフリン塩酸塩は、開放隅角緑内障の治療に用いられます。閉塞隅角緑内障には用いられません。よって、選択肢 5 は誤りです。</p>
+<p>以上より、正解は 5 です。</p>
+<p>補足：緑内障の分類　</p>
+<p>・大雑把に、原発　か　続発　かに分類。（続発ってのは、他の病気が一次的な原因。）</p>
+<p>・原発はさらに、開放隅角緑内障　と、閉塞隅角緑内障に分類される。この分類は、房水の出口である隅角が虹彩により塞がれているかどうか。</p>
+<p>開放隅角緑内障というのは、隅角は空いているけど、排水部分の線維柱帯が目詰りしているため、眼圧が上昇している状態。お風呂の湯船で例えるなら、そもそも浴槽のフタが閉まっているのが閉塞。フタが閉まっているから、水道から水を流すと水は外へダブダブあふれちゃう。一方、排水部分のゴム栓を閉めちゃって、フタは開いてるけど排水されないから水道から水を流すと、あふれてくるのが開放というイメージ。補足終わり</p>
+            </p>
+        </div>
+        </div>
+    </body>
+    <script>
+    document.getElementById("toggle").style.display="none";
+    function toggle_switch(){
+        var x = document.getElementById("toggle");
+        if (x.style.display=="block"){
+            x.style.display="none";
+        }
+        else{
+            x.style.display="block";
+        }
+    }
+    </script>
+    

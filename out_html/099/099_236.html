@@ -1,0 +1,99 @@
+
+        <!DOCTYPE html>
+    <html lang="ja">
+    <style>
+    body
+    {
+        color: black;
+        background-color: white;
+    }
+    div{
+        font-size: 14px;
+    }
+    span
+    {
+        font-size: 18px;
+    }
+    #grad1{
+        background: linear-gradient(transparent 60%,#99e4f1 30%);
+        font-size: 18px;
+        font-weight: bold;
+    }
+    #grad2{
+        background: linear-gradient(transparent 60%,#fda1a1 30%);
+        font-size: 18px;
+        font-weight: bold;
+    }
+
+    </style>
+
+    <head>
+        <meta charset="UTF-8">
+        <title>99-236</title>
+    </head>
+
+    <body>
+        <h1>
+        <a href="./099_235.html" rel="external" title="prev">≪</a>
+        99-236
+        <a href="./099_237.html" rel="external" title="next">≫</a>
+        </h1>
+        <div class='problem'>
+            <p>
+                <span id="grad1">　問題文　</span>
+            </p>
+            <p>
+                <p>10月のある夕方、薬局を男性が訪れた。その日、友人から初物のカキ(牡蠣)をもらったため、昼に友人や家族と自宅の居間で、生ガキと、炭火で焼きながら焼ガキを食したとのこと。</p>
+<p>全員が頭痛、嘔吐及びめまいを起こしたが、別室に移って休んだところ、少し落ち着いたとのことであった。</p>
+<h4>問236</h4>
+<p>これらの症状を引き起こした原因として最も可能性が高いのはどれか。1つ選べ。</p>
+<ol><li>腸炎ビブリオ</li><li>ノロウイルス</li><li>腸管出血性大腸菌</li><li>二酸化窒素</li><li>一酸化炭素</li></ol>
+<h4>問237</h4>
+<p>この男性に対する薬剤師の対応として適切なのはどれか。2つ選べ。</p>
+<ol><li>次亜塩素酸ナトリウムを含む消毒液で調理器具を消毒することを勧めた。</li><li>消毒用エタノールで調理器具を消毒することを勧めた。</li><li>調理中は部屋の換気を十分に行うことを勧めた。</li><li>一般用医薬品の胃腸薬を勧めた。</li><li>医療機関への受診を勧めた。</li></ol>    
+            </p>
+        </div>
+        <hr>
+
+        <input type="button" value="check ans" onclick="toggle_switch()"/>
+        
+        <div id='toggle'>
+        <div class='answer'>
+            <p>
+                <span id="grad2">　解答　　</span>
+            </p>
+            <p>
+            問236：5問237：3, 5
+            </p>
+        </div>
+        <div class='description'>
+            <p>
+                <span id="grad2">　解説　　</span>
+            </p>
+            <h4>問236</h4>
+<p>カキ → ノロウイルス、炭火 → 一酸化炭素中毒　が疑われます。</p>
+<p>症状がすぐに落ち着いている点や、下痢がないこと、頭痛があること　から判断すると最も可能性が高いのは、一酸化炭素中毒と考えられます。</p>
+<p>以上より、正解は 5 です。</p>
+<h4>問237</h4>
+<p>一酸化炭素中毒と思われるため、部屋の換気を十分に行うとともに重大な障害がないかの確認のため医療機関への受診勧告が適切であると考えられます。</p>
+<p>以上より、正解は 3,5 です。</p>
+<p>ちなみに、次亜塩素酸ナトリウムを含む消毒液はノロウイルスへの対応です。</p>
+<p>消毒用エタノールでの消毒はインフルエンザなどへの対応です。</p>
+<p>一般用医薬品の胃腸薬は、何らかの中毒が疑われる時には、一般的にあまり勧められません。</p>
+            </p>
+        </div>
+        </div>
+    </body>
+    <script>
+    document.getElementById("toggle").style.display="none";
+    function toggle_switch(){
+        var x = document.getElementById("toggle");
+        if (x.style.display=="block"){
+            x.style.display="none";
+        }
+        else{
+            x.style.display="block";
+        }
+    }
+    </script>
+    

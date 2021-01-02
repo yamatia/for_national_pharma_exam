@@ -1,0 +1,91 @@
+
+        <!DOCTYPE html>
+    <html lang="ja">
+    <style>
+    body
+    {
+        color: black;
+        background-color: white;
+    }
+    div{
+        font-size: 14px;
+    }
+    span
+    {
+        font-size: 18px;
+    }
+    #grad1{
+        background: linear-gradient(transparent 60%,#99e4f1 30%);
+        font-size: 18px;
+        font-weight: bold;
+    }
+    #grad2{
+        background: linear-gradient(transparent 60%,#fda1a1 30%);
+        font-size: 18px;
+        font-weight: bold;
+    }
+
+    </style>
+
+    <head>
+        <meta charset="UTF-8">
+        <title>105-8</title>
+    </head>
+
+    <body>
+        <h1>
+        <a href="./105_007.html" rel="external" title="prev">≪</a>
+        105-8
+        <a href="./105_009.html" rel="external" title="next">≫</a>
+        </h1>
+        <div class='problem'>
+            <p>
+                <span id="grad1">　問題文　</span>
+            </p>
+            <p>
+                <p>下線部で示した化合物のうち、塩素原子の酸化数が＋1なのはどれか。1つ選べ。</p>
+<p><sub>⒜</sub><u>次亜塩素酸ナトリウム</u>は漂白剤として用いられる化合物の1つである。その水溶液に<sub>⒝</sub><u>塩酸</u>を加えると<sub>⒞</sub><u>塩化ナトリウム</u>を生じると同時に有毒な<sub>⒟</sub><u>塩素ガス</u>を発生する。また、次亜塩素酸ナトリウムを40～50℃で保存すると、塩化ナトリウム及び爆発性をもつ<sub>⒠</sub><u>塩素酸ナトリウム</u>を生じる。</p>
+<ol><li>ａ</li><li>ｂ</li><li>ｃ</li><li>ｄ</li><li>ｅ</li></ol>    
+            </p>
+        </div>
+        <hr>
+
+        <input type="button" value="check ans" onclick="toggle_switch()"/>
+        
+        <div id='toggle'>
+        <div class='answer'>
+            <p>
+                <span id="grad2">　解答　　</span>
+            </p>
+            <p>
+            1
+            </p>
+        </div>
+        <div class='description'>
+            <p>
+                <span id="grad2">　解説　　</span>
+            </p>
+            <p>a ですが<br/>次亜塩素酸ナトリウムは NaClO です。O の酸化数が－２，Na の酸化数が +1、全体での酸化数は０なので、Cl の酸化数が＋１です。</p>
+<p>b ですが<br/>塩酸は HCl です。H の酸化数が +1、全体での酸化数が 0 なので、Cl の酸化数は－１です。</p>
+<p>c ですが<br/>塩化ナトリウムは NaCl です。Na の酸化数が +1、全体での酸化数は０なので、Cl の酸化数がー１です。</p>
+<p>d ですが<br/>塩素ガスは Cl<span style="font-weight: 400;"><sub>2</sub></span> です。全体での酸化数が０なので、Cl の酸化数も０です。</p>
+<p>e ですが<br/>塩素酸ナトリウムは NaClO<span style="font-weight: 400;"><sub>3</sub></span> です。O の酸化数が－２，Na の酸化数が +1、全体での酸化数は０なので、Cl の酸化数が＋5 です。</p>
+<p>以上より、正解は 1 です。</p>
+<p>類題 </p>
+            </p>
+        </div>
+        </div>
+    </body>
+    <script>
+    document.getElementById("toggle").style.display="none";
+    function toggle_switch(){
+        var x = document.getElementById("toggle");
+        if (x.style.display=="block"){
+            x.style.display="none";
+        }
+        else{
+            x.style.display="block";
+        }
+    }
+    </script>
+    

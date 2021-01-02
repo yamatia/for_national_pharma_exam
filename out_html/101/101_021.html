@@ -1,0 +1,89 @@
+
+        <!DOCTYPE html>
+    <html lang="ja">
+    <style>
+    body
+    {
+        color: black;
+        background-color: white;
+    }
+    div{
+        font-size: 14px;
+    }
+    span
+    {
+        font-size: 18px;
+    }
+    #grad1{
+        background: linear-gradient(transparent 60%,#99e4f1 30%);
+        font-size: 18px;
+        font-weight: bold;
+    }
+    #grad2{
+        background: linear-gradient(transparent 60%,#fda1a1 30%);
+        font-size: 18px;
+        font-weight: bold;
+    }
+
+    </style>
+
+    <head>
+        <meta charset="UTF-8">
+        <title>101-21</title>
+    </head>
+
+    <body>
+        <h1>
+        <a href="./101_020.html" rel="external" title="prev">≪</a>
+        101-21
+        <a href="./101_022.html" rel="external" title="next">≫</a>
+        </h1>
+        <div class='problem'>
+            <p>
+                <span id="grad1">　問題文　</span>
+            </p>
+            <p>
+                <p>疾病の一次予防に該当するのはどれか。1つ選べ。</p>
+<ol><li>従業員を対象とした特定健康診査・特定保健指導</li><li>喫煙者を対象とした禁煙教室</li><li>糖尿病患者を対象とした栄養指導</li><li>うつ病患者を対象とした社会復帰支援</li><li>新生児を対象としたタンデムマススクリーニング</li></ol>
+<div class="information-box common-icon-box">この問題は、当てはまる選択肢が2つあるため、いずれかを選べば正解となった問題です。</div>    
+            </p>
+        </div>
+        <hr>
+
+        <input type="button" value="check ans" onclick="toggle_switch()"/>
+        
+        <div id='toggle'>
+        <div class='answer'>
+            <p>
+                <span id="grad2">　解答　　</span>
+            </p>
+            <p>
+            1, 2
+            </p>
+        </div>
+        <div class='description'>
+            <p>
+                <span id="grad2">　解説　　</span>
+            </p>
+            <p>一次予防は、健康な段階で行う「予防」です。二次予防は「早期発見、早期処置」です。三次予防は「重篤化した疾患に対する」社会復帰のための行為です。</p>
+<p>選択肢 1,2 が<br/>一次予防に該当すると考えられます。</p>
+<p>選択肢 3,4 は<br/>二次及び三次予防に該当すると考えられます。</p>
+<p>選択肢 5 は<br/>二次予防に該当します。</p>
+<p>「一つ選べ」なのですが、正解は 1 及び 2 です。</p>
+            </p>
+        </div>
+        </div>
+    </body>
+    <script>
+    document.getElementById("toggle").style.display="none";
+    function toggle_switch(){
+        var x = document.getElementById("toggle");
+        if (x.style.display=="block"){
+            x.style.display="none";
+        }
+        else{
+            x.style.display="block";
+        }
+    }
+    </script>
+    

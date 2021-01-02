@@ -1,0 +1,89 @@
+
+        <!DOCTYPE html>
+    <html lang="ja">
+    <style>
+    body
+    {
+        color: black;
+        background-color: white;
+    }
+    div{
+        font-size: 14px;
+    }
+    span
+    {
+        font-size: 18px;
+    }
+    #grad1{
+        background: linear-gradient(transparent 60%,#99e4f1 30%);
+        font-size: 18px;
+        font-weight: bold;
+    }
+    #grad2{
+        background: linear-gradient(transparent 60%,#fda1a1 30%);
+        font-size: 18px;
+        font-weight: bold;
+    }
+
+    </style>
+
+    <head>
+        <meta charset="UTF-8">
+        <title>101-73</title>
+    </head>
+
+    <body>
+        <h1>
+        <a href="./101_072.html" rel="external" title="prev">≪</a>
+        101-73
+        <a href="./101_074.html" rel="external" title="next">≫</a>
+        </h1>
+        <div class='problem'>
+            <p>
+                <span id="grad1">　問題文　</span>
+            </p>
+            <p>
+                <p>薬剤師法において、薬剤師が、販売又は授与の目的で調剤したときに、患者又は現にその看護に当たっている者に対して、情報の提供とともに行わなければならないとされているのはどれか。1つ選べ。</p>
+<ol><li>療養の方法の指導</li><li>薬学的知見に基づく指導</li><li>療養上の世話</li><li>処方箋の写しの交付</li><li>疑義照会の有無の告知</li></ol>    
+            </p>
+        </div>
+        <hr>
+
+        <input type="button" value="check ans" onclick="toggle_switch()"/>
+        
+        <div id='toggle'>
+        <div class='answer'>
+            <p>
+                <span id="grad2">　解答　　</span>
+            </p>
+            <p>
+            2
+            </p>
+        </div>
+        <div class='description'>
+            <p>
+                <span id="grad2">　解説　　</span>
+            </p>
+            <p>選択肢 1 ですが<br/>療養指導義務は、医師法２３条に規定されている医師の説明義務の一部です。よって、誤りです。</p>
+<p>選択肢 2 は、正しい選択肢です。<br/>2014 年の改正により、薬剤師法 25 条の 2 に、服薬指導義務が明確に規定されています。（それまでは「情報提供義務」でした。）</p>
+<p>選択肢 3 ですが<br/>療養上の世話　とは、看護師の本来的な業務の一部です。保健師助産師看護師法５条に規定されています。よって、誤りです。</p>
+<p>選択肢 4 ですが<br/>調剤した時に、処方箋の写しを交付する必要はありません。よって、誤りです。</p>
+<p>選択肢 5 ですが<br/>薬剤師法24条に、疑義照会義務が規定されています。しかし、その有無の告知は必要ありません。よって、誤りです。</p>
+<p>以上より、正解は 2 です。</p>
+            </p>
+        </div>
+        </div>
+    </body>
+    <script>
+    document.getElementById("toggle").style.display="none";
+    function toggle_switch(){
+        var x = document.getElementById("toggle");
+        if (x.style.display=="block"){
+            x.style.display="none";
+        }
+        else{
+            x.style.display="block";
+        }
+    }
+    </script>
+    

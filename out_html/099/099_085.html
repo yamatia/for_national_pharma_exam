@@ -1,0 +1,85 @@
+
+        <!DOCTYPE html>
+    <html lang="ja">
+    <style>
+    body
+    {
+        color: black;
+        background-color: white;
+    }
+    div{
+        font-size: 14px;
+    }
+    span
+    {
+        font-size: 18px;
+    }
+    #grad1{
+        background: linear-gradient(transparent 60%,#99e4f1 30%);
+        font-size: 18px;
+        font-weight: bold;
+    }
+    #grad2{
+        background: linear-gradient(transparent 60%,#fda1a1 30%);
+        font-size: 18px;
+        font-weight: bold;
+    }
+
+    </style>
+
+    <head>
+        <meta charset="UTF-8">
+        <title>99-85</title>
+    </head>
+
+    <body>
+        <h1>
+        <a href="./099_084.html" rel="external" title="prev">≪</a>
+        99-85
+        <a href="./099_086.html" rel="external" title="next">≫</a>
+        </h1>
+        <div class='problem'>
+            <p>
+                <span id="grad1">　問題文　</span>
+            </p>
+            <p>
+                <p>病院内で職種横断的に活動する医療チームの1つにNSTがある。NSTが行う主な業務として正しいのはどれか。1つ選べ。</p>
+<ol><li>患者の栄養管理支援</li><li>患者の緩和ケア</li><li>患者のメンタルケア</li><li>病院内の感染対策</li><li>病院内の医療安全管理</li></ol>    
+            </p>
+        </div>
+        <hr>
+
+        <input type="button" value="check ans" onclick="toggle_switch()"/>
+        
+        <div id='toggle'>
+        <div class='answer'>
+            <p>
+                <span id="grad2">　解答　　</span>
+            </p>
+            <p>
+            1
+            </p>
+        </div>
+        <div class='description'>
+            <p>
+                <span id="grad2">　解説　　</span>
+            </p>
+            <p>NST とは、Nutrition Support Team の略語です。入院患者に、最良の栄養療法を提供するための集団です。薬剤師は、輸液製剤の無菌調製を行ったり、栄養状態や、処方内容を、現在使用中の薬剤との相互作用などをふまえて検討するといった形で、チームに貢献します。</p>
+<p>以上より、正解は 1 です。</p>
+            </p>
+        </div>
+        </div>
+    </body>
+    <script>
+    document.getElementById("toggle").style.display="none";
+    function toggle_switch(){
+        var x = document.getElementById("toggle");
+        if (x.style.display=="block"){
+            x.style.display="none";
+        }
+        else{
+            x.style.display="block";
+        }
+    }
+    </script>
+    

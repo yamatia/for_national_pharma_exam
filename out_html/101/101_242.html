@@ -1,0 +1,98 @@
+
+        <!DOCTYPE html>
+    <html lang="ja">
+    <style>
+    body
+    {
+        color: black;
+        background-color: white;
+    }
+    div{
+        font-size: 14px;
+    }
+    span
+    {
+        font-size: 18px;
+    }
+    #grad1{
+        background: linear-gradient(transparent 60%,#99e4f1 30%);
+        font-size: 18px;
+        font-weight: bold;
+    }
+    #grad2{
+        background: linear-gradient(transparent 60%,#fda1a1 30%);
+        font-size: 18px;
+        font-weight: bold;
+    }
+
+    </style>
+
+    <head>
+        <meta charset="UTF-8">
+        <title>101-242</title>
+    </head>
+
+    <body>
+        <h1>
+        <a href="./101_241.html" rel="external" title="prev">≪</a>
+        101-242
+        <a href="./101_243.html" rel="external" title="next">≫</a>
+        </h1>
+        <div class='problem'>
+            <p>
+                <span id="grad1">　問題文　</span>
+            </p>
+            <p>
+                <p>学校薬剤師が、小学校の屋外にあるプールの水質検査を、プールの対角線上の3点の水面下20cmのA、B、Cで実施した。結果は下表の通りであった。</p>
+<p><img alt="" class="alignnone size-full wp-image-3648" height="90.3" loading="lazy" sizes="(max-width: 544px) 100vw, 544px" src="data:;base64,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" width="380.79999999999995"/></p>
+<h4>問242</h4>
+<p>学校薬剤師が行う説明として適切なのはどれか。2つ選べ。</p>
+<ol><li>プール水の遊離残留塩素が基準を満たしていないと指摘した。</li><li>プール水のpHが基準を満たしていないと指摘した。</li><li>遊離残留塩素の基準を満たすことはプール熱の発生予防や、クリプトスポリジウムの増殖予防に有効であると説明した。</li><li>晴天時、紫外線の強いときは遊離残留塩素の消費が高まると説明した。</li></ol>
+<h4>問243</h4>
+<p>プール水の検査項目でないのはどれか。1つ選べ。</p>
+<ol><li>塩化物イオン</li><li>大腸菌</li><li>一般細菌</li><li>過マンガン酸カリウム消費量</li><li>総トリハロメタン</li></ol>    
+            </p>
+        </div>
+        <hr>
+
+        <input type="button" value="check ans" onclick="toggle_switch()"/>
+        
+        <div id='toggle'>
+        <div class='answer'>
+            <p>
+                <span id="grad2">　解答　　</span>
+            </p>
+            <p>
+            問242：1, 4問243：1
+            </p>
+        </div>
+        <div class='description'>
+            <p>
+                <span id="grad2">　解説　　</span>
+            </p>
+            <h4>問242</h4>
+<p>選択肢 1 は、正しい選択肢です。<br/>プールの残留塩素濃度は、遊離残留濃度 0.4 mg/L ～ 1.0 mg/L が望ましいとされています。</p>
+<p>選択肢 2 ですが<br/>pH は、5.8～8.6 が望ましいとされています。基準を満たしているので誤りです。</p>
+<p>選択肢 3 ですが<br/>クリプトスポリジウムは、塩素に対する強い抵抗性があり予防に有効とは、いえません。プール熱に関しては、有効です。よって、選択肢 3 は誤りです。</p>
+<p>選択肢 4 は、正しい選択肢です。<br/>紫外線により、塩素が分解されて消耗されます。</p>
+<p>以上より、正解は 1,4 です。</p>
+<h4>問243</h4>
+<p>塩素をいっぱい入れるのだから、塩化物イオンは検査してもしょうがないというわけで、正解は 1 です。</p>
+<p>塩化物イオンを測定するのは「飲料水」についてです。</p>
+            </p>
+        </div>
+        </div>
+    </body>
+    <script>
+    document.getElementById("toggle").style.display="none";
+    function toggle_switch(){
+        var x = document.getElementById("toggle");
+        if (x.style.display=="block"){
+            x.style.display="none";
+        }
+        else{
+            x.style.display="block";
+        }
+    }
+    </script>
+    

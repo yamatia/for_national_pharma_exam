@@ -1,0 +1,86 @@
+
+        <!DOCTYPE html>
+    <html lang="ja">
+    <style>
+    body
+    {
+        color: black;
+        background-color: white;
+    }
+    div{
+        font-size: 14px;
+    }
+    span
+    {
+        font-size: 18px;
+    }
+    #grad1{
+        background: linear-gradient(transparent 60%,#99e4f1 30%);
+        font-size: 18px;
+        font-weight: bold;
+    }
+    #grad2{
+        background: linear-gradient(transparent 60%,#fda1a1 30%);
+        font-size: 18px;
+        font-weight: bold;
+    }
+
+    </style>
+
+    <head>
+        <meta charset="UTF-8">
+        <title>101-172</title>
+    </head>
+
+    <body>
+        <h1>
+        <a href="./101_171.html" rel="external" title="prev">≪</a>
+        101-172
+        <a href="./101_173.html" rel="external" title="next">≫</a>
+        </h1>
+        <div class='problem'>
+            <p>
+                <span id="grad1">　問題文　</span>
+            </p>
+            <p>
+                <p>薬物A 50mgを、粉末製剤あるいは液剤として経口投与した後の血中濃度時間曲線下面積(AUC)は等しく、1,500μg・h/Lであった。一方、血中濃度に関する1次モーメント時間曲線下面積(AUMC)は、粉末製剤の場合が9,000μg・h<sup>2</sup>/L、液剤の場合が7,500μg・h<sup>2</sup>/Lであった。</p>
+<p>薬物Aの粉末製剤の平均溶出時間(h)に相当するのはどれか。1つ選べ。</p>
+<ol><li>0.2</li><li>1.0</li><li>1.2</li><li>5.0</li><li>11.0</li></ol>    
+            </p>
+        </div>
+        <hr>
+
+        <input type="button" value="check ans" onclick="toggle_switch()"/>
+        
+        <div id='toggle'>
+        <div class='answer'>
+            <p>
+                <span id="grad2">　解答　　</span>
+            </p>
+            <p>
+            2
+            </p>
+        </div>
+        <div class='description'>
+            <p>
+                <span id="grad2">　解説　　</span>
+            </p>
+            <p>「<strong>平均滞留時間（MRT） = AUMC/AUC（公式）</strong>」 です。従って粉末の場合、滞留時間は9000/1500 = 6 h　です。同様に液剤の場合、滞留時間は7500/1500 = 5h とわかります。「粉末が溶けたら、液剤」　なので、１ｈの差が粉末が溶ける時間と考えられます。粉末製剤の平均溶出時間は、６－５＝１ｈ　です。</p>
+<p>以上より、正解は 2 です。</p>
+            </p>
+        </div>
+        </div>
+    </body>
+    <script>
+    document.getElementById("toggle").style.display="none";
+    function toggle_switch(){
+        var x = document.getElementById("toggle");
+        if (x.style.display=="block"){
+            x.style.display="none";
+        }
+        else{
+            x.style.display="block";
+        }
+    }
+    </script>
+    

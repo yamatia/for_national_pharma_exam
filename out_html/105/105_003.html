@@ -1,0 +1,89 @@
+
+        <!DOCTYPE html>
+    <html lang="ja">
+    <style>
+    body
+    {
+        color: black;
+        background-color: white;
+    }
+    div{
+        font-size: 14px;
+    }
+    span
+    {
+        font-size: 18px;
+    }
+    #grad1{
+        background: linear-gradient(transparent 60%,#99e4f1 30%);
+        font-size: 18px;
+        font-weight: bold;
+    }
+    #grad2{
+        background: linear-gradient(transparent 60%,#fda1a1 30%);
+        font-size: 18px;
+        font-weight: bold;
+    }
+
+    </style>
+
+    <head>
+        <meta charset="UTF-8">
+        <title>105-3</title>
+    </head>
+
+    <body>
+        <h1>
+        <a href="./105_002.html" rel="external" title="prev">≪</a>
+        105-3
+        <a href="./105_004.html" rel="external" title="next">≫</a>
+        </h1>
+        <div class='problem'>
+            <p>
+                <span id="grad1">　問題文　</span>
+            </p>
+            <p>
+                <p>次の原子のうち、核スピンをもたない(核スピン量子数＝0)のはどれか。1つ選べ。</p>
+<ol><li><sup>1</sup>H</li><li><sup>12</sup>C</li><li><sup>13</sup>C</li><li><sup>14</sup>N</li><li><sup>15</sup>N</li></ol>    
+            </p>
+        </div>
+        <hr>
+
+        <input type="button" value="check ans" onclick="toggle_switch()"/>
+        
+        <div id='toggle'>
+        <div class='answer'>
+            <p>
+                <span id="grad2">　解答　　</span>
+            </p>
+            <p>
+            2
+            </p>
+        </div>
+        <div class='description'>
+            <p>
+                <span id="grad2">　解説　　</span>
+            </p>
+            <p>陽子数・中性子数が共に偶数の核は、核スピンが０になります。</p>
+<p>各原子の左上についている小さな数字は質量数と呼ばれ、陽子数＋中性子数を示します。また、各原子の陽子数＝原子番号です。</p>
+<p><span style="font-weight: 400;"><sup>1</sup></span>H ・・・ 陽子数１、中性子数０<br/><span style="font-weight: 400;"><sup>12</sup></span>C・・・ 陽子数６、中性子数６<br/><span style="font-weight: 400;"><sup>13</sup></span>C・・・ 陽子数６、中性子数７<br/><span style="font-weight: 400;"><sup>14</sup></span>N・・・ 陽子数７、中性子数７<br/><span style="font-weight: 400;"><sup>15</sup></span>N・・・ 陽子数７、中性子数８</p>
+<p>とわかります。従って、核スピンが 0 であるのは、<span style="font-weight: 400;"><sup>12</sup></span>C です。</p>
+<p>ちなみにですが<br/>NMR の原理が核スピンに基づき、炭素原子について <span style="font-weight: 400;"><sup>13</sup></span>C-NMR が用いられることは基礎知識です。そこから <span style="font-weight: 400;"><sup>12</sup></span>C は NMR で使われていない → 核スピンが 0 だからではないか、という推測をしてもよいかと考えられます。</p>
+<p>以上より、正解は 2 です。</p>
+            </p>
+        </div>
+        </div>
+    </body>
+    <script>
+    document.getElementById("toggle").style.display="none";
+    function toggle_switch(){
+        var x = document.getElementById("toggle");
+        if (x.style.display=="block"){
+            x.style.display="none";
+        }
+        else{
+            x.style.display="block";
+        }
+    }
+    </script>
+    

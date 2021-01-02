@@ -1,0 +1,86 @@
+
+        <!DOCTYPE html>
+    <html lang="ja">
+    <style>
+    body
+    {
+        color: black;
+        background-color: white;
+    }
+    div{
+        font-size: 14px;
+    }
+    span
+    {
+        font-size: 18px;
+    }
+    #grad1{
+        background: linear-gradient(transparent 60%,#99e4f1 30%);
+        font-size: 18px;
+        font-weight: bold;
+    }
+    #grad2{
+        background: linear-gradient(transparent 60%,#fda1a1 30%);
+        font-size: 18px;
+        font-weight: bold;
+    }
+
+    </style>
+
+    <head>
+        <meta charset="UTF-8">
+        <title>99-57</title>
+    </head>
+
+    <body>
+        <h1>
+        <a href="./099_056.html" rel="external" title="prev">≪</a>
+        99-57
+        <a href="./099_058.html" rel="external" title="next">≫</a>
+        </h1>
+        <div class='problem'>
+            <p>
+                <span id="grad1">　問題文　</span>
+            </p>
+            <p>
+                <p>弁膜症を合併しない心房細動の症例において、抗凝固療法の必要性を判断する上で、重要性が低い合併症はどれか。1つ選べ。</p>
+<ol><li>高血圧</li><li>心不全</li><li>糖尿病</li><li>貧血</li><li>脳塞の既往</li></ol>    
+            </p>
+        </div>
+        <hr>
+
+        <input type="button" value="check ans" onclick="toggle_switch()"/>
+        
+        <div id='toggle'>
+        <div class='answer'>
+            <p>
+                <span id="grad2">　解答　　</span>
+            </p>
+            <p>
+            4
+            </p>
+        </div>
+        <div class='description'>
+            <p>
+                <span id="grad2">　解説　　</span>
+            </p>
+            <p>心房細動とは、不整脈の一種です。血液循環が滞ることで血栓ができやすくなり、できた血栓が血流に乗って脳梗塞などへとつながる恐れがあります。</p>
+<p>心房細動において、抗凝固療法を開始するかどうか CHADS２ スコアという指標がよく用いられます。CHADSとは、脳梗塞の危険因子の頭文字です。心不全、高血圧、年齢、糖尿病、脳梗塞や一過性脳虚血発作が、脳梗塞の危険因子です。貧血は、重要度が低い合併症であるといえます。</p>
+<p>以上より、正解は 4 です。</p>
+            </p>
+        </div>
+        </div>
+    </body>
+    <script>
+    document.getElementById("toggle").style.display="none";
+    function toggle_switch(){
+        var x = document.getElementById("toggle");
+        if (x.style.display=="block"){
+            x.style.display="none";
+        }
+        else{
+            x.style.display="block";
+        }
+    }
+    </script>
+    

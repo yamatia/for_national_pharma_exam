@@ -1,0 +1,88 @@
+
+        <!DOCTYPE html>
+    <html lang="ja">
+    <style>
+    body
+    {
+        color: black;
+        background-color: white;
+    }
+    div{
+        font-size: 14px;
+    }
+    span
+    {
+        font-size: 18px;
+    }
+    #grad1{
+        background: linear-gradient(transparent 60%,#99e4f1 30%);
+        font-size: 18px;
+        font-weight: bold;
+    }
+    #grad2{
+        background: linear-gradient(transparent 60%,#fda1a1 30%);
+        font-size: 18px;
+        font-weight: bold;
+    }
+
+    </style>
+
+    <head>
+        <meta charset="UTF-8">
+        <title>104-96</title>
+    </head>
+
+    <body>
+        <h1>
+        <a href="./104_095.html" rel="external" title="prev">≪</a>
+        104-96
+        <a href="./104_097.html" rel="external" title="next">≫</a>
+        </h1>
+        <div class='problem'>
+            <p>
+                <span id="grad1">　問題文　</span>
+            </p>
+            <p>
+                <p>薬物の多くは生体膜上の受容体やチャネル等を介して作用する。それらの機能に大きく関与する生体膜の構造と脂質分子の運動に関する記述のうち、正しいのはどれか。2つ選べ。</p>
+<ol><li>生体膜は、リン脂質分子の極性頭部同士が向かい合わせとなった脂質二重層構造である。</li><li>生体膜中のコレステロールは、膜の流動性に影響を与えない。</li><li>生体膜中のリン脂質分子は、その長軸まわりに回転運動をしている。</li><li>生体膜中のリン脂質分子は、二重層の一方の層からもう一方の層に移動(フリップ・フロップ)できる。</li><li>生体膜中のリン脂質分子は、二重層の同一の層内で移動することができない。</li></ol>    
+            </p>
+        </div>
+        <hr>
+
+        <input type="button" value="check ans" onclick="toggle_switch()"/>
+        
+        <div id='toggle'>
+        <div class='answer'>
+            <p>
+                <span id="grad2">　解答　　</span>
+            </p>
+            <p>
+            3, 4
+            </p>
+        </div>
+        <div class='description'>
+            <p>
+                <span id="grad2">　解説　　</span>
+            </p>
+            <p><span style="font-weight: 400;">選択肢 1 ですが<br/></span><span style="font-weight: 400;">生体膜は、リン脂質分子の「疎水部」同士が向かい合わせとなった脂質二重層構造です。「極性頭部同士」ではありません。よって、選択肢 1 は誤りです。</span></p>
+<p><span style="font-weight: 400;">選択肢 2 ですが<br/></span><span style="font-weight: 400;">コレステロールの比率が膜の流動性に大きく影響を与えます。よって、選択肢 2 は誤りです。</span></p>
+<p><span style="font-weight: 400;">選択肢 3,4 は妥当な記述です。</span></p>
+<p><span style="font-weight: 400;">選択肢 5 ですが<br/></span><span style="font-weight: 400;">水平移動（ラテラル移動）もしています。よって、選択肢 5 は誤りです。</span></p>
+<p><span style="font-weight: 400;">以上より、正解は 3,4 です。<br/></span><span style="font-weight: 400;">参考）</span></p>
+            </p>
+        </div>
+        </div>
+    </body>
+    <script>
+    document.getElementById("toggle").style.display="none";
+    function toggle_switch(){
+        var x = document.getElementById("toggle");
+        if (x.style.display=="block"){
+            x.style.display="none";
+        }
+        else{
+            x.style.display="block";
+        }
+    }
+    </script>
+    

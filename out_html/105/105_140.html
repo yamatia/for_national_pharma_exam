@@ -1,0 +1,87 @@
+
+        <!DOCTYPE html>
+    <html lang="ja">
+    <style>
+    body
+    {
+        color: black;
+        background-color: white;
+    }
+    div{
+        font-size: 14px;
+    }
+    span
+    {
+        font-size: 18px;
+    }
+    #grad1{
+        background: linear-gradient(transparent 60%,#99e4f1 30%);
+        font-size: 18px;
+        font-weight: bold;
+    }
+    #grad2{
+        background: linear-gradient(transparent 60%,#fda1a1 30%);
+        font-size: 18px;
+        font-weight: bold;
+    }
+
+    </style>
+
+    <head>
+        <meta charset="UTF-8">
+        <title>105-140</title>
+    </head>
+
+    <body>
+        <h1>
+        <a href="./105_139.html" rel="external" title="prev">≪</a>
+        105-140
+        <a href="./105_141.html" rel="external" title="next">≫</a>
+        </h1>
+        <div class='problem'>
+            <p>
+                <span id="grad1">　問題文　</span>
+            </p>
+            <p>
+                <p>「化学物質の審査及び製造等の規制に関する法律」(化審法)及び「特定化学物質の環境への排出量の把握等及び管理の改善の促進に関する法律」(化管法)に関する記述のうち、誤っているのはどれか。1つ選べ。</p>
+<ol><li>化審法は、PCB(ポリ塩化ビフェニル)による環境汚染及び人での健康被害の発生を契機として制定された。</li><li>化審法では、新規化学物質を製造又は輸入するにあたって、事前に安全性の審査を受けることが義務付けられている。</li><li>化審法で定められている第二種特定化学物質は、難分解性で高蓄積性であり、人又は高次捕食動物への長期毒性を有する。</li><li>化管法では、指定された化学物質について、安全データシート(SDS)による事業者への情報提供が義務付けられている。</li><li>化管法において、PRTR制度の対象事業者は、指定された化学物質について、環境中への排出量及び廃棄物としての事業所外への移動量を国に届け出なければならない。</li></ol>    
+            </p>
+        </div>
+        <hr>
+
+        <input type="button" value="check ans" onclick="toggle_switch()"/>
+        
+        <div id='toggle'>
+        <div class='answer'>
+            <p>
+                <span id="grad2">　解答　　</span>
+            </p>
+            <p>
+            3
+            </p>
+        </div>
+        <div class='description'>
+            <p>
+                <span id="grad2">　解説　　</span>
+            </p>
+            <p>選択肢 1,2,4,5 は妥当な記述です。</p>
+<p>選択肢 3 ですが<br/>これは「第一種特定化学物質」の定義です。「高蓄積性」の有無が見分けるポイントです。</p>
+<p>以上より、正解は 3 です。</p>
+<p>類題　、、(PRTR制度について）</p>
+            </p>
+        </div>
+        </div>
+    </body>
+    <script>
+    document.getElementById("toggle").style.display="none";
+    function toggle_switch(){
+        var x = document.getElementById("toggle");
+        if (x.style.display=="block"){
+            x.style.display="none";
+        }
+        else{
+            x.style.display="block";
+        }
+    }
+    </script>
+    

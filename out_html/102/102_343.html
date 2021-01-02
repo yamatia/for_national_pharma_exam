@@ -1,0 +1,89 @@
+
+        <!DOCTYPE html>
+    <html lang="ja">
+    <style>
+    body
+    {
+        color: black;
+        background-color: white;
+    }
+    div{
+        font-size: 14px;
+    }
+    span
+    {
+        font-size: 18px;
+    }
+    #grad1{
+        background: linear-gradient(transparent 60%,#99e4f1 30%);
+        font-size: 18px;
+        font-weight: bold;
+    }
+    #grad2{
+        background: linear-gradient(transparent 60%,#fda1a1 30%);
+        font-size: 18px;
+        font-weight: bold;
+    }
+
+    </style>
+
+    <head>
+        <meta charset="UTF-8">
+        <title>102-343</title>
+    </head>
+
+    <body>
+        <h1>
+        <a href="./102_342.html" rel="external" title="prev">≪</a>
+        102-343
+        <a href="./102_344.html" rel="external" title="next">≫</a>
+        </h1>
+        <div class='problem'>
+            <p>
+                <span id="grad1">　問題文　</span>
+            </p>
+            <p>
+                <p>ある医薬品について患者向け説明文書を作成するため、承認時の審査報告書を調べたところ、次のような記載が見つかった。</p>
+<p>Ⅳ．総合評価</p>
+<p>高用量(125mg/日)ではあるものの本剤単独投与で汎血球減少症による死亡例が発現しており、肝機能障害、胃腸障害等も高頻度に発現していること(　－中略－　)等を踏まえると、本剤の臨床使用に当たっては十分な安全対策を講じる必要があり、製造販売後調査において本剤の安全性を引き続き慎重に検討する必要があると考える。</p>
+<p style="text-align: right;">(一部抜粋)</p>
+<p>患者向け説明文書中「このような症状が現れたときには、すぐに医師または薬剤師に連絡してください」の項目に記載する必要があるのはどれか。1つ選べ。</p>
+<ol><li>手足がしびれる、手足の皮膚が硬くなる、爪が変形する。</li><li>息が切れる、めまいがする、のどが痛い、鼻血がでる、青あざができる。</li><li>尿が少なくなる、尿がでない、むくみがある、体がだるい、発疹。</li><li>のどがかわく、水分をたくさん摂ってしまう、尿の量が多い、体重が減る。</li><li>ぼんやりする、手足がふるえる、目がちらつく、ふらつく、冷や汗がでる。</li></ol>    
+            </p>
+        </div>
+        <hr>
+
+        <input type="button" value="check ans" onclick="toggle_switch()"/>
+        
+        <div id='toggle'>
+        <div class='answer'>
+            <p>
+                <span id="grad2">　解答　　</span>
+            </p>
+            <p>
+            2
+            </p>
+        </div>
+        <div class='description'>
+            <p>
+                <span id="grad2">　解説　　</span>
+            </p>
+            <p>汎血球減少症が見られるため、赤血球減少の初期症状として息が切れたり、貧血症状としてめまいがすることが考えられます。また、白血球減少により易感染性となり、のどが痛いなどの初期症状がありえます。さらに、血小板減少により出血傾向が見られる場合があります。</p>
+<p>以上をふまえると、正解は 2 と考えられます。</p>
+            </p>
+        </div>
+        </div>
+    </body>
+    <script>
+    document.getElementById("toggle").style.display="none";
+    function toggle_switch(){
+        var x = document.getElementById("toggle");
+        if (x.style.display=="block"){
+            x.style.display="none";
+        }
+        else{
+            x.style.display="block";
+        }
+    }
+    </script>
+    

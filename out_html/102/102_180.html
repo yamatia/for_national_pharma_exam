@@ -1,0 +1,86 @@
+
+        <!DOCTYPE html>
+    <html lang="ja">
+    <style>
+    body
+    {
+        color: black;
+        background-color: white;
+    }
+    div{
+        font-size: 14px;
+    }
+    span
+    {
+        font-size: 18px;
+    }
+    #grad1{
+        background: linear-gradient(transparent 60%,#99e4f1 30%);
+        font-size: 18px;
+        font-weight: bold;
+    }
+    #grad2{
+        background: linear-gradient(transparent 60%,#fda1a1 30%);
+        font-size: 18px;
+        font-weight: bold;
+    }
+
+    </style>
+
+    <head>
+        <meta charset="UTF-8">
+        <title>102-180</title>
+    </head>
+
+    <body>
+        <h1>
+        <a href="./102_179.html" rel="external" title="prev">≪</a>
+        102-180
+        <a href="./102_181.html" rel="external" title="next">≫</a>
+        </h1>
+        <div class='problem'>
+            <p>
+                <span id="grad1">　問題文　</span>
+            </p>
+            <p>
+                <p>体温と発熱に関する記述のうち、誤っているのはどれか。1つ選べ。</p>
+<ol><li>体温は延髄にある体温調節中枢によって調節される。</li><li>体温を変化させる生物学的因子の1つに月経周期がある。</li><li>インターロイキン-1は内因性発熱物質である。</li><li>体温調節中枢でのプロスタグランジンE<sub>2</sub>の産生が発熱に関与する。</li><li>発熱をきたす疾患の1つに膠原病がある。</li></ol>    
+            </p>
+        </div>
+        <hr>
+
+        <input type="button" value="check ans" onclick="toggle_switch()"/>
+        
+        <div id='toggle'>
+        <div class='answer'>
+            <p>
+                <span id="grad2">　解答　　</span>
+            </p>
+            <p>
+            1
+            </p>
+        </div>
+        <div class='description'>
+            <p>
+                <span id="grad2">　解説　　</span>
+            </p>
+            <p>発熱は感染をはじめ、種々の原因により引き起こされます。</p>
+<p>体温の調節中枢は視床下部にあります。発熱物質としてサイトカインの一種である、インターロイキン１、インターロイキン６などがよく知られています。これらの物質は間脳視床下部における PGE2 の産生を促進します。その結果、体温調節中枢における体温のセットポイントを変更（上昇）させます。</p>
+<p>以上をふまえ選択肢を検討すると、選択肢 1 の「延髄にある体温調節中枢」が明らかに誤りです。正解は 1 です。</p>
+            </p>
+        </div>
+        </div>
+    </body>
+    <script>
+    document.getElementById("toggle").style.display="none";
+    function toggle_switch(){
+        var x = document.getElementById("toggle");
+        if (x.style.display=="block"){
+            x.style.display="none";
+        }
+        else{
+            x.style.display="block";
+        }
+    }
+    </script>
+    

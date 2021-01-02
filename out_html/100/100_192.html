@@ -1,0 +1,87 @@
+
+        <!DOCTYPE html>
+    <html lang="ja">
+    <style>
+    body
+    {
+        color: black;
+        background-color: white;
+    }
+    div{
+        font-size: 14px;
+    }
+    span
+    {
+        font-size: 18px;
+    }
+    #grad1{
+        background: linear-gradient(transparent 60%,#99e4f1 30%);
+        font-size: 18px;
+        font-weight: bold;
+    }
+    #grad2{
+        background: linear-gradient(transparent 60%,#fda1a1 30%);
+        font-size: 18px;
+        font-weight: bold;
+    }
+
+    </style>
+
+    <head>
+        <meta charset="UTF-8">
+        <title>100-192</title>
+    </head>
+
+    <body>
+        <h1>
+        <a href="./100_191.html" rel="external" title="prev">≪</a>
+        100-192
+        <a href="./100_193.html" rel="external" title="next">≫</a>
+        </h1>
+        <div class='problem'>
+            <p>
+                <span id="grad1">　問題文　</span>
+            </p>
+            <p>
+                <p>医薬品A～Eに関して、投与群と対照群の間でイベントXの発症率を比較した論文を収集したところ、以下の情報が得られた。なお、対照群はいずれも同じ標準薬を用いていた。</p>
+<ul><li>Aは、Xの発症率を対照群の1/5に減少させた。</li><li>Bを投与した被験者1,000名におけるXの発症者数は、25名であった。</li><li>C投与群のX発症の相対危険度は、0.25であった。</li><li>D投与群のX発症のオッズ比は、7/39であった。</li><li>Eは、Xの発症率を10%低下させた。</li><li>いずれの論文においても、対照群におけるXの発症率は12.5%であった。</li></ul>
+<p>以上の結果から、Xの発症を抑制する効果が最も劣ると考えられるのはどれか。1つ選べ。</p>
+<ol><li>A</li><li>B</li><li>C</li><li>D</li><li>E</li></ol>
+<div class="information-box common-icon-box">この問題は、「Eは、Xの発症率を10％低下させた。」の記述が2通りの意味に解釈できるという理由から「解なし」となった問題です。</div>    
+            </p>
+        </div>
+        <hr>
+
+        <input type="button" value="check ans" onclick="toggle_switch()"/>
+        
+        <div id='toggle'>
+        <div class='answer'>
+            <p>
+                <span id="grad2">　解答　　</span>
+            </p>
+            <p>
+            解なし
+            </p>
+        </div>
+        <div class='description'>
+            <p>
+                <span id="grad2">　解説　　</span>
+            </p>
+            <p>解なしのため、解説もなし。</p>
+            </p>
+        </div>
+        </div>
+    </body>
+    <script>
+    document.getElementById("toggle").style.display="none";
+    function toggle_switch(){
+        var x = document.getElementById("toggle");
+        if (x.style.display=="block"){
+            x.style.display="none";
+        }
+        else{
+            x.style.display="block";
+        }
+    }
+    </script>
+    

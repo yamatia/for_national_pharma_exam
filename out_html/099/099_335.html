@@ -1,0 +1,86 @@
+
+        <!DOCTYPE html>
+    <html lang="ja">
+    <style>
+    body
+    {
+        color: black;
+        background-color: white;
+    }
+    div{
+        font-size: 14px;
+    }
+    span
+    {
+        font-size: 18px;
+    }
+    #grad1{
+        background: linear-gradient(transparent 60%,#99e4f1 30%);
+        font-size: 18px;
+        font-weight: bold;
+    }
+    #grad2{
+        background: linear-gradient(transparent 60%,#fda1a1 30%);
+        font-size: 18px;
+        font-weight: bold;
+    }
+
+    </style>
+
+    <head>
+        <meta charset="UTF-8">
+        <title>99-335</title>
+    </head>
+
+    <body>
+        <h1>
+        <a href="./099_334.html" rel="external" title="prev">≪</a>
+        99-335
+        <a href="./099_336.html" rel="external" title="next">≫</a>
+        </h1>
+        <div class='problem'>
+            <p>
+                <span id="grad1">　問題文　</span>
+            </p>
+            <p>
+                <p>28歳女性。潰瘍性大腸炎の中等症の増悪との診断で入院した。プレドニゾロン錠5mg 1日8錠の処方が1ヶ月間継続されている。留意すべき副作用はどれか。2つ選べ。</p>
+<ol><li>低血糖</li><li>血圧低下</li><li>体重減少</li><li>満月様顔貌</li><li>骨粗しょう症</li></ol>    
+            </p>
+        </div>
+        <hr>
+
+        <input type="button" value="check ans" onclick="toggle_switch()"/>
+        
+        <div id='toggle'>
+        <div class='answer'>
+            <p>
+                <span id="grad2">　解答　　</span>
+            </p>
+            <p>
+            4, 5
+            </p>
+        </div>
+        <div class='description'>
+            <p>
+                <span id="grad2">　解説　　</span>
+            </p>
+            <p>ステロイドの（長期）使用で留意すべき副作用としては、高血圧、高脂血症、体重増加、満月様顔貌（ムーンフェイズ）、骨粗しょう症などです。</p>
+<p>イメージとしては、生活習慣病で有名なもの＋太る、ふくれると考えると、思い出しやすいのではないかと思います。選択肢の中で、該当するのは４，５　です。</p>
+<p>以上より、正解は 4,5 です。</p>
+            </p>
+        </div>
+        </div>
+    </body>
+    <script>
+    document.getElementById("toggle").style.display="none";
+    function toggle_switch(){
+        var x = document.getElementById("toggle");
+        if (x.style.display=="block"){
+            x.style.display="none";
+        }
+        else{
+            x.style.display="block";
+        }
+    }
+    </script>
+    

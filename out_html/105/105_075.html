@@ -1,0 +1,86 @@
+
+        <!DOCTYPE html>
+    <html lang="ja">
+    <style>
+    body
+    {
+        color: black;
+        background-color: white;
+    }
+    div{
+        font-size: 14px;
+    }
+    span
+    {
+        font-size: 18px;
+    }
+    #grad1{
+        background: linear-gradient(transparent 60%,#99e4f1 30%);
+        font-size: 18px;
+        font-weight: bold;
+    }
+    #grad2{
+        background: linear-gradient(transparent 60%,#fda1a1 30%);
+        font-size: 18px;
+        font-weight: bold;
+    }
+
+    </style>
+
+    <head>
+        <meta charset="UTF-8">
+        <title>105-75</title>
+    </head>
+
+    <body>
+        <h1>
+        <a href="./105_074.html" rel="external" title="prev">≪</a>
+        105-75
+        <a href="./105_076.html" rel="external" title="next">≫</a>
+        </h1>
+        <div class='problem'>
+            <p>
+                <span id="grad1">　問題文　</span>
+            </p>
+            <p>
+                <p>法律において、条件及び期限付き承認の仕組みが規定されているのはどれか。1つ選べ。</p>
+<ol><li>医薬品</li><li>医療機器</li><li>医薬部外品</li><li>再生医療等製品</li><li>化粧品</li></ol>    
+            </p>
+        </div>
+        <hr>
+
+        <input type="button" value="check ans" onclick="toggle_switch()"/>
+        
+        <div id='toggle'>
+        <div class='answer'>
+            <p>
+                <span id="grad2">　解答　　</span>
+            </p>
+            <p>
+            4
+            </p>
+        </div>
+        <div class='description'>
+            <p>
+                <span id="grad2">　解説　　</span>
+            </p>
+            <p>まず「条件付き早期承認制度」が、重篤で有効な治療法が少ない疾患に対する医薬品について、第3相試験などを行わなくても、発売後にデータを収集し、検証することを条件に承認する制度です。</p>
+<p>そして、この「条件付き早期承認制度」に先立ち、「条件及び期限付承認」の仕組みが、2013年（Ｈ25年）の薬事法改正で、再生医療等製品を対象に法文化、制度化されています。</p>
+<p>以上より、正解は 4 です。</p>
+            </p>
+        </div>
+        </div>
+    </body>
+    <script>
+    document.getElementById("toggle").style.display="none";
+    function toggle_switch(){
+        var x = document.getElementById("toggle");
+        if (x.style.display=="block"){
+            x.style.display="none";
+        }
+        else{
+            x.style.display="block";
+        }
+    }
+    </script>
+    

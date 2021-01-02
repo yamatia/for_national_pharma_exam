@@ -1,0 +1,87 @@
+
+        <!DOCTYPE html>
+    <html lang="ja">
+    <style>
+    body
+    {
+        color: black;
+        background-color: white;
+    }
+    div{
+        font-size: 14px;
+    }
+    span
+    {
+        font-size: 18px;
+    }
+    #grad1{
+        background: linear-gradient(transparent 60%,#99e4f1 30%);
+        font-size: 18px;
+        font-weight: bold;
+    }
+    #grad2{
+        background: linear-gradient(transparent 60%,#fda1a1 30%);
+        font-size: 18px;
+        font-weight: bold;
+    }
+
+    </style>
+
+    <head>
+        <meta charset="UTF-8">
+        <title>99-149</title>
+    </head>
+
+    <body>
+        <h1>
+        <a href="./099_148.html" rel="external" title="prev">≪</a>
+        99-149
+        <a href="./099_150.html" rel="external" title="next">≫</a>
+        </h1>
+        <div class='problem'>
+            <p>
+                <span id="grad1">　問題文　</span>
+            </p>
+            <p>
+                <p>処方せん医薬品の製造販売業者が遵守しなければならないGVP(Good Vigilance Practice)に関する記述のうち、正しいのはどれか。2つ選べ。</p>
+<ol><li>市販直後調査の実施期間は、承認時からの6ヶ月間である。</li><li>安全管理統括部門及び安全管理責任者を置かなければならない。</li><li>医薬情報担当者は、医療関係者を訪問すること等により、安全管理情報の収集、提供を行う。</li><li>再審査にあたり、申請資料が本基準に適合しているかが調査される。</li></ol>    
+            </p>
+        </div>
+        <hr>
+
+        <input type="button" value="check ans" onclick="toggle_switch()"/>
+        
+        <div id='toggle'>
+        <div class='answer'>
+            <p>
+                <span id="grad2">　解答　　</span>
+            </p>
+            <p>
+            2, 3
+            </p>
+        </div>
+        <div class='description'>
+            <p>
+                <span id="grad2">　解説　　</span>
+            </p>
+            <p>選択肢 1 ですが<br/>「承認時から」　ではなく「販売開始時」から 6 ヶ月間です。よって、選択肢 1 は誤りです。</p>
+<p>選択肢 2 ,3 は正しい記述です。</p>
+<p>選択肢 4 ですが<br/>本基準とは、市販後調査が適正に行われ、資料の信頼性が確保されるために遵守する事項<br/>についての基準です。つまり、申請資料が適合しているかの基準では、ありません。よって、選択肢 4 は誤りです。</p>
+<p>以上より、正解は 2,3 です。</p>
+            </p>
+        </div>
+        </div>
+    </body>
+    <script>
+    document.getElementById("toggle").style.display="none";
+    function toggle_switch(){
+        var x = document.getElementById("toggle");
+        if (x.style.display=="block"){
+            x.style.display="none";
+        }
+        else{
+            x.style.display="block";
+        }
+    }
+    </script>
+    

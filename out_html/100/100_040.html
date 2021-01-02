@@ -1,0 +1,90 @@
+
+        <!DOCTYPE html>
+    <html lang="ja">
+    <style>
+    body
+    {
+        color: black;
+        background-color: white;
+    }
+    div{
+        font-size: 14px;
+    }
+    span
+    {
+        font-size: 18px;
+    }
+    #grad1{
+        background: linear-gradient(transparent 60%,#99e4f1 30%);
+        font-size: 18px;
+        font-weight: bold;
+    }
+    #grad2{
+        background: linear-gradient(transparent 60%,#fda1a1 30%);
+        font-size: 18px;
+        font-weight: bold;
+    }
+
+    </style>
+
+    <head>
+        <meta charset="UTF-8">
+        <title>100-40</title>
+    </head>
+
+    <body>
+        <h1>
+        <a href="./100_039.html" rel="external" title="prev">≪</a>
+        100-40
+        <a href="./100_041.html" rel="external" title="next">≫</a>
+        </h1>
+        <div class='problem'>
+            <p>
+                <span id="grad1">　問題文　</span>
+            </p>
+            <p>
+                <p>抗真菌薬ブテナフィンが阻害するのはどれか。1つ選べ。</p>
+<ol><li>シトシン透過酵素</li><li>ラノステロールC-14脱メチル化酵素</li><li>DNAトポイソメラーゼⅡ</li><li>トランスペプチダーゼ</li><li>スクアレンエポキシダーゼ</li></ol>    
+            </p>
+        </div>
+        <hr>
+
+        <input type="button" value="check ans" onclick="toggle_switch()"/>
+        
+        <div id='toggle'>
+        <div class='answer'>
+            <p>
+                <span id="grad2">　解答　　</span>
+            </p>
+            <p>
+            5
+            </p>
+        </div>
+        <div class='description'>
+            <p>
+                <span id="grad2">　解説　　</span>
+            </p>
+            <p>ブテナフィンが阻害するのはスクアレンエポキシダーゼです。</p>
+<p>以上より、正解は 5 です。</p>
+<p>ちなみに、選択肢 1 ～ 4 に関しての補足ですが</p>
+<p>１：シトシン透過酵素に関連する代表的な薬は、フルシトシンです。フルシトシンは、この酵素を介して真菌細胞内に取り込まれた後代謝されて、5 -FUとなり抗真菌作用を示すことが知られています。</p>
+<p>2：ラノステロール C-14 脱メチルに関連する代表的な薬は、アゾール系抗真菌薬（イトラコナゾールなど）です。</p>
+<p>3：DNAトポイソメラーゼ Ⅱ に関連する代表的な薬は、エトポシドです。トポイソメラーゼⅡ阻害薬です。抗がん剤として用いられます。</p>
+<p>4：トランスペプチダーゼに関連する代表的な薬は、β－ラクタム系抗生物質（ペニシリン等）です。</p>
+            </p>
+        </div>
+        </div>
+    </body>
+    <script>
+    document.getElementById("toggle").style.display="none";
+    function toggle_switch(){
+        var x = document.getElementById("toggle");
+        if (x.style.display=="block"){
+            x.style.display="none";
+        }
+        else{
+            x.style.display="block";
+        }
+    }
+    </script>
+    

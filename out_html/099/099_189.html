@@ -1,0 +1,89 @@
+
+        <!DOCTYPE html>
+    <html lang="ja">
+    <style>
+    body
+    {
+        color: black;
+        background-color: white;
+    }
+    div{
+        font-size: 14px;
+    }
+    span
+    {
+        font-size: 18px;
+    }
+    #grad1{
+        background: linear-gradient(transparent 60%,#99e4f1 30%);
+        font-size: 18px;
+        font-weight: bold;
+    }
+    #grad2{
+        background: linear-gradient(transparent 60%,#fda1a1 30%);
+        font-size: 18px;
+        font-weight: bold;
+    }
+
+    </style>
+
+    <head>
+        <meta charset="UTF-8">
+        <title>99-189</title>
+    </head>
+
+    <body>
+        <h1>
+        <a href="./099_188.html" rel="external" title="prev">≪</a>
+        99-189
+        <a href="./099_190.html" rel="external" title="next">≫</a>
+        </h1>
+        <div class='problem'>
+            <p>
+                <span id="grad1">　問題文　</span>
+            </p>
+            <p>
+                <p>メニエール病の病態及び治療に関する記述のうち、正しいのはどれか。2つ選べ。</p>
+<ol><li>めまいは反復性である。</li><li>蝸牛内の内リンパ液が減少している。</li><li>聴力は正常である。</li><li>ベタヒスチンメシル酸塩が内服で用いられる。</li><li>プロプラノロール塩酸塩が静注で用いられる。</li><li>プロカテロール塩酸塩水和物が内服で用いられる。</li></ol>    
+            </p>
+        </div>
+        <hr>
+
+        <input type="button" value="check ans" onclick="toggle_switch()"/>
+        
+        <div id='toggle'>
+        <div class='answer'>
+            <p>
+                <span id="grad2">　解答　　</span>
+            </p>
+            <p>
+            1, 4
+            </p>
+        </div>
+        <div class='description'>
+            <p>
+                <span id="grad2">　解説　　</span>
+            </p>
+            <p>選択肢 1 は、その通りの記述です。</p>
+<p>選択肢 2 ですが<br/>メニエール病の本体は、内リンパ水腫です。つまり、リンパ液が過剰に溜まっています。よって、選択肢 2 は誤りです。</p>
+<p>選択肢 3 ですが<br/>メニエール病の症状として、めまいの他、難聴などの症状もあります。聴力が正常であるとはいえません。よって、選択肢 3 は誤りです。</p>
+<p>選択肢 4 は、正しい記述です。</p>
+<p>選択肢 5,6 ですが<br/>メニエール病の治療薬としては、内リンパ水腫軽減を目的とした血流改善薬（ベタヒスチンなど）や、利尿薬や、ステロイド等が用いられます。又、末梢神経障害に対して、ビタミン B<span style="font-weight: 400;"><sub>12</sub></span> 製剤も、よく用いられます。さらに、対症療法として、自律神経症状や吐気の抑制を図り、ジアゼパムや、ジフェンヒドラミンなどが用いられます。プロプラノロールのような β 遮断薬や、プロカテロールのような β 刺激薬は用いられません。よって、選択肢 5,6 は誤りです。</p>
+<p>以上より、正解は 1,4 です。</p>
+            </p>
+        </div>
+        </div>
+    </body>
+    <script>
+    document.getElementById("toggle").style.display="none";
+    function toggle_switch(){
+        var x = document.getElementById("toggle");
+        if (x.style.display=="block"){
+            x.style.display="none";
+        }
+        else{
+            x.style.display="block";
+        }
+    }
+    </script>
+    

@@ -1,0 +1,92 @@
+
+        <!DOCTYPE html>
+    <html lang="ja">
+    <style>
+    body
+    {
+        color: black;
+        background-color: white;
+    }
+    div{
+        font-size: 14px;
+    }
+    span
+    {
+        font-size: 18px;
+    }
+    #grad1{
+        background: linear-gradient(transparent 60%,#99e4f1 30%);
+        font-size: 18px;
+        font-weight: bold;
+    }
+    #grad2{
+        background: linear-gradient(transparent 60%,#fda1a1 30%);
+        font-size: 18px;
+        font-weight: bold;
+    }
+
+    </style>
+
+    <head>
+        <meta charset="UTF-8">
+        <title>99-173</title>
+    </head>
+
+    <body>
+        <h1>
+        <a href="./099_172.html" rel="external" title="prev">≪</a>
+        99-173
+        <a href="./099_174.html" rel="external" title="next">≫</a>
+        </h1>
+        <div class='problem'>
+            <p>
+                <span id="grad1">　問題文　</span>
+            </p>
+            <p>
+                <p>薬物Aの体内動態は線形1-コンパートメントモデルに従い、血中消失半減期は7時間、分布容積は20Lである。この薬物10mgを5時間ごとに繰り返し経口投与したところ、定常状態における平均血中濃度は0.8μg/mLとなった。</p>
+<p>薬物Aの経口投与後のバイオアベイラビリティとして、最も近い値はどれか。1つ選べ。ただし、ln2=0.693とする。</p>
+<ol><li>0.1</li><li>0.2</li><li>0.4</li><li>0.6</li><li>0.8</li></ol>    
+            </p>
+        </div>
+        <hr>
+
+        <input type="button" value="check ans" onclick="toggle_switch()"/>
+        
+        <div id='toggle'>
+        <div class='answer'>
+            <p>
+                <span id="grad2">　解答　　</span>
+            </p>
+            <p>
+            5
+            </p>
+        </div>
+        <div class='description'>
+            <p>
+                <span id="grad2">　解説　　</span>
+            </p>
+            <p>薬物動態パラメータをまとめると、半減期（T<span style="font-weight: 400;"><sub>1/2</sub></span>）=　7　（h）。分布容積（Vd）＝ 20 （L）。</p>
+<p>又、T<span style="font-weight: 400;"><sub>1/2</sub></span> = ln2 / ke 　です。これは、ke について解けば、ke = ln2 / T<span style="font-weight: 400;"><sub>1/2</sub></span> であり、ln2 ≒ 0.7 なので、ke = 0.1 (/h)です。</p>
+<p>更に、CL = ke × Vd なので、CL = 0.1 × 20 = 2 （ L / h ）となります。</p>
+<p>ここまでをふまえて、本問では繰り返し経口投与　がキーワードです。繰り返し経口投与における定常状態の平均血中濃度は</p>
+<p><img alt="" class="alignnone size-full wp-image-9377" height="108.5" loading="lazy" src="data:;base64,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" width="140.7"/></p>
+<p>と表されます。（公式として覚えている設定です。）</p>
+<p>この式に C = 0.8 μg/mL、D = 10 mg = 10000 μg、τ = 5 (h)、CL = 2 (L/h) = 2000 (mL/h)を代入すると、<strong>F = 0.8</strong> となります。</p>
+<p>以上より、正解は 5 です。</p>
+            </p>
+        </div>
+        </div>
+    </body>
+    <script>
+    document.getElementById("toggle").style.display="none";
+    function toggle_switch(){
+        var x = document.getElementById("toggle");
+        if (x.style.display=="block"){
+            x.style.display="none";
+        }
+        else{
+            x.style.display="block";
+        }
+    }
+    </script>
+    

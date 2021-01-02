@@ -1,0 +1,99 @@
+
+        <!DOCTYPE html>
+    <html lang="ja">
+    <style>
+    body
+    {
+        color: black;
+        background-color: white;
+    }
+    div{
+        font-size: 14px;
+    }
+    span
+    {
+        font-size: 18px;
+    }
+    #grad1{
+        background: linear-gradient(transparent 60%,#99e4f1 30%);
+        font-size: 18px;
+        font-weight: bold;
+    }
+    #grad2{
+        background: linear-gradient(transparent 60%,#fda1a1 30%);
+        font-size: 18px;
+        font-weight: bold;
+    }
+
+    </style>
+
+    <head>
+        <meta charset="UTF-8">
+        <title>101-222</title>
+    </head>
+
+    <body>
+        <h1>
+        <a href="./101_221.html" rel="external" title="prev">≪</a>
+        101-222
+        <a href="./101_223.html" rel="external" title="next">≫</a>
+        </h1>
+        <div class='problem'>
+            <p>
+                <span id="grad1">　問題文　</span>
+            </p>
+            <p>
+                <p>フィラデルフィア染色体陽性急性リンパ性白血病と診断を受けた患者が、イマチニブメシル酸塩錠の服用を始めたが、効果が不十分であった。そのため、他の薬剤に切り換えることとなった。</p>
+<h4>問222</h4>
+<p>切り換えの薬物として推奨されるのはどれか。1つ選べ。</p>
+<ol><li>ゲフィチニブ</li><li>ソラフェニブトシル酸塩</li><li>ダサチニブ水和物</li><li>クリゾチニブ</li><li>エルロチニブ塩酸塩</li></ol>
+<h4>問223</h4>
+<p>フィラデルフィア染色体が形成される変異の分類として正しいのはどれか。1つ選べ。</p>
+<ol><li>置換</li><li>欠失</li><li>逆位</li><li>挿入</li><li>転座</li></ol>    
+            </p>
+        </div>
+        <hr>
+
+        <input type="button" value="check ans" onclick="toggle_switch()"/>
+        
+        <div id='toggle'>
+        <div class='answer'>
+            <p>
+                <span id="grad2">　解答　　</span>
+            </p>
+            <p>
+            問222：3問223：5
+            </p>
+        </div>
+        <div class='description'>
+            <p>
+                <span id="grad2">　解説　　</span>
+            </p>
+            <h4>問222</h4>
+<p>選択肢１、４、５は<br/>非小細胞性肺がんに対する分子標的薬です。</p>
+<p>選択肢２は<br/>腎臓がん、肝臓がんや、甲状腺がん　に対する分子標的薬です。これらの薬剤は白血病と診断されている患者への切り替え薬剤としては不適です。</p>
+<p>以上より、正解は 3 です。各薬剤について、以下補足します。</p>
+<p>選択肢１ですが<br/>ゲフィチニブ（イレッサ）の標的は、EGFR チロシンキナーゼです。</p>
+<p>選択肢 2,3 ですが<br/>ソラフェニブ（ネクサバール） 及び ダサチニブ（スプリセル）は、マルチチロシンキナーゼ阻害薬です。</p>
+<p>選択肢 4 ですが<br/>クリゾチニブ（ザーコリ）は、ALK チロシンキナーゼ阻害薬 です。ALK 融合遺伝子陽性　の非小細胞性肺がんに用います。</p>
+<p>選択肢 5 ですが<br/>エルロチニブ（タルセバ）は、EGFR チロシンキナーゼ阻害薬の一種です。以上、補足。</p>
+<h4>問223</h4>
+<p>フィラデルフィア染色体とは、９−２２染色体の相互転座により生成される bcr-abr 遺伝子を有する染色体のことです。従って、正解は５です。</p>
+<p>ちなみに置換は、染色体における一部の塩基配列が入れ替わることです。欠失は、染色体の一部が失われる事です。逆位は、染色体の一部が逆転することです。挿入は、染色体に塩基配列が入り込む事です。</p>
+            </p>
+        </div>
+        </div>
+    </body>
+    <script>
+    document.getElementById("toggle").style.display="none";
+    function toggle_switch(){
+        var x = document.getElementById("toggle");
+        if (x.style.display=="block"){
+            x.style.display="none";
+        }
+        else{
+            x.style.display="block";
+        }
+    }
+    </script>
+    

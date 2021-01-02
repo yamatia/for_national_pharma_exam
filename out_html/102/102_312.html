@@ -1,0 +1,100 @@
+
+        <!DOCTYPE html>
+    <html lang="ja">
+    <style>
+    body
+    {
+        color: black;
+        background-color: white;
+    }
+    div{
+        font-size: 14px;
+    }
+    span
+    {
+        font-size: 18px;
+    }
+    #grad1{
+        background: linear-gradient(transparent 60%,#99e4f1 30%);
+        font-size: 18px;
+        font-weight: bold;
+    }
+    #grad2{
+        background: linear-gradient(transparent 60%,#fda1a1 30%);
+        font-size: 18px;
+        font-weight: bold;
+    }
+
+    </style>
+
+    <head>
+        <meta charset="UTF-8">
+        <title>102-312</title>
+    </head>
+
+    <body>
+        <h1>
+        <a href="./102_311.html" rel="external" title="prev">≪</a>
+        102-312
+        <a href="./102_313.html" rel="external" title="next">≫</a>
+        </h1>
+        <div class='problem'>
+            <p>
+                <span id="grad1">　問題文　</span>
+            </p>
+            <p>
+                <p>65歳男性。肝硬変にて入院となり、ラクツロースゼリーが処方された。ラクツロースゼリーを調剤すべきところを誤ってポリスチレンスルホン酸カルシウムゼリーを調剤した。病棟にて、薬剤師が気づき、服用させずに済んだ。</p>
+<h4>問312</h4>
+<p>このような事態を踏まえて、医薬品安全管理責任者が病院としての再発防止策を立てた。再発防止策として最も優先度が低いのはどれか。1つ選べ。</p>
+<ol><li>薬品棚における外観類似医薬品の配置を工夫する。</li><li>取り違え防止に指さし呼称を導入する。</li><li>調剤した薬剤師個人の責任を追及する。</li><li>病院内でインシデント事例の情報を共有する。</li><li>個人的要因を明らかにし、発生した誤りを分析する。</li></ol>
+<h4>問313</h4>
+<p>医療事故への対応などは、医療法の医療の安全の確保に関する規定において定められている。この規定において、医療の安全を確保するための措置を講ずる義務又は責務を課されていないのはどれか。1つ選べ。</p>
+<ol><li>国</li><li>地方公共団体</li><li>病院の開設者</li><li>病院の管理者</li><li>診療所の管理者</li></ol>    
+            </p>
+        </div>
+        <hr>
+
+        <input type="button" value="check ans" onclick="toggle_switch()"/>
+        
+        <div id='toggle'>
+        <div class='answer'>
+            <p>
+                <span id="grad2">　解答　　</span>
+            </p>
+            <p>
+            問312：3問313：3
+            </p>
+        </div>
+        <div class='description'>
+            <p>
+                <span id="grad2">　解説　　</span>
+            </p>
+            <h4>問312</h4>
+<p>選択肢 1,2,4,5 は再発防止として必要です。</p>
+<p>選択肢 1 ですが<br/>外観が類似している医薬品が近い所にあるから取り違いが起きているという要因が考えられるからです。</p>
+<p>選択肢 2 ですが<br/>指差し呼称を導入することで、よく見ないで調剤を行うことが避けられると考えられます。</p>
+<p>選択肢 4 ですが<br/>病院内でゼリーの取り違いがあったと共有することで、他の人や他の部署に注意を喚起することができ、注意して調剤を行うようになることが期待できます。</p>
+<p>選択肢 5 ですが<br/>発生した誤りに関する個人的要因が、例えば調剤が忙しくなってくると慌ててしまう　といったものであると分析できれば、忙しくなった時に無理をして調剤のスピードをあげようとしない　といった具体的対策を立てることができます。</p>
+<p>一方で<strong>「調剤した個人の責任を追求」することは将来の再発防止につながりません。</strong>責任を追求された個人はミスをしたくないと考えることで、<strong>単に調剤をしなくなるかもしれない</strong>し、他の人が同じミスを犯しうる状況であったにも関わらず個人の責任追及に終始してしまうことで、調剤においてミスをしない仕組みづくりにつながらず、今回ミスしなかった人は<strong>私はミスをしていないから大丈夫と考える</strong>ことになります。</p>
+<p>以上より、正解は 3 です。</p>
+<h4>問313</h4>
+<p>医療の安全の確保に関する規定は、医療法 第六条の九ー第六条の十四　です。国及び都道府県等の地方公共団体には措置を講ずる義務があります。病院等の管理者の義務は、安全管理体制確保義務、従業者監督義務などがあります。「開設者」の義務は、ありません。</p>
+<p>以上より、正解は 3 です。</p>
+<p></p>
+            </p>
+        </div>
+        </div>
+    </body>
+    <script>
+    document.getElementById("toggle").style.display="none";
+    function toggle_switch(){
+        var x = document.getElementById("toggle");
+        if (x.style.display=="block"){
+            x.style.display="none";
+        }
+        else{
+            x.style.display="block";
+        }
+    }
+    </script>
+    

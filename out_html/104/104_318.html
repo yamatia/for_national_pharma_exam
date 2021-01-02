@@ -1,0 +1,100 @@
+
+        <!DOCTYPE html>
+    <html lang="ja">
+    <style>
+    body
+    {
+        color: black;
+        background-color: white;
+    }
+    div{
+        font-size: 14px;
+    }
+    span
+    {
+        font-size: 18px;
+    }
+    #grad1{
+        background: linear-gradient(transparent 60%,#99e4f1 30%);
+        font-size: 18px;
+        font-weight: bold;
+    }
+    #grad2{
+        background: linear-gradient(transparent 60%,#fda1a1 30%);
+        font-size: 18px;
+        font-weight: bold;
+    }
+
+    </style>
+
+    <head>
+        <meta charset="UTF-8">
+        <title>104-318</title>
+    </head>
+
+    <body>
+        <h1>
+        <a href="./104_317.html" rel="external" title="prev">≪</a>
+        104-318
+        <a href="./104_319.html" rel="external" title="next">≫</a>
+        </h1>
+        <div class='problem'>
+            <p>
+                <span id="grad1">　問題文　</span>
+            </p>
+            <p>
+                <p>30歳女性。甲状腺機能亢進症に対し、チアマゾールで外来治療中に、無顆粒球症が発生し死亡に至った。なお、併用薬はない。</p>
+<h4>問318</h4>
+<p>この病院で安全管理を担当している薬剤師が取るべき対応として、法令上適切なのはどれか。2つ選べ。</p>
+<ol><li>製造販売業者には副作用等の報告義務があるので、副作用情報収集に積極的に協力した。</li><li>無顆粒球症は添付文書に記載されている既知の副作用なので、製造販売業者が行う情報収集には協力する必要はないと考えた。</li><li>医薬関係者には死亡日から15日以内に報告する義務があるため、直ちに死亡例について医薬品医療機器総合機構宛てに報告した。</li><li>この副作用の発生に対しては、保健衛生上の危害の発生の防止又は拡大を防止するため、医薬品医療機器総合機構宛てに報告した上で、その調査に協力することにした。</li><li>医療機関には記録の保管義務があるため、副作用が生じた原因、その対応状況などについて記録を作成して、1年間保存することにした。</li></ol>
+<h4>問319</h4>
+<p>本剤の添付文書には下記のような記述がある。無顆粒球症の副作用の発見のためには、白血球分画のうち、どの細胞の数を調べればよいか。1つ選べ。</p>
+<p>【警告】</p>
+<p>1．重篤な無顆粒球症が主に投与開始後2ヶ月以内に発現し、死亡に至った症例も報告されている。少なくとも投与開始後2ヶ月間は、原則として2週に1回、それ以降も定期的に白血球分画を含めた血液検査を実施し、顆粒球の減少傾向等の異常が認められた場合には、直ちに投与を中止し、適切な処置を行うこと。また、一度投与を中止して投与を再開する場合にも同様に注意すること(「重大な副作用」の項参照)。</p>
+<ol><li>リンパ球</li><li>単球</li><li>好酸球</li><li>好中球</li><li>好塩基球</li></ol>    
+            </p>
+        </div>
+        <hr>
+
+        <input type="button" value="check ans" onclick="toggle_switch()"/>
+        
+        <div id='toggle'>
+        <div class='answer'>
+            <p>
+                <span id="grad2">　解答　　</span>
+            </p>
+            <p>
+            問318：1, 4問319：4
+            </p>
+        </div>
+        <div class='description'>
+            <p>
+                <span id="grad2">　解説　　</span>
+            </p>
+            <h4>問318</h4>
+<p><span style="font-weight: 400;">選択肢 1 は妥当な記述です。<br/></span><span style="font-weight: 400;">製造販売業者の報告義務は「企業報告制度」と呼ばれます。薬機法第 68 条の 10 です。</span></p>
+<p><span style="font-weight: 400;">選択肢 2 ですが<br/></span><span style="font-weight: 400;">既知副作用であっても情報収集協力義務があります。よって、選択肢 2 は誤りです。</span></p>
+<p><span style="font-weight: 400;">選択肢 3 ですが<br/></span><span style="font-weight: 400;">PMDA を窓口として、厚生労働大臣への報告義務があります。報告期限は特にありませんが、報告の必要性を認めた時は、適宜速やかな報告が望まれます。「医薬品・医療機器等安全性情報報告制度」と呼ばれます。薬機法第 68 条の 10 です。</span></p>
+<p><span style="font-weight: 400;">選択肢 4 は妥当な記述です。</span></p>
+<p><span style="font-weight: 400;">選択肢 5 ですが<br/></span><span style="font-weight: 400;">「副作用に関する記録作成」は必要ないと考えられます。</span></p>
+<p><span style="font-weight: 400;">以上より、問318 の正解は 1,4 です。</span></p>
+<h4>問319</h4>
+<p><span style="font-weight: 400;">顆粒球とは、好酸球、好中球、好塩基球の総称です。無顆粒球症は、特に</span><b>好中球</b><span style="font-weight: 400;">が減少する症状です。</span></p>
+<p><span style="font-weight: 400;">以上より、問319 の正解は 4 です。<br/></span><span style="font-weight: 400;">類題 </span></p>
+            </p>
+        </div>
+        </div>
+    </body>
+    <script>
+    document.getElementById("toggle").style.display="none";
+    function toggle_switch(){
+        var x = document.getElementById("toggle");
+        if (x.style.display=="block"){
+            x.style.display="none";
+        }
+        else{
+            x.style.display="block";
+        }
+    }
+    </script>
+    

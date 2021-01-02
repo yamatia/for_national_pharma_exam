@@ -1,0 +1,92 @@
+
+        <!DOCTYPE html>
+    <html lang="ja">
+    <style>
+    body
+    {
+        color: black;
+        background-color: white;
+    }
+    div{
+        font-size: 14px;
+    }
+    span
+    {
+        font-size: 18px;
+    }
+    #grad1{
+        background: linear-gradient(transparent 60%,#99e4f1 30%);
+        font-size: 18px;
+        font-weight: bold;
+    }
+    #grad2{
+        background: linear-gradient(transparent 60%,#fda1a1 30%);
+        font-size: 18px;
+        font-weight: bold;
+    }
+
+    </style>
+
+    <head>
+        <meta charset="UTF-8">
+        <title>100-328</title>
+    </head>
+
+    <body>
+        <h1>
+        <a href="./100_327.html" rel="external" title="prev">≪</a>
+        100-328
+        <a href="./100_329.html" rel="external" title="next">≫</a>
+        </h1>
+        <div class='problem'>
+            <p>
+                <span id="grad1">　問題文　</span>
+            </p>
+            <p>
+                <p>65歳女性。体重50kg。絶飲絶食であり、維持期に用いる1日当たりの高カロリー輸液の組成を考えることになった。この患者の1日当たりに必要な総エネルギー量は、予測式から基礎代謝量を求め、活動因子および障害因子を考慮して算出したところ、1400kcalであった。</p>
+<p>高カロリー輸液組成において、非タンパクカロリー／窒素比(NPC/N)が、150になるようにしたい。10%アミノ酸輸液の投与量として最も近いものはどれか。1つ選べ。</p>
+<p>ただし、タンパク質には窒素が16%含まれるものとする。また、20%脂肪乳剤250mL(500kcal)1本を末梢静脈より投与する予定である。</p>
+<ol><li>50mL</li><li>100mL</li><li>300mL</li><li>400mL</li><li>500mL</li></ol>    
+            </p>
+        </div>
+        <hr>
+
+        <input type="button" value="check ans" onclick="toggle_switch()"/>
+        
+        <div id='toggle'>
+        <div class='answer'>
+            <p>
+                <span id="grad2">　解答　　</span>
+            </p>
+            <p>
+            5
+            </p>
+        </div>
+        <div class='description'>
+            <p>
+                <span id="grad2">　解説　　</span>
+            </p>
+            <p><strong>解法 1</strong> 「選択肢から答えを仮定して、代入して確かめる」<br/>10 % アミノ酸輸液　といえば、500mL なので、選択肢 5 が正解と仮定します。（いきなり 5 ? と感じるかもしれませんが、病院実習の時に見た輸液パックを思い出すと選択肢の中で、一番見覚えのあるサイズは選択肢 5 ではないでしょうか。違和感を覚える場合は、選択肢 1 から代入してあたりをつけていってもよいと思います。）</p>
+<p>10 % アミノ酸輸液が 500 mL だから、50mL がアミノ酸となります。50mL のアミノ酸は、50 × 4 = 200 kcal です。（１ml のアミノ酸が 4kcal というのは知っている前提で計算しています。）よって、NPC は、1400 – 200 = 1200 (kcal)です。</p>
+<p>また、タンパク質には窒素が 16 % 含まれる　という記述から、窒素量は 500×0.1×0.16＝8 (g)です。</p>
+<p>すると、非タンパクカロリー／窒素比（NPC/N）が 1200/8 = 150 となるので、選択肢 5 が正解です。</p>
+<p><strong>解法 2</strong> 「x と仮定して計算する」<br/>10 % アミノ酸輸液が x mL とすると、0.1 x (mL) が、アミノ酸です。すると、0.4 x kcal となります。よって、NPC は 1400 － 0.4 x と表すことができます。また、N は、0.1 x ✕ 0.16 = 0.016 x です。</p>
+<p>(1400 – 0.4x)/0.016x = 150 を解くと<br/>1400 – 0.4x = 150 × 0.016x<br/>1400 = 2.8x<br/>x = 500 となります。</p>
+<p>以上より、正解は 5 です。</p>
+            </p>
+        </div>
+        </div>
+    </body>
+    <script>
+    document.getElementById("toggle").style.display="none";
+    function toggle_switch(){
+        var x = document.getElementById("toggle");
+        if (x.style.display=="block"){
+            x.style.display="none";
+        }
+        else{
+            x.style.display="block";
+        }
+    }
+    </script>
+    

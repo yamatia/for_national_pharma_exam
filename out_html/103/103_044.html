@@ -1,0 +1,89 @@
+
+        <!DOCTYPE html>
+    <html lang="ja">
+    <style>
+    body
+    {
+        color: black;
+        background-color: white;
+    }
+    div{
+        font-size: 14px;
+    }
+    span
+    {
+        font-size: 18px;
+    }
+    #grad1{
+        background: linear-gradient(transparent 60%,#99e4f1 30%);
+        font-size: 18px;
+        font-weight: bold;
+    }
+    #grad2{
+        background: linear-gradient(transparent 60%,#fda1a1 30%);
+        font-size: 18px;
+        font-weight: bold;
+    }
+
+    </style>
+
+    <head>
+        <meta charset="UTF-8">
+        <title>103-44</title>
+    </head>
+
+    <body>
+        <h1>
+        <a href="./103_043.html" rel="external" title="prev">≪</a>
+        103-44
+        <a href="./103_045.html" rel="external" title="next">≫</a>
+        </h1>
+        <div class='problem'>
+            <p>
+                <span id="grad1">　問題文　</span>
+            </p>
+            <p>
+                <p>生体内で主にUDP-グルクロン酸転移酵素で代謝されるのはどれか。1つ選べ。</p>
+<ol><li>アセタゾラミド</li><li>アミカシン</li><li>イソニアジド</li><li>サラゾスルファピリジン</li><li>モルヒネ</li></ol>    
+            </p>
+        </div>
+        <hr>
+
+        <input type="button" value="check ans" onclick="toggle_switch()"/>
+        
+        <div id='toggle'>
+        <div class='answer'>
+            <p>
+                <span id="grad2">　解答　　</span>
+            </p>
+            <p>
+            5
+            </p>
+        </div>
+        <div class='description'>
+            <p>
+                <span id="grad2">　解説　　</span>
+            </p>
+            <p><span style="font-weight: 400;">モルヒネは麻薬性鎮痛薬です。</span><span style="font-weight: 400;">肝臓において</span><span style="font-weight: 400;">グルクロン酸抱合で代謝されることがよく知られています。</span><span style="font-weight: 400;">従って、正解は 5 です。</span></p>
+<p><span style="font-weight: 400;">以下、</span><span style="font-weight: 400;">モルヒネについて関連事項をまとめます。</span><span style="font-weight: 400;">モルヒネは</span><span style="font-weight: 400;">強い μ 受容体刺激作用があります。</span><span style="font-weight: 400;">又、他にκ（カッパ）やδ（デルタ）受容体も刺激します。</span><span style="font-weight: 400;">μ受容体の刺激により</span><span style="font-weight: 400;">下行性痛覚抑制系を</span><span style="font-weight: 400;">賦活化（ふかつか）することで</span><span style="font-weight: 400;">鎮痛作用を示します。</span></p>
+<p><span style="font-weight: 400;">又、モルヒネには</span><span style="font-weight: 400;">催吐作用や、縮瞳作用もあります。</span><span style="font-weight: 400;">催吐作用は</span><span style="font-weight: 400;">延髄嘔吐中枢の化学受容器</span><span style="font-weight: 400;">（CTZ：chemoreceptor trigger zone）において、</span><span style="font-weight: 400;">D<sub>2</sub></span><span style="font-weight: 400;">受容体を刺激することにより作用がおきます。</span><span style="font-weight: 400;">縮瞳作用は</span><span style="font-weight: 400;">中脳の動眼神経核の κ 受容体の刺激により</span><span style="font-weight: 400;">作用がおきます。</span></p>
+<p><span style="font-weight: 400;">又、やはりよく知られた</span><span style="font-weight: 400;">モルヒネの性質として</span><span style="font-weight: 400;">便秘の副作用があります。</span><span style="font-weight: 400;">これは、μ受容体の刺激により</span><span style="font-weight: 400;">アセチルコリン遊離が抑制されることが原因です。</span></p>
+<p><span style="font-weight: 400;">また</span><span style="font-weight: 400;"><strong>モルヒネの解毒薬</strong>は<strong>ナロキソン</strong>です。</span></p>
+<p><span style="font-weight: 400;">参考　</span></p>
+            </p>
+        </div>
+        </div>
+    </body>
+    <script>
+    document.getElementById("toggle").style.display="none";
+    function toggle_switch(){
+        var x = document.getElementById("toggle");
+        if (x.style.display=="block"){
+            x.style.display="none";
+        }
+        else{
+            x.style.display="block";
+        }
+    }
+    </script>
+    

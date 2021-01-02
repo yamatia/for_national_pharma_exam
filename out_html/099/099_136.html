@@ -1,0 +1,88 @@
+
+        <!DOCTYPE html>
+    <html lang="ja">
+    <style>
+    body
+    {
+        color: black;
+        background-color: white;
+    }
+    div{
+        font-size: 14px;
+    }
+    span
+    {
+        font-size: 18px;
+    }
+    #grad1{
+        background: linear-gradient(transparent 60%,#99e4f1 30%);
+        font-size: 18px;
+        font-weight: bold;
+    }
+    #grad2{
+        background: linear-gradient(transparent 60%,#fda1a1 30%);
+        font-size: 18px;
+        font-weight: bold;
+    }
+
+    </style>
+
+    <head>
+        <meta charset="UTF-8">
+        <title>99-136</title>
+    </head>
+
+    <body>
+        <h1>
+        <a href="./099_135.html" rel="external" title="prev">≪</a>
+        99-136
+        <a href="./099_137.html" rel="external" title="next">≫</a>
+        </h1>
+        <div class='problem'>
+            <p>
+                <span id="grad1">　問題文　</span>
+            </p>
+            <p>
+                <p>以下の文中の[　ア　]及び[　イ　]に入れる適切な記号、式の組合せのうち、正しいのはどれか。1つ選べ。</p>
+<p>一定量の化学物質A又はBを溶解した1-オクタノールに等量の水を加え、十分に混合した。二相に分離したのち各相中の濃度を測定した。Aについては1-オクタノール中の濃度がほとんど変化しなかったのに対し、Bについては1/1,000に減少した。</p>
+<p>この結果から高濃縮性が予想される[　ア　]の濃度が一定となるよう設定した水槽中で、魚類を一定期間飼育したところ、この化学物質についての濃縮係数([　イ　])の値は5,000となり、[　ア　]は生物濃縮を受けやすい化学物質であることが確かめられた。</p>
+<ul><li>ア　　　イ</li></ul>
+<ol><li>A　　飼育終了時の魚の体内の濃度／飼育終了時の水槽水中の濃度</li><li>A　　飼育終了時の魚の体内の濃度／飼育開始時の魚の体内の濃度</li><li>A　　飼育終了時の水槽水中の濃度／飼育終了時の魚の体内の濃度</li><li>B　　飼育終了時の魚の体内の濃度／飼育終了時の水槽水中の濃度</li><li>B　　飼育終了時の魚の体内の濃度／飼育開始時の魚の体内の濃度</li><li>B　　飼育終了時の水槽水中の濃度／飼育終了時の魚の体内の濃度</li></ol>    
+            </p>
+        </div>
+        <hr>
+
+        <input type="button" value="check ans" onclick="toggle_switch()"/>
+        
+        <div id='toggle'>
+        <div class='answer'>
+            <p>
+                <span id="grad2">　解答　　</span>
+            </p>
+            <p>
+            1
+            </p>
+        </div>
+        <div class='description'>
+            <p>
+                <span id="grad2">　解説　　</span>
+            </p>
+            <p>高濃縮性とは、脂溶性が高いとみなすことができます。脂溶性の物質であれば、１－オクタノールによく溶けます。B は、ほとんどが水層に分布しており脂溶性は低いと考えられます。よって、ア は、A です。</p>
+<p>次に、濃縮係数とは、生物体内の濃度を a、環境（海水等）中の濃度を b とおいた時の a/b の事です。つまり、魚（中の濃度）／水（中の濃度）なので、正解は 1 です。</p>
+            </p>
+        </div>
+        </div>
+    </body>
+    <script>
+    document.getElementById("toggle").style.display="none";
+    function toggle_switch(){
+        var x = document.getElementById("toggle");
+        if (x.style.display=="block"){
+            x.style.display="none";
+        }
+        else{
+            x.style.display="block";
+        }
+    }
+    </script>
+    

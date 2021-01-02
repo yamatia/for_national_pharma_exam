@@ -1,0 +1,86 @@
+
+        <!DOCTYPE html>
+    <html lang="ja">
+    <style>
+    body
+    {
+        color: black;
+        background-color: white;
+    }
+    div{
+        font-size: 14px;
+    }
+    span
+    {
+        font-size: 18px;
+    }
+    #grad1{
+        background: linear-gradient(transparent 60%,#99e4f1 30%);
+        font-size: 18px;
+        font-weight: bold;
+    }
+    #grad2{
+        background: linear-gradient(transparent 60%,#fda1a1 30%);
+        font-size: 18px;
+        font-weight: bold;
+    }
+
+    </style>
+
+    <head>
+        <meta charset="UTF-8">
+        <title>103-43</title>
+    </head>
+
+    <body>
+        <h1>
+        <a href="./103_042.html" rel="external" title="prev">≪</a>
+        103-43
+        <a href="./103_044.html" rel="external" title="next">≫</a>
+        </h1>
+        <div class='problem'>
+            <p>
+                <span id="grad1">　問題文　</span>
+            </p>
+            <p>
+                <p>分布容積が最も大きいのはどれか。1つ選べ。</p>
+<ol><li>アミオダロン</li><li>バンコマイシン</li><li>ヘパリン</li><li>リチウム</li><li>ワルファリン</li></ol>    
+            </p>
+        </div>
+        <hr>
+
+        <input type="button" value="check ans" onclick="toggle_switch()"/>
+        
+        <div id='toggle'>
+        <div class='answer'>
+            <p>
+                <span id="grad2">　解答　　</span>
+            </p>
+            <p>
+            1
+            </p>
+        </div>
+        <div class='description'>
+            <p>
+                <span id="grad2">　解説　　</span>
+            </p>
+            <p><span style="font-weight: 400;">分布容積が著しく大きい薬物として、</span><span style="font-weight: 400;">アミオダロン、</span><span style="font-weight: 400;">三環系抗うつ剤、</span><span style="font-weight: 400;">ジゴキシンなどがあります。</span><span style="font-weight: 400;">アミオダロンや</span><span style="font-weight: 400;">三環系抗うつ剤は</span><span style="font-weight: 400;">極めて脂溶性が高いため、</span><span style="font-weight: 400;">組織移行性が高く、分布容積が高くなります。</span><span style="font-weight: 400;">従って、正解は 1 です。</span></p>
+<p><span style="font-weight: 400;">ちなみに、</span><span style="font-weight: 400;">ワルファリンは</span><span style="font-weight: 400;">タンパク結合率が大きい</span><span style="font-weight: 400;">代表的薬物の１つです。</span><span style="font-weight: 400;">リチウム、バンコマイシンは</span><span style="font-weight: 400;">タンパク結合率が小さい薬物の</span><span style="font-weight: 400;">代表例です。</span></p>
+<p><span style="font-weight: 400;">参考　</span></p>
+            </p>
+        </div>
+        </div>
+    </body>
+    <script>
+    document.getElementById("toggle").style.display="none";
+    function toggle_switch(){
+        var x = document.getElementById("toggle");
+        if (x.style.display=="block"){
+            x.style.display="none";
+        }
+        else{
+            x.style.display="block";
+        }
+    }
+    </script>
+    

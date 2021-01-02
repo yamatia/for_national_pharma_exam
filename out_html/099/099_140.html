@@ -1,0 +1,89 @@
+
+        <!DOCTYPE html>
+    <html lang="ja">
+    <style>
+    body
+    {
+        color: black;
+        background-color: white;
+    }
+    div{
+        font-size: 14px;
+    }
+    span
+    {
+        font-size: 18px;
+    }
+    #grad1{
+        background: linear-gradient(transparent 60%,#99e4f1 30%);
+        font-size: 18px;
+        font-weight: bold;
+    }
+    #grad2{
+        background: linear-gradient(transparent 60%,#fda1a1 30%);
+        font-size: 18px;
+        font-weight: bold;
+    }
+
+    </style>
+
+    <head>
+        <meta charset="UTF-8">
+        <title>99-140</title>
+    </head>
+
+    <body>
+        <h1>
+        <a href="./099_139.html" rel="external" title="prev">≪</a>
+        99-140
+        <a href="./099_141.html" rel="external" title="next">≫</a>
+        </h1>
+        <div class='problem'>
+            <p>
+                <span id="grad1">　問題文　</span>
+            </p>
+            <p>
+                <p>廃棄物処理に関する記述のうち、正しいのはどれか。2つ選べ。</p>
+<ol><li>我が国の一般廃棄物最終処分場の残余容量と残余年数は、2000年以降減少し続けている。</li><li>産業廃棄物の処理は、直接再生利用、中間処理(減量化と再生利用)、最終処分に分けられ、総排出量の約50%が最終処分されている。</li><li>産業廃棄物の不法投棄を防止するため、産業廃棄物の処理を委託する排出業者にはマニフェストの交付が義務付けられている。</li><li>PRTR制度は、第一種指定化学物質と第二種指定化学物質の両方に適用される。</li><li>海洋への廃棄物投棄及び有害廃棄物の越境移動を防止するための国際的対応として、ロンドン条約及びバーゼル条約がそれぞれ締結されている。</li></ol>    
+            </p>
+        </div>
+        <hr>
+
+        <input type="button" value="check ans" onclick="toggle_switch()"/>
+        
+        <div id='toggle'>
+        <div class='answer'>
+            <p>
+                <span id="grad2">　解答　　</span>
+            </p>
+            <p>
+            3, 5
+            </p>
+        </div>
+        <div class='description'>
+            <p>
+                <span id="grad2">　解説　　</span>
+            </p>
+            <p>選択肢 1 ですが<br/>残余容量は減少していますが（だんだん残りの土地は、減ってきている。）、残余年数は、上昇しています。（１年間のゴミの量が、残余容量の減少を上回るペースで減少しているため。）よって、選択肢 1 は誤りです。</p>
+<p>選択肢 2 ですが<br/>産業廃棄物は、大体 50 % が再生利用され、大体 45 % が中間処理されています。つまり、最終処分は、約 5% 弱です。約 50 % では、ありません。よって、選択肢 2 は誤りです。</p>
+<p>選択肢 3 は、その通りの記述です。<br/>類題　 </p>
+<p>選択肢 4 ですが<br/>PRTR 制度の対象となる化学物質は、第一種指定化学物質です。第二種指定化学物質は、含まれません。よって、選択肢 4 は誤りです。</p>
+<p>選択肢 5 は、その通りの記述です。<br/>　（外務省 HP へ）<br/>　（外務省 HP へ）</p>
+<p>以上より、正解は 3,5 です。</p>
+            </p>
+        </div>
+        </div>
+    </body>
+    <script>
+    document.getElementById("toggle").style.display="none";
+    function toggle_switch(){
+        var x = document.getElementById("toggle");
+        if (x.style.display=="block"){
+            x.style.display="none";
+        }
+        else{
+            x.style.display="block";
+        }
+    }
+    </script>
+    

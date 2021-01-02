@@ -1,0 +1,85 @@
+
+        <!DOCTYPE html>
+    <html lang="ja">
+    <style>
+    body
+    {
+        color: black;
+        background-color: white;
+    }
+    div{
+        font-size: 14px;
+    }
+    span
+    {
+        font-size: 18px;
+    }
+    #grad1{
+        background: linear-gradient(transparent 60%,#99e4f1 30%);
+        font-size: 18px;
+        font-weight: bold;
+    }
+    #grad2{
+        background: linear-gradient(transparent 60%,#fda1a1 30%);
+        font-size: 18px;
+        font-weight: bold;
+    }
+
+    </style>
+
+    <head>
+        <meta charset="UTF-8">
+        <title>103-68</title>
+    </head>
+
+    <body>
+        <h1>
+        <a href="./103_067.html" rel="external" title="prev">≪</a>
+        103-68
+        <a href="./103_069.html" rel="external" title="next">≫</a>
+        </h1>
+        <div class='problem'>
+            <p>
+                <span id="grad1">　問題文　</span>
+            </p>
+            <p>
+                <p>出血リスクの高い手術を予定されている患者で、手術前7日もしくはそれ以前からの休薬を提案すべきものはどれか。1つ選べ。</p>
+<ol><li>アスピリン</li><li>アトルバスタチン</li><li>エナラプリル</li><li>シタグリプチン</li><li>ボグリボース</li></ol>    
+            </p>
+        </div>
+        <hr>
+
+        <input type="button" value="check ans" onclick="toggle_switch()"/>
+        
+        <div id='toggle'>
+        <div class='answer'>
+            <p>
+                <span id="grad2">　解答　　</span>
+            </p>
+            <p>
+            1
+            </p>
+        </div>
+        <div class='description'>
+            <p>
+                <span id="grad2">　解説　　</span>
+            </p>
+            <p><span style="font-weight: 400;">大量出血リスクを避けるため</span><span style="font-weight: 400;">手術前に休薬すべき薬としては、</span><span style="font-weight: 400;">アスピリン　（手術前　約7日以前から）、</span><span style="font-weight: 400;">ワルファリン　（手術前　約 5 日前から）、</span><span style="font-weight: 400;">チクロピジン　（手術前　約 14 日前から）、</span><span style="font-weight: 400;">サルポグレラート（手術前　約 1 日前から）</span><span style="font-weight: 400;">などがあります。</span></p>
+<p><span style="font-weight: 400;">従って、正解は 1 です。</span><span style="font-weight: 400;"><br/></span><span style="font-weight: 400;">類題　</span></p>
+            </p>
+        </div>
+        </div>
+    </body>
+    <script>
+    document.getElementById("toggle").style.display="none";
+    function toggle_switch(){
+        var x = document.getElementById("toggle");
+        if (x.style.display=="block"){
+            x.style.display="none";
+        }
+        else{
+            x.style.display="block";
+        }
+    }
+    </script>
+    

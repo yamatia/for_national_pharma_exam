@@ -1,0 +1,89 @@
+
+        <!DOCTYPE html>
+    <html lang="ja">
+    <style>
+    body
+    {
+        color: black;
+        background-color: white;
+    }
+    div{
+        font-size: 14px;
+    }
+    span
+    {
+        font-size: 18px;
+    }
+    #grad1{
+        background: linear-gradient(transparent 60%,#99e4f1 30%);
+        font-size: 18px;
+        font-weight: bold;
+    }
+    #grad2{
+        background: linear-gradient(transparent 60%,#fda1a1 30%);
+        font-size: 18px;
+        font-weight: bold;
+    }
+
+    </style>
+
+    <head>
+        <meta charset="UTF-8">
+        <title>99-113</title>
+    </head>
+
+    <body>
+        <h1>
+        <a href="./099_112.html" rel="external" title="prev">≪</a>
+        99-113
+        <a href="./099_114.html" rel="external" title="next">≫</a>
+        </h1>
+        <div class='problem'>
+            <p>
+                <span id="grad1">　問題文　</span>
+            </p>
+            <p>
+                <p>ヒトにおける脂肪酸の代謝に関する記述のうち、正しいのはどれか。2つ選べ。</p>
+<ol><li>マロニルCoAは、アセチルCoAのカルボキシル化により生成する。</li><li>炭素数が奇数の脂肪酸が主に生合成される。</li><li>デサチュラーゼ(不飽和化酵素)による反応では、主にトランス型の不飽和脂肪酸が生合成される。</li><li>オレイン酸からアラキドン酸が生合成される。</li><li>脂肪酸のβ酸化では、アシルCoAが2炭素単位ずつ連続的に酸化分解される。</li></ol>    
+            </p>
+        </div>
+        <hr>
+
+        <input type="button" value="check ans" onclick="toggle_switch()"/>
+        
+        <div id='toggle'>
+        <div class='answer'>
+            <p>
+                <span id="grad2">　解答　　</span>
+            </p>
+            <p>
+            1, 5
+            </p>
+        </div>
+        <div class='description'>
+            <p>
+                <span id="grad2">　解説　　</span>
+            </p>
+            <p>選択肢 1 は正しい記述です。</p>
+<p>選択肢 2 ですが<br/>脂肪酸生合成は、反応ステップごとに炭素数が 2 つずつ増えていきます。そのため、炭素数が偶数の脂肪酸が主に生合成されます。奇数では、ありません。よって、選択肢 2 は誤りです。</p>
+<p>選択肢 3 ですが<br/>不飽和酵素による反応では主にシス型が合成されます。トランス型では、ありません。よって、選択肢 3 は誤りです。</p>
+<p>選択肢 4 ですが<br/>アラキドン酸は、リノール酸を原料として作られます。オレイン酸では、ありません。よって、選択肢 4 は誤りです。</p>
+<p>選択肢 5 は正しい記述です。</p>
+<p>以上より、正解は 1,5 です。<br/>参考）</p>
+            </p>
+        </div>
+        </div>
+    </body>
+    <script>
+    document.getElementById("toggle").style.display="none";
+    function toggle_switch(){
+        var x = document.getElementById("toggle");
+        if (x.style.display=="block"){
+            x.style.display="none";
+        }
+        else{
+            x.style.display="block";
+        }
+    }
+    </script>
+    

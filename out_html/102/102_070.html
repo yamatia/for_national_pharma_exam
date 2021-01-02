@@ -1,0 +1,88 @@
+
+        <!DOCTYPE html>
+    <html lang="ja">
+    <style>
+    body
+    {
+        color: black;
+        background-color: white;
+    }
+    div{
+        font-size: 14px;
+    }
+    span
+    {
+        font-size: 18px;
+    }
+    #grad1{
+        background: linear-gradient(transparent 60%,#99e4f1 30%);
+        font-size: 18px;
+        font-weight: bold;
+    }
+    #grad2{
+        background: linear-gradient(transparent 60%,#fda1a1 30%);
+        font-size: 18px;
+        font-weight: bold;
+    }
+
+    </style>
+
+    <head>
+        <meta charset="UTF-8">
+        <title>102-70</title>
+    </head>
+
+    <body>
+        <h1>
+        <a href="./102_069.html" rel="external" title="prev">≪</a>
+        102-70
+        <a href="./102_071.html" rel="external" title="next">≫</a>
+        </h1>
+        <div class='problem'>
+            <p>
+                <span id="grad1">　問題文　</span>
+            </p>
+            <p>
+                <p>新生児の特徴を成人と比較したとき、正しいのはどれか。1つ選べ。</p>
+<ol><li>胆汁酸塩の生成が多い。</li><li>肝臓のグルクロン酸抱合能が高い。</li><li>薬物の皮膚透過性が低い。</li><li>成人とは異なるシトクロムP450分子種が発現している。</li><li>胃内pHが低い。</li></ol>    
+            </p>
+        </div>
+        <hr>
+
+        <input type="button" value="check ans" onclick="toggle_switch()"/>
+        
+        <div id='toggle'>
+        <div class='answer'>
+            <p>
+                <span id="grad2">　解答　　</span>
+            </p>
+            <p>
+            4
+            </p>
+        </div>
+        <div class='description'>
+            <p>
+                <span id="grad2">　解説　　</span>
+            </p>
+            <p>新生児は、成人と比べるといろんな機能が不完全です。また、だからこそ新生児特有の代替的な機能がある場合があります。</p>
+<p>選択肢 1,2,3,5 ですが<br/>消化管の機能や、皮膚のバリア機能がまだ不完全である　と考えれば、知識として憶えていなくても誤りであると判断できるのではないでしょうか。</p>
+<p>特に、選択肢 2 の「新生児のグルクロン酸抱合能が低い」ことは意識して覚えておくとよいと思います。</p>
+<p>選択肢 4 は、正しい選択肢です。</p>
+<p>以上より、正解は 4 です。</p>
+            </p>
+        </div>
+        </div>
+    </body>
+    <script>
+    document.getElementById("toggle").style.display="none";
+    function toggle_switch(){
+        var x = document.getElementById("toggle");
+        if (x.style.display=="block"){
+            x.style.display="none";
+        }
+        else{
+            x.style.display="block";
+        }
+    }
+    </script>
+    

@@ -1,0 +1,89 @@
+
+        <!DOCTYPE html>
+    <html lang="ja">
+    <style>
+    body
+    {
+        color: black;
+        background-color: white;
+    }
+    div{
+        font-size: 14px;
+    }
+    span
+    {
+        font-size: 18px;
+    }
+    #grad1{
+        background: linear-gradient(transparent 60%,#99e4f1 30%);
+        font-size: 18px;
+        font-weight: bold;
+    }
+    #grad2{
+        background: linear-gradient(transparent 60%,#fda1a1 30%);
+        font-size: 18px;
+        font-weight: bold;
+    }
+
+    </style>
+
+    <head>
+        <meta charset="UTF-8">
+        <title>99-185</title>
+    </head>
+
+    <body>
+        <h1>
+        <a href="./099_184.html" rel="external" title="prev">≪</a>
+        99-185
+        <a href="./099_186.html" rel="external" title="next">≫</a>
+        </h1>
+        <div class='problem'>
+            <p>
+                <span id="grad1">　問題文　</span>
+            </p>
+            <p>
+                <p>腎機能が低下している患者において、腎機能を急激に悪化させる危険性が高い処置はどれか。2つ選べ。</p>
+<ol><li>生理食塩液の点滴静脈注射</li><li>アセトアミノフェン錠による鎮痛</li><li>イオパミドール注射液を用いた胸部CT検査</li><li>プラゾシン塩酸塩錠による降圧</li><li>ゲンタマイシン硫酸塩注射液による感染症治療</li></ol>    
+            </p>
+        </div>
+        <hr>
+
+        <input type="button" value="check ans" onclick="toggle_switch()"/>
+        
+        <div id='toggle'>
+        <div class='answer'>
+            <p>
+                <span id="grad2">　解答　　</span>
+            </p>
+            <p>
+            3, 5
+            </p>
+        </div>
+        <div class='description'>
+            <p>
+                <span id="grad2">　解説　　</span>
+            </p>
+            <p>選択肢 1 ですが<br/>生理食塩水は、急激に腎機能悪化の危険性を高める事はまずありません。よって、選択肢 1 は誤りです。</p>
+<p>選択肢 2 ですが<br/>アセトアミノフェンは、主に肝代謝される代表的な薬です。腎機能悪化の危険性を高める可能性は低いと考えられます。よって、選択肢 2 は誤りです。</p>
+<p>選択肢 3 は、正しい選択肢です。<br/>イオパミドールは、主に腎排泄される薬です。よって、腎機能を急激に悪化させる危険性が高いと考えられます。</p>
+<p>選択肢 4 ですが<br/>プラゾシンは、主に肝代謝を受ける薬物です。腎機能悪化の危険性を高める可能性は低いと考えられます。よって、選択肢 4 は誤りです。</p>
+<p>選択肢 5 は、正しい選択肢です。<br/>ゲンタマイシンは、高い腎毒性を持つ薬として知られています。</p>
+<p>以上より、正解は 3,5 です。</p>
+            </p>
+        </div>
+        </div>
+    </body>
+    <script>
+    document.getElementById("toggle").style.display="none";
+    function toggle_switch(){
+        var x = document.getElementById("toggle");
+        if (x.style.display=="block"){
+            x.style.display="none";
+        }
+        else{
+            x.style.display="block";
+        }
+    }
+    </script>
+    

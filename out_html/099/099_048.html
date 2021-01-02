@@ -1,0 +1,89 @@
+
+        <!DOCTYPE html>
+    <html lang="ja">
+    <style>
+    body
+    {
+        color: black;
+        background-color: white;
+    }
+    div{
+        font-size: 14px;
+    }
+    span
+    {
+        font-size: 18px;
+    }
+    #grad1{
+        background: linear-gradient(transparent 60%,#99e4f1 30%);
+        font-size: 18px;
+        font-weight: bold;
+    }
+    #grad2{
+        background: linear-gradient(transparent 60%,#fda1a1 30%);
+        font-size: 18px;
+        font-weight: bold;
+    }
+
+    </style>
+
+    <head>
+        <meta charset="UTF-8">
+        <title>99-48</title>
+    </head>
+
+    <body>
+        <h1>
+        <a href="./099_047.html" rel="external" title="prev">≪</a>
+        99-48
+        <a href="./099_049.html" rel="external" title="next">≫</a>
+        </h1>
+        <div class='problem'>
+            <p>
+                <span id="grad1">　問題文　</span>
+            </p>
+            <p>
+                <p>コロイド分散系はどれか。1つ選べ。</p>
+<ol><li>赤血球浮遊液</li><li>懸濁性点眼液</li><li>5%ブドウ糖液</li><li>生理食塩液</li><li>5%ポリソルベート80水溶液</li></ol>    
+            </p>
+        </div>
+        <hr>
+
+        <input type="button" value="check ans" onclick="toggle_switch()"/>
+        
+        <div id='toggle'>
+        <div class='answer'>
+            <p>
+                <span id="grad2">　解答　　</span>
+            </p>
+            <p>
+            5
+            </p>
+        </div>
+        <div class='description'>
+            <p>
+                <span id="grad2">　解説　　</span>
+            </p>
+            <p>溶けている粒子の径が 1 nm ～ 1μm 程度の系を、コロイド分散系と呼びます。</p>
+<p>選択肢 1 ですが<br/>赤血球は、粒子系が 1 μm よりも大きく粗大分散系です。よって、選択肢 1 は誤りです。</p>
+<p>選択肢 2 ですが<br/>懸濁性点眼液の粒子は、通常 75 μm 以下とされます。1 μmよりは大きく、粗大分散系であると考えられます。選択肢 2 は、誤りと考えられます。</p>
+<p>選択肢 3,4 ですが<br/>これらは、粒子径が 1 nm 以下の分子分散系です。よって、選択肢 3,4 は誤りです。</p>
+<p>選択肢 5 は正しいです。<br/>ちなみに、ポリソルベート 80 は、非イオン性界面活性剤です。水溶性で、安全性の高い乳化剤として軟膏剤（クリーム）などに用いられます。</p>
+<p>以上より、正解は 5 です。<br/>参考）　</p>
+            </p>
+        </div>
+        </div>
+    </body>
+    <script>
+    document.getElementById("toggle").style.display="none";
+    function toggle_switch(){
+        var x = document.getElementById("toggle");
+        if (x.style.display=="block"){
+            x.style.display="none";
+        }
+        else{
+            x.style.display="block";
+        }
+    }
+    </script>
+    

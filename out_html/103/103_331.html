@@ -1,0 +1,90 @@
+
+        <!DOCTYPE html>
+    <html lang="ja">
+    <style>
+    body
+    {
+        color: black;
+        background-color: white;
+    }
+    div{
+        font-size: 14px;
+    }
+    span
+    {
+        font-size: 18px;
+    }
+    #grad1{
+        background: linear-gradient(transparent 60%,#99e4f1 30%);
+        font-size: 18px;
+        font-weight: bold;
+    }
+    #grad2{
+        background: linear-gradient(transparent 60%,#fda1a1 30%);
+        font-size: 18px;
+        font-weight: bold;
+    }
+
+    </style>
+
+    <head>
+        <meta charset="UTF-8">
+        <title>103-331</title>
+    </head>
+
+    <body>
+        <h1>
+        <a href="./103_330.html" rel="external" title="prev">≪</a>
+        103-331
+        <a href="./103_332.html" rel="external" title="next">≫</a>
+        </h1>
+        <div class='problem'>
+            <p>
+                <span id="grad1">　問題文　</span>
+            </p>
+            <p>
+                <p>細菌、真菌、ウイルス感染の拡大防止に用いるため、次亜塩素酸ナトリウム濃度6%の消毒薬を購入した。0.02%(200ppm)次亜塩素酸ナトリウム消毒液1Lを調製する方法として正しいのはどれか。1つ選べ。</p>
+<ol><li>消毒薬の原液100mLに水を加え全量を1Lとし、この液100mLを採取し、これに水を加えて全量1Lとする。</li><li>消毒薬の原液5mLに水を加え全量を150mLとし、この液100mLを採取し、これに水を加えて全量1Lとする。</li><li>消毒薬の原液10mLに水を加え全量を500mLとし、この液100mLを採取し、これに水を加えて全量1Lとする。</li><li>消毒薬の原液50mLに水を加え全量を500mLとし、この液10mLを採取し、これに水を加えて全量1Lとする。</li><li>消毒薬の原液10mLに水を加え全量を1.5Lとし、この液50mLを採取し、これに水を加えて全量1Lとする。</li></ol>    
+            </p>
+        </div>
+        <hr>
+
+        <input type="button" value="check ans" onclick="toggle_switch()"/>
+        
+        <div id='toggle'>
+        <div class='answer'>
+            <p>
+                <span id="grad2">　解答　　</span>
+            </p>
+            <p>
+            2
+            </p>
+        </div>
+        <div class='description'>
+            <p>
+                <span id="grad2">　解説　　</span>
+            </p>
+            <p><span style="font-weight: 400;">1 L = 1000g です。</span><span style="font-weight: 400;">0.02 % 中には、次亜塩素酸ナトリウムが、</span><span style="font-weight: 400;">1000 × 2/10000 </span><span style="font-weight: 400;">= 2000/10000 → 0.2 g あればOKです。</span></p>
+<p><span style="font-weight: 400;">選択肢 1 ですが<br/></span><span style="font-weight: 400;">原液は 6％ なので、</span><span style="font-weight: 400;">原液100mL 中には 6g です。</span><span style="font-weight: 400;">これを１Lにして、そこから100mL 採取したら</span><span style="font-weight: 400;">100 mL 採取した中には 0.6g です。</span><span style="font-weight: 400;">0.2g になりません。</span><span style="font-weight: 400;">よって、選択肢 1 は誤りです。</span></p>
+<p><span style="font-weight: 400;">選択肢 2 は、正しい記述です。<br/></span><span style="font-weight: 400;">原液 5mL →0.3g。</span><span style="font-weight: 400;">150 mL にして、100mL とるから 0.2g でOK。</span></p>
+<p><span style="font-weight: 400;">選択肢 3 ですが<br/></span><span style="font-weight: 400;">原液 10mL → 0.6g、</span><span style="font-weight: 400;">500 mL にして、 100mL とるから 0.12g です。</span><span style="font-weight: 400;">0.2g になりません。</span><span style="font-weight: 400;">よって、選択肢 3 は誤りです。</span></p>
+<p><span style="font-weight: 400;">選択肢 4 ですが<br/></span><span style="font-weight: 400;">原液 50mL → 3g。</span><span style="font-weight: 400;">500 mL にして、 10mL とるから 0.06g です。</span><span style="font-weight: 400;">よって、選択肢 4 は誤りです。</span></p>
+<p><span style="font-weight: 400;">選択肢 5 ですが<br/></span><span style="font-weight: 400;">原液 10mL → 0.6g、</span><span style="font-weight: 400;">1.5 L = 1500 mL にして、 50 mL とるので、</span><span style="font-weight: 400;">0.02g です。</span><span style="font-weight: 400;">よって、選択肢 5 は誤りです。</span></p>
+<p><span style="font-weight: 400;">以上より、正解は 2 です。</span></p>
+            </p>
+        </div>
+        </div>
+    </body>
+    <script>
+    document.getElementById("toggle").style.display="none";
+    function toggle_switch(){
+        var x = document.getElementById("toggle");
+        if (x.style.display=="block"){
+            x.style.display="none";
+        }
+        else{
+            x.style.display="block";
+        }
+    }
+    </script>
+    

@@ -1,0 +1,87 @@
+
+        <!DOCTYPE html>
+    <html lang="ja">
+    <style>
+    body
+    {
+        color: black;
+        background-color: white;
+    }
+    div{
+        font-size: 14px;
+    }
+    span
+    {
+        font-size: 18px;
+    }
+    #grad1{
+        background: linear-gradient(transparent 60%,#99e4f1 30%);
+        font-size: 18px;
+        font-weight: bold;
+    }
+    #grad2{
+        background: linear-gradient(transparent 60%,#fda1a1 30%);
+        font-size: 18px;
+        font-weight: bold;
+    }
+
+    </style>
+
+    <head>
+        <meta charset="UTF-8">
+        <title>99-5</title>
+    </head>
+
+    <body>
+        <h1>
+        <a href="./099_004.html" rel="external" title="prev">≪</a>
+        99-5
+        <a href="./099_006.html" rel="external" title="next">≫</a>
+        </h1>
+        <div class='problem'>
+            <p>
+                <span id="grad1">　問題文　</span>
+            </p>
+            <p>
+                <p>次の測定法のうち、最もエネルギーが低い電磁波を用いるのはどれか。1つ選べ。</p>
+<ol><li>赤外吸収スペクトル法</li><li>核磁気共鳴スペクトル測定法</li><li>X線回折測定法</li><li>紫外可視吸光度測定法</li><li>蛍光光度法</li></ol>    
+            </p>
+        </div>
+        <hr>
+
+        <input type="button" value="check ans" onclick="toggle_switch()"/>
+        
+        <div id='toggle'>
+        <div class='answer'>
+            <p>
+                <span id="grad2">　解答　　</span>
+            </p>
+            <p>
+            2
+            </p>
+        </div>
+        <div class='description'>
+            <p>
+                <span id="grad2">　解説　　</span>
+            </p>
+            <p>電磁波のエネルギーは、波長の長さと反比例します。つまり、波長が一番長い電磁波を用いた測定法が、最もエネルギーが低い電磁波を用いる測定法といえます。</p>
+<p>代表的な電磁波を、<strong>波長が短い方から並べると</strong>、γ線、X線、紫外線、可視光線、赤外線、マイクロ波、ラジオ波　です。</p>
+<p>選択肢の測定法で用いられている電磁波は<br/>１　赤外線<br/>２　ラジオ波<br/>３　X線<br/>４　紫外線、可視光線<br/>５　X線　です。波長が一番長いのは、２のラジオ波です。</p>
+<p>以上より、正解は 2 です。</p>
+            </p>
+        </div>
+        </div>
+    </body>
+    <script>
+    document.getElementById("toggle").style.display="none";
+    function toggle_switch(){
+        var x = document.getElementById("toggle");
+        if (x.style.display=="block"){
+            x.style.display="none";
+        }
+        else{
+            x.style.display="block";
+        }
+    }
+    </script>
+    

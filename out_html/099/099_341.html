@@ -1,0 +1,91 @@
+
+        <!DOCTYPE html>
+    <html lang="ja">
+    <style>
+    body
+    {
+        color: black;
+        background-color: white;
+    }
+    div{
+        font-size: 14px;
+    }
+    span
+    {
+        font-size: 18px;
+    }
+    #grad1{
+        background: linear-gradient(transparent 60%,#99e4f1 30%);
+        font-size: 18px;
+        font-weight: bold;
+    }
+    #grad2{
+        background: linear-gradient(transparent 60%,#fda1a1 30%);
+        font-size: 18px;
+        font-weight: bold;
+    }
+
+    </style>
+
+    <head>
+        <meta charset="UTF-8">
+        <title>99-341</title>
+    </head>
+
+    <body>
+        <h1>
+        <a href="./099_340.html" rel="external" title="prev">≪</a>
+        99-341
+        <a href="./099_342.html" rel="external" title="next">≫</a>
+        </h1>
+        <div class='problem'>
+            <p>
+                <span id="grad1">　問題文　</span>
+            </p>
+            <p>
+                <p>患者に生じたイベントに伴い予測される主な生体内の反応のうち、不適切なのはどれか。2つ選べ。</p>
+<ul><li>イベント　　　　　主な生体反応</li></ul>
+<ol><li>出血性ショック　　体温の上昇</li><li>チアノーゼ　　　　酸素飽和度の低下</li><li>貧血　　　　　　　爪の変形</li><li>β遮断薬の服用　　脈拍数の増加</li><li>ネフローゼ　　　　尿の泡立ちの増大</li></ol>    
+            </p>
+        </div>
+        <hr>
+
+        <input type="button" value="check ans" onclick="toggle_switch()"/>
+        
+        <div id='toggle'>
+        <div class='answer'>
+            <p>
+                <span id="grad2">　解答　　</span>
+            </p>
+            <p>
+            1, 4
+            </p>
+        </div>
+        <div class='description'>
+            <p>
+                <span id="grad2">　解説　　</span>
+            </p>
+            <p>選択肢 1 ですが<br/>体温は大体 36～37 ℃　で、気温よりも高いです。体温は、体内で作られた熱が体内を循環する血液により体全体に広められることにより維持されています。この、体温を維持する重要な役割を果たす血液が出血により失われるため、生体反応としては体温の低下がおきます。体温の上昇では、ありません。よって、選択肢 1 は不適切であり、正解です。</p>
+<p>選択肢 2,3 の組み合わせは<br/>正しい組み合わせです。</p>
+<p>＾＾＾＾＾＾＾＾＾＾＾<br/>メモ。？貧血で、爪の変形はよく知られているけどメカニズムは何なんだろう・・・？貧血→鉄分の供給不足→爪の構成タンパク質であるケラチン合成にどう関与・・・？<br/>＾＾＾＾＾＾＾＾＾＾＾＾</p>
+<p>選択肢 4 ですが<br/>β 遮断薬は、交感神経系を抑制します。すると、徐脈、つまり脈拍数の減少がおきます。脈拍数の増加では、ありません。よって、選択肢 4 は不適切であり、正解です。</p>
+<p>選択肢 5 の組み合わせは<br/>正しい組み合わせです。</p>
+<p>尿の泡立ちの増加というのは少しわかりにくいかもしれません。具体的には、検尿カップに採尿した際泡がしばらく消えないようになります。これは、タンパク質がいわば界面活性を有しているため（親水基と疎水基を、両方有する）洗剤入り液体のようになるからです。</p>
+<p>以上より、正解は 1,4 です。</p>
+            </p>
+        </div>
+        </div>
+    </body>
+    <script>
+    document.getElementById("toggle").style.display="none";
+    function toggle_switch(){
+        var x = document.getElementById("toggle");
+        if (x.style.display=="block"){
+            x.style.display="none";
+        }
+        else{
+            x.style.display="block";
+        }
+    }
+    </script>
+    

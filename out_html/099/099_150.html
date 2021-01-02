@@ -1,0 +1,88 @@
+
+        <!DOCTYPE html>
+    <html lang="ja">
+    <style>
+    body
+    {
+        color: black;
+        background-color: white;
+    }
+    div{
+        font-size: 14px;
+    }
+    span
+    {
+        font-size: 18px;
+    }
+    #grad1{
+        background: linear-gradient(transparent 60%,#99e4f1 30%);
+        font-size: 18px;
+        font-weight: bold;
+    }
+    #grad2{
+        background: linear-gradient(transparent 60%,#fda1a1 30%);
+        font-size: 18px;
+        font-weight: bold;
+    }
+
+    </style>
+
+    <head>
+        <meta charset="UTF-8">
+        <title>99-150</title>
+    </head>
+
+    <body>
+        <h1>
+        <a href="./099_149.html" rel="external" title="prev">≪</a>
+        99-150
+        <a href="./099_151.html" rel="external" title="next">≫</a>
+        </h1>
+        <div class='problem'>
+            <p>
+                <span id="grad1">　問題文　</span>
+            </p>
+            <p>
+                <p>医療機関の長と治験審査委員会に関する記述のうち、正しいのはどれか。2つ選べ。</p>
+<ol><li>同一被験薬の第Ⅱ相試験に引き続き第Ⅲ相試験を同一医療機関で実施する際は、当該医療機関の長は治験審査委員会の意見を聴く必要はない。</li><li>医療機関の長は、治験審査委員会が当該医療機関で治験を実施することが適当でない旨の意見を述べた時であっても、自らの判断で当該治験の実施を承認できる。</li><li>治験審査委員会においては、医療機関の長からの依頼により、治験実施計画書、治験薬概要書、説明文書等の資料に基づき治験の妥当性を審査する。</li><li>医療機関の長は、モニタリング報告書を受け取った時は、当該医療機関において治験が適切に行われたかどうか、治験審査委員会の意見を聴く必要がある。</li><li>医療機関の長は、当該医療機関の治験審査委員会の審議に参加することができる。</li></ol>    
+            </p>
+        </div>
+        <hr>
+
+        <input type="button" value="check ans" onclick="toggle_switch()"/>
+        
+        <div id='toggle'>
+        <div class='answer'>
+            <p>
+                <span id="grad2">　解答　　</span>
+            </p>
+            <p>
+            3, 4
+            </p>
+        </div>
+        <div class='description'>
+            <p>
+                <span id="grad2">　解説　　</span>
+            </p>
+            <p>選択肢 1 ですが<br/>医療機関が治験を受諾する場合、長は、治験審査委員会（ IRB ）の意見を聴いた上で判断します。同一被験薬に関する治験の同一医療機関での実施であったとしても、意見を聴く必要があります。よって、選択肢 1 は誤りです。</p>
+<p>選択肢 2 ですが<br/>IRB が適当でない、といった場合、医療機関は当該治験の実施を承諾しては、いけません。よって、選択肢 2 は誤りです。</p>
+<p>選択肢 3,4 は、正しい記述です。</p>
+<p>選択肢 5 ですが<br/>医療機関の長は、当該医療機関の IRB に出席はできるのですが、委員になったり、審議・採決に参加することはできません。よって、選択肢 5 は誤りです。</p>
+<p>以上より、正解は 3,4 です。</p>
+            </p>
+        </div>
+        </div>
+    </body>
+    <script>
+    document.getElementById("toggle").style.display="none";
+    function toggle_switch(){
+        var x = document.getElementById("toggle");
+        if (x.style.display=="block"){
+            x.style.display="none";
+        }
+        else{
+            x.style.display="block";
+        }
+    }
+    </script>
+    

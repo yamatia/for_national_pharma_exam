@@ -1,0 +1,88 @@
+
+        <!DOCTYPE html>
+    <html lang="ja">
+    <style>
+    body
+    {
+        color: black;
+        background-color: white;
+    }
+    div{
+        font-size: 14px;
+    }
+    span
+    {
+        font-size: 18px;
+    }
+    #grad1{
+        background: linear-gradient(transparent 60%,#99e4f1 30%);
+        font-size: 18px;
+        font-weight: bold;
+    }
+    #grad2{
+        background: linear-gradient(transparent 60%,#fda1a1 30%);
+        font-size: 18px;
+        font-weight: bold;
+    }
+
+    </style>
+
+    <head>
+        <meta charset="UTF-8">
+        <title>100-179</title>
+    </head>
+
+    <body>
+        <h1>
+        <a href="./100_178.html" rel="external" title="prev">≪</a>
+        100-179
+        <a href="./100_180.html" rel="external" title="next">≫</a>
+        </h1>
+        <div class='problem'>
+            <p>
+                <span id="grad1">　問題文　</span>
+            </p>
+            <p>
+                <p>滅菌に関する記述のうち、正しいのはどれか。2つ選べ。</p>
+<ol><li>最終滅菌法を適用できる医薬品には、通例、10<sup>－</sup><sup>4</sup>以下の無菌性保証水準が得られる条件で滅菌が行われる。</li><li>通常、医薬品の分解における活性化エネルギーは、滅菌の活性化エネルギーに比べて大きい。</li><li>加熱滅菌における微生物の死滅は、見かけ上2次速度過程となる。</li><li>発熱性物質(パイロジェン)は、250℃、30分以上の乾熱滅菌で破壊される。</li><li>医療器具や衛生材料の滅菌には、酸化エチレンガスが広く用いられる。</li></ol>    
+            </p>
+        </div>
+        <hr>
+
+        <input type="button" value="check ans" onclick="toggle_switch()"/>
+        
+        <div id='toggle'>
+        <div class='answer'>
+            <p>
+                <span id="grad2">　解答　　</span>
+            </p>
+            <p>
+            4, 5
+            </p>
+        </div>
+        <div class='description'>
+            <p>
+                <span id="grad2">　解説　　</span>
+            </p>
+            <p>選択肢 1 ですが<br/>最終滅菌法では、10<span style="font-weight: 400;"><sup>-6</sup></span> 以下の無菌性保証水準が採用されます。10<span style="font-weight: 400;"><sup>-4</sup></span> では、ありません。よって、選択肢 1 は誤りです。</p>
+<p>選択肢 2 ですが<br/>滅菌の活性化エネルギーの方が大きいです。医薬品の多くは室温保存でも、しばらくたてばある程度分解することを考えれば活性化エネルギーはそれほど高くないと考えられます。一方、菌をほっておいて、熱で分解されるイメージはあまりないのではないでしょうか。そこから「滅菌の活性化エネルギー」はかなり高いと、判断できると考えられます。よって、選択肢 2 は誤りです。</p>
+<p>選択肢 3 ですが<br/>見かけ上、1 次速度過程となります。2 次速度過程では、ありません。よって、選択肢 3 は誤りです。</p>
+<p>選択肢 4,5 は、正しい記述です。</p>
+<p>以上より、正解は 4,5 です。</p>
+            </p>
+        </div>
+        </div>
+    </body>
+    <script>
+    document.getElementById("toggle").style.display="none";
+    function toggle_switch(){
+        var x = document.getElementById("toggle");
+        if (x.style.display=="block"){
+            x.style.display="none";
+        }
+        else{
+            x.style.display="block";
+        }
+    }
+    </script>
+    

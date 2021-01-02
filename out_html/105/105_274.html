@@ -1,0 +1,107 @@
+
+        <!DOCTYPE html>
+    <html lang="ja">
+    <style>
+    body
+    {
+        color: black;
+        background-color: white;
+    }
+    div{
+        font-size: 14px;
+    }
+    span
+    {
+        font-size: 18px;
+    }
+    #grad1{
+        background: linear-gradient(transparent 60%,#99e4f1 30%);
+        font-size: 18px;
+        font-weight: bold;
+    }
+    #grad2{
+        background: linear-gradient(transparent 60%,#fda1a1 30%);
+        font-size: 18px;
+        font-weight: bold;
+    }
+
+    </style>
+
+    <head>
+        <meta charset="UTF-8">
+        <title>105-274</title>
+    </head>
+
+    <body>
+        <h1>
+        <a href="./105_273.html" rel="external" title="prev">≪</a>
+        105-274
+        <a href="./105_275.html" rel="external" title="next">≫</a>
+        </h1>
+        <div class='problem'>
+            <p>
+                <span id="grad1">　問題文　</span>
+            </p>
+            <p>
+                <p>14歳女児。身長160cm、体重52kg。造血幹細胞移植後の真菌感染症予防のため、フルコナゾールカプセルで管理を行っていた。しかし、画像診断や検査値などからアスペルギルス症が疑われ、注射用ボリコナゾールが投与されることになった。</p>
+<p>検査値：AST 25IU/L、ALT 37IU/L、γ-GTP 40IU/L、血清クレアチニン値 0.7mg/dL</p>
+<h4>問274</h4>
+<p>病棟担当薬剤師は、注射用ボリコナゾールの投与にあたり、処方監査を行い、投与後のモニタリングについて検討した。薬剤師の対応として適切なのはどれか。2つ選べ。</p>
+<ol><li>経口剤への変更を提案する。</li><li>体重あたりの用量(mg/kg)が、成人の標準用量よりも低用量で開始されていることを確認する。</li><li>ボリコナゾールによって代謝が強く阻害される薬剤が併用されていないことを確認する。</li><li>ボリコナゾールの血漿中濃度は24時間以内に定常状態に達すると考えられるため、TDM用の採血は投与開始日の翌日に行う。</li><li>重篤な肝障害が現れることがあるので、肝機能を定期的にモニタリングする。</li></ol>
+<h4>問275</h4>
+<p>初日はボリコナゾールとして1回300mgを1日2回、2日目以降は1回200mgを1日2回点滴静注し、治療を行ったが、症状やレントゲン陰影の改善はみられなかった。この患者におけるボリコナゾールの定常状態での平均血漿中濃度は1.0mg/Lであったため、薬剤師は治療域に達していないと判断した。</p>
+<p>この患者における定常状態における平均血漿中濃度を2.5mg/Lとしたい。ボリコナゾールの1日投与量(mg/day)として最も適切なのはどれか。1つ選べ。</p>
+<p>ただし、ボリコナゾールの定常状態における平均血漿中濃度と体内からの消失速度の関係はMichaelis-Menten式で表され、K<sub>m</sub>値は0.50mg/Lとする。</p>
+<ol><li>500</li><li>600</li><li>700</li><li>800</li><li>1,000</li></ol>    
+            </p>
+        </div>
+        <hr>
+
+        <input type="button" value="check ans" onclick="toggle_switch()"/>
+        
+        <div id='toggle'>
+        <div class='answer'>
+            <p>
+                <span id="grad2">　解答　　</span>
+            </p>
+            <p>
+            問274：3, 5問275：1
+            </p>
+        </div>
+        <div class='description'>
+            <p>
+                <span id="grad2">　解説　　</span>
+            </p>
+            <h4>問274</h4>
+<p>選択肢 1 ですが<br/>小児に対するボリコナゾール（ブイフェンド）錠の用法は「注射剤による投与を行った後」食間に経口投与します。これから注射剤を投与しようというタイミングで経口剤への変更提案は不適切と考えられます。よって、選択肢 1 は誤りです。</p>
+<p>選択肢 2 ですが<br/>12 歳以上 50kg 以上なので、成人の標準用量より低用量での開始は必要ありません。ボリコナゾール注射剤に関する知識として知らなくても、ちょっと大きめの子供なので、低用量では不足するのではないかと推測できるのではないかと思われます。よって、選択肢 2 は誤りです。</p>
+<p>選択肢 3 は妥当な記述です。</p>
+<p>選択肢 4 ですが<br/>通常投与では、定常状態に達するまで５日程度かかるとされています。よって、選択肢 4 は誤りです。</p>
+<p>選択肢 5 は妥当な記述です。</p>
+<p>以上より、正解は 3,5 です。</p>
+<h4>問275</h4>
+<p>ミカエリスメンテン式 <strong>v = Vmax ・［S］/（ Km ＋［S］）</strong>は、基礎知識です。定常状態においては、投与量＝消失速度 v と考えられます。</p>
+<p>治療域に達していない時に、定常状態においてボリコナゾールは 1日 400mg 投与です。よって、左辺の v = 400mg/day です。［S］は基質濃度＝薬物濃度なので、1.0 mg/L です。代入することで、Vmax がわかります。</p>
+<p><img alt="" class="alignnone size-full wp-image-21253" height="137.89999999999998" loading="lazy" sizes="(max-width: 380px) 100vw, 380px" src="data:;base64,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" width="266.0"/></p>
+<p>求めたい投与量＝消失速度 を v’ とします。求められた Vmax を用いると</p>
+<p><img alt="" class="alignnone size-full wp-image-21255" height="89.6" loading="lazy" src="data:;base64,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" width="130.2"/></p>
+<p>です。</p>
+<p>以上より、正解は 1 です。</p>
+<p>類題 </p>
+            </p>
+        </div>
+        </div>
+    </body>
+    <script>
+    document.getElementById("toggle").style.display="none";
+    function toggle_switch(){
+        var x = document.getElementById("toggle");
+        if (x.style.display=="block"){
+            x.style.display="none";
+        }
+        else{
+            x.style.display="block";
+        }
+    }
+    </script>
+    

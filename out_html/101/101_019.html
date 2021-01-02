@@ -1,0 +1,87 @@
+
+        <!DOCTYPE html>
+    <html lang="ja">
+    <style>
+    body
+    {
+        color: black;
+        background-color: white;
+    }
+    div{
+        font-size: 14px;
+    }
+    span
+    {
+        font-size: 18px;
+    }
+    #grad1{
+        background: linear-gradient(transparent 60%,#99e4f1 30%);
+        font-size: 18px;
+        font-weight: bold;
+    }
+    #grad2{
+        background: linear-gradient(transparent 60%,#fda1a1 30%);
+        font-size: 18px;
+        font-weight: bold;
+    }
+
+    </style>
+
+    <head>
+        <meta charset="UTF-8">
+        <title>101-19</title>
+    </head>
+
+    <body>
+        <h1>
+        <a href="./101_018.html" rel="external" title="prev">≪</a>
+        101-19
+        <a href="./101_020.html" rel="external" title="next">≫</a>
+        </h1>
+        <div class='problem'>
+            <p>
+                <span id="grad1">　問題文　</span>
+            </p>
+            <p>
+                <p>最近10年間(平成17年以降)で、我が国において、発生患者数が最も多い食中毒の病因物質はどれか。1つ選べ。</p>
+<ol><li>黄色ブドウ球菌</li><li>カンピロバクター・ジェジュニ／コリ</li><li>サルモネラ属菌</li><li>腸管出血性大腸菌(ベロ毒素産生)</li><li>ノロウイルス</li></ol>    
+            </p>
+        </div>
+        <hr>
+
+        <input type="button" value="check ans" onclick="toggle_switch()"/>
+        
+        <div id='toggle'>
+        <div class='answer'>
+            <p>
+                <span id="grad2">　解答　　</span>
+            </p>
+            <p>
+            5
+            </p>
+        </div>
+        <div class='description'>
+            <p>
+                <span id="grad2">　解説　　</span>
+            </p>
+            <p>食中毒の病因物質としては、細菌、ウイルス、自然毒などがあります。食中毒件数、食中毒患者数　共にここ１０年の最大の原因はノロウイルスです。</p>
+<p>以上より、正解は 5 です。</p>
+<p>ちなみに、カンピロバクター（細菌の一種）が、例外がたまにありますがほぼ２位です。</p>
+<p>また、特徴的なものとして、件数は少ないが１件当たりの患者数が多いのがウェルシュ菌です。別名給食病と呼ばれます。</p>
+            </p>
+        </div>
+        </div>
+    </body>
+    <script>
+    document.getElementById("toggle").style.display="none";
+    function toggle_switch(){
+        var x = document.getElementById("toggle");
+        if (x.style.display=="block"){
+            x.style.display="none";
+        }
+        else{
+            x.style.display="block";
+        }
+    }
+    </script>
+    

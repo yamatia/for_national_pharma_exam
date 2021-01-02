@@ -1,0 +1,89 @@
+
+        <!DOCTYPE html>
+    <html lang="ja">
+    <style>
+    body
+    {
+        color: black;
+        background-color: white;
+    }
+    div{
+        font-size: 14px;
+    }
+    span
+    {
+        font-size: 18px;
+    }
+    #grad1{
+        background: linear-gradient(transparent 60%,#99e4f1 30%);
+        font-size: 18px;
+        font-weight: bold;
+    }
+    #grad2{
+        background: linear-gradient(transparent 60%,#fda1a1 30%);
+        font-size: 18px;
+        font-weight: bold;
+    }
+
+    </style>
+
+    <head>
+        <meta charset="UTF-8">
+        <title>101-171</title>
+    </head>
+
+    <body>
+        <h1>
+        <a href="./101_170.html" rel="external" title="prev">≪</a>
+        101-171
+        <a href="./101_172.html" rel="external" title="next">≫</a>
+        </h1>
+        <div class='problem'>
+            <p>
+                <span id="grad1">　問題文　</span>
+            </p>
+            <p>
+                <p>薬物Aは、静脈内投与後、肝臓における代謝と腎排泄によってのみ消失し、正常時は肝クリアランスが全身クリアランスの80%であること、腎排泄は糸球体ろ過のみによって起こることがわかっている。</p>
+<p>ある肝疾患患者において、血中アルブミン濃度の低下により薬物Aの血中タンパク非結合形分率が2倍に上昇し、肝クリアランスは4分の1に低下していた。</p>
+<p>この患者に対し、正常時の2分の1の血中濃度時間曲線下面積(AUC)が得られるようにするには、静脈内投与量を正常時の何%にすればよいか。1つ選べ。ただし、薬物Aの体内動態には、いずれの場合にも線形性が成り立つものとする。</p>
+<ol><li>30</li><li>60</li><li>80</li><li>100</li><li>120</li></ol>    
+            </p>
+        </div>
+        <hr>
+
+        <input type="button" value="check ans" onclick="toggle_switch()"/>
+        
+        <div id='toggle'>
+        <div class='answer'>
+            <p>
+                <span id="grad2">　解答　　</span>
+            </p>
+            <p>
+            1
+            </p>
+        </div>
+        <div class='description'>
+            <p>
+                <span id="grad2">　解説　　</span>
+            </p>
+            <p>CLtot を 100 と仮定します。CL肝が、80％ とのことなので、CL肝＝80、CL腎＝20　となります。</p>
+<p>「血中タンパク非結合率が２倍」　とは、タンパク質がくっついていない薬物の血中濃度が２倍 → 邪魔ものがくっついてなくて腎臓の糸球体をすり抜けることができる薬物が２倍 → 腎排泄が、糸球体ろ過のみだから「腎クリアランス２倍」と考えることができます。<strong>つまり、肝疾患患者において、CL 腎が 40 です。</strong>また、<strong>肝クリアランスは1/4 なので、20 です。</strong>従って、肝疾患患者の全身クリアランスは 40 + 20 = 60 です。</p>
+<p>今もし、CL tot が 100 だとしたら、投与量を 50 % にすれば AUC も半分です。ところが、 CL tot が 60 なのだから、100 ： 50% = 60 ： ? （％）　を解けばよいことになります。従って、投与量は 30 % です。</p>
+<p>以上より、正解は 1 です。</p>
+            </p>
+        </div>
+        </div>
+    </body>
+    <script>
+    document.getElementById("toggle").style.display="none";
+    function toggle_switch(){
+        var x = document.getElementById("toggle");
+        if (x.style.display=="block"){
+            x.style.display="none";
+        }
+        else{
+            x.style.display="block";
+        }
+    }
+    </script>
+    

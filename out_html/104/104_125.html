@@ -1,0 +1,90 @@
+
+        <!DOCTYPE html>
+    <html lang="ja">
+    <style>
+    body
+    {
+        color: black;
+        background-color: white;
+    }
+    div{
+        font-size: 14px;
+    }
+    span
+    {
+        font-size: 18px;
+    }
+    #grad1{
+        background: linear-gradient(transparent 60%,#99e4f1 30%);
+        font-size: 18px;
+        font-weight: bold;
+    }
+    #grad2{
+        background: linear-gradient(transparent 60%,#fda1a1 30%);
+        font-size: 18px;
+        font-weight: bold;
+    }
+
+    </style>
+
+    <head>
+        <meta charset="UTF-8">
+        <title>104-125</title>
+    </head>
+
+    <body>
+        <h1>
+        <a href="./104_124.html" rel="external" title="prev">≪</a>
+        104-125
+        <a href="./104_126.html" rel="external" title="next">≫</a>
+        </h1>
+        <div class='problem'>
+            <p>
+                <span id="grad1">　問題文　</span>
+            </p>
+            <p>
+                <p>母子感染とその予防に関する記述のうち、正しいのはどれか。2つ選べ。</p>
+<ol><li>水平感染とは、母親から胎児又は新生児に病原体が直接伝播する感染様式である。</li><li>ヒト免疫不全ウイルス(HIV)は、母子感染することはない。</li><li>HBs抗原陽性の母親から生まれてくる児には、出生後、抗HBs人免疫グロブリンとB型肝炎ワクチンを投与する必要がある。</li><li>梅毒トレポネーマに対して、人工栄養哺育などにより母乳を介した感染を防ぐ対策がなされている。</li><li>妊娠初期に妊婦が風しんに罹患すると、先天性風しん症候群を起こすことがある。</li></ol>
+<p>HBs：B型肝炎(HB)ウイルス粒子の外郭を構成するタンパク質</p>    
+            </p>
+        </div>
+        <hr>
+
+        <input type="button" value="check ans" onclick="toggle_switch()"/>
+        
+        <div id='toggle'>
+        <div class='answer'>
+            <p>
+                <span id="grad2">　解答　　</span>
+            </p>
+            <p>
+            3, 5
+            </p>
+        </div>
+        <div class='description'>
+            <p>
+                <span id="grad2">　解説　　</span>
+            </p>
+            <p><span style="font-weight: 400;">選択肢 1 ですが<br/></span><span style="font-weight: 400;">記述は「垂直感染」です。水平感染とは、接触、空気感染等を通じて、個人間において感染する様式のことです。よって、選択肢 1 は誤りです。</span></p>
+<p><span style="font-weight: 400;">選択肢 2 ですが<br/></span><span style="font-weight: 400;">HIV は母子感染します。よって、選択肢 2 は誤りです。</span></p>
+<p><span style="font-weight: 400;">選択肢 3 は妥当な記述です。</span></p>
+<p><span style="font-weight: 400;">選択肢 4 ですが<br/></span><span style="font-weight: 400;">母乳を介した感染を防ぐといえば、成人 T 細胞白血病の原因である HTLV-1 です。（）梅毒ではありません。よって、選択肢 4 は誤りです。</span></p>
+<p><span style="font-weight: 400;">選択肢 5 は妥当な記述です。</span></p>
+<p><span style="font-weight: 400;">以上より、正解は 3,5 です。<br/></span><span style="font-weight: 400;">参考）</span><span style="font-weight: 400;"><br/></span></p>
+            </p>
+        </div>
+        </div>
+    </body>
+    <script>
+    document.getElementById("toggle").style.display="none";
+    function toggle_switch(){
+        var x = document.getElementById("toggle");
+        if (x.style.display=="block"){
+            x.style.display="none";
+        }
+        else{
+            x.style.display="block";
+        }
+    }
+    </script>
+    

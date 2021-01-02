@@ -1,0 +1,97 @@
+
+        <!DOCTYPE html>
+    <html lang="ja">
+    <style>
+    body
+    {
+        color: black;
+        background-color: white;
+    }
+    div{
+        font-size: 14px;
+    }
+    span
+    {
+        font-size: 18px;
+    }
+    #grad1{
+        background: linear-gradient(transparent 60%,#99e4f1 30%);
+        font-size: 18px;
+        font-weight: bold;
+    }
+    #grad2{
+        background: linear-gradient(transparent 60%,#fda1a1 30%);
+        font-size: 18px;
+        font-weight: bold;
+    }
+
+    </style>
+
+    <head>
+        <meta charset="UTF-8">
+        <title>101-226</title>
+    </head>
+
+    <body>
+        <h1>
+        <a href="./101_225.html" rel="external" title="prev">≪</a>
+        101-226
+        <a href="./101_227.html" rel="external" title="next">≫</a>
+        </h1>
+        <div class='problem'>
+            <p>
+                <span id="grad1">　問題文　</span>
+            </p>
+            <p>
+                <p>65歳女性。食道がんを切除後、経口による栄養補給が不可能となったため、高カロリー輸液(Total Parenteral Nutrition)療法が適用となった。</p>
+<h4>問226</h4>
+<p>2週間投与したところで、患者が病棟薬剤師に口内炎による痛みを訴えた。薬剤師は、ビタミンの補充が必要と判断した。このとき、補充を提案すべきビタミンとして適切なのはどれか。2つ選べ。</p>
+<ol><li>ビタミンA</li><li>ビタミンB<sub>2</sub></li><li>ビタミンD</li><li>ビタミンE</li><li>葉酸</li></ol>
+<h4>問227</h4>
+<p>栄養素の補給に関する記述のうち、正しいのはどれか。2つ選べ。</p>
+<ol><li>高カロリー輸液に含まれるビタミンB<sub>12</sub>が機能を発現するには、胃の内因子が必要である。</li><li>高カロリー輸液にビタミンB<sub>1</sub>を過剰に添加すると、ウェルニッケ脳症を引き起こす。</li><li>亜鉛の補給は、褥瘡の防止・早期修復に効果を示す。</li><li>高カロリー輸液にセレンを添加しないと、心機能異常を起こすことがある。</li><li>肝機能が著しく低下した患者の高カロリー輸液には、グルタミンを多く添加する必要がある。</li></ol>    
+            </p>
+        </div>
+        <hr>
+
+        <input type="button" value="check ans" onclick="toggle_switch()"/>
+        
+        <div id='toggle'>
+        <div class='answer'>
+            <p>
+                <span id="grad2">　解答　　</span>
+            </p>
+            <p>
+            問226：2, 5問227：3, 4
+            </p>
+        </div>
+        <div class='description'>
+            <p>
+                <span id="grad2">　解説　　</span>
+            </p>
+            <h4>問226</h4>
+<p>TPN ではまず、ビタミン B<span style="font-weight: 400;"><sub>1</sub></span>が必須です。そして口内炎に関連するビタミンの欠乏としてはビタミン B<span style="font-weight: 400;"><sub>2</sub></span>と、葉酸が考えられます。これらのビタミンは粘膜の生成に関係しているとされています。</p>
+<p>以上より、正解は 2,5 です。</p>
+<h4>問227</h4>
+<p>選択肢１ですが<br/>消化器からの吸収には、胃で作られる糖タンパク質の一種である内因子が必要です。しかし TPN では、直接血液に輸液するため吸収過程が不要です。そのため、内因子は必要ではありません。よって、選択肢 1 は誤りです。</p>
+<p>選択肢 ２ ですが<br/>ウェルニッケ脳症とは、ビタミン B<span style="font-weight: 400;"><sub>1</sub></span>の「欠乏」で生じる脳症です。過剰に添加した結果ではありません。よって、選択肢２は、誤りです。</p>
+<p>選択肢３、４は、正しい選択肢です。</p>
+<p>選択肢５ですが<br/>肝機能低下時は、Fisher 比が高いアミノ酸組成にします。Fisher 比とは分岐鎖アミノ酸（イソロイシン、ロイシン、バリン）と、芳香族アミノ酸（チロシン、フェニルアラニン）のモル比です。Fisher 比を高くするとは、分岐鎖アミノ酸を多めにするということです。よって、グルタミンを多く添加する必要は特にないと考えられます。従って、選択肢 5 は誤りです。</p>
+<p>以上より、正解は ３、４です。</p>
+            </p>
+        </div>
+        </div>
+    </body>
+    <script>
+    document.getElementById("toggle").style.display="none";
+    function toggle_switch(){
+        var x = document.getElementById("toggle");
+        if (x.style.display=="block"){
+            x.style.display="none";
+        }
+        else{
+            x.style.display="block";
+        }
+    }
+    </script>
+    

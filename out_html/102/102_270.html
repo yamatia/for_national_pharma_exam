@@ -1,0 +1,97 @@
+
+        <!DOCTYPE html>
+    <html lang="ja">
+    <style>
+    body
+    {
+        color: black;
+        background-color: white;
+    }
+    div{
+        font-size: 14px;
+    }
+    span
+    {
+        font-size: 18px;
+    }
+    #grad1{
+        background: linear-gradient(transparent 60%,#99e4f1 30%);
+        font-size: 18px;
+        font-weight: bold;
+    }
+    #grad2{
+        background: linear-gradient(transparent 60%,#fda1a1 30%);
+        font-size: 18px;
+        font-weight: bold;
+    }
+
+    </style>
+
+    <head>
+        <meta charset="UTF-8">
+        <title>102-270</title>
+    </head>
+
+    <body>
+        <h1>
+        <a href="./102_269.html" rel="external" title="prev">≪</a>
+        102-270
+        <a href="./102_271.html" rel="external" title="next">≫</a>
+        </h1>
+        <div class='problem'>
+            <p>
+                <span id="grad1">　問題文　</span>
+            </p>
+            <p>
+                <p>76歳男性。1年ほど前から安静時に手足の震えや硬直が認められ、パーキンソン病と診断された。現在までレボドパ・ベンセラジド配合錠が処方され、症状は改善されている。</p>
+<h4>問270</h4>
+<p>レボドパと、その薬効増強を目的として配合されているベンセラジドに関する記述として、正しいのはどれか。2つ選べ。</p>
+<ol><li>レボドパは、主にアミノ酸トランスポーターLAT1により脳内に移行する。</li><li>レボドパは、主に単純拡散により脳内に移行する。</li><li>ベンセラジドは、主にモノアミン輸送系により脳内に移行する。</li><li>ベンセラジドは、脳におけるレボドパからドパミンへの代謝を阻害する。</li><li>ベンセラジドは、末梢組織におけるレボドパからドパミンへの代謝を阻害する。</li></ol>
+<h4>問271</h4>
+<p>3日前より尿が出にくいという症状が現れたため、泌尿器科を受診し、神経因性膀胱による排尿困難と診断された。本患者に適切でない薬剤はどれか。1つ選べ。</p>
+<ol><li>ウラピジル</li><li>タムスロシン塩酸塩</li><li>ナフトピジル</li><li>プラゾシン塩酸塩</li><li>ベタネコール塩化物</li></ol>    
+            </p>
+        </div>
+        <hr>
+
+        <input type="button" value="check ans" onclick="toggle_switch()"/>
+        
+        <div id='toggle'>
+        <div class='answer'>
+            <p>
+                <span id="grad2">　解答　　</span>
+            </p>
+            <p>
+            問270：1, 5問271：5
+            </p>
+        </div>
+        <div class='description'>
+            <p>
+                <span id="grad2">　解説　　</span>
+            </p>
+            <h4>問270</h4>
+<p>レボドパは、ドパミンの前駆体です。BBB（Blood Brain Barrier ：血液脳関門）非通過ですがアミノ酸トランスポーターにのって脳内へ移行し代謝を受けてドパミンになり、中枢作用を示します。</p>
+<p>ベンセラシドは、末梢におけるレボドパ代謝酵素の阻害薬です。</p>
+<p>以上より、正解は 1,5 です。</p>
+<h4>問271</h4>
+<p>選択肢 1 ～ 4 は、全て α 遮断薬です。α遮断で、膀胱括約筋が弛緩します。膀胱括約筋は収縮することで、尿が出ないようにします。つまり、蓄尿方向に作用します。従って弛緩すれば排尿方向に作用します。排尿困難に対して、適切な作用と考えられます。</p>
+<p>選択肢 5 ですが<br/>ベタネコールは、コリン作動薬です。パーキンソン病とは、ドパミン作動性神経とコリン作動性神経のバランスが崩れることで、筋固縮、振戦といった症状がおきる進行性の疾患です。</p>
+<p>現在、症状が改善されているということから、バランスがちょうどよい状態と考えられます。ここでコリン作動薬を用いるとバランスが崩れるおそれがあります。よって、本患者には不適切であると考えられます。</p>
+<p>以上より、正解は 5 です。</p>
+            </p>
+        </div>
+        </div>
+    </body>
+    <script>
+    document.getElementById("toggle").style.display="none";
+    function toggle_switch(){
+        var x = document.getElementById("toggle");
+        if (x.style.display=="block"){
+            x.style.display="none";
+        }
+        else{
+            x.style.display="block";
+        }
+    }
+    </script>
+    

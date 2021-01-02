@@ -1,0 +1,97 @@
+
+        <!DOCTYPE html>
+    <html lang="ja">
+    <style>
+    body
+    {
+        color: black;
+        background-color: white;
+    }
+    div{
+        font-size: 14px;
+    }
+    span
+    {
+        font-size: 18px;
+    }
+    #grad1{
+        background: linear-gradient(transparent 60%,#99e4f1 30%);
+        font-size: 18px;
+        font-weight: bold;
+    }
+    #grad2{
+        background: linear-gradient(transparent 60%,#fda1a1 30%);
+        font-size: 18px;
+        font-weight: bold;
+    }
+
+    </style>
+
+    <head>
+        <meta charset="UTF-8">
+        <title>99-270</title>
+    </head>
+
+    <body>
+        <h1>
+        <a href="./099_269.html" rel="external" title="prev">≪</a>
+        99-270
+        <a href="./099_271.html" rel="external" title="next">≫</a>
+        </h1>
+        <div class='problem'>
+            <p>
+                <span id="grad1">　問題文　</span>
+            </p>
+            <p>
+                <p>40歳男性。体重65kg。病院で腎移植後、シクロスポリンを含む処方による治療を継続中である。1年後の定期検診で脂質異常症と高血圧症を指摘された。</p>
+<h4>問270</h4>
+<p>これらの症状を改善する次の薬物のうち、シクロスポリンと併用禁忌なのはどれか。1つ選べ。</p>
+<ol><li>アムロジピンベシル酸塩</li><li>イコサペント酸エチル</li><li>カルテオロール塩酸塩</li><li>コレスチラミン</li><li>ロスバスタチンカルシウム</li></ol>
+<h4>問271</h4>
+<p>前問において併用禁忌となる相互作用の主なメカニズムはどれか。1つ選べ。</p>
+<ol><li>ペプチドトランスポーターを介した小腸吸収の阻害</li><li>有機アニオントランスポーターを介した肝取り込みの阻害</li><li>肝CYP3A4による代謝の亢進</li><li>糸球体ろ過速度の上昇</li><li>有機カチオントランスポーターを介した尿細管分泌の阻害</li></ol>    
+            </p>
+        </div>
+        <hr>
+
+        <input type="button" value="check ans" onclick="toggle_switch()"/>
+        
+        <div id='toggle'>
+        <div class='answer'>
+            <p>
+                <span id="grad2">　解答　　</span>
+            </p>
+            <p>
+            問270：5問271：2
+            </p>
+        </div>
+        <div class='description'>
+            <p>
+                <span id="grad2">　解説　　</span>
+            </p>
+            <h4>問270</h4>
+<p>シクロスポリン（サンディミュン、ネオーラル）は、ピタバスタチン（リバロ）　及び　ロスバスタチン（クレストール）　と併用禁忌です。（高脂血症薬であれば、リピトールやローコールならば併用禁忌ではない。（併用注意）。）</p>
+<p>このメカニズムですが、OATP１B１（有機アニオントランスポーターの一種）をネオーラルが阻害 → 血中から肝臓への、スタチン取り込みが阻害 → スタチン系の血中濃度が上昇　です。</p>
+<p>又、降圧薬では、アリスキレン（ラジレス）が併用禁忌です。</p>
+<p>以上より、正解は 5 です。</p>
+<p>ちなみに、シクロスポリンによる副作用に高脂血症があります。よって、シクロスポリンによる治療中の患者に高脂血症薬が用いられることは考えうることです。そのため、このような禁忌については確実に覚えておくよう、意識しておく必要があるといえます。</p>
+<h4>問271</h4>
+<p>前問の解説の通り、有機アニオントランスポーターを介した肝取り込み阻害による相互作用です。</p>
+<p>以上より、正解は 2 です。</p>
+            </p>
+        </div>
+        </div>
+    </body>
+    <script>
+    document.getElementById("toggle").style.display="none";
+    function toggle_switch(){
+        var x = document.getElementById("toggle");
+        if (x.style.display=="block"){
+            x.style.display="none";
+        }
+        else{
+            x.style.display="block";
+        }
+    }
+    </script>
+    

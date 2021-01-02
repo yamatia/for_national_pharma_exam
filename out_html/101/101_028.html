@@ -1,0 +1,89 @@
+
+        <!DOCTYPE html>
+    <html lang="ja">
+    <style>
+    body
+    {
+        color: black;
+        background-color: white;
+    }
+    div{
+        font-size: 14px;
+    }
+    span
+    {
+        font-size: 18px;
+    }
+    #grad1{
+        background: linear-gradient(transparent 60%,#99e4f1 30%);
+        font-size: 18px;
+        font-weight: bold;
+    }
+    #grad2{
+        background: linear-gradient(transparent 60%,#fda1a1 30%);
+        font-size: 18px;
+        font-weight: bold;
+    }
+
+    </style>
+
+    <head>
+        <meta charset="UTF-8">
+        <title>101-28</title>
+    </head>
+
+    <body>
+        <h1>
+        <a href="./101_027.html" rel="external" title="prev">≪</a>
+        101-28
+        <a href="./101_029.html" rel="external" title="next">≫</a>
+        </h1>
+        <div class='problem'>
+            <p>
+                <span id="grad1">　問題文　</span>
+            </p>
+            <p>
+                <p>リトドリンの子宮収縮抑制作用機序はどれか。1つ選べ。</p>
+<ol><li>アドレナリンα<sub>1</sub>受容体遮断</li><li>アドレナリンα<sub>2</sub>受容体刺激</li><li>アドレナリンβ<sub>1</sub>受容体遮断</li><li>アドレナリンβ<sub>2</sub>受容体刺激</li><li>アドレナリンβ<sub>3</sub>受容体遮断</li></ol>    
+            </p>
+        </div>
+        <hr>
+
+        <input type="button" value="check ans" onclick="toggle_switch()"/>
+        
+        <div id='toggle'>
+        <div class='answer'>
+            <p>
+                <span id="grad2">　解答　　</span>
+            </p>
+            <p>
+            4
+            </p>
+        </div>
+        <div class='description'>
+            <p>
+                <span id="grad2">　解説　　</span>
+            </p>
+            <p>リトドリンの作用機序は、β<span style="font-weight: 400;"><sub>2</sub></span> 受容体刺激です。</p>
+<p>以上より、正解は 4 です。</p>
+<p>ちなみに、選択肢 1 ですが<br/>α<span style="font-weight: 400;"><sub>1</sub></span>受容体遮断薬としては、平滑筋に作用して、降圧作用を有するものや（例：ドキサゾシン　（カルデナリン））、前立腺に作用して前立腺肥大に伴う排尿障害を改善するもの（例：ウラピジル　（エブランチル））があります。</p>
+<p>選択肢 2 ですが<br/>α<span style="font-weight: 400;"><sub>2</sub></span>受容体刺激薬としては、中枢に作用して降圧作用を有するものがあります。（例：クロニジン　（カタプレス））</p>
+<p>選択肢 3,5 ですが<br/>β 遮断薬としては、心臓の働きを抑制するものがあります。β受容体には、β<span style="font-weight: 400;"><sub>1</sub></span> ～ β<span style="font-weight: 400;"><sub>3</sub></span> のサブタイプが知られています。</p>
+<p>β<span style="font-weight: 400;"><sub>1</sub></span> 受容体は主に心臓に分布しており、β<span style="font-weight: 400;"><sub>1</sub></span> 遮断薬は主に心臓に働き、心不全の治療薬として用いられます。β<span style="font-weight: 400;"><sub>2</sub></span>受容体は、血管平滑筋や気管支平滑筋に分布しています。β<span style="font-weight: 400;"><sub>3</sub></span> 受容体は、排尿筋や脂肪組織に分布しています。β<span style="font-weight: 400;"><sub>3</sub></span> 受容体に関する薬は、刺激薬で過活動膀胱治療薬である<br/>ミラベグロン（ベタニス）のみです。（※本問出題時において）</p>
+            </p>
+        </div>
+        </div>
+    </body>
+    <script>
+    document.getElementById("toggle").style.display="none";
+    function toggle_switch(){
+        var x = document.getElementById("toggle");
+        if (x.style.display=="block"){
+            x.style.display="none";
+        }
+        else{
+            x.style.display="block";
+        }
+    }
+    </script>
+    

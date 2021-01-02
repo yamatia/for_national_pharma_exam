@@ -1,0 +1,89 @@
+
+        <!DOCTYPE html>
+    <html lang="ja">
+    <style>
+    body
+    {
+        color: black;
+        background-color: white;
+    }
+    div{
+        font-size: 14px;
+    }
+    span
+    {
+        font-size: 18px;
+    }
+    #grad1{
+        background: linear-gradient(transparent 60%,#99e4f1 30%);
+        font-size: 18px;
+        font-weight: bold;
+    }
+    #grad2{
+        background: linear-gradient(transparent 60%,#fda1a1 30%);
+        font-size: 18px;
+        font-weight: bold;
+    }
+
+    </style>
+
+    <head>
+        <meta charset="UTF-8">
+        <title>99-18</title>
+    </head>
+
+    <body>
+        <h1>
+        <a href="./099_017.html" rel="external" title="prev">≪</a>
+        99-18
+        <a href="./099_019.html" rel="external" title="next">≫</a>
+        </h1>
+        <div class='problem'>
+            <p>
+                <span id="grad1">　問題文　</span>
+            </p>
+            <p>
+                <p>我が国の死亡統計において、1985年以降緩やかな上昇傾向を示している指標はどれか。1つ選べ。</p>
+<ol><li>妊産婦死亡率</li><li>周産期死亡率</li><li>乳児死亡率</li><li>粗死亡率</li><li>年齢調整死亡率</li></ol>    
+            </p>
+        </div>
+        <hr>
+
+        <input type="button" value="check ans" onclick="toggle_switch()"/>
+        
+        <div id='toggle'>
+        <div class='answer'>
+            <p>
+                <span id="grad2">　解答　　</span>
+            </p>
+            <p>
+            4
+            </p>
+        </div>
+        <div class='description'>
+            <p>
+                <span id="grad2">　解説　　</span>
+            </p>
+            <p>我が国の人口構成の、大きなトレンドは少子高齢化です。又、医療の質は世界トップクラスであり、出産及び、その後の母子に対する危険性が世界でも相当低い国である点や高水準の医療により、寿命を全うすることが高い確率で実現できているという背景があります。全ての指標について覚えていることは期待できないため、これらの背景をふまえて各選択肢を検討するとよいと考えられます。</p>
+<p>選択肢 1,2 ですが<br/>出産に関する危険が低いことから考えると、緩やかな上昇傾向にあるとは考えにくく、誤りと判断できると考えられます。</p>
+<p>選択肢 3 ですが<br/>乳児に対する医療体制が手厚く保護されている点から、緩やかな上昇傾向にあるとは考えにくく、誤りと判断できると考えられます。</p>
+<p>選択肢 4 は、正しい記述です。<br/>粗死亡率とは、一定期間の死亡数をその期間の人口で割った値のことです。高齢化の進展と、人口の頭打ち→減少という流れから、死亡率は緩やかに上昇傾向（∵高齢者の方が、死亡率が高いため）及び、人口は現状維持から、緩やかに減少傾向と考えられます。つまり、粗死亡率が緩やかに上昇していると推測されます。</p>
+<p>選択肢 5 ですが<br/>年齢調整死亡率とは、年齢構成の違いを考慮し補正した死亡率のことです。高齢化を補正した指標といえるので、緩やかな上昇傾向にあるとは考えにくく、誤りと判断できると考えられます。</p>
+<p>以上より、正解は 4 です。<br/>参考）　</p>
+            </p>
+        </div>
+        </div>
+    </body>
+    <script>
+    document.getElementById("toggle").style.display="none";
+    function toggle_switch(){
+        var x = document.getElementById("toggle");
+        if (x.style.display=="block"){
+            x.style.display="none";
+        }
+        else{
+            x.style.display="block";
+        }
+    }
+    </script>
+    

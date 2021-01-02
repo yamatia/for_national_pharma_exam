@@ -1,0 +1,90 @@
+
+        <!DOCTYPE html>
+    <html lang="ja">
+    <style>
+    body
+    {
+        color: black;
+        background-color: white;
+    }
+    div{
+        font-size: 14px;
+    }
+    span
+    {
+        font-size: 18px;
+    }
+    #grad1{
+        background: linear-gradient(transparent 60%,#99e4f1 30%);
+        font-size: 18px;
+        font-weight: bold;
+    }
+    #grad2{
+        background: linear-gradient(transparent 60%,#fda1a1 30%);
+        font-size: 18px;
+        font-weight: bold;
+    }
+
+    </style>
+
+    <head>
+        <meta charset="UTF-8">
+        <title>101-58</title>
+    </head>
+
+    <body>
+        <h1>
+        <a href="./101_057.html" rel="external" title="prev">≪</a>
+        101-58
+        <a href="./101_059.html" rel="external" title="next">≫</a>
+        </h1>
+        <div class='problem'>
+            <p>
+                <span id="grad1">　問題文　</span>
+            </p>
+            <p>
+                <p>クッシング症候群の臨床症状及び所見に該当するのはどれか。1つ選べ。</p>
+<ol><li>低血圧</li><li>低血糖</li><li>中心性肥満</li><li>筋力増強</li><li>皮膚の肥厚</li></ol>    
+            </p>
+        </div>
+        <hr>
+
+        <input type="button" value="check ans" onclick="toggle_switch()"/>
+        
+        <div id='toggle'>
+        <div class='answer'>
+            <p>
+                <span id="grad2">　解答　　</span>
+            </p>
+            <p>
+            3
+            </p>
+        </div>
+        <div class='description'>
+            <p>
+                <span id="grad2">　解説　　</span>
+            </p>
+            <p>クッシング「症候群」とは、慢性糖質コルチコイド過剰症候群です。（※似た名前で、似た病態ですが異なる病名として、クッシング「病」があります。）ステロイド薬を過剰に摂取している状態と考えると、理解しやすいと思います。ステロイド系の薬の代表的な副作用に該当する症状が表れます。</p>
+<p>ステロイド系の薬の代表的な副作用としては、ムーンフェイス、中心性肥満、高血圧、高脂血症、糖尿病 などがあります。</p>
+<p>選択肢 1,2 は、逆です。</p>
+<p>選択肢 3 は、正しい選択肢です。</p>
+<p>選択肢 4 ですが<br/>筋肉は衰えます。「ステロイドで筋肉増強」といった広告や表現がありますが、筋肉増強の文脈において「ステロイド」とは、「テストステロン」というステロイドの一種を表します。本問における糖質コルチコイドのことではありません。そして、糖質コルチコイドが過剰にあると筋肉は衰えます。</p>
+<p>選択肢 5 ですが、皮膚は薄くなります。</p>
+<p>以上より、正解は 3 です。</p>
+            </p>
+        </div>
+        </div>
+    </body>
+    <script>
+    document.getElementById("toggle").style.display="none";
+    function toggle_switch(){
+        var x = document.getElementById("toggle");
+        if (x.style.display=="block"){
+            x.style.display="none";
+        }
+        else{
+            x.style.display="block";
+        }
+    }
+    </script>
+    

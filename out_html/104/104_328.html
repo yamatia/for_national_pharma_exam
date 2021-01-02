@@ -1,0 +1,88 @@
+
+        <!DOCTYPE html>
+    <html lang="ja">
+    <style>
+    body
+    {
+        color: black;
+        background-color: white;
+    }
+    div{
+        font-size: 14px;
+    }
+    span
+    {
+        font-size: 18px;
+    }
+    #grad1{
+        background: linear-gradient(transparent 60%,#99e4f1 30%);
+        font-size: 18px;
+        font-weight: bold;
+    }
+    #grad2{
+        background: linear-gradient(transparent 60%,#fda1a1 30%);
+        font-size: 18px;
+        font-weight: bold;
+    }
+
+    </style>
+
+    <head>
+        <meta charset="UTF-8">
+        <title>104-328</title>
+    </head>
+
+    <body>
+        <h1>
+        <a href="./104_327.html" rel="external" title="prev">≪</a>
+        104-328
+        <a href="./104_329.html" rel="external" title="next">≫</a>
+        </h1>
+        <div class='problem'>
+            <p>
+                <span id="grad1">　問題文　</span>
+            </p>
+            <p>
+                <p>以下の薬剤の組合せのうち、両薬剤の服用時間をずらすことで併用可能なのはどれか。2つ選べ。</p>
+<ol><li>S-1(テガフール・ギメラシル・オテラシルカリウム配合)カプセル+フルオロウラシル錠</li><li>セフジニルカプセル+クエン酸第一鉄ナトリウム錠</li><li>レボフロキサシン錠+酸化マグネシウム錠</li><li>バルプロ酸Na徐放性顆粒+テビペネムピボキシル細粒</li><li>リファンピシンカプセル+ボリコナゾール錠</li></ol>    
+            </p>
+        </div>
+        <hr>
+
+        <input type="button" value="check ans" onclick="toggle_switch()"/>
+        
+        <div id='toggle'>
+        <div class='answer'>
+            <p>
+                <span id="grad2">　解答　　</span>
+            </p>
+            <p>
+            2, 3
+            </p>
+        </div>
+        <div class='description'>
+            <p>
+                <span id="grad2">　解説　　</span>
+            </p>
+            <p><span style="font-weight: 400;">選択肢 1 ですが<br/></span><span style="font-weight: 400;">テガフールとフルオロウラシルが重複なので、服用時間をずらそうが、量が多いと考えられます。よって、選択肢 1 は誤りです。</span></p>
+<p><span style="font-weight: 400;">選択肢 2,3 は妥当な記述です。<br/></span><span style="font-weight: 400;">吸収阻害の組み合わせなので、時間をずらせば併用可能です。</span></p>
+<p><span style="font-weight: 400;">選択肢 4 ですが<br/></span><span style="font-weight: 400;">テビペネムは経口カルバペネム系抗菌薬です。てんかん発作再発のおそれがあるため併用禁忌です。よって、選択肢 4 は誤りです。</span></p>
+<p><span style="font-weight: 400;">選択肢 5 ですが<br/></span><span style="font-weight: 400;">リファンピシンによるCYPの誘導により、ボリコナゾールの血中濃度が低下します。そのため併用禁忌です。よって、選択肢 5 は誤りです。</span></p>
+<p><span style="font-weight: 400;">以上より、正解は 2,3 です。</span></p>
+            </p>
+        </div>
+        </div>
+    </body>
+    <script>
+    document.getElementById("toggle").style.display="none";
+    function toggle_switch(){
+        var x = document.getElementById("toggle");
+        if (x.style.display=="block"){
+            x.style.display="none";
+        }
+        else{
+            x.style.display="block";
+        }
+    }
+    </script>
+    

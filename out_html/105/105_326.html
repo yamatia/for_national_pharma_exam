@@ -1,0 +1,87 @@
+
+        <!DOCTYPE html>
+    <html lang="ja">
+    <style>
+    body
+    {
+        color: black;
+        background-color: white;
+    }
+    div{
+        font-size: 14px;
+    }
+    span
+    {
+        font-size: 18px;
+    }
+    #grad1{
+        background: linear-gradient(transparent 60%,#99e4f1 30%);
+        font-size: 18px;
+        font-weight: bold;
+    }
+    #grad2{
+        background: linear-gradient(transparent 60%,#fda1a1 30%);
+        font-size: 18px;
+        font-weight: bold;
+    }
+
+    </style>
+
+    <head>
+        <meta charset="UTF-8">
+        <title>105-326</title>
+    </head>
+
+    <body>
+        <h1>
+        <a href="./105_325.html" rel="external" title="prev">≪</a>
+        105-326
+        <a href="./105_327.html" rel="external" title="next">≫</a>
+        </h1>
+        <div class='problem'>
+            <p>
+                <span id="grad1">　問題文　</span>
+            </p>
+            <p>
+                <p>76歳男性。軽度の認知症あり。アルコール多飲歴なし。喉の違和感を主訴に総合病院を受診した結果、食道がんが見つかり、食道全摘術を施行することとなった。</p>
+<p>術後は集中治療室に入室予定である。手術が決まった時点から周術期管理チームで患者をサポートすることになり、まずチームの担当薬剤師が、常用薬とお薬手帳を確認したところ、以下の薬物を服用中であった。</p>
+<p>周術期の使用において特に注意を払う必要がある薬物はどれか。1つ選べ。</p>
+<ol><li>フェブキソスタット</li><li>酸化マグネシウム</li><li>ドンペリドン</li><li>アゼルニジピン</li><li>ブロチゾラム</li></ol>    
+            </p>
+        </div>
+        <hr>
+
+        <input type="button" value="check ans" onclick="toggle_switch()"/>
+        
+        <div id='toggle'>
+        <div class='answer'>
+            <p>
+                <span id="grad2">　解答　　</span>
+            </p>
+            <p>
+            5
+            </p>
+        </div>
+        <div class='description'>
+            <p>
+                <span id="grad2">　解説　　</span>
+            </p>
+            <p>大きな手術後などの炎症状態において、睡眠導入剤を服用すると、高頻度でせん妄発症が知られています。特に注意を払う必要がある薬物は「ブロチゾラム」であると考えられます。</p>
+<p>以上より、正解は 5 です。</p>
+            </p>
+        </div>
+        </div>
+    </body>
+    <script>
+    document.getElementById("toggle").style.display="none";
+    function toggle_switch(){
+        var x = document.getElementById("toggle");
+        if (x.style.display=="block"){
+            x.style.display="none";
+        }
+        else{
+            x.style.display="block";
+        }
+    }
+    </script>
+    

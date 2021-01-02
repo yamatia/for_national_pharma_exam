@@ -1,0 +1,89 @@
+
+        <!DOCTYPE html>
+    <html lang="ja">
+    <style>
+    body
+    {
+        color: black;
+        background-color: white;
+    }
+    div{
+        font-size: 14px;
+    }
+    span
+    {
+        font-size: 18px;
+    }
+    #grad1{
+        background: linear-gradient(transparent 60%,#99e4f1 30%);
+        font-size: 18px;
+        font-weight: bold;
+    }
+    #grad2{
+        background: linear-gradient(transparent 60%,#fda1a1 30%);
+        font-size: 18px;
+        font-weight: bold;
+    }
+
+    </style>
+
+    <head>
+        <meta charset="UTF-8">
+        <title>104-149</title>
+    </head>
+
+    <body>
+        <h1>
+        <a href="./104_148.html" rel="external" title="prev">≪</a>
+        104-149
+        <a href="./104_150.html" rel="external" title="next">≫</a>
+        </h1>
+        <div class='problem'>
+            <p>
+                <span id="grad1">　問題文　</span>
+            </p>
+            <p>
+                <p>遺伝子診断によって起こりうる倫理的問題又はその対応に関する記述のうち、誤っているのはどれか。1つ選べ。</p>
+<ol><li>遺伝子診断に当たっては、検査前だけでなく診断後も被検者に対して適切なカウンセリングが必要である。</li><li>診断結果の開示には、被検者本人の自己情報コントロール権への配慮が必要である。</li><li>重篤な遺伝病の原因遺伝子保因者と診断された場合は、被検者本人だけでなく血縁者も診断結果を知る必要がある。</li><li>遺伝病者や保因者は社会的差別や偏見によって不利益を被る可能性がある。</li><li>出生前診断は、診断結果が生命の選択や優生思想の問題を引き起こす可能性がある。</li></ol>    
+            </p>
+        </div>
+        <hr>
+
+        <input type="button" value="check ans" onclick="toggle_switch()"/>
+        
+        <div id='toggle'>
+        <div class='answer'>
+            <p>
+                <span id="grad2">　解答　　</span>
+            </p>
+            <p>
+            3
+            </p>
+        </div>
+        <div class='description'>
+            <p>
+                <span id="grad2">　解説　　</span>
+            </p>
+            <p><span style="font-weight: 400;">選択肢 1,2,4,5 は妥当な記述です。</span></p>
+<p><span style="font-weight: 400;">選択肢 3 ですが<br/></span><span style="font-weight: 400;">「血縁者も診断結果を知る必要がある」わけではありません。</span></p>
+<p><span style="font-weight: 400;">日本遺伝カウンセリング学会の、遺伝学的検査に関するガイドラインによれば</span><span style="font-weight: 400;">「</span><span style="font-weight: 400;">被検者は，検査の結果を「知る権利」及び「知らないでいる権利」を有し，いずれの権利も尊重されなければならない。」 </span></p>
+<p><span style="font-weight: 400;">「</span><span style="font-weight: 400;">検査結果を開示するにあたっては，開示を希望するか否かについて被検者の意思を尊重しなければならない。得られた個人に関する遺伝学的情報は守秘義務の対象になり，</span><b>被検者本人の承諾がない限り、基本的に血縁者を含む第三者に開示することは許されない。</b><span style="font-weight: 400;">」とあります。</span></p>
+<p><span style="font-weight: 400;">そもそも本人でさえも「知らないでいる権利」があります。従って、勝手に血縁者に知らされる　という状況は誤った対応といえます。</span></p>
+<p><span style="font-weight: 400;">以上より、正解は 3 です。</span><span style="font-weight: 400;"><br/></span></p>
+            </p>
+        </div>
+        </div>
+    </body>
+    <script>
+    document.getElementById("toggle").style.display="none";
+    function toggle_switch(){
+        var x = document.getElementById("toggle");
+        if (x.style.display=="block"){
+            x.style.display="none";
+        }
+        else{
+            x.style.display="block";
+        }
+    }
+    </script>
+    

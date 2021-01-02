@@ -1,0 +1,93 @@
+
+        <!DOCTYPE html>
+    <html lang="ja">
+    <style>
+    body
+    {
+        color: black;
+        background-color: white;
+    }
+    div{
+        font-size: 14px;
+    }
+    span
+    {
+        font-size: 18px;
+    }
+    #grad1{
+        background: linear-gradient(transparent 60%,#99e4f1 30%);
+        font-size: 18px;
+        font-weight: bold;
+    }
+    #grad2{
+        background: linear-gradient(transparent 60%,#fda1a1 30%);
+        font-size: 18px;
+        font-weight: bold;
+    }
+
+    </style>
+
+    <head>
+        <meta charset="UTF-8">
+        <title>99-131</title>
+    </head>
+
+    <body>
+        <h1>
+        <a href="./099_130.html" rel="external" title="prev">≪</a>
+        99-131
+        <a href="./099_132.html" rel="external" title="next">≫</a>
+        </h1>
+        <div class='problem'>
+            <p>
+                <span id="grad1">　問題文　</span>
+            </p>
+            <p>
+                <p>有効半減期が18年、物理学的半減期が29年である放射性核種の生物学的半減期に最も近いのはどれか。1つ選べ。</p>
+<ol><li>3年</li><li>11年</li><li>29年</li><li>37年</li><li>47年</li></ol>    
+            </p>
+        </div>
+        <hr>
+
+        <input type="button" value="check ans" onclick="toggle_switch()"/>
+        
+        <div id='toggle'>
+        <div class='answer'>
+            <p>
+                <span id="grad2">　解答　　</span>
+            </p>
+            <p>
+            5
+            </p>
+        </div>
+        <div class='description'>
+            <p>
+                <span id="grad2">　解説　　</span>
+            </p>
+            <p>有効半減期 （ Te ） とは、体内に取りこまれた放射性物質からの放射能の半減期の事です。</p>
+<p>物理学的半減期（ Tp ）とは、放射性同位元素の原子数が半減するまでの時間のことです。</p>
+<p>生物学的半減期（ Tb ） とは、排泄などにより、体内に取り込まれた有害物質を放出し量を半減するまでに要する時間のことです。</p>
+<p>以上３つの半減期には、以下のような関係が成立します。</p>
+<p><img alt="" class="alignnone size-full wp-image-9279" height="69.3" loading="lazy" src="data:;base64,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" width="142.79999999999998"/></p>
+<div><span style="font-size: medium;">数値を代入すると</span></div>
+<div><img alt="" class="alignnone size-full wp-image-9280" height="69.3" loading="lazy" src="data:;base64,/9j/4AAQSkZJRgABAgAAAQABAAD/2wBDAAgGBgcGBQgHBwcJCQgKDBQNDAsLDBkSEw8UHRofHh0aHBwgJC4nICIsIxwcKDcpLDAxNDQ0Hyc5PTgyPC4zNDL/2wBDAQkJCQwLDBgNDRgyIRwhMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjL/wAARCABjAMoDASIAAhEBAxEB/8QAGwABAAIDAQEAAAAAAAAAAAAAAAUGAQMEAgf/xAA4EAABBAIBAgQEAwQLAQAAAAABAAIDBAUREgYTITFBUQciYZEUcYEjQlLRJDIzNWJzkqGisbPB/8QAFAEBAAAAAAAAAAAAAAAAAAAAAP/EABQRAQAAAAAAAAAAAAAAAAAAAAD/2gAMAwEAAhEDEQA/APv6IiAiIgIiICIiAiIgIiICIiAiIgIiICIiAiIgIiICIiAiIgIiINc9iGtEZZ5WRxt83POgFz4zKUczRbdx1hlis9zmtlZvRLSWnX6grZbq17cXGzBFM1p5NEjA4A+/j6qr/DHw6IgA8P6TZ/8Ad6C4IiICIiAiIg4slmMfh65nyFuKvGPV5/8Ai62PbJG2Rh21wBB9wVUviLVru6TtzugidM3iBIWDkByHqrPR/u+t/lN/6CDoREQEREBeJZY4YzJK9rGDzc46AXtap60FqPt2IY5Wb3xkaHDf5FBz43LUMxA+fH2WWImSGJz2b1yHmPqu1U34ctDMZmGtADRmLYAA0B+0KuSAiIgIiICIiAiJtBzXrYp1jIYZ5fTjDGXu+wVV+HDrNXp1mOuY+7VnZNPIe/A5jSHSucPE/RwVyRBlFjaw57WNLnHQA2Sg9IoA9a9PNJByLdjw/s3/AMllvWnT73hrci0uJ0B23/yQTyLDSHNDh4gjYWdhBUviA6efpuxRq0bdmeXiWiCFzx4H1IU7hrf4nHQ7r2IHMY1pbPEWHYHsV3ogyiJsICKFs3J2dXUqjZCIJKsj3M9yCNH/AHUzsIMrRbsirXdMYpZQ39yJhe4/kAt+1hBSugZLFaLI1rWOvVnz5GxYY6au5reDnEg7I9ldlhEGUREBERAREQFx5LGU8tXEF2HuxtdzDeRb46I9CPcrsWuWPvRPj5OaHNLeTDojfqD6FBAjo7psyGMUgXtAJb+Ik2AfI65fQ/ZeZukul64BnrMiB8udl7d/dyiul6jKXxG6qgjfI5or03bkeXEkiTfiVjPZ+r051myTPxhuLtwMirWnDkyKQFxc0j02CPH6ILFjensNRmbboVw15HyvbM5wIP5khSzuXE8dcteG/JQHShbNVuXK8zX0LNgyVA12w1mgP02QTr6qwoIAjq3Z0cLr022X+ay0dWcxzOF478dNl3r7qeRBhu+I5a3rx0onLYPD35PxWShaSwa5umcwAfoQFLqAzNPIW83je1BDNjmlxstkcQQfQgev6oNFfpXpW20urQRTNHmY7T3AfZyP6V6Vjk7b4ImyH911p4P25KAy4djviXQbh2cC+rI65HGNN0B8pI99rZ0fG3KdC3L98A253zOke/zaQTrx9PJBcsbh6GJY5tGDtNedkc3O39yVnJYillo2x3YO61p2Bzc3X2IUP0Blpc10bStzOLn/ADMLj68TpWZBQ7PSGDb1pQhFL9m6pK4t7z/MFv8AiVpx3T+MxMrpaNbtPcNE9xzvD9SV2urQutMsmNpmY0sa/XiAfMLcg5r1Ktkaj61uPnC7+s3kRvX1Hiqu7E9Cxvcx89Fr2nRa6+QQf9atVxkr6czICBK5hDSfdfPuv8VjcF8Pp6VKlALVxzKsbiwFz3vIBO/PetlBLtxXQjnBrbFAknQAyBJP/NTuO6exeJndPRrdqRzeBPcc7Y2D6k+wUY/o3GO6cqYxlOv+xbE0SGMB3ykbO/fwVmA0AEGUREBERAREQF5e9sbHPe4Na0bLnHQA916WHAOBBAIPoUFCwOYxj/ih1NxyNR3er0mx6naeZAk2B4+J8R91ungxsvWOWPUgh7To42UvxRAi7Rb84BPhy5b3660ri2nWa/m2CIO9wwbWySGOXXcY12v4htBS+icHXwmYy7MNI84OTg6JhJLGy+PLgf4dcVdx5Ly1jWN4tAaB6BekBERAUB1T1Vjul6bJLtqGCWY8Yu6dDfufoFPrVLXhn13YmSa8uTQdIKT031L01YyDYcfk4cllLRLrEjAeWh+Y8votU13DnHZNuPlsQSSvew492mulk8thviQD7+CvMdOvE7lHBEx3u1oC99iLnz7bOf8AFx8UEJ0XhXdP9KUse8APY0ucB6EnZCn0RAREQYLg0Ek6A9Svm/V2ToZbr3pbEi9XdXglfemPdboFg+T19yvpBG1q/CV+fLsRcvfiNoK715kZaPSU76U0zLdh7IKzq5+fm9wA1r89/opXFZSC2+WiBMy1UYzusn1z04Hi46J89H7LXnMK7K/gHxSsjlpWW2I+beTXEAjRAI9/vpZxGFGOtXr00vevXntdNIBoaaNNa0egA39yglkREBERAREQEREBERAREQEREBERAREQEREBERAREQEREBERAREQEREBERAREQEREBERAREQEREBERAREQEREBERAREQEREH/9k=" width="141.39999999999998"/></div>
+<div>２９ ≒ ３０　とみて、分母を ９０ で通分すると</div>
+<div><img alt="" class="alignnone size-full wp-image-9281" height="69.3" loading="lazy" src="data:;base64,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" width="150.5"/></div>
+<div>となるので、？＝２　です。2/90 = 1/45 なので、Tb　≒　４５　となります。最も近い選択肢を選ぶと、正解は 5 です。</div>
+            </p>
+        </div>
+        </div>
+    </body>
+    <script>
+    document.getElementById("toggle").style.display="none";
+    function toggle_switch(){
+        var x = document.getElementById("toggle");
+        if (x.style.display=="block"){
+            x.style.display="none";
+        }
+        else{
+            x.style.display="block";
+        }
+    }
+    </script>
+    

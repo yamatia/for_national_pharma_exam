@@ -1,0 +1,86 @@
+
+        <!DOCTYPE html>
+    <html lang="ja">
+    <style>
+    body
+    {
+        color: black;
+        background-color: white;
+    }
+    div{
+        font-size: 14px;
+    }
+    span
+    {
+        font-size: 18px;
+    }
+    #grad1{
+        background: linear-gradient(transparent 60%,#99e4f1 30%);
+        font-size: 18px;
+        font-weight: bold;
+    }
+    #grad2{
+        background: linear-gradient(transparent 60%,#fda1a1 30%);
+        font-size: 18px;
+        font-weight: bold;
+    }
+
+    </style>
+
+    <head>
+        <meta charset="UTF-8">
+        <title>99-90</title>
+    </head>
+
+    <body>
+        <h1>
+        <a href="./099_089.html" rel="external" title="prev">≪</a>
+        99-90
+        <a href="./099_091.html" rel="external" title="next">≫</a>
+        </h1>
+        <div class='problem'>
+            <p>
+                <span id="grad1">　問題文　</span>
+            </p>
+            <p>
+                <p>経口投与する上で、患者の腎機能を考慮する必要性が最も高いのはどれか。1つ選べ。</p>
+<ol><li>ピルシカイニド塩酸塩水和物カプセル</li><li>ラベプラゾールナトリウム錠</li><li>バルプロ酸ナトリウム錠</li><li>プロプラノロール塩酸塩錠</li><li>ニフェジピンカプセル</li></ol>    
+            </p>
+        </div>
+        <hr>
+
+        <input type="button" value="check ans" onclick="toggle_switch()"/>
+        
+        <div id='toggle'>
+        <div class='answer'>
+            <p>
+                <span id="grad2">　解答　　</span>
+            </p>
+            <p>
+            1
+            </p>
+        </div>
+        <div class='description'>
+            <p>
+                <span id="grad2">　解説　　</span>
+            </p>
+            <p>選択肢 2 ～ 5 ですが<br/>これらの薬剤は、主に肝臓により代謝される薬物です。腎機能を考慮する必要性は、それほど高くはありません。</p>
+<p>ピルジカイニドは、腎機能障害のある患者には投与量を減量するか、投与間隔をあけて使用することが注意されています。患者の腎機能を考慮する必要性が高いといえます。</p>
+<p>以上より、正解は 1 です。</p>
+            </p>
+        </div>
+        </div>
+    </body>
+    <script>
+    document.getElementById("toggle").style.display="none";
+    function toggle_switch(){
+        var x = document.getElementById("toggle");
+        if (x.style.display=="block"){
+            x.style.display="none";
+        }
+        else{
+            x.style.display="block";
+        }
+    }
+    </script>
+    

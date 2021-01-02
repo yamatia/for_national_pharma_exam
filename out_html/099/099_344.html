@@ -1,0 +1,86 @@
+
+        <!DOCTYPE html>
+    <html lang="ja">
+    <style>
+    body
+    {
+        color: black;
+        background-color: white;
+    }
+    div{
+        font-size: 14px;
+    }
+    span
+    {
+        font-size: 18px;
+    }
+    #grad1{
+        background: linear-gradient(transparent 60%,#99e4f1 30%);
+        font-size: 18px;
+        font-weight: bold;
+    }
+    #grad2{
+        background: linear-gradient(transparent 60%,#fda1a1 30%);
+        font-size: 18px;
+        font-weight: bold;
+    }
+
+    </style>
+
+    <head>
+        <meta charset="UTF-8">
+        <title>99-344</title>
+    </head>
+
+    <body>
+        <h1>
+        <a href="./099_343.html" rel="external" title="prev">≪</a>
+        99-344
+        <a href="./099_345.html" rel="external" title="next">≫</a>
+        </h1>
+        <div class='problem'>
+            <p>
+                <span id="grad1">　問題文　</span>
+            </p>
+            <p>
+                <p>医療安全確保のため、病院での採用医薬品品目数を増やさない努力をすることが奨励されている。今回、薬事委員会でジフルコルトロン吉草酸エステルクリーム0.1%を採用することになり、同種同効の医薬品を採用品目から削除することとなった。</p>
+<p>削除対象として適当な薬剤はどれか。1つ選べ。</p>
+<ol><li>ジフェンヒドラミンラウリル硫酸塩軟膏4%</li><li>プレドニゾロンファルネシル酸エステルゲル1.4%</li><li>クロタミトンクリーム10%</li><li>クロトリマゾールクリーム1%</li><li>フルオシノニドクリーム0.05%</li></ol>    
+            </p>
+        </div>
+        <hr>
+
+        <input type="button" value="check ans" onclick="toggle_switch()"/>
+        
+        <div id='toggle'>
+        <div class='answer'>
+            <p>
+                <span id="grad2">　解答　　</span>
+            </p>
+            <p>
+            5
+            </p>
+        </div>
+        <div class='description'>
+            <p>
+                <span id="grad2">　解説　　</span>
+            </p>
+            <p>ジフルコルトロン吉草酸エステルクリーム 0.1%（ネリゾナユニバーサルクリーム 0.1%）はVery　Strong　に分類されるステロイドです。同種同効薬であり削除対象として適当な薬剤は、同じく Very　Strong　に分類されるステロイドであるフルオシノニドクリーム 0.05% （トプシム軟膏 0.05 %） です。</p>
+<p>以上より、正解は 5 です。</p>
+            </p>
+        </div>
+        </div>
+    </body>
+    <script>
+    document.getElementById("toggle").style.display="none";
+    function toggle_switch(){
+        var x = document.getElementById("toggle");
+        if (x.style.display=="block"){
+            x.style.display="none";
+        }
+        else{
+            x.style.display="block";
+        }
+    }
+    </script>
+    

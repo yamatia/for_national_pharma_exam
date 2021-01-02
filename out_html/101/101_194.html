@@ -1,0 +1,93 @@
+
+        <!DOCTYPE html>
+    <html lang="ja">
+    <style>
+    body
+    {
+        color: black;
+        background-color: white;
+    }
+    div{
+        font-size: 14px;
+    }
+    span
+    {
+        font-size: 18px;
+    }
+    #grad1{
+        background: linear-gradient(transparent 60%,#99e4f1 30%);
+        font-size: 18px;
+        font-weight: bold;
+    }
+    #grad2{
+        background: linear-gradient(transparent 60%,#fda1a1 30%);
+        font-size: 18px;
+        font-weight: bold;
+    }
+
+    </style>
+
+    <head>
+        <meta charset="UTF-8">
+        <title>101-194</title>
+    </head>
+
+    <body>
+        <h1>
+        <a href="./101_193.html" rel="external" title="prev">≪</a>
+        101-194
+        <a href="./101_195.html" rel="external" title="next">≫</a>
+        </h1>
+        <div class='problem'>
+            <p>
+                <span id="grad1">　問題文　</span>
+            </p>
+            <p>
+                <p>仮説検定を危険率1%で行ったところ、帰無仮説は棄却できなかった。この検定結果に関する記述として適切なのはどれか。1つ選べ。</p>
+<ol><li>第1種の過誤が生じている可能性がある。</li><li>帰無仮説は肯定されたと解釈される。</li><li>危険率を5%とすれば、帰無仮説は棄却されやすくなる。</li><li>危険率を変えなければ、標本数を増やしても、帰無仮説が棄却される見込みは変わらない。</li><li>第2種の過誤を犯す可能性の程度は1%である。</li></ol>    
+            </p>
+        </div>
+        <hr>
+
+        <input type="button" value="check ans" onclick="toggle_switch()"/>
+        
+        <div id='toggle'>
+        <div class='answer'>
+            <p>
+                <span id="grad2">　解答　　</span>
+            </p>
+            <p>
+            3
+            </p>
+        </div>
+        <div class='description'>
+            <p>
+                <span id="grad2">　解説　　</span>
+            </p>
+            <p>選択肢 1 ですが<br/>第 1 種の過誤とは「帰無仮説 H<span style="font-weight: 400;"><sub>0</sub></span> は本当は正しい。→棄却されるべきではない→ミスって、棄却しちゃった。。。」という誤りです。本問では「棄却に失敗」 してます。　ということは、第 1 種の過誤はおきていません。　よって、選択肢 1 は誤りです。</p>
+<p>選択肢 2 ですが<br/>帰無仮説は、棄却されなかったら肯定される、というものではありません。例として、やけに６が出るサイコロを考えます。</p>
+<p>偏ってないか？と思った時の帰無仮説（＝否定されてほしい仮説）は H<span style="font-weight: 400;"><sub>0</sub></span> 「偏っていない」　です。で、1% の割合でおきる極端なことが今のところおきていないから、帰無仮説が棄却できなかった、というのが今のシチュエーションです。とはいえ、これだけで「偏っていない」と結論づけることはできません。よって、選択肢 2 は誤りです。</p>
+<p>選択肢 3 は、正しい選択肢です。<br/>危険率を 1 % から 5 % にするというのは、いいかえれば「極端なこと」の基準を緩めるということだからです。</p>
+<p>例としては「６が１０回続いてたらさすがにイカサマだろ！」を「１０回は続かなくても５回続いてたら、さすがにイカサマだろ！」とするようなものだからです。</p>
+<p>選択肢 4 ですが<br/>もしかしたら、標本数が少なくて偏りがあったかもしれません。（ここで言う標本数は、サイコロの例ならサイコロをふった回数。）危険率を変えなくても、標本数を増やせば帰無仮説が棄却される見込みが変わることはありえます。よって、選択肢 4 は誤りであると考えられます。</p>
+<p>選択肢 5 ですが<br/>第 2 種の過誤　とは「帰無仮説 H<span style="font-weight: 400;"><sub>0</sub></span> が嬉しいことに、本当は違う」→棄却されるべき→ミスって、棄却できなかった。。。　という誤りです。</p>
+<p>例えば、サイコロの例で、実際にサイコロが偏っていたとして、６が 50 % , その他の目が 10 % ずつ出るようなサイコロとします。この検定の危険率 1 % とする、というのは「ふつうのサイコロだったら 100 回に 1 回ぐらいしかおきないこと」がさくっとおきちゃうなら、イカサマだろ。と判断する、ということです。<strong>ふつうのサイコロで１００回に１回ぐらいしかおきないことというのは、一例としては「３回サイコロふって、全て６」とかです</strong>。（もう少し確率が低いのですが。。）</p>
+<p>例のように偏っていても３回振って、全て６というのは、５０％の３乗で、１２．５％しか出ません。結構な確率で、棄却に失敗しちゃいそうです。少なくとも「第 2 種の過誤を犯す確率 1 %」 は小さすぎと判断できます。以上より、選択肢 5 は誤りです。</p>
+<p>従って、正解は 3 です。</p>
+            </p>
+        </div>
+        </div>
+    </body>
+    <script>
+    document.getElementById("toggle").style.display="none";
+    function toggle_switch(){
+        var x = document.getElementById("toggle");
+        if (x.style.display=="block"){
+            x.style.display="none";
+        }
+        else{
+            x.style.display="block";
+        }
+    }
+    </script>
+    

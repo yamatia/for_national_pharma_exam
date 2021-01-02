@@ -1,0 +1,88 @@
+
+        <!DOCTYPE html>
+    <html lang="ja">
+    <style>
+    body
+    {
+        color: black;
+        background-color: white;
+    }
+    div{
+        font-size: 14px;
+    }
+    span
+    {
+        font-size: 18px;
+    }
+    #grad1{
+        background: linear-gradient(transparent 60%,#99e4f1 30%);
+        font-size: 18px;
+        font-weight: bold;
+    }
+    #grad2{
+        background: linear-gradient(transparent 60%,#fda1a1 30%);
+        font-size: 18px;
+        font-weight: bold;
+    }
+
+    </style>
+
+    <head>
+        <meta charset="UTF-8">
+        <title>102-170</title>
+    </head>
+
+    <body>
+        <h1>
+        <a href="./102_169.html" rel="external" title="prev">≪</a>
+        102-170
+        <a href="./102_171.html" rel="external" title="next">≫</a>
+        </h1>
+        <div class='problem'>
+            <p>
+                <span id="grad1">　問題文　</span>
+            </p>
+            <p>
+                <p>タクロリムスの治療薬物モニタリング(TDM)に関する記述のうち、適切なのはどれか。1つ選べ。</p>
+<ol><li>血液中の赤血球画分に多く分布するため、測定サンプルとして血清ではなく全血を使用する。</li><li>腎障害の発現を回避するために、血中濃度のピーク値を20ng/mL以下に維持することが望ましい。</li><li>主に未変化体として胆汁中に排泄されるため、肝機能が低下した患者では血中濃度が高くなる。</li><li>CYP3A4やP-糖タンパク質を誘導する薬物を併用している患者では、血中濃度が高くなる。</li><li>血中濃度が治療域に維持されていても十分な効果が得られない場合には、シクロスポリンの併用を検討する。</li></ol>    
+            </p>
+        </div>
+        <hr>
+
+        <input type="button" value="check ans" onclick="toggle_switch()"/>
+        
+        <div id='toggle'>
+        <div class='answer'>
+            <p>
+                <span id="grad2">　解答　　</span>
+            </p>
+            <p>
+            1
+            </p>
+        </div>
+        <div class='description'>
+            <p>
+                <span id="grad2">　解説　　</span>
+            </p>
+            <p>選択肢 1 は、正しい記述です。<br/>全血を使用する薬剤として注意が必要です。</p>
+<p>選択肢 2 ですが<br/>ピークではなく「トラフ」濃度を、副作用回避のために調整します。</p>
+<p>選択肢 3,4 ですが<br/>タクロリムスは CYP3A4 により代謝されます。肝代謝薬です。未変化体として胆汁中に排泄されるわけではありません。また、CYP 3A4 が誘導される薬物併用時は血中濃度が低くなると考えれます。よって、選択肢 3,4 は誤りです。</p>
+<p>選択肢 5 ですが<br/>シクロスポリンとタクロリムスは併用禁忌です。禁忌であると確証がなくても、ほぼ同じような効果を持つ薬なので、せっかく TDM で絶妙な所に調節しているのに効果不十分だからといって併用しては何のためのTDMだったかわからなくなる、と考えればこの選択肢は誤りであると判断できると考えられます。</p>
+<p>以上より、正解は 1 です。</p>
+            </p>
+        </div>
+        </div>
+    </body>
+    <script>
+    document.getElementById("toggle").style.display="none";
+    function toggle_switch(){
+        var x = document.getElementById("toggle");
+        if (x.style.display=="block"){
+            x.style.display="none";
+        }
+        else{
+            x.style.display="block";
+        }
+    }
+    </script>
+    

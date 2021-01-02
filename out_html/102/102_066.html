@@ -1,0 +1,86 @@
+
+        <!DOCTYPE html>
+    <html lang="ja">
+    <style>
+    body
+    {
+        color: black;
+        background-color: white;
+    }
+    div{
+        font-size: 14px;
+    }
+    span
+    {
+        font-size: 18px;
+    }
+    #grad1{
+        background: linear-gradient(transparent 60%,#99e4f1 30%);
+        font-size: 18px;
+        font-weight: bold;
+    }
+    #grad2{
+        background: linear-gradient(transparent 60%,#fda1a1 30%);
+        font-size: 18px;
+        font-weight: bold;
+    }
+
+    </style>
+
+    <head>
+        <meta charset="UTF-8">
+        <title>102-66</title>
+    </head>
+
+    <body>
+        <h1>
+        <a href="./102_065.html" rel="external" title="prev">≪</a>
+        102-66
+        <a href="./102_067.html" rel="external" title="next">≫</a>
+        </h1>
+        <div class='problem'>
+            <p>
+                <span id="grad1">　問題文　</span>
+            </p>
+            <p>
+                <p>後発医薬品の承認申請資料として必要なのはどれか。1つ選べ。</p>
+<ol><li>加速試験に関する資料</li><li>効力を裏付ける試験に関する資料</li><li>副次的薬理・安全性薬理に関する資料</li><li>反復投与毒性に関する資料</li><li>がん原性に関する資料</li></ol>    
+            </p>
+        </div>
+        <hr>
+
+        <input type="button" value="check ans" onclick="toggle_switch()"/>
+        
+        <div id='toggle'>
+        <div class='answer'>
+            <p>
+                <span id="grad2">　解答　　</span>
+            </p>
+            <p>
+            1
+            </p>
+        </div>
+        <div class='description'>
+            <p>
+                <span id="grad2">　解説　　</span>
+            </p>
+            <p>選択肢 1 は、正しい選択肢です。<br/>字面からは、すごいスピードにかけるような印象ですが、加速試験とは、高温多湿の環境に長期間置いて安定性を確認する試験です。時間変化に伴う品質の劣化を見るために、様々な反応を加速させるために、高温多湿環境において試験を行うというものです。</p>
+<p>選択肢 2 ～ 5 ですが<br/>先発品があるから大丈夫ということで、これらに関する資料は必要ありません。こういった点からも、後発医薬品の開発が短期間、安価にできることがわかると思います。</p>
+<p>以上より、正解は 1 です。</p>
+            </p>
+        </div>
+        </div>
+    </body>
+    <script>
+    document.getElementById("toggle").style.display="none";
+    function toggle_switch(){
+        var x = document.getElementById("toggle");
+        if (x.style.display=="block"){
+            x.style.display="none";
+        }
+        else{
+            x.style.display="block";
+        }
+    }
+    </script>
+    

@@ -1,0 +1,87 @@
+
+        <!DOCTYPE html>
+    <html lang="ja">
+    <style>
+    body
+    {
+        color: black;
+        background-color: white;
+    }
+    div{
+        font-size: 14px;
+    }
+    span
+    {
+        font-size: 18px;
+    }
+    #grad1{
+        background: linear-gradient(transparent 60%,#99e4f1 30%);
+        font-size: 18px;
+        font-weight: bold;
+    }
+    #grad2{
+        background: linear-gradient(transparent 60%,#fda1a1 30%);
+        font-size: 18px;
+        font-weight: bold;
+    }
+
+    </style>
+
+    <head>
+        <meta charset="UTF-8">
+        <title>99-78</title>
+    </head>
+
+    <body>
+        <h1>
+        <a href="./099_077.html" rel="external" title="prev">≪</a>
+        99-78
+        <a href="./099_079.html" rel="external" title="next">≫</a>
+        </h1>
+        <div class='problem'>
+            <p>
+                <span id="grad1">　問題文　</span>
+            </p>
+            <p>
+                <p>医薬品の承認申請資料の非臨床試験のうち、GLP(Good Laboratory Practice)が適用されない試験はどれか。1つ選べ。</p>
+<ol><li>単回投与毒性試験</li><li>遺伝毒性試験</li><li>がん原性試験</li><li>薬効薬理試験</li><li>依存性試験</li></ol>    
+            </p>
+        </div>
+        <hr>
+
+        <input type="button" value="check ans" onclick="toggle_switch()"/>
+        
+        <div id='toggle'>
+        <div class='answer'>
+            <p>
+                <span id="grad2">　解答　　</span>
+            </p>
+            <p>
+            4
+            </p>
+        </div>
+        <div class='description'>
+            <p>
+                <span id="grad2">　解説　　</span>
+            </p>
+            <p>GLP が適用される非臨床試験とは、安全性薬理試験及び、毒性試験です。毒性試験には、単回投与毒性試験、遺伝毒性試験、がん原性試験、依存性試験などが含まれます。</p>
+<p>薬効薬理試験については、信頼性基準を遵守する必要があります。GLP は、適用されません。</p>
+<p>以上より、正解は 4 です。</p>
+<p>ちなみに GLP については、国際協調が進められています。現在  （リンク先は、OECD－GLP 原則　英和対照）に準じて日本の GLP が制定されており、そのため日本のGLPデータは、他国における医薬品申請のためのデータとしても活用できる状態にあります。</p>
+            </p>
+        </div>
+        </div>
+    </body>
+    <script>
+    document.getElementById("toggle").style.display="none";
+    function toggle_switch(){
+        var x = document.getElementById("toggle");
+        if (x.style.display=="block"){
+            x.style.display="none";
+        }
+        else{
+            x.style.display="block";
+        }
+    }
+    </script>
+    

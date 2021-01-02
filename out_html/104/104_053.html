@@ -1,0 +1,87 @@
+
+        <!DOCTYPE html>
+    <html lang="ja">
+    <style>
+    body
+    {
+        color: black;
+        background-color: white;
+    }
+    div{
+        font-size: 14px;
+    }
+    span
+    {
+        font-size: 18px;
+    }
+    #grad1{
+        background: linear-gradient(transparent 60%,#99e4f1 30%);
+        font-size: 18px;
+        font-weight: bold;
+    }
+    #grad2{
+        background: linear-gradient(transparent 60%,#fda1a1 30%);
+        font-size: 18px;
+        font-weight: bold;
+    }
+
+    </style>
+
+    <head>
+        <meta charset="UTF-8">
+        <title>104-53</title>
+    </head>
+
+    <body>
+        <h1>
+        <a href="./104_052.html" rel="external" title="prev">≪</a>
+        104-53
+        <a href="./104_054.html" rel="external" title="next">≫</a>
+        </h1>
+        <div class='problem'>
+            <p>
+                <span id="grad1">　問題文　</span>
+            </p>
+            <p>
+                <p>日本薬局方に規定されている全ての注射剤の安全性の確保に必須なのはどれか。1つ選べ。</p>
+<ol><li>等張化剤の添加</li><li>着色剤の添加</li><li>保存剤の添加</li><li>エンドトキシンの除去</li><li>無菌性の保証</li></ol>    
+            </p>
+        </div>
+        <hr>
+
+        <input type="button" value="check ans" onclick="toggle_switch()"/>
+        
+        <div id='toggle'>
+        <div class='answer'>
+            <p>
+                <span id="grad2">　解答　　</span>
+            </p>
+            <p>
+            5
+            </p>
+        </div>
+        <div class='description'>
+            <p>
+                <span id="grad2">　解説　　</span>
+            </p>
+            <p><span style="font-weight: 400;">全ての注射剤に共通する性質→「注射される」＝「<strong>血中に入る</strong>」ということです。「無菌性」は絶対必要です。</span></p>
+<p><span style="font-weight: 400;">その他の選択肢について検討すると<br/></span><span style="font-weight: 400;">等張化→もともと等張なら不要<br/></span><span style="font-weight: 400;">着色剤→色が不要であれば、不要<br/></span><span style="font-weight: 400;">保存剤→用時溶解等で不要　です。</span></p>
+<p><span style="font-weight: 400;">エンドトキシンの除去→これは必要では・・・？と考えるかもしれませんが 100-177 より、「皮内、皮下　および筋肉内投与に用いる注射剤はエンドトキシン試験法の適用を除かれて」います。</span></p>
+<p><span style="font-weight: 400;">以上より、正解は 5 です。</span><span style="font-weight: 400;"><br/></span></p>
+            </p>
+        </div>
+        </div>
+    </body>
+    <script>
+    document.getElementById("toggle").style.display="none";
+    function toggle_switch(){
+        var x = document.getElementById("toggle");
+        if (x.style.display=="block"){
+            x.style.display="none";
+        }
+        else{
+            x.style.display="block";
+        }
+    }
+    </script>
+    

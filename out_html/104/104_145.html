@@ -1,0 +1,86 @@
+
+        <!DOCTYPE html>
+    <html lang="ja">
+    <style>
+    body
+    {
+        color: black;
+        background-color: white;
+    }
+    div{
+        font-size: 14px;
+    }
+    span
+    {
+        font-size: 18px;
+    }
+    #grad1{
+        background: linear-gradient(transparent 60%,#99e4f1 30%);
+        font-size: 18px;
+        font-weight: bold;
+    }
+    #grad2{
+        background: linear-gradient(transparent 60%,#fda1a1 30%);
+        font-size: 18px;
+        font-weight: bold;
+    }
+
+    </style>
+
+    <head>
+        <meta charset="UTF-8">
+        <title>104-145</title>
+    </head>
+
+    <body>
+        <h1>
+        <a href="./104_144.html" rel="external" title="prev">≪</a>
+        104-145
+        <a href="./104_146.html" rel="external" title="next">≫</a>
+        </h1>
+        <div class='problem'>
+            <p>
+                <span id="grad1">　問題文　</span>
+            </p>
+            <p>
+                <p>一般病床に280人が入院し、外来患者に係る取扱い処方箋数が150枚である地域医療支援病院における、医療法で規定された薬剤師の員数について、正しいのはどれか。1つ選べ。ただし、この病院は特定機能病院又は臨床研究中核病院ではないものとする。</p>
+<ol><li>3人</li><li>4人</li><li>5人</li><li>6人</li><li>7人</li></ol>    
+            </p>
+        </div>
+        <hr>
+
+        <input type="button" value="check ans" onclick="toggle_switch()"/>
+        
+        <div id='toggle'>
+        <div class='answer'>
+            <p>
+                <span id="grad2">　解答　　</span>
+            </p>
+            <p>
+            4
+            </p>
+        </div>
+        <div class='description'>
+            <p>
+                <span id="grad2">　解説　　</span>
+            </p>
+            <p><span style="font-weight: 400;"><strong>一般病床</strong>は <strong>70 人に対し 1 人薬剤師が必要</strong>です。</span><span style="font-weight: 400;"><strong>外来処方箋</strong>は <strong>75 枚に対し 1 人薬剤師が必要</strong>です。</span></p>
+<p><span style="font-weight: 400;">280 ÷ 70 + 150 ÷ 75 <br/></span><span style="font-weight: 400;">= 4 + 2 <br/></span><span style="font-weight: 400;">= 6 です。</span></p>
+<p><span style="font-weight: 400;">以上より、正解は 4 です。</span><span style="font-weight: 400;"><br/></span></p>
+            </p>
+        </div>
+        </div>
+    </body>
+    <script>
+    document.getElementById("toggle").style.display="none";
+    function toggle_switch(){
+        var x = document.getElementById("toggle");
+        if (x.style.display=="block"){
+            x.style.display="none";
+        }
+        else{
+            x.style.display="block";
+        }
+    }
+    </script>
+    

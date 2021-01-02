@@ -1,0 +1,87 @@
+
+        <!DOCTYPE html>
+    <html lang="ja">
+    <style>
+    body
+    {
+        color: black;
+        background-color: white;
+    }
+    div{
+        font-size: 14px;
+    }
+    span
+    {
+        font-size: 18px;
+    }
+    #grad1{
+        background: linear-gradient(transparent 60%,#99e4f1 30%);
+        font-size: 18px;
+        font-weight: bold;
+    }
+    #grad2{
+        background: linear-gradient(transparent 60%,#fda1a1 30%);
+        font-size: 18px;
+        font-weight: bold;
+    }
+
+    </style>
+
+    <head>
+        <meta charset="UTF-8">
+        <title>101-345</title>
+    </head>
+
+    <body>
+        <h1>
+        <a href="./101_344.html" rel="external" title="prev">≪</a>
+        101-345
+        
+        </h1>
+        <div class='problem'>
+            <p>
+                <span id="grad1">　問題文　</span>
+            </p>
+            <p>
+                <p>52歳男性。身長170cm。血液検査の結果、血清ナトリウム濃度が147mEq/Lであり、高張性脱水と診断され、輸液により水分を補給することになった。この男性の水分欠乏量を血清ナトリウム濃度から算出した場合、最も近い値はどれか。1つ選べ。</p>
+<p>ただし、この男性の健常時の体重は70kg、血清ナトリウム濃度の目標値を140mEq/L、体水分量を体重の60%とする。</p>
+<ol><li>1.0L</li><li>1.5L</li><li>2.0L</li><li>2.5L</li><li>3.0L</li></ol>    
+            </p>
+        </div>
+        <hr>
+
+        <input type="button" value="check ans" onclick="toggle_switch()"/>
+        
+        <div id='toggle'>
+        <div class='answer'>
+            <p>
+                <span id="grad2">　解答　　</span>
+            </p>
+            <p>
+            3
+            </p>
+        </div>
+        <div class='description'>
+            <p>
+                <span id="grad2">　解説　　</span>
+            </p>
+            <p>健常時であれば、70kg の 60 % = 42 kg = 42L が体内の水分です。※ 水 1 L が、1kg は、知識です。mEq/L というのは、mmol/L と考えればOKです。</p>
+<p>42 L で、140mEq/L が普通で、水が減って、147mEq/L となった。ということになります。つまり濃度が 5 % 増えています。すると、水分が大体 5 % 減った　と考えればよいです。42 L の 5 % は、2.1 L なので、一番近い選択肢は 3 です。</p>
+<p>以上より、正解は 3 です。</p>
+            </p>
+        </div>
+        </div>
+    </body>
+    <script>
+    document.getElementById("toggle").style.display="none";
+    function toggle_switch(){
+        var x = document.getElementById("toggle");
+        if (x.style.display=="block"){
+            x.style.display="none";
+        }
+        else{
+            x.style.display="block";
+        }
+    }
+    </script>
+    

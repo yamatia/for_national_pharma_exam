@@ -1,0 +1,88 @@
+
+        <!DOCTYPE html>
+    <html lang="ja">
+    <style>
+    body
+    {
+        color: black;
+        background-color: white;
+    }
+    div{
+        font-size: 14px;
+    }
+    span
+    {
+        font-size: 18px;
+    }
+    #grad1{
+        background: linear-gradient(transparent 60%,#99e4f1 30%);
+        font-size: 18px;
+        font-weight: bold;
+    }
+    #grad2{
+        background: linear-gradient(transparent 60%,#fda1a1 30%);
+        font-size: 18px;
+        font-weight: bold;
+    }
+
+    </style>
+
+    <head>
+        <meta charset="UTF-8">
+        <title>105-327</title>
+    </head>
+
+    <body>
+        <h1>
+        <a href="./105_326.html" rel="external" title="prev">≪</a>
+        105-327
+        <a href="./105_328.html" rel="external" title="next">≫</a>
+        </h1>
+        <div class='problem'>
+            <p>
+                <span id="grad1">　問題文　</span>
+            </p>
+            <p>
+                <p>近年、薬剤耐性(antimicrobial resistance：AMR)の対策は、医療現場における重要な課題の一つになっている。AMR対策として適切なのはどれか。2つ選べ。</p>
+<ol><li>医療機関内における広域スペクトラムの抗菌薬の使用状況を調査する。</li><li>職員や患者に対し、インフルエンザワクチン接種を推奨する。</li><li>スタンダード・プリコーションを徹底する。</li><li>入院患者に対し、手すりを伝って廊下を移動するよう推奨する。</li></ol>    
+            </p>
+        </div>
+        <hr>
+
+        <input type="button" value="check ans" onclick="toggle_switch()"/>
+        
+        <div id='toggle'>
+        <div class='answer'>
+            <p>
+                <span id="grad2">　解答　　</span>
+            </p>
+            <p>
+            1, 3
+            </p>
+        </div>
+        <div class='description'>
+            <p>
+                <span id="grad2">　解説　　</span>
+            </p>
+            <p>選択肢 1 は妥当な記述です。<br/>不用意な使用が行われていないか、現状把握することは適切な薬物使用へとつながります。</p>
+<p>選択肢 2 ですが<br/>インフルエンザの時期に、医療従事者を始めとした関係者たちに、感染や重篤化のリスクを避ける行為ではありますが、ARM 対策にはつながりません。よって、選択肢 2 は誤りです。</p>
+<p>選択肢 3 は妥当な記述です。<br/>スタンダードプリコーションの徹底により、感染予防を徹底することが、余計な薬剤使用を減らします。</p>
+<p>選択肢 4 ですが<br/>手すりを伝うことを推奨することは、特に ARM 対策と関係がないと考えられます。</p>
+<p>以上より、正解は 1,3 です。</p>
+            </p>
+        </div>
+        </div>
+    </body>
+    <script>
+    document.getElementById("toggle").style.display="none";
+    function toggle_switch(){
+        var x = document.getElementById("toggle");
+        if (x.style.display=="block"){
+            x.style.display="none";
+        }
+        else{
+            x.style.display="block";
+        }
+    }
+    </script>
+    

@@ -1,0 +1,85 @@
+
+        <!DOCTYPE html>
+    <html lang="ja">
+    <style>
+    body
+    {
+        color: black;
+        background-color: white;
+    }
+    div{
+        font-size: 14px;
+    }
+    span
+    {
+        font-size: 18px;
+    }
+    #grad1{
+        background: linear-gradient(transparent 60%,#99e4f1 30%);
+        font-size: 18px;
+        font-weight: bold;
+    }
+    #grad2{
+        background: linear-gradient(transparent 60%,#fda1a1 30%);
+        font-size: 18px;
+        font-weight: bold;
+    }
+
+    </style>
+
+    <head>
+        <meta charset="UTF-8">
+        <title>104-2</title>
+    </head>
+
+    <body>
+        <h1>
+        <a href="./104_001.html" rel="external" title="prev">≪</a>
+        104-2
+        <a href="./104_003.html" rel="external" title="next">≫</a>
+        </h1>
+        <div class='problem'>
+            <p>
+                <span id="grad1">　問題文　</span>
+            </p>
+            <p>
+                <p>濃度未知の水酸化ナトリウム水溶液を、0.01mol/L塩酸標準液(ファクターf=1.020)を用いて滴定したところ、滴定終点までに6.10mLを要した。この水酸化ナトリウム水溶液中の水酸化ナトリウムの量(μmol)として適切なのはどれか。1つ選べ。</p>
+<ol><li>59.80</li><li>59.8</li><li>61.00</li><li>62.2</li><li>62.22</li></ol>    
+            </p>
+        </div>
+        <hr>
+
+        <input type="button" value="check ans" onclick="toggle_switch()"/>
+        
+        <div id='toggle'>
+        <div class='answer'>
+            <p>
+                <span id="grad2">　解答　　</span>
+            </p>
+            <p>
+            4
+            </p>
+        </div>
+        <div class='description'>
+            <p>
+                <span id="grad2">　解説　　</span>
+            </p>
+            <p><span style="font-weight: 400;">基礎知識として、 <strong>「m」 は 10<sup>-3</sup></strong></span><span style="font-weight: 400;">、<strong>「μ」 は 10<sup>-6</sup></strong></span><span style="font-weight: 400;"><strong> </strong>です。</span><span style="font-weight: 400;">ファクターが 1.020 なので、塩酸標準液中に塩酸は</span><b>1L で</b> <b>1.020 × 10<sup>-2</sup></b><b> mol</b><span style="font-weight: 400;">含まれます。標準液 6.10 mL = 6.10 × 10<sup>-3</sup></span><span style="font-weight: 400;"> L 要したとあるので、塩酸標準液 6.10 mL 中に塩酸は (1.020 × 10<sup>-2</sup></span><span style="font-weight: 400;">) × (6.10 × 10<sup>-3</sup></span><span style="font-weight: 400;">) =</span><b>6.22 × 10<sup>-5</sup></b><b> mol</b><span style="font-weight: 400;"> です。※有効数字 4 桁 × 3 桁 なので、計算結果は 3 桁に合わせています。</span><span style="font-weight: 400;"><br/></span><span style="font-weight: 400;"><br/></span><span style="font-weight: 400;">塩酸と 水酸化ナトリウムは 1:1 で反応するので、濃度未知の水酸化ナトリウム水溶液中の、水酸化ナトリウムの量も 6.22 × 10<sup>-5</sup></span><span style="font-weight: 400;"> mol です。 6.22 × 10<sup>-5</sup></span><span style="font-weight: 400;"> mol = 62.2 × 10<sup>-6</sup></span><span style="font-weight: 400;"> mol = 62.2 μmol です。</span></p>
+<p><span style="font-weight: 400;">以上より、正解は 4 です。</span><span style="font-weight: 400;"><br/></span></p>
+            </p>
+        </div>
+        </div>
+    </body>
+    <script>
+    document.getElementById("toggle").style.display="none";
+    function toggle_switch(){
+        var x = document.getElementById("toggle");
+        if (x.style.display=="block"){
+            x.style.display="none";
+        }
+        else{
+            x.style.display="block";
+        }
+    }
+    </script>
+    

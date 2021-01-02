@@ -1,0 +1,89 @@
+
+        <!DOCTYPE html>
+    <html lang="ja">
+    <style>
+    body
+    {
+        color: black;
+        background-color: white;
+    }
+    div{
+        font-size: 14px;
+    }
+    span
+    {
+        font-size: 18px;
+    }
+    #grad1{
+        background: linear-gradient(transparent 60%,#99e4f1 30%);
+        font-size: 18px;
+        font-weight: bold;
+    }
+    #grad2{
+        background: linear-gradient(transparent 60%,#fda1a1 30%);
+        font-size: 18px;
+        font-weight: bold;
+    }
+
+    </style>
+
+    <head>
+        <meta charset="UTF-8">
+        <title>99-338</title>
+    </head>
+
+    <body>
+        <h1>
+        <a href="./099_337.html" rel="external" title="prev">≪</a>
+        99-338
+        <a href="./099_339.html" rel="external" title="next">≫</a>
+        </h1>
+        <div class='problem'>
+            <p>
+                <span id="grad1">　問題文　</span>
+            </p>
+            <p>
+                <p>27歳男性。体重60kg。7月中旬に開催されたマラソン大会に参加中、意識がもうろうとなり、救急搬送された。緊急検査の結果、心電図に異常はなかった。血清ナトリウム値は110mEq/L、血清カリウム値は4.0mEq/Lであった。</p>
+<p>低ナトリウム血症治療のために3%塩化ナトリウム液の調製依頼があったので、生理食塩液500mLに10%塩化ナトリウム注射液を加えて調製した。</p>
+<p>10%塩化ナトリウム注射液の添加量として最も近い値(mL)はどれか。1つ選べ。</p>
+<ol><li>50</li><li>80</li><li>100</li><li>120</li><li>150</li></ol>    
+            </p>
+        </div>
+        <hr>
+
+        <input type="button" value="check ans" onclick="toggle_switch()"/>
+        
+        <div id='toggle'>
+        <div class='answer'>
+            <p>
+                <span id="grad2">　解答　　</span>
+            </p>
+            <p>
+            5
+            </p>
+        </div>
+        <div class='description'>
+            <p>
+                <span id="grad2">　解説　　</span>
+            </p>
+            <p>選択肢 1 が正解と仮定します。<br/>１０％塩化ナトリウムを 50 mL 加えることになります。この溶液の中に、塩化ナトリウムは、5 g 入っています。又、生理食塩水 500 mL とは、 0.9 % 食塩水なのでこの中には、塩化ナトリウムが 4.5 g 入っています。※ 生理食塩水が、0.9% 食塩水は、知っている設定です。</p>
+<p>すると、液の量は、全部で 500 + 50 = 550 mL です。この中に、5 + 4.5 = 9.5 g の食塩が入っているので、9.5/550 ≒ 1.7 % です。3 % に満たないため、誤りです。</p>
+<p>同様にして、数値を代入していくと、150 を代入した時、全部で 650 mL で食塩の量が 19.5 g となりちょうど 3 % になります。</p>
+<p>以上より、正解は 5 です。</p>
+            </p>
+        </div>
+        </div>
+    </body>
+    <script>
+    document.getElementById("toggle").style.display="none";
+    function toggle_switch(){
+        var x = document.getElementById("toggle");
+        if (x.style.display=="block"){
+            x.style.display="none";
+        }
+        else{
+            x.style.display="block";
+        }
+    }
+    </script>
+    

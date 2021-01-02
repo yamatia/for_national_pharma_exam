@@ -1,0 +1,86 @@
+
+        <!DOCTYPE html>
+    <html lang="ja">
+    <style>
+    body
+    {
+        color: black;
+        background-color: white;
+    }
+    div{
+        font-size: 14px;
+    }
+    span
+    {
+        font-size: 18px;
+    }
+    #grad1{
+        background: linear-gradient(transparent 60%,#99e4f1 30%);
+        font-size: 18px;
+        font-weight: bold;
+    }
+    #grad2{
+        background: linear-gradient(transparent 60%,#fda1a1 30%);
+        font-size: 18px;
+        font-weight: bold;
+    }
+
+    </style>
+
+    <head>
+        <meta charset="UTF-8">
+        <title>102-36</title>
+    </head>
+
+    <body>
+        <h1>
+        <a href="./102_035.html" rel="external" title="prev">≪</a>
+        102-36
+        <a href="./102_037.html" rel="external" title="next">≫</a>
+        </h1>
+        <div class='problem'>
+            <p>
+                <span id="grad1">　問題文　</span>
+            </p>
+            <p>
+                <p>チアマゾールの作用機序はどれか。1つ選べ。</p>
+<ol><li>甲状腺ホルモン受容体遮断</li><li>甲状腺ペルオキシダーゼ阻害</li><li>甲状腺刺激ホルモン(TSH)受容体遮断</li><li>副甲状腺ホルモン(パラトルモン)分泌抑制</li><li>カルシトニン分泌抑制</li></ol>    
+            </p>
+        </div>
+        <hr>
+
+        <input type="button" value="check ans" onclick="toggle_switch()"/>
+        
+        <div id='toggle'>
+        <div class='answer'>
+            <p>
+                <span id="grad2">　解答　　</span>
+            </p>
+            <p>
+            2
+            </p>
+        </div>
+        <div class='description'>
+            <p>
+                <span id="grad2">　解説　　</span>
+            </p>
+            <p>チアマゾールは、甲状腺機能亢進症治療薬です。ペルオキシダーゼを阻害する薬です。（プロピルチオウラシルも同じメカニズムの薬です。）</p>
+<p>ペルオキシダーゼは、ヨウ素を活性化ヨウ素へと変換する体内の酸化過程を担う酵素です。このペルオキシダーゼを阻害することにより、T<span style="font-weight: 400;"><sub>3</sub></span> ,T<span style="font-weight: 400;"><sub>4</sub></span> ホルモンが合成されないようにします。その結果、甲状腺機能亢進を抑制する作用を示します。</p>
+<p>以上より、正解は 2 です。</p>
+            </p>
+        </div>
+        </div>
+    </body>
+    <script>
+    document.getElementById("toggle").style.display="none";
+    function toggle_switch(){
+        var x = document.getElementById("toggle");
+        if (x.style.display=="block"){
+            x.style.display="none";
+        }
+        else{
+            x.style.display="block";
+        }
+    }
+    </script>
+    

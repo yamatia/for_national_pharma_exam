@@ -1,0 +1,91 @@
+
+        <!DOCTYPE html>
+    <html lang="ja">
+    <style>
+    body
+    {
+        color: black;
+        background-color: white;
+    }
+    div{
+        font-size: 14px;
+    }
+    span
+    {
+        font-size: 18px;
+    }
+    #grad1{
+        background: linear-gradient(transparent 60%,#99e4f1 30%);
+        font-size: 18px;
+        font-weight: bold;
+    }
+    #grad2{
+        background: linear-gradient(transparent 60%,#fda1a1 30%);
+        font-size: 18px;
+        font-weight: bold;
+    }
+
+    </style>
+
+    <head>
+        <meta charset="UTF-8">
+        <title>101-142</title>
+    </head>
+
+    <body>
+        <h1>
+        <a href="./101_141.html" rel="external" title="prev">≪</a>
+        101-142
+        <a href="./101_143.html" rel="external" title="next">≫</a>
+        </h1>
+        <div class='problem'>
+            <p>
+                <span id="grad1">　問題文　</span>
+            </p>
+            <p>
+                <p>医薬品の製造販売業及び製造業に関する記述のうち、正しいのはどれか。1つ選べ。</p>
+<ol><li>製造業の許可は、品目ごとに受けなければならない。</li><li>製造業の許可には、第1種と第2種の区分がある。</li><li>製造業の許可については、GQPが許可要件である。</li><li>製造販売業者が、医薬品を自社工場で製造する場合には、製造業の許可が必要である。</li><li>製造販売業者が、自ら輸入した医薬品を薬局開設者に販売する場合には、医薬品販売業の許可が必要である。</li></ol>    
+            </p>
+        </div>
+        <hr>
+
+        <input type="button" value="check ans" onclick="toggle_switch()"/>
+        
+        <div id='toggle'>
+        <div class='answer'>
+            <p>
+                <span id="grad2">　解答　　</span>
+            </p>
+            <p>
+            4
+            </p>
+        </div>
+        <div class='description'>
+            <p>
+                <span id="grad2">　解説　　</span>
+            </p>
+            <p>選択肢 1 ですが<br/>製造業者は、「製造所ごと」に許可を受ける必要があります。「品目ごと」では、ありません。よって、選択肢 1 は誤りです。</p>
+<p>選択肢 2 ですが<br/>「第１種＝処方せん医薬品」や「第２種＝処方せん医薬品以外」の許可は、「製造販売業」の許可　です。製造業の許可は、製造するのが無菌医薬品か、一般医薬品かなどで、５つに区分されます。よって、選択肢 2 は誤りです。</p>
+<p>選択肢 3 ですが<br/>医薬品の製造をするものが守るべき基準は、GMP です。GQP は、GVPと共に「製造販売業」が守るべき基準です。よって、選択肢 3 は誤りです。</p>
+<p>選択肢 4 は、正しい選択肢です。</p>
+<p>選択肢 5 ですが<br/>「製造販売業者」は、医薬品を出荷・上市する業者のことです。上市とは、市場に出す　と読み替えればよいです。ここで「市場」とは医薬品が出回る所　という意味であり、お客様へ売るという意味ではないことに注意が必要です。具体的には、アステラス製薬さんや武田製薬さんをイメージすればよいです。</p>
+<p>薬局は、販売業者の一つなので、この選択肢における医薬品の流れは「製造販売業（アステラス等）が輸入した医薬品を販売業者である薬局へ販売する」というものです。この行為は、正に市場への医薬品の供給です。従って、必要な許可は「製造販売業の許可」です。「医薬品販売」の許可は、不要です。よって、選択肢 5 は誤りです。</p>
+<p>ちなみにですが、「医薬品販売業」とは原則として、お客様に医薬品を販売する業者です。ドラッグストアなどをイメージすればOKです。その他に、配置販売業もあります。また、卸売販売業（スズケンさん、アルフレッサさんなどです）も医薬品販売業の一種に分類されます。</p>
+<p>以上より、正解は 4 です。<br/>類題　</p>
+            </p>
+        </div>
+        </div>
+    </body>
+    <script>
+    document.getElementById("toggle").style.display="none";
+    function toggle_switch(){
+        var x = document.getElementById("toggle");
+        if (x.style.display=="block"){
+            x.style.display="none";
+        }
+        else{
+            x.style.display="block";
+        }
+    }
+    </script>
+    
